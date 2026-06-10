@@ -18,7 +18,7 @@ const prisma = new PrismaClient({
 
 async function main() {
   const adminEmail = "admin@nutricaoemovimento.com";
-  const adminPassword = "Admin@2026Nutri";
+  const adminPassword = process.env.SEED_ADMIN_PASSWORD || "change-me-before-production";
 
   const admin = await prisma.user.upsert({
     where: { email: adminEmail },
@@ -128,7 +128,7 @@ async function main() {
 
   console.log("Seed concluído com sucesso.");
   console.log(`Login admin inicial: ${adminEmail}`);
-  console.log(`Senha inicial: ${adminPassword}`);
+  console.log("Senha inicial configurada via SEED_ADMIN_PASSWORD.");
 }
 
 main()
