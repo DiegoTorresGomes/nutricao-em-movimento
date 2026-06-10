@@ -1,25 +1,21 @@
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-const categories = [
-  {
-    title: "Comportamento alimentar",
-    description: "Entenda fome, emoções, escolhas e hábitos sem culpa.",
-  },
-  {
-    title: "Emagrecimento sustentável",
-    description: "Estratégias possíveis para constância sem efeito sanfona.",
-  },
-  {
-    title: "Nutrição esportiva",
-    description: "Energia, performance e recuperação alinhadas à rotina.",
-  },
-  {
-    title: "Hábitos e rotina",
-    description: "Organização alimentar simples para a vida real.",
-  },
-];
+type Category = {
+  id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+};
 
-export function VisualCategories() {
+type VisualCategoriesProps = {
+  categories: Category[];
+};
+
+export function VisualCategories({ categories }: VisualCategoriesProps) {
+  if (categories.length === 0) {
+    return null;
+  }
+
   return (
     <section className="bg-white px-4 py-16 sm:px-6 md:py-20">
       <div className="mx-auto max-w-7xl">
@@ -34,20 +30,20 @@ export function VisualCategories() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <a
-              key={category.title}
-              href="/pt/artigos"
+              key={category.id}
+              href={`/pt/artigos?categoria=${category.slug}`}
               className="group min-h-64 rounded-[2rem] border border-black/5 bg-[#FAF8F4] p-6 transition hover:-translate-y-1 hover:bg-[#111111] hover:text-white hover:shadow-md"
             >
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#556B2F] transition group-hover:text-[#E9DCC9]">
-                Categoria
+                Tema
               </p>
 
               <h3 className="mt-8 text-2xl font-semibold leading-tight">
-                {category.title}
+                {category.name}
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-neutral-700 transition group-hover:text-white/70">
-                {category.description}
+                {category.description || "Conteúdos selecionados para sua rotina."}
               </p>
 
               <span className="mt-8 inline-flex text-sm font-bold text-[#556B2F] transition group-hover:text-[#E9DCC9]">

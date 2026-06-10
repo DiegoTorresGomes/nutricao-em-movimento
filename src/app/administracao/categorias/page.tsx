@@ -1,12 +1,16 @@
 import { AdminLayout } from "@/components/admin/AdminLayout";
 import { prisma } from "@/lib/prisma";
-import {
-  createCategoryAction,
-  deleteCategoryAction,
-  updateCategoryAction,
-} from "./actions";
+import { createCategoryAction, deleteCategoryAction, updateCategoryAction } from "./actions";
 
-export default async function AdminCategoriesPage() {
+type PageProps = {
+  searchParams?: Promise<{
+    erro?: string;
+    sucesso?: string;
+  }>;
+};
+
+export default async function AdminCategoriesPage({ searchParams }: PageProps) {
+  const params = await searchParams;
   const categories = await prisma.category.findMany({
     orderBy: [
       {
@@ -25,13 +29,21 @@ export default async function AdminCategoriesPage() {
         <p className="mt-2 text-sm text-neutral-600">
           Gerencie as categorias exibidas no blog e na Home.
         </p>
+        {params?.erro === "categoria-com-artigos" && (
+          <div className="mb-6 rounded-2xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-700">
+            Não é possível excluir uma categoria que possui artigos vinculados.
+          </div>
+        )}
+
+        {params?.sucesso === "categoria-excluida" && (
+          <div className="mb-6 rounded-2xl border border-green-200 bg-green-50 p-4 text-sm font-bold text-green-700">
+            Categoria excluída com sucesso.
+          </div>
+        )}
       </div>
 
       <div className="grid gap-8 lg:grid-cols-[380px_1fr]">
-        <form
-          action={createCategoryAction}
-          className="h-fit rounded-[2rem] bg-white p-6 shadow-sm"
-        >
+        <form action={createCategoryAction} className="h-fit rounded-[2rem] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold">Nova categoria</h2>
 
           <div className="mt-6 grid gap-4">
@@ -101,11 +113,7 @@ export default async function AdminCategoriesPage() {
 
                 <div className="flex items-end">
                   <label className="flex h-12 items-center gap-2 rounded-2xl border border-black/10 px-4 text-sm font-bold">
-                    <input
-                      name="isActive"
-                      type="checkbox"
-                      defaultChecked={category.isActive}
-                    />
+                    <input name="isActive" type="checkbox" defaultChecked={category.isActive} />
                     Ativa
                   </label>
                 </div>

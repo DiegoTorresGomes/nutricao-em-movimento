@@ -5,7 +5,7 @@
   headline: "Nutrição real para uma vida em movimento.",
   description:
     "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva para quem busca saúde, constância e equilíbrio sem radicalismos.",
-  instagramUrl: "https://instagram.com/",
+  instagramUrl: "https://www.instagram.com/nutri_lyn_weverlynalves",
   disclaimer:
     "As informações deste site têm caráter educativo e não substituem avaliação individualizada com nutricionista.",
 };

@@ -40,7 +40,17 @@ export default async function AdminArticlesPage() {
                 {post.category.name}
               </p>
               <h2 className="mt-2 text-xl font-semibold">{post.title}</h2>
-              <p className="mt-1 text-sm text-neutral-500">{post.status}</p>
+              <div className="mt-2 flex flex-wrap gap-3 text-sm text-neutral-500">
+                <span>{post.status}</span>
+                <span>•</span>
+                <span>{post.views} visualizações</span>
+                {post.isArticleOfWeek && (
+                  <>
+                    <span>•</span>
+                    <span className="font-bold text-[#556B2F]">Artigo da semana</span>
+                  </>
+                )}
+              </div>
             </div>
 
             <div className="flex gap-4">

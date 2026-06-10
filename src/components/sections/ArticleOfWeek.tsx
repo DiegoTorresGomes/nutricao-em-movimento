@@ -1,32 +1,57 @@
+import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-export function ArticleOfWeek() {
+type ArticleOfWeekProps = {
+  article: {
+    slug: string;
+    title: string;
+    description: string;
+    coverImage?: string | null;
+    category: {
+      name: string;
+    };
+  } | null;
+};
+
+export function ArticleOfWeek({ article }: ArticleOfWeekProps) {
+  if (!article) {
+    return null;
+  }
+
   return (
-    <section className="bg-[#faf8f4] px-6 py-24">
+    <section className="bg-white px-4 py-16 sm:px-6 md:py-20">
       <div className="mx-auto max-w-7xl">
-        <SectionLabel>Artigo da semana</SectionLabel>
+        <div className="mb-10 max-w-3xl">
+          <SectionLabel>Artigo da semana</SectionLabel>
 
-        <div className="mt-8 overflow-hidden rounded-[36px] border border-black/5 bg-white shadow-sm">
-          <div className="grid lg:grid-cols-2">
-            <div className="min-h-[420px] bg-[#E7DDCF]" />
+          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl md:text-5xl">
+            {article.title}
+          </h2>
+        </div>
 
-            <div className="flex flex-col justify-center p-8 lg:p-14">
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D67A5A]">
-                Comportamento alimentar
-              </span>
+        <div className="grid overflow-hidden rounded-[2rem] border border-black/5 bg-[#FAF8F4] md:grid-cols-[1.05fr_0.95fr]">
+          <div className="min-h-72 bg-[#E9DCC9] md:min-h-[460px]">
+            {article.coverImage ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={article.coverImage}
+                alt={article.title}
+                className="h-full w-full object-cover"
+              />
+            ) : null}
+          </div>
 
-              <h2 className="mt-5 font-serif text-4xl leading-tight lg:text-5xl">
-                Como parar de recomeçar toda segunda-feira.
-              </h2>
+          <div className="flex flex-col justify-center p-6 sm:p-10">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#D67A5A]">
+              {article.category.name}
+            </p>
 
-              <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Entenda por que a motivação não é suficiente para manter hábitos
-                saudáveis e descubra como construir constância sem radicalismo.
-              </p>
+            <h3 className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl">
+              {article.description}
+            </h3>
 
-              <button className="mt-8 w-fit rounded-full bg-black px-8 py-4 text-white transition hover:opacity-90">
-                Ler artigo completo
-              </button>
+            <div className="mt-8">
+              <Button href={`/pt/artigos/${article.slug}`}>Ler artigo</Button>
             </div>
           </div>
         </div>

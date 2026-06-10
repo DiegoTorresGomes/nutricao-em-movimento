@@ -18,6 +18,9 @@ export async function createPostAction(
   const categoryId = String(formData.get("categoryId") || "").trim();
   const readTime = String(formData.get("readTime") || "").trim();
   const status = String(formData.get("status") || "DRAFT");
+  const isArticleOfWeek = formData.get("isArticleOfWeek") === "on";
+  const coverImage = String(formData.get("coverImage") || "").trim();
+  const coverImageAlt = String(formData.get("coverImageAlt") || "").trim();
 
   if (!title || !description || !content || !categoryId) {
     return {
@@ -51,6 +54,17 @@ export async function createPostAction(
     counter++;
   }
 
+  if (isArticleOfWeek) {
+    await prisma.post.updateMany({
+      where: {
+        isArticleOfWeek: true,
+      },
+      data: {
+        isArticleOfWeek: false,
+      },
+    });
+  }
+
   const post = await prisma.post.create({
     data: {
       title,
@@ -64,6 +78,9 @@ export async function createPostAction(
       publishedAt: status === "PUBLISHED" ? new Date() : null,
       authorId: author.id,
       categoryId,
+      isArticleOfWeek,
+      coverImage: coverImage || null,
+      coverImageAlt: coverImageAlt || null,
     },
   });
 

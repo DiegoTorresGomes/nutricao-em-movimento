@@ -7,6 +7,23 @@ type PostStatus = "DRAFT" | "PUBLISHED" | "ARCHIVED";
 
 export async function updatePostAction(id: string, formData: FormData) {
   const status = String(formData.get("status") || "DRAFT") as PostStatus;
+  const isArticleOfWeek = formData.get("isArticleOfWeek") === "on";
+  const coverImage = String(formData.get("coverImage") || "").trim();
+  const coverImageAlt = String(formData.get("coverImageAlt") || "").trim();
+
+  if (isArticleOfWeek) {
+    await prisma.post.updateMany({
+      where: {
+        isArticleOfWeek: true,
+        NOT: {
+          id,
+        },
+      },
+      data: {
+        isArticleOfWeek: false,
+      },
+    });
+  }
 
   await prisma.post.update({
     where: {
@@ -20,6 +37,9 @@ export async function updatePostAction(id: string, formData: FormData) {
       categoryId: String(formData.get("categoryId") || ""),
       status,
       publishedAt: status === "PUBLISHED" ? new Date() : null,
+      isArticleOfWeek,
+      coverImage: coverImage || null,
+      coverImageAlt: coverImageAlt || null,
     },
   });
 

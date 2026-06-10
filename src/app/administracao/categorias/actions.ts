@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import slugify from "slugify";
 import { prisma } from "@/lib/prisma";
+import { redirect } from "next/navigation";
 
 export async function createCategoryAction(formData: FormData) {
   const name = String(formData.get("name") || "").trim();
@@ -67,6 +68,18 @@ export async function updateCategoryAction(id: string, formData: FormData) {
 }
 
 export async function deleteCategoryAction(id: string) {
+  const postsCount = await prisma.post.count({
+    where: {
+      categoryId: id,
+    },
+  });
+
+  if (postsCount > 0) {
+    redirect(
+      "/administracao/categorias?erro=categoria-com-artigos"
+    );
+  }
+
   await prisma.category.delete({
     where: {
       id,
@@ -75,4 +88,6 @@ export async function deleteCategoryAction(id: string) {
 
   revalidatePath("/administracao/categorias");
   revalidatePath("/pt");
+
+  redirect("/administracao/categorias?sucesso=categoria-excluida");
 }

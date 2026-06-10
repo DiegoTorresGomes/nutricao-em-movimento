@@ -5,41 +5,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ArticleCard } from "@/components/ui/ArticleCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-const articles = [
-  {
-    category: "Comportamento alimentar",
-    title: "Como diferenciar fome física de fome emocional",
-    description:
-      "Entenda os sinais do corpo e da mente para construir uma relação mais consciente com a comida.",
-  },
-  {
-    category: "Emagrecimento sustentável",
-    title: "Por que dietas restritivas falham com tanta frequência?",
-    description:
-      "A constância nasce de estratégias possíveis, não de regras extremas que não cabem na rotina.",
-  },
-  {
-    category: "Nutrição esportiva",
-    title: "O que comer antes do treino para ter mais energia?",
-    description:
-      "Aprenda princípios simples para melhorar sua disposição sem complicar sua alimentação.",
-  },
-  {
-    category: "Hábitos e rotina",
-    title: "Como organizar sua alimentação sem viver de marmita sem graça",
-    description:
-      "Pequenas decisões de rotina podem facilitar escolhas melhores sem transformar sua vida em dieta.",
-  },
-  {
-    category: "Saúde mental e alimentação",
-    title: "Quando a ansiedade aparece no prato",
-    description:
-      "Uma reflexão sobre emoções, alimentação e estratégias para reduzir culpa e automatismos.",
-  },
-];
+type CarouselArticle = {
+  slug: string;
+  title: string;
+  description: string;
+  coverImage?: string | null;
+  views?: number;
+  category: {
+    name: string;
+  };
+};
 
-export function ArticleCarousel() {
+type ArticleCarouselProps = {
+  articles: CarouselArticle[];
+};
+
+export function ArticleCarousel({ articles }: ArticleCarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
+
+  if (articles.length === 0) {
+    return null;
+  }
 
   function scrollCarousel(direction: "left" | "right") {
     if (!carouselRef.current) return;
@@ -69,7 +55,7 @@ export function ArticleCarousel() {
               type="button"
               aria-label="Artigos anteriores"
               onClick={() => scrollCarousel("left")}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-[#111111] shadow-sm transition hover:border-[#556B2F] hover:text-[#556B2F]"
+              className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white text-[#111111] shadow-sm transition hover:border-[#556B2F] hover:text-[#556B2F]"
             >
               <ChevronLeft size={18} />
             </button>
@@ -78,7 +64,7 @@ export function ArticleCarousel() {
               type="button"
               aria-label="Próximos artigos"
               onClick={() => scrollCarousel("right")}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-[#111111] shadow-sm transition hover:border-[#556B2F] hover:text-[#556B2F]"
+              className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-black/10 bg-white text-[#111111] shadow-sm transition hover:border-[#556B2F] hover:text-[#556B2F]"
             >
               <ChevronRight size={18} />
             </button>
@@ -90,7 +76,14 @@ export function ArticleCarousel() {
           className="no-scrollbar flex gap-6 overflow-x-auto scroll-smooth pb-2"
         >
           {articles.map((article) => (
-            <ArticleCard key={article.title} {...article} />
+            <ArticleCard
+              key={article.slug}
+              slug={article.slug}
+              title={article.title}
+              description={article.description}
+              category={article.category.name}
+              coverImage={article.coverImage}
+            />
           ))}
         </div>
       </div>

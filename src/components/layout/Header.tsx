@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 import { Menu, Search } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
 
 const menuItems = [
@@ -48,9 +49,9 @@ export function Header() {
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
-            className="hidden h-10 w-10 items-center justify-center rounded-full border border-black/10 text-xs font-black text-[#111111] transition hover:border-[#556B2F] hover:text-[#556B2F] sm:flex"
+            className="hidden h-10 w-10 items-center justify-center rounded-full border border-black/10 text-[#111111] transition hover:border-[#D67A5A] hover:text-[#D67A5A] sm:flex"
           >
-            IG
+            <FaInstagram size={18} />
           </a>
 
           <a

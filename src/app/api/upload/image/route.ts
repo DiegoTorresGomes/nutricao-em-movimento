@@ -25,14 +25,14 @@ export async function POST(request: Request) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    const result = await uploadImage(buffer, folder);
+    const result = await uploadImage(buffer, folder, file.type);
 
     return NextResponse.json({
       url: result.url,
       publicId: result.publicId,
     });
   } catch (error) {
-    console.error(error);
+    console.error("Erro no upload Cloudinary:", error);
 
     return NextResponse.json(
       { error: "Erro ao enviar imagem." },
