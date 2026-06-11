@@ -1,4 +1,5 @@
-﻿import { PublicLayout } from "@/components/layout/PublicLayout";
+﻿import type { Metadata } from "next";
+import { PublicLayout } from "@/components/layout/PublicLayout";
 import { ArticleCarousel } from "@/components/sections/ArticleCarousel";
 import { ArticleOfWeek } from "@/components/sections/ArticleOfWeek";
 import { FeaturedArticles } from "@/components/sections/FeaturedArticles";
@@ -13,6 +14,40 @@ import { getArticleOfWeek } from "@/lib/posts";
 import { getLatestPublishedPosts } from "@/lib/posts";
 import { getMostViewedPosts } from "@/lib/posts";
 import { getHomeSettings } from "@/lib/site-settings";
+
+export const metadata: Metadata = {
+  title: "Nutrição em Movimento",
+  description:
+    "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+
+  alternates: {
+    canonical: "/pt",
+  },
+
+  openGraph: {
+    title: "Nutrição em Movimento",
+    description:
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+    url: "/pt",
+    type: "website",
+    images: [
+      {
+        url: "/images/og/nutricao-em-movimento.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nutrição em Movimento",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Nutrição em Movimento",
+    description:
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+    images: ["/images/og/nutricao-em-movimento.jpg"],
+  },
+};
 
 type HomePageProps = {
   searchParams?: Promise<{
@@ -78,6 +113,18 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     },
   };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Nutrição em Movimento",
+    url: "https://nutricaoemovimento.com",
+    inLanguage: "pt-BR",
+    publisher: {
+      "@type": "Person",
+      name: nutritionistSettings.name,
+    },
+  };
+
   return (
     <PublicLayout>
       <main>
@@ -94,6 +141,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             __html: JSON.stringify(blogSchema),
           }}
         />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         <HomeHero settings={homeSettings} />
         <HomePillars settings={homeSettings} />
         <ArticleOfWeek article={articleOfWeek} />

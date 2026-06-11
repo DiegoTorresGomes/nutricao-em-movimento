@@ -38,10 +38,6 @@ export const metadata: Metadata = {
   creator: "Weverlyn da Cruz Alves Torres",
   publisher: "Nutrição em Movimento",
 
-  alternates: {
-    canonical: "/pt",
-  },
-
   openGraph: {
     type: "website",
     locale: "pt_BR",

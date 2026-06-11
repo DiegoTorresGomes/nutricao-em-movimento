@@ -1,4 +1,39 @@
+import type { Metadata } from "next";
 import { PublicLayout } from "@/components/layout/PublicLayout";
+
+export const metadata: Metadata = {
+  title: "Sobre",
+  description:
+    "Conheça o Nutrição em Movimento e a proposta de uma nutrição com ciência, acolhimento e constância.",
+
+  alternates: {
+    canonical: "/pt/sobre",
+  },
+
+  openGraph: {
+    title: "Sobre | Nutrição em Movimento",
+    description:
+      "Conheça o Nutrição em Movimento e a proposta de uma nutrição com ciência, acolhimento e constância.",
+    url: "/pt/sobre",
+    type: "website",
+    images: [
+      {
+        url: "/images/og/nutricao-em-movimento.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nutrição em Movimento",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sobre | Nutrição em Movimento",
+    description:
+      "Conheça o Nutrição em Movimento e a proposta de uma nutrição com ciência, acolhimento e constância.",
+    images: ["/images/og/nutricao-em-movimento.jpg"],
+  },
+};
 
 export default function SobrePage() {
   return (
@@ -32,3 +67,4 @@ export default function SobrePage() {
     </PublicLayout>
   );
 }
+

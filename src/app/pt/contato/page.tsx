@@ -1,5 +1,40 @@
+import type { Metadata } from "next";
 import { PublicLayout } from "@/components/layout/PublicLayout";
 import { sendContactMessageAction } from "./actions";
+
+export const metadata: Metadata = {
+  title: "Contato",
+  description:
+    "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+
+  alternates: {
+    canonical: "/pt/contato",
+  },
+
+  openGraph: {
+    title: "Contato | Nutrição em Movimento",
+    description:
+      "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+    url: "/pt/contato",
+    type: "website",
+    images: [
+      {
+        url: "/images/og/nutricao-em-movimento.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nutrição em Movimento",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contato | Nutrição em Movimento",
+    description:
+      "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+    images: ["/images/og/nutricao-em-movimento.jpg"],
+  },
+};
 
 type ContatoPageProps = {
   searchParams?: Promise<{
@@ -13,13 +48,9 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
   return (
     <PublicLayout>
       <main className="mx-auto max-w-5xl px-6 py-20">
-        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#556B2F]">
-          Contato
-        </p>
+        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#556B2F]">Contato</p>
 
-        <h1 className="mt-5 text-5xl font-semibold">
-          Fale com a nutricionista.
-        </h1>
+        <h1 className="mt-5 text-5xl font-semibold">Fale com a nutricionista.</h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-700">
           Envie sua mensagem para dúvidas, consultas, parcerias ou orientações iniciais.
