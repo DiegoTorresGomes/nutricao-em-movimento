@@ -15,16 +15,65 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Nutrição em Movimento",
+  metadataBase: new URL("https://nutricaoemovimento.com"),
+
+  title: {
+    default: "Nutrição em Movimento",
+    template: "%s | Nutrição em Movimento",
+  },
+
   description:
-    "Comportamento alimentar, emagrecimento sustentável e nutrição esportiva para uma vida mais leve e ativa.",
+    "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva para quem busca saúde, constância e equilíbrio sem radicalismos.",
+
+  applicationName: "Nutrição em Movimento",
+
+  authors: [
+    {
+      name: "Weverlyn da Cruz Alves Torres",
+      url: "https://nutricaoemovimento.com/pt/sobre",
+    },
+  ],
+
+  creator: "Weverlyn da Cruz Alves Torres",
+  publisher: "Nutrição em Movimento",
+
+  alternates: {
+    canonical: "/pt",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://nutricaoemovimento.com/pt",
+    siteName: "Nutrição em Movimento",
+    title: "Nutrição em Movimento",
+    description:
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+    images: [
+      {
+        url: "/images/og/nutricao-em-movimento.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nutrição em Movimento",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Nutrição em Movimento",
+    description:
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+    images: ["/images/og/nutricao-em-movimento.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <body className={`${playfair.variable} ${lato.variable}`}>{children}</body>

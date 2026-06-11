@@ -20,13 +20,18 @@ async function main() {
   const adminEmail = "admin@nutricaoemovimento.com";
   const adminPassword = process.env.SEED_ADMIN_PASSWORD || "change-me-before-production";
 
+  const adminPasswordHash = await bcrypt.hash(adminPassword, 10);
+
   const admin = await prisma.user.upsert({
     where: { email: adminEmail },
-    update: {},
+    update: {
+      passwordHash: adminPasswordHash,
+      role: "ADMIN",
+    },
     create: {
       name: "Administrador",
       email: adminEmail,
-      passwordHash: await bcrypt.hash(adminPassword, 10),
+      passwordHash: adminPasswordHash,
       role: "ADMIN",
     },
   });

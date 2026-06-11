@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PublicLayout } from "@/components/layout/PublicLayout";
 import { NewsletterSection } from "@/components/sections/NewsletterSection";
@@ -11,6 +12,57 @@ type ArticlePageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const article = await getPublishedPostBySlug(slug);
+
+  if (!article) {
+    return {
+      title: "Artigo não encontrado",
+    };
+  }
+
+  const articleUrl = `/pt/artigos/${article.slug}`;
+  const imageUrl = article.coverImage || "/images/og/nutricao-em-movimento.jpg";
+
+  return {
+    title: article.title,
+    description: article.description,
+
+    alternates: {
+      canonical: articleUrl,
+    },
+
+    openGraph: {
+      type: "article",
+      locale: "pt_BR",
+      url: articleUrl,
+      siteName: "Nutrição em Movimento",
+      title: article.title,
+      description: article.description,
+      publishedTime: article.publishedAt?.toISOString(),
+      modifiedTime: article.updatedAt.toISOString(),
+      authors: ["Weverlyn da Cruz Alves Torres"],
+      section: article.category.name,
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: article.coverImageAlt || article.title,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [imageUrl],
+    },
+  };
+}
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
@@ -34,9 +86,49 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    image: article.coverImage
+      ? [article.coverImage]
+      : ["https://nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"],
+    datePublished: article.publishedAt?.toISOString(),
+    dateModified: article.updatedAt.toISOString(),
+    author: {
+      "@type": "Person",
+      name: nutritionistSettings.name,
+      jobTitle: nutritionistSettings.role,
+      url: "https://nutricaoemovimento.com/pt/sobre",
+      image: nutritionistSettings.photoUrl
+        ? `https://nutricaoemovimento.com${nutritionistSettings.photoUrl}`
+        : undefined,
+      sameAs: [nutritionistSettings.instagramUrl],
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Nutrição em Movimento",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://nutricaoemovimento.com/pt/artigos/${article.slug}`,
+    },
+  };
+
   return (
     <PublicLayout>
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(articleJsonLd),
+          }}
+        />
         <article>
           <header className="bg-[#FAF8F4] px-4 py-16 sm:px-6 md:py-24">
             <div className="mx-auto max-w-4xl">

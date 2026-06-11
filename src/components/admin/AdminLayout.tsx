@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { destroySession, getSession } from "@/lib/auth";
+import { LogoutButton } from "@/components/admin/LogoutButton";
 
 type AdminLayoutProps = {
   children: React.ReactNode;
@@ -6,13 +9,22 @@ type AdminLayoutProps = {
 
 const menuItems = [
   { label: "Dashboard", href: "/administracao" },
+  { label: "Home", href: "/administracao/home" },
   { label: "Artigos", href: "/administracao/artigos" },
   { label: "Novo artigo", href: "/administracao/artigos/novo" },
   { label: "Categorias", href: "/administracao/categorias" },
   { label: "Nutricionista", href: "/administracao/nutricionista" },
+  { label: "Segurança", href: "/administracao/seguranca" },
+  { label: "Newsletter", href: "/administracao/newsletter" },
+
 ];
 
-export function AdminLayout({ children }: AdminLayoutProps) {
+export async function AdminLayout({ children }: AdminLayoutProps) {
+  const session = await getSession();
+
+  if (!session) {
+    redirect("/login");
+  }
   return (
     <div className="min-h-screen bg-[#F6F2EA] text-[#111111]">
       <aside className="fixed left-0 top-0 hidden h-screen w-72 border-r border-black/5 bg-[#111111] p-6 text-white lg:block">
@@ -34,6 +46,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
             </Link>
           ))}
         </nav>
+        <div className="absolute bottom-6 left-6 right-6">
+          <LogoutButton />
+        </div>
       </aside>
 
       <main className="lg:pl-72">

@@ -23,6 +23,10 @@ model User {
   email        String   @unique
   passwordHash String
   role         UserRole @default(ADMIN)
+
+  twoFactorEnabled Boolean @default(false)
+  twoFactorSecret  String?
+
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
@@ -82,4 +86,12 @@ model SiteSetting {
   value     String   @db.LongText
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String   @db.LongText
+  createdAt DateTime @default(now())
 }
