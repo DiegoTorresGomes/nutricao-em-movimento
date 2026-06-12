@@ -45,7 +45,7 @@ export function ArticleCarousel({ articles }: ArticleCarouselProps) {
           <div>
             <SectionLabel>Carrossel editorial</SectionLabel>
 
-            <h2 className="mt-5 text-3xl font-semibold sm:text-4xl md:text-5xl">
+            <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
               Conteúdos para continuar lendo.
             </h2>
           </div>

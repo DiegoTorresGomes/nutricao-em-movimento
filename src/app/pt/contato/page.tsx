@@ -5,7 +5,7 @@ import { sendContactMessageAction } from "./actions";
 export const metadata: Metadata = {
   title: "Contato",
   description:
-    "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+    "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
 
   alternates: {
     canonical: "/pt/contato",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contato | Nutrição em Movimento",
     description:
-      "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+      "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
     url: "/pt/contato",
     type: "website",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contato | Nutrição em Movimento",
     description:
-      "Entre em contato com a nutricionista para dúvidas, consultas, parcerias ou orientações iniciais.",
+      "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
     images: ["/images/og/nutricao-em-movimento.jpg"],
   },
 };
@@ -47,16 +47,21 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
 
   return (
     <PublicLayout>
-      <main className="mx-auto max-w-5xl px-6 py-20">
-        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#556B2F]">Contato</p>
-
-        <h1 className="mt-5 text-5xl font-semibold">Fale com a nutricionista.</h1>
-
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-700">
-          Envie sua mensagem para dúvidas, consultas, parcerias ou orientações iniciais.
+      <main className="mx-auto max-w-5xl px-4 py-14 sm:px-6 md:py-20">
+        <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#556B2F]">
+          Contato
         </p>
 
-        <div className="mt-10 grid gap-8 rounded-[2rem] bg-[#FAF8F4] p-6 sm:p-8 md:grid-cols-[0.9fr_1.1fr]">
+        <h1 className="mt-5 max-w-4xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          Fale com a nutricionista.
+        </h1>
+
+        <p className="mt-5 max-w-2xl text-base leading-7 text-neutral-700 sm:text-lg sm:leading-8">
+          Envie sua mensagem para dúvidas, consultas, parcerias ou orientações
+          iniciais.
+        </p>
+
+        <div className="mt-10 grid gap-8 rounded-[1.75rem] bg-[#FAF8F4] p-5 sm:p-8 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <h2 className="text-2xl font-semibold">Canais oficiais</h2>
 
@@ -108,7 +113,7 @@ export default async function ContatoPage({ searchParams }: ContatoPageProps) {
               <textarea
                 name="message"
                 required
-                rows={6}
+                rows={5}
                 className="rounded-2xl border border-black/10 bg-white p-4 text-sm outline-none focus:border-[#556B2F]"
               />
             </div>

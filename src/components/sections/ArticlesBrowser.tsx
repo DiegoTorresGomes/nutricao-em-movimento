@@ -8,6 +8,7 @@ type Post = {
   slug: string;
   title: string;
   description: string;
+  coverImage?: string | null;
   category: {
     name: string;
   };
@@ -43,7 +44,7 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
   }, [activeFilter, search, posts]);
 
   return (
-    <section className="bg-white px-4 py-10 sm:px-6">
+    <section className="bg-white px-4 py-12 sm:px-6 md:py-16">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap gap-3">
@@ -77,21 +78,30 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredArticles.map((article) => (
             <Link
               key={article.slug}
               href={`/pt/artigos/${article.slug}`}
-              className="group overflow-hidden rounded-[2rem] border border-black/5 bg-[#FAF8F4] transition hover:-translate-y-1 hover:shadow-md"
+              className="group overflow-hidden rounded-[1.75rem] border border-black/5 bg-[#FAF8F4] transition hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="h-56 bg-[#E9DCC9]" />
+              <div className="h-48 bg-[#E9DCC9] sm:h-52">
+                {article.coverImage ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={article.coverImage}
+                    alt={article.title}
+                    className="h-full w-full object-cover"
+                  />
+                ) : null}
+              </div>
 
-              <div className="p-6">
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#D67A5A]">
+              <div className="p-5 sm:p-6">
+                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
                   {article.category.name}
                 </p>
 
-                <h3 className="mt-4 text-2xl font-semibold leading-tight">
+                <h3 className="mt-4 text-xl font-semibold leading-tight sm:text-2xl">
                   {article.title}
                 </h3>
 
@@ -99,7 +109,7 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
                   {article.description}
                 </p>
 
-                <span className="mt-6 inline-flex font-semibold text-[#556B2F]">
+                <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
                   Ler artigo
                 </span>
               </div>
@@ -108,7 +118,7 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
         </div>
 
         {filteredArticles.length === 0 && (
-          <div className="mt-12 rounded-[2rem] bg-[#FAF8F4] p-8 text-center text-neutral-600">
+          <div className="mt-10 rounded-[1.75rem] bg-[#FAF8F4] p-8 text-center text-neutral-600">
             Nenhum artigo encontrado para essa busca.
           </div>
         )}

@@ -55,7 +55,7 @@ export function Header() {
           </a>
 
           <a
-            href="#newsletter"
+            href="/pt#newsletter"
             className="hidden rounded-full bg-[#111111] px-5 py-2.5 text-sm font-bold !text-white transition hover:bg-[#556B2F] lg:inline-flex"
           >
             Newsletter
