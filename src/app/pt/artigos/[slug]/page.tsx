@@ -122,7 +122,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <PublicLayout>
-      <main>
+      <main className="overflow-x-hidden">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -173,11 +173,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
           </section>
 
-          <section className="px-4 py-10 sm:px-6 md:py-14">
-            <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
-              <div className="max-w-3xl">
+          <section className="px-4 py-8 sm:px-6 md:py-14">
+            <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,1fr)_320px]">
+              <div className="min-w-0 max-w-3xl">
                 <div
-                  className="article-content space-y-7 text-lg leading-9 text-neutral-800"
+                  className="article-content space-y-6 text-base leading-8 text-neutral-800 sm:text-lg sm:leading-9"
                   dangerouslySetInnerHTML={{ __html: article.content }}
                 />
               </div>

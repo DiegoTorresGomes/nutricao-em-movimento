@@ -8,17 +8,17 @@ export function NewsletterSection({ status }: NewsletterSectionProps) {
   return (
     <section
       id="newsletter"
-      className="bg-[#111111] px-4 py-16 text-white sm:px-6 md:py-20"
+      className="w-full overflow-x-hidden bg-[#111111] px-4 py-14 text-white sm:px-6 md:py-20"
     >
-      <div className="mx-auto max-w-7xl">
-        <div className="rounded-[2rem] bg-[#FAF8F4] p-6 text-[#111111] sm:p-10 md:p-12">
+      <div className="mx-auto w-full max-w-7xl">
+        <div className="w-full rounded-[1.75rem] bg-[#FAF8F4] p-5 text-[#111111] sm:p-10 md:p-12">
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#556B2F]">
                 Newsletter
               </p>
 
-              <h2 className="mt-5 text-3xl font-semibold sm:text-4xl md:text-5xl">
+              <h2 className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
                 Receba conteúdos para construir constância.
               </h2>
 
