@@ -79,13 +79,11 @@ iframe {
 }
 
 .article-content table {
-  display: block;
   width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
   border-collapse: collapse;
   margin: 2rem 0;
-  border-radius: 1.25rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
   background: #faf8f4;
 }
 
@@ -109,7 +107,6 @@ iframe {
 .article-content th {
   background: #e9dcc9;
   font-weight: 700;
-  color: #111111;
 }
 
 .article-content td {
