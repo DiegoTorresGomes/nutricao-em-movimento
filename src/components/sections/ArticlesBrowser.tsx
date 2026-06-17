@@ -18,26 +18,30 @@ type ArticlesBrowserProps = {
   posts: Post[];
 };
 
-const filters = [
-  "Todos",
-  "Comportamento alimentar",
-  "Emagrecimento sustentável",
-  "Nutrição esportiva",
-];
-
 export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
   const [activeFilter, setActiveFilter] = useState("Todos");
   const [search, setSearch] = useState("");
 
+  const filters = useMemo(() => {
+    const categories = posts
+      .map((post) => post.category.name)
+      .filter((category, index, array) => array.indexOf(category) === index);
+
+    return ["Todos", ...categories];
+  }, [posts]);
+
   const filteredArticles = useMemo(() => {
+    const normalizedSearch = search.trim().toLowerCase();
+
     return posts.filter((article) => {
       const matchesFilter =
         activeFilter === "Todos" || article.category.name === activeFilter;
 
       const matchesSearch =
-        article.title.toLowerCase().includes(search.toLowerCase()) ||
-        article.description.toLowerCase().includes(search.toLowerCase()) ||
-        article.category.name.toLowerCase().includes(search.toLowerCase());
+        normalizedSearch.length === 0 ||
+        article.title.toLowerCase().includes(normalizedSearch) ||
+        article.description.toLowerCase().includes(normalizedSearch) ||
+        article.category.name.toLowerCase().includes(normalizedSearch);
 
       return matchesFilter && matchesSearch;
     });
@@ -69,6 +73,7 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
               size={18}
               className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400"
             />
+
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
@@ -83,36 +88,38 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
             <Link
               key={article.slug}
               href={`/pt/artigos/${article.slug}`}
-              className="group overflow-hidden rounded-[1.75rem] border border-black/5 bg-[#FAF8F4] transition hover:-translate-y-1 hover:shadow-md"
+              className="group flex overflow-hidden rounded-[1.75rem] border border-black/5 bg-[#FAF8F4] transition hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="h-48 bg-[#E9DCC9] sm:h-52">
-                {article.coverImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={article.coverImage}
-                    alt={article.title}
-                    className="h-full w-full object-cover"
-                  />
-                ) : null}
-              </div>
+              <article className="flex w-full flex-col">
+                <div className="h-52 shrink-0 overflow-hidden bg-[#E9DCC9]">
+                  {article.coverImage ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={article.coverImage}
+                      alt={article.title}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  ) : null}
+                </div>
 
-              <div className="p-5 sm:p-6">
-                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
-                  {article.category.name}
-                </p>
+                <div className="relative z-10 flex flex-1 flex-col bg-[#FAF8F4] p-5 sm:p-6">
+                  <p className="line-clamp-1 text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
+                    {article.category.name}
+                  </p>
 
-                <h3 className="mt-4 text-xl font-semibold leading-tight sm:text-2xl">
-                  {article.title}
-                </h3>
+                  <h3 className="mt-4 line-clamp-3 text-xl font-semibold leading-tight sm:text-2xl">
+                    {article.title}
+                  </h3>
 
-                <p className="mt-4 text-sm leading-7 text-neutral-600">
-                  {article.description}
-                </p>
+                  <p className="mt-4 line-clamp-4 flex-1 text-sm leading-7 text-neutral-600">
+                    {article.description}
+                  </p>
 
-                <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
-                  Ler artigo
-                </span>
-              </div>
+                  <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
+                    Ler artigo
+                  </span>
+                </div>
+              </article>
             </Link>
           ))}
         </div>

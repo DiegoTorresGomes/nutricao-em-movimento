@@ -20,15 +20,19 @@ export function ArticleCard({
       href={`/pt/artigos/${slug}`}
       className="group flex min-h-[460px] min-w-[300px] max-w-[340px] flex-col overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:min-w-[340px]"
     >
-      <div className="h-44 shrink-0 bg-[#E9DCC9] sm:h-48">
+      <div className="h-48 shrink-0 overflow-hidden bg-[#E9DCC9]">
         {coverImage ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={coverImage} alt={title} className="h-full w-full object-cover" />
+          <img
+            src={coverImage}
+            alt={title}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          />
         ) : null}
       </div>
 
-      <div className="flex flex-1 flex-col p-6">
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
+      <div className="relative z-10 flex flex-1 flex-col bg-white p-6">
+        <p className="line-clamp-1 text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
           {category}
         </p>
 

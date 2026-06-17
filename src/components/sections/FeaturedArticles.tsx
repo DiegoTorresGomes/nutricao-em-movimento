@@ -43,36 +43,38 @@ export function FeaturedArticles({ articles }: FeaturedArticlesProps) {
             <Link
               key={article.slug}
               href={`/pt/artigos/${article.slug}`}
-              className="group overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              className="group flex overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="h-48 bg-[#E9DCC9]">
-                {article.coverImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={article.coverImage}
-                    alt={article.title}
-                    className="h-full w-full object-cover"
-                  />
-                ) : null}
-              </div>
+              <article className="flex w-full flex-col">
+                <div className="h-52 shrink-0 overflow-hidden bg-[#E9DCC9]">
+                  {article.coverImage ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={article.coverImage}
+                      alt={article.title}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  ) : null}
+                </div>
 
-              <div className="p-6">
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#D67A5A]">
-                  {article.category.name}
-                </p>
+                <div className="relative z-10 flex flex-1 flex-col bg-white p-6">
+                  <p className="line-clamp-1 text-[11px] font-bold uppercase tracking-[0.22em] text-[#D67A5A]">
+                    {article.category.name}
+                  </p>
 
-                <h3 className="mt-4 text-2xl font-semibold leading-tight">
-                  {article.title}
-                </h3>
+                  <h3 className="mt-4 line-clamp-3 text-2xl font-semibold leading-tight">
+                    {article.title}
+                  </h3>
 
-                <p className="mt-4 text-sm leading-7 text-neutral-700">
-                  {article.description}
-                </p>
+                  <p className="mt-4 line-clamp-4 flex-1 text-sm leading-7 text-neutral-700">
+                    {article.description}
+                  </p>
 
-                <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
-                  Ler artigo
-                </span>
-              </div>
+                  <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
+                    Ler artigo
+                  </span>
+                </div>
+              </article>
             </Link>
           ))}
         </div>
