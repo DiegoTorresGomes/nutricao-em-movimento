@@ -29,6 +29,9 @@ export async function updatePostAction(id: string, formData: FormData) {
   const isArticleOfWeek = formData.get("isArticleOfWeek") === "on";
   const coverImage = String(formData.get("coverImage") || "").trim();
   const coverImageAlt = String(formData.get("coverImageAlt") || "").trim();
+  const desktopReviewed = formData.get("desktopReviewed") === "on";
+  const tabletReviewed = formData.get("tabletReviewed") === "on";
+  const mobileReviewed = formData.get("mobileReviewed") === "on";
 
   const rawContent = String(formData.get("content") || "").trim();
   const contentBlocks = parseContentBlocks(formData.get("contentBlocks"));
@@ -64,6 +67,9 @@ export async function updatePostAction(id: string, formData: FormData) {
     },
     data: {
       title: String(formData.get("title") || ""),
+      desktopReviewed,
+      tabletReviewed,
+      mobileReviewed,
       description: String(formData.get("description") || ""),
       content: generatedContent,
       contentBlocks:

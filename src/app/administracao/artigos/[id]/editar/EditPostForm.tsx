@@ -26,6 +26,9 @@ type Post = {
   seoDescription: string | null;
   focusKeyword: string | null;
   scheduledAt: Date | null;
+  desktopReviewed: boolean;
+  tabletReviewed: boolean;
+  mobileReviewed: boolean;
 };
 
 type EditPostFormProps = {
@@ -253,6 +256,25 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <input name="isArticleOfWeek" type="checkbox" defaultChecked={post.isArticleOfWeek} />
         Definir como Artigo da Semana
       </label>
+
+      <div className="grid gap-3 rounded-2xl border border-black/10 p-4">
+        <p className="text-sm font-bold">Revisão de preview</p>
+
+        <label className="flex items-center gap-3 text-sm font-bold">
+          <input name="desktopReviewed" type="checkbox" defaultChecked={post.desktopReviewed} />
+          Preview Desktop revisado
+        </label>
+
+        <label className="flex items-center gap-3 text-sm font-bold">
+          <input name="tabletReviewed" type="checkbox" defaultChecked={post.tabletReviewed} />
+          Preview Tablet revisado
+        </label>
+
+        <label className="flex items-center gap-3 text-sm font-bold">
+          <input name="mobileReviewed" type="checkbox" defaultChecked={post.mobileReviewed} />
+          Preview Mobile revisado
+        </label>
+      </div>
 
       <div className="grid gap-2">
         <label className="text-sm font-bold">Status</label>

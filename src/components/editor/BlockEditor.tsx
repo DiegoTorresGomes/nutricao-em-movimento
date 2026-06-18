@@ -258,6 +258,7 @@ export function BlockEditor({
 
   const serializedBlocks = useMemo(() => JSON.stringify(blocks), [blocks]);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
+  const [isHomePreviewOpen, setIsHomePreviewOpen] = useState(false);
   const [previewMode, setPreviewMode] = useState<"desktop" | "tablet" | "mobile">("desktop");
 
   const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
@@ -995,6 +996,14 @@ export function BlockEditor({
         </button>
       </div>
 
+      <button
+        type="button"
+        onClick={() => setIsHomePreviewOpen(true)}
+        className="w-fit rounded-full border border-black/10 bg-white px-5 py-2.5 text-sm font-bold text-[#111111] transition hover:border-[#556B2F] hover:text-[#556B2F]"
+      >
+        Visualizar card da Home
+      </button>
+
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {blockButtons.map((button) => (
           <button
@@ -1243,6 +1252,60 @@ export function BlockEditor({
                     )}
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isHomePreviewOpen && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm">
+          <div className="w-full max-w-xl rounded-[2rem] bg-white p-6 shadow-2xl">
+            <div className="mb-5 flex items-center justify-between gap-4">
+              <div>
+                <p className="text-sm font-bold">Prévia do card da Home</p>
+                <p className="mt-1 text-xs text-neutral-500">
+                  Veja como o artigo aparecerá nos blocos de artigos do site.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setIsHomePreviewOpen(false)}
+                className="rounded-full border border-black/10 px-4 py-2 text-xs font-bold"
+              >
+                Fechar
+              </button>
+            </div>
+
+            <div className="overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm">
+              <div className="h-48 bg-[#E9DCC9]">
+                {previewData?.coverImage ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={previewData.coverImage}
+                    alt={previewData.title || "Capa do artigo"}
+                    className="h-full w-full object-cover"
+                  />
+                ) : null}
+              </div>
+
+              <div className="p-6">
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#D67A5A]">
+                  {previewData?.categoryName || "Categoria"}
+                </p>
+
+                <h3 className="mt-4 text-2xl font-semibold leading-tight">
+                  {previewData?.title || "Título do artigo"}
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-neutral-700">
+                  {previewData?.description || "Descrição/resumo do artigo aparecerá aqui."}
+                </p>
+
+                <span className="mt-6 inline-flex text-sm font-bold text-[#556B2F]">
+                  Ler artigo
+                </span>
               </div>
             </div>
           </div>

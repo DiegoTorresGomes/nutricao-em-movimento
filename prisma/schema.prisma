@@ -75,6 +75,7 @@ model Post {
   lastPreviewAt   DateTime?
   mobileReviewed  Boolean  @default(false)
   desktopReviewed Boolean  @default(false)
+  tabletReviewed  Boolean  @default(false)
 
   authorId   String
   categoryId String

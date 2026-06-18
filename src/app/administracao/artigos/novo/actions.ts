@@ -46,6 +46,10 @@ export async function createPostAction(
   const focusKeyword = String(formData.get("focusKeyword") || "").trim();
   const scheduledAtValue = String(formData.get("scheduledAt") || "").trim();
 
+  const desktopReviewed = formData.get("desktopReviewed") === "on";
+  const tabletReviewed = formData.get("tabletReviewed") === "on";
+  const mobileReviewed = formData.get("mobileReviewed") === "on";
+
   const contentBlocks = parseContentBlocks(formData.get("contentBlocks"));
   const generatedContent =
     contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent;
@@ -109,6 +113,9 @@ export async function createPostAction(
       title,
       slug,
       description,
+      desktopReviewed,
+      tabletReviewed,
+      mobileReviewed,
       subtitle: description,
       content: generatedContent,
       contentBlocks:
