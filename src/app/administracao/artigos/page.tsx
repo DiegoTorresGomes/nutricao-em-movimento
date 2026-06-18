@@ -54,9 +54,21 @@ export default async function AdminArticlesPage() {
             </div>
 
             <div className="flex gap-4">
-              <Link href={`/pt/artigos/${post.slug}`} className="text-sm font-bold text-[#556B2F]">
-                Ver
-              </Link>
+              {post.status === "PUBLISHED" ? (
+                <Link
+                  href={`/pt/artigos/${post.slug}`}
+                  className="text-sm font-bold text-[#556B2F]"
+                >
+                  Ver
+                </Link>
+              ) : (
+                <Link
+                  href={`/administracao/artigos/${post.id}/editar`}
+                  className="text-sm font-bold text-[#556B2F]"
+                >
+                  Continuar edição
+                </Link>
+              )}
 
               <Link
                 href={`/administracao/artigos/${post.id}/editar`}
