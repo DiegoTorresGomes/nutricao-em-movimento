@@ -246,7 +246,9 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
   const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
 
   const serializedBlocks = useMemo(() => JSON.stringify(blocks), [blocks]);
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [previewMode, setPreviewMode] = useState<"desktop" | "mobile">("desktop");
+
   const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
 
   function addBlock(type: EditorBlockType, label?: string) {
@@ -962,68 +964,24 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
 
   return (
     <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-[#FAF8F4] p-5">
-      <div className="grid gap-4 rounded-[1.5rem] border border-black/10 bg-white p-4">
-        <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
-          <div>
-            <p className="text-sm font-bold">Pré-visualização do conteúdo</p>
-            <p className="mt-1 text-xs leading-5 text-neutral-500">
-              Veja como os blocos serão renderizados no artigo.
-            </p>
-          </div>
-
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={() => setPreviewMode("desktop")}
-              className={`rounded-full px-4 py-2 text-xs font-bold ${
-                previewMode === "desktop"
-                  ? "bg-[#111111] !text-white"
-                  : "border border-black/10 bg-white text-[#111111]"
-              }`}
-            >
-              Desktop
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setPreviewMode("mobile")}
-              className={`rounded-full px-4 py-2 text-xs font-bold ${
-                previewMode === "mobile"
-                  ? "bg-[#111111] !text-white"
-                  : "border border-black/10 bg-white text-[#111111]"
-              }`}
-            >
-              Mobile
-            </button>
-          </div>
-        </div>
-
-        <div className="overflow-x-auto rounded-[1.5rem] bg-[#FAF8F4] p-4">
-          <div
-            className={`mx-auto rounded-[1.5rem] bg-white p-5 shadow-sm ${
-              previewMode === "mobile" ? "max-w-[390px]" : "max-w-3xl"
-            }`}
-          >
-            {blocks.length === 0 ? (
-              <p className="text-center text-sm text-neutral-500">
-                Adicione blocos para visualizar o conteúdo.
-              </p>
-            ) : (
-              <div
-                className="article-content text-lg leading-9 text-neutral-800"
-                dangerouslySetInnerHTML={{ __html: previewHtml }}
-              />
-            )}
-          </div>
-        </div>
-      </div>
       <input type="hidden" name={name} value={serializedBlocks} />
 
-      <div>
-        <p className="text-sm font-bold">Editor visual</p>
-        <p className="mt-1 text-xs leading-5 text-neutral-500">
-          Monte o artigo por blocos. O sistema vai gerar o HTML padronizado do blog automaticamente.
-        </p>
+      <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+        <div>
+          <p className="text-sm font-bold">Editor visual</p>
+          <p className="mt-1 text-xs leading-5 text-neutral-500">
+            Monte o artigo por blocos. O sistema vai gerar o HTML padronizado do blog
+            automaticamente.
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => setIsPreviewOpen(true)}
+          className="w-fit rounded-full bg-[#111111] px-5 py-2.5 text-sm font-bold !text-white transition hover:bg-[#556B2F]"
+        >
+          Visualizar artigo
+        </button>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -1130,6 +1088,73 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
           </div>
         ))}
       </div>
+      {isPreviewOpen && (
+        <div className="fixed inset-0 z-[9999] bg-black/60 p-4 backdrop-blur-sm">
+          <div className="mx-auto flex h-full max-w-6xl flex-col overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+            <div className="flex flex-col justify-between gap-3 border-b border-black/10 p-4 sm:flex-row sm:items-center">
+              <div>
+                <p className="text-sm font-bold">Pré-visualização do artigo</p>
+                <p className="mt-1 text-xs text-neutral-500">
+                  Confira como o conteúdo será exibido antes de publicar.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={() => setPreviewMode("desktop")}
+                  className={`rounded-full px-4 py-2 text-xs font-bold ${
+                    previewMode === "desktop"
+                      ? "bg-[#111111] !text-white"
+                      : "border border-black/10 bg-white text-[#111111]"
+                  }`}
+                >
+                  Desktop
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setPreviewMode("mobile")}
+                  className={`rounded-full px-4 py-2 text-xs font-bold ${
+                    previewMode === "mobile"
+                      ? "bg-[#111111] !text-white"
+                      : "border border-black/10 bg-white text-[#111111]"
+                  }`}
+                >
+                  Mobile
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setIsPreviewOpen(false)}
+                  className="rounded-full border border-black/10 bg-white px-4 py-2 text-xs font-bold text-[#111111] transition hover:border-red-300 hover:text-red-700"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+
+            <div className="flex-1 overflow-y-auto bg-[#FAF8F4] p-4 sm:p-6">
+              <div
+                className={`mx-auto min-h-full rounded-[1.5rem] bg-white p-5 shadow-sm sm:p-8 ${
+                  previewMode === "mobile" ? "max-w-[390px]" : "max-w-3xl"
+                }`}
+              >
+                {blocks.length === 0 ? (
+                  <p className="text-center text-sm text-neutral-500">
+                    Adicione blocos para visualizar o conteúdo.
+                  </p>
+                ) : (
+                  <div
+                    className="article-content text-lg leading-9 text-neutral-800"
+                    dangerouslySetInnerHTML={{ __html: previewHtml }}
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
