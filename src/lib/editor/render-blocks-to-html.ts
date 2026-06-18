@@ -156,6 +156,23 @@ ${items
 <h2>Referências sugeridas</h2>
 ${renderList(Array.isArray(data.items) ? data.items : [], false)}`;
 
+        case "exercise": {
+          const steps = Array.isArray(data.steps) ? data.steps : [];
+
+          return `
+<div style="background:#F5FAF3;border:1px solid #D8E8D1;border-radius:22px;padding:22px;margin:28px 0;">
+  <h3 style="margin:0 0 12px;color:#556B2F;font-size:22px;line-height:1.25;">🧘 ${escapeHtml(
+    data.title || "Exercício rápido"
+  )}</h3>
+  ${
+    data.description
+      ? `<p style="margin:0 0 16px;line-height:1.8;">${escapeHtml(data.description)}</p>`
+      : ""
+  }
+  ${renderList(steps, true)}
+</div>`;
+        }
+
         default:
           return "";
       }

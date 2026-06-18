@@ -55,6 +55,11 @@ const blockButtons: BlockButton[] = [
     type: "comparisonCard",
     description: "Comparação lado a lado",
   },
+  {
+    label: "Exercício",
+    type: "exercise",
+    description: "Passo a passo prático",
+  },
 ];
 
 function createBlock(type: EditorBlockType, label?: string): EditorBlock {
@@ -129,6 +134,18 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
         leftItems: [""],
         rightTitle: "Lado B",
         rightItems: [""],
+      },
+    };
+  }
+
+  if (type === "exercise") {
+    return {
+      id,
+      type,
+      data: {
+        title: "Exercício rápido",
+        description: "",
+        steps: [""],
       },
     };
   }
@@ -440,9 +457,7 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
       current.map((block) => {
         if (block.id !== blockId) return block;
 
-        const leftItems = Array.isArray(block.data.leftItems)
-          ? [...block.data.leftItems]
-          : [];
+        const leftItems = Array.isArray(block.data.leftItems) ? [...block.data.leftItems] : [];
 
         return {
           ...block,
@@ -460,9 +475,7 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
       current.map((block) => {
         if (block.id !== blockId) return block;
 
-        const rightItems = Array.isArray(block.data.rightItems)
-          ? [...block.data.rightItems]
-          : [];
+        const rightItems = Array.isArray(block.data.rightItems) ? [...block.data.rightItems] : [];
 
         return {
           ...block,
@@ -480,9 +493,7 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
       current.map((block) => {
         if (block.id !== blockId) return block;
 
-        const leftItems = Array.isArray(block.data.leftItems)
-          ? [...block.data.leftItems]
-          : [];
+        const leftItems = Array.isArray(block.data.leftItems) ? [...block.data.leftItems] : [];
         leftItems[index] = value;
 
         return {
@@ -501,9 +512,7 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
       current.map((block) => {
         if (block.id !== blockId) return block;
 
-        const rightItems = Array.isArray(block.data.rightItems)
-          ? [...block.data.rightItems]
-          : [];
+        const rightItems = Array.isArray(block.data.rightItems) ? [...block.data.rightItems] : [];
         rightItems[index] = value;
 
         return {
@@ -511,6 +520,94 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
           data: {
             ...block.data,
             rightItems,
+          },
+        };
+      })
+    );
+  }
+
+  function updateExerciseTitle(blockId: string, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            title: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateExerciseDescription(blockId: string, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            description: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateExerciseStep(blockId: string, stepIndex: number, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const steps = Array.isArray(block.data.steps) ? [...block.data.steps] : [];
+
+        steps[stepIndex] = value;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            steps,
+          },
+        };
+      })
+    );
+  }
+
+  function addExerciseStep(blockId: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const steps = Array.isArray(block.data.steps) ? [...block.data.steps] : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            steps: [...steps, ""],
+          },
+        };
+      })
+    );
+  }
+
+  function removeExerciseStep(blockId: string, stepIndex: number) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const steps = Array.isArray(block.data.steps) ? [...block.data.steps] : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            steps: steps.filter((_, index) => index !== stepIndex),
           },
         };
       })
@@ -610,6 +707,11 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
               addComparisonRightItem,
               updateComparisonLeftItem,
               updateComparisonRightItem,
+              updateExerciseTitle,
+              updateExerciseDescription,
+              updateExerciseStep,
+              addExerciseStep,
+              removeExerciseStep,
             })}
           </div>
         ))}
@@ -655,6 +757,11 @@ type RenderBlockEditorProps = {
   addComparisonRightItem: (blockId: string) => void;
   updateComparisonLeftItem: (blockId: string, index: number, value: string) => void;
   updateComparisonRightItem: (blockId: string, index: number, value: string) => void;
+  updateExerciseTitle: (blockId: string, value: string) => void;
+  updateExerciseDescription: (blockId: string, value: string) => void;
+  updateExerciseStep: (blockId: string, stepIndex: number, value: string) => void;
+  addExerciseStep: (blockId: string) => void;
+  removeExerciseStep: (blockId: string, stepIndex: number) => void;
 };
 
 function renderBlockEditor({
@@ -677,6 +784,11 @@ function renderBlockEditor({
   addComparisonRightItem,
   updateComparisonLeftItem,
   updateComparisonRightItem,
+  updateExerciseTitle,
+  updateExerciseDescription,
+  updateExerciseStep,
+  addExerciseStep,
+  removeExerciseStep,
 }: RenderBlockEditorProps) {
   if (block.type === "heading" || block.type === "paragraph") {
     return (
@@ -894,6 +1006,69 @@ function renderBlockEditor({
               + Item direito
             </button>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "exercise") {
+    const steps = Array.isArray(block.data.steps) ? block.data.steps : [];
+
+    return (
+      <div className="grid gap-4 rounded-2xl border border-[#D8E8D1] bg-[#F5FAF3] p-4">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Título do exercício
+          </label>
+          <input
+            value={String(block.data.title || "")}
+            onChange={(event) => updateExerciseTitle(block.id, event.target.value)}
+            placeholder="Exercício rápido"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Descrição opcional
+          </label>
+          <textarea
+            value={String(block.data.description || "")}
+            onChange={(event) => updateExerciseDescription(block.id, event.target.value)}
+            rows={3}
+            placeholder="Explique rapidamente quando ou como usar este exercício..."
+            className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="grid gap-3">
+          {steps.map((step, index) => (
+            <div key={index} className="flex gap-2">
+              <input
+                value={String(step || "")}
+                onChange={(event) => updateExerciseStep(block.id, index, event.target.value)}
+                placeholder={`Passo ${index + 1}`}
+                className="h-12 flex-1 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+              />
+
+              <button
+                type="button"
+                onClick={() => removeExerciseStep(block.id, index)}
+                disabled={steps.length <= 1}
+                className="rounded-2xl border border-red-200 bg-red-50 px-4 text-xs font-bold text-red-700 disabled:opacity-40"
+              >
+                Remover
+              </button>
+            </div>
+          ))}
+
+          <button
+            type="button"
+            onClick={() => addExerciseStep(block.id)}
+            className="w-fit rounded-full border border-[#D8E8D1] bg-white px-4 py-2 text-xs font-bold text-[#556B2F] transition hover:bg-[#EEF6EA]"
+          >
+            + Adicionar passo
+          </button>
         </div>
       </div>
     );

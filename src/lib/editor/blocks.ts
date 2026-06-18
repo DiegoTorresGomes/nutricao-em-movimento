@@ -8,6 +8,7 @@ export type EditorBlockType =
   | "infoCard"
   | "comparisonCard"
   | "faq"
+  | "exercise"
   | "relatedArticle"
   | "cta"
   | "authorNote"
