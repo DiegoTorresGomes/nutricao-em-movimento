@@ -21,6 +21,11 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
   const [isUploadingCover, setIsUploadingCover] = useState(false);
   const [useLegacyHtml, setUseLegacyHtml] = useState(false);
 
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [categoryName, setCategoryName] = useState("");
+  const [readTime, setReadTime] = useState("");
+
   async function handleCoverUpload(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
 
@@ -69,6 +74,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               required
               placeholder="Ex: Como diferenciar fome física de fome emocional"
               className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+              value={title}
+              onChange={(event) => setTitle(event.target.value)}
             />
           </div>
 
@@ -80,6 +87,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               rows={3}
               placeholder="Resumo curto que aparecerá nos cards e no Google."
               className="rounded-2xl border border-black/10 bg-white p-4 text-sm outline-none focus:border-[#556B2F]"
+              value={description}
+              onChange={(event) => setDescription(event.target.value)}
             />
           </div>
 
@@ -90,6 +99,13 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
                 name="categoryId"
                 required
                 className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+                onChange={(event) => {
+                  const selectedCategory = categories.find(
+                    (category) => category.id === event.target.value
+                  );
+
+                  setCategoryName(selectedCategory?.name ?? "");
+                }}
               >
                 <option value="">Selecione uma categoria</option>
                 {categories.map((category) => (
@@ -106,6 +122,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
                 name="readTime"
                 placeholder="Ex: 5 min de leitura"
                 className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+                value={readTime}
+                onChange={(event) => setReadTime(event.target.value)}
               />
             </div>
           </div>
@@ -154,11 +172,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
             <div className="aspect-[16/10] overflow-hidden rounded-[2rem] bg-[#E9DCC9]">
               {coverImage ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={coverImage}
-                  alt="Capa do artigo"
-                  className="h-full w-full object-cover"
-                />
+                <img src={coverImage} alt="Capa do artigo" className="h-full w-full object-cover" />
               ) : null}
             </div>
 
@@ -227,14 +241,17 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
             </div>
           ) : (
             <>
-              <BlockEditor />
-
-              <textarea
-                name="content"
-                defaultValue=""
-                className="hidden"
-                aria-hidden="true"
+              <BlockEditor
+                previewData={{
+                  title,
+                  description,
+                  categoryName,
+                  coverImage,
+                  readTime: readTime || "5 min de leitura",
+                }}
               />
+
+              <textarea name="content" defaultValue="" className="hidden" aria-hidden="true" />
             </>
           )}
         </div>

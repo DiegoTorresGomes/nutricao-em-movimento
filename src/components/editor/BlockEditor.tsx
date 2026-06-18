@@ -7,6 +7,13 @@ import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
 type BlockEditorProps = {
   name?: string;
   initialBlocks?: EditorBlock[];
+  previewData?: {
+    title?: string;
+    description?: string;
+    categoryName?: string;
+    coverImage?: string;
+    readTime?: string;
+  };
 };
 
 type BlockButton = {
@@ -242,7 +249,11 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
   };
 }
 
-export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: BlockEditorProps) {
+export function BlockEditor({
+  name = "contentBlocks",
+  initialBlocks = [],
+  previewData,
+}: BlockEditorProps) {
   const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
 
   const serializedBlocks = useMemo(() => JSON.stringify(blocks), [blocks]);
@@ -1089,13 +1100,6 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
         ))}
       </div>
 
-      <div className="mb-4 flex justify-center">
-        <span className="rounded-full bg-[#FAF8F4] px-4 py-2 text-xs font-bold text-neutral-600">
-          {previewMode === "desktop" && "🖥️ Visualização Desktop"}
-          {previewMode === "tablet" && "📱 Visualização Tablet"}
-          {previewMode === "mobile" && "📲 Visualização Mobile"}
-        </span>
-      </div>
       {isPreviewOpen && (
         <div className="fixed inset-0 z-[9999] bg-black/60 p-4 backdrop-blur-sm">
           <div className="mx-auto flex h-full max-w-6xl flex-col overflow-hidden rounded-[2rem] bg-white shadow-2xl">
@@ -1108,6 +1112,12 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
               </div>
 
               <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-[#FAF8F4] px-4 py-2 text-xs font-bold text-neutral-600">
+                  {previewMode === "desktop" && "🖥️ Visualização Desktop"}
+                  {previewMode === "tablet" && "📱 Visualização Tablet"}
+                  {previewMode === "mobile" && "📲 Visualização Mobile"}
+                </span>
+
                 <button
                   type="button"
                   onClick={() => setPreviewMode("desktop")}
@@ -1164,16 +1174,61 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
                       : "max-w-3xl"
                 }`}
               >
-                {blocks.length === 0 ? (
-                  <p className="text-center text-sm text-neutral-500">
-                    Adicione blocos para visualizar o conteúdo.
-                  </p>
-                ) : (
-                  <div
-                    className="article-content text-lg leading-9 text-neutral-800"
-                    dangerouslySetInnerHTML={{ __html: previewHtml }}
-                  />
-                )}
+                <div>
+                  <header className="rounded-[1.5rem] bg-[#FAF8F4] p-5 sm:p-8">
+                    <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#D67A5A]">
+                      {previewData?.categoryName || "Categoria"}
+                    </p>
+
+                    <h1 className="mt-5 text-3xl font-semibold leading-tight sm:text-5xl">
+                      {previewData?.title || "Título do artigo"}
+                    </h1>
+
+                    <p className="mt-5 text-base leading-8 text-neutral-700 sm:text-lg">
+                      {previewData?.description || "Descrição/resumo do artigo aparecerá aqui."}
+                    </p>
+
+                    <div className="mt-6 flex flex-wrap gap-3 text-sm text-neutral-500">
+                      <span>
+                        {new Intl.DateTimeFormat("pt-BR", {
+                          day: "2-digit",
+                          month: "long",
+                          year: "numeric",
+                        }).format(new Date())}
+                      </span>
+                      <span>•</span>
+                      <span>{previewData?.readTime || "5 min de leitura"}</span>
+                    </div>
+                  </header>
+
+                  <div className="mt-6 overflow-hidden rounded-[1.5rem] bg-[#E9DCC9]">
+                    {previewData?.coverImage ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={previewData.coverImage}
+                        alt={previewData.title || "Capa do artigo"}
+                        className="h-auto w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex min-h-[220px] items-center justify-center p-6 text-center text-sm text-neutral-500">
+                        Capa do artigo
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="mt-8">
+                    {blocks.length === 0 ? (
+                      <p className="text-center text-sm text-neutral-500">
+                        Adicione blocos para visualizar o conteúdo.
+                      </p>
+                    ) : (
+                      <div
+                        className="article-content text-lg leading-9 text-neutral-800"
+                        dangerouslySetInnerHTML={{ __html: previewHtml }}
+                      />
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
