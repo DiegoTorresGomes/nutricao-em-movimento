@@ -1,12 +1,31 @@
 "use server";
 
+import { Prisma } from "@prisma/client";
 import { redirect } from "next/navigation";
 import slugify from "slugify";
 import { prisma } from "@/lib/prisma";
+import type { EditorBlock } from "@/lib/editor/blocks";
+import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
 
 type CreatePostState = {
   error?: string;
 };
+
+function parseContentBlocks(value: FormDataEntryValue | null): EditorBlock[] {
+  if (!value) return [];
+
+  try {
+    const parsed = JSON.parse(String(value));
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    return parsed as EditorBlock[];
+  } catch {
+    return [];
+  }
+}
 
 export async function createPostAction(
   _prevState: CreatePostState,
@@ -14,7 +33,7 @@ export async function createPostAction(
 ): Promise<CreatePostState> {
   const title = String(formData.get("title") || "").trim();
   const description = String(formData.get("description") || "").trim();
-  const content = String(formData.get("content") || "").trim();
+  const rawContent = String(formData.get("content") || "").trim();
   const categoryId = String(formData.get("categoryId") || "").trim();
   const readTime = String(formData.get("readTime") || "").trim();
   const status = String(formData.get("status") || "DRAFT");
@@ -22,9 +41,24 @@ export async function createPostAction(
   const coverImage = String(formData.get("coverImage") || "").trim();
   const coverImageAlt = String(formData.get("coverImageAlt") || "").trim();
 
-  if (!title || !description || !content || !categoryId) {
+  const seoTitle = String(formData.get("seoTitle") || "").trim();
+  const seoDescription = String(formData.get("seoDescription") || "").trim();
+  const focusKeyword = String(formData.get("focusKeyword") || "").trim();
+  const scheduledAtValue = String(formData.get("scheduledAt") || "").trim();
+
+  const contentBlocks = parseContentBlocks(formData.get("contentBlocks"));
+  const generatedContent =
+    contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent;
+
+  if (!title || !description || !generatedContent || !categoryId) {
     return {
       error: "Preencha título, descrição, conteúdo e categoria.",
+    };
+  }
+
+  if (status === "SCHEDULED" && !scheduledAtValue) {
+    return {
+      error: "Para agendar o artigo, informe data e horário de publicação.",
     };
   }
 
@@ -65,17 +99,29 @@ export async function createPostAction(
     });
   }
 
-  const post = await prisma.post.create({
+  const normalizedStatus =
+    status === "PUBLISHED" || status === "REVIEW" || status === "SCHEDULED" || status === "ARCHIVED"
+      ? status
+      : "DRAFT";
+
+  await prisma.post.create({
     data: {
       title,
       slug,
       description,
       subtitle: description,
-      content,
+      content: generatedContent,
+      contentBlocks:
+        contentBlocks.length > 0 ? (contentBlocks as unknown as Prisma.InputJsonValue) : undefined,
+      seoTitle: seoTitle || null,
+      seoDescription: seoDescription || null,
+      focusKeyword: focusKeyword || null,
       readTime: readTime || "5 min de leitura",
-      status: status === "PUBLISHED" ? "PUBLISHED" : "DRAFT",
+      status: normalizedStatus,
       language: "pt",
-      publishedAt: status === "PUBLISHED" ? new Date() : null,
+      publishedAt: normalizedStatus === "PUBLISHED" ? new Date() : null,
+      scheduledAt:
+        normalizedStatus === "SCHEDULED" && scheduledAtValue ? new Date(scheduledAtValue) : null,
       authorId: author.id,
       categoryId,
       isArticleOfWeek,
@@ -84,5 +130,5 @@ export async function createPostAction(
     },
   });
 
-  redirect(`/administracao/artigos`);
+  redirect("/administracao/artigos");
 }

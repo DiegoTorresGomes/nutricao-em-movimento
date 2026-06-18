@@ -18,7 +18,7 @@ type Post = {
   isArticleOfWeek: boolean;
   coverImage: string | null;
   coverImageAlt: string | null;
-  status: "DRAFT" | "PUBLISHED" | "ARCHIVED";
+  status: "DRAFT" | "REVIEW" | "SCHEDULED" | "PUBLISHED" | "ARCHIVED";
 };
 
 type EditPostFormProps = {
@@ -166,6 +166,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
           className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
         >
           <option value="DRAFT">Rascunho</option>
+          <option value="REVIEW">Em revisão</option>
+          <option value="SCHEDULED">Agendado</option>
           <option value="PUBLISHED">Publicado</option>
           <option value="ARCHIVED">Arquivado</option>
         </select>

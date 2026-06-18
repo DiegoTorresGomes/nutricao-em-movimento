@@ -8,6 +8,8 @@ datasource db {
 
 enum PostStatus {
   DRAFT
+  REVIEW
+  SCHEDULED
   PUBLISHED
   ARCHIVED
 }
@@ -64,6 +66,15 @@ model Post {
   publishedAt     DateTime?
   createdAt       DateTime   @default(now())
   updatedAt       DateTime   @updatedAt
+
+  contentBlocks   Json?
+  seoTitle        String?
+  seoDescription  String?
+  focusKeyword    String?
+  scheduledAt     DateTime?
+  lastPreviewAt   DateTime?
+  mobileReviewed  Boolean  @default(false)
+  desktopReviewed Boolean  @default(false)
 
   authorId   String
   categoryId String
