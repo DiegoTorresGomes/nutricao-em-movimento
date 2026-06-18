@@ -247,7 +247,7 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
 
   const serializedBlocks = useMemo(() => JSON.stringify(blocks), [blocks]);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
-  const [previewMode, setPreviewMode] = useState<"desktop" | "mobile">("desktop");
+  const [previewMode, setPreviewMode] = useState<"desktop" | "tablet" | "mobile">("desktop");
 
   const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
 
@@ -1088,6 +1088,14 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
           </div>
         ))}
       </div>
+
+      <div className="mb-4 flex justify-center">
+        <span className="rounded-full bg-[#FAF8F4] px-4 py-2 text-xs font-bold text-neutral-600">
+          {previewMode === "desktop" && "🖥️ Visualização Desktop"}
+          {previewMode === "tablet" && "📱 Visualização Tablet"}
+          {previewMode === "mobile" && "📲 Visualização Mobile"}
+        </span>
+      </div>
       {isPreviewOpen && (
         <div className="fixed inset-0 z-[9999] bg-black/60 p-4 backdrop-blur-sm">
           <div className="mx-auto flex h-full max-w-6xl flex-col overflow-hidden rounded-[2rem] bg-white shadow-2xl">
@@ -1114,6 +1122,18 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
 
                 <button
                   type="button"
+                  onClick={() => setPreviewMode("tablet")}
+                  className={`rounded-full px-4 py-2 text-xs font-bold ${
+                    previewMode === "tablet"
+                      ? "bg-[#111111] !text-white"
+                      : "border border-black/10 bg-white text-[#111111]"
+                  }`}
+                >
+                  Tablet
+                </button>
+
+                <button
+                  type="button"
                   onClick={() => setPreviewMode("mobile")}
                   className={`rounded-full px-4 py-2 text-xs font-bold ${
                     previewMode === "mobile"
@@ -1136,8 +1156,12 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
 
             <div className="flex-1 overflow-y-auto bg-[#FAF8F4] p-4 sm:p-6">
               <div
-                className={`mx-auto min-h-full rounded-[1.5rem] bg-white p-5 shadow-sm sm:p-8 ${
-                  previewMode === "mobile" ? "max-w-[390px]" : "max-w-3xl"
+                className={`mx-auto rounded-[1.5rem] bg-white p-5 shadow-sm sm:p-8 ${
+                  previewMode === "mobile"
+                    ? "max-w-[390px]"
+                    : previewMode === "tablet"
+                      ? "max-w-[768px]"
+                      : "max-w-3xl"
                 }`}
               >
                 {blocks.length === 0 ? (
