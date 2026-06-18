@@ -1168,10 +1168,10 @@ export function BlockEditor({
               <div
                 className={`mx-auto rounded-[1.5rem] bg-white p-5 shadow-sm sm:p-8 ${
                   previewMode === "mobile"
-                    ? "max-w-[390px]"
+                    ? "max-w-[390px] text-[0.95rem]"
                     : previewMode === "tablet"
-                      ? "max-w-[720px]"
-                      : "max-w-[980px]"
+                      ? "max-w-[720px] text-[1rem]"
+                      : "max-w-[1040px] text-[1.05rem]"
                 }`}
               >
                 <div>
@@ -1180,7 +1180,15 @@ export function BlockEditor({
                       {previewData?.categoryName || "Categoria"}
                     </p>
 
-                    <h1 className="mt-5 text-3xl font-semibold leading-tight sm:text-5xl">
+                    <h1
+                      className={`mt-5 font-semibold leading-tight ${
+                        previewMode === "mobile"
+                          ? "text-3xl"
+                          : previewMode === "tablet"
+                            ? "text-4xl"
+                            : "text-5xl"
+                      }`}
+                    >
                       {previewData?.title || "Título do artigo"}
                     </h1>
 
