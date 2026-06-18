@@ -45,6 +45,11 @@ const blockButtons: BlockButton[] = [
     type: "summary",
     description: "Box com pontos principais do artigo",
   },
+  {
+    label: "FAQ",
+    type: "faq",
+    description: "Perguntas frequentes com respostas",
+  },
 ];
 
 function createBlock(type: EditorBlockType, label?: string): EditorBlock {
@@ -91,6 +96,20 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
       data: {
         title: "Resumo rápido",
         items: [""],
+      },
+    };
+  }
+  if (type === "faq") {
+    return {
+      id,
+      type,
+      data: {
+        items: [
+          {
+            question: "",
+            answer: "",
+          },
+        ],
       },
     };
   }
@@ -280,6 +299,75 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
     );
   }
 
+  function updateFaqItem(
+    blockId: string,
+    itemIndex: number,
+    field: "question" | "answer",
+    value: string
+  ) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const items = Array.isArray(block.data.items) ? [...block.data.items] : [];
+
+        const currentItem =
+          typeof items[itemIndex] === "object" && items[itemIndex] !== null
+            ? (items[itemIndex] as { question?: string; answer?: string })
+            : { question: "", answer: "" };
+
+        items[itemIndex] = {
+          ...currentItem,
+          [field]: value,
+        };
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            items,
+          },
+        };
+      })
+    );
+  }
+
+  function addFaqItem(blockId: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const items = Array.isArray(block.data.items) ? [...block.data.items] : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            items: [...items, { question: "", answer: "" }],
+          },
+        };
+      })
+    );
+  }
+
+  function removeFaqItem(blockId: string, itemIndex: number) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const items = Array.isArray(block.data.items) ? [...block.data.items] : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            items: items.filter((_, index) => index !== itemIndex),
+          },
+        };
+      })
+    );
+  }
+
   return (
     <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-[#FAF8F4] p-5">
       <input type="hidden" name={name} value={serializedBlocks} />
@@ -363,6 +451,9 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
               updateSummaryItem,
               addSummaryItem,
               removeSummaryItem,
+              updateFaqItem,
+              addFaqItem,
+              removeFaqItem,
             })}
           </div>
         ))}
@@ -393,6 +484,14 @@ type RenderBlockEditorProps = {
   updateSummaryItem: (blockId: string, itemIndex: number, value: string) => void;
   addSummaryItem: (blockId: string) => void;
   removeSummaryItem: (blockId: string, itemIndex: number) => void;
+  updateFaqItem: (
+    blockId: string,
+    itemIndex: number,
+    field: "question" | "answer",
+    value: string
+  ) => void;
+  addFaqItem: (blockId: string) => void;
+  removeFaqItem: (blockId: string, itemIndex: number) => void;
 };
 
 function renderBlockEditor({
@@ -405,6 +504,9 @@ function renderBlockEditor({
   updateSummaryItem,
   addSummaryItem,
   removeSummaryItem,
+  updateFaqItem,
+  addFaqItem,
+  removeFaqItem,
 }: RenderBlockEditorProps) {
   if (block.type === "heading" || block.type === "paragraph") {
     return (
@@ -502,6 +604,63 @@ function renderBlockEditor({
             + Adicionar ponto
           </button>
         </div>
+      </div>
+    );
+  }
+
+  if (block.type === "faq") {
+    const items = Array.isArray(block.data.items) ? block.data.items : [];
+
+    return (
+      <div className="grid gap-4 rounded-2xl border border-black/10 bg-[#FAF8F4] p-4">
+        {items.map((item, index) => {
+          const faqItem =
+            typeof item === "object" && item !== null
+              ? (item as { question?: string; answer?: string })
+              : { question: "", answer: "" };
+
+          return (
+            <div key={index} className="grid gap-3 rounded-2xl border border-black/10 bg-white p-4">
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+                  Pergunta {index + 1}
+                </p>
+
+                <button
+                  type="button"
+                  onClick={() => removeFaqItem(block.id, index)}
+                  disabled={items.length <= 1}
+                  className="rounded-full border border-red-200 bg-red-50 px-3 py-2 text-xs font-bold text-red-700 disabled:opacity-40"
+                >
+                  Remover
+                </button>
+              </div>
+
+              <input
+                value={faqItem.question ?? ""}
+                onChange={(event) => updateFaqItem(block.id, index, "question", event.target.value)}
+                placeholder="Digite a pergunta..."
+                className="h-12 rounded-2xl border border-black/10 bg-[#FAF8F4] px-4 text-sm outline-none focus:border-[#556B2F]"
+              />
+
+              <textarea
+                value={faqItem.answer ?? ""}
+                onChange={(event) => updateFaqItem(block.id, index, "answer", event.target.value)}
+                rows={4}
+                placeholder="Digite a resposta..."
+                className="rounded-2xl border border-black/10 bg-[#FAF8F4] p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+              />
+            </div>
+          );
+        })}
+
+        <button
+          type="button"
+          onClick={() => addFaqItem(block.id)}
+          className="w-fit rounded-full border border-black/10 bg-white px-4 py-2 text-xs font-bold transition hover:border-[#556B2F] hover:text-[#556B2F]"
+        >
+          + Adicionar pergunta
+        </button>
       </div>
     );
   }
