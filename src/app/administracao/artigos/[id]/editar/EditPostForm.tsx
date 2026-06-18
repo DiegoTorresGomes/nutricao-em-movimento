@@ -190,7 +190,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <div className="grid gap-2">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <div>
-              <label className="text-sm font-bold">Conteúdo do artigo</label>
+              <label className="text-sm font-bold"></label>
               <p className="mt-1 text-xs text-neutral-500">
                 Use o editor visual para montar o artigo sem HTML.
               </p>

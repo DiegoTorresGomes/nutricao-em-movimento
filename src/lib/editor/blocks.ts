@@ -19,3 +19,4 @@ export type EditorBlock = {
   type: EditorBlockType;
   data: Record<string, unknown>;
 };
+
