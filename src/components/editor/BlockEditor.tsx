@@ -1287,19 +1287,23 @@ export function BlockEditor({
                     alt={previewData.title || "Capa do artigo"}
                     className="h-full w-full object-cover"
                   />
-                ) : null}
+                ) : (
+                  <div className="flex h-full items-center justify-center text-sm text-neutral-500">
+                    Capa do artigo
+                  </div>
+                )}
               </div>
 
-              <div className="p-6">
+              <div className="bg-white p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#D67A5A]">
                   {previewData?.categoryName || "Categoria"}
                 </p>
 
-                <h3 className="mt-4 text-2xl font-semibold leading-tight">
+                <h3 className="mt-4 line-clamp-3 text-2xl font-semibold leading-tight text-[#111111]">
                   {previewData?.title || "Título do artigo"}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-neutral-700">
+                <p className="mt-4 line-clamp-4 text-sm leading-7 text-neutral-700">
                   {previewData?.description || "Descrição/resumo do artigo aparecerá aqui."}
                 </p>
 
