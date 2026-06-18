@@ -1170,8 +1170,8 @@ export function BlockEditor({
                   previewMode === "mobile"
                     ? "max-w-[390px]"
                     : previewMode === "tablet"
-                      ? "max-w-[768px]"
-                      : "max-w-3xl"
+                      ? "max-w-[720px]"
+                      : "max-w-[980px]"
                 }`}
               >
                 <div>
@@ -1201,19 +1201,25 @@ export function BlockEditor({
                     </div>
                   </header>
 
-                  <div className="mt-6 overflow-hidden rounded-[1.5rem] bg-[#E9DCC9]">
-                    {previewData?.coverImage ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={previewData.coverImage}
-                        alt={previewData.title || "Capa do artigo"}
-                        className="h-auto w-full object-cover"
-                      />
-                    ) : (
-                      <div className="flex min-h-[220px] items-center justify-center p-6 text-center text-sm text-neutral-500">
-                        Capa do artigo
-                      </div>
-                    )}
+                  <div className="mt-6">
+                    <div
+                      className={`overflow-hidden rounded-[1.5rem] bg-[#E9DCC9] ${
+                        previewMode === "mobile" ? "aspect-[4/3]" : "aspect-[16/9]"
+                      }`}
+                    >
+                      {previewData?.coverImage ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={previewData.coverImage}
+                          alt={previewData.title || "Capa do artigo"}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <div className="flex h-full items-center justify-center p-6 text-center text-sm text-neutral-500">
+                          Capa do artigo
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <div className="mt-8">
