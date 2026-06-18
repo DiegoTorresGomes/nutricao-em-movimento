@@ -13,7 +13,8 @@ export type EditorBlockType =
   | "cta"
   | "authorNote"
   | "disclaimer"
-  | "references";
+  | "references"
+  | "table";
 
 export type EditorBlock = {
   id: string;

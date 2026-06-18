@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { EditorBlock, EditorBlockType } from "@/lib/editor/blocks";
+import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
 
 type BlockEditorProps = {
   name?: string;
@@ -59,6 +60,31 @@ const blockButtons: BlockButton[] = [
     label: "Exercício",
     type: "exercise",
     description: "Passo a passo prático",
+  },
+  {
+    label: "Destaque",
+    type: "infoCard",
+    description: "Box de destaque ou observação importante",
+  },
+  {
+    label: "Leia também",
+    type: "relatedArticle",
+    description: "Link estratégico para outro artigo",
+  },
+  {
+    label: "CTA",
+    type: "cta",
+    description: "Chamada para newsletter, consultas ou ação",
+  },
+  {
+    label: "Imagem",
+    type: "image",
+    description: "Imagem interna com legenda e texto alternativo",
+  },
+  {
+    label: "Tabela",
+    type: "table",
+    description: "Tabela responsiva para comparações e dados",
   },
 ];
 
@@ -149,6 +175,65 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
       },
     };
   }
+  if (type === "infoCard") {
+    return {
+      id,
+      type,
+      data: {
+        title: "Importante",
+        text: "",
+      },
+    };
+  }
+
+  if (type === "relatedArticle") {
+    return {
+      id,
+      type,
+      data: {
+        title: "Leia também",
+        text: "Continue aprendendo com este conteúdo relacionado:",
+        linkText: "",
+        href: "",
+      },
+    };
+  }
+  if (type === "cta") {
+    return {
+      id,
+      type,
+      data: {
+        title: "Quer receber mais conteúdos como este?",
+        text: "Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.",
+        buttonText: "Inscreva-se na newsletter",
+        href: "/pt#newsletter",
+      },
+    };
+  }
+
+  if (type === "image") {
+    return {
+      id,
+      type,
+      data: {
+        url: "",
+        alt: "",
+        caption: "",
+      },
+    };
+  }
+
+  if (type === "table") {
+    return {
+      id,
+      type,
+      data: {
+        caption: "",
+        headers: ["Coluna 1", "Coluna 2"],
+        rows: [["", ""]],
+      },
+    };
+  }
 
   return {
     id,
@@ -161,6 +246,8 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
   const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
 
   const serializedBlocks = useMemo(() => JSON.stringify(blocks), [blocks]);
+  const [previewMode, setPreviewMode] = useState<"desktop" | "mobile">("desktop");
+  const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
 
   function addBlock(type: EditorBlockType, label?: string) {
     setBlocks((currentBlocks) => [...currentBlocks, createBlock(type, label)]);
@@ -614,8 +701,322 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
     );
   }
 
+  function updateInfoCardTitle(blockId: string, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            title: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateInfoCardText(blockId: string, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            text: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateRelatedArticleField(
+    blockId: string,
+    field: "title" | "text" | "linkText" | "href",
+    value: string
+  ) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            [field]: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateCtaField(
+    blockId: string,
+    field: "title" | "text" | "buttonText" | "href",
+    value: string
+  ) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            [field]: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateImageField(blockId: string, field: "url" | "alt" | "caption", value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            [field]: value,
+          },
+        };
+      })
+    );
+  }
+
+  async function uploadImageForBlock(blockId: string, file: File) {
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("folder", "nutricao-em-movimento/articles/content");
+
+    const response = await fetch("/api/upload/image", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.url) {
+      updateImageField(blockId, "url", data.url);
+    } else {
+      alert(data.error || "Erro ao enviar imagem.");
+    }
+  }
+
+  function updateTableCaption(blockId: string, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            caption: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateTableHeader(blockId: string, columnIndex: number, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const headers = Array.isArray(block.data.headers) ? [...block.data.headers] : [];
+
+        headers[columnIndex] = value;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            headers,
+          },
+        };
+      })
+    );
+  }
+
+  function updateTableCell(blockId: string, rowIndex: number, columnIndex: number, value: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const rows = Array.isArray(block.data.rows)
+          ? block.data.rows.map((row) => (Array.isArray(row) ? [...row] : []))
+          : [];
+
+        if (!rows[rowIndex]) return block;
+
+        rows[rowIndex][columnIndex] = value;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rows,
+          },
+        };
+      })
+    );
+  }
+
+  function addTableRow(blockId: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const headers = Array.isArray(block.data.headers) ? block.data.headers : [];
+
+        const rows = Array.isArray(block.data.rows)
+          ? block.data.rows.map((row) => (Array.isArray(row) ? [...row] : []))
+          : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rows: [...rows, headers.map(() => "")],
+          },
+        };
+      })
+    );
+  }
+
+  function removeTableRow(blockId: string, rowIndex: number) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const rows = Array.isArray(block.data.rows)
+          ? block.data.rows.map((row) => (Array.isArray(row) ? [...row] : []))
+          : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rows: rows.filter((_, index) => index !== rowIndex),
+          },
+        };
+      })
+    );
+  }
+
+  function addTableColumn(blockId: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const headers = Array.isArray(block.data.headers) ? [...block.data.headers] : [];
+
+        const rows = Array.isArray(block.data.rows)
+          ? block.data.rows.map((row) => (Array.isArray(row) ? [...row] : []))
+          : [];
+
+        const nextHeaders = [...headers, `Coluna ${headers.length + 1}`];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            headers: nextHeaders,
+            rows: rows.map((row) => [...row, ""]),
+          },
+        };
+      })
+    );
+  }
+
+  function removeTableColumn(blockId: string, columnIndex: number) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const headers = Array.isArray(block.data.headers) ? [...block.data.headers] : [];
+
+        const rows = Array.isArray(block.data.rows)
+          ? block.data.rows.map((row) => (Array.isArray(row) ? [...row] : []))
+          : [];
+
+        if (headers.length <= 1) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            headers: headers.filter((_, index) => index !== columnIndex),
+            rows: rows.map((row) => row.filter((_, index) => index !== columnIndex)),
+          },
+        };
+      })
+    );
+  }
+
   return (
     <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-[#FAF8F4] p-5">
+      <div className="grid gap-4 rounded-[1.5rem] border border-black/10 bg-white p-4">
+        <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+          <div>
+            <p className="text-sm font-bold">Pré-visualização do conteúdo</p>
+            <p className="mt-1 text-xs leading-5 text-neutral-500">
+              Veja como os blocos serão renderizados no artigo.
+            </p>
+          </div>
+
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setPreviewMode("desktop")}
+              className={`rounded-full px-4 py-2 text-xs font-bold ${
+                previewMode === "desktop"
+                  ? "bg-[#111111] !text-white"
+                  : "border border-black/10 bg-white text-[#111111]"
+              }`}
+            >
+              Desktop
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setPreviewMode("mobile")}
+              className={`rounded-full px-4 py-2 text-xs font-bold ${
+                previewMode === "mobile"
+                  ? "bg-[#111111] !text-white"
+                  : "border border-black/10 bg-white text-[#111111]"
+              }`}
+            >
+              Mobile
+            </button>
+          </div>
+        </div>
+
+        <div className="overflow-x-auto rounded-[1.5rem] bg-[#FAF8F4] p-4">
+          <div
+            className={`mx-auto rounded-[1.5rem] bg-white p-5 shadow-sm ${
+              previewMode === "mobile" ? "max-w-[390px]" : "max-w-3xl"
+            }`}
+          >
+            {blocks.length === 0 ? (
+              <p className="text-center text-sm text-neutral-500">
+                Adicione blocos para visualizar o conteúdo.
+              </p>
+            ) : (
+              <div
+                className="article-content text-lg leading-9 text-neutral-800"
+                dangerouslySetInnerHTML={{ __html: previewHtml }}
+              />
+            )}
+          </div>
+        </div>
+      </div>
       <input type="hidden" name={name} value={serializedBlocks} />
 
       <div>
@@ -712,6 +1113,19 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
               updateExerciseStep,
               addExerciseStep,
               removeExerciseStep,
+              updateInfoCardTitle,
+              updateInfoCardText,
+              updateRelatedArticleField,
+              updateCtaField,
+              updateImageField,
+              uploadImageForBlock,
+              updateTableCaption,
+              updateTableHeader,
+              updateTableCell,
+              addTableRow,
+              removeTableRow,
+              addTableColumn,
+              removeTableColumn,
             })}
           </div>
         ))}
@@ -762,6 +1176,27 @@ type RenderBlockEditorProps = {
   updateExerciseStep: (blockId: string, stepIndex: number, value: string) => void;
   addExerciseStep: (blockId: string) => void;
   removeExerciseStep: (blockId: string, stepIndex: number) => void;
+  updateInfoCardTitle: (blockId: string, value: string) => void;
+  updateInfoCardText: (blockId: string, value: string) => void;
+  updateRelatedArticleField: (
+    blockId: string,
+    field: "title" | "text" | "linkText" | "href",
+    value: string
+  ) => void;
+  updateCtaField: (
+    blockId: string,
+    field: "title" | "text" | "buttonText" | "href",
+    value: string
+  ) => void;
+  updateImageField: (blockId: string, field: "url" | "alt" | "caption", value: string) => void;
+  uploadImageForBlock: (blockId: string, file: File) => Promise<void>;
+  updateTableCaption: (blockId: string, value: string) => void;
+  updateTableHeader: (blockId: string, columnIndex: number, value: string) => void;
+  updateTableCell: (blockId: string, rowIndex: number, columnIndex: number, value: string) => void;
+  addTableRow: (blockId: string) => void;
+  removeTableRow: (blockId: string, rowIndex: number) => void;
+  addTableColumn: (blockId: string) => void;
+  removeTableColumn: (blockId: string, columnIndex: number) => void;
 };
 
 function renderBlockEditor({
@@ -789,6 +1224,19 @@ function renderBlockEditor({
   updateExerciseStep,
   addExerciseStep,
   removeExerciseStep,
+  updateInfoCardTitle,
+  updateInfoCardText,
+  updateRelatedArticleField,
+  updateCtaField,
+  updateImageField,
+  uploadImageForBlock,
+  updateTableCaption,
+  updateTableHeader,
+  updateTableCell,
+  addTableRow,
+  removeTableRow,
+  addTableColumn,
+  removeTableColumn,
 }: RenderBlockEditorProps) {
   if (block.type === "heading" || block.type === "paragraph") {
     return (
@@ -1068,6 +1516,352 @@ function renderBlockEditor({
             className="w-fit rounded-full border border-[#D8E8D1] bg-white px-4 py-2 text-xs font-bold text-[#556B2F] transition hover:bg-[#EEF6EA]"
           >
             + Adicionar passo
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "infoCard") {
+    return (
+      <div className="grid gap-4 rounded-2xl border border-[#E9DCC9] bg-[#FAF8F4] p-4">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Título do destaque
+          </label>
+
+          <input
+            value={String(block.data.title || "")}
+            onChange={(event) => updateInfoCardTitle(block.id, event.target.value)}
+            placeholder="Importante"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Texto do destaque
+          </label>
+
+          <textarea
+            value={String(block.data.text || "")}
+            onChange={(event) => updateInfoCardText(block.id, event.target.value)}
+            rows={4}
+            placeholder="Digite a observação, alerta ou explicação importante..."
+            className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "relatedArticle") {
+    return (
+      <div className="grid gap-4 rounded-2xl border border-[#F0D7A8] bg-[#FFF8EE] p-4">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+            Título do bloco
+          </label>
+
+          <input
+            value={String(block.data.title || "")}
+            onChange={(event) => updateRelatedArticleField(block.id, "title", event.target.value)}
+            placeholder="Leia também"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+            Texto de apoio
+          </label>
+
+          <textarea
+            value={String(block.data.text || "")}
+            onChange={(event) => updateRelatedArticleField(block.id, "text", event.target.value)}
+            rows={3}
+            placeholder="Texto curto para incentivar a leitura..."
+            className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#8A5A00]"
+          />
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-2">
+            <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+              Texto do link
+            </label>
+
+            <input
+              value={String(block.data.linkText || "")}
+              onChange={(event) =>
+                updateRelatedArticleField(block.id, "linkText", event.target.value)
+              }
+              placeholder="Ex: Leia o artigo sobre fome emocional"
+              className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
+            />
+          </div>
+
+          <div className="grid gap-2">
+            <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+              URL do artigo
+            </label>
+
+            <input
+              value={String(block.data.href || "")}
+              onChange={(event) => updateRelatedArticleField(block.id, "href", event.target.value)}
+              placeholder="/pt/artigos/slug-do-artigo"
+              className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "cta") {
+    return (
+      <div className="grid gap-4 rounded-2xl border border-black/10 bg-[#111111] p-4 text-white">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#E9DCC9]">
+            Título do CTA
+          </label>
+
+          <input
+            value={String(block.data.title || "")}
+            onChange={(event) => updateCtaField(block.id, "title", event.target.value)}
+            placeholder="Quer receber mais conteúdos como este?"
+            className="h-12 rounded-2xl border border-white/10 bg-white px-4 text-sm text-[#111111] outline-none focus:border-[#E9DCC9]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#E9DCC9]">
+            Texto do CTA
+          </label>
+
+          <textarea
+            value={String(block.data.text || "")}
+            onChange={(event) => updateCtaField(block.id, "text", event.target.value)}
+            rows={4}
+            placeholder="Texto curto para incentivar a ação..."
+            className="rounded-2xl border border-white/10 bg-white p-4 text-sm leading-7 text-[#111111] outline-none focus:border-[#E9DCC9]"
+          />
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-2">
+            <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#E9DCC9]">
+              Texto do botão
+            </label>
+
+            <input
+              value={String(block.data.buttonText || "")}
+              onChange={(event) => updateCtaField(block.id, "buttonText", event.target.value)}
+              placeholder="Inscrever-se na newsletter"
+              className="h-12 rounded-2xl border border-white/10 bg-white px-4 text-sm text-[#111111] outline-none focus:border-[#E9DCC9]"
+            />
+          </div>
+
+          <div className="grid gap-2">
+            <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#E9DCC9]">
+              Link do botão
+            </label>
+
+            <input
+              value={String(block.data.href || "")}
+              onChange={(event) => updateCtaField(block.id, "href", event.target.value)}
+              placeholder="/pt#newsletter"
+              className="h-12 rounded-2xl border border-white/10 bg-white px-4 text-sm text-[#111111] outline-none focus:border-[#E9DCC9]"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "image") {
+    return (
+      <div className="grid gap-4 rounded-2xl border border-black/10 bg-[#FAF8F4] p-4">
+        <div className="overflow-hidden rounded-2xl bg-[#E9DCC9]">
+          {block.data.url ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={String(block.data.url)}
+              alt={String(block.data.alt || "Imagem do artigo")}
+              className="h-auto w-full object-cover"
+            />
+          ) : (
+            <div className="flex min-h-[220px] items-center justify-center p-6 text-center text-sm text-neutral-500">
+              Nenhuma imagem enviada ainda.
+            </div>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <label className="inline-flex w-fit cursor-pointer rounded-full bg-[#111111] px-5 py-3 text-sm font-bold !text-white transition hover:bg-[#556B2F]">
+            Enviar imagem
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(event) => {
+                const file = event.target.files?.[0];
+
+                if (file) {
+                  void uploadImageForBlock(block.id, file);
+                }
+              }}
+              className="hidden"
+            />
+          </label>
+
+          <p className="text-xs leading-5 text-neutral-500">
+            A imagem será enviada para o Cloudinary e inserida exatamente neste ponto do artigo.
+          </p>
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            URL da imagem
+          </label>
+
+          <input
+            value={String(block.data.url || "")}
+            onChange={(event) => updateImageField(block.id, "url", event.target.value)}
+            placeholder="https://res.cloudinary.com/..."
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Texto alternativo SEO
+          </label>
+
+          <input
+            value={String(block.data.alt || "")}
+            onChange={(event) => updateImageField(block.id, "alt", event.target.value)}
+            placeholder="Descreva a imagem de forma clara e objetiva"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Legenda opcional
+          </label>
+
+          <input
+            value={String(block.data.caption || "")}
+            onChange={(event) => updateImageField(block.id, "caption", event.target.value)}
+            placeholder="Legenda que aparecerá abaixo da imagem"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "table") {
+    const headers = Array.isArray(block.data.headers) ? block.data.headers : [];
+
+    const rows = Array.isArray(block.data.rows)
+      ? block.data.rows.map((row) => (Array.isArray(row) ? row : []))
+      : [];
+
+    return (
+      <div className="grid gap-4 rounded-2xl border border-black/10 bg-[#FAF8F4] p-4">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
+            Legenda opcional da tabela
+          </label>
+
+          <input
+            value={String(block.data.caption || "")}
+            onChange={(event) => updateTableCaption(block.id, event.target.value)}
+            placeholder="Ex: Diferenças entre fome física e fome emocional"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+          />
+        </div>
+
+        <div className="overflow-x-auto rounded-2xl border border-black/10 bg-white">
+          <table className="min-w-[640px] w-full border-collapse text-sm">
+            <thead>
+              <tr>
+                {headers.map((header, columnIndex) => (
+                  <th
+                    key={columnIndex}
+                    className="border-b border-black/10 bg-[#E9DCC9] p-3 text-left align-top"
+                  >
+                    <div className="grid gap-2">
+                      <input
+                        value={String(header || "")}
+                        onChange={(event) =>
+                          updateTableHeader(block.id, columnIndex, event.target.value)
+                        }
+                        className="h-10 rounded-xl border border-black/10 bg-white px-3 text-sm outline-none focus:border-[#556B2F]"
+                      />
+
+                      <button
+                        type="button"
+                        onClick={() => removeTableColumn(block.id, columnIndex)}
+                        disabled={headers.length <= 1}
+                        className="w-fit rounded-full border border-red-200 bg-red-50 px-3 py-1 text-[11px] font-bold text-red-700 disabled:opacity-40"
+                      >
+                        Remover coluna
+                      </button>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {rows.map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {headers.map((_, columnIndex) => (
+                    <td key={columnIndex} className="border-b border-black/5 p-3 align-top">
+                      <textarea
+                        value={String(row[columnIndex] || "")}
+                        onChange={(event) =>
+                          updateTableCell(block.id, rowIndex, columnIndex, event.target.value)
+                        }
+                        rows={3}
+                        className="w-full resize-y rounded-xl border border-black/10 bg-[#FAF8F4] p-3 text-sm leading-6 outline-none focus:border-[#556B2F]"
+                      />
+                    </td>
+                  ))}
+
+                  <td className="border-b border-black/5 p-3 align-top">
+                    <button
+                      type="button"
+                      onClick={() => removeTableRow(block.id, rowIndex)}
+                      disabled={rows.length <= 1}
+                      className="rounded-full border border-red-200 bg-red-50 px-3 py-2 text-[11px] font-bold text-red-700 disabled:opacity-40"
+                    >
+                      Remover linha
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <button
+            type="button"
+            onClick={() => addTableRow(block.id)}
+            className="rounded-full border border-black/10 bg-white px-4 py-2 text-xs font-bold transition hover:border-[#556B2F] hover:text-[#556B2F]"
+          >
+            + Adicionar linha
+          </button>
+
+          <button
+            type="button"
+            onClick={() => addTableColumn(block.id)}
+            className="rounded-full border border-black/10 bg-white px-4 py-2 text-xs font-bold transition hover:border-[#556B2F] hover:text-[#556B2F]"
+          >
+            + Adicionar coluna
           </button>
         </div>
       </div>

@@ -135,7 +135,16 @@ ${items
           return `
 <div style="background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;">
   <h2 style="margin-top:0;color:#FFFFFF;">${escapeHtml(data.title)}</h2>
-  <p style="color:#FFFFFF;">${escapeHtml(data.text)}</p>
+  <p style="color:#FFFFFF;line-height:1.8;">${escapeHtml(data.text)}</p>
+  ${
+    data.href && data.buttonText
+      ? `<p style="margin:22px 0 0;"><a href="${escapeHtml(
+          data.href
+        )}" style="display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;">${escapeHtml(
+          data.buttonText
+        )}</a></p>`
+      : ""
+  }
 </div>`;
 
         case "authorNote":
@@ -171,6 +180,61 @@ ${renderList(Array.isArray(data.items) ? data.items : [], false)}`;
   }
   ${renderList(steps, true)}
 </div>`;
+        }
+
+        case "table": {
+          const headers = Array.isArray(data.headers) ? data.headers : [];
+          const rows = Array.isArray(data.rows)
+            ? data.rows.map((row) => (Array.isArray(row) ? row : []))
+            : [];
+
+          if (headers.length === 0 || rows.length === 0) {
+            return "";
+          }
+
+          return `
+<figure style="margin:32px 0;">
+  ${
+    data.caption
+      ? `<figcaption style="margin-bottom:10px;font-size:14px;line-height:1.6;color:#666;">${escapeHtml(
+          data.caption
+        )}</figcaption>`
+      : ""
+  }
+  <div style="width:100%;overflow-x:auto;border-radius:22px;border:1px solid rgba(0,0,0,0.08);background:#FAF8F4;">
+    <table style="width:100%;min-width:640px;border-collapse:collapse;background:#FFFFFF;">
+      <thead>
+        <tr>
+          ${headers
+            .map(
+              (header) =>
+                `<th style="background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;">${escapeHtml(
+                  header
+                )}</th>`
+            )
+            .join("")}
+        </tr>
+      </thead>
+      <tbody>
+        ${rows
+          .map(
+            (row) => `
+        <tr>
+          ${headers
+            .map(
+              (_, columnIndex) =>
+                `<td style="border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;">${escapeHtml(
+                  row[columnIndex] || ""
+                )}</td>`
+            )
+            .join("")}
+        </tr>`
+          )
+          .join("")}
+      </tbody>
+    </table>
+  </div>
+</figure>`;
         }
 
         default:
