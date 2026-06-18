@@ -167,3 +167,28 @@ iframe {
     font-size: 1.5rem;
   }
 }
+
+.article-summary-box {
+  margin: 32px 0;
+  padding: 24px;
+  border-radius: 24px;
+  background: #f6f8f2;
+  border: 1px solid #dfe7d3;
+}
+
+.article-summary-box h3 {
+  margin: 0 0 14px;
+  color: #556b2f;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.article-summary-box ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.article-summary-box li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}

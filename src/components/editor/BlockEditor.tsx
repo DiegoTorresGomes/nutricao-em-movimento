@@ -50,6 +50,11 @@ const blockButtons: BlockButton[] = [
     type: "faq",
     description: "Perguntas frequentes com respostas",
   },
+  {
+    label: "Card Comparativo",
+    type: "comparisonCard",
+    description: "Comparação lado a lado",
+  },
 ];
 
 function createBlock(type: EditorBlockType, label?: string): EditorBlock {
@@ -110,6 +115,20 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
             answer: "",
           },
         ],
+      },
+    };
+  }
+
+  if (type === "comparisonCard") {
+    return {
+      id,
+      type,
+      data: {
+        title: "",
+        leftTitle: "Lado A",
+        leftItems: [""],
+        rightTitle: "Lado B",
+        rightItems: [""],
       },
     };
   }
@@ -368,6 +387,136 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
     );
   }
 
+  function updateComparisonTitle(blockId: string, value: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            title: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateComparisonLeftTitle(blockId: string, value: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            leftTitle: value,
+          },
+        };
+      })
+    );
+  }
+
+  function updateComparisonRightTitle(blockId: string, value: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rightTitle: value,
+          },
+        };
+      })
+    );
+  }
+
+  function addComparisonLeftItem(blockId: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const leftItems = Array.isArray(block.data.leftItems)
+          ? [...block.data.leftItems]
+          : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            leftItems: [...leftItems, ""],
+          },
+        };
+      })
+    );
+  }
+
+  function addComparisonRightItem(blockId: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const rightItems = Array.isArray(block.data.rightItems)
+          ? [...block.data.rightItems]
+          : [];
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rightItems: [...rightItems, ""],
+          },
+        };
+      })
+    );
+  }
+
+  function updateComparisonLeftItem(blockId: string, index: number, value: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const leftItems = Array.isArray(block.data.leftItems)
+          ? [...block.data.leftItems]
+          : [];
+        leftItems[index] = value;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            leftItems,
+          },
+        };
+      })
+    );
+  }
+
+  function updateComparisonRightItem(blockId: string, index: number, value: string) {
+    setBlocks((current) =>
+      current.map((block) => {
+        if (block.id !== blockId) return block;
+
+        const rightItems = Array.isArray(block.data.rightItems)
+          ? [...block.data.rightItems]
+          : [];
+        rightItems[index] = value;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            rightItems,
+          },
+        };
+      })
+    );
+  }
+
   return (
     <div className="grid gap-6 rounded-[2rem] border border-black/10 bg-[#FAF8F4] p-5">
       <input type="hidden" name={name} value={serializedBlocks} />
@@ -454,6 +603,13 @@ export function BlockEditor({ name = "contentBlocks", initialBlocks = [] }: Bloc
               updateFaqItem,
               addFaqItem,
               removeFaqItem,
+              updateComparisonTitle,
+              updateComparisonLeftTitle,
+              updateComparisonRightTitle,
+              addComparisonLeftItem,
+              addComparisonRightItem,
+              updateComparisonLeftItem,
+              updateComparisonRightItem,
             })}
           </div>
         ))}
@@ -492,6 +648,13 @@ type RenderBlockEditorProps = {
   ) => void;
   addFaqItem: (blockId: string) => void;
   removeFaqItem: (blockId: string, itemIndex: number) => void;
+  updateComparisonTitle: (blockId: string, value: string) => void;
+  updateComparisonLeftTitle: (blockId: string, value: string) => void;
+  updateComparisonRightTitle: (blockId: string, value: string) => void;
+  addComparisonLeftItem: (blockId: string) => void;
+  addComparisonRightItem: (blockId: string) => void;
+  updateComparisonLeftItem: (blockId: string, index: number, value: string) => void;
+  updateComparisonRightItem: (blockId: string, index: number, value: string) => void;
 };
 
 function renderBlockEditor({
@@ -507,6 +670,13 @@ function renderBlockEditor({
   updateFaqItem,
   addFaqItem,
   removeFaqItem,
+  updateComparisonTitle,
+  updateComparisonLeftTitle,
+  updateComparisonRightTitle,
+  addComparisonLeftItem,
+  addComparisonRightItem,
+  updateComparisonLeftItem,
+  updateComparisonRightItem,
 }: RenderBlockEditorProps) {
   if (block.type === "heading" || block.type === "paragraph") {
     return (
@@ -661,6 +831,70 @@ function renderBlockEditor({
         >
           + Adicionar pergunta
         </button>
+      </div>
+    );
+  }
+
+  if (block.type === "comparisonCard") {
+    const leftItems = Array.isArray(block.data.leftItems) ? block.data.leftItems : [];
+    const rightItems = Array.isArray(block.data.rightItems) ? block.data.rightItems : [];
+
+    return (
+      <div className="grid gap-6 rounded-2xl border border-black/10 bg-[#FAF8F4] p-5">
+        <input
+          value={String(block.data.title || "")}
+          onChange={(e) => updateComparisonTitle(block.id, e.target.value)}
+          placeholder="Título opcional"
+          className="h-12 rounded-2xl border border-black/10 bg-white px-4"
+        />
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-3">
+            <input
+              value={String(block.data.leftTitle || "")}
+              onChange={(e) => updateComparisonLeftTitle(block.id, e.target.value)}
+              placeholder="Título esquerdo"
+              className="h-12 rounded-2xl border border-black/10 bg-white px-4"
+            />
+
+            {leftItems.map((item, index) => (
+              <input
+                key={index}
+                value={String(item || "")}
+                onChange={(e) => updateComparisonLeftItem(block.id, index, e.target.value)}
+                placeholder={`Item ${index + 1}`}
+                className="h-12 rounded-2xl border border-black/10 bg-white px-4"
+              />
+            ))}
+
+            <button type="button" onClick={() => addComparisonLeftItem(block.id)}>
+              + Item esquerdo
+            </button>
+          </div>
+
+          <div className="grid gap-3">
+            <input
+              value={String(block.data.rightTitle || "")}
+              onChange={(e) => updateComparisonRightTitle(block.id, e.target.value)}
+              placeholder="Título direito"
+              className="h-12 rounded-2xl border border-black/10 bg-white px-4"
+            />
+
+            {rightItems.map((item, index) => (
+              <input
+                key={index}
+                value={String(item || "")}
+                onChange={(e) => updateComparisonRightItem(block.id, index, e.target.value)}
+                placeholder={`Item ${index + 1}`}
+                className="h-12 rounded-2xl border border-black/10 bg-white px-4"
+              />
+            ))}
+
+            <button type="button" onClick={() => addComparisonRightItem(block.id)}>
+              + Item direito
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

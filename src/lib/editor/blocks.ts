@@ -20,3 +20,25 @@ export type EditorBlock = {
   data: Record<string, unknown>;
 };
 
+export type SummaryBlock = {
+  id: string;
+  type: "summary";
+  data: {
+    title: string;
+    items: string[];
+  };
+};
+
+export type ComparisonBlock = {
+  id: string;
+  type: "comparisonCard";
+  data: {
+    title?: string;
+
+    leftTitle: string;
+    leftItems: string[];
+
+    rightTitle: string;
+    rightItems: string[];
+  };
+};
