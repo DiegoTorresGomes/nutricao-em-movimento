@@ -36,6 +36,13 @@ type EditPostFormProps = {
 export function EditPostForm({ post, categories }: EditPostFormProps) {
   const [coverImage, setCoverImage] = useState(post.coverImage ?? "");
   const [isUploadingCover, setIsUploadingCover] = useState(false);
+  const [title, setTitle] = useState(post.title);
+  const [description, setDescription] = useState(post.description);
+  const [categoryName, setCategoryName] = useState(
+    categories.find((category) => category.id === post.categoryId)?.name ?? ""
+  );
+  const [readTime, setReadTime] = useState(post.readTime ?? "");
+
   const initialBlocks = Array.isArray(post.contentBlocks)
     ? (post.contentBlocks as EditorBlock[])
     : [];
@@ -77,7 +84,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <input
           name="title"
           required
-          defaultValue={post.title}
+          value={title}
+          onChange={(event) => setTitle(event.target.value)}
           className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
         />
       </div>
@@ -88,7 +96,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
           name="description"
           required
           rows={3}
-          defaultValue={post.description}
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
           className="rounded-2xl border border-black/10 bg-white p-4 text-sm outline-none focus:border-[#556B2F]"
         />
       </div>
@@ -131,6 +140,13 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
             name="categoryId"
             required
             defaultValue={post.categoryId}
+            onChange={(event) => {
+              const selectedCategory = categories.find(
+                (category) => category.id === event.target.value
+              );
+
+              setCategoryName(selectedCategory?.name ?? "");
+            }}
             className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
           >
             {categories.map((category) => (
@@ -145,7 +161,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
           <label className="text-sm font-bold">Tempo de leitura</label>
           <input
             name="readTime"
-            defaultValue={post.readTime ?? ""}
+            value={readTime}
+            onChange={(event) => setReadTime(event.target.value)}
             className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
           />
         </div>
@@ -215,7 +232,16 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
             />
           ) : (
             <>
-              <BlockEditor initialBlocks={initialBlocks} />
+              <BlockEditor
+                initialBlocks={initialBlocks}
+                previewData={{
+                  title,
+                  description,
+                  categoryName,
+                  coverImage,
+                  readTime: readTime || "5 min de leitura",
+                }}
+              />
 
               <textarea name="content" defaultValue="" className="hidden" aria-hidden="true" />
             </>
