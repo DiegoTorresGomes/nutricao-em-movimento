@@ -410,7 +410,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
                 disabled={publicationBlocked}
                 className="w-fit rounded-full bg-[#556B2F] px-7 py-3 text-sm font-bold !text-white transition hover:bg-[#465a28] disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {publicationBlocked ? "Complete os itens obrigatórios" : "Salvar alterações"}
+                {/* {publicationBlocked ? "Complete os itens obrigatórios" : "Salvar alterações"} */}
               </button>
 
               {publicationBlocked && (
