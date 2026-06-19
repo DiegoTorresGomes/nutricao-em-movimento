@@ -94,6 +94,11 @@ const blockButtons: BlockButton[] = [
     type: "table",
     description: "Tabela responsiva para comparações e dados",
   },
+  {
+    label: "Material para baixar",
+    type: "download",
+    description: "PDF, planner, e-book, imagem ou cartão para download",
+  },
 ];
 
 function createBlock(type: EditorBlockType, label?: string): EditorBlock {
@@ -239,6 +244,20 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
         caption: "",
         headers: ["Coluna 1", "Coluna 2"],
         rows: [["", ""]],
+      },
+    };
+  }
+
+  if (type === "download") {
+    return {
+      id,
+      type,
+      data: {
+        title: "Material gratuito",
+        text: "Baixe este material complementar para continuar praticando.",
+        buttonText: "Baixar material",
+        fileUrl: "",
+        fileName: "",
       },
     };
   }
@@ -772,6 +791,46 @@ export function BlockEditor({
     );
   }
 
+  function updateDownloadField(
+    blockId: string,
+    field: "title" | "text" | "buttonText" | "fileUrl" | "fileName",
+    value: string
+  ) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            [field]: value,
+          },
+        };
+      })
+    );
+  }
+
+  async function uploadDownloadFileForBlock(blockId: string, file: File) {
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("folder", "nutricao-em-movimento/articles/downloads");
+
+    const response = await fetch("/api/upload/image", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.url) {
+      updateDownloadField(blockId, "fileUrl", data.url);
+      updateDownloadField(blockId, "fileName", file.name);
+    } else {
+      alert(data.error || "Erro ao enviar arquivo.");
+    }
+  }
+
   function updateCtaField(
     blockId: string,
     field: "title" | "text" | "buttonText" | "href",
@@ -1099,6 +1158,8 @@ export function BlockEditor({
               updateInfoCardTitle,
               updateInfoCardText,
               updateRelatedArticleField,
+              updateDownloadField,
+              uploadDownloadFileForBlock,
               updateCtaField,
               updateImageField,
               uploadImageForBlock,
@@ -1332,6 +1393,7 @@ function getBlockLabel(block: EditorBlock) {
   if (block.type === "paragraph") return "Parágrafo";
   if (block.type === "unorderedList") return "Lista";
   if (block.type === "orderedList") return "Lista numerada";
+  if (block.type === "download") return "Material para baixar";
 
   return block.type;
 }
@@ -1373,6 +1435,12 @@ type RenderBlockEditorProps = {
     field: "title" | "text" | "linkText" | "href",
     value: string
   ) => void;
+  updateDownloadField: (
+    blockId: string,
+    field: "title" | "text" | "buttonText" | "fileUrl" | "fileName",
+    value: string
+  ) => void;
+  uploadDownloadFileForBlock: (blockId: string, file: File) => Promise<void>;
   updateCtaField: (
     blockId: string,
     field: "title" | "text" | "buttonText" | "href",
@@ -1417,6 +1485,8 @@ function renderBlockEditor({
   updateInfoCardTitle,
   updateInfoCardText,
   updateRelatedArticleField,
+  updateDownloadField,
+  uploadDownloadFileForBlock,
   updateCtaField,
   updateImageField,
   uploadImageForBlock,
@@ -2040,6 +2110,81 @@ function renderBlockEditor({
           >
             + Adicionar coluna
           </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (block.type === "download") {
+    return (
+      <div className="grid gap-4 rounded-2xl border border-[#F0D7A8] bg-[#FFF8EE] p-4">
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+            Título do material
+          </label>
+
+          <input
+            value={String(block.data.title || "")}
+            onChange={(event) => updateDownloadField(block.id, "title", event.target.value)}
+            placeholder="Ex: Planner alimentar gratuito"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
+          />
+        </div>
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+            Texto de apoio
+          </label>
+
+          <textarea
+            value={String(block.data.text || "")}
+            onChange={(event) => updateDownloadField(block.id, "text", event.target.value)}
+            rows={3}
+            placeholder="Explique rapidamente o que a pessoa vai baixar."
+            className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#8A5A00]"
+          />
+        </div>
+
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <label className="inline-flex w-fit cursor-pointer rounded-full bg-[#111111] px-5 py-3 text-sm font-bold !text-white transition hover:bg-[#556B2F]">
+            Enviar arquivo
+            <input
+              type="file"
+              accept="image/*,.pdf"
+              onChange={(event) => {
+                const file = event.target.files?.[0];
+
+                if (file) {
+                  void uploadDownloadFileForBlock(block.id, file);
+                }
+              }}
+              className="hidden"
+            />
+          </label>
+
+          <p className="text-xs leading-5 text-neutral-500">
+            Use PDF, planner visual, cartão, e-book ou imagem complementar.
+          </p>
+        </div>
+
+        {block.data.fileName ? (
+          <div className="rounded-2xl border border-black/10 bg-white p-4 text-sm">
+            <p className="font-bold text-[#556B2F]">Arquivo enviado:</p>
+            <p className="mt-1 text-neutral-600">{String(block.data.fileName)}</p>
+          </div>
+        ) : null}
+
+        <div className="grid gap-2">
+          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#8A5A00]">
+            Texto do botão
+          </label>
+
+          <input
+            value={String(block.data.buttonText || "")}
+            onChange={(event) => updateDownloadField(block.id, "buttonText", event.target.value)}
+            placeholder="Baixar material"
+            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
+          />
         </div>
       </div>
     );

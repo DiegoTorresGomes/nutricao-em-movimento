@@ -11,7 +11,7 @@ export async function uploadImage(
     `data:${mimeType};base64,${base64}`,
     {
       folder,
-      resource_type: "image",
+      resource_type: "auto",
     }
   );
 

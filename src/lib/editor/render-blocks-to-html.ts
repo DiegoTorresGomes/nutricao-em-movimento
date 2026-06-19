@@ -131,6 +131,41 @@ ${items
   )}">${escapeHtml(data.linkText)}</a></strong></p>
 </div>`;
 
+        case "download":
+          {
+            const title = escapeHtml(String(data.title || "Material gratuito"));
+            const text = escapeHtml(String(data.text || ""));
+            const buttonText = escapeHtml(String(data.buttonText || "Baixar material"));
+            const fileUrl = escapeHtml(String(data.fileUrl || "#"));
+
+            return `
+<div style="margin:32px 0;padding:24px;border-radius:24px;background:#FFF8EE;border:1px solid #F0D7A8;">
+  <p style="margin:0 0 8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#8A5A00;">
+    Material complementar
+  </p>
+
+  <h3 style="margin:0 0 12px;font-size:24px;line-height:1.25;color:#111111;">
+    ${title}
+  </h3>
+
+  ${
+    text
+      ? `<p style="margin:0 0 18px;font-size:16px;line-height:1.7;color:#404040;">${text}</p>`
+      : ""
+  }
+
+  <a
+    href="${fileUrl}"
+    target="_blank"
+    rel="noopener noreferrer"
+    download
+    style="display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:#556B2F;color:#ffffff;text-decoration:none;font-weight:700;font-size:14px;padding:12px 20px;"
+  >
+    ${buttonText}
+  </a>
+</div>`;
+          }
+
         case "cta":
           return `
 <div style="background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;">

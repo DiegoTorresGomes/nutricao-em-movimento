@@ -14,6 +14,7 @@ export type EditorBlockType =
   | "authorNote"
   | "disclaimer"
   | "references"
+  | "download"
   | "table";
 
 export type EditorBlock = {

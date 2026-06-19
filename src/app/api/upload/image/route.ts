@@ -15,9 +15,11 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!file.type.startsWith("image/")) {
+    const isAllowedFile = file.type.startsWith("image/") || file.type === "application/pdf";
+
+    if (!isAllowedFile) {
       return NextResponse.json(
-        { error: "O arquivo precisa ser uma imagem." },
+        { error: "O arquivo precisa ser uma imagem ou PDF." },
         { status: 400 }
       );
     }
