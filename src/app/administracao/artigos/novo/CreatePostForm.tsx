@@ -104,14 +104,14 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
 
   return (
     <form action={formAction} className="grid gap-6 lg:grid-cols-[1fr_360px]">
-      <div className="grid gap-6">...todo o conteúdo atual do formulário...</div>
-      <input type="hidden" name="coverImage" value={coverImage} />
+      <div className="grid gap-6">
+        <input type="hidden" name="coverImage" value={coverImage} />
 
-      {state.error && (
-        <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-700">
-          {state.error}
-        </div>
-      )}
+        {state.error && (
+          <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-700">
+            {state.error}
+          </div>
+        )}
 
       <div className="rounded-[2rem] bg-white p-6 shadow-sm">
         <h2 className="text-xl font-semibold">Informações principais</h2>
@@ -406,6 +406,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
           </p>
         )}
       </div>
+      </div>
+
       <div className="lg:sticky lg:top-6 lg:self-start">
         <EditorialChecklist
           overallScore={validation.overallScore}

@@ -11,6 +11,15 @@ export async function reschedulePostAction(formData: FormData) {
     return;
   }
 
+  const post = await prisma.post.findUnique({
+    where: {
+      id: postId,
+    },
+    select: {
+      slug: true,
+    },
+  });
+
   await prisma.post.update({
     where: {
       id: postId,
@@ -24,4 +33,10 @@ export async function reschedulePostAction(formData: FormData) {
 
   revalidatePath("/administracao/calendario");
   revalidatePath("/administracao/artigos");
+  revalidatePath("/pt");
+  revalidatePath("/pt/artigos");
+
+  if (post?.slug) {
+    revalidatePath(`/pt/artigos/${post.slug}`);
+  }
 }

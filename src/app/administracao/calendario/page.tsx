@@ -41,7 +41,11 @@ function getMonthDays(referenceDate: Date) {
 }
 
 function dateKey(date: Date) {
-  return date.toISOString().slice(0, 10);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
 }
 
 function getWeekDays(referenceDate: Date) {
@@ -109,7 +113,7 @@ export default async function EditorialCalendarPage({ searchParams }: EditorialC
     ],
   });
 
-  const scheduledPosts = posts.filter((post) => post.scheduledAt);
+  const scheduledPosts = posts.filter((post) => post.status === "SCHEDULED" && post.scheduledAt);
   const withoutDatePosts = posts.filter((post) => !post.scheduledAt);
   const timelinePosts = posts
     .filter((post) => post.scheduledAt || post.publishedAt)

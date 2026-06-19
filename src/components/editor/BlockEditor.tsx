@@ -1911,19 +1911,6 @@ function renderBlockEditor({
 
         <div className="grid gap-2">
           <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
-            URL da imagem
-          </label>
-
-          <input
-            value={String(block.data.url || "")}
-            onChange={(event) => updateImageField(block.id, "url", event.target.value)}
-            placeholder="https://res.cloudinary.com/..."
-            className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
-          />
-        </div>
-
-        <div className="grid gap-2">
-          <label className="text-xs font-bold uppercase tracking-[0.18em] text-[#556B2F]">
             Texto alternativo SEO
           </label>
 
