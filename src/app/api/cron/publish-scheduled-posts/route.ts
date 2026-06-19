@@ -4,7 +4,10 @@ import { prisma } from "@/lib/prisma";
 
 export async function GET(request: Request) {
   const cronSecret = process.env.CRON_SECRET;
-  const requestSecret = request.headers.get("x-cron-secret");
+
+  const requestSecret =
+    request.headers.get("x-cron-secret") ??
+    new URL(request.url).searchParams.get("secret");
 
   if (cronSecret && requestSecret !== cronSecret) {
     return NextResponse.json(
