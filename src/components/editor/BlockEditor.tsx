@@ -1,12 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { EditorBlock, EditorBlockType } from "@/lib/editor/blocks";
 import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
 
 type BlockEditorProps = {
   name?: string;
   initialBlocks?: EditorBlock[];
+  onBlocksChange?: (blocks: EditorBlock[]) => void;
   previewData?: {
     title?: string;
     description?: string;
@@ -252,6 +253,7 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
 export function BlockEditor({
   name = "contentBlocks",
   initialBlocks = [],
+  onBlocksChange,
   previewData,
 }: BlockEditorProps) {
   const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
@@ -262,6 +264,9 @@ export function BlockEditor({
   const [previewMode, setPreviewMode] = useState<"desktop" | "tablet" | "mobile">("desktop");
 
   const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
+  useEffect(() => {
+    onBlocksChange?.(blocks);
+  }, [blocks, onBlocksChange]);
 
   function addBlock(type: EditorBlockType, label?: string) {
     setBlocks((currentBlocks) => [...currentBlocks, createBlock(type, label)]);

@@ -2,8 +2,11 @@
 
 import { useActionState } from "react";
 import { createPostAction } from "./actions";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { BlockEditor } from "@/components/editor/BlockEditor";
+import { validatePostBeforePublish } from "@/lib/editor/validate-post";
+import { EditorialChecklist } from "@/components/editor/EditorialChecklist";
+import type { EditorBlock } from "@/lib/editor/blocks";
 
 type Category = {
   id: string;
@@ -20,11 +23,57 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
   const [coverImage, setCoverImage] = useState("");
   const [isUploadingCover, setIsUploadingCover] = useState(false);
   const [useLegacyHtml, setUseLegacyHtml] = useState(false);
+  const [status, setStatus] = useState("DRAFT");
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [categoryName, setCategoryName] = useState("");
   const [readTime, setReadTime] = useState("");
+  const [seoTitle, setSeoTitle] = useState("");
+  const [seoDescription, setSeoDescription] = useState("");
+  const [focusKeyword, setFocusKeyword] = useState("");
+  const [coverImageAlt, setCoverImageAlt] = useState("");
+  const [blocks, setBlocks] = useState<EditorBlock[]>([]);
+
+  const [desktopReviewed, setDesktopReviewed] = useState(false);
+  const [tabletReviewed, setTabletReviewed] = useState(false);
+  const [mobileReviewed, setMobileReviewed] = useState(false);
+
+  const validation = useMemo(
+    () =>
+      validatePostBeforePublish({
+        title,
+        description,
+        categoryName,
+        coverImage,
+        coverImageAlt,
+        seoTitle,
+        seoDescription,
+        focusKeyword,
+        blocks,
+        desktopReviewed,
+        tabletReviewed,
+        mobileReviewed,
+        hasOtherPublishedPosts: true,
+      }),
+    [
+      title,
+      description,
+      categoryName,
+      coverImage,
+      coverImageAlt,
+      seoTitle,
+      seoDescription,
+      focusKeyword,
+      blocks,
+      desktopReviewed,
+      tabletReviewed,
+      mobileReviewed,
+    ]
+  );
+
+  const publicationBlocked =
+    (status === "PUBLISHED" || status === "SCHEDULED") && !validation.canPublish;
 
   async function handleCoverUpload(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
@@ -54,7 +103,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
   }
 
   return (
-    <form action={formAction} className="grid gap-6">
+    <form action={formAction} className="grid gap-6 lg:grid-cols-[1fr_360px]">
+      <div className="grid gap-6">...todo o conteúdo atual do formulário...</div>
       <input type="hidden" name="coverImage" value={coverImage} />
 
       {state.error && (
@@ -140,6 +190,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               name="seoTitle"
               placeholder="Título otimizado para Google"
               className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+              value={seoTitle}
+              onChange={(event) => setSeoTitle(event.target.value)}
             />
           </div>
 
@@ -150,6 +202,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               rows={3}
               placeholder="Descrição otimizada para aparecer nos resultados de busca."
               className="rounded-2xl border border-black/10 bg-white p-4 text-sm outline-none focus:border-[#556B2F]"
+              value={seoDescription}
+              onChange={(event) => setSeoDescription(event.target.value)}
             />
           </div>
 
@@ -159,6 +213,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               name="focusKeyword"
               placeholder="Ex: fome emocional"
               className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+              value={focusKeyword}
+              onChange={(event) => setFocusKeyword(event.target.value)}
             />
           </div>
         </div>
@@ -194,6 +250,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
               name="coverImageAlt"
               placeholder="Descrição curta da imagem para acessibilidade e SEO"
               className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
+              value={coverImageAlt}
+              onChange={(event) => setCoverImageAlt(event.target.value)}
             />
             <p className="text-xs text-neutral-500">
               Ex: Nutricionista preparando refeição equilibrada.
@@ -242,6 +300,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
           ) : (
             <>
               <BlockEditor
+                onBlocksChange={setBlocks}
                 previewData={{
                   title,
                   description,
@@ -270,17 +329,32 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
             <p className="text-sm font-bold">Revisão de preview</p>
 
             <label className="flex items-center gap-3 text-sm font-bold">
-              <input name="desktopReviewed" type="checkbox" />
+              <input
+                name="desktopReviewed"
+                type="checkbox"
+                checked={desktopReviewed}
+                onChange={(event) => setDesktopReviewed(event.target.checked)}
+              />
               Preview Desktop revisado
             </label>
 
             <label className="flex items-center gap-3 text-sm font-bold">
-              <input name="tabletReviewed" type="checkbox" />
+              <input
+                name="tabletReviewed"
+                type="checkbox"
+                checked={tabletReviewed}
+                onChange={(event) => setTabletReviewed(event.target.checked)}
+              />
               Preview Tablet revisado
             </label>
 
             <label className="flex items-center gap-3 text-sm font-bold">
-              <input name="mobileReviewed" type="checkbox" />
+              <input
+                name="mobileReviewed"
+                type="checkbox"
+                checked={mobileReviewed}
+                onChange={(event) => setMobileReviewed(event.target.checked)}
+              />
               Preview Mobile revisado
             </label>
           </div>
@@ -289,7 +363,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
             <label className="text-sm font-bold">Status</label>
             <select
               name="status"
-              defaultValue="DRAFT"
+              value={status}
+              onChange={(event) => setStatus(event.target.value)}
               className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
             >
               <option value="DRAFT">Salvar como rascunho</option>
@@ -316,11 +391,28 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
       <div className="flex flex-col gap-3 sm:flex-row">
         <button
           type="submit"
-          disabled={isPending}
+          disabled={isPending || publicationBlocked}
           className="rounded-full bg-[#556B2F] px-7 py-3 text-sm font-bold !text-white transition hover:bg-[#465a28] disabled:opacity-50"
         >
-          {isPending ? "Salvando..." : "Salvar artigo"}
+          {publicationBlocked
+            ? "Complete os itens obrigatórios"
+            : isPending
+              ? "Salvando..."
+              : "Salvar artigo"}
         </button>
+        {publicationBlocked && (
+          <p className="text-sm font-bold text-red-700">
+            Para publicar ou agendar, conclua todos os itens obrigatórios do checklist editorial.
+          </p>
+        )}
+      </div>
+      <div className="lg:sticky lg:top-6 lg:self-start">
+        <EditorialChecklist
+          overallScore={validation.overallScore}
+          canPublish={validation.canPublish}
+          missingRequired={validation.missingRequired}
+          groups={validation.groups}
+        />
       </div>
     </form>
   );

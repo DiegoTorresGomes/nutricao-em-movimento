@@ -3,7 +3,9 @@
 import { BlockEditor } from "@/components/editor/BlockEditor";
 import type { EditorBlock } from "@/lib/editor/blocks";
 import { updatePostAction } from "./actions";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { validatePostBeforePublish } from "@/lib/editor/validate-post";
+import { EditorialChecklist } from "@/components/editor/EditorialChecklist";
 
 type Category = {
   id: string;
@@ -37,20 +39,66 @@ type EditPostFormProps = {
 };
 
 export function EditPostForm({ post, categories }: EditPostFormProps) {
+  const initialBlocks = Array.isArray(post.contentBlocks)
+    ? (post.contentBlocks as EditorBlock[])
+    : [];
+
   const [coverImage, setCoverImage] = useState(post.coverImage ?? "");
   const [isUploadingCover, setIsUploadingCover] = useState(false);
   const [title, setTitle] = useState(post.title);
   const [description, setDescription] = useState(post.description);
+  const [status, setStatus] = useState(post.status);
+  const [seoTitle, setSeoTitle] = useState(post.seoTitle ?? "");
+  const [seoDescription, setSeoDescription] = useState(post.seoDescription ?? "");
+  const [focusKeyword, setFocusKeyword] = useState(post.focusKeyword ?? "");
+  const [coverImageAlt, setCoverImageAlt] = useState(post.coverImageAlt ?? "");
+  const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
+
+  const [desktopReviewed, setDesktopReviewed] = useState(post.desktopReviewed);
+  const [tabletReviewed, setTabletReviewed] = useState(post.tabletReviewed);
+  const [mobileReviewed, setMobileReviewed] = useState(post.mobileReviewed);
   const [categoryName, setCategoryName] = useState(
     categories.find((category) => category.id === post.categoryId)?.name ?? ""
   );
   const [readTime, setReadTime] = useState(post.readTime ?? "");
 
-  const initialBlocks = Array.isArray(post.contentBlocks)
-    ? (post.contentBlocks as EditorBlock[])
-    : [];
-
   const [useLegacyHtml, setUseLegacyHtml] = useState(initialBlocks.length === 0);
+
+  const validation = useMemo(
+    () =>
+      validatePostBeforePublish({
+        title,
+        description,
+        categoryName,
+        coverImage,
+        coverImageAlt,
+        seoTitle,
+        seoDescription,
+        focusKeyword,
+        blocks,
+        desktopReviewed,
+        tabletReviewed,
+        mobileReviewed,
+        hasOtherPublishedPosts: true,
+      }),
+    [
+      title,
+      description,
+      categoryName,
+      coverImage,
+      coverImageAlt,
+      seoTitle,
+      seoDescription,
+      focusKeyword,
+      blocks,
+      desktopReviewed,
+      tabletReviewed,
+      mobileReviewed,
+    ]
+  );
+
+  const publicationBlocked =
+    (status === "PUBLISHED" || status === "SCHEDULED") && !validation.canPublish;
 
   async function handleCoverUpload(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
@@ -80,9 +128,13 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
   }
 
   return (
-    <form action={updatePostAction.bind(null, post.id)} className="grid gap-6">
-      <input type="hidden" name="coverImage" value={coverImage} />
-      <div className="grid gap-2">
+    <form
+      action={updatePostAction.bind(null, post.id)}
+      className="grid gap-6 lg:grid-cols-[1fr_360px]"
+    >
+      <div className="grid gap-6">
+        <input type="hidden" name="coverImage" value={coverImage} />
+        <div className="grid gap-2">
         <label className="text-sm font-bold">Título</label>
         <input
           name="title"
@@ -109,7 +161,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <label className="text-sm font-bold">Meta title</label>
         <input
           name="seoTitle"
-          defaultValue={post.seoTitle ?? ""}
+          value={seoTitle}
+          onChange={(event) => setSeoTitle(event.target.value)}
           placeholder="Título otimizado para Google"
           className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
         />
@@ -120,7 +173,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <textarea
           name="seoDescription"
           rows={3}
-          defaultValue={post.seoDescription ?? ""}
+          value={seoDescription}
+          onChange={(event) => setSeoDescription(event.target.value)}
           placeholder="Descrição otimizada para aparecer nos resultados de busca."
           className="rounded-2xl border border-black/10 bg-white p-4 text-sm outline-none focus:border-[#556B2F]"
         />
@@ -130,7 +184,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <label className="text-sm font-bold">Palavra-chave principal</label>
         <input
           name="focusKeyword"
-          defaultValue={post.focusKeyword ?? ""}
+          value={focusKeyword}
+          onChange={(event) => setFocusKeyword(event.target.value)}
           placeholder="Ex: fome emocional"
           className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
         />
@@ -195,7 +250,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
           <label className="text-sm font-bold">Texto alternativo da imagem</label>
           <input
             name="coverImageAlt"
-            defaultValue={post.coverImageAlt ?? ""}
+            value={coverImageAlt}
+            onChange={(event) => setCoverImageAlt(event.target.value)}
             placeholder="Descrição curta da imagem para acessibilidade e SEO"
             className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
           />
@@ -237,6 +293,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
             <>
               <BlockEditor
                 initialBlocks={initialBlocks}
+                onBlocksChange={setBlocks}
                 previewData={{
                   title,
                   description,
@@ -261,17 +318,32 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <p className="text-sm font-bold">Revisão de preview</p>
 
         <label className="flex items-center gap-3 text-sm font-bold">
-          <input name="desktopReviewed" type="checkbox" defaultChecked={post.desktopReviewed} />
+          <input
+            name="desktopReviewed"
+            type="checkbox"
+            checked={desktopReviewed}
+            onChange={(event) => setDesktopReviewed(event.target.checked)}
+          />
           Preview Desktop revisado
         </label>
 
         <label className="flex items-center gap-3 text-sm font-bold">
-          <input name="tabletReviewed" type="checkbox" defaultChecked={post.tabletReviewed} />
+          <input
+            name="tabletReviewed"
+            type="checkbox"
+            checked={tabletReviewed}
+            onChange={(event) => setTabletReviewed(event.target.checked)}
+          />
           Preview Tablet revisado
         </label>
 
         <label className="flex items-center gap-3 text-sm font-bold">
-          <input name="mobileReviewed" type="checkbox" defaultChecked={post.mobileReviewed} />
+          <input
+            name="mobileReviewed"
+            type="checkbox"
+            checked={mobileReviewed}
+            onChange={(event) => setMobileReviewed(event.target.checked)}
+          />
           Preview Mobile revisado
         </label>
       </div>
@@ -280,7 +352,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         <label className="text-sm font-bold">Status</label>
         <select
           name="status"
-          defaultValue={post.status}
+          value={status}
+          onChange={(event) => setStatus(event.target.value as typeof post.status)}
           className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#556B2F]"
         >
           <option value="DRAFT">Rascunho</option>
@@ -304,10 +377,21 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
 
       <button
         type="submit"
-        className="w-fit rounded-full bg-[#556B2F] px-7 py-3 text-sm font-bold !text-white transition hover:bg-[#465a28]"
+        disabled={publicationBlocked}
+        className="w-fit rounded-full bg-[#556B2F] px-7 py-3 text-sm font-bold !text-white transition hover:bg-[#465a28] disabled:cursor-not-allowed disabled:opacity-50"
       >
-        Salvar alterações
+        {publicationBlocked ? "Complete os itens obrigatórios" : "Salvar alterações"}
       </button>
+      </div>
+
+      <div className="lg:sticky lg:top-6 lg:self-start">
+        <EditorialChecklist
+          overallScore={validation.overallScore}
+          canPublish={validation.canPublish}
+          missingRequired={validation.missingRequired}
+          groups={validation.groups}
+        />
+      </div>
     </form>
   );
 }
