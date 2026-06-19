@@ -1278,23 +1278,23 @@ export function BlockEditor({
               </button>
             </div>
 
-            <div className="overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm">
-              <div className="h-48 bg-[#E9DCC9]">
-                {previewData?.coverImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={previewData.coverImage}
-                    alt={previewData.title || "Capa do artigo"}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
+            <div className="w-full overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-sm">
+              <div
+                className="h-[210px] w-full bg-[#E9DCC9] bg-cover bg-center"
+                style={
+                  previewData?.coverImage
+                    ? { backgroundImage: `url(${previewData.coverImage})` }
+                    : undefined
+                }
+              >
+                {!previewData?.coverImage && (
                   <div className="flex h-full items-center justify-center text-sm text-neutral-500">
                     Capa do artigo
                   </div>
                 )}
               </div>
 
-              <div className="bg-white p-6">
+              <div className="w-full bg-white px-6 pb-6 pt-5">
                 <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#D67A5A]">
                   {previewData?.categoryName || "Categoria"}
                 </p>
