@@ -1,4 +1,5 @@
 import type { EditorBlock } from "./blocks";
+import { analyzeHtmlContent } from "@/components/editor/analyze-html-content";
 
 export type ValidationItem = {
   label: string;
@@ -30,32 +31,52 @@ type ValidatePostInput = {
   desktopReviewed?: boolean | null;
   blocks: EditorBlock[];
   hasOtherPublishedPosts?: boolean;
+  content?: string | null;
+  useLegacyHtml?: boolean;
 };
 
 export function validatePostBeforePublish(input: ValidatePostInput) {
   const blocks = input.blocks || [];
 
-  const hasH2 = blocks.some(
-    (block) =>
-      block.type === "heading" && Number(block.data.level) === 2 && hasText(block.data.text)
-  );
+  const htmlAnalysis = input.useLegacyHtml
+    ? analyzeHtmlContent(input.content || "")
+    : null;
 
-  const hasParagraph = blocks.some(
-    (block) => block.type === "paragraph" && hasText(block.data.text)
-  );
+  const hasH2 = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasH2
+    : blocks.some((block) => block.type === "heading" && block.data.level === 2);
 
-  const hasAuthorNote = blocks.some((block) => block.type === "authorNote");
-  const hasDisclaimer = blocks.some((block) => block.type === "disclaimer");
-  const hasCta = blocks.some((block) => block.type === "cta");
-  const hasRelatedArticle = blocks.some((block) => block.type === "relatedArticle");
-  const hasFaq = blocks.some((block) => block.type === "faq");
+  const hasParagraph = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasParagraph
+    : blocks.some((block) => block.type === "paragraph" && String(block.data.text || "").trim());
+
+  const hasAuthorNote = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasAuthorNote
+    : blocks.some((block) => block.type === "authorNote");
+
+  const hasDisclaimer = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasDisclaimer
+    : blocks.some((block) => block.type === "disclaimer");
+
+  const hasCta = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasCta
+    : blocks.some((block) => block.type === "cta");
+
+  const hasRelatedArticle = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasRelatedArticle
+    : blocks.some((block) => block.type === "relatedArticle");
+
+  const hasFaq = input.useLegacyHtml
+    ? !!htmlAnalysis?.hasFaq
+    : blocks.some((block) => block.type === "faq");
   const hasComparisonCard = blocks.some((block) => block.type === "comparisonCard");
   const hasTable = blocks.some((block) => block.type === "table");
 
   const imageBlocks = blocks.filter((block) => block.type === "image");
 
-  const allInternalImagesHaveAlt =
-    imageBlocks.length === 0 || imageBlocks.every((block) => hasText(block.data.alt));
+  const imagesHaveAlt = input.useLegacyHtml
+    ? !!htmlAnalysis?.imagesHaveAlt
+    : imageBlocks.every((block) => String(block.data.alt || "").trim());
 
   const content: ValidationItem[] = [
     {
@@ -129,7 +150,7 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     },
     {
       label: "Alt das imagens internas",
-      ok: allInternalImagesHaveAlt,
+      ok: imagesHaveAlt,
       required: true,
       message: "Todas as imagens internas precisam de texto alternativo.",
     },

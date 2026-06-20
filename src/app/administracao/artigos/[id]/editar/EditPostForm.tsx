@@ -52,6 +52,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
   const [seoDescription, setSeoDescription] = useState(post.seoDescription ?? "");
   const [focusKeyword, setFocusKeyword] = useState(post.focusKeyword ?? "");
   const [coverImageAlt, setCoverImageAlt] = useState(post.coverImageAlt ?? "");
+  const [manualContent, setManualContent] = useState(post.content ?? "");
   const [blocks, setBlocks] = useState<EditorBlock[]>(initialBlocks);
 
   const [desktopReviewed, setDesktopReviewed] = useState(post.desktopReviewed);
@@ -75,6 +76,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         seoTitle,
         seoDescription,
         focusKeyword,
+        content: manualContent,
+        useLegacyHtml,
         blocks,
         desktopReviewed,
         tabletReviewed,
@@ -90,6 +93,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
       seoTitle,
       seoDescription,
       focusKeyword,
+      manualContent,
+      useLegacyHtml,
       blocks,
       desktopReviewed,
       tabletReviewed,
@@ -309,7 +314,8 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
                   name="content"
                   required
                   rows={14}
-                  defaultValue={post.content}
+                  value={manualContent}
+                  onChange={(event) => setManualContent(event.target.value)}
                   className="rounded-2xl border border-black/10 bg-white p-4 font-mono text-sm leading-7 outline-none focus:border-[#556B2F]"
                 />
               </div>

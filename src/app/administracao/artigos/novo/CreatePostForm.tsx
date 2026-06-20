@@ -33,6 +33,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
   const [seoDescription, setSeoDescription] = useState("");
   const [focusKeyword, setFocusKeyword] = useState("");
   const [coverImageAlt, setCoverImageAlt] = useState("");
+  const [manualContent, setManualContent] = useState("");
   const [blocks, setBlocks] = useState<EditorBlock[]>([]);
 
   const [desktopReviewed, setDesktopReviewed] = useState(false);
@@ -50,6 +51,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
         seoTitle,
         seoDescription,
         focusKeyword,
+        content: manualContent,
+        useLegacyHtml,
         blocks,
         desktopReviewed,
         tabletReviewed,
@@ -65,6 +68,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
       seoTitle,
       seoDescription,
       focusKeyword,
+      manualContent,
+      useLegacyHtml,
       blocks,
       desktopReviewed,
       tabletReviewed,
@@ -286,6 +291,8 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
                 name="content"
                 required
                 rows={16}
+                value={manualContent}
+                onChange={(event) => setManualContent(event.target.value)}
                 placeholder={`Use HTML simples por enquanto. Ex:
 <p>Introdução do artigo...</p>
 
