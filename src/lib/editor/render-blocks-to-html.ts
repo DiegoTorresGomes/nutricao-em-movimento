@@ -216,11 +216,12 @@ ${items
           const text = escapeHtml(String(data.text || ""));
 
           return `
-    <div style="margin:40px 0;padding:24px;border-radius:24px;background:#F5FAF3;border:1px solid #D8E8D1;">
-      <h3 style="margin:0 0 12px;font-size:24px;color:#556B2F;">
+    <div style="margin:40px 0;padding:24px 28px;border-left:4px solid #556B2F;border-radius:0 20px 20px 0;background:#FAF8F4;">
+      <h3 style="margin:0 0 12px;font-size:18px;line-height:1.4;color:#111111;">
         Sobre a autora
       </h3>
-      <p style="margin:0;font-size:17px;line-height:1.8;color:#404040;">
+
+      <p style="margin:0;font-size:15px;line-height:1.8;color:#404040;">
         ${text}
       </p>
     </div>
@@ -231,12 +232,9 @@ ${items
           const text = escapeHtml(String(data.text || ""));
 
           return `
-    <div style="margin:32px 0;padding:24px;border-radius:24px;background:#FFF8EE;border:1px solid #F0D7A8;">
-      <h3 style="margin:0 0 12px;font-size:22px;color:#8A5A00;">
-        Aviso educativo
-      </h3>
-      <p style="margin:0;font-size:16px;line-height:1.8;color:#404040;">
-        ${text}
+    <div style="margin:40px auto;padding:18px 24px;max-width:860px;border-radius:999px;background:#FAF8F4;border:1px solid #E9DCC9;">
+      <p style="margin:0;font-size:14px;line-height:1.7;color:#404040;text-align:center;">
+        <strong style="color:#111111;">Aviso importante:</strong> ${text}
       </p>
     </div>
   `;
