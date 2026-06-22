@@ -269,6 +269,46 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
   };
 }
 
+function parseBulkListItems(value: string) {
+  return value
+    .replace(/\r/g, "")
+    .split("\n")
+    .map((item) =>
+      item
+        .replace(/^[-\u2022*]\s*/, "")
+        .replace(/^\d+[\s.)-]+/, "")
+        .trim()
+    )
+    .filter(Boolean);
+}
+
+function parseBulkFaqItems(value: string) {
+  const cleanText = value
+    .replace(/\r/g, "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  const faqs: { question: string; answer: string }[] = [];
+
+  for (let index = 0; index < cleanText.length; index += 2) {
+    const question = cleanText[index]
+      ?.replace(/^\d+[\s.)-]+/, "")
+      .replace(/^pergunta:\s*/i, "")
+      .trim();
+
+    const answer = cleanText[index + 1]
+      ?.replace(/^resposta:\s*/i, "")
+      .trim();
+
+    if (question && answer) {
+      faqs.push({ question, answer });
+    }
+  }
+
+  return faqs;
+}
+
 export function BlockEditor({
   name = "contentBlocks",
   initialBlocks = [],
@@ -281,6 +321,8 @@ export function BlockEditor({
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   const [isHomePreviewOpen, setIsHomePreviewOpen] = useState(false);
   const [previewMode, setPreviewMode] = useState<"desktop" | "tablet" | "mobile">("desktop");
+  const [bulkTextByBlockId, setBulkTextByBlockId] = useState<Record<string, string>>({});
+  const [pasteModeByBlockId, setPasteModeByBlockId] = useState<Record<string, boolean>>({});
 
   const previewHtml = useMemo(() => renderBlocksToHtml(blocks), [blocks]);
   useEffect(() => {
@@ -314,6 +356,33 @@ export function BlockEditor({
 
       return updatedBlocks;
     });
+  }
+
+  function togglePasteMode(blockId: string, enabled: boolean) {
+    setPasteModeByBlockId((current) => ({
+      ...current,
+      [blockId]: enabled,
+    }));
+  }
+
+  function updateBulkText(blockId: string, value: string) {
+    setBulkTextByBlockId((current) => ({
+      ...current,
+      [blockId]: value,
+    }));
+  }
+
+  function updateBlockData(blockId: string, data: EditorBlock["data"]) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data,
+        };
+      })
+    );
   }
 
   function updateBlockText(blockId: string, text: string) {
@@ -1132,6 +1201,11 @@ export function BlockEditor({
 
             {renderBlockEditor({
               block,
+              bulkTextByBlockId,
+              pasteModeByBlockId,
+              togglePasteMode,
+              updateBulkText,
+              updateBlockData,
               updateBlockText,
               updateListItem,
               addListItem,
@@ -1400,6 +1474,11 @@ function getBlockLabel(block: EditorBlock) {
 
 type RenderBlockEditorProps = {
   block: EditorBlock;
+  bulkTextByBlockId: Record<string, string>;
+  pasteModeByBlockId: Record<string, boolean>;
+  togglePasteMode: (blockId: string, enabled: boolean) => void;
+  updateBulkText: (blockId: string, value: string) => void;
+  updateBlockData: (blockId: string, data: EditorBlock["data"]) => void;
   updateBlockText: (blockId: string, text: string) => void;
   updateListItem: (blockId: string, itemIndex: number, value: string) => void;
   addListItem: (blockId: string) => void;
@@ -1459,6 +1538,11 @@ type RenderBlockEditorProps = {
 
 function renderBlockEditor({
   block,
+  bulkTextByBlockId,
+  pasteModeByBlockId,
+  togglePasteMode,
+  updateBulkText,
+  updateBlockData,
   updateBlockText,
   updateListItem,
   addListItem,
@@ -1517,6 +1601,73 @@ function renderBlockEditor({
 
     return (
       <div className="grid gap-3">
+        <div className="mb-1 rounded-2xl border border-black/10 bg-[#FAF8F4] p-4">
+          <p className="text-sm font-bold">Como você quer preencher?</p>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => togglePasteMode(block.id, false)}
+              className={`rounded-full px-4 py-2 text-xs font-bold transition ${
+                !pasteModeByBlockId[block.id]
+                  ? "bg-[#556B2F] text-white"
+                  : "bg-white text-neutral-600"
+              }`}
+            >
+              Construir item por item
+            </button>
+
+            <button
+              type="button"
+              onClick={() => togglePasteMode(block.id, true)}
+              className={`rounded-full px-4 py-2 text-xs font-bold transition ${
+                pasteModeByBlockId[block.id]
+                  ? "bg-[#556B2F] text-white"
+                  : "bg-white text-neutral-600"
+              }`}
+            >
+              Colar tudo de uma vez
+            </button>
+          </div>
+
+          {pasteModeByBlockId[block.id] && (
+            <div className="mt-4 grid gap-3">
+              <textarea
+                rows={6}
+                value={bulkTextByBlockId[block.id] || ""}
+                onChange={(event) => updateBulkText(block.id, event.target.value)}
+                placeholder={`Cole sua lista aqui. Ex:
+1. Primeiro item
+2. Segundo item
+3. Terceiro item`}
+                className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+              />
+
+              <button
+                type="button"
+                onClick={() => {
+                  const parsedItems = parseBulkListItems(bulkTextByBlockId[block.id] || "");
+
+                  if (parsedItems.length === 0) {
+                    alert("Cole pelo menos um item válido.");
+                    return;
+                  }
+
+                  updateBlockData(block.id, {
+                    ...block.data,
+                    items: parsedItems,
+                  });
+
+                  togglePasteMode(block.id, false);
+                }}
+                className="w-fit rounded-full bg-[#556B2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#465a28]"
+              >
+                Converter em itens
+              </button>
+            </div>
+          )}
+        </div>
+
         {items.map((item, index) => (
           <div key={index} className="flex gap-2">
             <input
@@ -1603,6 +1754,75 @@ function renderBlockEditor({
 
     return (
       <div className="grid gap-4 rounded-2xl border border-black/10 bg-[#FAF8F4] p-4">
+        <div className="rounded-2xl border border-black/10 bg-white p-4">
+          <p className="text-sm font-bold">Como você quer preencher?</p>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => togglePasteMode(block.id, false)}
+              className={`rounded-full px-4 py-2 text-xs font-bold transition ${
+                !pasteModeByBlockId[block.id]
+                  ? "bg-[#556B2F] text-white"
+                  : "bg-[#FAF8F4] text-neutral-600"
+              }`}
+            >
+              Construir pergunta por pergunta
+            </button>
+
+            <button
+              type="button"
+              onClick={() => togglePasteMode(block.id, true)}
+              className={`rounded-full px-4 py-2 text-xs font-bold transition ${
+                pasteModeByBlockId[block.id]
+                  ? "bg-[#556B2F] text-white"
+                  : "bg-[#FAF8F4] text-neutral-600"
+              }`}
+            >
+              Colar perguntas e respostas
+            </button>
+          </div>
+
+          {pasteModeByBlockId[block.id] && (
+            <div className="mt-4 grid gap-3">
+              <textarea
+                rows={8}
+                value={bulkTextByBlockId[block.id] || ""}
+                onChange={(event) => updateBulkText(block.id, event.target.value)}
+                placeholder={`Cole assim:
+1. O que é alimentação consciente?
+É comer com mais presença e atenção.
+
+2. Como melhorar minha relação com a comida?
+Comece observando fome, saciedade e julgamentos.`}
+                className="rounded-2xl border border-black/10 bg-[#FAF8F4] p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+              />
+
+              <button
+                type="button"
+                onClick={() => {
+                  const parsedItems = parseBulkFaqItems(bulkTextByBlockId[block.id] || "");
+
+                  if (parsedItems.length === 0) {
+                    alert("Cole perguntas e respostas em pares.");
+                    return;
+                  }
+
+                  updateBlockData(block.id, {
+                    ...block.data,
+                    items: parsedItems,
+                  });
+
+                  togglePasteMode(block.id, false);
+                }}
+                className="w-fit rounded-full bg-[#556B2F] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#465a28]"
+              >
+                Converter em perguntas
+              </button>
+            </div>
+          )}
+        </div>
+
         {items.map((item, index) => {
           const faqItem =
             typeof item === "object" && item !== null
