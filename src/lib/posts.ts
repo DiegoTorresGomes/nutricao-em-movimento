@@ -10,9 +10,14 @@ export async function getPublishedPosts() {
       category: true,
       author: true,
     },
-    orderBy: {
-      publishedAt: "desc",
-    },
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
   });
 }
 
@@ -59,9 +64,14 @@ export async function getArticleOfWeek() {
       category: true,
       author: true,
     },
-    orderBy: {
-      publishedAt: "desc",
-    },
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
   });
 }
 
@@ -75,9 +85,14 @@ export async function getLatestPublishedPosts(limit = 3) {
       category: true,
       author: true,
     },
-    orderBy: {
-      publishedAt: "desc",
-    },
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
     take: limit,
   });
 }
@@ -98,6 +113,9 @@ export async function getMostViewedPosts(limit = 8) {
       },
       {
         publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
       },
     ],
     take: limit,

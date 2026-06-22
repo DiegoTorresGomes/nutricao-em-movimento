@@ -160,13 +160,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
           <section className="px-4 py-10 sm:px-6 md:py-14">
             <div className="mx-auto max-w-5xl">
-              <div className="h-[300px] overflow-hidden rounded-[2rem] bg-[#E9DCC9] sm:h-[420px]">
+              <div className="overflow-hidden rounded-[2rem] bg-[#FAF8F4]">
                 {article.coverImage ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={article.coverImage}
-                    alt={article.coverImageAlt || article.title}
-                    className="h-full w-full object-cover"
+                    alt={article.coverImageAlt ?? article.title}
+                    className="h-auto w-full object-contain"
                   />
                 ) : null}
               </div>

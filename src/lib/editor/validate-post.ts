@@ -54,10 +54,6 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     ? !!htmlAnalysis?.hasAuthorNote
     : blocks.some((block) => block.type === "authorNote");
 
-  const hasDisclaimer = input.useLegacyHtml
-    ? !!htmlAnalysis?.hasDisclaimer
-    : blocks.some((block) => block.type === "disclaimer");
-
   const hasCta = input.useLegacyHtml
     ? !!htmlAnalysis?.hasCta
     : blocks.some((block) => block.type === "cta");
@@ -114,12 +110,6 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
       ok: hasAuthorNote,
       required: true,
       message: "Inclua o bloco Sobre a autora.",
-    },
-    {
-      label: "Disclaimer/aviso educativo",
-      ok: hasDisclaimer,
-      required: true,
-      message: "Inclua o disclaimer/aviso educativo.",
     },
   ];
 
