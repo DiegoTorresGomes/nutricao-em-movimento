@@ -34,11 +34,41 @@ export function renderBlocksToHtml(blocks: EditorBlock[]) {
         case "paragraph":
           return `<p>${escapeHtml(data.text)}</p>`;
 
-        case "unorderedList":
-          return renderList(Array.isArray(data.items) ? data.items : [], false);
+        case "unorderedList": {
+          const items = Array.isArray(data.items) ? data.items : [];
 
-        case "orderedList":
-          return renderList(Array.isArray(data.items) ? data.items : [], true);
+          return `
+    <ul style="margin:20px 0;padding-left:28px;list-style-type:disc;font-size:17px;line-height:1.8;color:#404040;">
+      ${items
+        .map(
+          (item) => `
+            <li style="margin:0 0 8px;padding-left:4px;">
+              ${escapeHtml(String(item))}
+            </li>
+          `
+        )
+        .join("")}
+    </ul>
+  `;
+        }
+
+        case "orderedList": {
+          const items = Array.isArray(data.items) ? data.items : [];
+
+          return `
+    <ol style="margin:20px 0;padding-left:28px;list-style-type:decimal;font-size:17px;line-height:1.8;color:#404040;">
+      ${items
+        .map(
+          (item) => `
+            <li style="margin:0 0 8px;padding-left:4px;">
+              ${escapeHtml(String(item))}
+            </li>
+          `
+        )
+        .join("")}
+    </ol>
+  `;
+        }
 
         case "image":
           return `
@@ -182,18 +212,35 @@ ${items
   }
 </div>`;
 
-        case "authorNote":
-          return `
-<div style="background:#FAF8F4;border-left:4px solid #556B2F;border-radius:20px;padding:22px;margin:34px 0;">
-  <h2 style="margin-top:0;">Sobre a autora</h2>
-  <p>${escapeHtml(data.text)}</p>
-</div>`;
+        case "authorNote": {
+          const text = escapeHtml(String(data.text || ""));
 
-        case "disclaimer":
           return `
-<div style="background:#FAF8F4;border:1px solid rgba(0,0,0,0.08);border-radius:22px;padding:22px;margin:28px 0;">
-  <p style="margin:0;"><strong>Aviso importante:</strong> ${escapeHtml(data.text)}</p>
-</div>`;
+    <div style="margin:40px 0;padding:24px;border-radius:24px;background:#F5FAF3;border:1px solid #D8E8D1;">
+      <h3 style="margin:0 0 12px;font-size:24px;color:#556B2F;">
+        Sobre a autora
+      </h3>
+      <p style="margin:0;font-size:17px;line-height:1.8;color:#404040;">
+        ${text}
+      </p>
+    </div>
+  `;
+        }
+
+        case "disclaimer": {
+          const text = escapeHtml(String(data.text || ""));
+
+          return `
+    <div style="margin:32px 0;padding:24px;border-radius:24px;background:#FFF8EE;border:1px solid #F0D7A8;">
+      <h3 style="margin:0 0 12px;font-size:22px;color:#8A5A00;">
+        Aviso educativo
+      </h3>
+      <p style="margin:0;font-size:16px;line-height:1.8;color:#404040;">
+        ${text}
+      </p>
+    </div>
+  `;
+        }
 
         case "references":
           return `

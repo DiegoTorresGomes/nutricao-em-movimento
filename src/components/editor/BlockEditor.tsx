@@ -50,6 +50,16 @@ const blockButtons: BlockButton[] = [
     description: "Passo a passo numerado",
   },
   {
+    label: "Sobre a autora",
+    type: "authorNote",
+    description: "Bloco de autoridade da nutricionista",
+  },
+  {
+    label: "Disclaimer",
+    type: "disclaimer",
+    description: "Aviso educativo obrigatório do artigo",
+  },
+  {
     label: "Resumo rápido",
     type: "summary",
     description: "Box com pontos principais do artigo",
@@ -134,6 +144,26 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
       type,
       data: {
         items: [""],
+      },
+    };
+  }
+
+  if (type === "authorNote") {
+    return {
+      id,
+      type,
+      data: {
+        text: "Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde baseada em evidências.",
+      },
+    };
+  }
+
+  if (type === "disclaimer") {
+    return {
+      id,
+      type,
+      data: {
+        text: "Este conteúdo tem caráter educativo e informativo e não substitui uma consulta individualizada com nutricionista. Cada pessoa possui necessidades, objetivos e histórias diferentes.",
       },
     };
   }
@@ -386,6 +416,22 @@ export function BlockEditor({
   }
 
   function updateBlockText(blockId: string, text: string) {
+    setBlocks((currentBlocks) =>
+      currentBlocks.map((block) => {
+        if (block.id !== blockId) return block;
+
+        return {
+          ...block,
+          data: {
+            ...block.data,
+            text,
+          },
+        };
+      })
+    );
+  }
+
+  function updateSimpleTextBlock(blockId: string, text: string) {
     setBlocks((currentBlocks) =>
       currentBlocks.map((block) => {
         if (block.id !== blockId) return block;
@@ -1207,6 +1253,7 @@ export function BlockEditor({
               updateBulkText,
               updateBlockData,
               updateBlockText,
+              updateSimpleTextBlock,
               updateListItem,
               addListItem,
               removeListItem,
@@ -1467,6 +1514,8 @@ function getBlockLabel(block: EditorBlock) {
   if (block.type === "paragraph") return "Parágrafo";
   if (block.type === "unorderedList") return "Lista";
   if (block.type === "orderedList") return "Lista numerada";
+  if (block.type === "authorNote") return "Sobre a autora";
+  if (block.type === "disclaimer") return "Disclaimer";
   if (block.type === "download") return "Material para baixar";
 
   return block.type;
@@ -1480,6 +1529,7 @@ type RenderBlockEditorProps = {
   updateBulkText: (blockId: string, value: string) => void;
   updateBlockData: (blockId: string, data: EditorBlock["data"]) => void;
   updateBlockText: (blockId: string, text: string) => void;
+  updateSimpleTextBlock: (blockId: string, text: string) => void;
   updateListItem: (blockId: string, itemIndex: number, value: string) => void;
   addListItem: (blockId: string) => void;
   removeListItem: (blockId: string, itemIndex: number) => void;
@@ -1544,6 +1594,7 @@ function renderBlockEditor({
   updateBulkText,
   updateBlockData,
   updateBlockText,
+  updateSimpleTextBlock,
   updateListItem,
   addListItem,
   removeListItem,
@@ -2406,6 +2457,38 @@ Comece observando fome, saciedade e julgamentos.`}
             className="h-12 rounded-2xl border border-black/10 bg-white px-4 text-sm outline-none focus:border-[#8A5A00]"
           />
         </div>
+      </div>
+    );
+  }
+
+  if (block.type === "authorNote") {
+    return (
+      <div className="grid gap-3 rounded-2xl border border-[#D8E8D1] bg-[#F5FAF3] p-4">
+        <label className="text-sm font-bold text-[#556B2F]">Sobre a autora</label>
+
+        <textarea
+          rows={4}
+          value={String(block.data.text || "")}
+          onChange={(event) => updateSimpleTextBlock(block.id, event.target.value)}
+          className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#556B2F]"
+        />
+      </div>
+    );
+  }
+
+  if (block.type === "disclaimer") {
+    return (
+      <div className="grid gap-3 rounded-2xl border border-[#F0D7A8] bg-[#FFF8EE] p-4">
+        <label className="text-sm font-bold text-[#8A5A00]">
+          Disclaimer / aviso educativo
+        </label>
+
+        <textarea
+          rows={4}
+          value={String(block.data.text || "")}
+          onChange={(event) => updateSimpleTextBlock(block.id, event.target.value)}
+          className="rounded-2xl border border-black/10 bg-white p-4 text-sm leading-7 outline-none focus:border-[#8A5A00]"
+        />
       </div>
     );
   }
