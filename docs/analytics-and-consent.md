@@ -15,7 +15,7 @@ tracking). Everything below is prepared and gated — activate only when ready.
 | Google Tag Manager | `src/components/analytics/GoogleTagManager.tsx` | Loads only if `NEXT_PUBLIC_GTM_ID` is set. |
 | Microsoft Clarity | `src/components/analytics/MicrosoftClarity.tsx` | Loads only if `NEXT_PUBLIC_CLARITY_ID` is set. |
 | Google Analytics (legacy direct) | `src/app/layout.tsx` | Loads only if `NEXT_PUBLIC_GA_ID` is set. Prefer loading GA4 **through GTM**. |
-| Google AdSense | `src/app/layout.tsx` | Loads only if `NEXT_PUBLIC_ADSENSE_CLIENT` is set. |
+| Google AdSense | `src/app/layout.tsx` | Native `<script>` in `<head>`, hardcoded `client=ca-pub-3638053236344020`, matching the official AdSense snippet byte-for-byte (no `next/script`, no `afterInteractive`) so it ships in the initial SSR HTML for Google verification/crawling. |
 
 ## Consent flow (Consent Mode v2)
 
@@ -36,8 +36,8 @@ NEXT_PUBLIC_GTM_ID="GTM-XXXXXXX"
 # Or GA4 directly (without GTM)
 NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
 
-# Google AdSense (after approval)
-NEXT_PUBLIC_ADSENSE_CLIENT="ca-pub-XXXXXXXXXXXXXXXX"
+# Google AdSense: no env var — the official snippet is hardcoded in
+# src/app/layout.tsx (client=ca-pub-3638053236344020). Change it there.
 
 # Microsoft Clarity
 NEXT_PUBLIC_CLARITY_ID="xxxxxxxxxx"

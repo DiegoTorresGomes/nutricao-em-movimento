@@ -116,14 +116,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </>
         )}
 
-        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
-          <Script
-            id="google-adsense"
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
+        {/*
+          Google AdSense: carregado exatamente como o snippet oficial do Google,
+          via <script> nativo diretamente no <head> — sem next/script e sem
+          strategy="afterInteractive" — para que o HTML entregue ao navegador
+          seja idêntico ao fornecido pelo AdSense (necessário para verificação
+          e crawling do site pelos robôs do Google).
+        */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+          crossOrigin="anonymous"
+        ></script>
       </head>
 
       <body className={`${playfair.variable} ${lato.variable}`}>
