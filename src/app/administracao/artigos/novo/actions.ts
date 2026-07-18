@@ -1,6 +1,7 @@
 "use server";
 
 import { Prisma } from "@prisma/client";
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import slugify from "slugify";
 import { prisma } from "@/lib/prisma";
@@ -136,6 +137,15 @@ export async function createPostAction(
       coverImageAlt: coverImageAlt || null,
     },
   });
+
+  // Revalidate the static public pages so a newly published article shows up
+  // immediately (the article listing and home are otherwise cached at build).
+  revalidatePath("/pt");
+  revalidatePath("/pt/artigos");
+  revalidatePath(`/pt/artigos/${slug}`);
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/feed.xml");
+  revalidatePath("/administracao/artigos");
 
   redirect("/administracao/artigos");
 }

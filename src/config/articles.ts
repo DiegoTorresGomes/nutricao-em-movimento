@@ -19,7 +19,7 @@ export const articles = [
   },
   {
     slug: "o-que-comer-antes-do-treino",
-    category: "Nutrição esportiva",
+    category: "Bem-Estar Nutricional",
     title: "O que comer antes do treino",
     description:
       "Aprenda princípios simples para melhorar sua disposição sem complicar sua alimentação.",

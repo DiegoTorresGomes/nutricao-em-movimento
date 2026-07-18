@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
         <div>
           <p className="text-sm font-black uppercase tracking-[0.24em] text-[#E9DCC9]">
-            Nutrição em Movimento
+            Nutrição & Movimento
           </p>
 
           <p className="mt-5 max-w-md text-sm leading-7 text-white/70">
@@ -53,6 +53,12 @@ export function Footer() {
             >
               Política de Privacidade
             </Link>
+            <Link
+              href="/pt/politica-de-cookies"
+              className="transition hover:text-[#E9DCC9]"
+            >
+              Política de Cookies
+            </Link>
             <Link href="/pt/termos-de-uso" className="transition hover:text-[#E9DCC9]">
               Termos de Uso
             </Link>
@@ -73,7 +79,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-6 py-5 text-center text-xs text-white/40">
-        © {new Date().getFullYear()} Nutrição em Movimento. Todos os direitos reservados.
+        © {new Date().getFullYear()} Nutrição & Movimento. Todos os direitos reservados.
       </div>
     </footer>
   );

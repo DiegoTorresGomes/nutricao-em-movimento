@@ -60,6 +60,8 @@ export async function GET(request: Request) {
 
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/feed.xml");
   revalidatePath("/administracao/calendario");
   revalidatePath("/administracao/artigos");
 

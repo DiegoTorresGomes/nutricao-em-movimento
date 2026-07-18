@@ -16,7 +16,9 @@ export function NutritionistSection({ settings }: NutritionistSectionProps) {
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={settings.photoUrl}
-                alt={settings.name}
+                alt={`${settings.name} — nutricionista`}
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover"
               />
             ) : (

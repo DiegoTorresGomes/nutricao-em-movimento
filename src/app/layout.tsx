@@ -1,6 +1,9 @@
-﻿import type { Metadata } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Lato, Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
+import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
+import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -19,14 +22,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nutricaoemovimento.com"),
 
   title: {
-    default: "Nutrição em Movimento",
-    template: "%s | Nutrição em Movimento",
+    default: "Nutrição & Movimento",
+    template: "%s | Nutrição & Movimento",
   },
 
   description:
-    "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva para quem busca saúde, constância e equilíbrio sem radicalismos.",
+    "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional para quem busca saúde, constância e equilíbrio sem radicalismos.",
 
-  applicationName: "Nutrição em Movimento",
+  applicationName: "Nutrição & Movimento",
 
   authors: [
     {
@@ -36,31 +39,31 @@ export const metadata: Metadata = {
   ],
 
   creator: "Weverlyn da Cruz Alves Torres",
-  publisher: "Nutrição em Movimento",
+  publisher: "Nutrição & Movimento",
 
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: "https://nutricaoemovimento.com/pt",
-    siteName: "Nutrição em Movimento",
-    title: "Nutrição em Movimento",
+    siteName: "Nutrição & Movimento",
+    title: "Nutrição & Movimento",
     description:
-      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
     images: [
       {
         url: "/images/og/nutricao-em-movimento.jpg",
         width: 1200,
         height: 630,
-        alt: "Nutrição em Movimento",
+        alt: "Nutrição & Movimento",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nutrição em Movimento",
+    title: "Nutrição & Movimento",
     description:
-      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
     images: ["/images/og/nutricao-em-movimento.jpg"],
   },
 
@@ -68,12 +71,33 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+
+  alternates: {
+    canonical: "/pt",
+    types: {
+      "application/rss+xml": [
+        {
+          url: "/feed.xml",
+          title: "Nutrição & Movimento — Artigos",
+        },
+      ],
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#556B2F",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
+        {/* Consent Mode v2 defaults must run before any tag (see docs). */}
+        <ConsentModeInit />
+
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <Script
@@ -91,9 +115,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Script>
           </>
         )}
+
+        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
+          <Script
+            id="google-adsense"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
       </head>
 
-      <body className={`${playfair.variable} ${lato.variable}`}>{children}</body>
+      <body className={`${playfair.variable} ${lato.variable}`}>
+        {/* Prepared, inactive until their env vars are set (see docs). */}
+        <GoogleTagManager />
+        <MicrosoftClarity />
+        {children}
+      </body>
     </html>
   );
 }

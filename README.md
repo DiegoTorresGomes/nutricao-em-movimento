@@ -1,6 +1,6 @@
 # Nutrição em Movimento
 
-Blog premium de nutrição, comportamento alimentar, emagrecimento sustentável e nutrição esportiva.
+Blog premium de nutrição, comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.
 
 O projeto foi desenvolvido para criar uma presença digital profissional para uma nutricionista, com foco em conteúdo educativo, autoridade de marca, SEO, monetização ética e gestão de artigos por painel administrativo próprio.
 

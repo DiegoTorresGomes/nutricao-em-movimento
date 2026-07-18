@@ -14,7 +14,7 @@ export default async function NewPostPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-semibold">Novo artigo</h1>
         <p className="mt-2 text-sm text-neutral-600">
-          Crie um novo conteúdo para o blog Nutrição em Movimento.
+          Crie um novo conteúdo para o blog Nutrição & Movimento.
         </p>
       </div>
 

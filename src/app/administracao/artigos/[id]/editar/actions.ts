@@ -1,6 +1,7 @@
 "use server";
 
 import { Prisma } from "@prisma/client";
+import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import type { EditorBlock } from "@/lib/editor/blocks";
@@ -61,7 +62,7 @@ export async function updatePostAction(id: string, formData: FormData) {
     });
   }
 
-  await prisma.post.update({
+  const updated = await prisma.post.update({
     where: {
       id,
     },
@@ -87,6 +88,15 @@ export async function updatePostAction(id: string, formData: FormData) {
       coverImageAlt: coverImageAlt || null,
     },
   });
+
+  // Keep the cached public pages in sync after an edit (status change,
+  // content update, cover swap, etc.).
+  revalidatePath("/pt");
+  revalidatePath("/pt/artigos");
+  revalidatePath(`/pt/artigos/${updated.slug}`);
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/feed.xml");
+  revalidatePath("/administracao/artigos");
 
   redirect("/administracao/artigos");
 }

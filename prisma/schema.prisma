@@ -84,12 +84,32 @@ model Post {
   category Category @relation(fields: [categoryId], references: [id])
 }
 
+enum SubscriberStatus {
+  PENDING
+  CONFIRMED
+  UNSUBSCRIBED
+}
+
 model NewsletterSubscriber {
-  id        String   @id @default(cuid())
-  name      String?
-  email     String   @unique
-  active    Boolean  @default(true)
-  createdAt DateTime @default(now())
+  id                String           @id @default(cuid())
+  name              String?
+  email             String           @unique
+  active            Boolean          @default(true)
+  // Defaults to CONFIRMED so existing rows are backfilled as already opted-in;
+  // new double opt-in sign-ups explicitly set PENDING until the e-mail is confirmed.
+  status              SubscriberStatus @default(CONFIRMED)
+  confirmationToken   String?          @unique
+  confirmationExpiresAt DateTime?
+  confirmedAt         DateTime?
+  ipAddress           String?
+  createdAt           DateTime         @default(now())
+
+  // LGPD consent audit trail (filled on Double Opt-in confirmation).
+  consentVersion       Int?
+  consentAcceptedAt    DateTime?
+  privacyPolicyVersion String?
+  cookiesPolicyVersion String?
+  userAgent            String?
 }
 
 model SiteSetting {

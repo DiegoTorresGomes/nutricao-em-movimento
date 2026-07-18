@@ -12,7 +12,7 @@ export function ArticlesHero() {
 
         <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-600 sm:text-lg sm:leading-8">
           Artigos sobre comportamento alimentar, emagrecimento sustentável,
-          nutrição esportiva e estratégias práticas para o dia a dia.
+          Bem-Estar Nutricional e estratégias práticas para o dia a dia.
         </p>
       </div>
     </section>

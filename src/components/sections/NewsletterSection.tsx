@@ -48,15 +48,28 @@ export function NewsletterSection({ status }: NewsletterSectionProps) {
                 </button>
               </div>
 
-              {status === "sucesso" && (
+              {(status === "confirmar" || status === "sucesso") && (
                 <p className="rounded-2xl bg-green-50 p-3 text-sm font-bold text-green-700">
-                  Inscrição realizada com sucesso.
+                  Quase lá! Enviamos um e-mail de confirmação. Clique no link para concluir sua
+                  inscrição.
+                </p>
+              )}
+
+              {status === "confirmado" && (
+                <p className="rounded-2xl bg-green-50 p-3 text-sm font-bold text-green-700">
+                  Inscrição confirmada com sucesso. Bem-vindo(a)!
+                </p>
+              )}
+
+              {status === "expirado" && (
+                <p className="rounded-2xl bg-amber-50 p-3 text-sm font-bold text-amber-700">
+                  Este link de confirmação expirou. Inscreva-se novamente para receber um novo.
                 </p>
               )}
 
               {status === "erro" && (
                 <p className="rounded-2xl bg-red-50 p-3 text-sm font-bold text-red-700">
-                  Informe um e-mail válido.
+                  Não foi possível concluir. Verifique o e-mail e tente novamente.
                 </p>
               )}
 

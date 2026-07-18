@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Search } from "lucide-react";
 
 type Post = {
@@ -21,6 +21,16 @@ type ArticlesBrowserProps = {
 export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
   const [activeFilter, setActiveFilter] = useState("Todos");
   const [search, setSearch] = useState("");
+
+  // Support the Schema.org SearchAction target (/pt/artigos?q=...): read the
+  // query from the URL on the client so the page itself stays statically
+  // cacheable (no server-side searchParams / dynamic rendering).
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search).get("q");
+    if (query) {
+      setSearch(query);
+    }
+  }, []);
 
   const filters = useMemo(() => {
     const categories = posts
@@ -97,6 +107,8 @@ export function ArticlesBrowser({ posts }: ArticlesBrowserProps) {
                     <img
                       src={article.coverImage}
                       alt={article.title}
+                      loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     />
                   ) : null}

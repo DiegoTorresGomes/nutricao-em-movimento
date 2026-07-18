@@ -4,16 +4,16 @@ import { PublicLayout } from "@/components/layout/PublicLayout";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição em Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
+    "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição & Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
 
   alternates: {
     canonical: "/pt/sobre",
   },
 
   openGraph: {
-    title: "Sobre | Nutrição em Movimento",
+    title: "Sobre | Nutrição & Movimento",
     description:
-      "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição em Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
+      "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição & Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
     url: "/pt/sobre",
     type: "website",
     images: [
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
         url: "/images/og/nutricao-em-movimento.jpg",
         width: 1200,
         height: 630,
-        alt: "Nutrição em Movimento",
+        alt: "Nutrição & Movimento",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Sobre | Nutrição em Movimento",
+    title: "Sobre | Nutrição & Movimento",
     description:
-      "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição em Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
+      "Conheça Weverlyn Alves, nutricionista, e a proposta do Nutrição & Movimento: ciência, acolhimento e constância para escolhas mais conscientes.",
     images: ["/images/og/nutricao-em-movimento.jpg"],
   },
 };
@@ -80,18 +80,18 @@ export default function SobrePage() {
 
         <section className="mt-10 max-w-3xl space-y-6 text-base leading-7 text-neutral-700 sm:text-lg sm:leading-8">
           <h2 className="text-2xl font-semibold text-[#111111]">
-            Sobre o Nutrição em Movimento
+            Sobre o Nutrição & Movimento
           </h2>
 
           <p>
-            Criei o Nutrição em Movimento com o propósito de compartilhar
+            Criei o Nutrição & Movimento com o propósito de compartilhar
             informações confiáveis de maneira simples, prática e acessível.
           </p>
 
           <p>
             Aqui você encontrará conteúdos sobre alimentação saudável,
             comportamento alimentar, emagrecimento sustentável, atividade física,
-            nutrição esportiva, qualidade de vida, ciência e saúde.
+            Bem-Estar Nutricional, qualidade de vida, ciência e saúde.
           </p>
 
           <p>

@@ -32,7 +32,7 @@ export async function AdminLayout({ children }: AdminLayoutProps) {
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#E9DCC9]">
             Admin
           </p>
-          <h1 className="mt-3 text-2xl font-semibold">Nutrição em Movimento</h1>
+          <h1 className="mt-3 text-2xl font-semibold">Nutrição & Movimento</h1>
         </div>
 
         <nav className="mt-10 flex flex-col gap-2">

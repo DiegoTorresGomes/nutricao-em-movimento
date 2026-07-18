@@ -5,16 +5,16 @@ import { sendContactMessageAction } from "./actions";
 export const metadata: Metadata = {
   title: "Contato",
   description:
-    "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
+    "Entre em contato com o Nutrição & Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
 
   alternates: {
     canonical: "/pt/contato",
   },
 
   openGraph: {
-    title: "Contato | Nutrição em Movimento",
+    title: "Contato | Nutrição & Movimento",
     description:
-      "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
+      "Entre em contato com o Nutrição & Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
     url: "/pt/contato",
     type: "website",
     images: [
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
         url: "/images/og/nutricao-em-movimento.jpg",
         width: 1200,
         height: 630,
-        alt: "Nutrição em Movimento",
+        alt: "Nutrição & Movimento",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Contato | Nutrição em Movimento",
+    title: "Contato | Nutrição & Movimento",
     description:
-      "Entre em contato com o Nutrição em Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
+      "Entre em contato com o Nutrição & Movimento para dúvidas, consultas, parcerias ou orientações iniciais.",
     images: ["/images/og/nutricao-em-movimento.jpg"],
   },
 };

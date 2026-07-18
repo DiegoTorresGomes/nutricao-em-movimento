@@ -6,7 +6,7 @@ export const nutritionistConfig = {
     "Engenharia de Alimentos",
     "Comportamento alimentar",
     "Emagrecimento sustentável",
-    "Nutrição esportiva",
+    "Bem-Estar Nutricional",
   ],
   instagramUrl: "https://www.instagram.com/nutri_lyn_weverlynalves",
   whatsappUrl: "https://wa.me/5521979762589",

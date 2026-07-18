@@ -1,7 +1,8 @@
-﻿import Link from "next/link";
-import { Menu, Search } from "lucide-react";
+import Link from "next/link";
+import { Search } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import { siteConfig } from "@/config/site";
+import { MobileMenu } from "./MobileMenu";
 
 const menuItems = [
   { label: "Início", href: "/pt" },
@@ -19,7 +20,7 @@ export function Header() {
             Nutrição
           </div>
           <div className="-mt-1 text-xs font-black uppercase tracking-[0.24em] text-[#556B2F] sm:text-sm">
-            em Movimento
+            &amp; Movimento
           </div>
         </Link>
 
@@ -61,13 +62,7 @@ export function Header() {
             Newsletter
           </a>
 
-          <button
-            type="button"
-            aria-label="Abrir menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 text-[#111111] md:hidden"
-          >
-            <Menu size={18} />
-          </button>
+          <MobileMenu items={menuItems} />
         </div>
       </div>
     </header>

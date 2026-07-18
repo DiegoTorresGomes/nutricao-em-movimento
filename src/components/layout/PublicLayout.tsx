@@ -1,4 +1,5 @@
-﻿import { Footer } from "./Footer";
+﻿import { CookieConsent } from "@/components/consent/CookieConsent";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 type PublicLayoutProps = {
@@ -11,6 +12,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
       <Header />
       {children}
       <Footer />
+      <CookieConsent />
     </div>
   );
 }

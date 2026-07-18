@@ -48,9 +48,9 @@ async function main() {
       description: "Estratégias possíveis para constância sem efeito sanfona.",
     },
     {
-      name: "Nutrição esportiva",
-      slug: "nutricao-esportiva",
-      description: "Energia, treino, performance e recuperação.",
+      name: "Bem-Estar Nutricional",
+      slug: "bem-estar-nutricional",
+      description: "Equilíbrio, energia e qualidade de vida através da alimentação.",
     },
   ];
 
@@ -70,8 +70,8 @@ async function main() {
     where: { slug: "emagrecimento-sustentavel" },
   });
 
-  const esportiva = await prisma.category.findUniqueOrThrow({
-    where: { slug: "nutricao-esportiva" },
+  const bemEstar = await prisma.category.findUniqueOrThrow({
+    where: { slug: "bem-estar-nutricional" },
   });
 
   const posts = [
@@ -96,7 +96,7 @@ async function main() {
       slug: "o-que-comer-antes-do-treino",
       description:
         "Aprenda princípios simples para melhorar sua disposição sem complicar sua alimentação.",
-      categoryId: esportiva.id,
+      categoryId: bemEstar.id,
       readTime: "4 min de leitura",
     },
   ];

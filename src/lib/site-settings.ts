@@ -25,7 +25,7 @@ export const defaultNutritionistSettings: NutritionistSettings = {
     "Engenharia de Alimentos",
     "Comportamento alimentar",
     "Emagrecimento sustentável",
-    "Nutrição esportiva",
+    "Bem-Estar Nutricional",
   ],
 };
 
@@ -79,10 +79,10 @@ export type HomeSettings = {
 };
 
 export const defaultHomeSettings: HomeSettings = {
-  heroLabel: "Nutrição em Movimento",
+  heroLabel: "Nutrição & Movimento",
   heroTitle: "Nutrição real para uma vida em movimento.",
   heroDescription:
-    "Corpo ativo, mente alinhada, vida em construção. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva para quem busca saúde, constância e equilíbrio sem radicalismos.",
+    "Corpo ativo, mente alinhada, vida em construção. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional para quem busca saúde, constância e equilíbrio sem radicalismos.",
   primaryButtonText: "Ler artigos",
   primaryButtonUrl: "/pt/artigos",
   secondaryButtonText: "Conhecer a nutricionista",
@@ -94,7 +94,7 @@ export const defaultHomeSettings: HomeSettings = {
   editorialPillars: [
     "Comportamento alimentar",
     "Emagrecimento sustentável",
-    "Nutrição esportiva",
+    "Bem-Estar Nutricional",
   ],
   pillarsLabel: "Pilares",
   pillarsTitle:
@@ -111,9 +111,9 @@ export const defaultHomeSettings: HomeSettings = {
         "Estratégias possíveis para construir resultados consistentes sem efeito sanfona.",
     },
     {
-      title: "Nutrição esportiva",
+      title: "Bem-Estar Nutricional",
       description:
-        "Alimentação alinhada ao treino, energia, performance e recuperação.",
+        "Alimentação que sustenta energia, equilíbrio e qualidade de vida no dia a dia.",
     },
   ],
 };

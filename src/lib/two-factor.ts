@@ -6,7 +6,7 @@ export function generateTwoFactorSecret(email: string) {
 
   const otpauthUrl = authenticator.keyuri(
     email,
-    "Nutrição em Movimento",
+    "Nutrição & Movimento",
     secret
   );
 

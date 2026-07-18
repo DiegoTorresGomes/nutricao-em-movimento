@@ -16,18 +16,18 @@ import { getMostViewedPosts } from "@/lib/posts";
 import { getHomeSettings } from "@/lib/site-settings";
 
 export const metadata: Metadata = {
-  title: "Nutrição em Movimento",
+  title: "Nutrição & Movimento",
   description:
-    "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+    "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
 
   alternates: {
     canonical: "/pt",
   },
 
   openGraph: {
-    title: "Nutrição em Movimento",
+    title: "Nutrição & Movimento",
     description:
-      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
     url: "/pt",
     type: "website",
     images: [
@@ -35,16 +35,16 @@ export const metadata: Metadata = {
         url: "/images/og/nutricao-em-movimento.jpg",
         width: 1200,
         height: 630,
-        alt: "Nutrição em Movimento",
+        alt: "Nutrição & Movimento",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nutrição em Movimento",
+    title: "Nutrição & Movimento",
     description:
-      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+      "Nutrição real para uma vida em movimento. Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
     images: ["/images/og/nutricao-em-movimento.jpg"],
   },
 };
@@ -103,9 +103,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "Nutrição em Movimento",
+    name: "Nutrição & Movimento",
     description:
-      "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e nutrição esportiva.",
+      "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
     url: "https://nutricaoemovimento.com",
     publisher: {
       "@type": "Person",
@@ -116,12 +116,20 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Nutrição em Movimento",
+    name: "Nutrição & Movimento",
     url: "https://nutricaoemovimento.com",
     inLanguage: "pt-BR",
     publisher: {
       "@type": "Person",
       name: nutritionistSettings.name,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://nutricaoemovimento.com/pt/artigos?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 

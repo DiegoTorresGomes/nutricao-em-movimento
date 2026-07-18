@@ -36,6 +36,8 @@ export function ArticleOfWeek({ article }: ArticleOfWeekProps) {
               <img
                 src={article.coverImage}
                 alt={article.title}
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover"
               />
             ) : null}

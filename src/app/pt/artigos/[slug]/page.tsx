@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleViewCounter } from "@/components/ArticleViewCounter";
 import { PublicLayout } from "@/components/layout/PublicLayout";
 import { NewsletterSection } from "@/components/sections/NewsletterSection";
+import { ArticleCard } from "@/components/ui/ArticleCard";
 import { Button } from "@/components/ui/Button";
 import { getNutritionistSettings } from "@/lib/site-settings";
-import { getPublishedPostBySlug } from "@/lib/posts";
-import { prisma } from "@/lib/prisma";
+import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
 
 type ArticlePageProps = {
   params: Promise<{
@@ -38,7 +40,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       type: "article",
       locale: "pt_BR",
       url: articleUrl,
-      siteName: "Nutrição em Movimento",
+      siteName: "Nutrição & Movimento",
       title: article.title,
       description: article.description,
       publishedTime: article.publishedAt?.toISOString(),
@@ -67,18 +69,6 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
   const article = await getPublishedPostBySlug(slug);
-  if (article) {
-    await prisma.post.update({
-      where: {
-        id: article.id,
-      },
-      data: {
-        views: {
-          increment: 1,
-        },
-      },
-    });
-  }
 
   const nutritionistSettings = await getNutritionistSettings();
 
@@ -86,9 +76,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const relatedPosts = await getRelatedPosts(article.categoryId, article.id, 3);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    inLanguage: "pt-BR",
     headline: article.title,
     description: article.description,
     image: article.coverImage
@@ -108,7 +101,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Nutrição em Movimento",
+      name: "Nutrição & Movimento",
       logo: {
         "@type": "ImageObject",
         url: "https://nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg",
@@ -120,18 +113,68 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Início",
+        item: "https://nutricaoemovimento.com/pt",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Artigos",
+        item: "https://nutricaoemovimento.com/pt/artigos",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `https://nutricaoemovimento.com/pt/artigos/${article.slug}`,
+      },
+    ],
+  };
+
   return (
     <PublicLayout>
       <main className="overflow-x-hidden">
+        <ArticleViewCounter postId={article.id} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(articleJsonLd),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbJsonLd),
+          }}
+        />
         <article>
           <header className="bg-[#FAF8F4] px-4 py-16 sm:px-6 md:py-24">
             <div className="mx-auto max-w-4xl">
+              <nav aria-label="Breadcrumb" className="mb-6 text-xs text-neutral-500">
+                <ol className="flex flex-wrap items-center gap-2">
+                  <li>
+                    <Link href="/pt" className="transition hover:text-[#556B2F]">
+                      Início
+                    </Link>
+                  </li>
+                  <li aria-hidden="true">/</li>
+                  <li>
+                    <Link href="/pt/artigos" className="transition hover:text-[#556B2F]">
+                      Artigos
+                    </Link>
+                  </li>
+                  <li aria-hidden="true">/</li>
+                  <li className="line-clamp-1 max-w-[16rem] text-neutral-700">{article.title}</li>
+                </ol>
+              </nav>
+
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#D67A5A]">
                 {article.category.name}
               </p>
@@ -194,6 +237,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                       <img
                         src={nutritionistSettings.photoUrl}
                         alt={nutritionistSettings.name}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover"
                       />
                     ) : null}
@@ -229,6 +274,33 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
           </section>
         </article>
+
+        {relatedPosts.length > 0 && (
+          <section className="px-4 pb-16 sm:px-6 md:pb-20">
+            <div className="mx-auto max-w-6xl">
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#D67A5A]">
+                Continue lendo
+              </p>
+
+              <h2 className="mt-4 text-2xl font-semibold leading-tight sm:text-3xl">
+                Artigos relacionados
+              </h2>
+
+              <div className="mt-8 flex flex-wrap justify-center gap-6 sm:justify-start">
+                {relatedPosts.map((related) => (
+                  <ArticleCard
+                    key={related.slug}
+                    category={related.category.name}
+                    title={related.title}
+                    description={related.description}
+                    slug={related.slug}
+                    coverImage={related.coverImage}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <NewsletterSection />
       </main>

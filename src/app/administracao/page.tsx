@@ -34,7 +34,7 @@ export default async function AdminPage() {
             <div>
               <h3 className="text-2xl font-semibold">Artigos do blog</h3>
               <p className="mt-2 text-sm text-neutral-600">
-                Crie, edite e publique conteúdos para o Nutrição em Movimento.
+                Crie, edite e publique conteúdos para o Nutrição & Movimento.
               </p>
             </div>
 

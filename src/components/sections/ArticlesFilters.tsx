@@ -3,7 +3,7 @@ export function ArticlesFilters() {
     "Todos",
     "Comportamento alimentar",
     "Emagrecimento",
-    "Nutrição esportiva",
+    "Bem-Estar Nutricional",
     "Hábitos",
   ];
 

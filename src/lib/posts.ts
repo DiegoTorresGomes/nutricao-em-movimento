@@ -75,6 +75,68 @@ export async function getArticleOfWeek() {
   });
 }
 
+export async function getRelatedPosts(categoryId: string, excludeId: string, limit = 3) {
+  // Prefer articles from the same category (excluding the current one).
+  const sameCategory = await prisma.post.findMany({
+    where: {
+      status: "PUBLISHED",
+      language: "pt",
+      categoryId,
+      NOT: {
+        id: excludeId,
+      },
+    },
+    include: {
+      category: true,
+      author: true,
+    },
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
+    take: limit,
+  });
+
+  if (sameCategory.length >= limit) {
+    return sameCategory;
+  }
+
+  // Backfill with the most recent articles from other categories so the
+  // section is never empty (and never repeats the ones already picked).
+  const alreadyPicked = [excludeId, ...sameCategory.map((post) => post.id)];
+
+  const backfill = await prisma.post.findMany({
+    where: {
+      status: "PUBLISHED",
+      language: "pt",
+      NOT: {
+        id: {
+          in: alreadyPicked,
+        },
+      },
+    },
+    include: {
+      category: true,
+      author: true,
+    },
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
+    take: limit - sameCategory.length,
+  });
+
+  return [...sameCategory, ...backfill];
+}
+
 export async function getLatestPublishedPosts(limit = 3) {
   return prisma.post.findMany({
     where: {
