@@ -23,6 +23,7 @@ export async function POST(
   // Drop the deleted article from the cached public pages immediately.
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
+  revalidatePath("/pt/sobre");
   revalidatePath(`/pt/artigos/${deleted.slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");

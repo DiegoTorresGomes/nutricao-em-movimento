@@ -142,6 +142,7 @@ export async function createPostAction(
   // immediately (the article listing and home are otherwise cached at build).
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
+  revalidatePath("/pt/sobre");
   revalidatePath(`/pt/artigos/${slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");

@@ -93,6 +93,7 @@ export async function updatePostAction(id: string, formData: FormData) {
   // content update, cover swap, etc.).
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
+  revalidatePath("/pt/sobre");
   revalidatePath(`/pt/artigos/${updated.slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");

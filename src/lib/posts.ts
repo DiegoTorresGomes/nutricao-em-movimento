@@ -21,6 +21,17 @@ export async function getPublishedPosts() {
   });
 }
 
+export async function getPublishedPostsCount() {
+  // Conta apenas artigos realmente publicados (exclui rascunhos e agendados
+  // ainda não publicados). Usa COUNT no banco, sem carregar os registros.
+  return prisma.post.count({
+    where: {
+      status: "PUBLISHED",
+      language: "pt",
+    },
+  });
+}
+
 export async function getPublishedPostBySlug(slug: string) {
   return prisma.post.findFirst({
     where: {

@@ -109,7 +109,7 @@ async function main() {
         ...post,
         subtitle: post.description,
         content: `
-<p>Este é um conteúdo inicial demonstrativo para validar o template premium de artigo do Nutrição em Movimento.</p>
+<p>Este é um conteúdo inicial demonstrativo para validar o template premium de artigo do Nutrição e Movimento.</p>
 
 <h2>Uma relação mais consciente com a alimentação</h2>
 

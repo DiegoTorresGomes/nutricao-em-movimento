@@ -35,6 +35,7 @@ export async function reschedulePostAction(formData: FormData) {
   revalidatePath("/administracao/artigos");
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
+  revalidatePath("/pt/sobre");
 
   if (post?.slug) {
     revalidatePath(`/pt/artigos/${post.slug}`);
