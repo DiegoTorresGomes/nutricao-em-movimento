@@ -120,10 +120,25 @@ model SiteSetting {
   updatedAt DateTime @updatedAt
 }
 
+enum ContactMessageStatus {
+  NEW
+  READ
+  ARCHIVED
+}
+
 model ContactMessage {
   id        String   @id @default(cuid())
   name      String
   email     String
+  // Opcionais: mensagens anteriores à Fase 2 não possuem estes dados — ficam
+  // NULL (não inventamos assunto/telefone para registros legados).
+  phone     String?
+  subject   String?
   message   String   @db.LongText
+  status    ContactMessageStatus @default(NEW)
+  readAt    DateTime?
   createdAt DateTime @default(now())
+  // @default(now()) garante backfill seguro dos registros existentes ao
+  // adicionar a coluna; @updatedAt mantém o padrão do projeto nas atualizações.
+  updatedAt DateTime @updatedAt @default(now())
 }

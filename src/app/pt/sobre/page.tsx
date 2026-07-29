@@ -96,23 +96,24 @@ export default async function SobrePage() {
       <main>
         {/* 2.1 — Hero de autoridade */}
         <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:py-20">
-          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-14">
-            {/* Coluna visual */}
-            <div className="rounded-[2rem] bg-[#E9DCC9] p-4 sm:p-5 lg:order-1">
+          <div className="grid gap-10 min-[960px]:grid-cols-[0.9fr_1.1fr] min-[960px]:items-center min-[960px]:gap-14">
+            {/* Coluna visual — largura limitada e centralizada para não dominar
+                a tela em telas estreitas/tablet; lado a lado a partir de 960px. */}
+            <div className="mx-auto w-full max-w-[420px] rounded-[2rem] bg-[#E9DCC9] p-4 sm:max-w-[460px] sm:p-5 min-[960px]:order-1">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-white">
                 <Image
                   src={photoUrl}
                   alt={photoAlt}
                   fill
                   priority
-                  sizes="(min-width: 1024px) 40vw, (min-width: 640px) 90vw, 100vw"
+                  sizes="(min-width: 640px) 420px, 100vw"
                   className="object-cover"
                 />
               </div>
             </div>
 
             {/* Coluna de conteúdo */}
-            <div className="lg:order-2">
+            <div className="min-[960px]:order-2">
               <SectionLabel>Sobre a nutricionista</SectionLabel>
 
               <h1 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">

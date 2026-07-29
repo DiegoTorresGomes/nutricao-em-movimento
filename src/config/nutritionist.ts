@@ -65,6 +65,17 @@ export const nutritionistConfig = {
     modes: ["Atendimento presencial", "Atendimento online"],
   },
 
+  // Canais e dados de contato confirmados. Fonte única — reutilizada pela
+  // página Contato, Footer e Schema. `responseTime` centraliza o texto para
+  // não ser duplicado em vários locais.
+  contact: {
+    email: "contato@nutricaoemovimento.com",
+    phone: "+55 21 97976-2589",
+    responseTime: "Até 24 horas úteis",
+    // Mensagem inicial neutra do WhatsApp (sem dados pessoais na URL).
+    whatsappMessage: "Olá, gostaria de informações sobre atendimento nutricional.",
+  },
+
   photoUrl: "/images/nutritionist/weverlyn.jpg",
   photoAlt: "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
 

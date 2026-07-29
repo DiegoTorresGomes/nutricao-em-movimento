@@ -16,7 +16,7 @@ const menuItems = [
   { label: "Nutricionista", href: "/administracao/nutricionista" },
   { label: "Segurança", href: "/administracao/seguranca" },
   { label: "Newsletter", href: "/administracao/newsletter" },
-
+  { label: "Contatos", href: "/administracao/contatos" },
 ];
 
 export async function AdminLayout({ children }: AdminLayoutProps) {
