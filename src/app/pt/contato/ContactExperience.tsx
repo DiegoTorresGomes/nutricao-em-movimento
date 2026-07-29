@@ -151,13 +151,15 @@ export function ContactExperience() {
                 href={whatsappHref}
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Conversar com a nutricionista pelo WhatsApp (abre em nova aba)"
                 className="rounded-2xl border border-black/5 bg-[#FAF8F4] p-4 transition hover:border-[#556B2F]/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#556B2F]"
               >
                 <span className="block text-xs font-bold uppercase tracking-[0.2em] text-[#556B2F]">
                   WhatsApp
                 </span>
-                <span className="mt-1 block text-sm font-semibold text-[#111111]">
-                  {contact.phone}
+                <span className="mt-1 flex items-center gap-1 text-sm font-semibold text-[#111111]">
+                  Conversar com a nutricionista
+                  <span aria-hidden="true">→</span>
                 </span>
               </a>
 
