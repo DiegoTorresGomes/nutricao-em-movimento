@@ -13,6 +13,9 @@ type ArticleCardProps = {
   date?: string | null;
   variant?: ArticleCardVariant;
   className?: string;
+  // Só relevante dentro de contextos arrastáveis (o carrossel "Mais lidos").
+  // Default `true` preserva o comportamento nativo do <img> em todo o resto.
+  imageDraggable?: boolean;
 };
 
 export function ArticleCard({
@@ -24,6 +27,7 @@ export function ArticleCard({
   date,
   variant = "default",
   className = "",
+  imageDraggable = true,
 }: ArticleCardProps) {
   // "default" preserva EXATAMENTE o visual original — usado pela Home
   // (ArticleCarousel) e pelos artigos individuais ("Artigos relacionados"),
@@ -42,6 +46,7 @@ export function ArticleCard({
               alt={title}
               loading="lazy"
               decoding="async"
+              draggable={imageDraggable}
               className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
             />
           ) : null}
@@ -84,6 +89,7 @@ export function ArticleCard({
               alt={title}
               loading="lazy"
               decoding="async"
+              draggable={imageDraggable}
               className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
             />
           ) : null}
@@ -119,6 +125,7 @@ export function ArticleCard({
               alt={title}
               loading="lazy"
               decoding="async"
+              draggable={imageDraggable}
               className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
             />
           ) : null}

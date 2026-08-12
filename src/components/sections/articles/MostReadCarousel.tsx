@@ -12,20 +12,36 @@ type MostReadCarouselProps = {
   articles: ArticleListItem[];
 };
 
+// Distância (px) para diferenciar um clique de um arraste.
+const DRAG_THRESHOLD = 6;
+// Inércia — deliberadamente sutil ("muito suave, sem exagero").
+const FRICTION = 0.94; // multiplicador de velocidade aplicado a cada frame
+const MIN_VELOCITY = 0.02; // px/ms — abaixo disso, a inércia para
+const MAX_VELOCITY = 3; // px/ms — teto para um flick muito rápido não "voar"
+
 // Carrossel editorial com sensação de profundidade (perspectiva + rotação Y +
 // escala) construído só com CSS transform/opacity + Pointer Events + scroll
 // nativo — sem biblioteca de animação/carrossel. O scroll horizontal nativo
-// com scroll-snap é a base funcional; o efeito 3D é uma camada visual sobre
-// ele, recalculada via rAF a cada evento de scroll.
+// com scroll-snap é a base funcional fora da interação de arraste; durante o
+// drag e a inércia o snap é desativado para o movimento acompanhar o ponteiro
+// 1:1, e reativado assim que o carrossel assenta.
 export function MostReadCarousel({ articles }: MostReadCarouselProps) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
-  const rafRef = useRef<number | null>(null);
+  const scrollRafRef = useRef<number | null>(null);
+  const inertiaRafRef = useRef<number | null>(null);
+
   const dragStartRef = useRef({ x: 0, scrollLeft: 0 });
   const hasDraggedRef = useRef(false);
   const isPointerDownRef = useRef(false);
+  const lastPointerRef = useRef({ x: 0, t: 0 });
+  const velocityRef = useRef(0); // px/ms, com sinal (direção do arraste)
 
   const [activeIndex, setActiveIndex] = useState(0);
+  // true durante o drag OU a inércia — controla snap e a transição CSS dos
+  // cards (desligada durante a interação para o 3D acompanhar 1:1 o mouse).
+  const [isInteracting, setIsInteracting] = useState(false);
+  // true só enquanto o botão está pressionado — controla cursor/seleção.
   const [isDragging, setIsDragging] = useState(false);
   const reducedMotion = usePrefersReducedMotion();
 
@@ -72,15 +88,17 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
     setActiveIndex((prev) => (prev === closestIndex ? prev : closestIndex));
   }, [articles, reducedMotion]);
 
+  // Cobre scroll nativo (roda do mouse, swipe touch, scrollIntoView das
+  // setas/teclado) — sempre rAF-throttled, nunca mais de 1 recálculo por frame.
   useEffect(() => {
     const scroller = scrollerRef.current;
     if (!scroller) return;
 
     function onScroll() {
-      if (rafRef.current !== null) return;
-      rafRef.current = requestAnimationFrame(() => {
+      if (scrollRafRef.current !== null) return;
+      scrollRafRef.current = requestAnimationFrame(() => {
         updateTransforms();
-        rafRef.current = null;
+        scrollRafRef.current = null;
       });
     }
 
@@ -91,9 +109,57 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
     return () => {
       scroller.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+      if (scrollRafRef.current !== null) cancelAnimationFrame(scrollRafRef.current);
     };
   }, [updateTransforms]);
+
+  // Para a inércia em andamento (novo drag, unmount, etc.).
+  const stopInertia = useCallback(() => {
+    if (inertiaRafRef.current !== null) {
+      cancelAnimationFrame(inertiaRafRef.current);
+      inertiaRafRef.current = null;
+    }
+  }, []);
+
+  useEffect(() => stopInertia, [stopInertia]);
+
+  function runInertia() {
+    function step() {
+      const el = scrollerRef.current;
+      if (!el) {
+        inertiaRafRef.current = null;
+        setIsInteracting(false);
+        return;
+      }
+
+      velocityRef.current *= FRICTION;
+
+      if (Math.abs(velocityRef.current) < MIN_VELOCITY) {
+        inertiaRafRef.current = null;
+        velocityRef.current = 0;
+        setIsInteracting(false); // reativa o scroll-snap ao assentar
+        return;
+      }
+
+      const maxScrollLeft = el.scrollWidth - el.clientWidth;
+      let next = el.scrollLeft - velocityRef.current * 16; // ~16ms/frame
+
+      if (next <= 0 || next >= maxScrollLeft) {
+        next = Math.max(0, Math.min(maxScrollLeft, next));
+        el.scrollLeft = next;
+        inertiaRafRef.current = null;
+        velocityRef.current = 0;
+        setIsInteracting(false);
+        return;
+      }
+
+      el.scrollLeft = next;
+      updateTransforms();
+      inertiaRafRef.current = requestAnimationFrame(step);
+    }
+
+    inertiaRafRef.current = requestAnimationFrame(step);
+  }
 
   function scrollToIndex(index: number) {
     const clamped = Math.max(0, Math.min(articles.length - 1, index));
@@ -113,11 +179,15 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
     const scroller = scrollerRef.current;
     if (!scroller) return;
 
+    stopInertia();
     isPointerDownRef.current = true;
     hasDraggedRef.current = false;
+    velocityRef.current = 0;
     dragStartRef.current = { x: event.clientX, scrollLeft: scroller.scrollLeft };
+    lastPointerRef.current = { x: event.clientX, t: performance.now() };
     scroller.setPointerCapture(event.pointerId);
     setIsDragging(true);
+    setIsInteracting(true); // desativa snap e a transição CSS dos cards já aqui
   }
 
   function onPointerMove(event: React.PointerEvent<HTMLDivElement>) {
@@ -126,13 +196,49 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
     if (!scroller) return;
 
     const delta = event.clientX - dragStartRef.current.x;
-    if (Math.abs(delta) > 4) hasDraggedRef.current = true;
+    if (Math.abs(delta) > DRAG_THRESHOLD) hasDraggedRef.current = true;
+
+    // 1:1 com o ponteiro — sem esperar pointerup, sem passar por setState.
     scroller.scrollLeft = dragStartRef.current.scrollLeft - delta;
+
+    // Velocidade instantânea (px/ms), suavizada com a amostra anterior — usada
+    // só na inércia pós-soltar.
+    const now = performance.now();
+    const dt = now - lastPointerRef.current.t;
+    if (dt > 0) {
+      const instantVelocity = (event.clientX - lastPointerRef.current.x) / dt;
+      velocityRef.current = velocityRef.current * 0.7 + instantVelocity * 0.3;
+      velocityRef.current = Math.max(-MAX_VELOCITY, Math.min(MAX_VELOCITY, velocityRef.current));
+    }
+    lastPointerRef.current = { x: event.clientX, t: now };
+
+    // Atualiza o efeito 3D em sincronia direta com o arraste (rAF-throttled,
+    // não depende só do evento "scroll" assíncrono do navegador).
+    if (scrollRafRef.current === null) {
+      scrollRafRef.current = requestAnimationFrame(() => {
+        updateTransforms();
+        scrollRafRef.current = null;
+      });
+    }
   }
 
-  function endDrag() {
+  function endDrag(event: React.PointerEvent<HTMLDivElement>) {
+    const scroller = scrollerRef.current;
+    if (scroller?.hasPointerCapture(event.pointerId)) {
+      scroller.releasePointerCapture(event.pointerId);
+    }
+
+    if (!isPointerDownRef.current) return;
     isPointerDownRef.current = false;
     setIsDragging(false);
+
+    if (reducedMotion || Math.abs(velocityRef.current) < MIN_VELOCITY) {
+      velocityRef.current = 0;
+      setIsInteracting(false); // sem inércia: já assenta e reativa o snap
+      return;
+    }
+
+    runInertia(); // isInteracting continua true até a inércia parar sozinha
   }
 
   // Evita que um arraste vire clique-navegação indesejado no card.
@@ -200,13 +306,16 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
       </div>
 
       {/* perspective só é aplicado sem reduced-motion — em reduced-motion o
-          scroller continua 100% funcional (scroll nativo + snap), só sem a
-          profundidade 3D. */}
+          scroller continua 100% funcional (drag, scroll nativo, setas,
+          teclado), só sem a profundidade 3D. scroll-snap fica ativo em
+          repouso e é desligado durante o drag/inércia (isInteracting) para o
+          movimento acompanhar o ponteiro sem "puxar" para o card mais
+          próximo no meio do gesto. */}
       <div
         ref={scrollerRef}
         role="list"
         tabIndex={0}
-        aria-label="Lista de artigos mais lidos, navegável com as setas do teclado"
+        aria-label="Lista de artigos mais lidos, arrastável e navegável com as setas do teclado"
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={endDrag}
@@ -214,9 +323,11 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
         onPointerCancel={endDrag}
         onClickCapture={onClickCapture}
         onKeyDown={onKeyDown}
-        className={`no-scrollbar mt-10 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 py-4 sm:px-16 lg:px-[12%] ${
-          reducedMotion ? "" : "perspective-[1400px]"
-        } ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+        className={`no-scrollbar mt-10 flex gap-6 overflow-x-auto px-4 py-4 sm:px-16 lg:px-[12%] ${
+          isInteracting ? "" : "snap-x snap-mandatory"
+        } ${reducedMotion ? "" : "perspective-[1400px]"} ${
+          isDragging ? "cursor-grabbing select-none" : "cursor-grab"
+        }`}
       >
         {/* touch-action fica no default (auto): o navegador já resolve
             corretamente scroll horizontal do carrossel vs. scroll vertical
@@ -229,7 +340,9 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
               if (node) cardRefs.current.set(article.id, node);
               else cardRefs.current.delete(article.id);
             }}
-            className="w-[78vw] shrink-0 snap-center transition-[transform,opacity] duration-300 ease-out sm:w-[360px]"
+            className={`w-[78vw] shrink-0 snap-center sm:w-[360px] ${
+              isInteracting ? "" : "transition-[transform,opacity] duration-300 ease-out"
+            }`}
           >
             <ArticleCard
               variant="compact"
@@ -239,6 +352,7 @@ export function MostReadCarousel({ articles }: MostReadCarouselProps) {
               category={article.category.name}
               coverImage={article.coverImage}
               date={formatShortDate(article.publishedAt)}
+              imageDraggable={false}
             />
           </div>
         ))}
