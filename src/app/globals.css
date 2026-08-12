@@ -208,3 +208,39 @@ iframe {
   margin-bottom: 10px;
   line-height: 1.7;
 }
+
+/* Página /pt/artigos (Fase 3): pequena transição de opacidade/posição ao
+   trocar filtro/busca/página — nunca atrasa o resultado, só suaviza a troca
+   do conjunto já renderizado. */
+@keyframes articles-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[articles-fade-in_320ms_ease-out\] {
+    animation: none;
+  }
+}
+
+/* Padrão global de acessibilidade: neutraliza transições/animações CSS em
+   todo o site quando o usuário pede menos movimento — inclui os hovers de
+   zoom/translateY dos cards da página de Artigos, o scroll suave e as
+   transições do carrossel. O estado final (cor, posição) ainda é aplicado,
+   só sem a sensação de movimento. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

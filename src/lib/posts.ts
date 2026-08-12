@@ -1,5 +1,59 @@
 import { prisma } from "@/lib/prisma";
 
+// Campos mínimos para telas de listagem/descoberta (Hero, destaque, mais
+// recentes, mais lidos, explorar por tema, todos os artigos). Deliberadamente
+// SEM `content`/`contentBlocks` (LongText/Json pesados, só necessários na
+// página do artigo individual) — evita over-fetch dos 27+ artigos de uma vez.
+const listingSelect = {
+  id: true,
+  slug: true,
+  title: true,
+  description: true,
+  coverImage: true,
+  coverImageAlt: true,
+  publishedAt: true,
+  views: true,
+  isArticleOfWeek: true,
+  category: {
+    select: { id: true, name: true, slug: true },
+  },
+} as const;
+
+export type ArticleListItem = {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  coverImage: string | null;
+  coverImageAlt: string | null;
+  publishedAt: Date | null;
+  views: number;
+  isArticleOfWeek: boolean;
+  category: { id: string; name: string; slug: string };
+};
+
+// Uma única query leve para toda a página /pt/artigos. Destaque, mais
+// recentes, mais lidos e contagem por categoria são derivados EM MEMÓRIA a
+// partir deste array — evita disparar 4-5 queries separadas (e N+1) para
+// seções que, no fundo, particionam o mesmo conjunto de posts publicados.
+export async function getArticlesForListing(): Promise<ArticleListItem[]> {
+  return prisma.post.findMany({
+    where: {
+      status: "PUBLISHED",
+      language: "pt",
+    },
+    select: listingSelect,
+    orderBy: [
+      {
+        publishedAt: "desc",
+      },
+      {
+        createdAt: "desc",
+      },
+    ],
+  });
+}
+
 export async function getPublishedPosts() {
   return prisma.post.findMany({
     where: {
