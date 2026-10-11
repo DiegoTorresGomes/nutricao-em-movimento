@@ -2,6 +2,22 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const requestHost = (forwardedHost ?? request.headers.get("host"))
+    ?.split(",", 1)[0]
+    .trim()
+    .split(":", 1)[0]
+    .toLowerCase();
+
+  if (requestHost === "nutricaoemovimento.com") {
+    const canonicalUrl = request.nextUrl.clone();
+    canonicalUrl.protocol = "https:";
+    canonicalUrl.hostname = "www.nutricaoemovimento.com";
+    canonicalUrl.port = "";
+
+    return NextResponse.redirect(canonicalUrl, 308);
+  }
+
   const response = NextResponse.next();
 
   const pathname = request.nextUrl.pathname;
@@ -31,5 +47,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image).*)"],
 };

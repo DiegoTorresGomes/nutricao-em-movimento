@@ -1,4 +1,6 @@
-const SITE_URL = "https://nutricaoemovimento.com";
+import { siteConfig } from "@/config/site";
+
+const SITE_URL = siteConfig.url;
 
 type LegalPageSchemaProps = {
   title: string;

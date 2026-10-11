@@ -1,6 +1,6 @@
 ﻿export const siteConfig = {
   name: "Nutrição & Movimento",
-  url: "https://nutricaoemovimento.com",
+  url: "https://www.nutricaoemovimento.com",
   slogan: "Corpo ativo, mente alinhada, vida em construção.",
   headline: "Nutrição real para uma vida em movimento.",
   description:

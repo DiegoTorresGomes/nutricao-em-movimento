@@ -6,7 +6,7 @@ type SendConfirmationParams = {
 function getBaseUrl(): string {
   return (
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://nutricaoemovimento.com"
+    "https://www.nutricaoemovimento.com"
   );
 }
 

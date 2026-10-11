@@ -4,6 +4,7 @@ import Script from "next/script";
 import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
 import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
 import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -19,7 +20,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nutricaoemovimento.com"),
+  metadataBase: new URL(siteConfig.url),
 
   title: {
     default: "Nutrição & Movimento",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Weverlyn da Cruz Alves Torres",
-      url: "https://nutricaoemovimento.com/pt/sobre",
+      url: `${siteConfig.url}/pt/sobre`,
     },
   ],
 
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://nutricaoemovimento.com/pt",
+    url: `${siteConfig.url}/pt`,
     siteName: "Nutrição & Movimento",
     title: "Nutrição & Movimento",
     description:

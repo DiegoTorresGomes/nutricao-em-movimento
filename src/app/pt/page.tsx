@@ -14,6 +14,7 @@ import { getArticleOfWeek } from "@/lib/posts";
 import { getLatestPublishedPosts } from "@/lib/posts";
 import { getMostViewedPosts } from "@/lib/posts";
 import { getHomeSettings } from "@/lib/site-settings";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Nutrição & Movimento",
@@ -71,8 +72,8 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     jobTitle: nutritionistSettings.role,
     description: nutritionistSettings.bio,
 
-    image: `https://nutricaoemovimento.com${nutritionistSettings.photoUrl}`,
-    url: "https://nutricaoemovimento.com/pt/sobre",
+    image: `${siteConfig.url}${nutritionistSettings.photoUrl}`,
+    url: `${siteConfig.url}/pt/sobre`,
 
     telephone: "+55-21-97976-2589",
 
@@ -106,7 +107,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     name: "Nutrição & Movimento",
     description:
       "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.",
-    url: "https://nutricaoemovimento.com",
+    url: siteConfig.url,
     publisher: {
       "@type": "Person",
       name: nutritionistSettings.name,
@@ -117,7 +118,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Nutrição & Movimento",
-    url: "https://nutricaoemovimento.com",
+    url: siteConfig.url,
     inLanguage: "pt-BR",
     publisher: {
       "@type": "Person",
@@ -127,7 +128,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://nutricaoemovimento.com/pt/artigos?q={search_term_string}",
+        urlTemplate: `${siteConfig.url}/pt/artigos?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },

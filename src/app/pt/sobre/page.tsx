@@ -5,6 +5,7 @@ import { PublicLayout } from "@/components/layout/PublicLayout";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { nutritionistConfig } from "@/config/nutritionist";
+import { siteConfig } from "@/config/site";
 import { getPublishedPostsCount } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -75,14 +76,14 @@ export default async function SobrePage() {
     alternateName: displayName,
     jobTitle: role,
     description: summary,
-    image: `https://nutricaoemovimento.com${photoUrl}`,
-    url: "https://nutricaoemovimento.com/pt/sobre",
+    image: `${siteConfig.url}${photoUrl}`,
+    url: `${siteConfig.url}/pt/sobre`,
     sameAs: [instagramUrl],
     knowsAbout: themes.map((theme) => theme.title),
     worksFor: {
       "@type": "Organization",
       name: "Nutrição & Movimento",
-      url: "https://nutricaoemovimento.com",
+      url: siteConfig.url,
     },
   };
 

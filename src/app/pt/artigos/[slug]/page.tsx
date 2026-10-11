@@ -8,6 +8,7 @@ import { ArticleCard } from "@/components/ui/ArticleCard";
 import { Button } from "@/components/ui/Button";
 import { getNutritionistSettings } from "@/lib/site-settings";
 import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
+import { siteConfig } from "@/config/site";
 
 type ArticlePageProps = {
   params: Promise<{
@@ -86,16 +87,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     description: article.description,
     image: article.coverImage
       ? [article.coverImage]
-      : ["https://nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"],
+      : [`${siteConfig.url}/images/og/nutricao-em-movimento.jpg`],
     datePublished: article.publishedAt?.toISOString(),
     dateModified: article.updatedAt.toISOString(),
     author: {
       "@type": "Person",
       name: nutritionistSettings.name,
       jobTitle: nutritionistSettings.role,
-      url: "https://nutricaoemovimento.com/pt/sobre",
+      url: `${siteConfig.url}/pt/sobre`,
       image: nutritionistSettings.photoUrl
-        ? `https://nutricaoemovimento.com${nutritionistSettings.photoUrl}`
+        ? `${siteConfig.url}${nutritionistSettings.photoUrl}`
         : undefined,
       sameAs: [nutritionistSettings.instagramUrl],
     },
@@ -104,12 +105,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       name: "Nutrição & Movimento",
       logo: {
         "@type": "ImageObject",
-        url: "https://nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg",
+        url: `${siteConfig.url}/images/og/nutricao-em-movimento.jpg`,
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://nutricaoemovimento.com/pt/artigos/${article.slug}`,
+      "@id": `${siteConfig.url}/pt/artigos/${article.slug}`,
     },
   };
 
@@ -121,19 +122,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         "@type": "ListItem",
         position: 1,
         name: "Início",
-        item: "https://nutricaoemovimento.com/pt",
+        item: `${siteConfig.url}/pt`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Artigos",
-        item: "https://nutricaoemovimento.com/pt/artigos",
+        item: `${siteConfig.url}/pt/artigos`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.title,
-        item: `https://nutricaoemovimento.com/pt/artigos/${article.slug}`,
+        item: `${siteConfig.url}/pt/artigos/${article.slug}`,
       },
     ],
   };

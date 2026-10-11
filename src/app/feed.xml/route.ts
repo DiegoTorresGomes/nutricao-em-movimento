@@ -1,6 +1,7 @@
 import { getPublishedPosts } from "@/lib/posts";
+import { siteConfig } from "@/config/site";
 
-const baseUrl = "https://nutricaoemovimento.com";
+const baseUrl = siteConfig.url;
 
 // Freshness comes from on-demand revalidation: the create/edit/delete Server
 // Actions and the scheduled-publish cron all call revalidatePath("/feed.xml"),

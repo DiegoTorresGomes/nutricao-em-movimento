@@ -9,6 +9,7 @@ import { RecentArticles } from "@/components/sections/articles/RecentArticles";
 import { NewsletterSection } from "@/components/sections/NewsletterSection";
 import { getActiveCategories } from "@/lib/categories";
 import { getArticlesForListing } from "@/lib/posts";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Artigos",
@@ -119,13 +120,13 @@ export default async function ArticlesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Artigos | Nutrição & Movimento",
-    url: "https://nutricaoemovimento.com/pt/artigos",
+    url: `${siteConfig.url}/pt/artigos`,
     mainEntity: {
       "@type": "ItemList",
       itemListElement: articles.map((article, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        url: `https://nutricaoemovimento.com/pt/artigos/${article.slug}`,
+        url: `${siteConfig.url}/pt/artigos/${article.slug}`,
         name: article.title,
       })),
     },

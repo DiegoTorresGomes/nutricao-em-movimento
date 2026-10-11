@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
+import { siteConfig } from "@/config/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://nutricaoemovimento.com";
+  const baseUrl = siteConfig.url;
 
   const posts = await prisma.post.findMany({
     where: {
