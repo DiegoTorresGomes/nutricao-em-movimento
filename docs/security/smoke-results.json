@@ -1,0 +1,126 @@
+[
+  {
+    "path": "/pt",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/pt/artigos",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/pt/sobre",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/pt/contato",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "application/xml"
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/plain"
+  },
+  {
+    "path": "/feed.xml",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "application/rss+xml; charset=utf-8"
+  },
+  {
+    "path": "/login",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/administracao",
+    "status": 307,
+    "expected": 307,
+    "pass": true,
+    "location": "/login",
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/administracao/artigos/novo",
+    "status": 307,
+    "expected": 307,
+    "pass": true,
+    "location": "/login",
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/pt?smoke=canonical",
+    "status": 308,
+    "expected": 308,
+    "pass": true,
+    "location": "https://www.nutricaoemovimento.com/pt?smoke=canonical",
+    "type": null
+  },
+  {
+    "path": "/pt",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "text/html; charset=utf-8"
+  },
+  {
+    "path": "/api/upload/image",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "location": null,
+    "type": "application/json"
+  },
+  {
+    "path": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdrwzwr7ul%2Fimage%2Fupload%2Fv1789762418%2Fnutricao-em-movimento%2Farticles%2Fdew2u7ooi0g2dqdg5kat.png&w=3840&q=75",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "location": null,
+    "type": "image/png"
+  },
+  {
+    "check": "Cloudinary URL present in homepage",
+    "pass": true
+  }
+]

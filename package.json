@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "20.x"
+    "node": "^22.12.0 || ^24.0.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -14,21 +14,23 @@
     "migrate:bem-estar": "tsx scripts/rename-category-to-bem-estar.ts"
   },
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.8.0",
-    "@prisma/client": "^7.8.0",
-    "@tiptap/extension-image": "^3.26.0",
-    "@tiptap/extension-link": "^3.26.0",
-    "@tiptap/react": "^3.26.0",
-    "@tiptap/starter-kit": "^3.26.0",
+    "@prisma/adapter-mariadb": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "@tiptap/core": "3.31.4",
+    "@tiptap/extension-image": "3.31.4",
+    "@tiptap/extension-link": "3.31.4",
+    "@tiptap/pm": "3.31.4",
+    "@tiptap/react": "3.31.4",
+    "@tiptap/starter-kit": "3.31.4",
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.10.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
     "jose": "^6.2.3",
     "lucide-react": "^1.17.0",
-    "next": "^15.5.18",
+    "next": "15.5.29",
     "otplib": "^12.0.1",
-    "prisma": "^7.8.0",
+    "prisma": "7.10.1",
     "qrcode": "^1.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -46,7 +48,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "^15.5.18",
+    "eslint-config-next": "15.5.29",
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
     "typescript": "^5"
