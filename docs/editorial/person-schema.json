@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+  "name": "Weverlyn da Cruz Alves Torres",
+  "alternateName": "Weverlyn Alves",
+  "jobTitle": "Nutricionista",
+  "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+  "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+  "description": "Weverlyn Alves é nutricionista, bacharel em Nutrição e em Biomedicina, com pós-graduação em Engenharia de Alimentos e em Estética. No Nutrição & Movimento, compartilha conteúdos educativos sobre alimentação, comportamento e qualidade de vida. Realiza atendimento presencial e online.",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "CRN",
+    "value": "24101524"
+  },
+  "sameAs": [
+    "https://www.instagram.com/nutri_lyn_weverlynalves"
+  ],
+  "knowsAbout": [
+    "Comportamento alimentar",
+    "Emagrecimento sustentável",
+    "Bem-Estar Nutricional",
+    "Alimentação e movimento",
+    "Qualidade de vida",
+    "Saúde baseada em evidências"
+  ]
+}

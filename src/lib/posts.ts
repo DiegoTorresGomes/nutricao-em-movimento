@@ -1,4 +1,22 @@
 import { prisma } from "@/lib/prisma";
+import { nutritionistConfig } from "@/config/nutritionist";
+
+export async function getPublishedAuthorPosts() {
+  return prisma.post.findMany({
+    where: {
+      status: "PUBLISHED",
+      language: "pt",
+      publishedAt: { not: null, lte: new Date() },
+      OR: [
+        { authorId: { in: nutritionistConfig.publishingAccountIds } },
+        { author: { name: { in: [nutritionistConfig.name, nutritionistConfig.displayName] } } },
+      ],
+    },
+    select: listingSelect,
+    orderBy: [{ publishedAt: "desc" }, { id: "desc" }],
+    take: 12,
+  });
+}
 
 // Campos mínimos para telas de listagem/descoberta (Hero, destaque, mais
 // recentes, mais lidos, explorar por tema, todos os artigos). Deliberadamente

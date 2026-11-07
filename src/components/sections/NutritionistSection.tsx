@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import Link from "next/link";
+import { nutritionistConfig } from "@/config/nutritionist";
 import type { NutritionistSettings } from "@/lib/site-settings";
 
 type NutritionistSectionProps = {
@@ -16,7 +18,7 @@ export function NutritionistSection({ settings }: NutritionistSectionProps) {
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={settings.photoUrl}
-                alt={`${settings.name} — nutricionista`}
+                alt={nutritionistConfig.photoAlt}
                 loading="lazy"
                 decoding="async"
                 className="h-full w-full object-cover"
@@ -31,19 +33,19 @@ export function NutritionistSection({ settings }: NutritionistSectionProps) {
           <SectionLabel dark>Sobre a nutricionista</SectionLabel>
 
           <h2 className="mt-5 text-3xl font-semibold sm:text-4xl md:text-5xl">
-            {settings.name}
+            <Link href={nutritionistConfig.authorPath} className="rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">{nutritionistConfig.displayName}</Link>
           </h2>
 
           <p className="mt-3 text-sm font-bold uppercase tracking-[0.25em] text-[#E9DCC9]">
-            {settings.role} • {settings.crn}
+            {nutritionistConfig.jobTitle} • {nutritionistConfig.credential}
           </p>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-white/70">
-            {settings.bio}
+            {nutritionistConfig.bio}
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3">
-            {settings.specialties.map((specialty) => (
+            {nutritionistConfig.themes.map(({ title: specialty }) => (
               <span
                 key={specialty}
                 className="rounded-full border border-white/15 px-4 py-2 text-xs font-bold text-white/80"

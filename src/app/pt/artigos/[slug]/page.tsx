@@ -6,7 +6,7 @@ import { PublicLayout } from "@/components/layout/PublicLayout";
 import { NewsletterSection } from "@/components/sections/NewsletterSection";
 import { ArticleCard } from "@/components/ui/ArticleCard";
 import { Button } from "@/components/ui/Button";
-import { getNutritionistSettings } from "@/lib/site-settings";
+import { nutritionistConfig } from "@/config/nutritionist";
 import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
 import { siteConfig } from "@/config/site";
 
@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   return {
     title: article.title,
     description: article.description,
+    authors: [{ name: nutritionistConfig.name, url: nutritionistConfig.authorUrl }],
 
     alternates: {
       canonical: articleUrl,
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       description: article.description,
       publishedTime: article.publishedAt?.toISOString(),
       modifiedTime: article.updatedAt.toISOString(),
-      authors: ["Weverlyn da Cruz Alves Torres"],
+      authors: [nutritionistConfig.authorUrl],
       section: article.category.name,
       images: [
         {
@@ -71,7 +72,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
   const article = await getPublishedPostBySlug(slug);
 
-  const nutritionistSettings = await getNutritionistSettings();
+  const nutritionistSettings = nutritionistConfig;
 
   if (!article) {
     notFound();
@@ -92,11 +93,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     dateModified: article.updatedAt.toISOString(),
     author: {
       "@type": "Person",
+      "@id": `${nutritionistConfig.authorUrl}#person`,
       name: nutritionistSettings.name,
       jobTitle: nutritionistSettings.role,
-      url: `${siteConfig.url}/pt/sobre`,
+      url: nutritionistConfig.authorUrl,
       image: nutritionistSettings.photoUrl
-        ? `${siteConfig.url}${nutritionistSettings.photoUrl}`
+        ? new URL(nutritionistSettings.photoUrl, siteConfig.url).href
         : undefined,
       sameAs: [nutritionistSettings.instagramUrl],
     },
@@ -146,13 +148,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(articleJsonLd),
+            __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c"),
           }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbJsonLd),
+            __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
           }}
         />
         <article>
@@ -187,6 +189,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <p className="mt-6 text-lg leading-8 text-neutral-700">{article.description}</p>
 
               <div className="mt-7 flex flex-wrap gap-3 text-sm text-neutral-500">
+                <Link href={nutritionistConfig.authorPath} className="font-bold text-[#465a28] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#556B2F]">
+                  Por {nutritionistConfig.displayName} · {nutritionistConfig.credential}
+                </Link>
                 <span>
                   {article.publishedAt
                     ? new Intl.DateTimeFormat("pt-BR", {
@@ -228,16 +233,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
               <aside className="h-fit rounded-[2rem] bg-[#111111] p-6 text-white lg:sticky lg:top-28">
                 <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#E9DCC9]">
-                  Autora
+                  Sobre a autora
                 </p>
 
                 <div className="mt-5 flex items-center gap-4">
-                  <div className="h-16 w-16 overflow-hidden rounded-full bg-[#E9DCC9]">
+                  <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full bg-[#E9DCC9]">
                     {nutritionistSettings.photoUrl ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={nutritionistSettings.photoUrl}
-                        alt={nutritionistSettings.name}
+                        alt={nutritionistSettings.photoAlt}
                         loading="lazy"
                         decoding="async"
                         className="h-full w-full object-cover"
@@ -247,7 +252,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
                   <div>
                     <h3 className="text-xl font-semibold leading-tight">
-                      {nutritionistSettings.name}
+                      <Link href={nutritionistConfig.authorPath} className="underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">{nutritionistSettings.displayName}</Link>
                     </h3>
 
                     <p className="mt-1 text-xs font-bold uppercase tracking-[0.18em] text-white/45">

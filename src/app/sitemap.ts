@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 import { siteConfig } from "@/config/site";
+import { nutritionistConfig } from "@/config/nutritionist";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
@@ -17,6 +18,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const staticPages: MetadataRoute.Sitemap = [
+    { url: nutritionistConfig.authorUrl, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/pt/politica-editorial`, changeFrequency: "yearly", priority: 0.4 },
     {
       url: `${baseUrl}/pt`,
       lastModified: new Date(),

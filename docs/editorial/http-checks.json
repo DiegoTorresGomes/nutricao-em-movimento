@@ -1,0 +1,35 @@
+[
+  {
+    "path": "/sitemap.xml",
+    "status": 200
+  },
+  {
+    "path": "/pt/sobre",
+    "status": 200
+  },
+  {
+    "path": "/pt/autora/weverlyn-alves",
+    "status": 200
+  },
+  {
+    "path": "/pt/politica-editorial",
+    "status": 200
+  },
+  {
+    "path": "/pt",
+    "status": 200
+  },
+  {
+    "path": "/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+    "status": 200
+  },
+  {
+    "path": "/_next/image?url=%2Fimages%2Fnutritionist%2Fweverlyn.jpg&w=3840&q=75",
+    "status": 200
+  },
+  {
+    "checks": "canonical, one H1, Person identity, Article author, 12 policy sections, AI disclosure, sitemap, footer, photo",
+    "pass": true,
+    "listedArticles": 12
+  }
+]

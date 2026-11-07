@@ -47,6 +47,9 @@ export function Footer() {
           </h3>
 
           <div className="mt-5 flex flex-col gap-3 text-sm text-white/65">
+            <Link href="/pt/politica-editorial" className="transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">
+              Política Editorial
+            </Link>
             <Link
               href="/pt/politica-de-privacidade"
               className="transition hover:text-[#E9DCC9]"

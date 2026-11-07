@@ -1,18 +1,27 @@
+import { siteConfig } from "./site";
+
 export const nutritionistConfig = {
   // Nome legal completo (usado em schema/autoria).
   name: "Weverlyn da Cruz Alves Torres",
   // Nome de apresentação pública.
-  displayName: "Weverlyn Alves",
-  role: "Nutricionista",
+  alternateName: "Weverlyn Alves",
+  get displayName() { return this.alternateName; },
+  jobTitle: "Nutricionista",
+  get role() { return this.jobTitle; },
   // CRN é opcional: só é exibido quando presente. Nunca renderizar placeholder.
-  crn: "CRN 24101524",
+  credential: "CRN 24101524",
+  get crn() { return this.credential; },
+  authorPath: "/pt/autora/weverlyn-alves",
+  // Conta técnica de publicação; autoria confirmada pela responsável pelo projeto.
+  publishingAccountIds: ["cmq7a3h0x0000i8imbilojid6"],
+  get authorUrl() { return `${siteConfig.url}${this.authorPath}`; },
 
   // Título editorial e resumo da página Sobre.
   headline: "Ciência, acolhimento e escolhas possíveis para uma vida mais saudável.",
   summary:
     "Nutricionista apaixonada por ciência, alimentação e pela forma como pequenas escolhas diárias podem transformar a saúde e a qualidade de vida. Meu trabalho busca traduzir conhecimento técnico em orientações acessíveis, possíveis e sustentáveis.",
 
-  bio: "Nutricionista, com especialização em Engenharia de Alimentos. Atua com uma abordagem leve, técnica e possível para ajudar pessoas a construírem constância, melhorarem sua relação com a comida e alinharem nutrição, mente e movimento.",
+  bio: "Weverlyn Alves é nutricionista, bacharel em Nutrição e em Biomedicina, com pós-graduação em Engenharia de Alimentos e em Estética. No Nutrição & Movimento, compartilha conteúdos educativos sobre alimentação, comportamento e qualidade de vida. Realiza atendimento presencial e online.",
 
   // Formações confirmadas no projeto (redação preservada — sem transformar
   // "Pós-graduação" em "especialista", para não alterar a afirmação profissional).
@@ -52,7 +61,7 @@ export const nutritionistConfig = {
         "Hábitos simples que sustentam saúde, disposição e bem-estar ao longo do tempo.",
     },
     {
-      title: "Ciência aplicada à rotina",
+      title: "Saúde baseada em evidências",
       description:
         "Conhecimento técnico traduzido em orientações acessíveis e aplicáveis.",
     },
@@ -82,4 +91,20 @@ export const nutritionistConfig = {
   instagramUrl: "https://www.instagram.com/nutri_lyn_weverlynalves",
   whatsappUrl: "https://wa.me/5521979762589",
   appointmentUrl: "https://wa.me/5521979762589",
+};
+
+// A mesma entidade é reutilizada na Home, em Sobre e no perfil canônico.
+export const nutritionistPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${nutritionistConfig.authorUrl}#person`,
+  name: nutritionistConfig.name,
+  alternateName: nutritionistConfig.alternateName,
+  jobTitle: nutritionistConfig.jobTitle,
+  url: nutritionistConfig.authorUrl,
+  image: new URL(nutritionistConfig.photoUrl, siteConfig.url).href,
+  description: nutritionistConfig.bio,
+  identifier: { "@type": "PropertyValue", propertyID: "CRN", value: nutritionistConfig.credential.replace(/^CRN\s+/, "") },
+  sameAs: [nutritionistConfig.instagramUrl],
+  knowsAbout: nutritionistConfig.themes.map(({ title }) => title),
 };

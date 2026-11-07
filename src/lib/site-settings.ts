@@ -1,3 +1,4 @@
+import { nutritionistConfig } from "@/config/nutritionist";
 import { prisma } from "@/lib/prisma";
 
 export type NutritionistSettings = {
@@ -13,20 +14,15 @@ export type NutritionistSettings = {
 };
 
 export const defaultNutritionistSettings: NutritionistSettings = {
-  name: "Weverlyn da Cruz Alves Torres",
-  crn: "CRN 24101524",
-  role: "Nutricionista",
-  bio: "Nutricionista formada pela Estácio de Sá, com especialização em Engenharia de Alimentos. Atua com uma abordagem leve, técnica e possível para ajudar pessoas a construírem constância, melhorarem sua relação com a comida e alinharem nutrição, mente e movimento.",
-  instagramUrl: "https://www.instagram.com/nutri_lyn_weverlynalves",
-  whatsappUrl: "https://wa.me/5521979762589",
-  appointmentUrl: "https://wa.me/5521979762589",
-  photoUrl: "/images/nutritionist/weverlyn.jpg",
-  specialties: [
-    "Engenharia de Alimentos",
-    "Comportamento alimentar",
-    "Emagrecimento sustentável",
-    "Bem-Estar Nutricional",
-  ],
+  name: nutritionistConfig.name,
+  crn: nutritionistConfig.credential,
+  role: nutritionistConfig.jobTitle,
+  bio: nutritionistConfig.bio,
+  instagramUrl: nutritionistConfig.instagramUrl,
+  whatsappUrl: nutritionistConfig.whatsappUrl,
+  appointmentUrl: nutritionistConfig.appointmentUrl,
+  photoUrl: nutritionistConfig.photoUrl,
+  specialties: nutritionistConfig.themes.map(({ title }) => title),
 };
 
 export async function getNutritionistSettings() {

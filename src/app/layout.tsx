@@ -5,6 +5,7 @@ import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
 import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
 import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
 import { siteConfig } from "@/config/site";
+import { nutritionistConfig } from "@/config/nutritionist";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -34,12 +35,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Weverlyn da Cruz Alves Torres",
-      url: `${siteConfig.url}/pt/sobre`,
+      name: nutritionistConfig.name,
+      url: nutritionistConfig.authorUrl,
     },
   ],
 
-  creator: "Weverlyn da Cruz Alves Torres",
+  creator: nutritionistConfig.name,
   publisher: "Nutrição & Movimento",
 
   openGraph: {

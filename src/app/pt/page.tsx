@@ -14,6 +14,7 @@ import { getArticleOfWeek } from "@/lib/posts";
 import { getLatestPublishedPosts } from "@/lib/posts";
 import { getMostViewedPosts } from "@/lib/posts";
 import { getHomeSettings } from "@/lib/site-settings";
+import { nutritionistConfig, nutritionistPersonSchema } from "@/config/nutritionist";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -64,42 +65,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
   const latestArticles = await getLatestPublishedPosts(3);
   const mostViewedPosts = await getMostViewedPosts(8);
   const homeSettings = await getHomeSettings();
-  const nutritionistSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-
-    name: nutritionistSettings.name,
-    jobTitle: nutritionistSettings.role,
-    description: nutritionistSettings.bio,
-
-    image: `${siteConfig.url}${nutritionistSettings.photoUrl}`,
-    url: `${siteConfig.url}/pt/sobre`,
-
-    telephone: "+55-21-97976-2589",
-
-    sameAs: [nutritionistSettings.instagramUrl],
-
-    knowsAbout: nutritionistSettings.specialties,
-
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "BR",
-      addressRegion: "RJ",
-    },
-
-    areaServed: [
-      {
-        "@type": "Country",
-        name: "Brasil",
-      },
-      {
-        "@type": "State",
-        name: "Rio de Janeiro",
-      },
-    ],
-
-    availableLanguage: ["Portuguese"],
-  };
+  const nutritionistSchema = nutritionistPersonSchema;
 
   const blogSchema = {
     "@context": "https://schema.org",
@@ -110,7 +76,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     url: siteConfig.url,
     publisher: {
       "@type": "Person",
-      name: nutritionistSettings.name,
+      "@id": `${nutritionistConfig.authorUrl}#person`,
+      name: nutritionistConfig.name,
+      url: nutritionistConfig.authorUrl,
     },
   };
 
@@ -122,7 +90,9 @@ export default async function HomePage({ searchParams }: HomePageProps) {
     inLanguage: "pt-BR",
     publisher: {
       "@type": "Person",
-      name: nutritionistSettings.name,
+      "@id": `${nutritionistConfig.authorUrl}#person`,
+      name: nutritionistConfig.name,
+      url: nutritionistConfig.authorUrl,
     },
     potentialAction: {
       "@type": "SearchAction",
@@ -140,7 +110,7 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(nutritionistSchema),
+            __html: JSON.stringify(nutritionistSchema).replace(/</g, "\\u003c"),
           }}
         />
 

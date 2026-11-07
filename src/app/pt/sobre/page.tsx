@@ -4,8 +4,7 @@ import Link from "next/link";
 import { PublicLayout } from "@/components/layout/PublicLayout";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { nutritionistConfig } from "@/config/nutritionist";
-import { siteConfig } from "@/config/site";
+import { nutritionistConfig, nutritionistPersonSchema } from "@/config/nutritionist";
 import { getPublishedPostsCount } from "@/lib/posts";
 
 export const metadata: Metadata = {
@@ -46,7 +45,6 @@ export default async function SobrePage() {
   const publishedPostsCount = await getPublishedPostsCount();
 
   const {
-    name,
     displayName,
     role,
     crn,
@@ -57,7 +55,6 @@ export default async function SobrePage() {
     formations,
     themes,
     attendance,
-    instagramUrl,
   } = nutritionistConfig;
 
   // Indicadores editoriais: apenas métricas reais e calculáveis.
@@ -69,29 +66,13 @@ export default async function SobrePage() {
 
   // JSON-LD Person — coerente com a Home. Sem CRN inventado, sem
   // medicalSpecialty. knowsAbout reflete os temas realmente exibidos.
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name,
-    alternateName: displayName,
-    jobTitle: role,
-    description: summary,
-    image: `${siteConfig.url}${photoUrl}`,
-    url: `${siteConfig.url}/pt/sobre`,
-    sameAs: [instagramUrl],
-    knowsAbout: themes.map((theme) => theme.title),
-    worksFor: {
-      "@type": "Organization",
-      name: "Nutrição & Movimento",
-      url: siteConfig.url,
-    },
-  };
+  const personSchema = nutritionistPersonSchema;
 
   return (
     <PublicLayout>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema).replace(/</g, "\\u003c") }}
       />
 
       <main>
@@ -150,6 +131,9 @@ export default async function SobrePage() {
               </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Link href={nutritionistConfig.authorPath} className="self-start rounded-lg font-bold text-[#465a28] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#556B2F]">
+                  Conheça o perfil e os artigos de {displayName}
+                </Link>
                 <Button href="/pt/contato">Falar com a nutricionista</Button>
                 <Button href="/pt/artigos" variant="outline">
                   Ver artigos
