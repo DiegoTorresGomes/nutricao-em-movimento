@@ -6,6 +6,8 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import type { EditorBlock } from "@/lib/editor/blocks";
 import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
+import { articleBody, withoutBodyH1 } from "@/lib/editor/article-body";
+import { hasEditorialChanges, originalPublishedAt } from "@/lib/editorial-dates";
 
 type PostStatus = "DRAFT" | "REVIEW" | "SCHEDULED" | "PUBLISHED" | "ARCHIVED";
 
@@ -26,6 +28,7 @@ function parseContentBlocks(value: FormDataEntryValue | null): EditorBlock[] {
 }
 
 export async function updatePostAction(id: string, formData: FormData) {
+  const previous = await prisma.post.findUniqueOrThrow({ where: { id } });
   const status = String(formData.get("status") || "DRAFT") as PostStatus;
   const isArticleOfWeek = formData.get("isArticleOfWeek") === "on";
   const coverImage = String(formData.get("coverImage") || "").trim();
@@ -36,8 +39,10 @@ export async function updatePostAction(id: string, formData: FormData) {
 
   const rawContent = String(formData.get("content") || "").trim();
   const contentBlocks = parseContentBlocks(formData.get("contentBlocks"));
-  const generatedContent =
-    contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent;
+  const generatedContent = withoutBodyH1(articleBody(
+    contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent,
+    previous.slug,
+  )).trim();
 
   const seoTitle = String(formData.get("seoTitle") || "").trim();
   const seoDescription = String(formData.get("seoDescription") || "").trim();
@@ -47,6 +52,24 @@ export async function updatePostAction(id: string, formData: FormData) {
   if (status === "SCHEDULED" && !scheduledAtValue) {
     throw new Error("Para agendar o artigo, informe data e horário de publicação.");
   }
+
+  const editorialFields = {
+    title: String(formData.get("title") || ""),
+    description: String(formData.get("description") || ""),
+    content: generatedContent,
+    seoTitle: seoTitle || null,
+    seoDescription: seoDescription || null,
+    coverImage: coverImage || null,
+    coverImageAlt: coverImageAlt || null,
+    categoryId: String(formData.get("categoryId") || ""),
+  };
+  // Compare the same structural representation so link/H1 normalization alone
+  // does not claim a new editorial review of legacy content.
+  const changed = hasEditorialChanges({
+    ...previous,
+    content: withoutBodyH1(articleBody(previous.content.trim(), previous.slug)),
+  }, editorialFields);
+  const now = new Date();
 
   if (isArticleOfWeek) {
     await prisma.post.updateMany({
@@ -67,25 +90,19 @@ export async function updatePostAction(id: string, formData: FormData) {
       id,
     },
     data: {
-      title: String(formData.get("title") || ""),
+      ...editorialFields,
       desktopReviewed,
       tabletReviewed,
       mobileReviewed,
-      description: String(formData.get("description") || ""),
-      content: generatedContent,
       contentBlocks:
         contentBlocks.length > 0 ? (contentBlocks as unknown as Prisma.InputJsonValue) : undefined,
-      seoTitle: seoTitle || null,
-      seoDescription: seoDescription || null,
       focusKeyword: focusKeyword || null,
       readTime: String(formData.get("readTime") || ""),
-      categoryId: String(formData.get("categoryId") || ""),
       status,
-      publishedAt: status === "PUBLISHED" ? new Date() : null,
+      publishedAt: originalPublishedAt(previous.publishedAt, status, now),
+      editorialUpdatedAt: changed ? now : undefined,
       scheduledAt: status === "SCHEDULED" && scheduledAtValue ? new Date(scheduledAtValue) : null,
       isArticleOfWeek,
-      coverImage: coverImage || null,
-      coverImageAlt: coverImageAlt || null,
     },
   });
 

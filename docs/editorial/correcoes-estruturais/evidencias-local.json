@@ -1,0 +1,203 @@
+{
+  "testedAt": "2026-11-07T17:18:56.832Z",
+  "host": "127.0.0.1",
+  "port": 33317,
+  "database": "nutricao_editorial_disposable",
+  "results": {
+    "headingsAndAnchors": {
+      "singleH1": true,
+      "h2h3AndTextPreserved": true,
+      "twoCorrectedAnchors": true,
+      "destination": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca"
+    },
+    "view": {
+      "before": {
+        "id": "editorial-local-primary",
+        "title": "Teste Editorial Local",
+        "slug": "relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+        "subtitle": null,
+        "description": "Artigo fictício exclusivo para testes locais.",
+        "content": "<h1>Teste Editorial Local</h1><h2>Seção mantida</h2><h3>Detalhe mantido</h3><p>Texto fictício preservado.</p><p>Se você ainda não leu nosso conteúdo completo sobre esse tema, vale conferir:</p><a href=\"https://nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca\">Ler artigo sobre Escala da Fome e Saciedade</a><a href=\"https://nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca\">Escala da Fome e Saciedade: Como Aprender a Ouvir Seu Corpo</a>",
+        "coverImageUrl": null,
+        "coverImage": null,
+        "coverImageAlt": null,
+        "status": "PUBLISHED",
+        "language": "pt",
+        "readTime": "",
+        "views": 0,
+        "isArticleOfWeek": false,
+        "publishedAt": "2026-01-15T12:00:00.000Z",
+        "editorialUpdatedAt": null,
+        "createdAt": "2026-11-07T17:15:38.572Z",
+        "updatedAt": "2026-11-07T17:18:56.432Z",
+        "contentBlocks": null,
+        "seoTitle": null,
+        "seoDescription": null,
+        "focusKeyword": null,
+        "scheduledAt": "2026-11-07T17:14:43.200Z",
+        "lastPreviewAt": null,
+        "mobileReviewed": true,
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "authorId": "editorial-local-admin",
+        "categoryId": "editorial-local-category"
+      },
+      "after": {
+        "id": "editorial-local-primary",
+        "title": "Teste Editorial Local",
+        "slug": "relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+        "subtitle": null,
+        "description": "Artigo fictício exclusivo para testes locais.",
+        "content": "<h1>Teste Editorial Local</h1><h2>Seção mantida</h2><h3>Detalhe mantido</h3><p>Texto fictício preservado.</p><p>Se você ainda não leu nosso conteúdo completo sobre esse tema, vale conferir:</p><a href=\"https://nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca\">Ler artigo sobre Escala da Fome e Saciedade</a><a href=\"https://nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca\">Escala da Fome e Saciedade: Como Aprender a Ouvir Seu Corpo</a>",
+        "coverImageUrl": null,
+        "coverImage": null,
+        "coverImageAlt": null,
+        "status": "PUBLISHED",
+        "language": "pt",
+        "readTime": "",
+        "views": 1,
+        "isArticleOfWeek": false,
+        "publishedAt": "2026-01-15T12:00:00.000Z",
+        "editorialUpdatedAt": null,
+        "createdAt": "2026-11-07T17:15:38.572Z",
+        "updatedAt": "2026-11-07T17:18:56.432Z",
+        "contentBlocks": null,
+        "seoTitle": null,
+        "seoDescription": null,
+        "focusKeyword": null,
+        "scheduledAt": "2026-11-07T17:14:43.200Z",
+        "lastPreviewAt": null,
+        "mobileReviewed": true,
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "authorId": "editorial-local-admin",
+        "categoryId": "editorial-local-category"
+      },
+      "datePublished": "2026-01-15T12:00:00.000Z",
+      "dateModified": "2026-01-15T12:00:00.000Z"
+    },
+    "openAndNoopSave": "editorialUpdatedAt remains null",
+    "editorialEdits": {
+      "first": "2026-11-07T17:19:10.612Z",
+      "second": "2026-11-07T17:19:11.482Z",
+      "originalPublicationPreserved": "2026-01-15T12:00:00.000Z",
+      "noopRetainsReview": true
+    },
+    "newArticle": {
+      "h1NormalizedAtCreation": true,
+      "publishedAt": "2026-11-07T17:19:13.040Z",
+      "editorialUpdatedAt": null
+    },
+    "references": {
+      "structuredFields": true,
+      "doiAndUrl": true,
+      "legacyText": true,
+      "safeExternalAttributes": true
+    },
+    "scheduled": {
+      "firstPublishedAt": "2026-11-07T17:19:14.541Z",
+      "scheduledAtRetained": "2026-11-07T17:17:13.538Z",
+      "editRetainsPublication": "2026-11-07T17:19:14.541Z",
+      "editorialReview": "2026-11-07T17:19:15.263Z",
+      "republicationRetainsP1": "2026-01-15T12:00:00.000Z",
+      "futureRetained": "2026-11-08T17:19:13.538Z",
+      "repeatedCronPublishesZero": true
+    },
+    "routes": [
+      {
+        "route": "/pt",
+        "status": 200
+      },
+      {
+        "route": "/pt/artigos",
+        "status": 200
+      },
+      {
+        "route": "/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+        "status": 200
+      },
+      {
+        "route": "/administracao",
+        "status": 200
+      },
+      {
+        "route": "/administracao/artigos/editorial-local-primary/editar",
+        "status": 200
+      },
+      {
+        "route": "/sitemap.xml",
+        "status": 200
+      },
+      {
+        "route": "/feed.xml",
+        "status": 200
+      }
+    ],
+    "finalJsonLd": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "inLanguage": "pt-BR",
+      "headline": "Teste Editorial Local",
+      "description": "Artigo fictício exclusivo para testes locais.",
+      "image": [
+        "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+      ],
+      "datePublished": "2026-01-15T12:00:00.000Z",
+      "dateModified": "2026-11-07T17:19:11.482Z",
+      "author": {
+        "@type": "Person",
+        "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+        "name": "Weverlyn da Cruz Alves Torres",
+        "jobTitle": "Nutricionista",
+        "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+        "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+        "sameAs": [
+          "https://www.instagram.com/nutri_lyn_weverlynalves"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nutrição & Movimento",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia"
+      }
+    }
+  },
+  "mariadbVersion": "11.4.13-MariaDB",
+  "column": [
+    {
+      "COLUMN_NAME": "views",
+      "COLUMN_TYPE": "int(11)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_DEFAULT": "0",
+      "EXTRA": ""
+    },
+    {
+      "COLUMN_NAME": "publishedAt",
+      "COLUMN_TYPE": "datetime(3)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_DEFAULT": "NULL",
+      "EXTRA": ""
+    },
+    {
+      "COLUMN_NAME": "editorialUpdatedAt",
+      "COLUMN_TYPE": "datetime(3)",
+      "IS_NULLABLE": "YES",
+      "COLUMN_DEFAULT": "NULL",
+      "EXTRA": ""
+    },
+    {
+      "COLUMN_NAME": "updatedAt",
+      "COLUMN_TYPE": "datetime(3)",
+      "IS_NULLABLE": "NO",
+      "COLUMN_DEFAULT": null,
+      "EXTRA": ""
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import slugify from "slugify";
 import { prisma } from "@/lib/prisma";
 import type { EditorBlock } from "@/lib/editor/blocks";
 import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
+import { articleBody, withoutBodyH1 } from "@/lib/editor/article-body";
 
 type CreatePostState = {
   error?: string;
@@ -52,8 +53,9 @@ export async function createPostAction(
   const mobileReviewed = formData.get("mobileReviewed") === "on";
 
   const contentBlocks = parseContentBlocks(formData.get("contentBlocks"));
-  const generatedContent =
-    contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent;
+  const generatedContent = withoutBodyH1(articleBody(
+    contentBlocks.length > 0 ? renderBlocksToHtml(contentBlocks) : rawContent,
+  ));
 
   if (!title || !description || !generatedContent || !categoryId) {
     return {

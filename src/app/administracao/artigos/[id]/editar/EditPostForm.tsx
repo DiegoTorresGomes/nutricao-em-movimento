@@ -142,6 +142,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
 
         <div className="rounded-[2rem] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-semibold">Informações principais</h2>
+          <p className="mt-2 text-sm text-neutral-600">Alterações editoriais salvas registram uma data de atualização. A data original de publicação é preservada. Salvar sem mudanças ou ajustar apenas controles técnicos não registra revisão editorial.</p>
 
           <div className="mt-6 grid gap-6">
             <div className="grid gap-2">

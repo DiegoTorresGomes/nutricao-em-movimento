@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { EditorBlock, EditorBlockType } from "@/lib/editor/blocks";
 import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
+import { ReferencesEditor } from "./ReferencesEditor";
 
 type BlockEditorProps = {
   name?: string;
@@ -24,6 +25,7 @@ type BlockButton = {
 };
 
 const blockButtons: BlockButton[] = [
+  { label: "Referências científicas", type: "references", description: "Fontes identificadas com DOI ou URL" },
   {
     label: "Título H2",
     type: "heading",
@@ -116,6 +118,8 @@ function createBlock(type: EditorBlockType, label?: string): EditorBlock {
     typeof crypto !== "undefined" && "randomUUID" in crypto
       ? crypto.randomUUID()
       : `${Date.now()}-${Math.random()}`;
+
+  if (type === "references") return { id, type, data: { items: [] } };
 
   if (type === "heading") {
     return {
@@ -1507,6 +1511,7 @@ export function BlockEditor({
 }
 
 function getBlockLabel(block: EditorBlock) {
+  if (block.type === "references") return "Referências científicas";
   if (block.type === "heading") {
     return block.data.level === 3 ? "Subtítulo H3" : "Título H2";
   }
@@ -1633,6 +1638,12 @@ function renderBlockEditor({
   addTableColumn,
   removeTableColumn,
 }: RenderBlockEditorProps) {
+  if (block.type === "references") {
+    return <ReferencesEditor
+      items={Array.isArray(block.data.items) ? block.data.items : []}
+      onChange={items => updateBlockData(block.id, { ...block.data, items })}
+    />;
+  }
   if (block.type === "heading" || block.type === "paragraph") {
     return (
       <textarea

@@ -1,5 +1,6 @@
 import { getPublishedPosts } from "@/lib/posts";
 import { siteConfig } from "@/config/site";
+import { articleModifiedAt } from "@/lib/editorial-dates";
 
 const baseUrl = siteConfig.url;
 
@@ -19,12 +20,16 @@ function escapeXml(value: string): string {
 export async function GET() {
   const posts = await getPublishedPosts();
 
-  const lastBuildDate = posts[0]?.publishedAt ?? posts[0]?.updatedAt ?? new Date();
+  const modifiedTimes = posts.flatMap(post => {
+    const date = articleModifiedAt(post);
+    return date ? [date.getTime()] : [];
+  });
+  const lastBuildDate = modifiedTimes.length ? new Date(Math.max(...modifiedTimes)) : undefined;
 
   const items = posts
     .map((post) => {
       const url = `${baseUrl}/pt/artigos/${post.slug}`;
-      const pubDate = (post.publishedAt ?? post.updatedAt ?? new Date()).toUTCString();
+      const pubDate = post.publishedAt?.toUTCString();
 
       return `    <item>
       <title>${escapeXml(post.title)}</title>
@@ -32,7 +37,7 @@ export async function GET() {
       <guid isPermaLink="true">${url}</guid>
       <description>${escapeXml(post.description)}</description>
       <category>${escapeXml(post.category.name)}</category>
-      <pubDate>${pubDate}</pubDate>
+      ${pubDate ? `<pubDate>${pubDate}</pubDate>` : ""}
     </item>`;
     })
     .join("\n");
@@ -45,7 +50,7 @@ export async function GET() {
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml" />
     <description>Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional.</description>
     <language>pt-BR</language>
-    <lastBuildDate>${new Date(lastBuildDate).toUTCString()}</lastBuildDate>
+    ${lastBuildDate ? `<lastBuildDate>${lastBuildDate.toUTCString()}</lastBuildDate>` : ""}
 ${items}
   </channel>
 </rss>`;

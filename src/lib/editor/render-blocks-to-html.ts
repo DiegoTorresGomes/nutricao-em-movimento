@@ -1,4 +1,5 @@
 import type { EditorBlock } from "./blocks";
+import { renderReferences } from "./references";
 
 function escapeHtml(value: unknown) {
   return String(value ?? "")
@@ -241,9 +242,7 @@ ${items
         }
 
         case "references":
-          return `
-<h2>Referências sugeridas</h2>
-${renderList(Array.isArray(data.items) ? data.items : [], false)}`;
+          return renderReferences(Array.isArray(data.items) ? data.items : []);
 
         case "exercise": {
           const steps = Array.isArray(data.steps) ? data.steps : [];

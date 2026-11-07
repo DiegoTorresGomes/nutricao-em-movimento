@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/Button";
 import { nutritionistConfig } from "@/config/nutritionist";
 import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
 import { siteConfig } from "@/config/site";
+import { articleModifiedAt } from "@/lib/editorial-dates";
+import { articleBody } from "@/lib/editor/article-body";
 
 type ArticlePageProps = {
   params: Promise<{
@@ -46,7 +48,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       title: article.title,
       description: article.description,
       publishedTime: article.publishedAt?.toISOString(),
-      modifiedTime: article.updatedAt.toISOString(),
+      modifiedTime: articleModifiedAt(article)?.toISOString(),
       authors: [nutritionistConfig.authorUrl],
       section: article.category.name,
       images: [
@@ -90,7 +92,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       ? [article.coverImage]
       : [`${siteConfig.url}/images/og/nutricao-em-movimento.jpg`],
     datePublished: article.publishedAt?.toISOString(),
-    dateModified: article.updatedAt.toISOString(),
+    dateModified: articleModifiedAt(article)?.toISOString(),
     author: {
       "@type": "Person",
       "@id": `${nutritionistConfig.authorUrl}#person`,
@@ -227,7 +229,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <div className="min-w-0 max-w-3xl">
                 <div
                   className="article-content space-y-6 text-base leading-8 text-neutral-800 sm:text-lg sm:leading-9"
-                  dangerouslySetInnerHTML={{ __html: article.content }}
+                  dangerouslySetInnerHTML={{ __html: articleBody(article.content, article.slug) }}
                 />
               </div>
 

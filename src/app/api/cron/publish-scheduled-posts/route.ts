@@ -46,17 +46,23 @@ export async function GET(request: Request) {
     });
   }
 
-  await prisma.post.updateMany({
-    where: {
-      id: {
-        in: postsToPublish.map((post) => post.id),
-      },
-    },
-    data: {
-      status: "PUBLISHED",
-      publishedAt: now,
-    },
-  });
+  const where = {
+    id: { in: postsToPublish.map((post) => post.id) },
+    status: "SCHEDULED" as const,
+    scheduledAt: { lte: now },
+  };
+  // A scheduled republication must retain its original publication date.
+  // Neither branch marks an editorial review.
+  const results = await prisma.$transaction([
+    prisma.post.updateMany({
+      where: { ...where, publishedAt: null },
+      data: { status: "PUBLISHED", publishedAt: now },
+    }),
+    prisma.post.updateMany({
+      where: { ...where, publishedAt: { not: null } },
+      data: { status: "PUBLISHED" },
+    }),
+  ]);
 
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
@@ -72,7 +78,7 @@ export async function GET(request: Request) {
 
   return NextResponse.json({
     success: true,
-    published: postsToPublish.length,
+    published: results.reduce((count, result) => count + result.count, 0),
     posts: postsToPublish.map((post) => ({
       id: post.id,
       title: post.title,

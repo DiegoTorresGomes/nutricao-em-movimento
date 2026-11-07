@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 import { siteConfig } from "@/config/site";
 import { nutritionistConfig } from "@/config/nutritionist";
+import { articleModifiedAt } from "@/lib/editorial-dates";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
@@ -13,7 +14,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     select: {
       slug: true,
-      updatedAt: true,
+      publishedAt: true,
+      editorialUpdatedAt: true,
     },
   });
 
@@ -72,7 +74,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const articlePages = posts.map((post) => ({
     url: `${baseUrl}/pt/artigos/${post.slug}`,
-    lastModified: post.updatedAt,
+    lastModified: articleModifiedAt(post),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
