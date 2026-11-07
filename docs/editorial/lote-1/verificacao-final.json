@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-07T18:13:32.741Z",
+  "mode": "Prisma SELECT only",
+  "allFiveUnchanged": true,
+  "checks": [
+    {
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "number": 31,
+      "identityUnchanged": true,
+      "publicationUnchanged": true,
+      "editorialDateUnchanged": true,
+      "bodyUnchanged": true,
+      "descriptionsUnchanged": true
+    },
+    {
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "number": 3,
+      "identityUnchanged": true,
+      "publicationUnchanged": true,
+      "editorialDateUnchanged": true,
+      "bodyUnchanged": true,
+      "descriptionsUnchanged": true
+    },
+    {
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "number": 26,
+      "identityUnchanged": true,
+      "publicationUnchanged": true,
+      "editorialDateUnchanged": true,
+      "bodyUnchanged": true,
+      "descriptionsUnchanged": true
+    },
+    {
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "number": 6,
+      "identityUnchanged": true,
+      "publicationUnchanged": true,
+      "editorialDateUnchanged": true,
+      "bodyUnchanged": true,
+      "descriptionsUnchanged": true
+    },
+    {
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "number": 10,
+      "identityUnchanged": true,
+      "publicationUnchanged": true,
+      "editorialDateUnchanged": true,
+      "bodyUnchanged": true,
+      "descriptionsUnchanged": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "recordedAt": "2026-11-07T19:44:32.969Z",
+  "authorizationSource": "C:/Users/Diego Torres/.codex/attachments/bc601600-47c1-4536-a7dc-566e7a0bfe5e/Texto colado.txt",
+  "authorizationSourceSha256": "4749e1d23183d140409bd066eb5915559664c5f460a25e22264311ba9f629eef",
+  "authorizationQuote": "Aplicar os textos validados ao CMS/banco configurado, preservando identidade, URLs e hist?rico editorial.",
+  "relatedExceptionQuote": "Aplicar os cinco textos e links aprovados, mantendo os cards autom?ticos como exce??o expl?cita",
+  "scope": "Only these five human-approved Post revisions in the currently configured database; prior local-only restriction concerned structural tests and is superseded for these explicitly requested editorial writes only",
+  "targetIsRemote": true,
+  "targetSha256": "658ec2d14104ea61b4a0eb347bfe543b10a075babb10b22e275ca1868c40eafa",
+  "actualDatabaseMatchesConfiguration": true,
+  "approvedPackageSha256": "a12ba6c9f6ac4d5eda7829be76febc8f42db3f418711e4326cb0c0eb6db9f4d4",
+  "allowedIds": [
+    "cmqa1a7130001ee2r4imybzf1",
+    "cmqlko9pe0000992rtm9c5ane",
+    "cmr6j3k410000jg2rjxc2qlbm",
+    "cmqtxvrx20000xc2ruyxxz3pm",
+    "cmqzsbfaf0000fy2r5ka03ipm"
+  ],
+  "notAuthorized": [
+    "other article edits",
+    "schema changes",
+    "user account changes",
+    "deploy",
+    "commit",
+    "push"
+  ],
+  "firstAttempt": {
+    "executed": false,
+    "reason": "Auto-review rejected because the previous remote-database prohibition was treated as still applicable. No write command started."
+  }
+}

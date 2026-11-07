@@ -1,0 +1,214 @@
+{
+  "checkedAt": "2026-11-07T19:55:06.592Z",
+  "mode": "Prisma SELECT only",
+  "articles": [
+    {
+      "number": 31,
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoDescription"
+      ],
+      "unexpectedFields": [],
+      "publishedAt": "2026-09-21T23:56:37.573Z",
+      "editorialUpdatedAt": "2026-11-07T19:45:07.267Z",
+      "updatedAt": "2026-11-07T19:45:07.389Z",
+      "views": 201,
+      "scheduledAt": null,
+      "contentSha256": "1fe7be1cfc8f9cb513fc145f3a90577712add00c07ed02497990bf6d71865470",
+      "allImmutableFieldsPreserved": true
+    },
+    {
+      "number": 3,
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoDescription"
+      ],
+      "unexpectedFields": [],
+      "publishedAt": "2026-06-20T01:39:50.167Z",
+      "editorialUpdatedAt": "2026-11-07T19:45:08.499Z",
+      "updatedAt": "2026-11-07T19:45:08.624Z",
+      "views": 71,
+      "scheduledAt": null,
+      "contentSha256": "e29ae38398e521749aaa8fabf16a51a63a72f66527d37229686a78d298c8f7f4",
+      "allImmutableFieldsPreserved": true
+    },
+    {
+      "number": 6,
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoDescription"
+      ],
+      "unexpectedFields": [],
+      "publishedAt": "2026-06-26T07:30:03.435Z",
+      "editorialUpdatedAt": "2026-11-07T19:51:23.851Z",
+      "updatedAt": "2026-11-07T19:51:23.962Z",
+      "views": 48,
+      "scheduledAt": "2026-06-26T07:30:00.000Z",
+      "contentSha256": "a186751b779dfd3b809e57cde00402e16d2fcc8926683d934e1303f7d48551f2",
+      "allImmutableFieldsPreserved": true
+    },
+    {
+      "number": 10,
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoDescription"
+      ],
+      "unexpectedFields": [],
+      "publishedAt": "2026-07-06T07:00:02.382Z",
+      "editorialUpdatedAt": "2026-11-07T19:51:24.819Z",
+      "updatedAt": "2026-11-07T19:51:24.892Z",
+      "views": 29,
+      "scheduledAt": "2026-07-06T07:00:00.000Z",
+      "contentSha256": "edc2b29fac9a551b06ca1eff1b02cf9c7f7df839bfaf855d929d40ef59b8e6c6",
+      "allImmutableFieldsPreserved": true
+    },
+    {
+      "number": 26,
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoDescription"
+      ],
+      "unexpectedFields": [],
+      "publishedAt": "2026-08-12T07:00:02.819Z",
+      "editorialUpdatedAt": "2026-11-07T19:45:09.825Z",
+      "updatedAt": "2026-11-07T19:48:38.161Z",
+      "views": 10,
+      "scheduledAt": "2026-08-12T07:00:00.000Z",
+      "contentSha256": "c1e2b9a8e61730ac79c1dc5943fde5aea669bac412ddcff0574b13c7b0416cfb",
+      "allImmutableFieldsPreserved": true
+    }
+  ],
+  "otherArticlesCount": 26,
+  "otherArticles": [
+    {
+      "id": "cmqfndz120000qx2revual4yx",
+      "unchanged": true
+    },
+    {
+      "id": "cmqi64r9c0000nr2r3khm5nst",
+      "unchanged": true
+    },
+    {
+      "id": "cmqppa7du0000ve2rnn31iyzq",
+      "unchanged": true
+    },
+    {
+      "id": "cmqr70qen00003x2rlnm1fkzb",
+      "unchanged": true
+    },
+    {
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "unchanged": true
+    },
+    {
+      "id": "cmqvdst3u00003u2rwknviypp",
+      "unchanged": true
+    },
+    {
+      "id": "cmqzpmryo0000uf2rdwb9vq2q",
+      "unchanged": true
+    },
+    {
+      "id": "cmr3vox090000ut2rdn0l9354",
+      "unchanged": true
+    },
+    {
+      "id": "cmr3xbkac0000p72rsy43fedu",
+      "unchanged": true
+    },
+    {
+      "id": "cmr5f26x70000ox2rrmpdqpse",
+      "unchanged": true
+    },
+    {
+      "id": "cmr5hikpg0001y32rcecftcrr",
+      "unchanged": true
+    },
+    {
+      "id": "cmrckeis80000cv2riequpo8v",
+      "unchanged": true
+    },
+    {
+      "id": "cmrclr5c500003b2rjfn5pyge",
+      "unchanged": true
+    },
+    {
+      "id": "cmre4ruk20000kf2rxkerug5h",
+      "unchanged": true
+    },
+    {
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "unchanged": true
+    },
+    {
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "unchanged": true
+    },
+    {
+      "id": "cmrl2gz5k00009e2rg5qgjl1h",
+      "unchanged": true
+    },
+    {
+      "id": "cmrl5s7on0000b92rd68ofia0",
+      "unchanged": true
+    },
+    {
+      "id": "cmrmnrpjk0000of2rmucscj6g",
+      "unchanged": true
+    },
+    {
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "unchanged": true
+    },
+    {
+      "id": "cmrpg9oir0000gb2rjy74vu47",
+      "unchanged": true
+    },
+    {
+      "id": "cmrv4eb5w00008l2r1qml5ivj",
+      "unchanged": true
+    },
+    {
+      "id": "cmry28rp30000d92r6qq9xegs",
+      "unchanged": true
+    },
+    {
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "unchanged": true
+    },
+    {
+      "id": "cmt1xys970000562rp5yrdol9",
+      "unchanged": true
+    },
+    {
+      "id": "cmu7efl310000c02rdw9tif5e",
+      "unchanged": true
+    }
+  ],
+  "unchangedApprovedPackage": true
+}

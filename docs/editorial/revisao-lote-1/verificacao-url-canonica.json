@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-07T19:52:55.458Z",
+  "method": "Canonical URL GET, no JavaScript or counter call",
+  "pages": [
+    {
+      "number": 31,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200,
+      "exactApprovedBody": true,
+      "datePublished": "2026-09-21T23:56:37.573Z",
+      "dateModified": "2026-11-07T19:45:07.267Z"
+    },
+    {
+      "number": 3,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200,
+      "exactApprovedBody": true,
+      "datePublished": "2026-06-20T01:39:50.167Z",
+      "dateModified": "2026-11-07T19:45:08.499Z"
+    },
+    {
+      "number": 26,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "status": 200,
+      "exactApprovedBody": true,
+      "datePublished": "2026-08-12T07:00:02.819Z",
+      "dateModified": "2026-11-07T19:45:09.825Z"
+    },
+    {
+      "number": 6,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "status": 200,
+      "exactApprovedBody": true,
+      "datePublished": "2026-06-26T07:30:03.435Z",
+      "dateModified": "2026-11-07T19:51:23.851Z"
+    },
+    {
+      "number": 10,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "status": 200,
+      "exactApprovedBody": true,
+      "datePublished": "2026-07-06T07:00:02.382Z",
+      "dateModified": "2026-11-07T19:51:24.819Z"
+    }
+  ]
+}

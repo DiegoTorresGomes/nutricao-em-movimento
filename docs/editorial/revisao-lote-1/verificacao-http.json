@@ -1,0 +1,367 @@
+{
+  "checkedAt": "2026-11-07T19:51:28.732Z",
+  "method": "GET without browser JavaScript; no views endpoint called",
+  "articles": [
+    {
+      "number": 31,
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "checkedUrl": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca?_lote1_check=1794081085381",
+      "status": 200,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "metadataDescription": "Compare sinais de fome física e influência emocional, entenda por que podem coexistir e veja como observar sua alimentação sem culpa ou testes rígidos.",
+      "exactApprovedBody": true,
+      "h1Count": 1,
+      "referenceCount": 3,
+      "image": {
+        "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+        "status": 200,
+        "contentType": "image/jpeg"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+        "description": "Compare sinais de fome física e influência emocional, entenda por que podem coexistir e veja como observar sua alimentação sem culpa ou testes rígidos.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg"
+        ],
+        "datePublished": "2026-09-21T23:56:37.573Z",
+        "dateModified": "2026-11-07T19:45:07.267Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca"
+        }
+      },
+      "related": [
+        "/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+        "/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+        "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares"
+      ],
+      "relatedException": "Automatic cards retained by explicit user authorization",
+      "cache": {
+        "age": null,
+        "vercel": null,
+        "cloudflare": null
+      }
+    },
+    {
+      "number": 3,
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "checkedUrl": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia?_lote1_check=1794081086655",
+      "status": 200,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "metadataDescription": "Entenda como flexibilidade, prazer e cuidado convivem na alimentação, com exemplos para lidar com culpa e rigidez e reconhecer quando buscar apoio.",
+      "exactApprovedBody": true,
+      "h1Count": 1,
+      "referenceCount": 3,
+      "image": {
+        "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+        "status": 200,
+        "contentType": "image/png"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+        "description": "Entenda como flexibilidade, prazer e cuidado convivem na alimentação, com exemplos para lidar com culpa e rigidez e reconhecer quando buscar apoio.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png"
+        ],
+        "datePublished": "2026-06-20T01:39:50.167Z",
+        "dateModified": "2026-11-07T19:45:08.499Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia"
+        }
+      },
+      "related": [
+        "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+        "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+        "/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional"
+      ],
+      "relatedException": "Automatic cards retained by explicit user authorization",
+      "cache": {
+        "age": null,
+        "vercel": null,
+        "cloudflare": null
+      }
+    },
+    {
+      "number": 26,
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "checkedUrl": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia?_lote1_check=1794081087129",
+      "status": 200,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "metadataDescription": "Veja como organizar alimentação, movimento, hidratação e recuperação na rotina, com exemplos possíveis e sem usar comida ou exercício como compensação.",
+      "exactApprovedBody": true,
+      "h1Count": 1,
+      "referenceCount": 4,
+      "image": {
+        "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+        "status": 200,
+        "contentType": "image/png"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+        "description": "Veja como organizar alimentação, movimento, hidratação e recuperação na rotina, com exemplos possíveis e sem usar comida ou exercício como compensação.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png"
+        ],
+        "datePublished": "2026-08-12T07:00:02.819Z",
+        "dateModified": "2026-11-07T19:45:09.825Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia"
+        }
+      },
+      "related": [
+        "/pt/artigos/caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+        "/pt/artigos/detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+        "/pt/artigos/cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar"
+      ],
+      "relatedException": "Automatic cards retained by explicit user authorization",
+      "cache": {
+        "age": null,
+        "vercel": null,
+        "cloudflare": null
+      }
+    },
+    {
+      "number": 6,
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "checkedUrl": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo?_lote1_check=1794081087294",
+      "status": 200,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "metadataDescription": "Entenda como preferência, hábitos, fome, restrição e sono podem participar da vontade de doce, com formas de observar o contexto sem culpa ou promessas.",
+      "exactApprovedBody": true,
+      "h1Count": 1,
+      "referenceCount": 6,
+      "image": {
+        "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782417769/nutricao-em-movimento/articles/t3pbxtdk2yrndbaint3b.jpg",
+        "status": 200,
+        "contentType": "image/jpeg"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Vontade de doce todo dia: o que pode estar acontecendo?",
+        "description": "Entenda como preferência, hábitos, fome, restrição e sono podem participar da vontade de doce, com formas de observar o contexto sem culpa ou promessas.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782417769/nutricao-em-movimento/articles/t3pbxtdk2yrndbaint3b.jpg"
+        ],
+        "datePublished": "2026-06-26T07:30:03.435Z",
+        "dateModified": "2026-11-07T19:51:23.851Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo"
+        }
+      },
+      "related": [
+        "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+        "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+        "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida"
+      ],
+      "relatedException": "Automatic cards retained by explicit user authorization",
+      "cache": {
+        "age": null,
+        "vercel": null,
+        "cloudflare": null
+      }
+    },
+    {
+      "number": 10,
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "checkedUrl": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional?_lote1_check=1794081087670",
+      "status": 200,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "metadataDescription": "Carboidrato no jantar não causa ganho de peso automaticamente. Entenda o papel da alimentação total, da composição da refeição e dos horários.",
+      "exactApprovedBody": true,
+      "h1Count": 1,
+      "referenceCount": 5,
+      "image": {
+        "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+        "status": 200,
+        "contentType": "image/png"
+      },
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+        "description": "Carboidrato no jantar não causa ganho de peso automaticamente. Entenda o papel da alimentação total, da composição da refeição e dos horários.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png"
+        ],
+        "datePublished": "2026-07-06T07:00:02.382Z",
+        "dateModified": "2026-11-07T19:51:24.819Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional"
+        }
+      },
+      "related": [
+        "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+        "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+        "/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia"
+      ],
+      "relatedException": "Automatic cards retained by explicit user authorization",
+      "cache": {
+        "age": null,
+        "vercel": null,
+        "cloudflare": null
+      }
+    }
+  ],
+  "internalLinks": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/contato",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "status": 200
+    }
+  ]
+}

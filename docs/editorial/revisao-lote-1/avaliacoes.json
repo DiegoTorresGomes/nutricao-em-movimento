@@ -1,0 +1,88 @@
+{
+  "evaluatedAt": "2026-11-07",
+  "method": "Julgamento editorial manual do corpo efetivamente aplicado e do HTML público conferido. Mesmos oito pesos da auditoria: 25/20/15/15/10/5/5/5. Não é score do Google, revisão científica independente nem previsão de tráfego/AdSense.",
+  "dimensions": ["utilidade/intenção", "profundidade/clareza", "originalidade/contribuição", "E-E-A-T", "referências", "estrutura/leitura", "linkagem", "SEO on-page"],
+  "weights": [25, 20, 15, 15, 10, 5, 5, 5],
+  "articles": [
+    {
+      "number": 31,
+      "points": [23, 17, 10, 13, 8, 5, 4, 4],
+      "class": "B",
+      "rationale": [
+        "Responde à comparação e oferece perguntas acionáveis sem exigir certeza para comer.",
+        "Coexistência, limites da tabela e uso ilustrativo da escala estão explicados, com exemplos de contexto.",
+        "A sequência de decisão e os exemplos acrescentam utilidade, embora os conceitos sejam amplamente conhecidos.",
+        "Autora, CRN, perfil e revisão humana confirmada pelo usuário; modificação editorial real, sem alegar revisão externa.",
+        "Três documentos identificáveis sustentam construto, dimensão social e sinais de atenção. A escala não é apresentada como validada.",
+        "Um H1 no template, corpo em H2, tabela legível e conclusão direta.",
+        "Dois encaminhamentos específicos; cards automáticos continuam mais amplos por exceção autorizada.",
+        "Descrição completa, canonical e schema consistentes. Alt promocional da capa e tempo de leitura original foram preservados, não otimizados fora do aprovado."
+      ],
+      "remaining": "Pode receber manutenção de alt/tempo de leitura e curadoria futura dos cards. Não é necessário ampliar texto; não há pendência central que justifique manter classe C."
+    },
+    {
+      "number": 3,
+      "points": [23, 17, 11, 13, 8, 5, 4, 4],
+      "class": "B",
+      "rationale": [
+        "Define a relação saudável e transforma flexibilidade em decisões reconhecíveis.",
+        "Exemplos sociais, sinais de sofrimento e respeito a restrições clínicas dão contexto sem criar tratamento universal.",
+        "Tabela e cinco situações trazem aplicação própria, embora a base conceitual se repita legitimamente no campo.",
+        "Identidade profissional e revisão humana confirmadas; sem experiência clínica ou resultados individuais inventados.",
+        "Guia oficial, meta-análise com ressalva observacional e documento clínico institucional vinculados às afirmações.",
+        "H1 interno removido do conteúdo aplicado, H2/H3 organizados e ausência da extensa repetição anterior.",
+        "Três destinos contextuais e contato discreto; cards automáticos não receberam a curadoria proposta.",
+        "Metadata coerente, canonical estável e datas/schema válidos. Capa e tempo de leitura originais permanecem."
+      ],
+      "remaining": "Há espaço para exemplos futuros mais específicos e manutenção de metadata auxiliar. A promessa de guia de escala desapareceu; a pergunta principal é atendida."
+    },
+    {
+      "number": 26,
+      "points": [22, 16, 10, 13, 8, 5, 4, 4],
+      "class": "B",
+      "rationale": [
+        "O foco em coordenar cuidados responde melhor ao objetivo geral do que uma nova lista de hábitos.",
+        "Três cenários e critério de revisão do experimento tornam o texto útil, mas seu alcance continua introdutório.",
+        "A contribuição está na logística conjunta; parte dos fundamentos segue comum aos guias próximos.",
+        "Autoria, CRN, revisão humana e limites de orientação individual presentes.",
+        "Quatro documentos rastreáveis; recomendações populacionais e documento esportivo não viram prescrição universal.",
+        "Seções claras, H2/H3 proporcionais e sem receitas/tabelas esportivas redundantes.",
+        "Prato e guias específicos oferecem continuação útil; detox ainda pode aparecer no módulo automático preservado.",
+        "Descrição alinhada ao recorte, canonical e schema válidos. O título amplo e campos auxiliares originais limitam o ganho de especificidade."
+      ],
+      "remaining": "É o mais generalista do lote, com originalidade moderada. Melhorou o recorte o suficiente para B, sem base para promovê-lo a A apenas por ter sido revisado."
+    },
+    {
+      "number": 6,
+      "points": [23, 17, 11, 13, 8, 5, 4, 4],
+      "class": "B",
+      "rationale": [
+        "Distingue preferência, hábito, fome e outros contextos sem prometer eliminar vontade.",
+        "Explica restrição seletiva versus energética e limita a conclusão sobre sono; os exemplos ajudam a observar padrões.",
+        "Tabela de ajustes e cenário de tarde oferecem decisões próprias, sem repetir todo o mapa de gatilhos.",
+        "Identidade e revisão humana confirmadas, com linguagem sem diagnóstico e sem patologizar desejo isolado.",
+        "Seis fontes localizáveis e pertinentes; há revisões narrativas e evidências heterogêneas, explicitamente delimitadas.",
+        "Resumo cortado e repetições extensas saíram; corpo tem progressão legível e conclusão específica.",
+        "Lanche e gatilhos são próximos passos claros; seleção automática continua ampla.",
+        "Metadata e schema coerentes, URL estável. Tempo de leitura original e alt/capa não foram alterados fora do pacote."
+      ],
+      "remaining": "As causas de um caso individual continuam dependendo de avaliação; não são identificáveis pela lista. Mantém algum terreno comum com gatilhos/beliscos, agora com foco suficiente no desejo específico."
+    },
+    {
+      "number": 10,
+      "points": [24, 18, 11, 13, 9, 5, 4, 4],
+      "class": "A",
+      "rationale": [
+        "Resposta aparece cedo e resolve o mito sem substituir uma regra absoluta por outra.",
+        "Balanço energético, horário, contexto clínico e exemplos são tratados com distinção entre desfecho fisiológico e longo prazo.",
+        "A interpretação conjunta dos estudos e o exemplo de substituição no jantar acrescentam contribuição prática.",
+        "Autora e revisão humana identificadas; sem diagnóstico, prescrição de jejum ou promessa de resultado.",
+        "Cinco fontes identificáveis, incluindo ensaio controlado e revisões de 2024/2026, com limitações explicitadas.",
+        "Parágrafo duplicado e FAQ repetitivo removidos; H2/H3 e conclusão respondem à pergunta.",
+        "Três encaminhamentos distintos: composição, recuperação e comportamento noturno. Cards automáticos permanecem.",
+        "Descrição, canonical, autoria e datas/schema corretos; metadata auxiliar original continua como manutenção possível."
+      ],
+      "remaining": "A é julgamento do núcleo atual, não perfeição ou garantia clínica. Acompanhar literatura de crononutrição e manutenção dos campos auxiliares; nenhuma expansão de texto é necessária para sustentar a nota."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-11-07T18:10:33.224Z",
+  "method": "GET without JavaScript; no view-counter calls",
+  "checks": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/contato",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/contato"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33786858/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/33786858/"
+    },
+    {
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/publications/eating-disorders"
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "status": 200,
+      "finalUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/"
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "status": 200,
+      "finalUrl": "https://www.who.int/publications/i/item/9789240015128"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26644270/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/26644270/"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26920240/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/26920240/"
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+      "status": 200,
+      "finalUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf"
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240073593",
+      "status": 200,
+      "finalUrl": "https://www.who.int/publications/i/item/9789240073593"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27804960/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/27804960/"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7399671/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7399671/"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39485353/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/39485353/"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829361/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829361/"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves"
+    },
+    {
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "status": 200,
+      "finalUrl": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis"
+    }
+  ],
+  "completedAt": "2026-11-07T18:13:34.387Z"
+}

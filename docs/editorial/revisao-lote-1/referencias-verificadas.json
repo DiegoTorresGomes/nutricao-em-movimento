@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-11-07T19:53:13.024Z",
+  "method": "GET, DOI resolver redirects recorded without replacing approved links",
+  "results": [
+    {
+      "id": "niddk2022",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "reiche2020",
+      "url": "https://doi.org/10.1017/S0029665120007004",
+      "status": 302,
+      "location": "https://www.cambridge.org/core/product/identifier/S0029665120007004/type/journal_article"
+    },
+    {
+      "id": "guia2014",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "nimh2024",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "linardon2021",
+      "url": "https://doi.org/10.1002/eat.23509",
+      "status": 302,
+      "location": "https://onlinelibrary.wiley.com/doi/10.1002/eat.23509"
+    },
+    {
+      "id": "atividade2021",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "omsAtividade2020",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "thomas2016",
+      "url": "https://doi.org/10.1016/j.jand.2015.12.006",
+      "status": 302,
+      "location": "https://linkinghub.elsevier.com/retrieve/pii/S221226721501802X"
+    },
+    {
+      "id": "boswell2016",
+      "url": "https://doi.org/10.1111/obr.12354",
+      "status": 302,
+      "location": "https://onlinelibrary.wiley.com/doi/10.1111/obr.12354"
+    },
+    {
+      "id": "meule2020",
+      "url": "https://doi.org/10.1007/s13668-020-00326-0",
+      "status": 302,
+      "location": "https://link.springer.com/10.1007/s13668-020-00326-0"
+    },
+    {
+      "id": "sono2017",
+      "url": "https://doi.org/10.1038/ejcn.2016.201",
+      "status": 302,
+      "location": "https://www.nature.com/articles/ejcn2016201"
+    },
+    {
+      "id": "omsCarb2023",
+      "url": "https://www.who.int/publications/i/item/9789240073593",
+      "status": 200,
+      "location": null
+    },
+    {
+      "id": "hall2012",
+      "url": "https://doi.org/10.3945/ajcn.112.036350",
+      "status": 302,
+      "location": "https://linkinghub.elsevier.com/retrieve/pii/S0002916523027570"
+    },
+    {
+      "id": "vujovic2022",
+      "url": "https://doi.org/10.1016/j.cmet.2022.09.007",
+      "status": 302,
+      "location": "https://linkinghub.elsevier.com/retrieve/pii/S1550413122003977"
+    },
+    {
+      "id": "liu2024",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2024.42163",
+      "status": 302,
+      "location": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2825747"
+    },
+    {
+      "id": "chen2026",
+      "url": "https://doi.org/10.1136/bmjmed-2024-001071",
+      "status": 302,
+      "location": "https://bmjmedicine.bmj.com/lookup/doi/10.1136/bmjmed-2024-001071"
+    }
+  ]
+}

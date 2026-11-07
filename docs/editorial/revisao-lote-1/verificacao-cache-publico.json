@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-11-07T19:57:07.109Z",
+  "checks": [
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "articleData": [
+        {
+          "number": 31,
+          "descriptionPresent": false,
+          "sitemapEntry": "/url>\n<url>\n<loc>https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca</loc>\n<lastmod>2026-09-21T23:56:37.573Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>"
+        },
+        {
+          "number": 3,
+          "descriptionPresent": false,
+          "sitemapEntry": "<url>\n<loc>https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia</loc>\n<lastmod>2026-06-20T01:39:50.167Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>"
+        },
+        {
+          "number": 26,
+          "descriptionPresent": false,
+          "sitemapEntry": "ttps://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia</loc>\n<lastmod>2026-08-12T07:00:02.819Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>"
+        },
+        {
+          "number": 6,
+          "descriptionPresent": false,
+          "sitemapEntry": "riority>\n</url>\n<url>\n<loc>https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo</loc>\n<lastmod>2026-06-26T07:30:03.435Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>"
+        },
+        {
+          "number": 10,
+          "descriptionPresent": false,
+          "sitemapEntry": "</url>\n<url>\n<loc>https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional</loc>\n<lastmod>2026-07-06T07:00:02.382Z</lastmod>\n<changefreq>weekly</changefreq>\n<priority>0.8</priority>\n</url>"
+        }
+      ]
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "articleData": [
+        {
+          "number": 31,
+          "descriptionPresent": true
+        },
+        {
+          "number": 3,
+          "descriptionPresent": true
+        },
+        {
+          "number": 26,
+          "descriptionPresent": true
+        },
+        {
+          "number": 6,
+          "descriptionPresent": true
+        },
+        {
+          "number": 10,
+          "descriptionPresent": true
+        }
+      ]
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "articleData": [
+        {
+          "number": 31,
+          "descriptionPresent": false
+        },
+        {
+          "number": 3,
+          "descriptionPresent": false
+        },
+        {
+          "number": 26,
+          "descriptionPresent": false
+        },
+        {
+          "number": 6,
+          "descriptionPresent": false
+        },
+        {
+          "number": 10,
+          "descriptionPresent": false
+        }
+      ]
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "articleData": [
+        {
+          "number": 31,
+          "descriptionPresent": false
+        },
+        {
+          "number": 3,
+          "descriptionPresent": false
+        },
+        {
+          "number": 26,
+          "descriptionPresent": false
+        },
+        {
+          "number": 6,
+          "descriptionPresent": false
+        },
+        {
+          "number": 10,
+          "descriptionPresent": false
+        }
+      ]
+    }
+  ]
+}

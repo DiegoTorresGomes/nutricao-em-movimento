@@ -1,0 +1,176 @@
+{
+  "verifiedAt": "2026-11-07",
+  "scope": "Conferência dirigida em fontes primárias; não é revisão sistemática nova da literatura.",
+  "sources": {
+    "niddk2022": {
+      "author": "National Institute of Diabetes and Digestive and Kidney Diseases",
+      "title": "Diabetes Tests & Diagnosis",
+      "publication": "NIH/NIDDK. Revisado em julho de 2022",
+      "year": "2022",
+      "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+      "sourceType": "Material institucional de saúde",
+      "supports": "Diagnóstico de diabetes depende de avaliação clínica e testes; não pode ser feito por desejo isolado de doce.",
+      "limitations": "Usado apenas para explicar o limite do autodiagnóstico. O lote não reproduz critérios, valores de exames, tratamento ou recomendações americanas de rastreamento."
+    },
+    "reiche2020": {
+      "author": "Reichenberger J, Schnepper R, Arend AK, Blechert J",
+      "title": "Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies",
+      "publication": "Proceedings of the Nutrition Society. 79(3):290–299",
+      "year": "2020",
+      "doi": "10.1017/S0029665120007004",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+      "sourceType": "Revisão narrativa",
+      "supports": "Influência emocional heterogênea e limites de autorrelatos; não há leitura diagnóstica binária dos sinais.",
+      "limitations": "Não valida a tabela educativa ou a escala numérica propostas, nem uma intervenção para todos os leitores."
+    },
+    "guia2014": {
+      "author": "Brasil. Ministério da Saúde",
+      "title": "Guia alimentar para a população brasileira",
+      "publication": "2ª edição. Brasília: Ministério da Saúde",
+      "year": "2014",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "sourceType": "Guia oficial",
+      "supports": "Alimentação inclui cultura, modos de comer e contexto social; recomendações gerais de alimentos e organização das refeições.",
+      "limitations": "Não sustenta sozinho causas clínicas de cravings ou um protocolo individual de fome/saciedade. Exemplos de rotina são adaptações editoriais."
+    },
+    "nimh2024": {
+      "author": "National Institute of Mental Health",
+      "title": "Eating Disorders: What You Need to Know",
+      "publication": "NIH Publication No. 24-MH-4901. Revisado em 2024",
+      "year": "2024",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "sourceType": "Material institucional de saúde",
+      "supports": "Sinais de restrição, perda de controle e compensações merecem avaliação; transtornos podem ocorrer em diferentes pesos corporais.",
+      "limitations": "Não permite diagnosticar o leitor por uma tabela, culpa ou desejo isolado. Não é apresentada como guideline brasileira."
+    },
+    "linardon2021": {
+      "author": "Linardon J, Tylka TL, Fuller-Tyszkiewicz M",
+      "title": "Intuitive eating and its psychological correlates: A meta-analysis",
+      "publication": "International Journal of Eating Disorders. 54(7):1073–1098",
+      "year": "2021",
+      "doi": "10.1002/eat.23509",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33786858/",
+      "sourceType": "Meta-análise",
+      "supports": "Associações de alimentação intuitiva com indicadores psicológicos e menor sintomatologia alimentar.",
+      "limitations": "A maioria dos estudos é transversal; não estabelece que adotar a prática cause os benefícios nem substitua tratamento."
+    },
+    "atividade2021": {
+      "author": "Brasil. Ministério da Saúde",
+      "title": "Guia de atividade física para a população brasileira",
+      "publication": "Brasília: Ministério da Saúde",
+      "year": "2021",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+      "sourceType": "Guia oficial",
+      "supports": "Atividade em diferentes domínios da rotina, redução do tempo sedentário e início/progressão conforme possibilidades.",
+      "limitations": "Não transforma cenários exemplificativos do artigo em prescrição de exercício."
+    },
+    "omsAtividade2020": {
+      "author": "World Health Organization",
+      "title": "WHO guidelines on physical activity and sedentary behaviour",
+      "publication": "Geneva: WHO. ISBN 9789240015128",
+      "year": "2020",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "sourceType": "Diretriz de saúde pública",
+      "supports": "Referência populacional para adultos de 150–300 minutos moderados ou equivalente e fortalecimento em dois ou mais dias; algum movimento é melhor que nenhum.",
+      "limitations": "Não é meta inicial individual, programa de treino ou exigência igual para todas as condições clínicas."
+    },
+    "thomas2016": {
+      "author": "Thomas DT, Erdman KA, Burke LM",
+      "title": "Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance",
+      "publication": "Journal of the Academy of Nutrition and Dietetics. 116(3):501–528",
+      "year": "2016",
+      "doi": "10.1016/j.jand.2015.12.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26920240/",
+      "sourceType": "Posicionamento científico",
+      "supports": "Energia, carboidratos, proteínas e líquidos participam do suporte ao exercício e à recuperação, com necessidades individuais.",
+      "limitations": "Documento esportivo; não extrapolar doses ou timing de atletas para a rotina recreativa. Há errata associada ao registro; o lote usa apenas os princípios gerais, sem protocolos numéricos."
+    },
+    "boswell2016": {
+      "author": "Boswell RG, Kober H",
+      "title": "Food cue reactivity and craving predict eating and weight gain: a meta-analytic review",
+      "publication": "Obesity Reviews. 17(2):159–177",
+      "year": "2016",
+      "doi": "10.1111/obr.12354",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26644270/",
+      "sourceType": "Meta-análise",
+      "supports": "Pistas alimentares e desejo relacionam-se ao comportamento de comer; contexto visual/ambiental pode importar.",
+      "limitations": "Não diagnostica dependência de açúcar nem identifica a causa do desejo de uma pessoa."
+    },
+    "meule2020": {
+      "author": "Meule A",
+      "title": "The Psychology of Food Cravings: the Role of Food Deprivation",
+      "publication": "Current Nutrition Reports. 9(3):251–257",
+      "year": "2020",
+      "doi": "10.1007/s13668-020-00326-0",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7399671/",
+      "sourceType": "Revisão narrativa",
+      "supports": "Diferenças entre privação seletiva de curto prazo e restrição energética mais longa nos estudos sobre desejos alimentares.",
+      "limitations": "Não autoriza a afirmação universal de que dieta/restrição aumenta ou elimina desejos, nem a recomendação de restringir sem avaliação."
+    },
+    "sono2017": {
+      "author": "Al Khatib HK, Harding SV, Darzi J, Pot GK",
+      "title": "The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis",
+      "publication": "European Journal of Clinical Nutrition. 71(5):614–624",
+      "year": "2017",
+      "doi": "10.1038/ejcn.2016.201",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27804960/",
+      "sourceType": "Revisão sistemática e meta-análise",
+      "supports": "Privação parcial de sono pode aumentar ingestão energética nos estudos de intervenção.",
+      "limitations": "Não houve efeito significativo na ingestão de carboidratos nessa síntese; não provaria que dormir pouco causa especificamente vontade de açúcar em todos."
+    },
+    "omsCarb2023": {
+      "author": "World Health Organization",
+      "title": "Carbohydrate intake for adults and children: WHO guideline",
+      "publication": "Geneva: WHO. ISBN 9789240073593",
+      "year": "2023",
+      "url": "https://www.who.int/publications/i/item/9789240073593",
+      "sourceType": "Diretriz",
+      "supports": "Importância da qualidade das fontes de carboidrato, com cereais integrais, hortaliças, frutas e leguminosas.",
+      "limitations": "Não estabelece um horário universal de exclusão do carboidrato. Recomendações conferidas também no resumo executivo oficial em NCBI Bookshelf NBK594787."
+    },
+    "hall2012": {
+      "author": "Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR",
+      "title": "Energy balance and its components: implications for body weight regulation",
+      "publication": "The American Journal of Clinical Nutrition. 95(4):989–994",
+      "year": "2012",
+      "doi": "10.3945/ajcn.112.036350",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+      "sourceType": "Artigo de consenso",
+      "supports": "Balanço energético e sua regulação dinâmica; componentes de ingestão/gasto interagem com mecanismos biológicos e comportamentais.",
+      "limitations": "Não trata do corte de carboidratos à noite. Conferência apoiada por ASN/ILSI North America, com financiamento da indústria informado no artigo; usado somente para o princípio de balanço energético, sem recomendação de produto."
+    },
+    "vujovic2022": {
+      "author": "Vujović N et al.",
+      "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+      "publication": "Cell Metabolism. 34(10):1486–1498.e7",
+      "year": "2022",
+      "doi": "10.1016/j.cmet.2022.09.007",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/",
+      "sourceType": "Ensaio randomizado cruzado",
+      "supports": "Efeitos fisiológicos de atrasar refeições em protocolo controlado com 16 adultos com sobrepeso/obesidade.",
+      "limitations": "Protocolo curto, não isolou carboidratos no jantar nem demonstrou ganho de gordura de longo prazo em toda a população."
+    },
+    "liu2024": {
+      "author": "Liu HY, Eso AA, Cook N, O'Neill HM, Albarqouni L",
+      "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis",
+      "publication": "JAMA Network Open. 7(11):e2442163",
+      "year": "2024",
+      "doi": "10.1001/jamanetworkopen.2024.42163",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39485353/",
+      "sourceType": "Revisão sistemática e meta-análise",
+      "supports": "Pequenos efeitos de estratégias de horários/distribuição alimentar sobre peso nos ensaios incluídos.",
+      "limitations": "Heterogeneidade, risco de viés e importância clínica incerta; não permite prometer benefício ou impor jejum."
+    },
+    "chen2026": {
+      "author": "Chen YE et al.",
+      "title": "Effects of timing and eating duration of time restricted eating on metabolic outcomes: systematic review and network meta-analysis",
+      "publication": "BMJ Medicine. 5(1):e001071",
+      "year": "2026",
+      "doi": "10.1136/bmjmed-2024-001071",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829361/",
+      "sourceType": "Revisão sistemática e meta-análise em rede",
+      "supports": "Comparações entre janelas alimentares encontraram vantagens de janelas mais cedo em alguns desfechos.",
+      "limitations": "Intervenção é horário/janela de alimentação, não exclusão de carboidratos; resultados da duração da janela não foram consistentes. Não é orientação universal de jejum."
+    }
+  }
+}

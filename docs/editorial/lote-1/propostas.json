@@ -1,0 +1,1570 @@
+{
+  "status": "PROPOSTAS_PARA_REVISAO_HUMANA",
+  "writesToDatabase": false,
+  "editorialDatePolicy": "Não atribuir data de revisão no rascunho; somente no salvamento editorial aprovado.",
+  "articles": [
+    {
+      "number": 31,
+      "status": "AGUARDANDO_REVISAO_DE_WEVERLYN",
+      "baselineContentHash": "4f96e250e5e54a2bcea23098895700951be8730bd0f7358d53942b119c4ed011",
+      "preserve": {
+        "id": "cmqa1a7130001ee2r4imybzf1",
+        "title": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+        "slug": "fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+        "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+        "publishedAt": "2026-09-21T23:56:37.573Z",
+        "editorialUpdatedAtAtCapture": null,
+        "authorId": "cmq7a3h0x0000i8imbilojid6",
+        "categoryId": "cmqa0qawu0000ee2rgo116y47",
+        "seoTitle": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+        "coverImage": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+        "coverImageAlt": "Descubra como diferenciar fome emocional e fome física, quais são os principais sinais de cada uma e como melhorar sua relação com a alimentação de forma consciente."
+      },
+      "proposedChanges": {
+        "description": "Compare sinais de fome física e influência emocional, entenda por que podem coexistir e veja como observar sua alimentação sem culpa ou testes rígidos.",
+        "seoDescription": "Compare sinais de fome física e influência emocional, entenda por que podem coexistir e veja como observar sua alimentação sem culpa ou testes rígidos.",
+        "content": "<h2>O que observar para diferenciar as fomes?</h2>\n\n<p>Fome física se relaciona à necessidade de alimento; emoções também podem influenciar a vontade de comer. Essas experiências podem acontecer juntas. Perceber o contexto ajuda mais do que tentar classificar cada vontade como certa ou errada.</p>\n\n<p>Você pode chegar ao jantar com fome depois de uma tarde sem comer e, ao mesmo tempo, procurar conforto após um dia difícil. Estar ansiosa não torna essa fome menos legítima. Também é possível escolher uma sobremesa pelo sabor ou pela convivência, sem fome intensa: comer tem dimensões sociais e culturais. [1, 2]</p>\n\n<h2>Sinais são pistas, não um teste diagnóstico</h2>\n\n<p>Tempo desde a última refeição, sensações corporais e o que aconteceu antes da vontade ajudam na observação. Nenhum sinal isolado confirma uma causa. A revisão de Reichenberger e colaboradores mostra que a relação entre emoções e alimentação varia e que autorrelatos têm limitações. [1]</p>\n\n\n<figure style=\"margin:32px 0;\">\n  <figcaption style=\"margin-bottom:10px;font-size:14px;line-height:1.6;color:#666;\">Comparação educativa: as colunas podem se sobrepor.</figcaption>\n  <div style=\"width:100%;overflow-x:auto;border-radius:22px;border:1px solid rgba(0,0,0,0.08);background:#FAF8F4;\">\n    <table style=\"width:100%;min-width:640px;border-collapse:collapse;background:#FFFFFF;\">\n      <thead>\n        <tr>\n          <th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">O que observar</th><th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Quando a necessidade de alimento participa</th><th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Quando emoções ou contexto também participam</th>\n        </tr>\n      </thead>\n      <tbody>\n        \n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Como apareceu</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Pode aumentar com o intervalo sem comer; às vezes só é percebida quando já está intensa.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Pode acompanhar tensão, tédio, lembranças ou uma situação específica.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Sensações</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Vazio no estômago, queda de energia ou maior interesse por comida podem aparecer.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Inquietação ou busca de conforto podem estar presentes, junto ou não de sinais físicos.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Preferência</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Pode haver abertura a diferentes comidas, mas também desejo por algo específico.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Um alimento pode ter valor afetivo; isso não exclui fome física.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Depois de comer</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">O conforto corporal e a fome podem mudar durante a refeição.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">A emoção pode continuar mesmo com o corpo alimentado; comida não precisa resolver tudo.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</figure>\n\n<p>Culpa não identifica o tipo de fome. Uma pessoa pode sentir culpa depois de atender uma necessidade física, especialmente quando convive com regras rígidas. Sensações como cansaço também têm outras explicações; a tabela não serve para diagnosticar doenças.</p>\n\n<h2>Quatro perguntas para usar na vida real</h2>\n\n\n    <ul style=\"margin:20px 0;padding-left:28px;list-style-type:disc;font-size:17px;line-height:1.8;color:#404040;\">\n      \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Quando e como foi minha última refeição? Foi suficiente para aquele momento?\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              O que percebo no corpo agora, além do nome que estou dando à fome?\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Aconteceu algo antes dessa vontade: uma reunião, um cheiro, uma preocupação?\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              De que cuidado preciso agora? Pode haver necessidade de comida e de acolhimento ao mesmo tempo.\n            </li>\n          \n    </ul>\n  \n\n<p>Se você passou horas sem comer e está com fome, uma refeição ou lanche pode ser o cuidado necessário. Não é preciso esperar a ansiedade passar para se alimentar. Se acabou de jantar e deseja um alimento afetivo, perceber isso pode ajudar a fazer uma escolha consciente, sem obrigação de recusar.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Quando a dúvida principal é por que a vontade aparece sempre na mesma situação, vale olhar para os gatilhos ambientais e de rotina.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares\">Por que eu como mesmo sem fome? Entenda os gatilhos alimentares</a></strong></p>\n</div>\n\n<h2>Como usar uma escala sem transformar números em regra</h2>\n\n<p>Se números ajudarem a descrever sensações, experimente esta referência ilustrativa: 0 para fome muito intensa, 5 para uma sensação neutra, 7 para satisfação confortável e 10 para desconforto de estômago muito cheio. Esses pontos são exemplos de linguagem, não uma escala clínica validada neste artigo.</p>\n\n<p>Antes de uma refeição, descreva como está. Durante ou depois, perceba se houve mudança de fome, conforto e satisfação. Com o tempo, isso pode revelar um intervalo que costuma ser longo demais ou uma refeição que precisa de ajuste. Não há número obrigatório para começar ou terminar de comer.</p>\n\n<p>Você pode usar palavras no lugar de números ou dispensar o exercício. Se a observação vira cobrança, aumenta a restrição ou é difícil reconhecer sinais corporais, interrompa a autoavaliação e peça orientação. Em situações de transtorno alimentar, seguir apenas uma escala por conta própria pode ser inadequado; o cuidado precisa ser individualizado. [3]</p>\n\n<h2>E quando percebo uma necessidade emocional?</h2>\n\n<p>Dar nome ao que sente pode abrir outras possibilidades: conversar, descansar ou procurar apoio. Essas possibilidades podem acompanhar a alimentação. Não precisam funcionar como estratégias para suportar fome ou impedir uma refeição.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Para entender a dimensão afetiva da comida sem transformar um episódio em sinal automático de problema, continue por esta leitura.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/comer-por-emocao-e-normal\">Comer por emoção é normal?</a></strong></p>\n</div>\n\n<h2>Quando procurar ajuda</h2>\n\n<p>Perda de controle recorrente, restrição intensa, compensações, medo de comer ou sofrimento que atrapalha a rotina merecem avaliação, qualquer que seja o peso corporal. Uma conversa com nutricionista e profissionais de saúde mental pode ajudar a entender o conjunto. Comer por emoção, desejar chocolate ou sentir culpa isoladamente não fecha diagnóstico de compulsão ou outro transtorno. [3]</p>\n\n<h2>O que levar para a próxima refeição</h2>\n\n<p>Observe uma ou duas pistas, ofereça alimento quando houver necessidade e considere também o contexto emocional. Você não precisa descobrir uma resposta perfeita antes de comer. A comparação é útil quando amplia o cuidado e a compreensão, sem criar mais uma regra alimentar.</p>\n\n<section aria-label=\"Referências científicas\"><h2>Referências científicas</h2><ol style=\"padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;\"><li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies. Proceedings of the Nutrition Society. 79(3):290–299. 2020. <span>(Revisão narrativa)</span> <a href=\"https://doi.org/10.1017/S0029665120007004\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1017/S0029665120007004</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. <span>(Guia oficial)</span> <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">National Institute of Mental Health. Eating Disorders: What You Need to Know. NIH Publication No. 24-MH-4901. Revisado em 2024. 2024. <span>(Material institucional de saúde)</span> <a href=\"https://www.nimh.nih.gov/health/publications/eating-disorders\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.nimh.nih.gov/health/publications/eating-disorders</a></li></ol></section>",
+        "contentBlocks": [
+          {
+            "id": "lote1-31-1",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "O que observar para diferenciar as fomes?"
+            }
+          },
+          {
+            "id": "lote1-31-2",
+            "type": "paragraph",
+            "data": {
+              "text": "Fome física se relaciona à necessidade de alimento; emoções também podem influenciar a vontade de comer. Essas experiências podem acontecer juntas. Perceber o contexto ajuda mais do que tentar classificar cada vontade como certa ou errada."
+            }
+          },
+          {
+            "id": "lote1-31-3",
+            "type": "paragraph",
+            "data": {
+              "text": "Você pode chegar ao jantar com fome depois de uma tarde sem comer e, ao mesmo tempo, procurar conforto após um dia difícil. Estar ansiosa não torna essa fome menos legítima. Também é possível escolher uma sobremesa pelo sabor ou pela convivência, sem fome intensa: comer tem dimensões sociais e culturais. [1, 2]"
+            }
+          },
+          {
+            "id": "lote1-31-4",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Sinais são pistas, não um teste diagnóstico"
+            }
+          },
+          {
+            "id": "lote1-31-5",
+            "type": "paragraph",
+            "data": {
+              "text": "Tempo desde a última refeição, sensações corporais e o que aconteceu antes da vontade ajudam na observação. Nenhum sinal isolado confirma uma causa. A revisão de Reichenberger e colaboradores mostra que a relação entre emoções e alimentação varia e que autorrelatos têm limitações. [1]"
+            }
+          },
+          {
+            "id": "lote1-31-6",
+            "type": "table",
+            "data": {
+              "caption": "Comparação educativa: as colunas podem se sobrepor.",
+              "headers": [
+                "O que observar",
+                "Quando a necessidade de alimento participa",
+                "Quando emoções ou contexto também participam"
+              ],
+              "rows": [
+                [
+                  "Como apareceu",
+                  "Pode aumentar com o intervalo sem comer; às vezes só é percebida quando já está intensa.",
+                  "Pode acompanhar tensão, tédio, lembranças ou uma situação específica."
+                ],
+                [
+                  "Sensações",
+                  "Vazio no estômago, queda de energia ou maior interesse por comida podem aparecer.",
+                  "Inquietação ou busca de conforto podem estar presentes, junto ou não de sinais físicos."
+                ],
+                [
+                  "Preferência",
+                  "Pode haver abertura a diferentes comidas, mas também desejo por algo específico.",
+                  "Um alimento pode ter valor afetivo; isso não exclui fome física."
+                ],
+                [
+                  "Depois de comer",
+                  "O conforto corporal e a fome podem mudar durante a refeição.",
+                  "A emoção pode continuar mesmo com o corpo alimentado; comida não precisa resolver tudo."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "lote1-31-7",
+            "type": "paragraph",
+            "data": {
+              "text": "Culpa não identifica o tipo de fome. Uma pessoa pode sentir culpa depois de atender uma necessidade física, especialmente quando convive com regras rígidas. Sensações como cansaço também têm outras explicações; a tabela não serve para diagnosticar doenças."
+            }
+          },
+          {
+            "id": "lote1-31-8",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Quatro perguntas para usar na vida real"
+            }
+          },
+          {
+            "id": "lote1-31-9",
+            "type": "unorderedList",
+            "data": {
+              "items": [
+                "Quando e como foi minha última refeição? Foi suficiente para aquele momento?",
+                "O que percebo no corpo agora, além do nome que estou dando à fome?",
+                "Aconteceu algo antes dessa vontade: uma reunião, um cheiro, uma preocupação?",
+                "De que cuidado preciso agora? Pode haver necessidade de comida e de acolhimento ao mesmo tempo."
+              ]
+            }
+          },
+          {
+            "id": "lote1-31-10",
+            "type": "paragraph",
+            "data": {
+              "text": "Se você passou horas sem comer e está com fome, uma refeição ou lanche pode ser o cuidado necessário. Não é preciso esperar a ansiedade passar para se alimentar. Se acabou de jantar e deseja um alimento afetivo, perceber isso pode ajudar a fazer uma escolha consciente, sem obrigação de recusar."
+            }
+          },
+          {
+            "id": "lote1-31-11",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Quando a dúvida principal é por que a vontade aparece sempre na mesma situação, vale olhar para os gatilhos ambientais e de rotina.",
+              "href": "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+              "linkText": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares"
+            }
+          },
+          {
+            "id": "lote1-31-12",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Como usar uma escala sem transformar números em regra"
+            }
+          },
+          {
+            "id": "lote1-31-13",
+            "type": "paragraph",
+            "data": {
+              "text": "Se números ajudarem a descrever sensações, experimente esta referência ilustrativa: 0 para fome muito intensa, 5 para uma sensação neutra, 7 para satisfação confortável e 10 para desconforto de estômago muito cheio. Esses pontos são exemplos de linguagem, não uma escala clínica validada neste artigo."
+            }
+          },
+          {
+            "id": "lote1-31-14",
+            "type": "paragraph",
+            "data": {
+              "text": "Antes de uma refeição, descreva como está. Durante ou depois, perceba se houve mudança de fome, conforto e satisfação. Com o tempo, isso pode revelar um intervalo que costuma ser longo demais ou uma refeição que precisa de ajuste. Não há número obrigatório para começar ou terminar de comer."
+            }
+          },
+          {
+            "id": "lote1-31-15",
+            "type": "paragraph",
+            "data": {
+              "text": "Você pode usar palavras no lugar de números ou dispensar o exercício. Se a observação vira cobrança, aumenta a restrição ou é difícil reconhecer sinais corporais, interrompa a autoavaliação e peça orientação. Em situações de transtorno alimentar, seguir apenas uma escala por conta própria pode ser inadequado; o cuidado precisa ser individualizado. [3]"
+            }
+          },
+          {
+            "id": "lote1-31-16",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "E quando percebo uma necessidade emocional?"
+            }
+          },
+          {
+            "id": "lote1-31-17",
+            "type": "paragraph",
+            "data": {
+              "text": "Dar nome ao que sente pode abrir outras possibilidades: conversar, descansar ou procurar apoio. Essas possibilidades podem acompanhar a alimentação. Não precisam funcionar como estratégias para suportar fome ou impedir uma refeição."
+            }
+          },
+          {
+            "id": "lote1-31-18",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Para entender a dimensão afetiva da comida sem transformar um episódio em sinal automático de problema, continue por esta leitura.",
+              "href": "/pt/artigos/comer-por-emocao-e-normal",
+              "linkText": "Comer por emoção é normal?"
+            }
+          },
+          {
+            "id": "lote1-31-19",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Quando procurar ajuda"
+            }
+          },
+          {
+            "id": "lote1-31-20",
+            "type": "paragraph",
+            "data": {
+              "text": "Perda de controle recorrente, restrição intensa, compensações, medo de comer ou sofrimento que atrapalha a rotina merecem avaliação, qualquer que seja o peso corporal. Uma conversa com nutricionista e profissionais de saúde mental pode ajudar a entender o conjunto. Comer por emoção, desejar chocolate ou sentir culpa isoladamente não fecha diagnóstico de compulsão ou outro transtorno. [3]"
+            }
+          },
+          {
+            "id": "lote1-31-21",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "O que levar para a próxima refeição"
+            }
+          },
+          {
+            "id": "lote1-31-22",
+            "type": "paragraph",
+            "data": {
+              "text": "Observe uma ou duas pistas, ofereça alimento quando houver necessidade e considere também o contexto emocional. Você não precisa descobrir uma resposta perfeita antes de comer. A comparação é útil quando amplia o cuidado e a compreensão, sem criar mais uma regra alimentar."
+            }
+          },
+          {
+            "id": "lote1-31-references",
+            "type": "references",
+            "data": {
+              "items": [
+                {
+                  "author": "Reichenberger J, Schnepper R, Arend AK, Blechert J",
+                  "title": "Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies",
+                  "publication": "Proceedings of the Nutrition Society. 79(3):290–299",
+                  "year": "2020",
+                  "doi": "10.1017/S0029665120007004",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+                  "sourceType": "Revisão narrativa"
+                },
+                {
+                  "author": "Brasil. Ministério da Saúde",
+                  "title": "Guia alimentar para a população brasileira",
+                  "publication": "2ª edição. Brasília: Ministério da Saúde",
+                  "year": "2014",
+                  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+                  "sourceType": "Guia oficial"
+                },
+                {
+                  "author": "National Institute of Mental Health",
+                  "title": "Eating Disorders: What You Need to Know",
+                  "publication": "NIH Publication No. 24-MH-4901. Revisado em 2024",
+                  "year": "2024",
+                  "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+                  "sourceType": "Material institucional de saúde"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "currentAutomaticRelated": [
+        "/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+        "/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+        "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares"
+      ],
+      "suggestedRelated": [
+        {
+          "id": "cmqi64r9c0000nr2r3khm5nst",
+          "title": "Comer por emoção é normal?",
+          "href": "/pt/artigos/comer-por-emocao-e-normal"
+        },
+        {
+          "id": "cmqr70qen00003x2rlnm1fkzb",
+          "title": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+          "href": "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares"
+        },
+        {
+          "id": "cmre4ruk20000kf2rxkerug5h",
+          "title": "Como comer com mais atenção mesmo na rotina corrida",
+          "href": "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida"
+        }
+      ],
+      "sources": [
+        "reiche2020",
+        "guia2014",
+        "nimh2024"
+      ],
+      "files": {
+        "markdown": "artigos/01-fomes.md",
+        "preview": "previas/01-fomes.html"
+      }
+    },
+    {
+      "number": 3,
+      "status": "AGUARDANDO_REVISAO_DE_WEVERLYN",
+      "baselineContentHash": "fdee2e1b80e59980b9d3164651e2c427e15c035e519ec149ff6fadf61d1e2328",
+      "preserve": {
+        "id": "cmqlko9pe0000992rtm9c5ane",
+        "title": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+        "slug": "relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+        "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+        "publishedAt": "2026-06-20T01:39:50.167Z",
+        "editorialUpdatedAtAtCapture": null,
+        "authorId": "cmq7a3h0x0000i8imbilojid6",
+        "categoryId": "cmqi75nib0000er2rkj1eej0n",
+        "seoTitle": "Relação Saudável com a Comida: Como Construir no Dia a Dia",
+        "coverImage": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+        "coverImageAlt": "Homem e mulher sorrindo durante uma refeição equilibrada, em um ambiente claro e acolhedor, representando prazer, presença e uma relação saudável com a comida."
+      },
+      "proposedChanges": {
+        "description": "Entenda como flexibilidade, prazer e cuidado convivem na alimentação, com exemplos para lidar com culpa e rigidez e reconhecer quando buscar apoio.",
+        "seoDescription": "Entenda como flexibilidade, prazer e cuidado convivem na alimentação, com exemplos para lidar com culpa e rigidez e reconhecer quando buscar apoio.",
+        "content": "<h2>Como é uma relação saudável com a comida na prática?</h2>\n\n<p>Uma relação saudável com a comida permite cuidar da alimentação e participar da vida sem que cada escolha defina seu valor pessoal. Há espaço para nutrientes, prazer, cultura, preferências e limites reais de tempo e dinheiro. O Guia Alimentar brasileiro reconhece que alimentação envolve muito mais do que a soma de nutrientes. [1]</p>\n\n<p>Isso pode aparecer num almoço simples de arroz, feijão e legumes, numa refeição improvisada ou num aniversário com bolo. Uma ocasião não precisa desencadear punição no dia seguinte. Flexibilidade também respeita restrições clinicamente necessárias: ela pode ser construída dentro das opções seguras para cada pessoa.</p>\n\n<h2>Flexibilidade não significa deixar o cuidado de lado</h2>\n\n<p>Ter organização pode facilitar a vida. O ponto é perceber se uma orientação ajuda a se alimentar ou se se tornou uma cobrança que ocupa o dia inteiro. Compare algumas situações:</p>\n\n\n<figure style=\"margin:32px 0;\">\n  <figcaption style=\"margin-bottom:10px;font-size:14px;line-height:1.6;color:#666;\">Exemplos de escolhas e pensamentos; não são critérios de diagnóstico.</figcaption>\n  <div style=\"width:100%;overflow-x:auto;border-radius:22px;border:1px solid rgba(0,0,0,0.08);background:#FAF8F4;\">\n    <table style=\"width:100%;min-width:640px;border-collapse:collapse;background:#FFFFFF;\">\n      <thead>\n        <tr>\n          <th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Situação</th><th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Uma resposta flexível</th><th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Uma rigidez que merece atenção</th>\n        </tr>\n      </thead>\n      <tbody>\n        \n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">O almoço saiu diferente do planejado</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Adaptar com o que está disponível e seguir as próximas refeições.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Concluir que o dia foi perdido e decidir passar fome depois.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Há um encontro com amigos</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Considerar preferências, condições de saúde e vontade de participar.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Evitar encontros repetidamente por medo da comida ou de sair das regras.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Aparece vontade de um doce</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Escolher se quer comê-lo, percebendo sabor e satisfação.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Tratar o desejo como falha de caráter ou criar obrigação de compensar.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">A fome muda de um dia para outro</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Observar o contexto e ajustar com apoio quando necessário.</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Exigir a mesma quantidade apesar de desconforto ou fome persistente.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</figure>\n\n<p>Alimentação intuitiva é uma abordagem estudada nesse campo, mas não é sinônimo de comer sem qualquer contexto ou orientação. Uma meta-análise encontrou associações com indicadores de bem-estar e menor sintomatologia alimentar. Como a maior parte dos estudos era observacional, isso não demonstra que a prática, sozinha, cause esses resultados ou trate transtornos. [2]</p>\n\n<h2>Cinco mudanças pequenas, com exemplos concretos</h2>\n\n<h3>1. Troque julgamento por uma descrição</h3>\n\n<p>Depois de uma sobremesa, observe a diferença entre “fui fraca” e “comi um doce de que gosto depois do almoço”. A segunda frase descreve uma escolha e permite pensar em sabor, satisfação e contexto sem transformar a pessoa no problema.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Se palavras como proibido, lixo ou merecimento aparecem com frequência, este texto aprofunda a linguagem usada para falar dos alimentos.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida\">Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida</a></strong></p>\n</div>\n\n<h3>2. Organize apoio para a fome, não uma prova de resistência</h3>\n\n<p>Se reuniões costumam ocupar o horário do almoço, ter uma opção possível e proteger uma pausa pode ser mais útil do que exigir autocontrole no fim do dia. Perceber fome e saciedade é uma aprendizagem; esses sinais não precisam ser claros o tempo todo nem devem ser usados para negar alimento.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Para observar sinais físicos e influência emocional sem uma classificação rígida, veja a comparação específica entre as fomes.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca\">Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença</a></strong></p>\n</div>\n\n<h3>3. Inclua prazer e convivência nas decisões</h3>\n\n<p>Imagine uma refeição em família com uma preparação que faz parte da sua história. É possível considerar esse prazer junto das necessidades de saúde. Respeitar cultura e convivência não exige comer tudo o que oferecem, nem justificar toda recusa com medo de engordar. [1]</p>\n\n<h3>4. Faça uma pausa possível durante a refeição</h3>\n\n<p>Em um dia corrido, você pode perceber o sabor das primeiras garfadas ou notar se já está confortável antes de repetir. Isso é uma possibilidade de atenção, não uma obrigação de comer lentamente em todas as refeições. Se a técnica aumenta a vigilância e a culpa, ela precisa ser revista.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">As adaptações para trabalho, pressa e distrações estão detalhadas neste guia prático, sem exigir uma rotina perfeita.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida\">Como comer com mais atenção mesmo na rotina corrida</a></strong></p>\n</div>\n\n<h3>5. Observe o impulso de compensar</h3>\n\n<p>Depois de comer mais do que pretendia, a próxima decisão pode ser retomar uma refeição possível e perceber como se sente. Quando jejum, vômitos, laxantes ou exercício excessivo aparecem como compensação, vale procurar avaliação; não são caminhos para resolver culpa alimentar. [3]</p>\n\n<h2>Quando a relação com a comida está causando sofrimento</h2>\n\n<p>Alguns sinais pedem atenção: deixar de conviver por medo de comer, pensar em regras alimentares durante grande parte do dia, reduzir muito a variedade ou a quantidade de alimentos, comer com perda de controle recorrente ou fazer compensações. O impacto na vida importa; a aparência corporal não permite descartar um problema. [3]</p>\n\n<p>Você não precisa esperar esses sinais se agravarem para conversar com profissionais de saúde. O cuidado pode envolver nutricionista, psicólogo e médico, conforme a situação. Ter regras ou sentir culpa alguma vez não permite, por si só, concluir que há um transtorno.</p>\n\n<h2>Uma escolha para começar</h2>\n\n<p>Escolha uma situação que costuma gerar conflito: um doce, uma refeição fora do planejamento ou um convite. Observe qual regra aparece e qual resposta permitiria cuidar da alimentação com menos sofrimento. O objetivo é ampliar autonomia dentro da sua realidade, sem acrescentar uma nova lista de exigências.</p>\n\n\n<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer conversar sobre sua relação com a alimentação?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Se esse tema tem ocupado sua rotina ou provocado sofrimento, você pode conhecer os canais de atendimento e avaliar um acompanhamento individualizado.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt/contato\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Conheça os canais de contato</a></p>\n</div>\n\n<section aria-label=\"Referências científicas\"><h2>Referências científicas</h2><ol style=\"padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;\"><li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. <span>(Guia oficial)</span> <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Linardon J, Tylka TL, Fuller-Tyszkiewicz M. Intuitive eating and its psychological correlates: A meta-analysis. International Journal of Eating Disorders. 54(7):1073–1098. 2021. <span>(Meta-análise)</span> <a href=\"https://doi.org/10.1002/eat.23509\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1002/eat.23509</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">National Institute of Mental Health. Eating Disorders: What You Need to Know. NIH Publication No. 24-MH-4901. Revisado em 2024. 2024. <span>(Material institucional de saúde)</span> <a href=\"https://www.nimh.nih.gov/health/publications/eating-disorders\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.nimh.nih.gov/health/publications/eating-disorders</a></li></ol></section>",
+        "contentBlocks": [
+          {
+            "id": "lote1-3-1",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Como é uma relação saudável com a comida na prática?"
+            }
+          },
+          {
+            "id": "lote1-3-2",
+            "type": "paragraph",
+            "data": {
+              "text": "Uma relação saudável com a comida permite cuidar da alimentação e participar da vida sem que cada escolha defina seu valor pessoal. Há espaço para nutrientes, prazer, cultura, preferências e limites reais de tempo e dinheiro. O Guia Alimentar brasileiro reconhece que alimentação envolve muito mais do que a soma de nutrientes. [1]"
+            }
+          },
+          {
+            "id": "lote1-3-3",
+            "type": "paragraph",
+            "data": {
+              "text": "Isso pode aparecer num almoço simples de arroz, feijão e legumes, numa refeição improvisada ou num aniversário com bolo. Uma ocasião não precisa desencadear punição no dia seguinte. Flexibilidade também respeita restrições clinicamente necessárias: ela pode ser construída dentro das opções seguras para cada pessoa."
+            }
+          },
+          {
+            "id": "lote1-3-4",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Flexibilidade não significa deixar o cuidado de lado"
+            }
+          },
+          {
+            "id": "lote1-3-5",
+            "type": "paragraph",
+            "data": {
+              "text": "Ter organização pode facilitar a vida. O ponto é perceber se uma orientação ajuda a se alimentar ou se se tornou uma cobrança que ocupa o dia inteiro. Compare algumas situações:"
+            }
+          },
+          {
+            "id": "lote1-3-6",
+            "type": "table",
+            "data": {
+              "caption": "Exemplos de escolhas e pensamentos; não são critérios de diagnóstico.",
+              "headers": [
+                "Situação",
+                "Uma resposta flexível",
+                "Uma rigidez que merece atenção"
+              ],
+              "rows": [
+                [
+                  "O almoço saiu diferente do planejado",
+                  "Adaptar com o que está disponível e seguir as próximas refeições.",
+                  "Concluir que o dia foi perdido e decidir passar fome depois."
+                ],
+                [
+                  "Há um encontro com amigos",
+                  "Considerar preferências, condições de saúde e vontade de participar.",
+                  "Evitar encontros repetidamente por medo da comida ou de sair das regras."
+                ],
+                [
+                  "Aparece vontade de um doce",
+                  "Escolher se quer comê-lo, percebendo sabor e satisfação.",
+                  "Tratar o desejo como falha de caráter ou criar obrigação de compensar."
+                ],
+                [
+                  "A fome muda de um dia para outro",
+                  "Observar o contexto e ajustar com apoio quando necessário.",
+                  "Exigir a mesma quantidade apesar de desconforto ou fome persistente."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "lote1-3-7",
+            "type": "paragraph",
+            "data": {
+              "text": "Alimentação intuitiva é uma abordagem estudada nesse campo, mas não é sinônimo de comer sem qualquer contexto ou orientação. Uma meta-análise encontrou associações com indicadores de bem-estar e menor sintomatologia alimentar. Como a maior parte dos estudos era observacional, isso não demonstra que a prática, sozinha, cause esses resultados ou trate transtornos. [2]"
+            }
+          },
+          {
+            "id": "lote1-3-8",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Cinco mudanças pequenas, com exemplos concretos"
+            }
+          },
+          {
+            "id": "lote1-3-9",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "1. Troque julgamento por uma descrição"
+            }
+          },
+          {
+            "id": "lote1-3-10",
+            "type": "paragraph",
+            "data": {
+              "text": "Depois de uma sobremesa, observe a diferença entre “fui fraca” e “comi um doce de que gosto depois do almoço”. A segunda frase descreve uma escolha e permite pensar em sabor, satisfação e contexto sem transformar a pessoa no problema."
+            }
+          },
+          {
+            "id": "lote1-3-11",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Se palavras como proibido, lixo ou merecimento aparecem com frequência, este texto aprofunda a linguagem usada para falar dos alimentos.",
+              "href": "/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+              "linkText": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida"
+            }
+          },
+          {
+            "id": "lote1-3-12",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "2. Organize apoio para a fome, não uma prova de resistência"
+            }
+          },
+          {
+            "id": "lote1-3-13",
+            "type": "paragraph",
+            "data": {
+              "text": "Se reuniões costumam ocupar o horário do almoço, ter uma opção possível e proteger uma pausa pode ser mais útil do que exigir autocontrole no fim do dia. Perceber fome e saciedade é uma aprendizagem; esses sinais não precisam ser claros o tempo todo nem devem ser usados para negar alimento."
+            }
+          },
+          {
+            "id": "lote1-3-14",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Para observar sinais físicos e influência emocional sem uma classificação rígida, veja a comparação específica entre as fomes.",
+              "href": "/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+              "linkText": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença"
+            }
+          },
+          {
+            "id": "lote1-3-15",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "3. Inclua prazer e convivência nas decisões"
+            }
+          },
+          {
+            "id": "lote1-3-16",
+            "type": "paragraph",
+            "data": {
+              "text": "Imagine uma refeição em família com uma preparação que faz parte da sua história. É possível considerar esse prazer junto das necessidades de saúde. Respeitar cultura e convivência não exige comer tudo o que oferecem, nem justificar toda recusa com medo de engordar. [1]"
+            }
+          },
+          {
+            "id": "lote1-3-17",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "4. Faça uma pausa possível durante a refeição"
+            }
+          },
+          {
+            "id": "lote1-3-18",
+            "type": "paragraph",
+            "data": {
+              "text": "Em um dia corrido, você pode perceber o sabor das primeiras garfadas ou notar se já está confortável antes de repetir. Isso é uma possibilidade de atenção, não uma obrigação de comer lentamente em todas as refeições. Se a técnica aumenta a vigilância e a culpa, ela precisa ser revista."
+            }
+          },
+          {
+            "id": "lote1-3-19",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "As adaptações para trabalho, pressa e distrações estão detalhadas neste guia prático, sem exigir uma rotina perfeita.",
+              "href": "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+              "linkText": "Como comer com mais atenção mesmo na rotina corrida"
+            }
+          },
+          {
+            "id": "lote1-3-20",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "5. Observe o impulso de compensar"
+            }
+          },
+          {
+            "id": "lote1-3-21",
+            "type": "paragraph",
+            "data": {
+              "text": "Depois de comer mais do que pretendia, a próxima decisão pode ser retomar uma refeição possível e perceber como se sente. Quando jejum, vômitos, laxantes ou exercício excessivo aparecem como compensação, vale procurar avaliação; não são caminhos para resolver culpa alimentar. [3]"
+            }
+          },
+          {
+            "id": "lote1-3-22",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Quando a relação com a comida está causando sofrimento"
+            }
+          },
+          {
+            "id": "lote1-3-23",
+            "type": "paragraph",
+            "data": {
+              "text": "Alguns sinais pedem atenção: deixar de conviver por medo de comer, pensar em regras alimentares durante grande parte do dia, reduzir muito a variedade ou a quantidade de alimentos, comer com perda de controle recorrente ou fazer compensações. O impacto na vida importa; a aparência corporal não permite descartar um problema. [3]"
+            }
+          },
+          {
+            "id": "lote1-3-24",
+            "type": "paragraph",
+            "data": {
+              "text": "Você não precisa esperar esses sinais se agravarem para conversar com profissionais de saúde. O cuidado pode envolver nutricionista, psicólogo e médico, conforme a situação. Ter regras ou sentir culpa alguma vez não permite, por si só, concluir que há um transtorno."
+            }
+          },
+          {
+            "id": "lote1-3-25",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Uma escolha para começar"
+            }
+          },
+          {
+            "id": "lote1-3-26",
+            "type": "paragraph",
+            "data": {
+              "text": "Escolha uma situação que costuma gerar conflito: um doce, uma refeição fora do planejamento ou um convite. Observe qual regra aparece e qual resposta permitiria cuidar da alimentação com menos sofrimento. O objetivo é ampliar autonomia dentro da sua realidade, sem acrescentar uma nova lista de exigências."
+            }
+          },
+          {
+            "id": "lote1-3-27",
+            "type": "cta",
+            "data": {
+              "title": "Quer conversar sobre sua relação com a alimentação?",
+              "text": "Se esse tema tem ocupado sua rotina ou provocado sofrimento, você pode conhecer os canais de atendimento e avaliar um acompanhamento individualizado.",
+              "href": "/pt/contato",
+              "buttonText": "Conheça os canais de contato"
+            }
+          },
+          {
+            "id": "lote1-3-references",
+            "type": "references",
+            "data": {
+              "items": [
+                {
+                  "author": "Brasil. Ministério da Saúde",
+                  "title": "Guia alimentar para a população brasileira",
+                  "publication": "2ª edição. Brasília: Ministério da Saúde",
+                  "year": "2014",
+                  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+                  "sourceType": "Guia oficial"
+                },
+                {
+                  "author": "Linardon J, Tylka TL, Fuller-Tyszkiewicz M",
+                  "title": "Intuitive eating and its psychological correlates: A meta-analysis",
+                  "publication": "International Journal of Eating Disorders. 54(7):1073–1098",
+                  "year": "2021",
+                  "doi": "10.1002/eat.23509",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/33786858/",
+                  "sourceType": "Meta-análise"
+                },
+                {
+                  "author": "National Institute of Mental Health",
+                  "title": "Eating Disorders: What You Need to Know",
+                  "publication": "NIH Publication No. 24-MH-4901. Revisado em 2024",
+                  "year": "2024",
+                  "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+                  "sourceType": "Material institucional de saúde"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "currentAutomaticRelated": [
+        "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+        "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+        "/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional"
+      ],
+      "suggestedRelated": [
+        {
+          "id": "cmrfhug9s00006a2rz3aqb8mi",
+          "title": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+          "href": "/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida"
+        },
+        {
+          "id": "cmqa1a7130001ee2r4imybzf1",
+          "title": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "href": "/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca"
+        },
+        {
+          "id": "cmre4ruk20000kf2rxkerug5h",
+          "title": "Como comer com mais atenção mesmo na rotina corrida",
+          "href": "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida"
+        }
+      ],
+      "sources": [
+        "guia2014",
+        "linardon2021",
+        "nimh2024"
+      ],
+      "files": {
+        "markdown": "artigos/02-relacao-com-a-comida.md",
+        "preview": "previas/02-relacao-com-a-comida.html"
+      }
+    },
+    {
+      "number": 26,
+      "status": "AGUARDANDO_REVISAO_DE_WEVERLYN",
+      "baselineContentHash": "f14d917a2fdc50d935fb79c14da4aa4648eb78c8f5a0e8dbfd8de188bf976e7c",
+      "preserve": {
+        "id": "cmr6j3k410000jg2rjxc2qlbm",
+        "title": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+        "slug": "nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+        "url": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+        "publishedAt": "2026-08-12T07:00:02.819Z",
+        "editorialUpdatedAtAtCapture": null,
+        "authorId": "cmq7a3h0x0000i8imbilojid6",
+        "categoryId": "cmr5h9na20000y32rk8jtabs1",
+        "seoTitle": "Nutrição e movimento: equilíbrio para uma vida saudável",
+        "coverImage": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+        "coverImageAlt": "Mesa com alimentos saudáveis e pessoa em movimento leve ao fundo, simbolizando equilíbrio entre alimentação, saúde e atividade física."
+      },
+      "proposedChanges": {
+        "description": "Veja como organizar alimentação, movimento, hidratação e recuperação na rotina, com exemplos possíveis e sem usar comida ou exercício como compensação.",
+        "seoDescription": "Veja como organizar alimentação, movimento, hidratação e recuperação na rotina, com exemplos possíveis e sem usar comida ou exercício como compensação.",
+        "content": "<h2>Alimentação e movimento precisam caber na mesma rotina</h2>\n\n<p>O horário de se movimentar compete com almoço, trabalho, deslocamento e descanso. Por isso, unir nutrição e movimento começa por uma pergunta prática: como organizar esses cuidados para que um não torne o outro inviável? Reservar tempo para o exercício e esquecer de comer, ou tentar resolver toda a saúde apenas pelo prato, deixa partes importantes de fora.</p>\n\n<p>A proposta aqui é coordenar cuidados cotidianos. Não é um cardápio esportivo, um programa de treino ou uma estratégia de compensar alimentos com gasto calórico.</p>\n\n<h2>O que cada cuidado oferece</h2>\n\n<p>A alimentação fornece energia e nutrientes. O movimento produz estímulos para os quais o corpo se adapta; a recuperação também precisa de alimento e descanso. No contexto esportivo, energia, carboidratos, proteínas e líquidos são componentes importantes, com necessidades que variam conforme a atividade e a pessoa. Isso não significa que uma caminhada recreativa exija um protocolo de atleta. [4]</p>\n\n<p>Para a alimentação do cotidiano, o Guia Alimentar brasileiro valoriza preparações com alimentos in natura ou minimamente processados, cultura e organização das refeições. Não é necessário comprar produtos especiais para começar a coordenar uma rotina de cuidado. [1]</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Se a dificuldade é transformar as opções disponíveis em uma refeição, este guia oferece exemplos de composição do prato.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao\">Como montar um prato equilibrado sem complicar a alimentação</a></strong></p>\n</div>\n\n<p>Atividade física pode acontecer no lazer, nos deslocamentos e em outras tarefas; também importa reduzir períodos prolongados sentado quando possível. Como referência populacional para adultos, a OMS recomenda de 150 a 300 minutos semanais de atividade aeróbica moderada, ou equivalente, e fortalecimento muscular em dois ou mais dias. Essa referência não é uma cobrança para a primeira semana: começar dentro das possibilidades e progredir faz parte do cuidado. [2, 3]</p>\n\n<h2>Três situações em que organizar os dois cuidados ajuda</h2>\n\n<h3>Você sai do trabalho direto para se exercitar</h3>\n\n<p>Se o almoço é cedo e o intervalo até voltar para casa é grande, depender apenas de encontrar comida no caminho pode atrapalhar. Confira antes de sair: haverá uma pausa para comer? Existe uma opção de lanche que você tolera e consegue transportar com segurança? O jantar está minimamente encaminhado? A resposta depende da fome e da logística, não de um alimento obrigatório.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Para dúvidas específicas sobre tempo entre comer e treinar e conforto digestivo, use o guia de pré-treino em vez de improvisar uma regra única.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes\">O que comer antes do treino? Guia simples para iniciantes</a></strong></p>\n</div>\n\n<h3>A atividade termina perto de uma refeição</h3>\n\n<p>A próxima refeição pode integrar o cuidado com a recuperação, sem criar automaticamente uma refeição extra. Um almoço habitual pode oferecer fontes de energia e proteína. Quem faz atividade prolongada, intensa ou mais de uma sessão por dia tem outro contexto e pode precisar de planejamento específico. [4]</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Os detalhes de recuperação, refeições e diferenças entre atividades ficam no guia de pós-treino.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor\">O que comer depois do treino para recuperar melhor?</a></strong></p>\n</div>\n\n<h3>O dia está curto e você está cansada</h3>\n\n<p>Em vez de escolher entre um treino longo e pular o jantar, considere o que cabe hoje: uma prática mais breve, uma refeição simples ou preservar o descanso e reorganizar a atividade. O exemplo não é uma prescrição de treino; mostra que uma escolha de cuidado não precisa ser conquistada à custa de outra.</p>\n\n<h2>Água e recuperação entram no planejamento</h2>\n\n<p>Deixar água acessível e prever oportunidades de beber ao longo do dia é mais prático do que lembrar dela apenas ao terminar o exercício. Calor, suor, duração e intensidade mudam as necessidades de líquidos. Não há um volume universal proposto aqui; quem tem restrição de líquidos ou necessidades clínicas deve seguir sua orientação individual. [4]</p>\n\n<p>Também vale observar o depois: a atividade está deixando espaço para comer e descansar? Há energia para as tarefas usuais? Cansaço frequente não deve ser atribuído automaticamente à falta de um suplemento ou de um alimento. Se é persistente, desproporcional ou vem com mal-estar, precisa de avaliação.</p>\n\n<h2>Um experimento de organização para a semana</h2>\n\n\n    <ul style=\"margin:20px 0;padding-left:28px;list-style-type:disc;font-size:17px;line-height:1.8;color:#404040;\">\n      \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Escolha uma situação que costuma falhar: sair sem comer, não ter água disponível ou terminar a atividade sem possibilidade de jantar.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Prepare um apoio para essa situação: uma pausa, uma opção de refeição ou uma mudança no horário.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Mantenha uma alternativa para o dia apertado, sem compensar na alimentação nem duplicar atividade no dia seguinte.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Ao final da semana, avalie se o ajuste facilitou comer, se movimentar e se recuperar. Se trouxe mais privação ou exaustão, revise o plano.\n            </li>\n          \n    </ul>\n  \n\n<p>Se o seu objetivo imediato é iniciar uma modalidade, você pode precisar de orientações específicas para essa prática. Escolher exercícios, progressão e adaptações de segurança pode exigir orientação de profissional habilitado, conforme sua saúde e experiência. Aqui, o foco é organizar alimentação, movimento e recuperação na mesma rotina.</p>\n\n<h2>Constância com espaço para ajustes</h2>\n\n<p>Uma rotina consistente tem soluções para dias diferentes. Alimentação dá suporte ao movimento; movimento faz parte da saúde; ambos precisam conviver com recuperação e condições reais de vida. O próximo passo pode ser resolver um obstáculo concreto, em vez de tentar mudar toda a rotina de uma vez.</p>\n\n<section aria-label=\"Referências científicas\"><h2>Referências científicas</h2><ol style=\"padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;\"><li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. <span>(Guia oficial)</span> <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Brasil. Ministério da Saúde. Guia de atividade física para a população brasileira. Brasília: Ministério da Saúde. 2021. <span>(Guia oficial)</span> <a href=\"https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">World Health Organization. WHO guidelines on physical activity and sedentary behaviour. Geneva: WHO. ISBN 9789240015128. 2020. <span>(Diretriz de saúde pública)</span> <a href=\"https://www.who.int/publications/i/item/9789240015128\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.who.int/publications/i/item/9789240015128</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Thomas DT, Erdman KA, Burke LM. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. Journal of the Academy of Nutrition and Dietetics. 116(3):501–528. 2016. <span>(Posicionamento científico)</span> <a href=\"https://doi.org/10.1016/j.jand.2015.12.006\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1016/j.jand.2015.12.006</a></li></ol></section>",
+        "contentBlocks": [
+          {
+            "id": "lote1-26-1",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Alimentação e movimento precisam caber na mesma rotina"
+            }
+          },
+          {
+            "id": "lote1-26-2",
+            "type": "paragraph",
+            "data": {
+              "text": "O horário de se movimentar compete com almoço, trabalho, deslocamento e descanso. Por isso, unir nutrição e movimento começa por uma pergunta prática: como organizar esses cuidados para que um não torne o outro inviável? Reservar tempo para o exercício e esquecer de comer, ou tentar resolver toda a saúde apenas pelo prato, deixa partes importantes de fora."
+            }
+          },
+          {
+            "id": "lote1-26-3",
+            "type": "paragraph",
+            "data": {
+              "text": "A proposta aqui é coordenar cuidados cotidianos. Não é um cardápio esportivo, um programa de treino ou uma estratégia de compensar alimentos com gasto calórico."
+            }
+          },
+          {
+            "id": "lote1-26-4",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "O que cada cuidado oferece"
+            }
+          },
+          {
+            "id": "lote1-26-5",
+            "type": "paragraph",
+            "data": {
+              "text": "A alimentação fornece energia e nutrientes. O movimento produz estímulos para os quais o corpo se adapta; a recuperação também precisa de alimento e descanso. No contexto esportivo, energia, carboidratos, proteínas e líquidos são componentes importantes, com necessidades que variam conforme a atividade e a pessoa. Isso não significa que uma caminhada recreativa exija um protocolo de atleta. [4]"
+            }
+          },
+          {
+            "id": "lote1-26-6",
+            "type": "paragraph",
+            "data": {
+              "text": "Para a alimentação do cotidiano, o Guia Alimentar brasileiro valoriza preparações com alimentos in natura ou minimamente processados, cultura e organização das refeições. Não é necessário comprar produtos especiais para começar a coordenar uma rotina de cuidado. [1]"
+            }
+          },
+          {
+            "id": "lote1-26-7",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Se a dificuldade é transformar as opções disponíveis em uma refeição, este guia oferece exemplos de composição do prato.",
+              "href": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+              "linkText": "Como montar um prato equilibrado sem complicar a alimentação"
+            }
+          },
+          {
+            "id": "lote1-26-8",
+            "type": "paragraph",
+            "data": {
+              "text": "Atividade física pode acontecer no lazer, nos deslocamentos e em outras tarefas; também importa reduzir períodos prolongados sentado quando possível. Como referência populacional para adultos, a OMS recomenda de 150 a 300 minutos semanais de atividade aeróbica moderada, ou equivalente, e fortalecimento muscular em dois ou mais dias. Essa referência não é uma cobrança para a primeira semana: começar dentro das possibilidades e progredir faz parte do cuidado. [2, 3]"
+            }
+          },
+          {
+            "id": "lote1-26-9",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Três situações em que organizar os dois cuidados ajuda"
+            }
+          },
+          {
+            "id": "lote1-26-10",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "Você sai do trabalho direto para se exercitar"
+            }
+          },
+          {
+            "id": "lote1-26-11",
+            "type": "paragraph",
+            "data": {
+              "text": "Se o almoço é cedo e o intervalo até voltar para casa é grande, depender apenas de encontrar comida no caminho pode atrapalhar. Confira antes de sair: haverá uma pausa para comer? Existe uma opção de lanche que você tolera e consegue transportar com segurança? O jantar está minimamente encaminhado? A resposta depende da fome e da logística, não de um alimento obrigatório."
+            }
+          },
+          {
+            "id": "lote1-26-12",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Para dúvidas específicas sobre tempo entre comer e treinar e conforto digestivo, use o guia de pré-treino em vez de improvisar uma regra única.",
+              "href": "/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+              "linkText": "O que comer antes do treino? Guia simples para iniciantes"
+            }
+          },
+          {
+            "id": "lote1-26-13",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "A atividade termina perto de uma refeição"
+            }
+          },
+          {
+            "id": "lote1-26-14",
+            "type": "paragraph",
+            "data": {
+              "text": "A próxima refeição pode integrar o cuidado com a recuperação, sem criar automaticamente uma refeição extra. Um almoço habitual pode oferecer fontes de energia e proteína. Quem faz atividade prolongada, intensa ou mais de uma sessão por dia tem outro contexto e pode precisar de planejamento específico. [4]"
+            }
+          },
+          {
+            "id": "lote1-26-15",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Os detalhes de recuperação, refeições e diferenças entre atividades ficam no guia de pós-treino.",
+              "href": "/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+              "linkText": "O que comer depois do treino para recuperar melhor?"
+            }
+          },
+          {
+            "id": "lote1-26-16",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "O dia está curto e você está cansada"
+            }
+          },
+          {
+            "id": "lote1-26-17",
+            "type": "paragraph",
+            "data": {
+              "text": "Em vez de escolher entre um treino longo e pular o jantar, considere o que cabe hoje: uma prática mais breve, uma refeição simples ou preservar o descanso e reorganizar a atividade. O exemplo não é uma prescrição de treino; mostra que uma escolha de cuidado não precisa ser conquistada à custa de outra."
+            }
+          },
+          {
+            "id": "lote1-26-18",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Água e recuperação entram no planejamento"
+            }
+          },
+          {
+            "id": "lote1-26-19",
+            "type": "paragraph",
+            "data": {
+              "text": "Deixar água acessível e prever oportunidades de beber ao longo do dia é mais prático do que lembrar dela apenas ao terminar o exercício. Calor, suor, duração e intensidade mudam as necessidades de líquidos. Não há um volume universal proposto aqui; quem tem restrição de líquidos ou necessidades clínicas deve seguir sua orientação individual. [4]"
+            }
+          },
+          {
+            "id": "lote1-26-20",
+            "type": "paragraph",
+            "data": {
+              "text": "Também vale observar o depois: a atividade está deixando espaço para comer e descansar? Há energia para as tarefas usuais? Cansaço frequente não deve ser atribuído automaticamente à falta de um suplemento ou de um alimento. Se é persistente, desproporcional ou vem com mal-estar, precisa de avaliação."
+            }
+          },
+          {
+            "id": "lote1-26-21",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Um experimento de organização para a semana"
+            }
+          },
+          {
+            "id": "lote1-26-22",
+            "type": "unorderedList",
+            "data": {
+              "items": [
+                "Escolha uma situação que costuma falhar: sair sem comer, não ter água disponível ou terminar a atividade sem possibilidade de jantar.",
+                "Prepare um apoio para essa situação: uma pausa, uma opção de refeição ou uma mudança no horário.",
+                "Mantenha uma alternativa para o dia apertado, sem compensar na alimentação nem duplicar atividade no dia seguinte.",
+                "Ao final da semana, avalie se o ajuste facilitou comer, se movimentar e se recuperar. Se trouxe mais privação ou exaustão, revise o plano."
+              ]
+            }
+          },
+          {
+            "id": "lote1-26-23",
+            "type": "paragraph",
+            "data": {
+              "text": "Se o seu objetivo imediato é iniciar uma modalidade, você pode precisar de orientações específicas para essa prática. Escolher exercícios, progressão e adaptações de segurança pode exigir orientação de profissional habilitado, conforme sua saúde e experiência. Aqui, o foco é organizar alimentação, movimento e recuperação na mesma rotina."
+            }
+          },
+          {
+            "id": "lote1-26-24",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Constância com espaço para ajustes"
+            }
+          },
+          {
+            "id": "lote1-26-25",
+            "type": "paragraph",
+            "data": {
+              "text": "Uma rotina consistente tem soluções para dias diferentes. Alimentação dá suporte ao movimento; movimento faz parte da saúde; ambos precisam conviver com recuperação e condições reais de vida. O próximo passo pode ser resolver um obstáculo concreto, em vez de tentar mudar toda a rotina de uma vez."
+            }
+          },
+          {
+            "id": "lote1-26-references",
+            "type": "references",
+            "data": {
+              "items": [
+                {
+                  "author": "Brasil. Ministério da Saúde",
+                  "title": "Guia alimentar para a população brasileira",
+                  "publication": "2ª edição. Brasília: Ministério da Saúde",
+                  "year": "2014",
+                  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+                  "sourceType": "Guia oficial"
+                },
+                {
+                  "author": "Brasil. Ministério da Saúde",
+                  "title": "Guia de atividade física para a população brasileira",
+                  "publication": "Brasília: Ministério da Saúde",
+                  "year": "2021",
+                  "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf",
+                  "sourceType": "Guia oficial"
+                },
+                {
+                  "author": "World Health Organization",
+                  "title": "WHO guidelines on physical activity and sedentary behaviour",
+                  "publication": "Geneva: WHO. ISBN 9789240015128",
+                  "year": "2020",
+                  "url": "https://www.who.int/publications/i/item/9789240015128",
+                  "sourceType": "Diretriz de saúde pública"
+                },
+                {
+                  "author": "Thomas DT, Erdman KA, Burke LM",
+                  "title": "Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance",
+                  "publication": "Journal of the Academy of Nutrition and Dietetics. 116(3):501–528",
+                  "year": "2016",
+                  "doi": "10.1016/j.jand.2015.12.006",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/26920240/",
+                  "sourceType": "Posicionamento científico"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "currentAutomaticRelated": [
+        "/pt/artigos/caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+        "/pt/artigos/detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+        "/pt/artigos/cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar"
+      ],
+      "suggestedRelated": [
+        {
+          "id": "cmr3xbkac0000p72rsy43fedu",
+          "title": "Como montar um prato equilibrado sem complicar a alimentação",
+          "href": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao"
+        },
+        {
+          "id": "cmr5hikpg0001y32rcecftcrr",
+          "title": "O que comer antes do treino? Guia simples para iniciantes",
+          "href": "/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes"
+        },
+        {
+          "id": "cmrckeis80000cv2riequpo8v",
+          "title": "O que comer depois do treino para recuperar melhor?",
+          "href": "/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor"
+        }
+      ],
+      "sources": [
+        "guia2014",
+        "atividade2021",
+        "omsAtividade2020",
+        "thomas2016"
+      ],
+      "files": {
+        "markdown": "artigos/03-nutricao-e-movimento.md",
+        "preview": "previas/03-nutricao-e-movimento.html"
+      }
+    },
+    {
+      "number": 6,
+      "status": "AGUARDANDO_REVISAO_DE_WEVERLYN",
+      "baselineContentHash": "94277dd942619060b9fb34a3aecded40d68bec2888d3bddad3d9d4f58742c4f4",
+      "preserve": {
+        "id": "cmqtxvrx20000xc2ruyxxz3pm",
+        "title": "Vontade de doce todo dia: o que pode estar acontecendo?",
+        "slug": "vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+        "url": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+        "publishedAt": "2026-06-26T07:30:03.435Z",
+        "editorialUpdatedAtAtCapture": null,
+        "authorId": "cmq7a3h0x0000i8imbilojid6",
+        "categoryId": "cmqu0734c00002f2rcgtk37p0",
+        "seoTitle": "Vontade de doce todo dia: causas e cuidados",
+        "coverImage": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782417769/nutricao-em-movimento/articles/t3pbxtdk2yrndbaint3b.jpg",
+        "coverImageAlt": "Mulher refletindo sobre vontade de doce todo dia em uma cozinha com alimentos equilibrados e chocolate em pequena porção."
+      },
+      "proposedChanges": {
+        "description": "Entenda como preferência, hábitos, fome, restrição e sono podem participar da vontade de doce, com formas de observar o contexto sem culpa ou promessas.",
+        "seoDescription": "Entenda como preferência, hábitos, fome, restrição e sono podem participar da vontade de doce, com formas de observar o contexto sem culpa ou promessas.",
+        "content": "<h2>Vontade frequente de doce não tem uma única explicação</h2>\n\n<p>Gostar de doce, desejar uma sobremesa e chegar ao fim da tarde com fome intensa são experiências diferentes, embora possam aparecer juntas. A frequência, sozinha, não identifica uma doença nem mostra falta de disciplina. Vale observar intensidade, contexto e o impacto dessa vontade na sua vida.</p>\n\n<p>A pergunta mais útil é o que costuma acontecer antes: uma refeição insuficiente, um horário associado ao café, um alimento à vista, cansaço ou uma situação emocional. Essas são possibilidades de investigação, não causas que possam ser confirmadas só por ler uma lista.</p>\n\n<h2>Preferência e hábito podem participar</h2>\n\n<p>O sabor doce pode ser prazeroso, e uma sobremesa pode fazer parte da cultura e das preferências pessoais. Quando café e chocolate aparecem juntos repetidamente, o momento do café pode lembrar o chocolate mesmo sem fome intensa. Imagens, cheiros e disponibilidade também podem despertar desejo. Uma meta-análise encontrou relação entre pistas alimentares, craving e comportamento de comer; isso não equivale a diagnosticar dependência de açúcar. [2]</p>\n\n<p>Um sinal de hábito pode ser a vontade aparecer na mesma situação, como diante da televisão. Perceber a associação permite escolher: comer o doce com atenção, mudar a ocasião ou organizar outra forma de pausa. Nenhuma dessas opções precisa virar uma proibição definitiva.</p>\n\n<h2>E se a vontade chega com muita fome?</h2>\n\n<p>Imagine um almoço pequeno seguido de uma tarde sem pausa. Às 17h, há fome, cansaço e um doce disponível. Nesse cenário, olhar só para a sobremesa perde uma parte da história. Experimente observar se a refeição anterior atendeu à fome e se existe uma oportunidade de lanche quando você precisa.</p>\n\n<p>Uma refeição ou um lanche podem ajudar a atender a fome sem necessariamente apagar o desejo por doce. Você pode querer os dois. A proposta é oferecer alimento suficiente e satisfação, sem tratar o chocolate como teste de autocontrole ou usar água para suportar fome.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Quando o obstáculo é atravessar a tarde sem uma opção possível de comer, este artigo reúne ideias de lanches para diferentes rotinas.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade\">Lanche da tarde: ideias práticas para manter a saciedade</a></strong></p>\n</div>\n\n<h2>Proibir um alimento e reduzir energia não são a mesma coisa</h2>\n\n<p>Passar dias pensando em um alimento considerado proibido pode intensificar o foco nele em algumas situações. Mas não é correto afirmar que toda restrição aumenta desejos: a revisão de Meule distingue a privação seletiva de curto prazo de intervenções mais longas de restrição energética, nas quais o craving pode diminuir. [1]</p>\n\n<p>Isso não é uma indicação para restringir por conta própria. A mensagem prática é avaliar como a estratégia está funcionando para você: há alimentação suficiente, flexibilidade e menos sofrimento, ou a regra está ocupando o dia inteiro? Um plano individualizado considera esse conjunto.</p>\n\n<h2>Sono e emoções merecem contexto</h2>\n\n<p>Dormir pouco pode mudar a disposição e a forma como você organiza a alimentação. Uma revisão de estudos de intervenção encontrou maior ingestão energética após privação parcial de sono, mas não um aumento específico de carboidratos. Portanto, ela não prova que uma noite ruim faça toda pessoa desejar açúcar. [3]</p>\n\n<p>Emoções também podem participar. Há quem procure conforto na comida e quem perca o apetite quando está sob tensão. A relação é variável, e sentir vontade depois de um dia difícil não basta para concluir que a causa é ansiedade. [4]</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Se a vontade se repete depois de uma situação, este texto ajuda a reconhecer pistas emocionais, sociais e ambientais.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares\">Por que eu como mesmo sem fome? Entenda os gatilhos alimentares</a></strong></p>\n</div>\n\n<h2>Como observar sem transformar a alimentação em vigilância</h2>\n\n<p>Escolha algumas ocasiões, se isso for confortável, e descreva três pontos: como foi a alimentação antes, o que estava acontecendo e se houve prazer, fome ou sensação de perda de controle. Não é preciso pesar o doce, contar calorias ou monitorar todas as refeições.</p>\n\n\n<figure style=\"margin:32px 0;\">\n  <figcaption style=\"margin-bottom:10px;font-size:14px;line-height:1.6;color:#666;\">Possibilidades de ajuste, não receitas para eliminar desejos.</figcaption>\n  <div style=\"width:100%;overflow-x:auto;border-radius:22px;border:1px solid rgba(0,0,0,0.08);background:#FAF8F4;\">\n    <table style=\"width:100%;min-width:640px;border-collapse:collapse;background:#FFFFFF;\">\n      <thead>\n        <tr>\n          <th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Padrão percebido</th><th style=\"background:#E9DCC9;border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;font-weight:700;color:#111111;\">Um ajuste possível</th>\n        </tr>\n      </thead>\n      <tbody>\n        \n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Fome intensa depois de muitas horas sem comer</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Rever a refeição anterior e prever uma pausa ou opção de lanche.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Pacote aberto ao lado do computador</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Escolher um momento para comer, com o alimento servido, em vez de depender apenas do automático.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Desejo acompanhado de exaustão</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Considerar descanso e condições de sono, sem esperar que isso resolva sozinho a alimentação.</td>\n        </tr>\n        <tr>\n          <td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Regra de nunca mais comer doce seguida de culpa</td><td style=\"border:1px solid rgba(0,0,0,0.08);padding:14px;text-align:left;vertical-align:top;line-height:1.6;color:#404040;\">Conversar sobre uma estratégia alimentar que respeite saúde, preferências e a relação com a comida.</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</figure>\n\n<p>Se você escolhe um doce, pode saboreá-lo sem precisar compensar depois. Melhorar a alimentação não exige prometer que a vontade desaparecerá. Se o registro aumentar obsessão ou culpa, abandone o exercício e leve a dificuldade para uma avaliação.</p>\n\n<h2>Quando vale buscar avaliação</h2>\n\n<p>Vontade de doce não é um teste para diabetes: o diagnóstico depende de avaliação e exames, conforme o caso. [6] Evite usar essa sensação isolada para concluir que falta um nutriente ou escolher suplementos e tratamentos. Desejos alimentares têm diferentes determinantes; preocupações de saúde precisam ser avaliadas no contexto individual. [1]</p>\n\n<p>Perda de controle recorrente, vergonha que leva a esconder o comportamento, restrição intensa ou compensações merecem atenção profissional. O cuidado pode incluir nutricionista e profissionais de saúde mental. Não é necessário esperar uma mudança de peso para pedir ajuda. [5]</p>\n\n<h2>O próximo passo depende do padrão</h2>\n\n<p>Para uma pessoa, a dificuldade pode ser uma tarde sem comida; para outra, uma associação com o café ou uma regra rígida. Comece pelo contexto mais evidente e observe se o ajuste ajuda. O objetivo é ter mais escolha e menos sofrimento, sem transformar o doce em inimigo nem prometer controle total da vontade.</p>\n\n<section aria-label=\"Referências científicas\"><h2>Referências científicas</h2><ol style=\"padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;\"><li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Meule A. The Psychology of Food Cravings: the Role of Food Deprivation. Current Nutrition Reports. 9(3):251–257. 2020. <span>(Revisão narrativa)</span> <a href=\"https://doi.org/10.1007/s13668-020-00326-0\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1007/s13668-020-00326-0</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Boswell RG, Kober H. Food cue reactivity and craving predict eating and weight gain: a meta-analytic review. Obesity Reviews. 17(2):159–177. 2016. <span>(Meta-análise)</span> <a href=\"https://doi.org/10.1111/obr.12354\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1111/obr.12354</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Al Khatib HK, Harding SV, Darzi J, Pot GK. The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis. European Journal of Clinical Nutrition. 71(5):614–624. 2017. <span>(Revisão sistemática e meta-análise)</span> <a href=\"https://doi.org/10.1038/ejcn.2016.201\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1038/ejcn.2016.201</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies. Proceedings of the Nutrition Society. 79(3):290–299. 2020. <span>(Revisão narrativa)</span> <a href=\"https://doi.org/10.1017/S0029665120007004\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1017/S0029665120007004</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">National Institute of Mental Health. Eating Disorders: What You Need to Know. NIH Publication No. 24-MH-4901. Revisado em 2024. 2024. <span>(Material institucional de saúde)</span> <a href=\"https://www.nimh.nih.gov/health/publications/eating-disorders\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.nimh.nih.gov/health/publications/eating-disorders</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">National Institute of Diabetes and Digestive and Kidney Diseases. Diabetes Tests &amp; Diagnosis. NIH/NIDDK. Revisado em julho de 2022. 2022. <span>(Material institucional de saúde)</span> <a href=\"https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis</a></li></ol></section>",
+        "contentBlocks": [
+          {
+            "id": "lote1-6-1",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Vontade frequente de doce não tem uma única explicação"
+            }
+          },
+          {
+            "id": "lote1-6-2",
+            "type": "paragraph",
+            "data": {
+              "text": "Gostar de doce, desejar uma sobremesa e chegar ao fim da tarde com fome intensa são experiências diferentes, embora possam aparecer juntas. A frequência, sozinha, não identifica uma doença nem mostra falta de disciplina. Vale observar intensidade, contexto e o impacto dessa vontade na sua vida."
+            }
+          },
+          {
+            "id": "lote1-6-3",
+            "type": "paragraph",
+            "data": {
+              "text": "A pergunta mais útil é o que costuma acontecer antes: uma refeição insuficiente, um horário associado ao café, um alimento à vista, cansaço ou uma situação emocional. Essas são possibilidades de investigação, não causas que possam ser confirmadas só por ler uma lista."
+            }
+          },
+          {
+            "id": "lote1-6-4",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Preferência e hábito podem participar"
+            }
+          },
+          {
+            "id": "lote1-6-5",
+            "type": "paragraph",
+            "data": {
+              "text": "O sabor doce pode ser prazeroso, e uma sobremesa pode fazer parte da cultura e das preferências pessoais. Quando café e chocolate aparecem juntos repetidamente, o momento do café pode lembrar o chocolate mesmo sem fome intensa. Imagens, cheiros e disponibilidade também podem despertar desejo. Uma meta-análise encontrou relação entre pistas alimentares, craving e comportamento de comer; isso não equivale a diagnosticar dependência de açúcar. [2]"
+            }
+          },
+          {
+            "id": "lote1-6-6",
+            "type": "paragraph",
+            "data": {
+              "text": "Um sinal de hábito pode ser a vontade aparecer na mesma situação, como diante da televisão. Perceber a associação permite escolher: comer o doce com atenção, mudar a ocasião ou organizar outra forma de pausa. Nenhuma dessas opções precisa virar uma proibição definitiva."
+            }
+          },
+          {
+            "id": "lote1-6-7",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "E se a vontade chega com muita fome?"
+            }
+          },
+          {
+            "id": "lote1-6-8",
+            "type": "paragraph",
+            "data": {
+              "text": "Imagine um almoço pequeno seguido de uma tarde sem pausa. Às 17h, há fome, cansaço e um doce disponível. Nesse cenário, olhar só para a sobremesa perde uma parte da história. Experimente observar se a refeição anterior atendeu à fome e se existe uma oportunidade de lanche quando você precisa."
+            }
+          },
+          {
+            "id": "lote1-6-9",
+            "type": "paragraph",
+            "data": {
+              "text": "Uma refeição ou um lanche podem ajudar a atender a fome sem necessariamente apagar o desejo por doce. Você pode querer os dois. A proposta é oferecer alimento suficiente e satisfação, sem tratar o chocolate como teste de autocontrole ou usar água para suportar fome."
+            }
+          },
+          {
+            "id": "lote1-6-10",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Quando o obstáculo é atravessar a tarde sem uma opção possível de comer, este artigo reúne ideias de lanches para diferentes rotinas.",
+              "href": "/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+              "linkText": "Lanche da tarde: ideias práticas para manter a saciedade"
+            }
+          },
+          {
+            "id": "lote1-6-11",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Proibir um alimento e reduzir energia não são a mesma coisa"
+            }
+          },
+          {
+            "id": "lote1-6-12",
+            "type": "paragraph",
+            "data": {
+              "text": "Passar dias pensando em um alimento considerado proibido pode intensificar o foco nele em algumas situações. Mas não é correto afirmar que toda restrição aumenta desejos: a revisão de Meule distingue a privação seletiva de curto prazo de intervenções mais longas de restrição energética, nas quais o craving pode diminuir. [1]"
+            }
+          },
+          {
+            "id": "lote1-6-13",
+            "type": "paragraph",
+            "data": {
+              "text": "Isso não é uma indicação para restringir por conta própria. A mensagem prática é avaliar como a estratégia está funcionando para você: há alimentação suficiente, flexibilidade e menos sofrimento, ou a regra está ocupando o dia inteiro? Um plano individualizado considera esse conjunto."
+            }
+          },
+          {
+            "id": "lote1-6-14",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Sono e emoções merecem contexto"
+            }
+          },
+          {
+            "id": "lote1-6-15",
+            "type": "paragraph",
+            "data": {
+              "text": "Dormir pouco pode mudar a disposição e a forma como você organiza a alimentação. Uma revisão de estudos de intervenção encontrou maior ingestão energética após privação parcial de sono, mas não um aumento específico de carboidratos. Portanto, ela não prova que uma noite ruim faça toda pessoa desejar açúcar. [3]"
+            }
+          },
+          {
+            "id": "lote1-6-16",
+            "type": "paragraph",
+            "data": {
+              "text": "Emoções também podem participar. Há quem procure conforto na comida e quem perca o apetite quando está sob tensão. A relação é variável, e sentir vontade depois de um dia difícil não basta para concluir que a causa é ansiedade. [4]"
+            }
+          },
+          {
+            "id": "lote1-6-17",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Se a vontade se repete depois de uma situação, este texto ajuda a reconhecer pistas emocionais, sociais e ambientais.",
+              "href": "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+              "linkText": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares"
+            }
+          },
+          {
+            "id": "lote1-6-18",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Como observar sem transformar a alimentação em vigilância"
+            }
+          },
+          {
+            "id": "lote1-6-19",
+            "type": "paragraph",
+            "data": {
+              "text": "Escolha algumas ocasiões, se isso for confortável, e descreva três pontos: como foi a alimentação antes, o que estava acontecendo e se houve prazer, fome ou sensação de perda de controle. Não é preciso pesar o doce, contar calorias ou monitorar todas as refeições."
+            }
+          },
+          {
+            "id": "lote1-6-20",
+            "type": "table",
+            "data": {
+              "caption": "Possibilidades de ajuste, não receitas para eliminar desejos.",
+              "headers": [
+                "Padrão percebido",
+                "Um ajuste possível"
+              ],
+              "rows": [
+                [
+                  "Fome intensa depois de muitas horas sem comer",
+                  "Rever a refeição anterior e prever uma pausa ou opção de lanche."
+                ],
+                [
+                  "Pacote aberto ao lado do computador",
+                  "Escolher um momento para comer, com o alimento servido, em vez de depender apenas do automático."
+                ],
+                [
+                  "Desejo acompanhado de exaustão",
+                  "Considerar descanso e condições de sono, sem esperar que isso resolva sozinho a alimentação."
+                ],
+                [
+                  "Regra de nunca mais comer doce seguida de culpa",
+                  "Conversar sobre uma estratégia alimentar que respeite saúde, preferências e a relação com a comida."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "lote1-6-21",
+            "type": "paragraph",
+            "data": {
+              "text": "Se você escolhe um doce, pode saboreá-lo sem precisar compensar depois. Melhorar a alimentação não exige prometer que a vontade desaparecerá. Se o registro aumentar obsessão ou culpa, abandone o exercício e leve a dificuldade para uma avaliação."
+            }
+          },
+          {
+            "id": "lote1-6-22",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Quando vale buscar avaliação"
+            }
+          },
+          {
+            "id": "lote1-6-23",
+            "type": "paragraph",
+            "data": {
+              "text": "Vontade de doce não é um teste para diabetes: o diagnóstico depende de avaliação e exames, conforme o caso. [6] Evite usar essa sensação isolada para concluir que falta um nutriente ou escolher suplementos e tratamentos. Desejos alimentares têm diferentes determinantes; preocupações de saúde precisam ser avaliadas no contexto individual. [1]"
+            }
+          },
+          {
+            "id": "lote1-6-24",
+            "type": "paragraph",
+            "data": {
+              "text": "Perda de controle recorrente, vergonha que leva a esconder o comportamento, restrição intensa ou compensações merecem atenção profissional. O cuidado pode incluir nutricionista e profissionais de saúde mental. Não é necessário esperar uma mudança de peso para pedir ajuda. [5]"
+            }
+          },
+          {
+            "id": "lote1-6-25",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "O próximo passo depende do padrão"
+            }
+          },
+          {
+            "id": "lote1-6-26",
+            "type": "paragraph",
+            "data": {
+              "text": "Para uma pessoa, a dificuldade pode ser uma tarde sem comida; para outra, uma associação com o café ou uma regra rígida. Comece pelo contexto mais evidente e observe se o ajuste ajuda. O objetivo é ter mais escolha e menos sofrimento, sem transformar o doce em inimigo nem prometer controle total da vontade."
+            }
+          },
+          {
+            "id": "lote1-6-references",
+            "type": "references",
+            "data": {
+              "items": [
+                {
+                  "author": "Meule A",
+                  "title": "The Psychology of Food Cravings: the Role of Food Deprivation",
+                  "publication": "Current Nutrition Reports. 9(3):251–257",
+                  "year": "2020",
+                  "doi": "10.1007/s13668-020-00326-0",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7399671/",
+                  "sourceType": "Revisão narrativa"
+                },
+                {
+                  "author": "Boswell RG, Kober H",
+                  "title": "Food cue reactivity and craving predict eating and weight gain: a meta-analytic review",
+                  "publication": "Obesity Reviews. 17(2):159–177",
+                  "year": "2016",
+                  "doi": "10.1111/obr.12354",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/26644270/",
+                  "sourceType": "Meta-análise"
+                },
+                {
+                  "author": "Al Khatib HK, Harding SV, Darzi J, Pot GK",
+                  "title": "The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis",
+                  "publication": "European Journal of Clinical Nutrition. 71(5):614–624",
+                  "year": "2017",
+                  "doi": "10.1038/ejcn.2016.201",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/27804960/",
+                  "sourceType": "Revisão sistemática e meta-análise"
+                },
+                {
+                  "author": "Reichenberger J, Schnepper R, Arend AK, Blechert J",
+                  "title": "Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies",
+                  "publication": "Proceedings of the Nutrition Society. 79(3):290–299",
+                  "year": "2020",
+                  "doi": "10.1017/S0029665120007004",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+                  "sourceType": "Revisão narrativa"
+                },
+                {
+                  "author": "National Institute of Mental Health",
+                  "title": "Eating Disorders: What You Need to Know",
+                  "publication": "NIH Publication No. 24-MH-4901. Revisado em 2024",
+                  "year": "2024",
+                  "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+                  "sourceType": "Material institucional de saúde"
+                },
+                {
+                  "author": "National Institute of Diabetes and Digestive and Kidney Diseases",
+                  "title": "Diabetes Tests & Diagnosis",
+                  "publication": "NIH/NIDDK. Revisado em julho de 2022",
+                  "year": "2022",
+                  "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis",
+                  "sourceType": "Material institucional de saúde"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "currentAutomaticRelated": [
+        "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+        "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+        "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida"
+      ],
+      "suggestedRelated": [
+        {
+          "id": "cmrpg9oir0000gb2rjy74vu47",
+          "title": "Lanche da tarde: ideias práticas para manter a saciedade",
+          "href": "/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade"
+        },
+        {
+          "id": "cmqr70qen00003x2rlnm1fkzb",
+          "title": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+          "href": "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares"
+        },
+        {
+          "id": "cmqu16jib00012f2rntmfkgbr",
+          "title": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "href": "/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva"
+        }
+      ],
+      "sources": [
+        "meule2020",
+        "boswell2016",
+        "sono2017",
+        "reiche2020",
+        "nimh2024",
+        "niddk2022"
+      ],
+      "files": {
+        "markdown": "artigos/04-vontade-de-doce.md",
+        "preview": "previas/04-vontade-de-doce.html"
+      }
+    },
+    {
+      "number": 10,
+      "status": "AGUARDANDO_REVISAO_DE_WEVERLYN",
+      "baselineContentHash": "8e6a7346a78a2c36ce2a549a8bfae8bae11ab78aa9a743a949b7b8147ca7ac4e",
+      "preserve": {
+        "id": "cmqzsbfaf0000fy2r5ka03ipm",
+        "title": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+        "slug": "carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+        "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+        "publishedAt": "2026-07-06T07:00:02.382Z",
+        "editorialUpdatedAtAtCapture": null,
+        "authorId": "cmq7a3h0x0000i8imbilojid6",
+        "categoryId": "cmqi75nib0000er2rkj1eej0n",
+        "seoTitle": "Carboidrato à noite engorda? Entenda sem terrorismo",
+        "coverImage": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+        "coverImageAlt": "Prato equilibrado no jantar com carboidratos, legumes, verduras e proteína, representando alimentação saudável à noite sem terrorismo nutricional."
+      },
+      "proposedChanges": {
+        "description": "Carboidrato no jantar não causa ganho de peso automaticamente. Entenda o papel da alimentação total, da composição da refeição e dos horários.",
+        "seoDescription": "Carboidrato no jantar não causa ganho de peso automaticamente. Entenda o papel da alimentação total, da composição da refeição e dos horários.",
+        "content": "<h2>Preciso cortar carboidrato do jantar?</h2>\n\n<p>Não por uma regra universal de horário. Comer arroz, pão, batata ou outro carboidrato à noite não causa ganho de peso automaticamente. O total de energia consumida e gasta ao longo do tempo importa, assim como os fatores que influenciam esse balanço e a qualidade da alimentação. [1]</p>\n\n<p>Isso também não significa que o horário seja irrelevante em qualquer situação. A pergunta é como o jantar se encaixa no conjunto do dia, na hora de dormir, nas necessidades de saúde e na sua rotina.</p>\n\n<h2>Balanço energético importa, mas não é uma medida de força de vontade</h2>\n\n<p>O ganho de gordura corporal envolve armazenamento de energia ao longo do tempo. A regulação desse processo é dinâmica: fome, gasto e adaptações do organismo interagem. Explicar o princípio energético não reduz o cuidado a mandar comer menos ou contar calorias, nem permite prever o peso de alguém por uma refeição. [1]</p>\n\n<p>Por exemplo: tirar o arroz do jantar e acrescentar outros alimentos depois pode mudar pouco ou até aumentar a energia total. Em outra rotina, ajustar uma refeição excessivamente volumosa pode fazer sentido. São situações distintas; o efeito não pode ser atribuído apenas à presença do carboidrato ou ao relógio.</p>\n\n<h2>O que a pesquisa sobre comer tarde realmente mostra</h2>\n\n<p>Em um pequeno ensaio controlado com 16 adultos com sobrepeso ou obesidade, atrasar as refeições mantendo a alimentação controlada aumentou a fome e reduziu o gasto energético durante a vigília. O estudo investigou efeitos de horários em condições específicas. Não comparou arroz com outro nutriente no jantar nem demonstrou ganho de gordura de longo prazo para toda a população. [3]</p>\n\n<p>Uma revisão de ensaios publicada em 2024 encontrou pequenos efeitos de estratégias de horário sobre peso, com heterogeneidade e risco de viés que limitam a certeza dos resultados. Uma meta-análise em rede de 2026 também encontrou vantagens de janelas alimentares mais cedo em alguns desfechos, mas estudou janelas de alimentação, não a exclusão de carboidratos. [4, 5]</p>\n\n<p>Esses resultados ajudam a discutir a distribuição das refeições quando necessário. Não criam um horário universal depois do qual o carboidrato deve ser proibido, nem uma recomendação de jejum para todos.</p>\n\n<h2>A composição do jantar oferece uma orientação mais útil</h2>\n\n<p>Carboidrato não é sinônimo de doce ou de um único alimento. Frutas, cereais, tubérculos e leguminosas têm composições diferentes. A diretriz da OMS destaca a qualidade das fontes, priorizando cereais integrais, hortaliças, frutas e leguminosas. [2]</p>\n\n<p>Na prática, pense numa refeição que atenda à fome e combine alimentos disponíveis. Quantidades e escolhas variam; os exemplos abaixo não são um plano alimentar nem uma obrigação de repetir o mesmo prato.</p>\n\n\n    <ul style=\"margin:20px 0;padding-left:28px;list-style-type:disc;font-size:17px;line-height:1.8;color:#404040;\">\n      \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Arroz com feijão, ovo e legumes: uma refeição habitual que reúne diferentes nutrientes.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Macarrão com lentilha e vegetais: opção sem carne, adaptável aos ingredientes disponíveis.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Pão com ovo e tomate: uma possibilidade quando cozinhar um jantar completo não cabe no dia.\n            </li>\n          \n            <li style=\"margin:0 0 8px;padding-left:4px;\">\n              Sopa com legumes, batata e uma fonte de proteína: a composição importa mais do que chamar a refeição de leve.\n            </li>\n          \n    </ul>\n  \n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Para escolher combinações sem depender de uma fórmula rígida, veja o guia de montagem do prato.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao\">Como montar um prato equilibrado sem complicar a alimentação</a></strong></p>\n</div>\n\n<h2>Três situações que mudam a conversa</h2>\n\n<h3>Você treina no fim do dia</h3>\n\n<p>A refeição seguinte também participa da rotina de recuperação. Cortar o carboidrato apenas por ser noite pode não combinar com suas necessidades. O tipo de atividade, a alimentação anterior e a fome precisam entrar na avaliação; protocolos esportivos específicos pertencem a outro contexto.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Para entender a recuperação depois do exercício e exemplos de refeições, consulte o guia específico de pós-treino.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor\">O que comer depois do treino para recuperar melhor?</a></strong></p>\n</div>\n\n<h3>Você janta perto da hora de dormir</h3>\n\n<p>Observe o conforto depois da refeição e as possibilidades reais de horário. Se há desconforto digestivo persistente ou uma condição clínica, vale avaliar volume, composição e horários com profissionais de saúde, em vez de excluir um nutriente por conta própria. Não há um intervalo individual prescrito neste artigo.</p>\n\n<h3>A noite concentra fome e sofrimento</h3>\n\n<p>Se você chega à noite depois de comer pouco, sente perda de controle ou tenta compensar a alimentação do dia, a pergunta vai além do carboidrato. Observar o que ocorreu antes pode ser mais útil do que culpar o jantar. Dificuldades recorrentes merecem avaliação individualizada.</p>\n\n\n<div style=\"background:#FFF8EE;border:1px solid #F0D7A8;border-radius:22px;padding:22px;margin:34px 0;\">\n  <h3 style=\"margin:0 0 12px;color:#8A5A00;font-size:22px;line-height:1.25;\">📖 Para continuar a leitura</h3>\n  <p style=\"margin:0 0 12px;line-height:1.8;\">Este artigo trata do comportamento de comer à noite e dos contextos de sofrimento, uma pergunta diferente do mito do nutriente.</p>\n  <p style=\"margin:0;line-height:1.8;\"><strong>👉 <a href=\"/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras\">Comer à noite é falta de controle? Entenda o que pode estar por trás</a></strong></p>\n</div>\n\n<h2>Uma decisão prática para o próximo jantar</h2>\n\n<p>Você não precisa excluir carboidrato só porque escureceu. Considere fome, composição da refeição, conforto, rotina e orientação individual quando houver condições de saúde. A melhor resposta à pergunta inicial combina dois cuidados: abandonar a proibição automática e continuar atento ao conjunto da alimentação e aos horários que funcionam para você.</p>\n\n<section aria-label=\"Referências científicas\"><h2>Referências científicas</h2><ol style=\"padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;\"><li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR. Energy balance and its components: implications for body weight regulation. The American Journal of Clinical Nutrition. 95(4):989–994. 2012. <span>(Artigo de consenso)</span> <a href=\"https://doi.org/10.3945/ajcn.112.036350\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.3945/ajcn.112.036350</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">World Health Organization. Carbohydrate intake for adults and children: WHO guideline. Geneva: WHO. ISBN 9789240073593. 2023. <span>(Diretriz)</span> <a href=\"https://www.who.int/publications/i/item/9789240073593\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.who.int/publications/i/item/9789240073593</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Vujović N et al.. Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity. Cell Metabolism. 34(10):1486–1498.e7. 2022. <span>(Ensaio randomizado cruzado)</span> <a href=\"https://doi.org/10.1016/j.cmet.2022.09.007\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1016/j.cmet.2022.09.007</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Liu HY, Eso AA, Cook N, O&#039;Neill HM, Albarqouni L. Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis. JAMA Network Open. 7(11):e2442163. 2024. <span>(Revisão sistemática e meta-análise)</span> <a href=\"https://doi.org/10.1001/jamanetworkopen.2024.42163\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1001/jamanetworkopen.2024.42163</a></li>\n<li style=\"margin-bottom:16px;overflow-wrap:anywhere;\">Chen YE et al.. Effects of timing and eating duration of time restricted eating on metabolic outcomes: systematic review and network meta-analysis. BMJ Medicine. 5(1):e001071. 2026. <span>(Revisão sistemática e meta-análise em rede)</span> <a href=\"https://doi.org/10.1136/bmjmed-2024-001071\" target=\"_blank\" rel=\"noopener noreferrer\">https://doi.org/10.1136/bmjmed-2024-001071</a></li></ol></section>",
+        "contentBlocks": [
+          {
+            "id": "lote1-10-1",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Preciso cortar carboidrato do jantar?"
+            }
+          },
+          {
+            "id": "lote1-10-2",
+            "type": "paragraph",
+            "data": {
+              "text": "Não por uma regra universal de horário. Comer arroz, pão, batata ou outro carboidrato à noite não causa ganho de peso automaticamente. O total de energia consumida e gasta ao longo do tempo importa, assim como os fatores que influenciam esse balanço e a qualidade da alimentação. [1]"
+            }
+          },
+          {
+            "id": "lote1-10-3",
+            "type": "paragraph",
+            "data": {
+              "text": "Isso também não significa que o horário seja irrelevante em qualquer situação. A pergunta é como o jantar se encaixa no conjunto do dia, na hora de dormir, nas necessidades de saúde e na sua rotina."
+            }
+          },
+          {
+            "id": "lote1-10-4",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Balanço energético importa, mas não é uma medida de força de vontade"
+            }
+          },
+          {
+            "id": "lote1-10-5",
+            "type": "paragraph",
+            "data": {
+              "text": "O ganho de gordura corporal envolve armazenamento de energia ao longo do tempo. A regulação desse processo é dinâmica: fome, gasto e adaptações do organismo interagem. Explicar o princípio energético não reduz o cuidado a mandar comer menos ou contar calorias, nem permite prever o peso de alguém por uma refeição. [1]"
+            }
+          },
+          {
+            "id": "lote1-10-6",
+            "type": "paragraph",
+            "data": {
+              "text": "Por exemplo: tirar o arroz do jantar e acrescentar outros alimentos depois pode mudar pouco ou até aumentar a energia total. Em outra rotina, ajustar uma refeição excessivamente volumosa pode fazer sentido. São situações distintas; o efeito não pode ser atribuído apenas à presença do carboidrato ou ao relógio."
+            }
+          },
+          {
+            "id": "lote1-10-7",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "O que a pesquisa sobre comer tarde realmente mostra"
+            }
+          },
+          {
+            "id": "lote1-10-8",
+            "type": "paragraph",
+            "data": {
+              "text": "Em um pequeno ensaio controlado com 16 adultos com sobrepeso ou obesidade, atrasar as refeições mantendo a alimentação controlada aumentou a fome e reduziu o gasto energético durante a vigília. O estudo investigou efeitos de horários em condições específicas. Não comparou arroz com outro nutriente no jantar nem demonstrou ganho de gordura de longo prazo para toda a população. [3]"
+            }
+          },
+          {
+            "id": "lote1-10-9",
+            "type": "paragraph",
+            "data": {
+              "text": "Uma revisão de ensaios publicada em 2024 encontrou pequenos efeitos de estratégias de horário sobre peso, com heterogeneidade e risco de viés que limitam a certeza dos resultados. Uma meta-análise em rede de 2026 também encontrou vantagens de janelas alimentares mais cedo em alguns desfechos, mas estudou janelas de alimentação, não a exclusão de carboidratos. [4, 5]"
+            }
+          },
+          {
+            "id": "lote1-10-10",
+            "type": "paragraph",
+            "data": {
+              "text": "Esses resultados ajudam a discutir a distribuição das refeições quando necessário. Não criam um horário universal depois do qual o carboidrato deve ser proibido, nem uma recomendação de jejum para todos."
+            }
+          },
+          {
+            "id": "lote1-10-11",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "A composição do jantar oferece uma orientação mais útil"
+            }
+          },
+          {
+            "id": "lote1-10-12",
+            "type": "paragraph",
+            "data": {
+              "text": "Carboidrato não é sinônimo de doce ou de um único alimento. Frutas, cereais, tubérculos e leguminosas têm composições diferentes. A diretriz da OMS destaca a qualidade das fontes, priorizando cereais integrais, hortaliças, frutas e leguminosas. [2]"
+            }
+          },
+          {
+            "id": "lote1-10-13",
+            "type": "paragraph",
+            "data": {
+              "text": "Na prática, pense numa refeição que atenda à fome e combine alimentos disponíveis. Quantidades e escolhas variam; os exemplos abaixo não são um plano alimentar nem uma obrigação de repetir o mesmo prato."
+            }
+          },
+          {
+            "id": "lote1-10-14",
+            "type": "unorderedList",
+            "data": {
+              "items": [
+                "Arroz com feijão, ovo e legumes: uma refeição habitual que reúne diferentes nutrientes.",
+                "Macarrão com lentilha e vegetais: opção sem carne, adaptável aos ingredientes disponíveis.",
+                "Pão com ovo e tomate: uma possibilidade quando cozinhar um jantar completo não cabe no dia.",
+                "Sopa com legumes, batata e uma fonte de proteína: a composição importa mais do que chamar a refeição de leve."
+              ]
+            }
+          },
+          {
+            "id": "lote1-10-15",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Para escolher combinações sem depender de uma fórmula rígida, veja o guia de montagem do prato.",
+              "href": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+              "linkText": "Como montar um prato equilibrado sem complicar a alimentação"
+            }
+          },
+          {
+            "id": "lote1-10-16",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Três situações que mudam a conversa"
+            }
+          },
+          {
+            "id": "lote1-10-17",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "Você treina no fim do dia"
+            }
+          },
+          {
+            "id": "lote1-10-18",
+            "type": "paragraph",
+            "data": {
+              "text": "A refeição seguinte também participa da rotina de recuperação. Cortar o carboidrato apenas por ser noite pode não combinar com suas necessidades. O tipo de atividade, a alimentação anterior e a fome precisam entrar na avaliação; protocolos esportivos específicos pertencem a outro contexto."
+            }
+          },
+          {
+            "id": "lote1-10-19",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Para entender a recuperação depois do exercício e exemplos de refeições, consulte o guia específico de pós-treino.",
+              "href": "/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+              "linkText": "O que comer depois do treino para recuperar melhor?"
+            }
+          },
+          {
+            "id": "lote1-10-20",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "Você janta perto da hora de dormir"
+            }
+          },
+          {
+            "id": "lote1-10-21",
+            "type": "paragraph",
+            "data": {
+              "text": "Observe o conforto depois da refeição e as possibilidades reais de horário. Se há desconforto digestivo persistente ou uma condição clínica, vale avaliar volume, composição e horários com profissionais de saúde, em vez de excluir um nutriente por conta própria. Não há um intervalo individual prescrito neste artigo."
+            }
+          },
+          {
+            "id": "lote1-10-22",
+            "type": "heading",
+            "data": {
+              "level": 3,
+              "text": "A noite concentra fome e sofrimento"
+            }
+          },
+          {
+            "id": "lote1-10-23",
+            "type": "paragraph",
+            "data": {
+              "text": "Se você chega à noite depois de comer pouco, sente perda de controle ou tenta compensar a alimentação do dia, a pergunta vai além do carboidrato. Observar o que ocorreu antes pode ser mais útil do que culpar o jantar. Dificuldades recorrentes merecem avaliação individualizada."
+            }
+          },
+          {
+            "id": "lote1-10-24",
+            "type": "relatedArticle",
+            "data": {
+              "title": "Para continuar a leitura",
+              "text": "Este artigo trata do comportamento de comer à noite e dos contextos de sofrimento, uma pergunta diferente do mito do nutriente.",
+              "href": "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+              "linkText": "Comer à noite é falta de controle? Entenda o que pode estar por trás"
+            }
+          },
+          {
+            "id": "lote1-10-25",
+            "type": "heading",
+            "data": {
+              "level": 2,
+              "text": "Uma decisão prática para o próximo jantar"
+            }
+          },
+          {
+            "id": "lote1-10-26",
+            "type": "paragraph",
+            "data": {
+              "text": "Você não precisa excluir carboidrato só porque escureceu. Considere fome, composição da refeição, conforto, rotina e orientação individual quando houver condições de saúde. A melhor resposta à pergunta inicial combina dois cuidados: abandonar a proibição automática e continuar atento ao conjunto da alimentação e aos horários que funcionam para você."
+            }
+          },
+          {
+            "id": "lote1-10-references",
+            "type": "references",
+            "data": {
+              "items": [
+                {
+                  "author": "Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR",
+                  "title": "Energy balance and its components: implications for body weight regulation",
+                  "publication": "The American Journal of Clinical Nutrition. 95(4):989–994",
+                  "year": "2012",
+                  "doi": "10.3945/ajcn.112.036350",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+                  "sourceType": "Artigo de consenso"
+                },
+                {
+                  "author": "World Health Organization",
+                  "title": "Carbohydrate intake for adults and children: WHO guideline",
+                  "publication": "Geneva: WHO. ISBN 9789240073593",
+                  "year": "2023",
+                  "url": "https://www.who.int/publications/i/item/9789240073593",
+                  "sourceType": "Diretriz"
+                },
+                {
+                  "author": "Vujović N et al.",
+                  "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+                  "publication": "Cell Metabolism. 34(10):1486–1498.e7",
+                  "year": "2022",
+                  "doi": "10.1016/j.cmet.2022.09.007",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/",
+                  "sourceType": "Ensaio randomizado cruzado"
+                },
+                {
+                  "author": "Liu HY, Eso AA, Cook N, O'Neill HM, Albarqouni L",
+                  "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis",
+                  "publication": "JAMA Network Open. 7(11):e2442163",
+                  "year": "2024",
+                  "doi": "10.1001/jamanetworkopen.2024.42163",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/39485353/",
+                  "sourceType": "Revisão sistemática e meta-análise"
+                },
+                {
+                  "author": "Chen YE et al.",
+                  "title": "Effects of timing and eating duration of time restricted eating on metabolic outcomes: systematic review and network meta-analysis",
+                  "publication": "BMJ Medicine. 5(1):e001071",
+                  "year": "2026",
+                  "doi": "10.1136/bmjmed-2024-001071",
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12829361/",
+                  "sourceType": "Revisão sistemática e meta-análise em rede"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "currentAutomaticRelated": [
+        "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+        "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+        "/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia"
+      ],
+      "suggestedRelated": [
+        {
+          "id": "cmr3xbkac0000p72rsy43fedu",
+          "title": "Como montar um prato equilibrado sem complicar a alimentação",
+          "href": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao"
+        },
+        {
+          "id": "cmrckeis80000cv2riequpo8v",
+          "title": "O que comer depois do treino para recuperar melhor?",
+          "href": "/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor"
+        },
+        {
+          "id": "cmrmnrpjk0000of2rmucscj6g",
+          "title": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+          "href": "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras"
+        }
+      ],
+      "sources": [
+        "hall2012",
+        "omsCarb2023",
+        "vujovic2022",
+        "liu2024",
+        "chen2026"
+      ],
+      "files": {
+        "markdown": "artigos/05-carboidrato-a-noite.md",
+        "preview": "previas/05-carboidrato-a-noite.html"
+      }
+    }
+  ]
+}
