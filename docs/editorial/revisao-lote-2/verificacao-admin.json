@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-08T19:45:16.067Z",
+  "automaticBrowserStopped": true,
+  "reason": "Windows Computer Use could not determine the current browser URL confidently enough to enforce policy; no subsequent UI actions.",
+  "authenticatedEditorInteractionPerformed": false,
+  "checks": [
+    {
+      "path": "/administracao",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmu7efl310000c02rdw9tif5e/editar",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmrmnrpjk0000of2rmucscj6g/editar",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmrjqwlwt0000aq2r78mzx3nx/editar",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmqzpmryo0000uf2rdwb9vq2q/editar",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmqi64r9c0000nr2r3khm5nst/editar",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/administracao/artigos/cmqfndz120000qx2revual4yx/editar",
+      "status": 307,
+      "location": "/login"
+    }
+  ]
+}

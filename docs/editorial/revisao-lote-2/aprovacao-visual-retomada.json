@@ -1,0 +1,31 @@
+{
+  "approvalRecordedAt": "2026-11-08T19:28:11.531Z",
+  "evidence": "User explicitly reports completed and approved human visual review at all five prepared widths; actual historical review time not supplied.",
+  "attachmentSha256": "63e75e6d03d9a41fe0ded2cbc85147c42df5252005f35680aa9e11b5ecdd44af",
+  "visualApproval": {
+    "numbers": [
+      2,
+      1
+    ],
+    "widths": [
+      1440,
+      1023,
+      768,
+      375,
+      320
+    ],
+    "desktop": true,
+    "tablet": true,
+    "mobile": true
+  },
+  "applicationAuthorizedForIds": [
+    "cmu7efl310000c02rdw9tif5e",
+    "cmrmnrpjk0000of2rmucscj6g",
+    "cmrjqwlwt0000aq2r78mzx3nx",
+    "cmqzpmryo0000uf2rdwb9vq2q",
+    "cmqi64r9c0000nr2r3khm5nst",
+    "cmqfndz120000qx2revual4yx"
+  ],
+  "recordedInDatabase": false,
+  "reason": "Resumption stopped on protected-field divergence before any write."
+}

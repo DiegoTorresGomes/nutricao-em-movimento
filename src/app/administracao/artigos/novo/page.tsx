@@ -9,6 +9,12 @@ export default async function NewPostPage() {
     },
   });
 
+  // Match the publishing account selected by createPostAction.
+  const author = await prisma.user.findFirst({
+    where: { role: "ADMIN" },
+    select: { id: true },
+  });
+
   return (
     <AdminLayout>
       <div className="mb-8">
@@ -19,7 +25,7 @@ export default async function NewPostPage() {
       </div>
 
       <div className="rounded-[2rem] bg-white p-6 shadow-sm">
-        <CreatePostForm categories={categories} />
+        <CreatePostForm categories={categories} authorId={author?.id ?? null} />
       </div>
     </AdminLayout>
   );

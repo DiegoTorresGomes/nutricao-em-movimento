@@ -36,6 +36,9 @@ export async function reschedulePostAction(formData: FormData) {
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
   revalidatePath("/pt/sobre");
+  revalidatePath("/pt/autora/weverlyn-alves");
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/feed.xml");
 
   if (post?.slug) {
     revalidatePath(`/pt/artigos/${post.slug}`);

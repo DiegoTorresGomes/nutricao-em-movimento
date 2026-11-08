@@ -1,0 +1,775 @@
+{
+  "status": "PENDENTE DE REVISÃO HUMANA",
+  "createdAt": "2026-11-08T15:52:13.195Z",
+  "author": "Weverlyn Alves — CRN 24101524",
+  "noDatabaseWrites": true,
+  "articles": [
+    {
+      "number": 30,
+      "file": "01-saude-mental.md",
+      "currentScore": 72,
+      "currentClass": "C",
+      "estimatedScore": 84,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        17,
+        12,
+        13,
+        8,
+        4,
+        3,
+        4
+      ],
+      "intent": "Explicar o papel complementar de alimentação, movimento e rotina no cuidado com a saúde mental, sem atribuir efeito terapêutico a um alimento.",
+      "query": "alimentação e exercícios ajudam na saúde mental?",
+      "centralQuestion": "O que esses cuidados podem oferecer, e o que não substituem?",
+      "mainAnswer": "Podem compor cuidados e intervenções acompanhadas; não são teste de disciplina, cura alimentar nem razão para adiar atendimento.",
+      "uniqueValue": "Um plano de apoio para dias com pouca energia, separando evidência de intervenção, sugestões práticas e urgência.",
+      "problems": [
+        "Fontes WHO Mental Health e Physical Activity sem documentos identificados.",
+        "Lista de hábitos extensa, frase-chave repetida artificialmente e pouca adaptação à falta de energia/recursos.",
+        "Captação de newsletter em tema sensível; preservar cuidado e urgência em primeiro plano."
+      ],
+      "proposedTitle": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+      "metaTitle": "Alimentação, exercícios e saúde mental: limites e cuidados",
+      "metaDescription": "Entenda o papel da alimentação e do movimento na saúde mental, os limites das evidências e como buscar apoio sem culpa ou promessas de cura.",
+      "excerpt": "Alimentação e movimento podem integrar o cuidado com a saúde mental. Veja possibilidades para dias difíceis, limites das pesquisas e quando buscar ajuda.",
+      "sourceKeys": [
+        "who-depression2026",
+        "firth2019",
+        "singh2023",
+        "ms-suicidio"
+      ],
+      "internalNumbers": [
+        13,
+        2
+      ],
+      "relatedNumbers": [
+        13,
+        2,
+        26
+      ],
+      "cta": "Nenhum CTA comercial ou de newsletter no corpo; prioridade para cuidado e continuidade de leitura.",
+      "cannibalization": "Sobreposição leve com #13 e #2; aqui o recorte é rede de cuidado e apoio em dias difíceis, não mecanismos da ansiedade nem classificação de fome. Não consolidar.",
+      "humanChecks": [
+        "Revisar limites das intervenções e acessibilidade dos exemplos.",
+        "Confirmar clareza dos encaminhamentos locais e distinção apoio emocional/urgência antes de qualquer publicação."
+      ],
+      "body": "## Alimentação e movimento ajudam, mas não explicam tudo\n\nO Setembro Amarelo convida a falar de prevenção do suicídio e cuidado com a vida. Nesse contexto, alimentação, movimento, sono e apoio social podem fazer parte do cuidado com a saúde mental. Nenhum alimento substitui psicoterapia, avaliação médica ou outros tratamentos indicados. Ter dificuldade de comer ou se movimentar em um período de sofrimento não significa falta de vontade. [1]\n\nO objetivo deste texto é pensar em apoio possível, inclusive quando falta energia para cozinhar ou sair de casa. Não é propor uma dieta para depressão nem um treino para ansiedade.\n\n## O que as pesquisas permitem afirmar?\n\nÉ diferente observar que pessoas com determinado padrão alimentar relatam menos sintomas e demonstrar o efeito de uma intervenção. Nas associações, fatores como renda, sono, saúde e acesso ao cuidado também podem participar.\n\nUma meta-análise de ensaios clínicos encontrou redução média pequena de sintomas depressivos em intervenções alimentares, mas não um efeito geral significativo sobre ansiedade. Os estudos variavam e poucos incluíam pessoas com diagnóstico de depressão. Isso não identifica um alimento que cure transtornos nem permite transformar um cardápio em tratamento universal. [2]\n\nUma revisão de revisões de intervenções com atividade física encontrou benefícios para sintomas de depressão, ansiedade e sofrimento psicológico. A qualidade de muitas revisões incluídas era baixa, e os resultados não tornam toda atividade adequada a toda pessoa. Exercício pode integrar o cuidado profissional; a leitura não autoriza interromper tratamento ou trocar medicação por treino. [3]\n\n## Como apoiar a alimentação em um dia difícil\n\nA proposta abaixo é uma adaptação prática, não um protocolo estudado para tratar sintomas. Escolha uma possibilidade que reduza trabalho, em vez de tentar cumprir uma lista inteira:\n\n- **Se preparar uma refeição parece inviável:** recorrer a comida já pronta, uma porção congelada ou ajuda de alguém pode ser mais possível que cozinhar do zero.\n- **Se falta apetite:** observar o que está mais tolerável e pedir ajuda para organizar a alimentação pode ser um começo. Persistência da dificuldade, perda de peso involuntária ou dificuldade para se hidratar merecem avaliação.\n- **Se o dia passa sem pausas:** combinar apoio para uma refeição ou deixar algo acessível pode diminuir um obstáculo de rotina. Não há necessidade de estabelecer horários perfeitos.\n\nPara uma pessoa, o cuidado pode ser aquecer arroz e feijão. Para outra, pedir companhia para comprar comida. Nenhuma dessas escolhas mede o valor pessoal ou a gravidade do sofrimento. A OMS inclui regularidade possível de alimentação e sono entre medidas de autocuidado, junto de apoio e busca de atendimento. [1]\n\nQuando a dúvida é especificamente sobre mudanças de apetite em momentos de ansiedade, veja [Ansiedade e alimentação: como uma coisa influencia a outra](https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra).\n\n## Movimento sem transformar cuidado em cobrança\n\nUma atividade precisa considerar condição física, tratamento, segurança e acesso. Uma caminhada acompanhada pode ser possível para alguém; em outro momento, o apoio necessário é descansar e receber atendimento. As pesquisas sobre intervenções não obrigam uma pessoa em sofrimento a treinar nem definem uma dose individual por este artigo. [3]\n\nEm vez de “você precisa reagir e fazer exercício”, pode ser mais útil perguntar: “Quer companhia?” ou “O que ajudaria a atravessar o dia?”. Se o movimento produz punição, exaustão ou tentativa de compensar comida, isso também merece ser conversado com a equipe de cuidado.\n\n## Comer para buscar conforto não resume a saúde mental\n\nUma refeição afetiva não caracteriza, sozinha, um transtorno. Da mesma forma, não é preciso transformar toda alteração de apetite em um problema de disciplina. Se comer vem acompanhado de sofrimento ou perda de controle, vale investigar o conjunto com profissionais.\n\nEssa pergunta tem um recorte próprio em [Comer por emoção é normal?](https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal). Aqui, a prioridade é não reduzir sofrimento psíquico a uma escolha alimentar.\n\n## Quando o apoio profissional precisa vir primeiro\n\nTristeza persistente, perda de interesse, alterações importantes de sono ou apetite e dificuldade para cuidar da própria rotina são motivos para buscar avaliação. Essa lista não estabelece diagnóstico e não é preciso esperar piorar para pedir ajuda. UBS e CAPS são portas de cuidado no SUS. [1, 4]\n\n**Se houver risco imediato de se machucar, procure um serviço de urgência, como pronto-socorro ou UPA, ou acione o SAMU 192. Se possível, peça a alguém de confiança que fique com você enquanto busca atendimento.** [4]\n\nPara apoio emocional no Brasil, o CVV atende gratuitamente, 24 horas, pelo [188](tel:+55188?oai_link_source=model_response_hotline). Esse apoio não substitui atendimento de urgência quando há perigo imediato. [4]\n\n## Um cuidado possível, sem promessa de cura\n\nO próximo passo pode ser uma refeição acessível, uma conversa ou ajuda para chegar ao serviço de saúde. Alimentação e movimento podem integrar uma rede de cuidado; não são condições para merecer acolhimento e não precisam ser resolvidos antes de procurar tratamento.\n",
+      "recordId": "cmu7efl310000c02rdw9tif5e",
+      "preserved": {
+        "id": "cmu7efl310000c02rdw9tif5e",
+        "slug": "setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-09-19T07:30:15.392Z",
+        "editorialUpdatedAt": null,
+        "views": 19,
+        "category": {
+          "id": "cmqu0734c00002f2rcgtk37p0",
+          "name": "Nutrição, ansiedade e rotina emocional",
+          "slug": "nutricao-ansiedade-e-rotina-emocional"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        21,
+        15,
+        10,
+        12,
+        4,
+        4,
+        3,
+        3
+      ],
+      "proposedReferences": [
+        {
+          "key": "who-depression2026",
+          "author": "Organização Mundial da Saúde",
+          "title": "Depressive disorder (depression)",
+          "publication": "WHO — Fact sheet, atualização de 11/09/2026",
+          "year": 2026,
+          "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+          "short": "Ficha sobre depressão e autocuidado",
+          "supports": "Cuidado multifatorial, tratamentos efetivos, autocuidado possível e procura de ajuda.",
+          "limits": "Orientação geral; não valida o plano prático do artigo nem diagnostica o leitor.",
+          "verification": "Página oficial lida; data explícita."
+        },
+        {
+          "key": "firth2019",
+          "author": "Firth J, Marx W, Dash S, et al.",
+          "title": "The Effects of Dietary Improvement on Symptoms of Depression and Anxiety: A Meta-Analysis of Randomized Controlled Trials",
+          "publication": "Psychosomatic Medicine, 81(3):265–280",
+          "year": 2019,
+          "doi": "10.1097/PSY.0000000000000673",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6455094/",
+          "short": "Meta-análise de intervenções alimentares e sintomas",
+          "supports": "Efeito médio pequeno em sintomas depressivos; ausência de efeito geral significativo em ansiedade.",
+          "limits": "Intervenções heterogêneas e poucos participantes com depressão clínica; não prova cura alimentar nem efeito de um nutriente isolado.",
+          "verification": "Texto integral disponível em PMC; resultados e limitações conferidos."
+        },
+        {
+          "key": "singh2023",
+          "author": "Singh B, Olds T, Curtis R, et al.",
+          "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews",
+          "publication": "British Journal of Sports Medicine, 57(18):1203–1209",
+          "year": 2023,
+          "doi": "10.1136/bjsports-2022-106195",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10579187/",
+          "short": "Revisão de revisões de atividade física",
+          "supports": "Benefícios de intervenções para sintomas de depressão, ansiedade e sofrimento psicológico.",
+          "limits": "Muitas revisões de baixa qualidade; não define treino individual ou substituição automática de tratamento.",
+          "verification": "Texto integral em PMC; site do periódico devolveu 403."
+        },
+        {
+          "key": "ms-suicidio",
+          "author": "Brasil. Ministério da Saúde",
+          "title": "Suicídio (Prevenção)",
+          "publication": "Saúde de A a Z — Ministério da Saúde",
+          "year": "s.d.",
+          "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao",
+          "short": "Orientações de busca de ajuda e urgência",
+          "supports": "UBS/CAPS, serviços de urgência e SAMU 192; distinção entre ajuda e risco imediato.",
+          "limits": "Informação de serviço; não é evidência de efeito de alimentos. Apoio CVV confirmado separadamente por ferramenta de linhas de ajuda.",
+          "verification": "Página oficial lida; não atribuído ano não identificado."
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "file": "02-comer-a-noite.md",
+      "currentScore": 71,
+      "currentClass": "C",
+      "estimatedScore": 85,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        17,
+        12,
+        13,
+        9,
+        4,
+        3,
+        4
+      ],
+      "intent": "Entender o comer noturno pelo contexto da rotina e distinguir uma refeição possível de um padrão que exige avaliação.",
+      "query": "comer à noite é falta de controle?",
+      "centralQuestion": "Quando comer à noite faz sentido e quando vale investigar?",
+      "mainAnswer": "O horário sozinho não mostra descontrole; fome, rotina, sono, quantidade, sofrimento e perda de controle precisam ser considerados.",
+      "uniqueValue": "Três cenários noturnos e uma observação breve que não é teste diagnóstico nem proibição de comer.",
+      "problems": [
+        "Referências sobre estudos e revisões sem documentos identificados.",
+        "Generalizações sobre cansaço, restrição e sono; risco de reproduzir tabela binária de fomes.",
+        "Resumo, conclusão e dez FAQs repetem o mesmo argumento; diferenciação insuficiente de #10 e #31."
+      ],
+      "proposedTitle": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+      "metaTitle": "Comer à noite: fome, rotina e quando buscar ajuda",
+      "metaDescription": "Comer à noite não indica descontrole por si só. Entenda como fome, sono e rotina entram no contexto e quais sinais merecem avaliação profissional.",
+      "excerpt": "Um lanche noturno pode fazer sentido. Veja como observar o contexto, o que as pesquisas sobre horários mostram e quando procurar apoio.",
+      "sourceKeys": [
+        "vujovic2022",
+        "liu2024",
+        "allison2010",
+        "nimh2024"
+      ],
+      "internalNumbers": [
+        10,
+        31,
+        7
+      ],
+      "relatedNumbers": [
+        10,
+        31,
+        7
+      ],
+      "cta": "Continuidade de leitura; nenhum convite comercial ou newsletter no corpo.",
+      "cannibalization": "#22 organiza situações noturnas e sinais de investigação; #10 responde sobre nutriente/ganho de peso; #31 compara experiências de fome; #7 aborda beliscar ao longo do dia. Sem fusão ou novo redirect.",
+      "humanChecks": [
+        "Validar o recorte clínico sem apresentar critérios históricos como teste atual.",
+        "Rever exemplos para trabalho em turnos e condições/medicações que afetem apetite e sono."
+      ],
+      "body": "## Comer à noite não define falta de controle\n\nJantar tarde, fazer um lanche antes de dormir ou comer depois de um treino não demonstram, por si só, um problema de comportamento alimentar. A pergunta útil é como esse momento se encaixa no dia e se existe sofrimento ou sensação de não conseguir escolher como agir.\n\nO horário pode importar para a saúde, mas não funciona como um julgamento da pessoa. Também não basta olhar o relógio para explicar fome, desconforto ou mudanças de peso.\n\n## Três situações que parecem iguais, mas pedem perguntas diferentes\n\n### Cheguei com fome depois de um dia sem pausa\n\nImagine alguém que almoçou pouco, não conseguiu fazer outra refeição e só chega em casa tarde. Nesse cenário ilustrativo, comer pode atender a uma necessidade de alimento. Tentar adiar mais a refeição para obedecer a uma regra de horário não resolve a falta de acesso durante o dia.\n\nVale observar se houve quantidade e oportunidades suficientes de comer, considerando trabalho, deslocamento e orçamento. Não é uma prescrição para fazer um número fixo de refeições.\n\n### Jantei cedo e ainda vou ficar acordada\n\nA fome pode reaparecer. Um lanche compatível com a rotina pode ser uma opção, sem necessidade de classificá-lo como fracasso. O que escolher e em que quantidade depende da fome, tolerância, condições de saúde e do restante da alimentação; não existe um lanche obrigatório para toda pessoa.\n\n### A noite virou um momento de sofrimento\n\nSe há repetidas tentativas frustradas de parar, sensação de perda de controle, compensações no dia seguinte ou prejuízo do sono, vale procurar avaliação. Isso pode acontecer com ou sem fome física. Não significa que o horário tenha causado sozinho o problema. [4]\n\n## O que a ciência sobre comer tarde realmente mostra?\n\nUm ensaio controlado comparou horários mais cedo e mais tarde mantendo a ingestão energética em adultos com sobrepeso ou obesidade. O horário tardio aumentou fome e alterou medidas de gasto energético. É um estudo mecanístico em condições específicas, não prova de que um lanche isolado cause ganho de peso no cotidiano. [1]\n\nUma revisão de ensaios sobre horários encontrou efeitos médios pequenos de algumas estratégias de distribuição alimentar sobre peso, com limitações de certeza e risco de viés. Não permite recomendar a toda pessoa parar de comer à mesma hora. [2]\n\nPortanto, nem “tudo à noite engorda” nem “horário nunca faz diferença” resumem a evidência. Se sua pergunta é especificamente sobre arroz, pão ou outros carboidratos no jantar, veja [Carboidrato à noite engorda?](https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional).\n\n## Como observar sem vigiar cada garfada\n\nSe isso não aumentar sua ansiedade, tente lembrar de uma situação recente:\n\n- Como foram as oportunidades de alimentação antes de chegar à noite?\n- O jantar foi suficiente e agradável para aquele dia?\n- Você estava com fome, buscando uma pausa, com sono ou vivendo várias dessas coisas juntas?\n- Depois de comer, houve conforto, desconforto ou sofrimento? Houve vontade de compensar?\n\nEssas perguntas são um recurso educativo, não uma escala validada. Não precisam virar registro permanente. Quando observar a comida aumenta medo ou controle rígido, é melhor discutir isso com um profissional.\n\nFome física e influência emocional podem coexistir; urgência e vontade de um alimento específico não fecham um diagnóstico. O texto [Fome Emocional ou Fome Física?](https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca) aprofunda essa distinção sem transformar pistas em prova.\n\n## Comer durante a noite não é automaticamente uma síndrome\n\nA síndrome do comer noturno é uma condição clínica descrita na literatura com padrão recorrente, aspectos de sono e sofrimento ou prejuízo. É diferente de simplesmente jantar tarde. Os critérios propostos por Allison e colaboradores são uma referência histórica para essa discussão, não um questionário para autodiagnóstico. [3]\n\nDespertar repetidamente para comer, acreditar que só consegue dormir depois de comer, ou encontrar sinais de alimentação sem lembrar do episódio merecem avaliação. A falta de lembrança pode exigir investigar problemas relacionados ao sono, e não deve ser tratada aqui como a mesma condição. Profissionais também avaliam medicamentos e outros fatores. [3]\n\nNão é necessário esperar atingir uma frequência ou quantidade específica lida na internet para pedir ajuda. Perda de controle, vômitos provocados, jejum compensatório e exercício punitivo são sinais para conversar com a equipe de saúde. [4]\n\n## Um próximo passo proporcional ao problema\n\nSe o obstáculo é uma rotina sem comida acessível, o primeiro ajuste pode ser organizar uma oportunidade real de refeição. Se a dificuldade são pequenos episódios repetidos em vários horários, há um recorte mais direto em [Como parar de beliscar o dia todo sem entrar em dieta restritiva](https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva).\n\nSe há sofrimento, alterações persistentes de sono, perda de controle ou dúvidas sobre uma condição de saúde, procurar nutricionista e, conforme a necessidade, avaliação médica ou psicológica é mais útil que impor uma nova proibição. O objetivo não precisa ser eliminar toda alimentação noturna, mas entender o que acontece e encontrar cuidado adequado.\n",
+      "recordId": "cmrmnrpjk0000of2rmucscj6g",
+      "preserved": {
+        "id": "cmrmnrpjk0000of2rmucscj6g",
+        "slug": "comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-08-03T07:00:02.325Z",
+        "editorialUpdatedAt": null,
+        "views": 8,
+        "category": {
+          "id": "cmqu0734c00002f2rcgtk37p0",
+          "name": "Nutrição, ansiedade e rotina emocional",
+          "slug": "nutricao-ansiedade-e-rotina-emocional"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        21,
+        16,
+        10,
+        12,
+        2,
+        4,
+        2,
+        4
+      ],
+      "proposedReferences": [
+        {
+          "key": "vujovic2022",
+          "author": "Vujović N, Piron MJ, Qian J, et al.",
+          "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+          "publication": "Cell Metabolism",
+          "year": 2022,
+          "doi": "10.1016/j.cmet.2022.09.007",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36198293/",
+          "short": "Ensaio controlado de horários alimentares",
+          "supports": "Efeitos mecanísticos do horário tardio sobre fome e gasto em adultos com sobrepeso/obesidade.",
+          "limits": "Condições experimentais e população específica; não mede ganho de gordura causado por um lanche isolado no cotidiano.",
+          "verification": "Abstract, desenho e DOI lidos no PubMed."
+        },
+        {
+          "key": "liu2024",
+          "author": "Liu HY, Eso AA, Cook N, et al.",
+          "title": "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis",
+          "publication": "JAMA Network Open, 7(11):e2442163",
+          "year": 2024,
+          "doi": "10.1001/jamanetworkopen.2024.42163",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11530941/",
+          "short": "Revisão de ensaios sobre horários e desfechos",
+          "supports": "Efeitos médios pequenos de algumas estratégias; incerteza clínica, heterogeneidade e risco de viés.",
+          "limits": "Não determina um horário-limite para todos nem explica individualmente sofrimento noturno.",
+          "verification": "Texto integral em PMC; resultados e risco de viés conferidos."
+        },
+        {
+          "key": "allison2010",
+          "author": "Allison KC, Lundgren JD, O’Reardon JP, et al.",
+          "title": "Proposed diagnostic criteria for night eating syndrome",
+          "publication": "International Journal of Eating Disorders, 43(3):241–247",
+          "year": 2010,
+          "doi": "10.1002/eat.20693",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531092/",
+          "short": "Proposta histórica de critérios de comer noturno",
+          "supports": "Padrão recorrente, consciência/recordação, sofrimento/prejuízo e exclusão de outras explicações.",
+          "limits": "Documento histórico; não apresentado como teste diagnóstico ou como texto atual integral do DSM/ICD.",
+          "verification": "Metadados e trechos primários indexados confirmados; abertura integral exibiu desafio de navegador. Conferência integral pela revisora permanece indicada."
+        },
+        {
+          "key": "nimh2024",
+          "author": "National Institute of Mental Health",
+          "title": "Eating Disorders: What You Need to Know",
+          "publication": "NIH Publication No. 24-MH-4901, revisado em 2024",
+          "year": 2024,
+          "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+          "short": "Informação institucional sobre transtornos alimentares",
+          "supports": "Sinais de perda de controle, restrição e compensação; necessidade de avaliação; ocorrência em diferentes corpos.",
+          "limits": "Material educativo, não escala de triagem. Não transferir telefones dos EUA ao público brasileiro.",
+          "verification": "Página institucional lida."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "file": "03-deficit-calorico.md",
+      "currentScore": 71,
+      "currentClass": "C",
+      "estimatedScore": 84,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        17,
+        12,
+        13,
+        8,
+        4,
+        3,
+        4
+      ],
+      "intent": "Explicar o mecanismo de déficit energético e como avaliar ajustes sem transformar estimativas em obrigação de controle numérico.",
+      "query": "como fazer déficit calórico sem contar calorias?",
+      "centralQuestion": "Como melhorar a rotina sem confundir qualidade alimentar com prova de déficit?",
+      "mainAnswer": "Déficit é diferença entre ingestão e gasto ao longo do tempo; pode haver ajustes sem contagem, mas saciedade e comida de boa qualidade não demonstram sozinhas essa diferença.",
+      "uniqueValue": "Um exemplo de substituição com limites explícitos e critérios de acompanhamento que separam bem-estar, adesão e tendência corporal.",
+      "problems": [
+        "Confunde melhorar qualidade/organização com produzir necessariamente déficit.",
+        "Doze blocos e FAQs repetem orientações gerais, com pouca resposta sobre acompanhamento sem obsessão.",
+        "Afirma vigência da Resolução CFN 856/2026 sem conferência primária suficiente; norma não sustenta fisiologia."
+      ],
+      "proposedTitle": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "metaTitle": "Déficit calórico sem obsessão: conceito e acompanhamento",
+      "metaDescription": "Entenda déficit energético, limites das estimativas e como avaliar ajustes de rotina sem confundir qualidade alimentar com perda de peso garantida.",
+      "excerpt": "Déficit energético não exige uma planilha para toda pessoa, mas melhorar a alimentação também não o garante. Entenda ajustes, limites e acompanhamento.",
+      "sourceKeys": [
+        "hall2012",
+        "nice2025",
+        "niddk-planner"
+      ],
+      "internalNumbers": [
+        12,
+        9,
+        4
+      ],
+      "relatedNumbers": [
+        12,
+        9,
+        4
+      ],
+      "cta": "Leitura do guia consolidado; sem promessa de plano/calculadora, consulta obrigatória comercial ou newsletter.",
+      "cannibalization": "Este é o mecanismo e o acompanhamento de ajustes energéticos. #9 explica por que planos rígidos podem não se sustentar; #4 organiza o cuidado amplo. Não recontar o guia completo nem restaurar o arquivado #20.",
+      "humanChecks": [
+        "Rever os exemplos para não sugerir déficit como objetivo universal.",
+        "Validar as orientações de acompanhamento sem estabelecer pesagem ou prazo obrigatório.",
+        "A afirmação normativa foi retirada por irrelevância ao argumento e falta de confirmação, sem concluir que a norma citada seja falsa."
+      ],
+      "body": "## Déficit calórico é um conceito, não um cardápio\n\nDéficit energético acontece quando a energia obtida pela alimentação fica abaixo da energia utilizada pelo organismo ao longo de um período. O corpo então recorre às suas reservas. Esse processo ajuda a explicar mudanças corporais, mas não determina sozinho como uma pessoa deve comer ou se perder peso é uma meta adequada. [1]\n\nNão existe um número de calorias deste artigo que sirva para todos. O objetivo é entender o mecanismo, reconhecer limites das estimativas e saber o que observar quando mudanças de rotina são discutidas com um profissional.\n\n## Comer melhor não comprova que existe déficit\n\nUma alimentação pode ganhar variedade, fibras e qualidade sem que a ingestão de energia diminua. Isso não transforma a melhora em erro. Acrescentar alimentos pode ser exatamente o cuidado necessário quando a alimentação está insuficiente.\n\nA diretriz NICE distingue melhorar a alimentação, com possíveis benefícios mesmo sem perda de peso, de uma abordagem cujo objetivo específico seja manter ingestão abaixo do gasto. A orientação é individualizada e considera condições de saúde e contexto. [2]\n\nPor exemplo: incluir azeite e castanhas pode ampliar as escolhas alimentares, mas esses alimentos também fornecem energia. Sentir mais saciedade ou deixar de consumir um produto específico não permite calcular automaticamente o balanço energético.\n\nPara organizar a composição de refeições sem transformar esta leitura em um cardápio, veja [Como montar um prato equilibrado sem complicar a alimentação](https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao).\n\n## Por que a conta não é uma previsão exata?\n\nFórmulas e aplicativos estimam consumo e gasto; não medem perfeitamente tudo o que acontece no corpo. Porções, registro dos alimentos e atividade cotidiana variam. Além disso, ingestão e gasto interagem: uma mudança pode ser acompanhada de outras respostas, e as necessidades não ficam idênticas durante todo o processo. [1]\n\nPor isso, uma meta calculada não garante uma perda fixa por semana. Uma mudança rápida na balança também não mede somente gordura: água e conteúdo intestinal, entre outros fatores, participam da variação. Interpretar uma tendência é diferente de julgar um dia isolado. [1]\n\nO planejador do NIDDK, por exemplo, é uma ferramenta para adultos e exclui menores de idade, gestantes e lactantes do seu público de uso. Nem uma ferramenta institucional substitui avaliação de saúde. Não há motivo para copiar o cálculo de outra pessoa. [3]\n\n## Um ajuste possível, com uma pergunta de acompanhamento\n\nImagine uma pessoa que costuma tomar uma bebida açucarada no almoço e deseja rever esse hábito. Em algumas ocasiões, trocar por água pode reduzir a energia daquela bebida. É um exemplo de substituição, não uma recomendação obrigatória para toda pessoa.\n\nIsso **não prova déficit no conjunto do dia**: outras escolhas podem mudar, a porção anterior pode ter sido diferente e o gasto também varia. A pergunta de acompanhamento é se o ajuste é viável, mantém alimentação suficiente e contribui para o objetivo combinado, sem aumentar fome ou sofrimento.\n\nSe o almoço já era pequeno e o problema é chegar exausta ao fim do dia, retirar mais comida pode piorar a rotina. Nesse caso, completar a refeição pode ser prioritário, mesmo que isso não crie déficit.\n\n## O que observar sem viver contando calorias\n\nA contagem pode ser uma ferramenta em alguns contextos; não precisa ser requisito para todos. É possível discutir com o profissional diferentes formas de acompanhar:\n\n- **Viabilidade:** a mudança cabe no orçamento, no trabalho e na convivência?\n- **Suficiência e bem-estar:** como ficam fome, energia, alimentação e relação com a comida?\n- **Objetivo corporal, quando indicado:** há uma tendência coerente em medidas acordadas com o profissional, considerando tempo e variações?\n\nOs dois primeiros itens ajudam a avaliar o cuidado e a adesão; não são testes de déficit. Se o objetivo não estiver sendo alcançado, isso pede revisão das estimativas e da estratégia, não cortes sucessivos por conta própria. Não é preciso se pesar diariamente nem registrar tudo para ler este artigo.\n\nA dificuldade com regras muito rígidas é tratada em [Por que dietas muito restritivas costumam falhar?](https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar).\n\n## Quando a busca por déficit deve dar lugar à avaliação\n\nMedo crescente de comer, necessidade de compensar refeições, isolamento social ou perda de controle merecem atenção, não uma meta energética mais apertada. Histórico de transtorno alimentar, condições clínicas, uso de medicamentos, gestação, lactação e fases de crescimento exigem cuidado específico. Uma orientação geral não define a indicação individual. [2, 3]\n\nSe os números tornam a alimentação uma fonte de sofrimento, converse com profissionais que possam avaliar saúde e comportamento alimentar. Déficit não é medida de disciplina nem sinônimo de saúde.\n\n## O próximo passo não precisa ser um corte maior\n\nEscolha uma dúvida concreta para levar à avaliação: “Minha alimentação é suficiente?”, “Esta mudança é viável?” ou “Como vamos acompanhar o objetivo?”. Para organizar alimentação, movimento e rotina em um plano mais amplo de cuidado, siga para o [guia de emagrecimento sustentável](https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento).\n\nEntender o balanço energético ajuda a abandonar explicações mágicas. Reconhecer os limites da conta ajuda a evitar que ela vire uma obrigação que domine a vida.\n",
+      "recordId": "cmrjqwlwt0000aq2r78mzx3nx",
+      "preserved": {
+        "id": "cmrjqwlwt0000aq2r78mzx3nx",
+        "slug": "como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-07-27T07:00:02.388Z",
+        "editorialUpdatedAt": null,
+        "views": 22,
+        "category": {
+          "id": "cmqpmlcgq00006n2r5gkjkwgy",
+          "name": "Emagrecimento sustentável",
+          "slug": "emagrecimento-sustentavel"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        20,
+        15,
+        9,
+        12,
+        5,
+        4,
+        2,
+        4
+      ],
+      "proposedReferences": [
+        {
+          "key": "hall2012",
+          "author": "Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR",
+          "title": "Energy balance and its components: implications for body weight regulation",
+          "publication": "American Journal of Clinical Nutrition, 95(4):989–994",
+          "year": 2012,
+          "doi": "10.3945/ajcn.112.036350",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+          "short": "Conceitos de balanço energético e interação de componentes",
+          "supports": "Sistema energético dinâmico e interdependente; limitações de uma conta estática para explicar alterações corporais.",
+          "limits": "Consenso de painel, não revisão sistemática. Declara apoio ILSI/ASN e ausência de revisão editorial convencional do periódico; não sustenta sozinho recomendações clínicas.",
+          "verification": "Metadados e trechos primários indexados; abertura integral encontrou desafio. Fonte já conferida no Lote 1, usada aqui para conceito, acompanhada de diretriz independente."
+        },
+        {
+          "key": "nice2025",
+          "author": "National Institute for Health and Care Excellence",
+          "title": "Overweight and obesity management (NG246) — Physical activity and diet",
+          "publication": "NICE Guideline NG246, seção 1.16 — Dietary approaches",
+          "year": 2025,
+          "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet",
+          "short": "Diretriz sobre abordagens alimentares individualizadas",
+          "supports": "Distingue melhora alimentar de déficit, considera comorbidades e apoio; baixa energia em contexto especializado e com transição.",
+          "limits": "Diretriz britânica; não é norma brasileira nem prescrição para o leitor. Não reproduzimos faixas calóricas como meta.",
+          "verification": "Recomendações de 2025 e PDF oficial consultados por trechos indexados; abertura direta devolveu 403. Revisora deve conferir a seção integral."
+        },
+        {
+          "key": "niddk-planner",
+          "author": "National Institute of Diabetes and Digestive and Kidney Diseases",
+          "title": "About the Body Weight Planner",
+          "publication": "NIDDK — informação de saúde; última revisão declarada: maio de 2017",
+          "year": 2017,
+          "url": "https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner",
+          "short": "Escopo e limites do planejador de peso",
+          "supports": "Ferramenta para adultos, excluindo menores, gestantes e lactantes; não substitui avaliação clínica.",
+          "limits": "Não valida estimativas para todas as populações nem foi executada para gerar plano neste trabalho.",
+          "verification": "Página institucional e data de revisão lidas."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "file": "04-dietas-restritivas.md",
+      "currentScore": 71,
+      "currentClass": "C",
+      "estimatedScore": 85,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        18,
+        12,
+        13,
+        8,
+        4,
+        3,
+        4
+      ],
+      "intent": "Explicar as dificuldades de manutenção de estratégias muito restritivas sem desqualificar toda intervenção alimentar ou restrição clínica.",
+      "query": "por que dietas restritivas são difíceis de manter?",
+      "centralQuestion": "O que pode tornar uma estratégia inviável e como distingui-la de uma restrição necessária?",
+      "mainAnswer": "Exigência do plano, respostas biológicas, ambiente e continuidade do suporte interagem; dificuldade não prova incapacidade pessoal nem fracasso inevitável de toda dieta.",
+      "uniqueValue": "Diferencia restrição extrema, déficit moderado, exclusão clínica e intervenção temporária acompanhada; inclui perguntas para negociar o plano.",
+      "problems": [
+        "Explicação repetida em culpa/rigidez sem integrar mecanismos biológicos citados.",
+        "Introdução generaliza o fracasso, embora restrições clínicas apareçam apenas no FAQ.",
+        "Numeração quebrada, referências sem identificação completa e recomendações que repetem o guia amplo."
+      ],
+      "proposedTitle": "Por que dietas muito restritivas costumam falhar?",
+      "metaTitle": "Dietas muito restritivas: por que são difíceis de manter?",
+      "metaDescription": "Entenda as dificuldades de manter dietas muito restritivas e a diferença entre corte extremo, restrição clínica e uma estratégia alimentar acompanhada.",
+      "excerpt": "Fome, regras difíceis e falta de suporte podem comprometer a continuidade. Isso não significa que toda restrição seja inadequada ou toda dieta fracasse.",
+      "sourceKeys": [
+        "hall-kahan2018",
+        "ge2020",
+        "nice2025"
+      ],
+      "internalNumbers": [
+        18,
+        3,
+        4
+      ],
+      "relatedNumbers": [
+        18,
+        4,
+        27
+      ],
+      "cta": "Perguntas para discutir com o profissional e continuidade ao guia; sem CTA comercial ou de newsletter.",
+      "cannibalization": "#9 responde à manutenção e aos tipos de restrição; #18 trata de mecanismo energético e estimativas; #4 de organização ampla; #27 da retomada depois de dificuldades. Não consolidar automaticamente.",
+      "humanChecks": [
+        "Rever a distinção entre restrição clínica e preferência sem sugerir reintrodução insegura.",
+        "Conferir proporcionalidade da explicação biológica e do resumo dos estudos."
+      ],
+      "body": "## A dificuldade pode estar no plano, mas não existe uma causa única\n\nUma estratégia que exige comer muito menos, evitar inúmeras situações e seguir regras inflexíveis pode ser difícil de manter. Isso não significa que toda dieta vá fracassar, que toda restrição seja prejudicial ou que a pessoa não consiga mudar hábitos.\n\nEm vez de perguntar apenas “por que não tive disciplina?”, vale investigar o que o plano exige, o que acontece com a fome e que suporte existe para a continuidade. Emagrecimento inicial e manutenção são problemas relacionados, mas diferentes.\n\n## Nem toda restrição significa a mesma coisa\n\n### Restrição extrema sem avaliação\n\nCortes muito grandes ou exclusões amplas feitos por conta própria podem comprometer a adequação da alimentação. A aparência de rigor não garante segurança, qualidade ou continuidade.\n\n### Déficit energético individualizado\n\nReduzir a energia em relação ao gasto, quando isso é indicado, não é o mesmo que eliminar grupos alimentares ou ignorar fome intensa. O mecanismo é explicado em [Como criar um déficit calórico sem cortar calorias obsessivamente](https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente).\n\n### Exclusão por uma necessidade clínica\n\nUma alergia ou uma condição como doença celíaca pode exigir cuidados específicos. “Ter flexibilidade” não significa se expor a um alimento contraindicado. As alternativas e a suficiência da alimentação precisam ser discutidas conforme a condição. [3]\n\n### Estratégia temporária supervisionada\n\nHá intervenções de baixa energia usadas em situações clínicas selecionadas. A NICE recomenda suporte especializado e planejamento da transição; elas não são um modelo de longo prazo para copiar de uma publicação. Isso não valida restrição extrema sem acompanhamento. [3]\n\n## Por que a manutenção pode ficar mais difícil?\n\nApós perda de peso, podem ocorrer mudanças que aumentam o apetite e reduzem necessidades de energia. Parte do gasto menor se relaciona a um corpo menor; também há adaptações que variam entre pessoas. Hall e Kahan discutem esses fatores junto de comportamento e ambiente, sem reduzir o reganho à vontade individual. [1]\n\nIsso não significa “metabolismo estragado” nem impossibilidade de manter mudanças. Significa que a mesma estratégia pode precisar de revisão e suporte continuado, em vez de apenas exigir mais esforço.\n\nOutro obstáculo é a exigência prática: um plano que só funciona quando há tempo de cozinhar tudo pode falhar em uma semana de turnos extras. Um cardápio que não considera preço ou disponibilidade pode deixar poucas opções. Esses exemplos ilustram problemas de execução; não são diagnóstico de uma causa biológica.\n\n## O que comparar dietas nos estudos nos ensina?\n\nUma revisão em rede de programas alimentares encontrou redução de peso em diferentes abordagens, com diferenças em geral pequenas entre elas e atenuação de muitos benefícios no acompanhamento de 12 meses. Médias de grupos não dizem que nenhuma pessoa mantém resultados, nem permitem escolher uma dieta universalmente superior. [2]\n\nUma intervenção pode funcionar para determinado objetivo e ainda ser inadequada para outra pessoa. O nome da dieta, sozinho, não responde sobre acompanhamento, preferências, doenças e continuidade.\n\n## Como reconhecer que o plano precisa de revisão\n\nObserve o impacto, não apenas se conseguiu cumprir todas as regras:\n\n- Você consegue fazer refeições suficientes e participar da rotina, respeitando necessidades clínicas?\n- A estratégia permite adaptar um dia de trabalho, uma viagem ou falta de determinado alimento?\n- Há fome difícil de manejar, medo de comer ou preocupação que ocupa grande parte do dia?\n- Existe uma orientação para a fase seguinte ou apenas um corte temporário sem retorno?\n\nUma mudança pontual no planejamento não exige punição. Se há jejum compensatório, vômitos provocados, exercício punitivo ou perda de controle, procure avaliação em vez de apertar o plano. Esses sinais não permitem um diagnóstico pela leitura.\n\nA diferença entre organização e uma rotina dominada por regras aparece também em [Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia](https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia).\n\n## O que levar à conversa com o profissional\n\nEm vez de abandonar sozinho uma orientação clínica ou repetir outra dieta da internet, descreva uma dificuldade concreta: “Tenho fome no turno da noite”, “Não consigo comprar esses alimentos” ou “O controle está me afastando de encontros”.\n\nPergunte qual é o objetivo de cada restrição, quais alternativas existem e como o acompanhamento será feito. Em uma intervenção temporária, pergunte sobre transição e manutenção. Se há uma exclusão necessária por diagnóstico, não a retire por conta própria.\n\n## Continuar o cuidado não exige começar outra dieta extrema\n\nA questão não é escolher entre controle total e ausência de orientação. É construir uma estratégia suficiente, compatível com a saúde e com condições de continuidade. Às vezes isso pede ajuste de refeições; em outros casos, uma avaliação mais ampla do tratamento.\n\nO [guia de emagrecimento sustentável](https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento) organiza alimentação, movimento e rotina sem prometer resultado. Aqui, a conclusão principal é outra: dificuldades de manutenção merecem investigação e apoio, não uma sentença de fracasso pessoal ou de toda intervenção alimentar.\n",
+      "recordId": "cmqzpmryo0000uf2rdwb9vq2q",
+      "preserved": {
+        "id": "cmqzpmryo0000uf2rdwb9vq2q",
+        "slug": "por-que-dietas-muito-restritivas-costumam-falhar",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-07-03T07:00:02.794Z",
+        "editorialUpdatedAt": null,
+        "views": 241,
+        "category": {
+          "id": "cmqpmlcgq00006n2r5gkjkwgy",
+          "name": "Emagrecimento sustentável",
+          "slug": "emagrecimento-sustentavel"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        21,
+        15,
+        9,
+        12,
+        6,
+        2,
+        2,
+        4
+      ],
+      "proposedReferences": [
+        {
+          "key": "hall-kahan2018",
+          "author": "Hall KD, Kahan S",
+          "title": "Maintenance of lost weight and long-term management of obesity",
+          "publication": "Medical Clinics of North America, 102(1):183–197",
+          "year": 2018,
+          "doi": "10.1016/j.mcna.2017.08.012",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764193/",
+          "short": "Revisão de manutenção de peso e suporte contínuo",
+          "supports": "Fatores biológicos, comportamentais e ambientais da manutenção; mudanças de apetite/gasto e apoio prolongado.",
+          "limits": "Revisão narrativa; mecanismos e trajetórias não preveem o resultado de cada indivíduo.",
+          "verification": "Registro e trechos primários indexados lidos; abertura direta exibiu desafio."
+        },
+        {
+          "key": "ge2020",
+          "author": "Ge L, Sadeghirad B, Ball GDC, et al.",
+          "title": "Comparison of dietary macronutrient patterns of 14 popular named dietary programmes for weight and cardiovascular risk factor reduction in adults: systematic review and network meta-analysis of randomised trials",
+          "publication": "BMJ, 369:m696",
+          "year": 2020,
+          "doi": "10.1136/bmj.m696",
+          "url": "https://www.bmj.com/content/369/bmj.m696",
+          "short": "Meta-análise em rede de programas alimentares",
+          "supports": "Diferentes estratégias podem reduzir peso; diferenças geralmente pequenas e atenuação de benefícios no acompanhamento.",
+          "limits": "Médias de grupos e limitações de certeza; não demonstra que toda dieta falha nem garante equivalência para cada pessoa.",
+          "verification": "Abstract e PDF primário indexados; abertura do site devolveu 403."
+        },
+        {
+          "key": "nice2025",
+          "author": "National Institute for Health and Care Excellence",
+          "title": "Overweight and obesity management (NG246) — Physical activity and diet",
+          "publication": "NICE Guideline NG246, seção 1.16 — Dietary approaches",
+          "year": 2025,
+          "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet",
+          "short": "Diretriz sobre abordagens alimentares individualizadas",
+          "supports": "Distingue melhora alimentar de déficit, considera comorbidades e apoio; baixa energia em contexto especializado e com transição.",
+          "limits": "Diretriz britânica; não é norma brasileira nem prescrição para o leitor. Não reproduzimos faixas calóricas como meta.",
+          "verification": "Recomendações de 2025 e PDF oficial consultados por trechos indexados; abertura direta devolveu 403. Revisora deve conferir a seção integral."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "file": "05-comer-por-emocao.md",
+      "currentScore": 71,
+      "currentClass": "C",
+      "estimatedScore": 84,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        17,
+        12,
+        13,
+        8,
+        4,
+        3,
+        4
+      ],
+      "intent": "Responder quando a influência emocional na alimentação pode ser cotidiana e quando o impacto merece cuidado.",
+      "query": "comer por emoção é normal ou preciso de ajuda?",
+      "centralQuestion": "O que diferencia uma experiência de conforto de um padrão que gera sofrimento?",
+      "mainAnswer": "A influência emocional não é um diagnóstico; contexto, intensidade, perda de controle e impacto importam mais que um episódio isolado ou uma frequência arbitrária.",
+      "uniqueValue": "Normalização sem banalização, com dois cenários e perguntas para decidir buscar apoio sem autodiagnóstico.",
+      "problems": [
+        "Lista de instituições, PubMed e Appetite sem documentos que sustentem afirmações.",
+        "Dois resumos e FAQ extenso repetem definições e instruções; mistura normalidade, sinais de fome, gatilhos e ansiedade.",
+        "Promessas amplas de benefícios e explicações de recompensa simplificadas sem ligação a evidências."
+      ],
+      "proposedTitle": "Comer por emoção é normal?",
+      "metaTitle": "Comer por emoção é normal? Quando merece atenção",
+      "metaDescription": "Emoções podem influenciar a alimentação sem indicar um transtorno. Veja por que contexto, intensidade, perda de controle e sofrimento merecem atenção.",
+      "excerpt": "Buscar conforto na comida não define um transtorno. Entenda o que observar no contexto e no impacto da experiência e quando procurar apoio.",
+      "sourceKeys": [
+        "reichenberger2020",
+        "guia2014",
+        "nimh2024"
+      ],
+      "internalNumbers": [
+        31,
+        5,
+        13
+      ],
+      "relatedNumbers": [
+        31,
+        5,
+        13
+      ],
+      "cta": "Apoio profissional quando há sofrimento, sem agendamento imposto nem captação de newsletter no corpo.",
+      "cannibalization": "Não repetir o guia de sinais #31, a investigação de gatilhos #5 nem o recorte de ansiedade #13. A pergunta exclusiva é normalidade, impacto e decisão de buscar ajuda.",
+      "humanChecks": [
+        "Validar linguagem que acolha sem minimizar perda de controle ou outras formas de sofrimento.",
+        "Confirmar que exemplos não sejam entendidos como teste diagnóstico ou ponto de corte por frequência."
+      ],
+      "body": "## Comer com influência das emoções pode acontecer\n\nComer um alimento afetivo depois de um dia difícil ou compartilhar uma refeição numa comemoração não identifica, por si só, um transtorno. Alimentação também envolve convivência, cultura e prazer. Isso não obriga você a sentir culpa por toda escolha que tenha uma dimensão emocional. [2]\n\nAo mesmo tempo, chamar algo de “normal” não significa ignorar sofrimento. A pergunta central é como essa experiência acontece e o que muda na sua vida, e não se você consegue eliminar qualquer emoção da alimentação.\n\n## O que a expressão “comer por emoção” descreve?\n\nEla pode descrever situações em que o estado emocional participa da vontade ou do modo de comer. Não é um diagnóstico e não explica toda a experiência de uma pessoa.\n\nA revisão de Reichenberger e colaboradores mostra que as respostas são variadas: emoções podem acompanhar aumento ou redução da ingestão, e questionários sobre alimentação emocional nem sempre correspondem ao comportamento observado. Não é possível concluir “estou comendo mais por causa da ansiedade” apenas por se identificar com uma lista. [1]\n\nTambém pode haver fome junto com emoção. Depois de muitas horas sem comer, alguém pode chegar ao jantar com necessidade de alimento e vontade de conforto. Uma necessidade não anula a outra. Para observar essas experiências sem uma classificação rígida, há uma explicação específica em [Fome Emocional ou Fome Física?](https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca).\n\n## Frequência sozinha não responde à pergunta\n\nPense em dois exemplos ilustrativos, não em modelos para se diagnosticar:\n\n**Uma sobremesa afetiva:** uma pessoa escolhe algo de que gosta após uma semana cansativa, aproveita a experiência e segue a rotina sem sofrimento. A presença de conforto não transforma automaticamente essa escolha em problema.\n\n**Uma experiência que preocupa:** outra pessoa relata episódios em que sente não conseguir parar, se isola e passa o dia seguinte tentando compensar. Esse impacto merece escuta e avaliação, mesmo que a pessoa não saiba nomear o que aconteceu. [3]\n\nA frequência ajuda a descrever um padrão, mas não existe uma quantidade de episódios deste artigo que separe pessoas “normais” das que merecem cuidado. Sofrimento e perda de liberdade nas escolhas importam; um episódio que preocupa já pode ser levado à consulta.\n\n## Quatro dimensões para conversar sobre o que acontece\n\n- **Contexto:** houve fome, uma comemoração, tensão, cansaço ou várias coisas juntas?\n- **Intensidade:** a experiência pareceu uma escolha possível ou houve sensação de perda de controle?\n- **Depois:** houve satisfação, incômodo, vergonha ou tentativa de compensar?\n- **Impacto:** isso afeta sono, trabalho, convívio, alimentação ou preocupação ao longo do dia?\n\nAs perguntas organizam uma conversa; não são escala validada e não precisam virar vigilância de cada refeição. Culpa também pode surgir de regras muito rígidas, sem provar excesso ou transtorno. Se a observação aumenta a preocupação, vale pedir ajuda em vez de registrar mais detalhes.\n\nQuando a dúvida é por que a vontade se repete numa situação específica, o assunto é aprofundado em [Por que eu como mesmo sem fome? Entenda os gatilhos alimentares](https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares).\n\n## Comer por emoção e compulsão não são sinônimos\n\nUm transtorno alimentar envolve avaliação de padrões, sofrimento e outros critérios; não é confirmado pelo alimento escolhido, pelo peso da pessoa ou por sentir culpa. Perda recorrente de controle, restrição intensa e compensações como vômitos provocados ou uso inadequado de laxantes são sinais para buscar avaliação. Transtornos podem ocorrer em diferentes corpos. [3]\n\nNão é necessário esperar ter certeza de um diagnóstico para conversar com profissionais. Também não se deve concluir que o problema seja “só emocional” e deixar de avaliar rotina alimentar ou outras condições.\n\n## O que pode ser um primeiro cuidado\n\nSe você percebe fome, não precisa conquistar permissão emocional para comer. Se a comida também oferece conforto, pode haver espaço para esse prazer e, ao mesmo tempo, para outras formas de apoio: companhia, descanso, conversa ou atendimento.\n\nEssas possibilidades não são técnicas para impedir alguém de comer. A intenção é ampliar cuidado, não obrigar uma pausa, exercício ou copo de água a substituir uma refeição. Dificuldades de acesso, tempo e recursos precisam entrar nessa conversa.\n\nSe a ansiedade é a preocupação principal, veja [Ansiedade e alimentação: como uma coisa influencia a outra](https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra). O tema ali não é estabelecer uma fronteira universal de normalidade.\n\n## Quando buscar ajuda\n\nProcure apoio quando houver sofrimento, medo de comer, perda de controle, compensações ou interferência na rotina. Nutricionista pode avaliar o contexto alimentar; avaliação psicológica e médica pode compor o cuidado conforme a necessidade. Não precisa resolver isso primeiro para merecer atendimento. [3]\n\nA resposta à pergunta do título é, portanto, proporcional: emoções podem participar de uma experiência alimentar cotidiana. Quando essa experiência machuca ou limita sua vida, ela merece cuidado, sem vergonha e sem diagnóstico pela internet.\n",
+      "recordId": "cmqi64r9c0000nr2r3khm5nst",
+      "preserved": {
+        "id": "cmqi64r9c0000nr2r3khm5nst",
+        "slug": "comer-por-emocao-e-normal",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-06-17T15:00:40.719Z",
+        "editorialUpdatedAt": null,
+        "views": 88,
+        "category": {
+          "id": "cmqi75nib0000er2rkj1eej0n",
+          "name": "Bem-Estar Nutricional",
+          "slug": "bem-estar-nutricional"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        22,
+        16,
+        9,
+        12,
+        2,
+        3,
+        3,
+        4
+      ],
+      "proposedReferences": [
+        {
+          "key": "reichenberger2020",
+          "author": "Reichenberger J, Schnepper R, Arend AK, Blechert J",
+          "title": "Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies",
+          "publication": "Proceedings of the Nutrition Society, 79(3):290–299",
+          "year": 2020,
+          "doi": "10.1017/S0029665120007004",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+          "short": "Revisão sobre heterogeneidade da alimentação emocional",
+          "supports": "Emoções e ingestão têm relações variáveis; autorrelato não equivale a medida direta do comportamento.",
+          "limits": "Revisão narrativa, sem um teste universal de normalidade ou causas de um episódio individual.",
+          "verification": "Texto integral em PMC lido."
+        },
+        {
+          "key": "guia2014",
+          "author": "Brasil. Ministério da Saúde",
+          "title": "Guia alimentar para a população brasileira",
+          "publication": "2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde",
+          "year": 2014,
+          "url": "https://www.icict.fiocruz.br/sites/www.icict.fiocruz.br/files/guia_alimentar_populacao_brasileira_2ed.pdf",
+          "short": "Guia oficial — ato de comer e contexto social",
+          "supports": "Alimentação inclui cultura, prazer, comensalidade e condições para comer; capítulos 1, 4 e 5.",
+          "limits": "Não valida um exercício de mindful eating nem um diagnóstico emocional. PDF hospedado em instituição pública Fiocruz; autoria é do Ministério da Saúde.",
+          "verification": "PDF institucional completo acessível. BVS teve timeout e alternativa gov.br redirecionou a login; escolhido espelho público que serviu o documento."
+        },
+        {
+          "key": "nimh2024",
+          "author": "National Institute of Mental Health",
+          "title": "Eating Disorders: What You Need to Know",
+          "publication": "NIH Publication No. 24-MH-4901, revisado em 2024",
+          "year": 2024,
+          "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+          "short": "Informação institucional sobre transtornos alimentares",
+          "supports": "Sinais de perda de controle, restrição e compensação; necessidade de avaliação; ocorrência em diferentes corpos.",
+          "limits": "Material educativo, não escala de triagem. Não transferir telefones dos EUA ao público brasileiro.",
+          "verification": "Página institucional lida."
+        }
+      ]
+    },
+    {
+      "number": 1,
+      "file": "06-alimentacao-consciente.md",
+      "currentScore": 74,
+      "currentClass": "C",
+      "estimatedScore": 86,
+      "estimatedClass": "B",
+      "points": [
+        23,
+        18,
+        12,
+        13,
+        9,
+        4,
+        3,
+        4
+      ],
+      "intent": "Definir alimentação consciente, seus limites e uma forma simples de experimentá-la, sem convertê-la em dieta ou regra de controle.",
+      "query": "o que é alimentação consciente e como praticar?",
+      "centralQuestion": "O que muda no modo de prestar atenção à refeição, e o que a prática não promete?",
+      "mainAnswer": "É atenção à experiência de comer com menor julgamento; não exige lentidão perfeita nem garante emagrecimento ou tratamento de compulsão.",
+      "uniqueValue": "Distingue conceito, ritmo e controle, apresenta evidência recente com resultados mistos e uma experiência educativa sem escala ou ponto de corte.",
+      "problems": [
+        "Invoca revisões e benefícios sem bibliografia identificável.",
+        "Escala numérica pode virar regra para merecer comida; contraste automático/consciente e físico/emocional excessivamente binário.",
+        "Introdução com entidade HTML duplicada e texto/alt promocional sobre benefícios; revisar imagens/legendas antes de eventual aplicação."
+      ],
+      "proposedTitle": "Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+      "metaTitle": "Alimentação consciente: prática, evidências e limites",
+      "metaDescription": "Conheça o mindful eating, sua diferença de alimentação intuitiva e como experimentar atenção à refeição sem regras rígidas ou promessa de emagrecimento.",
+      "excerpt": "Alimentação consciente é atenção à experiência de comer. Entenda a proposta, os limites das pesquisas e como experimentar sem transformar cuidado em controle.",
+      "sourceKeys": [
+        "warren2017",
+        "kao2025",
+        "grider2021",
+        "guia2014",
+        "nccih2022"
+      ],
+      "internalNumbers": [
+        19,
+        31,
+        3
+      ],
+      "relatedNumbers": [
+        19,
+        31,
+        3
+      ],
+      "cta": "Leitura prática de #19; sem promessa de resultado, consulta obrigatória ou newsletter.",
+      "cannibalization": "#1 define e delimita a abordagem; #19 trata da aplicação em rotina corrida; #31 da leitura de sinais; #3 da relação ampla com alimentação. O exercício aqui é inicial, sem duplicar uma rotina inteira de técnicas.",
+      "humanChecks": [
+        "Conferir interpretação da meta-análise recente, inclusive resultados não significativos para comer emocional/compulsão.",
+        "Validar limites para quem não percebe sinais internos ou sente maior ansiedade ao observá-los.",
+        "Rever capa, alt e infográficos antigos em futura aplicação: não conservar automaticamente escalas ou promessas que o corpo revisado abandonou."
+      ],
+      "body": "## O que é alimentação consciente?\n\nAlimentação consciente, ou mindful eating, é prestar atenção à experiência de comer com curiosidade e menor julgamento. Isso pode incluir sabor, textura, fome, satisfação, pensamentos e condições da refeição. O objetivo não é realizar uma refeição perfeita nem provar que você tem autocontrole. [1]\n\nVocê pode notar que está com pressa, que gosta de uma preparação ou que já está confortável. Também pode perceber uma distração e voltar à refeição. Nenhuma dessas observações obriga a comer menos ou a adiar comida.\n\n## Não é a mesma coisa que comer devagar ou seguir uma dieta\n\n**Comer devagar** descreve um ritmo. Pode abrir espaço para perceber a refeição, mas contar mastigações ou prolongar cada garfada não é requisito para atenção plena.\n\n**Alimentação consciente** focaliza a experiência de comer e a maneira de observá-la. Não define, por si só, quantidade de calorias ou alimentos permitidos.\n\n**Alimentação intuitiva** é uma abordagem mais ampla sobre relação com comida e corpo, satisfação e sinais internos. Há pontos de encontro com mindful eating, mas os conceitos e os programas usados nos estudos não são intercambiáveis. [1]\n\n**Controle rígido** é outra coisa: transformar uma sensação ou uma pausa em regra que determina se você “pode” comer. Perceber fome e satisfação não precisa virar um novo sistema de proibições.\n\n## Quais benefícios têm apoio — e com quais limites?\n\nUma meta-análise recente de intervenções baseadas em mindfulness encontrou melhora em alguns indicadores, como percepção de saciedade e resposta a estímulos externos. Entretanto, os efeitos agrupados sobre comer emocional e compulsão não foram estatisticamente significativos. Havia intervenções diferentes, pouco acompanhamento prolongado e ausência de avaliação formal da certeza pelo GRADE. Isso não sustenta uma solução universal. [2]\n\nUma revisão sistemática sobre consumo alimentar também apontou limites para conclusões fortes sobre mudanças de ingestão e qualidade da dieta. Resultados em um desfecho ou população não devem ser transferidos automaticamente a outros. [3]\n\nAssim, é mais responsável apresentar a prática como uma possibilidade de observação e educação alimentar. Não como técnica que garante emagrecimento, elimina ansiedade ou trata um transtorno por conta própria. Um exercício curto de leitura não equivale aos programas acompanhados investigados nos estudos.\n\n## Uma experiência simples, sem precisar acertar\n\nSe for confortável para você, escolha um trecho de uma refeição:\n\n1. **Note o contexto.** Você está sentada, andando, acompanhada ou com pouco tempo? Há algo possível de ajustar sem tornar a refeição inviável?\n2. **Perceba um detalhe.** Pode ser a temperatura, a textura ou o sabor de uma garfada. Não é preciso observar tudo nem desligar o mundo inteiro.\n3. **Observe o conforto.** A fome mudou? A comida está agradável? Você precisa de mais, quer continuar pelo prazer ou já está satisfeita? Essas perguntas não têm uma resposta correta obrigatória.\n4. **Continue a refeição.** Se a atenção se dispersar, você pode retomá-la ou simplesmente seguir. A experiência não foi perdida por causa de uma distração.\n\nEsse é um exemplo educativo, não protocolo clínico validado, teste de fome ou estratégia garantida para reduzir quantidade. Não use uma escala ou nota para decidir se merece comer. Você pode precisar de alimentação planejada mesmo quando os sinais internos estão pouco claros.\n\nPara adaptações de tempo e ambiente, siga para [Como comer com mais atenção mesmo na rotina corrida](https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida). Não é necessário acrescentar várias técnicas de uma vez.\n\n## Atenção também inclui as condições para comer\n\nAcesso a comida, intervalo de trabalho, companhia e possibilidade de sentar importam. O Guia Alimentar brasileiro trata do ato de comer e do contexto social, além da composição dos alimentos. A prática não deve responsabilizar individualmente quem não tem tempo, segurança ou uma refeição disponível. [4]\n\nUma pausa não resolve falta de alimento. Uma comida rápida não representa fracasso. Em certas rotinas, organizar uma oportunidade suficiente para comer é mais urgente que escolher a melhor técnica de atenção.\n\nTambém não é necessário separar perfeitamente emoção e fome. Elas podem coexistir, como explica [Fome Emocional ou Fome Física?](https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca).\n\n## Quando adaptar ou pedir apoio\n\nSe observar o corpo aumenta ansiedade, vigilância ou medo de comer, interromper o exercício e pedir orientação é uma opção. Nem toda prática de mindfulness é adequada ou confortável para todas as pessoas. O NCCIH orienta não usar essas práticas para substituir ou adiar cuidados de saúde. [5]\n\nEm transtornos alimentares, diabetes e outras condições que exigem organização específica, confiar apenas numa leitura imediata de fome pode não ser suficiente. Não abandone o planejamento terapêutico para seguir dicas gerais. Leve dificuldades de percepção ou sofrimento à equipe que acompanha você.\n\nA ideia de uma alimentação mais livre de julgamentos, que ainda respeita necessidades clínicas, é desenvolvida em [Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia](https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia).\n\n## O que vale levar desta prática\n\nO aprendizado pode ser perceber um sabor ou reconhecer que o almoço precisa de uma pausa mais viável. Não precisa resultar em menor porção ou mudança de peso. Alimentação consciente perde seu propósito quando vira outra cobrança; pode ser uma ferramenta entre outras, respeitando contexto, limites e cuidado profissional quando necessário.\n",
+      "recordId": "cmqfndz120000qx2revual4yx",
+      "preserved": {
+        "id": "cmqfndz120000qx2revual4yx",
+        "slug": "alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+        "status": "PUBLISHED",
+        "publishedAt": "2026-06-15T23:44:55.526Z",
+        "editorialUpdatedAt": null,
+        "views": 87,
+        "category": {
+          "id": "cmqa0qawu0000ee2rgo116y47",
+          "name": "Nutrição Comportamental",
+          "slug": "nutricao-comportamental"
+        }
+      },
+      "status": "PENDENTE DE REVISÃO HUMANA",
+      "currentPoints": [
+        23,
+        17,
+        11,
+        12,
+        1,
+        4,
+        2,
+        4
+      ],
+      "proposedReferences": [
+        {
+          "key": "warren2017",
+          "author": "Warren JM, Smith N, Ashwell M",
+          "title": "A structured literature review on the role of mindfulness, mindful eating and intuitive eating in changing eating behaviours: effectiveness and associated potential mechanisms",
+          "publication": "Nutrition Research Reviews, 30(2):272–283",
+          "year": 2017,
+          "doi": "10.1017/S0954422417000154",
+          "url": "https://www.cambridge.org/core/journals/nutrition-research-reviews/article/structured-literature-review-on-the-role-of-mindfulness-mindful-eating-and-intuitive-eating-in-changing-eating-behaviours-effectiveness-and-associated-potential-mechanisms/351A3D01E43F49CC9794756BC950EFFC",
+          "short": "Revisão conceitual de mindful/intuitive eating",
+          "supports": "Definições e distinção entre abordagens de atenção e alimentação intuitiva.",
+          "limits": "Revisão estruturada declaradamente não sistemática, sem avaliação rigorosa da certeza; financiamento Mondelez declarado. Usada para conceitos, não para provar eficácia.",
+          "verification": "Texto do periódico lido; DOI, metodologia e financiamento conferidos."
+        },
+        {
+          "key": "kao2025",
+          "author": "Kao TSA, Ling J, Alanazi M, et al.",
+          "title": "Effects of mindfulness-based interventions on obesogenic eating behaviors: A systematic review and meta-analysis",
+          "publication": "Obesity Reviews, 26(3):e13860; publicação online em 03/11/2024",
+          "year": 2025,
+          "doi": "10.1111/obr.13860",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11791380/",
+          "short": "Meta-análise de mindfulness e comportamentos alimentares",
+          "supports": "Resultados favoráveis em alguns indicadores; efeitos agrupados não significativos para comer emocional/compulsão e ausência de GRADE formal.",
+          "limits": "Intervenções diferentes, pouco seguimento e população heterogênea; não valida emagrecimento garantido ou tratamento isolado.",
+          "verification": "Texto integral em PMC, resultados/discussão e DOI conferidos; ano do volume 2025 separado do online 2024."
+        },
+        {
+          "key": "grider2021",
+          "author": "Grider HS, Douglas SM, Raynor HA",
+          "title": "The Influence of Mindful Eating and/or Intuitive Eating Approaches on Dietary Intake: A Systematic Review",
+          "publication": "Journal of the Academy of Nutrition and Dietetics, 121(4):709–727.e1",
+          "year": 2021,
+          "doi": "10.1016/j.jand.2020.10.019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33279464/",
+          "short": "Revisão sistemática sobre consumo alimentar",
+          "supports": "Limites para conclusões fortes sobre efeitos de mindful/intuitive eating na ingestão e qualidade alimentar.",
+          "limits": "Adultos e critérios de exclusão específicos; não extrapolar para transtornos alimentares ou qualquer condição clínica.",
+          "verification": "Abstract primário indexado e identificação bibliográfica conferidos; abertura direta do PubMed oscilou/mostrou página incompleta."
+        },
+        {
+          "key": "guia2014",
+          "author": "Brasil. Ministério da Saúde",
+          "title": "Guia alimentar para a população brasileira",
+          "publication": "2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde",
+          "year": 2014,
+          "url": "https://www.icict.fiocruz.br/sites/www.icict.fiocruz.br/files/guia_alimentar_populacao_brasileira_2ed.pdf",
+          "short": "Guia oficial — ato de comer e contexto social",
+          "supports": "Alimentação inclui cultura, prazer, comensalidade e condições para comer; capítulos 1, 4 e 5.",
+          "limits": "Não valida um exercício de mindful eating nem um diagnóstico emocional. PDF hospedado em instituição pública Fiocruz; autoria é do Ministério da Saúde.",
+          "verification": "PDF institucional completo acessível. BVS teve timeout e alternativa gov.br redirecionou a login; escolhido espelho público que serviu o documento."
+        },
+        {
+          "key": "nccih2022",
+          "author": "National Center for Complementary and Integrative Health",
+          "title": "Meditation and Mindfulness: Effectiveness and Safety",
+          "publication": "NCCIH — informação de saúde; página menciona revisão da publicação de 2022",
+          "year": "s.d.",
+          "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety",
+          "short": "Segurança e limites de práticas de mindfulness",
+          "supports": "Não substituir cuidados convencionais nem adiar procura de atendimento por usar mindfulness.",
+          "limits": "Documento sobre mindfulness em geral, não prova da eficácia ou segurança de todo exercício alimentar.",
+          "verification": "Página institucional lida; não se atribuiu data de atualização da página sem confirmação."
+        }
+      ]
+    }
+  ]
+}

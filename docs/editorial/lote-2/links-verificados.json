@@ -1,0 +1,364 @@
+{
+  "capturedAt": "2026-11-08T16:09:54.867Z",
+  "mode": "Public GET only; no browser JS or view counters/forms/CMS actions",
+  "results": [
+    {
+      "type": "internal",
+      "number": 13,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 2,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 26,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 10,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 31,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 7,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 12,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 9,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 4,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 18,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 3,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 27,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 5,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "internal",
+      "number": 19,
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "author",
+      "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false
+    },
+    {
+      "type": "reference",
+      "key": "who-depression2026",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "status": 200,
+      "finalUrl": "https://www.who.int/news-room/fact-sheets/detail/depression",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "firth2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6455094/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6455094/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "singh2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10579187/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10579187/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "ms-suicidio",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao",
+      "status": 200,
+      "finalUrl": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao",
+      "contentType": "text/html;charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "vujovic2022",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36198293/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/36198293/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "liu2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11530941/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11530941/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "allison2010",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531092/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4531092/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "nimh2024",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "contentType": "text/html; charset=UTF-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "hall2012",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "nice2025",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet",
+      "status": 200,
+      "finalUrl": "https://www.nice.org.uk/guidance/ng246/chapter/Physical-activity-and-diet",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "niddk-planner",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner",
+      "status": 200,
+      "finalUrl": "https://www.niddk.nih.gov/health-information/weight-management/body-weight-planner",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "hall-kahan2018",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764193/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764193/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "ge2020",
+      "url": "https://www.bmj.com/content/369/bmj.m696",
+      "status": 403,
+      "finalUrl": "https://www.bmj.com/content/369/bmj.m696",
+      "contentType": "text/html; charset=UTF-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "reichenberger2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7663318/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "guia2014",
+      "url": "https://www.icict.fiocruz.br/sites/www.icict.fiocruz.br/files/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "status": 200,
+      "finalUrl": "https://www.icict.fiocruz.br/sites/www.icict.fiocruz.br/files/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "contentType": "application/pdf",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "warren2017",
+      "url": "https://www.cambridge.org/core/journals/nutrition-research-reviews/article/structured-literature-review-on-the-role-of-mindfulness-mindful-eating-and-intuitive-eating-in-changing-eating-behaviours-effectiveness-and-associated-potential-mechanisms/351A3D01E43F49CC9794756BC950EFFC",
+      "status": 429,
+      "finalUrl": "https://www.cambridge.org/core/journals/nutrition-research-reviews/article/structured-literature-review-on-the-role-of-mindfulness-mindful-eating-and-intuitive-eating-in-changing-eating-behaviours-effectiveness-and-associated-potential-mechanisms/351A3D01E43F49CC9794756BC950EFFC",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "kao2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11791380/",
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11791380/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "grider2021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33279464/",
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/33279464/",
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    },
+    {
+      "type": "reference",
+      "key": "nccih2022",
+      "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety",
+      "status": 200,
+      "finalUrl": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety",
+      "contentType": "text/html",
+      "location": null,
+      "challengeOrLogin": false,
+      "note": "GET reachability only, not clinical or full-text validation"
+    }
+  ]
+}

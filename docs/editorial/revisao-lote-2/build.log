@@ -1,0 +1,93 @@
+
+> nutricao-em-movimento@0.1.0 build
+> prisma generate && next build
+
+
+✔ Generated Prisma Client (v7.10.1) to .\node_modules\@prisma\client in 75ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+
+   ▲ Next.js 15.5.29
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.7s
+   Linting and checking validity of types ...
+
+./src/app/administracao/seguranca/page.tsx
+100:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/admin/AdminLayout.tsx
+3:10  Warning: 'destroySession' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/37) ...
+   Generating static pages (9/37) 
+   Generating static pages (18/37) 
+   Generating static pages (27/37) 
+ ✓ Generating static pages (37/37)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS  Revalidate  Expire
+┌ ○ /                                      175 B         103 kB
+├ ○ /_not-found                            175 B         103 kB
+├ ƒ /administracao                         175 B         106 kB
+├ ƒ /administracao/artigos                 433 B         107 kB
+├ ƒ /administracao/artigos/[id]/editar   3.18 kB         124 kB
+├ ƒ /administracao/artigos/novo          3.07 kB         124 kB
+├ ƒ /administracao/calendario              175 B         106 kB
+├ ƒ /administracao/categorias              176 B         106 kB
+├ ƒ /administracao/contatos                175 B         106 kB
+├ ƒ /administracao/contatos/[id]           175 B         106 kB
+├ ƒ /administracao/home                    176 B         106 kB
+├ ○ /administracao/logout                  175 B         103 kB
+├ ƒ /administracao/newsletter              176 B         106 kB
+├ ƒ /administracao/nutricionista         1.48 kB         108 kB
+├ ƒ /administracao/seguranca               176 B         106 kB
+├ ƒ /api/admin/newsletter/export           175 B         103 kB
+├ ƒ /api/admin/posts/[id]/delete           175 B         103 kB
+├ ƒ /api/cron/publish-scheduled-posts      175 B         103 kB
+├ ƒ /api/newsletter/confirm                175 B         103 kB
+├ ƒ /api/posts/[id]/view                   175 B         103 kB
+├ ƒ /api/upload/image                      175 B         103 kB
+├ ○ /apple-icon                            175 B         103 kB
+├ ƒ /feed.xml                              175 B         103 kB
+├ ○ /icon                                  175 B         103 kB
+├ ƒ /login                                 175 B         103 kB
+├ ƒ /login/2fa                             175 B         103 kB
+├ ○ /manifest.webmanifest                  175 B         103 kB
+├ ƒ /pt                                  2.73 kB         113 kB
+├ ○ /pt/artigos                          5.03 kB         121 kB          1h      1y
+├ ƒ /pt/artigos/[slug]                    1.4 kB         111 kB
+├ ○ /pt/autora/weverlyn-alves              211 B         116 kB          1h      1y
+├ ○ /pt/contato                          5.61 kB         116 kB
+├ ○ /pt/disclaimer                       1.23 kB         111 kB
+├ ○ /pt/politica-de-cookies              1.23 kB         111 kB
+├ ○ /pt/politica-de-privacidade          1.23 kB         111 kB
+├ ○ /pt/politica-editorial               1.23 kB         111 kB
+├ ○ /pt/sobre                              211 B         116 kB
+├ ○ /pt/termos-de-uso                    1.23 kB         111 kB
+├ ○ /robots.txt                            175 B         103 kB
+└ ○ /sitemap.xml                           175 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/1255-b84741b894bb9354.js      46.6 kB
+  ├ chunks/4bd1b696-f785427dddbba9fb.js  54.2 kB
+  └ other shared chunks (total)             2 kB
+
+
+ƒ Middleware                             34.6 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+npm notice
+npm notice New minor version of npm available! 11.11.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

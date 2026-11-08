@@ -1,0 +1,11 @@
+﻿{
+    "feed":  {
+                 "error":  "Exceção ao chamar \"LoadXml\" com \"1\" argumento(s): \"Erro durante a análise de EntityName. Linha 4, posição 22.\"",
+                 "wellFormed":  false
+             },
+    "checkedAt":  "2026-11-08T19:45:14.4937023Z",
+    "sitemap":  {
+                    "count":  40,
+                    "wellFormed":  true
+                }
+}

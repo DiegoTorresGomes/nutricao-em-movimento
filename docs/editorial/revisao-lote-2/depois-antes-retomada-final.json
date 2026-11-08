@@ -1,0 +1,36 @@
+{
+  "state": "INTERRUPTED_SNAPSHOT_DIVERGENCE",
+  "checkedAt": "2026-11-08T19:27:12.403Z",
+  "writeCount": 0,
+  "appliedCount": 0,
+  "totalProposals": 6,
+  "noDatabaseWritesByThisRun": true,
+  "originalSnapshotPreserved": true,
+  "approvedFilesUnchanged": true,
+  "all31RecordsUnchangedSinceOriginalSnapshot": false,
+  "editorialFieldsUnchangedSinceOriginalSnapshot": true,
+  "outsideBatchUnchanged": true,
+  "changesObservedBeforeApplication": [
+    {
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "number": 18,
+      "title": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "fields": [
+        "views"
+      ],
+      "values": {
+        "views": {
+          "before": 22,
+          "current": 23
+        }
+      },
+      "inBatch": true
+    }
+  ],
+  "removed": [],
+  "visualApprovalReceived": true,
+  "visualApprovalPersisted": false,
+  "postApplicationAuditPerformed": false,
+  "previousInterruptionEvidence": "historico-interrupcao-inicial.json",
+  "evidence": "preflight-retomada.json"
+}

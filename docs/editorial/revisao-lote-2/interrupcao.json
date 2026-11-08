@@ -1,0 +1,39 @@
+{
+  "state": "INTERRUPTED_BEFORE_ANY_DATABASE_WRITE",
+  "createdAt": "2026-11-08T16:40:14.229Z",
+  "reason": "Unexpected CMS compatibility regression: approved bodies conflict with required author-note and newsletter/consultation CTA heuristics. User explicitly required stopping on unexpected incompatibility and prohibited rewriting approved text or structural improvisation.",
+  "newlyBlocked": [
+    30,
+    22,
+    18,
+    9
+  ],
+  "preexistingIssues": [
+    {
+      "number": 2,
+      "missing": [
+        "SEO Title",
+        "SEO Description",
+        "Palavra-chave principal",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ]
+    },
+    {
+      "number": 1,
+      "missing": [
+        "SEO Title",
+        "SEO Description",
+        "Palavra-chave principal",
+        "CTA newsletter ou consulta",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ]
+    }
+  ],
+  "writeCount": 0,
+  "rollbackNeeded": false,
+  "permittedNextActions": "Read-only verification and documentation only; no mutation unless incompatibility is resolved in a separately authorized step."
+}

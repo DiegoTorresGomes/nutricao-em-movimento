@@ -1,0 +1,25 @@
+✔ only monotonic views are dynamic; every other field and decreases abort (9.5438ms)
+✔ scheduledAt corruption rolls back the transaction; no protected field is supplied to update (126.9182ms)
+✔ technical adaptation preserves bold, safe links, ordered and unordered lists (2.1281ms)
+✔ references separated by blank lines retain a single numbered list (0.2373ms)
+✔ unapproved structures and unsafe links stop preparation (4.8203ms)
+✔ approved package matches every Markdown body and reference registry (9.8831ms)
+✔ interruption refuses application before any database access (0.7253ms)
+✔ static previews retain the approved rendered bodies and do not record approval (14.2691ms)
+✔ preview server serves fixtures and CSS, refuses writes and private project files (194.4197ms)
+✔ A: canonical template author satisfies authorship without a body biography (2.3446ms)
+✔ body words cannot replace an identified canonical author (0.4023ms)
+✔ B: absent commercial CTA and related links are recommendations, not blockers (0.2868ms)
+✔ C: editorial links and valid CTA blocks are recognized without inserting content (1.3779ms)
+✔ D: visual review and preview timestamps remain real, unmodified inputs (0.9639ms)
+✔ E: missing real content, author, category and metadata still block (0.5364ms)
+✔ focus keyword is optional internal guidance and never rewrites title, slug or body (0.6447ms)
+✔ six approved Lote 2 proposals: four pass, two keep only visual blockers; no mutation (41.3209ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 509.2303

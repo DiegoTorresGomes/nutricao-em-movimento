@@ -1,0 +1,183 @@
+{
+  "checkedAt": "2026-11-08T19:56:17.695Z",
+  "noDeployPerformed": true,
+  "responses": [
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "cacheControl": null,
+      "nextCache": null,
+      "brandAmpersandUnescaped": true,
+      "batch": [
+        {
+          "number": 30,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 22,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 18,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 9,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 2,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 1,
+          "slugPresent": true,
+          "newExcerptPresent": true,
+          "editorialTimestampPresent": false
+        }
+      ]
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+      "nextCache": "HIT",
+      "batch": [
+        {
+          "number": 30,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 22,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 18,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 9,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 2,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 1,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        }
+      ]
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+      "nextCache": "HIT",
+      "batch": [
+        {
+          "number": 30,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 22,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 18,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 9,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 2,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 1,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        }
+      ]
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+      "nextCache": "HIT",
+      "batch": [
+        {
+          "number": 30,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 22,
+          "slugPresent": true,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 18,
+          "slugPresent": false,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 9,
+          "slugPresent": false,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 2,
+          "slugPresent": false,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        },
+        {
+          "number": 1,
+          "slugPresent": false,
+          "newExcerptPresent": false,
+          "editorialTimestampPresent": false
+        }
+      ]
+    }
+  ]
+}

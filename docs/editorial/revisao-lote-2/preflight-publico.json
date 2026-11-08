@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-08T16:37:18.513Z",
+  "internalDestinations": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": 200
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": 200
+    }
+  ],
+  "images": [
+    {
+      "number": 30,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "number": 22,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "number": 18,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "number": 9,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "number": 2,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781706209/nutricao-em-movimento/articles/hrqkteju3di5xltpkfqx.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "number": 1,
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781554049/nutricao-em-movimento/articles/ero5ec8h99weqymqorv8.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "noJavaScriptOrViewsCalled": true
+}

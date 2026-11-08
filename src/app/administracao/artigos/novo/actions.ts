@@ -145,6 +145,7 @@ export async function createPostAction(
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
   revalidatePath("/pt/sobre");
+  revalidatePath("/pt/autora/weverlyn-alves");
   revalidatePath(`/pt/artigos/${slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");

@@ -1,0 +1,18 @@
+
+> nutricao-em-movimento@0.1.0 lint
+> eslint
+
+
+C:\Users\Diego Torres\OneDrive\PESSOAL\PROJETOS\BlogNutricao\nutricao-em-movimento\src\app\administracao\seguranca\page.tsx
+  100:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Diego Torres\OneDrive\PESSOAL\PROJETOS\BlogNutricao\nutricao-em-movimento\src\components\admin\AdminLayout.tsx
+  3:10  warning  'destroySession' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+npm notice
+npm notice New minor version of npm available! 11.11.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

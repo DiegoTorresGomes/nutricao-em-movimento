@@ -1,0 +1,41 @@
+{
+  "node": "v24.14.1",
+  "results": [
+    {
+      "name": "prisma-validate",
+      "command": "npx --no-install prisma validate",
+      "startedAt": "2026-11-08T19:38:27.402Z",
+      "exitCode": 0
+    },
+    {
+      "name": "prisma-generate",
+      "command": "npx --no-install prisma generate",
+      "startedAt": "2026-11-08T19:38:28.958Z",
+      "exitCode": 0
+    },
+    {
+      "name": "pacote-testes",
+      "command": "node --import tsx --test scripts/editorial-lote2.test.ts scripts/editorial-validator.test.ts scripts/editorial-preview.test.ts scripts/editorial-lote2-guards.test.ts",
+      "startedAt": "2026-11-08T19:38:30.651Z",
+      "exitCode": 0
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "startedAt": "2026-11-08T19:38:31.274Z",
+      "exitCode": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npx --no-install tsc --noEmit",
+      "startedAt": "2026-11-08T19:38:35.157Z",
+      "exitCode": 0
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "startedAt": "2026-11-08T19:38:37.528Z",
+      "exitCode": 0
+    }
+  ]
+}

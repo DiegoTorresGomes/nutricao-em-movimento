@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-11-08T16:38:29.726Z",
+  "method": "Existing CMS validator on before and proposed records; no database changes",
+  "checks": [
+    {
+      "number": 30,
+      "beforeCanPublish": true,
+      "beforeMissing": [],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "Sobre a autora",
+        "CTA newsletter ou consulta"
+      ]
+    },
+    {
+      "number": 22,
+      "beforeCanPublish": true,
+      "beforeMissing": [],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "CTA newsletter ou consulta"
+      ]
+    },
+    {
+      "number": 18,
+      "beforeCanPublish": true,
+      "beforeMissing": [],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "Sobre a autora",
+        "CTA newsletter ou consulta"
+      ]
+    },
+    {
+      "number": 9,
+      "beforeCanPublish": true,
+      "beforeMissing": [],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "Sobre a autora",
+        "CTA newsletter ou consulta"
+      ]
+    },
+    {
+      "number": 2,
+      "beforeCanPublish": false,
+      "beforeMissing": [
+        "SEO Title",
+        "SEO Description",
+        "Palavra-chave principal",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "Palavra-chave principal",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ]
+    },
+    {
+      "number": 1,
+      "beforeCanPublish": false,
+      "beforeMissing": [
+        "SEO Title",
+        "SEO Description",
+        "Palavra-chave principal",
+        "CTA newsletter ou consulta",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ],
+      "afterCanPublish": false,
+      "afterMissing": [
+        "Sobre a autora",
+        "Palavra-chave principal",
+        "CTA newsletter ou consulta",
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ]
+    }
+  ]
+}

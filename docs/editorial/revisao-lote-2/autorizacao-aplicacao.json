@@ -1,0 +1,45 @@
+{
+  "userApproval": "Weverlyn Alves reviewed and approved all six existing proposals; user explicitly authorized applying only these records to the configured CMS/database.",
+  "approvalAttachmentSha256": "f18023ae5df2e34cbbc00c01cc17814b4bb09e69fdbe004e0c013121eaac5953",
+  "targetSha256": "16b82bda4d4c6d324a537694150e43ee0d0e29fd6e7852560710f2bb5a38fce0",
+  "approvedPackageSha256": "6562b1d07db546a8c5920e9ea42863122278e974b8e183649765588bd670765c",
+  "allowedIds": [
+    "cmu7efl310000c02rdw9tif5e",
+    "cmrmnrpjk0000of2rmucscj6g",
+    "cmrjqwlwt0000aq2r78mzx3nx",
+    "cmqzpmryo0000uf2rdwb9vq2q",
+    "cmqi64r9c0000nr2r3khm5nst",
+    "cmqfndz120000qx2revual4yx"
+  ],
+  "approvedFilesSha256": {
+    "01-saude-mental.md": "80d9cab8cbdb0f8dccd52e87ec31e44c3f44c0daa4b673c68e3d455f0deef4dd",
+    "02-comer-a-noite.md": "bf1122b6aafaa65f9a39464f9db9bfabd67a77fdfc158f43239a7049b0be24fb",
+    "03-deficit-calorico.md": "013bc8f71cf3e4f0ccb6f19eb3675010e6d3b1d7ec6599bb5489b19117845b9e",
+    "04-dietas-restritivas.md": "c16d42579c171d15271f31b190cb7086a982cd2c0531f4d8cfbfc935f51f6e23",
+    "05-comer-por-emocao.md": "4376b79b2cb00f298fdc18e3f5599ba5d7000461f7effd8f65e13574d7bf5aa9",
+    "06-alimentacao-consciente.md": "d89c59e4e3038a6c5e498d0303f4792995fbc141fd6a3be5082ad8157d53add9",
+    "README.md": "616d1de71abe6685fe6c68cad7acc60eceef3369a8905992dec8df00570a5dcf",
+    "baseline.json": "ac0a4f6725b5d8b2c15f9a9801a99e1c4eab14ff3630cf15f36a2253059dbd91",
+    "comparativo.md": "3cae154a496dae98ef4bc626e1a0d2da3a2c029a0bd15b8f214da0c9b49aa9ea",
+    "fontes.json": "bcb1f40d1c01a140f49fe6412cb45ac663fd087bd5e908da59288ade688dce75",
+    "identificadores-verificados.json": "e891e3099a80abe57e4d0191495e4b934000549cc9b92ee6dd3005a5de375ff7",
+    "integridade-final.json": "bf505ef3217900ab813d6337ac26645ed8e77baabae96b010d08cab180a77a38",
+    "links-verificados.json": "91835a529235c9263d26dc5233fb40c302a0bdec461fe15694ca56e4c0e378b1",
+    "propostas.json": "6562b1d07db546a8c5920e9ea42863122278e974b8e183649765588bd670765c",
+    "referencias.md": "1eb5fbcad20f872dc815de39816b04635eb69de13de9f73a8d18c5374c1170e9",
+    "verificacao-documental.json": "3804459388d59a8ee951c154a9aa3165868b9b9ae5b27988124ce539667ab47e"
+  },
+  "preserve": [
+    "id",
+    "slug",
+    "publishedAt",
+    "views",
+    "scheduledAt",
+    "status",
+    "authorId",
+    "categoryId"
+  ],
+  "relatedException": "Automatic category/recency cards retained as explicitly requested.",
+  "metadataLimitation": "Save approved SEO fields without changing public template.",
+  "writeMode": "One guarded transaction, same hasEditorialChanges date policy; omit protected fields. Existing HTML editor mode, empty blocks, no application changes."
+}

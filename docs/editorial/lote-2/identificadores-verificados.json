@@ -1,0 +1,181 @@
+{
+  "checkedAt": "2026-11-08T16:05:58.394Z",
+  "method": "Crossref public DOI metadata GET; does not validate clinical claims",
+  "results": [
+    {
+      "key": "firth2019",
+      "status": 200,
+      "doi": "10.1097/psy.0000000000000673",
+      "title": "The Effects of Dietary Improvement on Symptoms of Depression and Anxiety: A Meta-Analysis of Randomized Controlled Trials",
+      "publication": "Psychosomatic Medicine",
+      "year": 2019,
+      "pages": "265-280",
+      "authors": [
+        "Firth",
+        "Marx",
+        "Dash"
+      ]
+    },
+    {
+      "key": "singh2023",
+      "status": 200,
+      "doi": "10.1136/bjsports-2022-106195",
+      "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews",
+      "publication": "British Journal of Sports Medicine",
+      "year": 2023,
+      "pages": "1203-1209",
+      "authors": [
+        "Singh",
+        "Olds",
+        "Curtis"
+      ]
+    },
+    {
+      "key": "vujovic2022",
+      "status": 200,
+      "doi": "10.1016/j.cmet.2022.09.007",
+      "title": "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+      "publication": "Cell Metabolism",
+      "year": 2022,
+      "pages": "1486-1498.e7",
+      "authors": [
+        "Vujović",
+        "Piron",
+        "Qian"
+      ]
+    },
+    {
+      "key": "liu2024",
+      "status": 200,
+      "doi": "10.1001/jamanetworkopen.2024.42163",
+      "title": "Meal Timing and Anthropometric and Metabolic Outcomes",
+      "publication": "JAMA Network Open",
+      "year": 2024,
+      "pages": "e2442163",
+      "authors": [
+        "Liu",
+        "Eso",
+        "Cook"
+      ]
+    },
+    {
+      "key": "allison2010",
+      "status": 200,
+      "doi": "10.1002/eat.20693",
+      "title": "Proposed diagnostic criteria for night eating syndrome",
+      "publication": "International Journal of Eating Disorders",
+      "year": 2010,
+      "pages": "241-247",
+      "authors": [
+        "Allison",
+        "Lundgren",
+        "O'Reardon"
+      ]
+    },
+    {
+      "key": "hall2012",
+      "error": "SyntaxError: Unexpected end of JSON input",
+      "retry": {
+        "status": 200,
+        "doi": "10.3945/ajcn.112.036350",
+        "title": "Energy balance and its components: implications for body weight regulation",
+        "publication": "The American Journal of Clinical Nutrition",
+        "pages": "989-994",
+        "year": 2012,
+        "authors": [
+          "Hall",
+          "Heymsfield",
+          "Kemnitz"
+        ]
+      }
+    },
+    {
+      "key": "hall-kahan2018",
+      "status": 200,
+      "doi": "10.1016/j.mcna.2017.08.012",
+      "title": "Maintenance of Lost Weight and Long-Term Management of Obesity",
+      "publication": "Medical Clinics of North America",
+      "year": 2018,
+      "pages": "183-197",
+      "authors": [
+        "Hall",
+        "Kahan"
+      ]
+    },
+    {
+      "key": "ge2020",
+      "status": 200,
+      "doi": "10.1136/bmj.m696",
+      "title": "Comparison of dietary macronutrient patterns of 14 popular named dietary programmes for weight and cardiovascular risk factor reduction in adults: systematic review and network meta-analysis of randomised trials",
+      "publication": "BMJ",
+      "year": 2020,
+      "pages": "m696",
+      "authors": [
+        "Ge",
+        "Sadeghirad",
+        "Ball"
+      ]
+    },
+    {
+      "key": "reichenberger2020",
+      "error": "SyntaxError: Unexpected end of JSON input",
+      "retry": {
+        "status": 200,
+        "doi": "10.1017/s0029665120007004",
+        "title": "Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies",
+        "publication": "Proceedings of the Nutrition Society",
+        "pages": "290-299",
+        "year": 2020,
+        "authors": [
+          "Reichenberger",
+          "Schnepper",
+          "Arend"
+        ]
+      }
+    },
+    {
+      "key": "warren2017",
+      "status": 200,
+      "doi": "10.1017/s0954422417000154",
+      "title": "A structured literature review on the role of mindfulness, mindful eating and intuitive eating in changing eating behaviours: effectiveness and associated potential mechanisms",
+      "publication": "Nutrition Research Reviews",
+      "year": 2017,
+      "pages": "272-283",
+      "authors": [
+        "Warren",
+        "Smith",
+        "Ashwell"
+      ]
+    },
+    {
+      "key": "kao2025",
+      "status": 200,
+      "doi": "10.1111/obr.13860",
+      "title": "Effects of mindfulness‐based interventions on obesogenic eating behaviors: A systematic review and meta‐analysis",
+      "publication": "Obesity Reviews",
+      "year": 2025,
+      "authors": [
+        "Kao",
+        "Ling",
+        "Alanazi"
+      ]
+    },
+    {
+      "key": "grider2021",
+      "error": "SyntaxError: Unexpected end of JSON input",
+      "retry": {
+        "status": 200,
+        "doi": "10.1016/j.jand.2020.10.019",
+        "title": "The Influence of Mindful Eating and/or Intuitive Eating Approaches on Dietary Intake: A Systematic Review",
+        "publication": "Journal of the Academy of Nutrition and Dietetics",
+        "pages": "709-727.e1",
+        "year": 2021,
+        "authors": [
+          "Grider",
+          "Douglas",
+          "Raynor"
+        ]
+      }
+    }
+  ]
+}

@@ -4,6 +4,10 @@ import { siteConfig } from "@/config/site";
 import { nutritionistConfig } from "@/config/nutritionist";
 import { articleModifiedAt } from "@/lib/editorial-dates";
 
+// Bound stale metadata after external editorial imports as well as normal
+// CMS revalidatePath calls. Article lastmod still comes only from editorial dates.
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
 

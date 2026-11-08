@@ -1,0 +1,188 @@
+{
+  "evaluatedAt": "2026-11-08T19:43:39.286Z",
+  "method": "Leitura integral dos seis corpos efetivamente publicados, confrontados byte a byte com o pacote aprovado; mesmos oito pesos da auditoria inicial. Julgamento editorial do agente, com incerteza; não score do Google, validação clínica independente ou previsão de AdSense. Estimativas pré-aplicação não foram usadas como notas finais.",
+  "dimensions": [
+    "Utilidade e intenção",
+    "Profundidade e clareza",
+    "Contribuição e originalidade",
+    "E-E-A-T e responsabilidade",
+    "Referências",
+    "Leitura e estrutura",
+    "Linkagem",
+    "SEO on-page"
+  ],
+  "weights": [
+    25,
+    20,
+    15,
+    15,
+    10,
+    5,
+    5,
+    5
+  ],
+  "articles": [
+    {
+      "number": 30,
+      "points": [
+        23,
+        18,
+        11,
+        13,
+        9,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Responde ao papel complementar dos cuidados e oferece alternativas concretas para dias sem energia, priorizando acolhimento e acesso.",
+        "Distingue associação e intervenção, explicita limitações das revisões e separa práticas ilustrativas de protocolos.",
+        "O plano de apoio e as falas de companhia acrescentam função específica; permanece síntese educativa, sem dados ou experiência clínica original.",
+        "Autoria profissional, CRN, perfil, aprovação humana e data editorial real verificáveis; não há revisão científica independente declarada.",
+        "Quatro documentos individualizados, duas revisões com DOI e chamadas no texto tornam as afirmações rastreáveis; isso não equivale a revisão sistemática própria.",
+        "H2 coerentes, listas curtas e negritos preservados. A leitura integral do HTML não substitui inspeção visual de todos os elementos.",
+        "Dois encaminhamentos contextuais distinguem ansiedade e normalidade do comer emocional; cards seguem automáticos.",
+        "Canonical e schema corretos e excerpt atualizado; SEO title/description salvos continuam sem consumo pelo template público."
+      ],
+      "remaining": "Tema sensível exige manutenção científica periódica. Não converter exemplos em prescrição, nem interpretar a nota como validação clínica ou garantia AdSense.",
+      "improvement": "Evidência com limites e apoio possível em dias difíceis, sem promessa terapêutica ou captação comercial.",
+      "score": 85
+    },
+    {
+      "number": 22,
+      "points": [
+        24,
+        18,
+        11,
+        13,
+        9,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Responde diretamente sem moralizar o horário; três cenários ajudam a decidir que pergunta levar à avaliação.",
+        "Contextualiza ensaio mecanístico, revisão de intervenções e distinção entre jantar tarde e condição clínica.",
+        "A comparação dos cenários e a separação de problemas de sono criam utilidade própria, embora não seja contribuição empírica original.",
+        "Autoria, CRN, perfil e atualização editorial conferidos; a explicação evita diagnóstico pela leitura e se apoia na aprovação profissional informada.",
+        "Quatro referências identificadas, incluindo três DOIs e documento clínico institucional. Critérios históricos não são apresentados como autodiagnóstico.",
+        "H2/H3, lista de observação e conclusão proporcional preservados; continua possível melhorar apresentação de bibliografia extensa.",
+        "Três links com funções distintas: carboidrato no jantar, sinais de fome e beliscos; relacionados automáticos não são curadoria manual.",
+        "HTTP, canonical, H1 e datas consistentes; o template ainda não usa os campos SEO aprovados."
+      ],
+      "remaining": "Não inferir efeito individual a partir de médias nem equiparar alimentação noturna a síndrome. Monitorar sobreposição com os guias de beliscos e carboidratos.",
+      "improvement": "Cenários úteis e distinção entre alimentação tardia, sofrimento e síndromes, com estudos identificados.",
+      "score": 86
+    },
+    {
+      "number": 18,
+      "points": [
+        23,
+        18,
+        11,
+        13,
+        8,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Explica o mecanismo e responde como acompanhar sem tornar contagem universal; não promete déficit apenas por melhorar qualidade alimentar.",
+        "Diferencia suficiência, viabilidade e balanço energético; detalha incerteza das contas e limitações da balança.",
+        "O exemplo da bebida e sua pergunta de acompanhamento dão função própria ao texto; o núcleo continua uma síntese de conhecimento estabelecido.",
+        "Autora e revisão aprovadas; limites para grupos e sofrimento estão explicitados sem gerar conduta individual.",
+        "Hall, NICE e NIDDK estão individualizados e ligados às seções relevantes; o artigo não demonstra empiricamente a eficácia das adaptações práticas propostas.",
+        "Hierarquia e listas mantêm o conceito acessível; referências e parágrafos densos justificam não atribuir nota máxima de leitura.",
+        "Três links distribuem composição de refeições, restrição e plano amplo; cards automáticos continuam podendo ser amplos.",
+        "Canonical, publicação e schema estão corretos. Views 23 preservadas; ausência de uso público dos campos SEO limita a otimização efetiva."
+      ],
+      "remaining": "Manter separação entre entender balanço e prescrever redução energética. Não ampliar por fórmulas ou metas sem nova aprovação.",
+      "improvement": "Separa qualidade alimentar de déficit e explicita limites das estimativas, sem meta universal.",
+      "score": 84
+    },
+    {
+      "number": 9,
+      "points": [
+        23,
+        18,
+        11,
+        13,
+        8,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Responde às dificuldades de manutenção sem declarar fracasso de toda dieta; oferece perguntas práticas para revisão do plano.",
+        "Diferencia restrição extrema, déficit individualizado, exclusão clínica e estratégia temporária supervisionada.",
+        "Comparar exigências do plano com a rotina acrescenta decisão útil; não há investigação original ou recurso novo validado.",
+        "Autoria, CRN e revisão confirmadas; o corpo não orienta abandonar tratamento nem usa dificuldade como diagnóstico.",
+        "Três referências individualizadas e chamadas pontuais; a base é suficiente para síntese, sem comprovar cada exemplo cotidiano como intervenção.",
+        "H3 separam quatro situações antes de explicar manutenção; listas e negritos preservados, sem certificar layout por HTML.",
+        "Três encaminhamentos distinguem mecanismo energético, relação com comida e cuidado amplo; automação dos cards permanece.",
+        "Identidade, excerpt e schema conferidos. O título continua amplo e os campos SEO salvos não substituem a metadata efetivamente renderizada."
+      ],
+      "remaining": "Há sobreposição residual com emagrecimento sustentável; manter aqui a distinção das restrições e a dificuldade de manutenção.",
+      "improvement": "Distingue tipos de restrição e manutenção, evitando generalizações sobre dietas e reganho.",
+      "score": 84
+    },
+    {
+      "number": 2,
+      "points": [
+        24,
+        18,
+        11,
+        13,
+        8,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Responde à normalidade sem apagar sofrimento; frequência, intensidade, contexto e impacto organizam uma conversa útil.",
+        "Explica limites dos questionários e coexistência de fome/emoção; não oferece corte diagnóstico ou registro obrigatório.",
+        "As quatro dimensões e os exemplos comparados criam utilidade além de uma lista de dicas, sem validar um novo instrumento.",
+        "Autora, CRN, aprovação editorial e revisão visual humana informadas; as três flags e lastPreviewAt foram registrados apenas neste artigo e no #1.",
+        "Revisão identificada, Guia Alimentar e NIMH substituem referências genéricas; as perguntas práticas são assumidas como não validadas.",
+        "H2, exemplos em H3, lista e negritos coerentes; aprovação visual humana cobre as cinco larguras, sem alegar avaliação visual automática.",
+        "Três caminhos para sinais de fome, gatilhos e ansiedade preservam recortes; cards continuam automáticos.",
+        "Canonical, H1, datas e description conferidos; keyword vazia não foi artificialmente preenchida e SEO salvo não é consumido pelo template."
+      ],
+      "remaining": "Recorte deve continuar sendo normalidade/impacto, sem se tornar outra lista de gatilhos ou comparação binária entre fomes.",
+      "improvement": "Normalidade e necessidade de cuidado avaliadas por impacto, sem confundir comer emocional e transtorno.",
+      "score": 85
+    },
+    {
+      "number": 1,
+      "points": [
+        24,
+        18,
+        12,
+        13,
+        9,
+        4,
+        4,
+        3
+      ],
+      "class": "B",
+      "rationale": [
+        "Define a prática e oferece experiência executável sem exigir comer menos, além de adaptações e situações para pedir apoio.",
+        "Distingue mindful eating, comer devagar, alimentação intuitiva e controle; contextualiza heterogeneidade e resultados nulos.",
+        "A sequência flexível, possibilidade de alimentação planejada e consideração do acesso evitam uma versão genérica de comer devagar; não há protocolo próprio validado.",
+        "Autoria e revisão profissional aprovadas; a revisão visual real do usuário foi registrada com horário atual, sem inventar revisão independente.",
+        "Cinco fontes identificadas, três DOIs e documentos institucionais resolvem a ausência bibliográfica anterior; limitações da evidência aparecem no corpo.",
+        "H2/H3, lista ordenada e negritos preservados; a bibliografia é mais longa e a nota não certifica todos os aspectos da página global.",
+        "Três encaminhamentos separam prática na rotina, coexistência das fomes e relação saudável; relacionados automáticos continuam fora de curadoria manual.",
+        "HTTP, canonical, H1, publicação e modificação corretos. Título/alt originais extensos e campos SEO sem uso público justificam manutenção, sem alteração silenciosa."
+      ],
+      "remaining": "Rever futuramente alt categórico da capa e consumo da metadata aprovada; não transformar prática educativa em promessa de perda de peso.",
+      "improvement": "Bibliografia rastreável, limites dos benefícios e experiência prática sem regra de controle.",
+      "score": 87
+    }
+  ]
+}

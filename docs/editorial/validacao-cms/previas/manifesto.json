@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-11-08T19:06:10.664Z",
+  "pages": [
+    {
+      "number": 2,
+      "file": "comer-por-emocao.html",
+      "contentSha256": "0607391509c459970811f678150e2d9102341f96b60db932d475cff149c2a620",
+      "containsTables": false,
+      "relatedCards": 3
+    },
+    {
+      "number": 1,
+      "file": "alimentacao-consciente.html",
+      "contentSha256": "adb05007e216775c52d91508676e026161388ba515b235f8c38b975fc0e5c7bb",
+      "containsTables": false,
+      "relatedCards": 3
+    }
+  ],
+  "cssFiles": [
+    "99c5d3744824584e.css"
+  ],
+  "templateSha256": "3635885d024306c2d9e72511ece01261e0c72742b53dfb5006c78ee0f889baaf",
+  "visualReview": "PENDING_HUMAN_REVIEW",
+  "databaseAccess": false
+}

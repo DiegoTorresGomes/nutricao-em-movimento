@@ -39,12 +39,10 @@ export function analyzeHtmlContent(html: string): HtmlContentAnalysis {
       normalized.includes("nao substitui") ||
       normalized.includes("consulta individualizada"),
 
-    hasCta:
-      normalized.includes("newsletter") ||
-      normalized.includes("consulta") ||
-      normalized.includes("agendar") ||
-      normalized.includes("cadastre-se") ||
-      normalized.includes("entrar em contato"),
+    // A disclaimer mentioning consulta is not an action; reference links alone
+    // are not a CTA either.
+    hasCta: Array.from(html.matchAll(/<a\b[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi))
+      .some(([, href, label]) => isEditorialAction(href, stripHtml(label))),
 
     hasRelatedArticle:
       normalized.includes("leia também") ||
@@ -75,4 +73,16 @@ function stripHtml(html: string) {
 
 function countOccurrences(text: string, regex: RegExp) {
   return text.match(regex)?.length ?? 0;
+}
+function isEditorialAction(href: string, label: string) {
+  if (!label.trim() || !href.trim() || /[\s\\]/.test(href)) return false;
+  try {
+    const url = new URL(href, "https://www.nutricaoemovimento.com");
+    if (!["http:", "https:", "mailto:", "tel:"].includes(url.protocol)) return false;
+    return /\/pt\/artigos\//i.test(url.pathname) ||
+      /^(mailto:|tel:)/i.test(href) ||
+      /leia|acesse|saiba mais|conheça|confira|contato|consulta|agend|newsletter|cadastre|inscreva|fale|baixe/i.test(label);
+  } catch {
+    return false;
+  }
 }

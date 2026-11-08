@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-08T16:12:20.863Z",
+  "proposals": {
+    "1": {
+      "score": 86,
+      "old": 74,
+      "internalLinks": 3,
+      "words": 844,
+      "references": 5
+    },
+    "2": {
+      "score": 84,
+      "old": 71,
+      "internalLinks": 3,
+      "words": 784,
+      "references": 3
+    },
+    "9": {
+      "score": 85,
+      "old": 71,
+      "internalLinks": 3,
+      "words": 803,
+      "references": 3
+    },
+    "18": {
+      "score": 84,
+      "old": 71,
+      "internalLinks": 3,
+      "words": 831,
+      "references": 3
+    },
+    "22": {
+      "score": 85,
+      "old": 71,
+      "internalLinks": 3,
+      "words": 806,
+      "references": 4
+    },
+    "30": {
+      "score": 84,
+      "old": 72,
+      "internalLinks": 2,
+      "words": 793,
+      "references": 4
+    }
+  },
+  "totals": {
+    "articles": 6,
+    "referenceEntries": 22,
+    "uniqueSources": 19,
+    "verifiedArticleTargets": 14,
+    "verifiedAuthor": true,
+    "doiCount": 12,
+    "bodyLinkOccurrences": 17,
+    "distinctInternalBodyTargets": 12
+  },
+  "checks": {
+    "noBodyH1": true,
+    "referenceNumbersValid": true,
+    "allReferencesUsed": true,
+    "markdownMatchesProposalBodies": true,
+    "allPendingHumanReview": true,
+    "allInternalLinksHttp200": true
+  }
+}

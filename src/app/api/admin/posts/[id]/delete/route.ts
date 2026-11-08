@@ -24,6 +24,7 @@ export async function POST(
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
   revalidatePath("/pt/sobre");
+  revalidatePath("/pt/autora/weverlyn-alves");
   revalidatePath(`/pt/artigos/${deleted.slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");

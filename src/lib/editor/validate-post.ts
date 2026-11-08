@@ -1,3 +1,5 @@
+import { nutritionistConfig } from "@/config/nutritionist";
+import { renderBlocksToHtml } from "./render-blocks-to-html";
 import type { EditorBlock } from "./blocks";
 import { analyzeHtmlContent } from "@/components/editor/analyze-html-content";
 
@@ -14,7 +16,8 @@ export type ValidationGroup = {
   items: ValidationItem[];
 };
 
-type ValidatePostInput = {
+export type ValidatePostInput = {
+  authorId?: string | null;
   title?: string | null;
   description?: string | null;
   seoTitle?: string | null;
@@ -50,13 +53,17 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     ? !!htmlAnalysis?.hasParagraph
     : blocks.some((block) => block.type === "paragraph" && String(block.data.text || "").trim());
 
-  const hasAuthorNote = input.useLegacyHtml
-    ? !!htmlAnalysis?.hasAuthorNote
-    : blocks.some((block) => block.type === "authorNote");
+  // The public template renders this same name, credential and profile link.
+  // A word in the body is not proof of authorship.
+  const hasCanonicalAuthor =
+    nutritionistConfig.publishingAccountIds.includes(input.authorId || "") &&
+    hasText(nutritionistConfig.displayName) &&
+    /^CRN\s+\d+$/.test(nutritionistConfig.credential) &&
+    nutritionistConfig.authorPath === "/pt/autora/weverlyn-alves";
 
   const hasCta = input.useLegacyHtml
     ? !!htmlAnalysis?.hasCta
-    : blocks.some((block) => block.type === "cta");
+    : analyzeHtmlContent(renderBlocksToHtml(blocks)).hasCta;
 
   const hasRelatedArticle = input.useLegacyHtml
     ? !!htmlAnalysis?.hasRelatedArticle
@@ -65,8 +72,8 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
   const hasFaq = input.useLegacyHtml
     ? !!htmlAnalysis?.hasFaq
     : blocks.some((block) => block.type === "faq");
-  const hasComparisonCard = blocks.some((block) => block.type === "comparisonCard");
-  const hasTable = blocks.some((block) => block.type === "table");
+  const hasComparisonCard = !!htmlAnalysis?.hasResponsiveCard || blocks.some((block) => block.type === "comparisonCard");
+  const hasTable = !!htmlAnalysis?.hasTable || blocks.some((block) => block.type === "table");
 
   const imageBlocks = blocks.filter((block) => block.type === "image");
 
@@ -106,10 +113,10 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
       message: "Inclua ao menos um bloco de parágrafo.",
     },
     {
-      label: "Sobre a autora",
-      ok: hasAuthorNote,
+      label: "Autoria canônica no template",
+      ok: hasCanonicalAuthor,
       required: true,
-      message: "Inclua o bloco Sobre a autora.",
+      message: "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público.",
     },
   ];
 
@@ -129,8 +136,8 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     {
       label: "Palavra-chave principal",
       ok: hasText(input.focusKeyword),
-      required: true,
-      message: "Informe a palavra-chave principal.",
+      required: false,
+      message: "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto.",
     },
     {
       label: "Alt da capa",
@@ -147,7 +154,7 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     {
       label: "Link interno",
       ok: !input.hasOtherPublishedPosts || hasRelatedArticle,
-      required: Boolean(input.hasOtherPublishedPosts),
+      required: false,
       message: "Inclua um link para artigo relacionado.",
     },
     {
@@ -160,23 +167,18 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
 
   const growth: ValidationItem[] = [
     {
-      label: "CTA newsletter ou consulta",
+      label: "CTA editorial",
       ok: hasCta,
-      required: true,
-      message: "Inclua um CTA para newsletter, consulta ou próxima ação.",
+      required: false,
+      message: "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação.",
     },
     {
       label: "Artigo relacionado",
       ok: !input.hasOtherPublishedPosts || hasRelatedArticle,
-      required: Boolean(input.hasOtherPublishedPosts),
+      required: false,
       message: "Inclua o bloco Leia Também para aumentar engajamento.",
     },
-    {
-      label: "Categoria editorial",
-      ok: hasText(input.categoryId) || hasText(input.categoryName),
-      required: true,
-      message: "Selecione uma categoria editorial.",
-    },
+
   ];
 
   const quality: ValidationItem[] = [
@@ -200,23 +202,23 @@ export function validatePostBeforePublish(input: ValidatePostInput) {
     },
     {
       label: "Tabelas responsivas",
-      ok: !hasTable || true,
+      ok: !hasTable || Boolean(input.desktopReviewed && input.tabletReviewed && input.mobileReviewed),
       required: false,
-      message: "Tabelas são renderizadas com rolagem horizontal.",
+      message: "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade.",
     },
     {
       label: "Cards responsivos",
-      ok: !hasComparisonCard || true,
+      ok: !hasComparisonCard || Boolean(input.desktopReviewed && input.tabletReviewed && input.mobileReviewed),
       required: false,
-      message: "Cards comparativos são renderizados em layout responsivo.",
+      message: "Confira os cards nas três revisões visuais.",
     },
   ];
 
   const groups: ValidationGroup[] = [
-    buildGroup("Conteúdo", content),
+    buildGroup("Requisitos estruturais", content),
     buildGroup("SEO", seo),
-    buildGroup("Crescimento", growth),
-    buildGroup("Qualidade visual", quality),
+    buildGroup("Recomendações editoriais", growth),
+    buildGroup("Revisão visual manual", quality),
   ];
 
   const allItems = groups.flatMap((group) => group.items);

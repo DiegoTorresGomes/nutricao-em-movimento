@@ -26,7 +26,7 @@ export function EditorialChecklist({
         <div>
           <h3 className="text-lg font-semibold">Checklist editorial</h3>
           <p className="mt-1 text-xs leading-5 text-neutral-500">
-            Validação automática antes da publicação.
+            Requisitos bloqueantes, recomendações e confirmação manual da revisão visual.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function EditorialChecklist({
 
       <div className="mt-5">
         <div className="flex items-center justify-between text-sm font-bold">
-          <span>Qualidade do artigo</span>
+          <span>Itens do checklist atendidos</span>
           <span>{overallScore}%</span>
         </div>
 
@@ -98,6 +98,9 @@ export function EditorialChecklist({
                       }
                     >
                       {item.label}
+                      <span className="ml-2 font-normal text-neutral-500">
+                        {item.required ? "Obrigatório" : "Recomendação"}
+                      </span>
                     </p>
 
                     {!item.ok && item.message && (

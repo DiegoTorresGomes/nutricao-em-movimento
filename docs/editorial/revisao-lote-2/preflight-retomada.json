@@ -1,0 +1,35 @@
+{
+  "state": "INTERRUPTED_SNAPSHOT_DIVERGENCE",
+  "checkedAt": "2026-11-08T19:27:12.403Z",
+  "snapshotCapturedAt": "2026-11-08T16:33:28.499Z",
+  "approvedFilesUnchanged": true,
+  "targetConfirmed": true,
+  "allowedIds": [
+    "cmu7efl310000c02rdw9tif5e",
+    "cmrmnrpjk0000of2rmucscj6g",
+    "cmrjqwlwt0000aq2r78mzx3nx",
+    "cmqzpmryo0000uf2rdwb9vq2q",
+    "cmqi64r9c0000nr2r3khm5nst",
+    "cmqfndz120000qx2revual4yx"
+  ],
+  "totalRecords": 31,
+  "changes": [
+    {
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "number": 18,
+      "title": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "fields": [
+        "views"
+      ],
+      "values": {
+        "views": {
+          "before": 22,
+          "current": 23
+        }
+      },
+      "inBatch": true
+    }
+  ],
+  "removed": [],
+  "writeCount": 0
+}

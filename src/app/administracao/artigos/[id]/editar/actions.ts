@@ -112,6 +112,7 @@ export async function updatePostAction(id: string, formData: FormData) {
   revalidatePath("/pt");
   revalidatePath("/pt/artigos");
   revalidatePath("/pt/sobre");
+  revalidatePath("/pt/autora/weverlyn-alves");
   revalidatePath(`/pt/artigos/${updated.slug}`);
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");
@@ -119,7 +120,6 @@ export async function updatePostAction(id: string, formData: FormData) {
 
   if (updated.id === weightConsolidation.targetId) {
     revalidatePath(consolidationSourcePath);
-    revalidatePath("/pt/autora/weverlyn-alves");
     // Automatic cards are cached inside the category's article pages.
     const siblings = await prisma.post.findMany({
       where: { categoryId: updated.categoryId, language: "pt", status: "PUBLISHED" },

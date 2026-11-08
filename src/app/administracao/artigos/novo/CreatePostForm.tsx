@@ -15,9 +15,10 @@ type Category = {
 
 type CreatePostFormProps = {
   categories: Category[];
+  authorId: string | null;
 };
 
-export function CreatePostForm({ categories }: CreatePostFormProps) {
+export function CreatePostForm({ categories, authorId }: CreatePostFormProps) {
   const [state, formAction, isPending] = useActionState(createPostAction, {});
 
   const [coverImage, setCoverImage] = useState("");
@@ -43,6 +44,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
   const validation = useMemo(
     () =>
       validatePostBeforePublish({
+        authorId,
         title,
         description,
         categoryName,
@@ -60,6 +62,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
         hasOtherPublishedPosts: true,
       }),
     [
+      authorId,
       title,
       description,
       categoryName,
@@ -213,7 +216,7 @@ export function CreatePostForm({ categories }: CreatePostFormProps) {
           </div>
 
           <div className="grid gap-2">
-            <label className="text-sm font-bold">Palavra-chave principal</label>
+            <label className="text-sm font-bold">Palavra-chave de foco (opcional)</label>
             <input
               name="focusKeyword"
               placeholder="Ex: fome emocional"

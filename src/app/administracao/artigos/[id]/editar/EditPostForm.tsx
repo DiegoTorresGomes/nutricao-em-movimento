@@ -14,6 +14,7 @@ type Category = {
 
 type Post = {
   id: string;
+  authorId: string;
   title: string;
   description: string;
   content: string;
@@ -68,6 +69,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
   const validation = useMemo(
     () =>
       validatePostBeforePublish({
+        authorId: post.authorId,
         title,
         description,
         categoryName,
@@ -85,6 +87,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
         hasOtherPublishedPosts: true,
       }),
     [
+      post.authorId,
       title,
       description,
       categoryName,
@@ -233,7 +236,7 @@ export function EditPostForm({ post, categories }: EditPostFormProps) {
             </div>
 
             <div className="grid gap-2">
-              <label className="text-sm font-bold">Palavra-chave principal</label>
+              <label className="text-sm font-bold">Palavra-chave de foco (opcional)</label>
               <input
                 name="focusKeyword"
                 value={focusKeyword}

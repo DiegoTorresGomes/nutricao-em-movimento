@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-11-08T19:34:49.913Z",
+  "userInstruction": "User explicitly authorizes accepting views 22 to 23 as legitimate access, refreshing the current baseline and applying all six approved proposals. Later views-only monotonic increments are dynamic; all editorial/structural changes still abort. No commit, push or deploy.",
+  "allowMonotonicViews": true,
+  "minimumDeficitArticleViews": 23,
+  "compatibilityResolved": true,
+  "humanVisualApprovalNumbers": [
+    2,
+    1
+  ],
+  "humanVisualEvidenceAttachmentSha256": "63e75e6d03d9a41fe0ded2cbc85147c42df5252005f35680aa9e11b5ecdd44af",
+  "allowedIds": [
+    "cmu7efl310000c02rdw9tif5e",
+    "cmrmnrpjk0000of2rmucscj6g",
+    "cmrjqwlwt0000aq2r78mzx3nx",
+    "cmqzpmryo0000uf2rdwb9vq2q",
+    "cmqi64r9c0000nr2r3khm5nst",
+    "cmqfndz120000qx2revual4yx"
+  ],
+  "approvedPackageSha256": "6562b1d07db546a8c5920e9ea42863122278e974b8e183649765588bd670765c",
+  "targetSha256": "16b82bda4d4c6d324a537694150e43ee0d0e29fd6e7852560710f2bb5a38fce0"
+}

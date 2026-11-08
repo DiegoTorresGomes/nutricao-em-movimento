@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-08T16:12:46.596Z",
+  "mode": "SELECT only; initial vs final selected fields; no update/create/delete or CMS calls performed",
+  "allSelectedRecordsUnchanged": true,
+  "results": [
+    {
+      "number": 30,
+      "id": "cmu7efl310000c02rdw9tif5e",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    },
+    {
+      "number": 22,
+      "id": "cmrmnrpjk0000of2rmucscj6g",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    },
+    {
+      "number": 18,
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    },
+    {
+      "number": 9,
+      "id": "cmqzpmryo0000uf2rdwb9vq2q",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    },
+    {
+      "number": 2,
+      "id": "cmqi64r9c0000nr2r3khm5nst",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    },
+    {
+      "number": 1,
+      "id": "cmqfndz120000qx2revual4yx",
+      "unchanged": true,
+      "changedFields": [],
+      "contentUnchanged": true,
+      "publishedAtUnchanged": true,
+      "editorialUpdatedAtUnchanged": true,
+      "viewsUnchanged": true
+    }
+  ]
+}

@@ -1,0 +1,975 @@
+{
+  "checkedAt": "2026-11-08T19:07:40.572Z",
+  "mode": "OFFLINE_VALIDATION_ONLY",
+  "snapshotCapturedAt": "2026-11-08T16:33:28.499Z",
+  "approvedFilesUnchanged": true,
+  "preparedBodiesUnchanged": true,
+  "writeCount": 0,
+  "applicationGuardPreserved": true,
+  "passed": 4,
+  "total": 6,
+  "results": [
+    {
+      "number": 30,
+      "title": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+      "canPublish": true,
+      "overallScore": 95,
+      "missingRequired": [],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": true,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 86
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 100
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "mobileReviewed": true,
+        "lastPreviewAt": null
+      }
+    },
+    {
+      "number": 22,
+      "title": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+      "canPublish": true,
+      "overallScore": 95,
+      "missingRequired": [],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": true,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 86
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 100
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "mobileReviewed": true,
+        "lastPreviewAt": null
+      }
+    },
+    {
+      "number": 18,
+      "title": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "canPublish": true,
+      "overallScore": 95,
+      "missingRequired": [],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": true,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 86
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 100
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "mobileReviewed": true,
+        "lastPreviewAt": null
+      }
+    },
+    {
+      "number": 9,
+      "title": "Por que dietas muito restritivas costumam falhar?",
+      "canPublish": true,
+      "overallScore": 95,
+      "missingRequired": [],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": true,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 86
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": true,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 100
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": true,
+        "tabletReviewed": true,
+        "mobileReviewed": true,
+        "lastPreviewAt": null
+      }
+    },
+    {
+      "number": 2,
+      "title": "Comer por emoção é normal?",
+      "canPublish": false,
+      "overallScore": 75,
+      "missingRequired": [
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": false,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 71
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 40
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": false,
+        "tabletReviewed": false,
+        "mobileReviewed": false,
+        "lastPreviewAt": null
+      }
+    },
+    {
+      "number": 1,
+      "title": "Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+      "canPublish": false,
+      "overallScore": 75,
+      "missingRequired": [
+        "Preview Desktop revisado",
+        "Preview Tablet revisado",
+        "Preview Mobile revisado"
+      ],
+      "groups": [
+        {
+          "title": "Requisitos estruturais",
+          "items": [
+            {
+              "label": "Título do artigo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o título principal do artigo."
+            },
+            {
+              "label": "Categoria",
+              "ok": true,
+              "required": true,
+              "message": "Selecione a categoria editorial."
+            },
+            {
+              "label": "Descrição/resumo",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a descrição que aparece no card e no Google."
+            },
+            {
+              "label": "Pelo menos 1 H2",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de Título H2."
+            },
+            {
+              "label": "Pelo menos 1 parágrafo",
+              "ok": true,
+              "required": true,
+              "message": "Inclua ao menos um bloco de parágrafo."
+            },
+            {
+              "label": "Autoria canônica no template",
+              "ok": true,
+              "required": true,
+              "message": "Vincule a autora canônica com nome, CRN e perfil disponíveis no template público."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "SEO",
+          "items": [
+            {
+              "label": "SEO Title",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o meta title."
+            },
+            {
+              "label": "SEO Description",
+              "ok": true,
+              "required": true,
+              "message": "Preencha a meta description."
+            },
+            {
+              "label": "Palavra-chave principal",
+              "ok": false,
+              "required": false,
+              "message": "Anotação interna opcional para orientar a intenção editorial; não gera meta keywords nem exige repetição no texto."
+            },
+            {
+              "label": "Alt da capa",
+              "ok": true,
+              "required": true,
+              "message": "Preencha o texto alternativo da imagem de capa."
+            },
+            {
+              "label": "Alt das imagens internas",
+              "ok": true,
+              "required": true,
+              "message": "Todas as imagens internas precisam de texto alternativo."
+            },
+            {
+              "label": "Link interno",
+              "ok": true,
+              "required": false,
+              "message": "Inclua um link para artigo relacionado."
+            },
+            {
+              "label": "FAQ",
+              "ok": false,
+              "required": false,
+              "message": "Recomendado para conteúdos educativos."
+            }
+          ],
+          "score": 71
+        },
+        {
+          "title": "Recomendações editoriais",
+          "items": [
+            {
+              "label": "CTA editorial",
+              "ok": true,
+              "required": false,
+              "message": "Avalie uma próxima ação pertinente (artigo, contato, newsletter ou consulta). A ausência justificada não impede publicação."
+            },
+            {
+              "label": "Artigo relacionado",
+              "ok": true,
+              "required": false,
+              "message": "Inclua o bloco Leia Também para aumentar engajamento."
+            }
+          ],
+          "score": 100
+        },
+        {
+          "title": "Revisão visual manual",
+          "items": [
+            {
+              "label": "Preview Desktop revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview desktop antes de publicar."
+            },
+            {
+              "label": "Preview Tablet revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview tablet antes de publicar."
+            },
+            {
+              "label": "Preview Mobile revisado",
+              "ok": false,
+              "required": true,
+              "message": "Revise o preview mobile antes de publicar."
+            },
+            {
+              "label": "Tabelas responsivas",
+              "ok": true,
+              "required": false,
+              "message": "Confira tabelas nas três revisões visuais; a estrutura não comprova responsividade."
+            },
+            {
+              "label": "Cards responsivos",
+              "ok": true,
+              "required": false,
+              "message": "Confira os cards nas três revisões visuais."
+            }
+          ],
+          "score": 40
+        }
+      ],
+      "preservedVisualState": {
+        "desktopReviewed": false,
+        "tabletReviewed": false,
+        "mobileReviewed": false,
+        "lastPreviewAt": null
+      }
+    }
+  ]
+}

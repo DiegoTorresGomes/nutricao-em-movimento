@@ -1,0 +1,386 @@
+{
+  "evaluatedAt": "2026-11-08T19:49:19.529Z",
+  "method": "Distribuição recalculada sobre os 30 IDs atualmente publicados, combinando as últimas notas de auditoria original, Lote 1, consolidação e Lote 2. Não é nova reauditoria de todos os artigos.",
+  "counts": {
+    "A": 3,
+    "B": 23,
+    "C": 4,
+    "D": 0
+  },
+  "archived": 1,
+  "published": 30,
+  "baselineAverageSame30Ids": 78.5,
+  "finalAverageSame30Ids": 81.2,
+  "batchBeforeAverage": 71.66666666666667,
+  "batchFinalAverage": 85.16666666666667,
+  "remainingC": [
+    {
+      "number": 7,
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "title": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+      "slug": "como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": "PUBLISHED",
+      "score": 75,
+      "class": "C",
+      "source": "auditoria original",
+      "level": "Manutenção futura de menor risco relativo",
+      "rationale": "Ferramentas práticas já úteis; há duplicação de frase, seção sem título e uso de compulsão pouco delimitado. Não prova baixo valor de toda a página nem infração AdSense; precisão clínica ainda merece manutenção.",
+      "priorityBeforeFinalAudit": false,
+      "originalAuditBodyStillIdentical": true
+    },
+    {
+      "number": 17,
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "title": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+      "slug": "alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "status": "PUBLISHED",
+      "score": 74,
+      "class": "C",
+      "source": "auditoria original",
+      "level": "Prioridade na auditoria final",
+      "rationale": "Referências parafraseadas e categorias pouco justificadas deixam incerteza de fundamentação em tema de saúde. Risco editorial real de confiança/valor, sem afirmar infração ou reprovação automática.",
+      "priorityBeforeFinalAudit": true,
+      "originalAuditBodyStillIdentical": true
+    },
+    {
+      "number": 23,
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "title": "Como a alimentação influencia a disposição para treinar",
+      "slug": "como-a-alimentacao-influencia-a-disposicao-para-treinar",
+      "status": "PUBLISHED",
+      "score": 73,
+      "class": "C",
+      "source": "auditoria original",
+      "level": "Prioridade na auditoria final",
+      "rationale": "Baixa contribuição própria e provável sobreposição com os guias de pré/pós-treino enfraquecem a utilidade distinta. É o sinal mais direto de risco relativo de baixo valor entre os C restantes.",
+      "priorityBeforeFinalAudit": true,
+      "originalAuditBodyStillIdentical": true
+    },
+    {
+      "number": 27,
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "title": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+      "slug": "como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": "PUBLISHED",
+      "score": 74,
+      "class": "C",
+      "source": "auditoria original",
+      "level": "Prioridade na auditoria final",
+      "rationale": "Referência ScienceDirect sem identificação e mistura entre lapso e reganho, somadas à frase moralizante, deixam lacunas de rastreabilidade e coerência. É risco editorial, não resultado de avaliação do Google.",
+      "priorityBeforeFinalAudit": true,
+      "originalAuditBodyStillIdentical": true
+    }
+  ],
+  "inventory": [
+    {
+      "number": 31,
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "title": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+      "slug": "fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": "PUBLISHED",
+      "score": 84,
+      "class": "B",
+      "source": "Lote 1 aplicado e reavaliado"
+    },
+    {
+      "number": 1,
+      "id": "cmqfndz120000qx2revual4yx",
+      "title": "Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+      "slug": "alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+      "status": "PUBLISHED",
+      "score": 87,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    },
+    {
+      "number": 2,
+      "id": "cmqi64r9c0000nr2r3khm5nst",
+      "title": "Comer por emoção é normal?",
+      "slug": "comer-por-emocao-e-normal",
+      "status": "PUBLISHED",
+      "score": 85,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    },
+    {
+      "number": 3,
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "title": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+      "slug": "relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": "PUBLISHED",
+      "score": 85,
+      "class": "B",
+      "source": "Lote 1 aplicado e reavaliado"
+    },
+    {
+      "number": 4,
+      "id": "cmqppa7du0000ve2rnn31iyzq",
+      "title": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+      "slug": "emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": "PUBLISHED",
+      "score": 83,
+      "class": "B",
+      "source": "consolidação aplicada"
+    },
+    {
+      "number": 5,
+      "id": "cmqr70qen00003x2rlnm1fkzb",
+      "title": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+      "slug": "por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": "PUBLISHED",
+      "score": 76,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 6,
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "title": "Vontade de doce todo dia: o que pode estar acontecendo?",
+      "slug": "vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "status": "PUBLISHED",
+      "score": 85,
+      "class": "B",
+      "source": "Lote 1 aplicado e reavaliado"
+    },
+    {
+      "number": 7,
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "title": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+      "slug": "como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": "PUBLISHED",
+      "score": 75,
+      "class": "C",
+      "source": "auditoria original"
+    },
+    {
+      "number": 8,
+      "id": "cmqvdst3u00003u2rwknviypp",
+      "title": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+      "slug": "emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "status": "PUBLISHED",
+      "score": 76,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 9,
+      "id": "cmqzpmryo0000uf2rdwb9vq2q",
+      "title": "Por que dietas muito restritivas costumam falhar?",
+      "slug": "por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": "PUBLISHED",
+      "score": 84,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    },
+    {
+      "number": 10,
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "title": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+      "slug": "carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "status": "PUBLISHED",
+      "score": 88,
+      "class": "A",
+      "source": "Lote 1 aplicado e reavaliado"
+    },
+    {
+      "number": 11,
+      "id": "cmr3vox090000ut2rdn0l9354",
+      "title": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+      "slug": "pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+      "status": "PUBLISHED",
+      "score": 80,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 12,
+      "id": "cmr3xbkac0000p72rsy43fedu",
+      "title": "Como montar um prato equilibrado sem complicar a alimentação",
+      "slug": "como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": "PUBLISHED",
+      "score": 83,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 13,
+      "id": "cmr5f26x70000ox2rrmpdqpse",
+      "title": "Ansiedade e alimentação: como uma coisa influencia a outra",
+      "slug": "ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "status": "PUBLISHED",
+      "score": 82,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 14,
+      "id": "cmr5hikpg0001y32rcecftcrr",
+      "title": "O que comer antes do treino? Guia simples para iniciantes",
+      "slug": "o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "status": "PUBLISHED",
+      "score": 86,
+      "class": "A",
+      "source": "auditoria original"
+    },
+    {
+      "number": 26,
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "title": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+      "slug": "nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "status": "PUBLISHED",
+      "score": 82,
+      "class": "B",
+      "source": "Lote 1 aplicado e reavaliado"
+    },
+    {
+      "number": 15,
+      "id": "cmrckeis80000cv2riequpo8v",
+      "title": "O que comer depois do treino para recuperar melhor?",
+      "slug": "o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "status": "PUBLISHED",
+      "score": 83,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 16,
+      "id": "cmrclr5c500003b2rjfn5pyge",
+      "title": "Alimentação saudável fora de casa: escolhas possíveis sem culpa",
+      "slug": "alimentacao-saudavel-fora-de-casa-escolhas-possiveis-sem-culpa",
+      "status": "PUBLISHED",
+      "score": 81,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 19,
+      "id": "cmre4ruk20000kf2rxkerug5h",
+      "title": "Como comer com mais atenção mesmo na rotina corrida",
+      "slug": "como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": "PUBLISHED",
+      "score": 86,
+      "class": "A",
+      "source": "auditoria original"
+    },
+    {
+      "number": 17,
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "title": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+      "slug": "alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "status": "PUBLISHED",
+      "score": 74,
+      "class": "C",
+      "source": "auditoria original"
+    },
+    {
+      "number": 18,
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "title": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "slug": "como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": "PUBLISHED",
+      "score": 84,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    },
+    {
+      "number": 20,
+      "id": "cmrl2gz5k00009e2rg5qgjl1h",
+      "title": "Emagrecimento sustentável: hábitos que importam mais que força de vontade",
+      "slug": "emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade",
+      "status": "ARCHIVED",
+      "score": 69,
+      "class": "D",
+      "source": "auditoria original"
+    },
+    {
+      "number": 21,
+      "id": "cmrl5s7on0000b92rd68ofia0",
+      "title": "Exercícios ajudam no emagrecimento? Entenda além da queima calórica",
+      "slug": "exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "status": "PUBLISHED",
+      "score": 75,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 22,
+      "id": "cmrmnrpjk0000of2rmucscj6g",
+      "title": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+      "slug": "comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "status": "PUBLISHED",
+      "score": 86,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    },
+    {
+      "number": 23,
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "title": "Como a alimentação influencia a disposição para treinar",
+      "slug": "como-a-alimentacao-influencia-a-disposicao-para-treinar",
+      "status": "PUBLISHED",
+      "score": 73,
+      "class": "C",
+      "source": "auditoria original"
+    },
+    {
+      "number": 24,
+      "id": "cmrpg9oir0000gb2rjy74vu47",
+      "title": "Lanche da tarde: ideias práticas para manter a saciedade",
+      "slug": "lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "status": "PUBLISHED",
+      "score": 80,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 25,
+      "id": "cmrv4eb5w00008l2r1qml5ivj",
+      "title": "Café da manhã saudável: precisa mesmo comer ao acordar?",
+      "slug": "cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar",
+      "status": "PUBLISHED",
+      "score": 79,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 28,
+      "id": "cmry28rp30000d92r6qq9xegs",
+      "title": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+      "slug": "detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+      "status": "PUBLISHED",
+      "score": 81,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 27,
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "title": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+      "slug": "como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": "PUBLISHED",
+      "score": 74,
+      "class": "C",
+      "source": "auditoria original"
+    },
+    {
+      "number": 29,
+      "id": "cmt1xys970000562rp5yrdol9",
+      "title": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+      "slug": "caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+      "status": "PUBLISHED",
+      "score": 74,
+      "class": "B",
+      "source": "auditoria original"
+    },
+    {
+      "number": 30,
+      "id": "cmu7efl310000c02rdw9tif5e",
+      "title": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+      "slug": "setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "status": "PUBLISHED",
+      "score": 85,
+      "class": "B",
+      "source": "Lote 2 efetivamente publicado"
+    }
+  ]
+}

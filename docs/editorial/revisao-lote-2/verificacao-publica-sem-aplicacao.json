@@ -1,0 +1,421 @@
+{
+  "checkedAt": "2026-11-08T16:41:04.682Z",
+  "state": "INTERRUPTED_NOT_APPLIED",
+  "method": "Canonical public GET only, no browser JS/form/POST/cache busting. Confirms original versions still served, not successful application.",
+  "results": [
+    {
+      "path": "/pt",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt",
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos",
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "number": 30,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "description": "Entenda como alimentação equilibrada e exercícios físicos podem apoiar o cuidado com a saúde mental no Setembro Amarelo, com acolhimento e sem soluções milagrosas.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png"
+        ],
+        "datePublished": "2026-09-19T07:30:15.392Z",
+        "dateModified": "2026-09-19T07:30:15.392Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "number": 22,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "description": "Entenda por que comer à noite nem sempre é falta de controle e quais fatores emocionais, alimentares e de rotina podem estar por trás desse comportamento.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png"
+        ],
+        "datePublished": "2026-08-03T07:00:02.325Z",
+        "dateModified": "2026-08-03T07:00:02.325Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "number": 18,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "description": "Entenda como criar um déficit calórico de forma equilibrada, sem dietas restritivas, culpa alimentar ou contagem obsessiva de calorias no dia a dia.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png"
+        ],
+        "datePublished": "2026-07-27T07:00:02.388Z",
+        "dateModified": "2026-07-27T07:00:02.388Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "number": 9,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Por que dietas muito restritivas costumam falhar?",
+        "description": "Entenda por que dietas muito restritivas costumam falhar e como construir uma rotina alimentar mais equilibrada, flexível e sustentável.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png"
+        ],
+        "datePublished": "2026-07-03T07:00:02.794Z",
+        "dateModified": "2026-07-03T07:00:02.794Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "number": 2,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Comer por emoção é normal?",
+        "description": "Comer por emoção é normal? Entenda as diferenças entre fome física e emocional, sinais de alerta e estratégias para desenvolver uma relação mais equilibrada com a comida.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781706209/nutricao-em-movimento/articles/hrqkteju3di5xltpkfqx.jpg"
+        ],
+        "datePublished": "2026-06-17T15:00:40.719Z",
+        "dateModified": "2026-06-17T15:00:40.719Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/artigos/alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+      "number": 1,
+      "originalBodyPresent": true,
+      "approvedBodyPresent": false,
+      "authorProfile": true,
+      "crn": true,
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "inLanguage": "pt-BR",
+        "headline": "Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+        "description": "Descubra o que é alimentação consciente, seus benefícios e como praticar mindful eating no dia a dia para comer com mais presença e equilíbrio.",
+        "image": [
+          "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781554049/nutricao-em-movimento/articles/ero5ec8h99weqymqorv8.jpg"
+        ],
+        "datePublished": "2026-06-15T23:44:55.526Z",
+        "dateModified": "2026-06-15T23:44:55.526Z",
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+          "name": "Weverlyn da Cruz Alves Torres",
+          "jobTitle": "Nutricionista",
+          "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+          "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+          "sameAs": [
+            "https://www.instagram.com/nutri_lyn_weverlynalves"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nutrição & Movimento",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.nutricaoemovimento.com/pt/artigos/alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating"
+        }
+      },
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "cache": {
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "age": null
+      }
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "location": null,
+      "cache": {
+        "cacheControl": null,
+        "age": null
+      }
+    },
+    {
+      "path": "/administracao",
+      "status": 307,
+      "location": "/login",
+      "canonical": "https://www.nutricaoemovimento.com/pt",
+      "cache": {
+        "cacheControl": "no-store, no-cache, must-revalidate",
+        "age": null
+      }
+    }
+  ],
+  "originalSchemaChecks": [
+    {
+      "number": 30,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    },
+    {
+      "number": 22,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    },
+    {
+      "number": 18,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    },
+    {
+      "number": 9,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    },
+    {
+      "number": 2,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    },
+    {
+      "number": 1,
+      "originalDatePublished": true,
+      "originalDateModified": true,
+      "authorName": true,
+      "authorUrl": true,
+      "headline": true,
+      "mainEntityOfPage": true
+    }
+  ]
+}

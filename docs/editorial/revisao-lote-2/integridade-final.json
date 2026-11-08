@@ -1,0 +1,327 @@
+{
+  "state": "APPLIED_ALL_SIX_INTEGRITY_CONFIRMED",
+  "checkedAt": "2026-11-08T19:41:34.653Z",
+  "baselineCapturedAt": "2026-11-08T19:34:50.588Z",
+  "totalRecords": 31,
+  "editorialChanges": 6,
+  "outsideBatchCount": 25,
+  "onlySixEditoriallyChanged": true,
+  "outsideBatchUnchangedExceptPermittedMonotonicViews": true,
+  "approvedFilesUnchanged": true,
+  "allProtectedFieldsPreserved": true,
+  "viewsNeverWritten": true,
+  "counts": {
+    "published": 30,
+    "archived": 1
+  },
+  "checks": [
+    {
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqfndz120000qx2revual4yx",
+      "number": 1,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription",
+        "lastPreviewAt",
+        "mobileReviewed",
+        "desktopReviewed",
+        "tabletReviewed"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 87,
+      "viewsAtCommit": 87,
+      "viewsCurrent": 87,
+      "publishedAt": "2026-06-15T23:44:55.526Z",
+      "scheduledAt": null,
+      "editorialUpdatedAt": "2026-11-08T19:37:59.665Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": true,
+      "canPublish": true,
+      "missingRequired": []
+    },
+    {
+      "id": "cmqi64r9c0000nr2r3khm5nst",
+      "number": 2,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription",
+        "lastPreviewAt",
+        "mobileReviewed",
+        "desktopReviewed",
+        "tabletReviewed"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 88,
+      "viewsAtCommit": 88,
+      "viewsCurrent": 88,
+      "publishedAt": "2026-06-17T15:00:40.719Z",
+      "scheduledAt": null,
+      "editorialUpdatedAt": "2026-11-08T19:37:59.628Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": true,
+      "canPublish": true,
+      "missingRequired": []
+    },
+    {
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqppa7du0000ve2rnn31iyzq",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqr70qen00003x2rlnm1fkzb",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqvdst3u00003u2rwknviypp",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmqzpmryo0000uf2rdwb9vq2q",
+      "number": 9,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 241,
+      "viewsAtCommit": 241,
+      "viewsCurrent": 241,
+      "publishedAt": "2026-07-03T07:00:02.794Z",
+      "scheduledAt": "2026-07-03T07:00:00.000Z",
+      "editorialUpdatedAt": "2026-11-08T19:37:59.592Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": false,
+      "canPublish": true,
+      "missingRequired": []
+    },
+    {
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmr3vox090000ut2rdn0l9354",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmr3xbkac0000p72rsy43fedu",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmr5f26x70000ox2rrmpdqpse",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmr5hikpg0001y32rcecftcrr",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrckeis80000cv2riequpo8v",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrclr5c500003b2rjfn5pyge",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmre4ruk20000kf2rxkerug5h",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "number": 18,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 23,
+      "viewsAtCommit": 23,
+      "viewsCurrent": 23,
+      "publishedAt": "2026-07-27T07:00:02.388Z",
+      "scheduledAt": "2026-07-27T07:00:00.000Z",
+      "editorialUpdatedAt": "2026-11-08T19:37:59.556Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": false,
+      "canPublish": true,
+      "missingRequired": []
+    },
+    {
+      "id": "cmrl2gz5k00009e2rg5qgjl1h",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrl5s7on0000b92rd68ofia0",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrmnrpjk0000of2rmucscj6g",
+      "number": 22,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 8,
+      "viewsAtCommit": 8,
+      "viewsCurrent": 8,
+      "publishedAt": "2026-08-03T07:00:02.325Z",
+      "scheduledAt": "2026-08-03T07:00:00.000Z",
+      "editorialUpdatedAt": "2026-11-08T19:37:59.520Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": false,
+      "canPublish": true,
+      "missingRequired": []
+    },
+    {
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrpg9oir0000gb2rjy74vu47",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmrv4eb5w00008l2r1qml5ivj",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmry28rp30000d92r6qq9xegs",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmt1xys970000562rp5yrdol9",
+      "inBatch": false,
+      "editorialAndStructuralFieldsUnchanged": true,
+      "dynamicViewsIncrement": 0
+    },
+    {
+      "id": "cmu7efl310000c02rdw9tif5e",
+      "number": 30,
+      "inBatch": true,
+      "changedFields": [
+        "description",
+        "content",
+        "editorialUpdatedAt",
+        "updatedAt",
+        "contentBlocks",
+        "seoTitle",
+        "seoDescription"
+      ],
+      "protectedFieldsPreserved": true,
+      "viewsBefore": 19,
+      "viewsAtCommit": 19,
+      "viewsCurrent": 19,
+      "publishedAt": "2026-09-19T07:30:15.392Z",
+      "scheduledAt": "2026-09-19T07:30:00.000Z",
+      "editorialUpdatedAt": "2026-11-08T19:37:59.466Z",
+      "approvedContentExact": true,
+      "visualUpdatedWithHumanApproval": false,
+      "canPublish": true,
+      "missingRequired": []
+    }
+  ]
+}
