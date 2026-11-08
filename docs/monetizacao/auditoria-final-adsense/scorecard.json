@@ -1,0 +1,69 @@
+{
+  "evaluatedAt": "2026-11-08T20:36:10.393Z",
+  "score": 82,
+  "classification": "AMARELO",
+  "decision": "NO-GO",
+  "scope": "Readiness recommendation before treating the site as ready for Search Console/resubmission; no Google action performed.",
+  "categories": [
+    {
+      "name": "Conteúdo editorial",
+      "max": 25,
+      "score": 22,
+      "rationale": "26/30 publicados A/B; exemplos e fontes melhoraram, quatro C úteis mas desiguais."
+    },
+    {
+      "name": "E-E-A-T/YMYL",
+      "max": 15,
+      "score": 13,
+      "rationale": "Identidade, CRN, revisão humana informada, Person/Article e transparência sobre IA; evidência antiga ainda genérica em parte do acervo."
+    },
+    {
+      "name": "SEO/indexabilidade",
+      "max": 15,
+      "score": 14,
+      "rationale": "30 artigos 200/canonical/schema, XML e lastmod corretos; login com index/follow e canonical da home permanece inadequado."
+    },
+    {
+      "name": "UX/mobile/performance",
+      "max": 10,
+      "score": 6,
+      "rationale": "Arquitetura e recursos acessíveis, mas busca do header sem ação; mobile/runtime/CWV não comprovados nesta execução."
+    },
+    {
+      "name": "Políticas/transparência",
+      "max": 10,
+      "score": 8,
+      "rationale": "Políticas publicadas coerentes com publicidade pausada, mas UI de newsletter contradiz capacidade declarada."
+    },
+    {
+      "name": "AdSense/ads.txt/consentimento",
+      "max": 15,
+      "score": 11,
+      "rationale": "ads.txt e metadata corretos, defaults denied, sem loader opcional inicial; conta/CMP e interação real não confirmadas."
+    },
+    {
+      "name": "Integridade técnica",
+      "max": 10,
+      "score": 8,
+      "rationale": "Sem erros HTTP importantes na amostra, XML correto e recursos 200; um alerta alto e um moderado no recorte npm de produção exigem triagem."
+    }
+  ],
+  "materialBlockers": [
+    {
+      "id": "B1",
+      "title": "Promessa pública de newsletter incompatível com serviço disponível",
+      "basis": "Produção: Receba conteúdos... e Sem spam... sair da lista. Políticas atuais negam envio integrado; adaptador local é no-op e a UI possui mensagem de e-mail enviado. Não houve teste de submissão.",
+      "exitCriterion": "Em etapa autorizada, tornar a oferta/estados de UI verdadeiros e consistentes com a operação, ou demonstrar integração de entrega/retirada. Conferir o resultado público sem tratar alteração de política, sozinha, como prova."
+    }
+  ],
+  "note": "Score is an internal assessment with uncertainty, not a Google formula or probability. The NO-GO is temporary and based on a documented trust gap, not on article count, the four C labels, lack of visible ads, lack of CMP certification evidence alone, or a fabricated PageSpeed failure.",
+  "blockerReassessment": {
+    "checkedAt": "2026-11-08T20:56:15.666Z",
+    "scope": "B1 only; original score and production findings retained as historical baseline",
+    "localStatus": "RESOLVED",
+    "recommendation": "GO PARA SEARCH CONSOLE",
+    "condition": "Only after authorized deployment and public verification; no deployment performed",
+    "productionStatus": "PENDING_DEPLOYMENT_AND_PUBLIC_VERIFICATION",
+    "evidence": "newsletter-correcao.md"
+  }
+}

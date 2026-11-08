@@ -1,0 +1,1984 @@
+{
+  "checkedAt": "2026-11-08T20:25:25.379Z",
+  "method": "HTTP_AND_SHIPPED_STATIC_JS_INSPECTION_NOT_BROWSER_RUNTIME",
+  "supplements": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "id": "cmqa1a7130001ee2r4imybzf1",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Descubra como diferenciar fome emocional e fome física, quais são os principais sinais de cada uma e como melhorar sua relação com a alimentação de forma consciente.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+          "alt": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782252274/nutricao-em-movimento/articles/ckgdajkwdh68o4hvywur.png",
+          "alt": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+      "id": "cmqfndz120000qx2revual4yx",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781554049/nutricao-em-movimento/articles/ero5ec8h99weqymqorv8.jpg",
+          "alt": "Alimentação Consciente: O Que É ? Benefícios Comprovados e Como Praticar",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+          "alt": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-por-emocao-e-normal",
+      "id": "cmqi64r9c0000nr2r3khm5nst",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781706209/nutricao-em-movimento/articles/hrqkteju3di5xltpkfqx.jpg",
+          "alt": "Comer por Emoção é Normal? Entenda as Causas e Quando Buscar Ajuda",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+          "alt": "Como montar um prato equilibrado sem complicar a alimentação",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+          "alt": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "id": "cmqlko9pe0000992rtm9c5ane",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+          "alt": "Homem e mulher sorrindo durante uma refeição equilibrada, em um ambiente claro e acolhedor, representando prazer, presença e uma relação saudável com a comida.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+          "alt": "Como montar um prato equilibrado sem complicar a alimentação",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+          "alt": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "id": "cmqppa7du0000ve2rnn31iyzq",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg",
+          "alt": "Imagem de capa com mulher preparando uma refeição equilibrada em uma cozinha iluminada, com alimentos naturais e itens de movimento ao lado, simbolizando saúde, equilíbrio e emagrecimento sus",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+          "alt": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+          "alt": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Por que dietas muito restritivas costumam falhar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "id": "cmqr70qen00003x2rlnm1fkzb",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782252274/nutricao-em-movimento/articles/ckgdajkwdh68o4hvywur.png",
+          "alt": "Mulher refletindo sobre gatilhos alimentares e o hábito de comer mesmo sem fome física.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+          "alt": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "id": "cmqtxvrx20000xc2ruyxxz3pm",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782417769/nutricao-em-movimento/articles/t3pbxtdk2yrndbaint3b.jpg",
+          "alt": "Mulher refletindo sobre vontade de doce todo dia em uma cozinha com alimentos equilibrados e chocolate em pequena porção.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+          "alt": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+          "alt": "Como comer com mais atenção mesmo na rotina corrida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Mulher sentada à mesa, organizando um lanche equilibrado com frutas, castanhas, iogurte natural ou uma refeição simples, em um ambiente acolhedor e realista.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+          "alt": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782252274/nutricao-em-movimento/articles/ckgdajkwdh68o4hvywur.png",
+          "alt": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "id": "cmqvdst3u00003u2rwknviypp",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+          "alt": "Mulher preparando um prato equilibrado com legumes, arroz, feijão e proteína em uma cozinha acolhedora, com itens de treino ao lado, representando a união entre nutrição, movimento e hábitos",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+          "alt": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+          "alt": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Por que dietas muito restritivas costumam falhar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "id": "cmqzpmryo0000uf2rdwb9vq2q",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Mulher em cozinha acolhedora com prato equilibrado, refletindo sobre dietas muito restritivas e alimentação sustentável.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+          "alt": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+          "alt": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+          "alt": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "id": "cmqzsbfaf0000fy2r5ka03ipm",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+          "alt": "Prato equilibrado no jantar com carboidratos, legumes, verduras e proteína, representando alimentação saudável à noite sem terrorismo nutricional.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+          "alt": "Como montar um prato equilibrado sem complicar a alimentação",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+          "alt": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+      "id": "cmr3vox090000ut2rdn0l9354",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pessoa preparando um café da manhã equilibrado com pão, ovos, frutas e alimentos naturais em uma mesa clara e acolhedora.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+          "alt": "Como montar um prato equilibrado sem complicar a alimentação",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+          "alt": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+          "alt": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "id": "cmr3xbkac0000p72rsy43fedu",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+          "alt": "Prato equilibrado com arroz, feijão, legumes, verduras e proteína em uma mesa acolhedora.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+          "alt": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+          "alt": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "id": "cmr5f26x70000ox2rrmpdqpse",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+          "alt": "Pessoa em momento de pausa com alimentos naturais sobre a mesa, representando a relação entre ansiedade e alimentação equilibrada.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+          "alt": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+          "alt": "Como comer com mais atenção mesmo na rotina corrida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "id": "cmr5hikpg0001y32rcecftcrr",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783116170/nutricao-em-movimento/articles/kpyxpqxxmaungudstip8.png",
+          "alt": "Pessoa preparando um lanche equilibrado antes do treino com frutas, aveia, pão integral e água em uma cozinha acolhedora.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "id": "cmr6j3k410000jg2rjxc2qlbm",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Mesa com alimentos saudáveis e pessoa em movimento leve ao fundo, simbolizando equilíbrio entre alimentação, saúde e atividade física.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784666395/nutricao-em-movimento/articles/b87omci2bqvy5olghxse.png",
+          "alt": "Café da manhã saudável: precisa mesmo comer ao acordar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "id": "cmrckeis80000cv2riequpo8v",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783543995/nutricao-em-movimento/articles/bfx8xqoomqfkjghoh83s.png",
+          "alt": "Refeição equilibrada pós-treino com frutas, iogurte, ovos, pão integral, legumes e água, representando recuperação e nutrição saudável.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/alimentacao-saudavel-fora-de-casa-escolhas-possiveis-sem-culpa",
+      "id": "cmrclr5c500003b2rjfn5pyge",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783546654/nutricao-em-movimento/articles/nz3mzqvj0mxouebqtgsk.png",
+          "alt": "Pessoa fazendo uma refeição equilibrada fora de casa, representando alimentação saudável sem culpa na rotina.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "id": "cmre4ruk20000kf2rxkerug5h",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+          "alt": "Pessoa fazendo uma refeição equilibrada com atenção plena em uma rotina corrida.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783641146/nutricao-em-movimento/articles/content/v5c3iyhrkp7iwtddzuwr.png",
+          "alt": "Infográfico com 10 dicas práticas de alimentação consciente para comer com mais atenção, reduzir distrações e melhorar a relação com a comida.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+          "alt": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+          "alt": "Ansiedade e alimentação: como uma coisa influencia a outra",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+          "alt": "Mesa com alimentos variados e equilibrados representando uma relação saudável com a comida sem classificar alimentos como bons ou ruins.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782252274/nutricao-em-movimento/articles/ckgdajkwdh68o4hvywur.png",
+          "alt": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "id": "cmrjqwlwt0000aq2r78mzx3nx",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+          "alt": "Pessoa montando uma refeição equilibrada para criar déficit calórico sem cortar calorias obsessivamente.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+          "alt": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Por que dietas muito restritivas costumam falhar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+          "alt": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "id": "cmrl5s7on0000b92rd68ofia0",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784062264/nutricao-em-movimento/articles/pzf7cy3bw7odcobv0zws.png",
+          "alt": "Mulher praticando atividade física leve em uma rotina equilibrada de nutrição e movimento para saúde e emagrecimento sustentável.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "id": "cmrmnrpjk0000of2rmucscj6g",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+          "alt": "Mulher em momento de pausa à noite com lanche equilibrado, representando comportamento alimentar e acolhimento sem culpa.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+          "alt": "Como comer com mais atenção mesmo na rotina corrida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+          "alt": "Ansiedade e alimentação: como uma coisa influencia a outra",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-a-alimentacao-influencia-a-disposicao-para-treinar",
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784239430/nutricao-em-movimento/articles/lxmhux7qqpkgy9i5z7k4.png",
+          "alt": "Pessoa preparando um lanche equilibrado antes do treino, representando como a alimentação influencia a disposição para treinar.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "id": "cmrpg9oir0000gb2rjy74vu47",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784323555/nutricao-em-movimento/articles/zwxxvnn9j0hdrtltcjez.png",
+          "alt": "Lanche da tarde saudável com frutas, iogurte, aveia, castanhas e pão integral em uma mesa acolhedora.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar",
+      "id": "cmrv4eb5w00008l2r1qml5ivj",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784666395/nutricao-em-movimento/articles/b87omci2bqvy5olghxse.png",
+          "alt": "Mesa com café da manhã saudável e equilibrado, com frutas, ovos, aveia, pão integral e uma pessoa em rotina real de autocuidado.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+      "id": "cmry28rp30000d92r6qq9xegs",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Mesa com alimentos naturais e refeição equilibrada, representando o cuidado com o corpo sem dietas detox restritivas.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784666395/nutricao-em-movimento/articles/b87omci2bqvy5olghxse.png",
+          "alt": "Café da manhã saudável: precisa mesmo comer ao acordar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+          "alt": "Mulher retomando uma rotina alimentar equilibrada após recaídas no processo de emagrecimento, com refeição saudável e acolhedora.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+          "alt": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Por que dietas muito restritivas costumam falhar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+          "alt": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+      "id": "cmt1xys970000562rp5yrdol9",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "caminhada e alimentação",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+          "alt": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+          "alt": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784666395/nutricao-em-movimento/articles/b87omci2bqvy5olghxse.png",
+          "alt": "Café da manhã saudável: precisa mesmo comer ao acordar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "id": "cmu7efl310000c02rdw9tif5e",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Mulher em rotina de autocuidado com alimentação equilibrada e tênis de caminhada ao fundo, representando Setembro Amarelo, alimentação e exercícios.",
+          "width": "",
+          "height": "",
+          "loading": "",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+          "alt": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+          "alt": "Como comer com mais atenção mesmo na rotina corrida",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+          "alt": "Ansiedade e alimentação: como uma coisa influencia a outra",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt",
+      "path": "/pt",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+          "alt": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+          "alt": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg",
+          "alt": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783116170/nutricao-em-movimento/articles/kpyxpqxxmaungudstip8.png",
+          "alt": "O que comer antes do treino? Guia simples para iniciantes",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+          "alt": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+          "alt": "Por que dietas muito restritivas costumam falhar?",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+          "alt": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+          "alt": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+          "alt": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+          "alt": "Ansiedade e alimentação: como uma coisa influencia a outra",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        },
+        {
+          "src": "/images/nutritionist/weverlyn.jpg",
+          "alt": "Weverlyn Alves, nutricionista e autora do Nutrição & Movimento",
+          "width": "",
+          "height": "",
+          "loading": "lazy",
+          "sizes": ""
+        }
+      ],
+      "cookiePreferencesMarkup": true,
+      "newsletterPrompts": [
+        "Receba conteúdos para construir constância.",
+        "Você poderá sair da lista quando quiser."
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/login",
+      "path": "/login",
+      "status": 200,
+      "consentDefaultsInline": "\nwindow.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};\nwindow.gtag('consent', 'default', {\n  ad_storage: 'denied', ad_user_data: 'denied',\n  ad_personalization: 'denied', analytics_storage: 'denied'\n});",
+      "allImages": [],
+      "cookiePreferencesMarkup": false,
+      "newsletterPrompts": []
+    }
+  ],
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781214066/nutricao-em-movimento/articles/ilzzrtcaqmkc5fg4aumr.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783721384/nutricao-em-movimento/articles/fpub73cs9eemonl24p5w.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782423494/nutricao-em-movimento/articles/c24ifwlntjt0h88eof2n.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782252274/nutricao-em-movimento/articles/ckgdajkwdh68o4hvywur.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781554049/nutricao-em-movimento/articles/ero5ec8h99weqymqorv8.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781706209/nutricao-em-movimento/articles/hrqkteju3di5xltpkfqx.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783021533/nutricao-em-movimento/articles/bepm30zkotnjmgmbkofc.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783018397/nutricao-em-movimento/articles/fzqzap4hipjorvqxznub.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782771595/nutricao-em-movimento/articles/lfypm4bj5gdttykpdiuz.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1781911231/nutricao-em-movimento/articles/dt9tuy3wrih3lrrkkvzb.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1785181008/nutricao-em-movimento/articles/bs8etfnimn4fp1bi9oms.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783978158/nutricao-em-movimento/articles/fydqiphyn0ghgkjzf7m4.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782766964/nutricao-em-movimento/articles/rjn77rdxxralswoahzfe.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782417769/nutricao-em-movimento/articles/t3pbxtdk2yrndbaint3b.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1789762418/nutricao-em-movimento/articles/dew2u7ooi0g2dqdg5kat.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784154687/nutricao-em-movimento/articles/pmiic7ra3brl5y0bvln4.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783638872/nutricao-em-movimento/articles/cszpqjo27n53ltvvvimj.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782504902/nutricao-em-movimento/articles/t2ybzd9q6vrhhycu6ie2.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783112194/nutricao-em-movimento/articles/whqe4kxlwuvs9qtjyw4k.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783116170/nutricao-em-movimento/articles/kpyxpqxxmaungudstip8.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1787255281/nutricao-em-movimento/articles/k8hynmcrc6gzltfqqrgd.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784843347/nutricao-em-movimento/articles/iooar8w50qswtlxirzxg.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783179097/nutricao-em-movimento/articles/hp50tnshumgpzmvesmip.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784666395/nutricao-em-movimento/articles/b87omci2bqvy5olghxse.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783543995/nutricao-em-movimento/articles/bfx8xqoomqfkjghoh83s.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783546654/nutricao-em-movimento/articles/nz3mzqvj0mxouebqtgsk.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1783641146/nutricao-em-movimento/articles/content/v5c3iyhrkp7iwtddzuwr.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784062264/nutricao-em-movimento/articles/pzf7cy3bw7odcobv0zws.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784239430/nutricao-em-movimento/articles/lxmhux7qqpkgy9i5z7k4.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1784323555/nutricao-em-movimento/articles/zwxxvnn9j0hdrtltcjez.png",
+      "status": 200,
+      "mime": "image/png"
+    }
+  ],
+  "bundles": [
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+      "status": 200,
+      "bytes": 173020,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+      "status": 200,
+      "bytes": 174134,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+      "status": 200,
+      "bytes": 560,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/app/layout-48690932a60c3111.js",
+      "status": 200,
+      "bytes": 4613,
+      "gaIdentifiers": [],
+      "consentTokens": [
+        "nem-consent-v2",
+        "nem-google-analytics",
+        "ad_personalization",
+        "denied",
+        "gtag/js"
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+      "status": 200,
+      "bytes": 8538,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/9193-c02ef6b5f9086398.js",
+      "status": 200,
+      "bytes": 9995,
+      "gaIdentifiers": [
+        "G-HDJ55H8QR6"
+      ],
+      "consentTokens": [
+        "nem-consent-v2",
+        "Recusar opcionais",
+        "Aceitar opcionais",
+        "nem-google-analytics",
+        "ad_personalization",
+        "denied",
+        "gtag/js"
+      ]
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/app/pt/page-2ab51c9aa70d8314.js",
+      "status": 200,
+      "bytes": 8416,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200,
+      "bytes": 112594,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/webpack-a871e8421befad6b.js",
+      "status": 200,
+      "bytes": 3410,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/_next/static/chunks/app/not-found-6945852e25ff07ec.js",
+      "status": 200,
+      "bytes": 2588,
+      "gaIdentifiers": [],
+      "consentTokens": []
+    }
+  ],
+  "noIncomingFromAuditedPages": [
+    "/pt/artigos/alimentacao-saudavel-fora-de-casa-escolhas-possiveis-sem-culpa"
+  ],
+  "note": "Fragment-only links resolve in the current page. The main evidence runner's root/#explorar redirect is an audit resolution artefact, not a demonstrated broken link. Image relation/overflow and consent clicks remain unverified without browser."
+}

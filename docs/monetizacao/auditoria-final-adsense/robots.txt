@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /administracao
+Disallow: /administracao/
+Disallow: /login
+Disallow: /api/
+
+Host: https://www.nutricaoemovimento.com
+Sitemap: https://www.nutricaoemovimento.com/sitemap.xml

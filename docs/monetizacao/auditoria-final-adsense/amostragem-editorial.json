@@ -1,0 +1,847 @@
+{
+  "method": "Human/agent review of intros, hierarchy, clinical-language contexts and reference samples for all 30; four C bodies read in full; automated matching is screening, not a diagnosis or verdict.",
+  "articles": [
+    {
+      "number": 31,
+      "title": "Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+      "characters": 5925,
+      "intro": "O que observar para diferenciar as fomes?\n Fome física se relaciona à necessidade de alimento; emoções também podem influenciar a vontade de comer. Essas experiências podem acontecer juntas. Perceber o contexto ajuda mais do que tentar classificar cada vontade como certa ou errada.\n Você pode chegar ao jantar com fome depois de uma tarde sem comer e, ao mesmo tempo, procurar conforto após um dia difícil. Estar ansiosa não torna essa fome menos legítima. Também é possível escolher uma sobremesa pelo sabor ou pela convivência, sem fome intensa: comer tem dimensões sociais e culturais. [1, 2]\n Sinais são pistas, não um teste diagnóstico\n Tempo desde a última refeição, sensações corporais e o que aconteceu antes da vontade ajudam na observação. Nenhum sinal isolado confirma uma causa. A revisão de Reichenberger e colaboradores mostra que a relação entre emoções e alimentação varia e que auto",
+      "headings": [
+        "O que observar para diferenciar as fomes?",
+        "Sinais são pistas, não um teste diagnóstico",
+        "Quatro perguntas para usar na vida real",
+        "Como usar uma escala sem transformar números em regra",
+        "E quando percebo uma necessidade emocional?",
+        "Quando procurar ajuda",
+        "O que levar para a próxima refeição",
+        "Referências científicas"
+      ],
+      "referenceSample": "Referências científicas\n Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies. Proceedings of the Nutrition Society. 79(3):290–299. 2020. (Revisão narrativa) https://doi.org/10.1017/S0029665120007004 \n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. (Guia oficial) https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf \n National Institute of Mental Health. Eating Disorders: What You Need to Know. NIH Publication No. 24-MH-4901. Revisado em 2024. 2024. (Material institucional de saúde) https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "riskContexts": [
+        " Você pode chegar ao jantar com fome depois de uma tarde sem comer e, ao mesmo tempo, procurar conforto após um dia difícil. Estar ansiosa não torna essa fome menos legítima. Também é possível escolher uma sobremesa pelo sabor ou pela convivência, sem f",
+        " Sinais são pistas, não um teste diagnóstico",
+        " Quando a dúvida principal é por que a vontade aparece sempre na mesma situação, vale olhar para os gatilhos ambientais e de rotina.",
+        " Dar nome ao que sente pode abrir outras possibilidades: conversar, descansar ou procurar apoio. Essas possibilidades podem acompanhar a alimentação. Não precisam funcionar como estratégias para suportar fome ou impedir uma refeição.",
+        " Quando procurar ajuda"
+      ]
+    },
+    {
+      "number": 1,
+      "title": "Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+      "characters": 6554,
+      "intro": "O que é alimentação consciente?\n Alimentação consciente, ou mindful eating, é prestar atenção à experiência de comer com curiosidade e menor julgamento. Isso pode incluir sabor, textura, fome, satisfação, pensamentos e condições da refeição. O objetivo não é realizar uma refeição perfeita nem provar que você tem autocontrole. [1]\n Você pode notar que está com pressa, que gosta de uma preparação ou que já está confortável. Também pode perceber uma distração e voltar à refeição. Nenhuma dessas observações obriga a comer menos ou a adiar comida.\n Não é a mesma coisa que comer devagar ou seguir uma dieta\n Comer devagar descreve um ritmo. Pode abrir espaço para perceber a refeição, mas contar mastigações ou prolongar cada garfada não é requisito para atenção plena.\n Alimentação consciente focaliza a experiência de comer e a maneira de observá-la. Não define, por si só, quantidade de calorias ",
+      "headings": [
+        "O que é alimentação consciente?",
+        "Não é a mesma coisa que comer devagar ou seguir uma dieta",
+        "Quais benefícios têm apoio — e com quais limites?",
+        "Uma experiência simples, sem precisar acertar",
+        "Atenção também inclui as condições para comer",
+        "Quando adaptar ou pedir apoio",
+        "O que vale levar desta prática",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Warren JM, Smith N, Ashwell M. A structured literature review on the role of mindfulness, mindful eating and intuitive eating in changing eating behaviours: effectiveness and associated potential mechanisms . Nutrition Research Reviews, 30(2):272–283. 2017. DOI . Leitura .\n Kao TSA, Ling J, Alanazi M, et al.. Effects of mindfulness-based interventions on obesogenic eating behaviors: A systematic review and meta-analysis . Obesity Reviews, 26(3):e13860; publicação online em 03/11/2024. 2025. DOI . Leitura .\n Grider HS, Douglas SM, Raynor HA. The Influence of Mindful Eating and/or Intuitive Eating Approaches on Dietary Intake: A Systematic Review . Journal of the Academy of Nutrition and Dietetics, 121(4):709–727.e1. 2021. DOI . Leitura .\n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira . 2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde. 2014. Leitura .\n National Center for Complementary and Integrative Health. Meditation and Mindfulness: Effe",
+      "riskContexts": [
+        "saciedade e resposta a estímulos externos. Entretanto, os efeitos agrupados sobre comer emocional e compulsão não foram estatisticamente significativos. Havia intervenções diferentes, pouco acompanhamento prolongado e ausência de avaliação formal da certeza pelo GRAD",
+        "presentar a prática como uma possibilidade de observação e educação alimentar. Não como técnica que garante emagrecimento, elimina ansiedade ou trata um transtorno por conta própria. Um exercício curto de leitura não equivale aos programas acompanhados investigados ",
+        " Esse é um exemplo educativo, não protocolo clínico validado, teste de fome ou estratégia garantida para reduzir quantidade. Não use uma escala ou nota para decidir se merece comer. Você pode precisar de alimentação planejada mesmo quando os sinais interno"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Comer por emoção é normal?",
+      "characters": 5626,
+      "intro": "Comer com influência das emoções pode acontecer\n Comer um alimento afetivo depois de um dia difícil ou compartilhar uma refeição numa comemoração não identifica, por si só, um transtorno. Alimentação também envolve convivência, cultura e prazer. Isso não obriga você a sentir culpa por toda escolha que tenha uma dimensão emocional. [2]\n Ao mesmo tempo, chamar algo de “normal” não significa ignorar sofrimento. A pergunta central é como essa experiência acontece e o que muda na sua vida, e não se você consegue eliminar qualquer emoção da alimentação.\n O que a expressão “comer por emoção” descreve?\n Ela pode descrever situações em que o estado emocional participa da vontade ou do modo de comer. Não é um diagnóstico e não explica toda a experiência de uma pessoa.\n A revisão de Reichenberger e colaboradores mostra que as respostas são variadas: emoções podem acompanhar aumento ou redução da in",
+      "headings": [
+        "Comer com influência das emoções pode acontecer",
+        "O que a expressão “comer por emoção” descreve?",
+        "Frequência sozinha não responde à pergunta",
+        "Quatro dimensões para conversar sobre o que acontece",
+        "Comer por emoção e compulsão não são sinônimos",
+        "O que pode ser um primeiro cuidado",
+        "Quando buscar ajuda",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies . Proceedings of the Nutrition Society, 79(3):290–299. 2020. DOI . Leitura .\n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira . 2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde. 2014. Leitura .\n National Institute of Mental Health. Eating Disorders: What You Need to Know . NIH Publication No. 24-MH-4901, revisado em 2024. 2024. Leitura .",
+      "riskContexts": [
+        "de descrever situações em que o estado emocional participa da vontade ou do modo de comer. Não é um diagnóstico e não explica toda a experiência de uma pessoa.",
+        "es podem acompanhar aumento ou redução da ingestão, e questionários sobre alimentação emocional nem sempre correspondem ao comportamento observado. Não é possível concluir “estou comendo mais por causa da ansiedade” apenas por se identificar com uma lista. [1]",
+        " Comer por emoção e compulsão não são sinônimos",
+        " Não é necessário esperar ter certeza de um diagnóstico para conversar com profissionais. Também não se deve concluir que o problema seja “só emocional” e deixar de avaliar rotina alimentar ou outras condições.",
+        "tidiana. Quando essa experiência machuca ou limita sua vida, ela merece cuidado, sem vergonha e sem diagnóstico pela internet."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+      "characters": 6377,
+      "intro": "Como é uma relação saudável com a comida na prática?\n Uma relação saudável com a comida permite cuidar da alimentação e participar da vida sem que cada escolha defina seu valor pessoal. Há espaço para nutrientes, prazer, cultura, preferências e limites reais de tempo e dinheiro. O Guia Alimentar brasileiro reconhece que alimentação envolve muito mais do que a soma de nutrientes. [1]\n Isso pode aparecer num almoço simples de arroz, feijão e legumes, numa refeição improvisada ou num aniversário com bolo. Uma ocasião não precisa desencadear punição no dia seguinte. Flexibilidade também respeita restrições clinicamente necessárias: ela pode ser construída dentro das opções seguras para cada pessoa.\n Flexibilidade não significa deixar o cuidado de lado\n Ter organização pode facilitar a vida. O ponto é perceber se uma orientação ajuda a se alimentar ou se se tornou uma cobrança que ocupa o dia",
+      "headings": [
+        "Como é uma relação saudável com a comida na prática?",
+        "Flexibilidade não significa deixar o cuidado de lado",
+        "Cinco mudanças pequenas, com exemplos concretos",
+        "Quando a relação com a comida está causando sofrimento",
+        "Uma escolha para começar",
+        "Quer conversar sobre sua relação com a alimentação?",
+        "Referências científicas"
+      ],
+      "referenceSample": "Referências científicas\n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. (Guia oficial) https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf \n Linardon J, Tylka TL, Fuller-Tyszkiewicz M. Intuitive eating and its psychological correlates: A meta-analysis. International Journal of Eating Disorders. 54(7):1073–1098. 2021. (Meta-análise) https://doi.org/10.1002/eat.23509 \n National Institute of Mental Health. Eating Disorders: What You Need to Know. NIH Publication No. 24-MH-4901. Revisado em 2024. 2024. (Material institucional de saúde) https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "riskContexts": [
+        " Exemplos de escolhas e pensamentos; não são critérios de diagnóstico. ",
+        "retendia, a próxima decisão pode ser retomar uma refeição possível e perceber como se sente. Quando jejum, vômitos, laxantes ou exercício excessivo aparecem como compensação, vale procurar avaliação; não são caminhos para resolver culpa alimentar. [3]"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+      "characters": 12024,
+      "intro": "Começar a cuidar da alimentação pode parecer simples no papel. A dificuldade aparece quando o plano precisa conviver com trabalho, orçamento, cansaço, refeições fora de casa e dias diferentes entre si. Uma proposta de emagrecimento sustentável precisa considerar essas condições desde o início.\n Este guia reúne alimentação, movimento e organização da rotina para ajudar você a escolher um primeiro passo e reconhecer quando precisa de apoio. Não oferece cardápio, treino ou prazo para perder peso. O objetivo é construir cuidados que possam continuar depois da empolgação inicial.\n O que significa emagrecimento sustentável?\n É buscar redução de peso, quando indicada, com estratégias compatíveis com a saúde e que possam ser mantidas e ajustadas ao longo do tempo. A manutenção também faz parte do processo: dificuldades e mudanças na resposta do corpo precisam ser acompanhadas, sem serem reduzida",
+      "headings": [
+        "O que significa emagrecimento sustentável?",
+        "Por que força de vontade não é suficiente?",
+        "Alimentação: construir uma base que possa continuar",
+        "Movimento como parte da rotina",
+        "O ambiente pode facilitar ou dificultar suas escolhas",
+        "Pequenas metas: definir uma ação que você consegue testar",
+        "Sono, estresse e outros fatores precisam entrar na conversa",
+        "Como começar e acompanhar o que mudou",
+        "Quando procurar acompanhamento profissional",
+        "Um próximo passo possível",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Hall KD, Kahan S. Maintenance of Lost Weight and Long-Term Management of Obesity. Medical Clinics of North America. 102(1):183–197. 2018. https://doi.org/10.1016/j.mcna.2017.08.012 \n National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Eating & Physical Activity to Lose or Maintain Weight. NIH/NIDDK. Revisado em maio. 2023. https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity \n Singh B, Murphy A, Maher C, Smith AE. Time to Form a Habit: A Systematic Review and Meta-Analysis of Health Behaviour Habit Formation and Its Determinants. Healthcare (Basel). 12(23):2488. 2024. https://doi.org/10.3390/healthcare12232488 \n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde. 2014. https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf \n World Health Organization. WHO guidelines on physical activ",
+      "riskContexts": [
+        " Melhorar a qualidade da alimentação e se movimentar são cuidados importantes, mas não garantem determinada perda de peso. O objetivo, os ajustes e a forma de acompanhar resultados precisam considerar sua situação de saúde. [1, 2]",
+        "ia entre pessoas e comportamentos: não existe um número universal de dias para criar um hábito, nem garantia de emagrecimento por automatizar uma ação. A revisão disponível também identifica limitações e risco de viés em parte dos estudos. [3]",
+        " Portanto, dormir mal não significa que seja impossível emagrecer, e dormir melhor não garante redução de peso. Se o trabalho em turnos, despertares frequentes ou o cansaço persistente dificultam a rotina, leve isso à avaliação profissional, em vez de a",
+        "lgo ou busca alívio na comida? Essas perguntas ajudam a descrever a dificuldade; não estabelecem um diagnóstico nem uma causa hormonal. Medicamentos e condições de saúde também podem exigir revisão do plano com a equipe que acompanha você. [1]",
+        " Quando procurar acompanhamento profissional"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+      "characters": 17788,
+      "intro": "Introdução\n Você já se pegou abrindo a geladeira sem saber exatamente o que queria? Ou beliscando alguma coisa pouco tempo depois de uma refeição, mesmo percebendo que não estava com fome física? Essa situação é mais comum do que parece e, muitas vezes, tem relação com os gatilhos alimentares.\n Comer sem fome não significa falta de força de vontade. Também não deve ser motivo para culpa ou julgamento. Como nutricionista, eu gosto de olhar para esse comportamento de forma mais ampla: o ato de comer envolve corpo, mente, rotina, emoções, ambiente, sono, estresse, cultura, prazer e história de vida.\n A fome física é apenas uma das razões pelas quais buscamos comida. Em muitos momentos, comemos porque estamos cansadas, ansiosas, entediadas, tristes, sobrecarregadas, felizes, comemorando algo ou simplesmente porque aquele alimento está disponível e desperta desejo. A comida tem função biológi",
+      "headings": [
+        "Introdução",
+        "Tabela comparativa: fome física x fome emocional",
+        "O que são gatilhos alimentares?",
+        "Por que eu como mesmo sem fome?",
+        "Principais gatilhos alimentares no dia a dia",
+        "Gatilhos alimentares e comportamento alimentar: como observar sem culpa",
+        "Principais benefícios de entender seus gatilhos alimentares",
+        "Erros comuns ao lidar com o hábito de comer sem fome",
+        "Dicas práticas para lidar com a vontade de comer sem fome",
+        "Quando buscar orientação profissional",
+        "Conclusão",
+        "Perguntas frequentes sobre comer sem fome e gatilhos alimentares",
+        "Quer receber mais conteúdos como este?",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Brasil. Ministério da Saúde. Guia Alimentar para a População Brasileira. 2ª edição. Brasília: Ministério da Saúde.\n World Health Organization. Healthy diet. WHO Fact Sheet.\n Pan American Health Organization. Healthy Diet. OPAS/OMS.\n Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence and implications.\n Wang Y, et al. The role of emotion in eating behavior and decisions. Frontiers in Psychology.\n Scielo Brasil. Estudos sobre comportamento alimentar, alimentação emocional e adaptação transcultural de instrumentos de avaliação.\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista.\n Sobre a autora\n Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde baseada em evidências.\n Aviso importante: Este conteúdo tem caráter educativo e informativo e não substitui uma consulta individualizada com nutricionista. Cada pessoa ",
+      "riskContexts": [
+        "ais de fome e saciedade e uma relação mais leve com a comida. O mais importante é evitar culpa, autodiagnóstico e dietas muito restritivas, buscando compreender o comportamento com acolhimento e, quando necessário, com orientação nutricional individualizada.",
+        " Por exemplo: uma pessoa pode sentir vontade de comer chocolate sempre que está ansiosa. Outra pode beliscar biscoitos enquanto trabalha, mesmo sem perceber. Alguém pode comer mais à noite porque passou o dia inteiro comendo pouco",
+        " Muitas vezes, o comportamento se repete porque foi aprendido. Se você sempre come assistindo televisão, pode sentir vontade de beliscar mesmo após o jantar. Se costuma tomar café com doce à tarde, o horário por si só pode despertar o de",
+        " São estímulos externos, como deixar doces sempre à vista, receber notificações de delivery, passar em frente à padaria, ver vídeos de comida nas redes sociais ou trabalhar ao lado de pacotes abertos.",
+        " Se houver episódios frequentes de compulsão, sofrimento emocional intenso, medo de comer, restrição severa ou preocupação excessiva com peso e corpo, uma equipe multiprofissional pode ser indicada, inc"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Vontade de doce todo dia: o que pode estar acontecendo?",
+      "characters": 7369,
+      "intro": "Vontade frequente de doce não tem uma única explicação\n Gostar de doce, desejar uma sobremesa e chegar ao fim da tarde com fome intensa são experiências diferentes, embora possam aparecer juntas. A frequência, sozinha, não identifica uma doença nem mostra falta de disciplina. Vale observar intensidade, contexto e o impacto dessa vontade na sua vida.\n A pergunta mais útil é o que costuma acontecer antes: uma refeição insuficiente, um horário associado ao café, um alimento à vista, cansaço ou uma situação emocional. Essas são possibilidades de investigação, não causas que possam ser confirmadas só por ler uma lista.\n Preferência e hábito podem participar\n O sabor doce pode ser prazeroso, e uma sobremesa pode fazer parte da cultura e das preferências pessoais. Quando café e chocolate aparecem juntos repetidamente, o momento do café pode lembrar o chocolate mesmo sem fome intensa. Imagens, c",
+      "headings": [
+        "Vontade frequente de doce não tem uma única explicação",
+        "Preferência e hábito podem participar",
+        "E se a vontade chega com muita fome?",
+        "Proibir um alimento e reduzir energia não são a mesma coisa",
+        "Sono e emoções merecem contexto",
+        "Como observar sem transformar a alimentação em vigilância",
+        "Quando vale buscar avaliação",
+        "O próximo passo depende do padrão",
+        "Referências científicas"
+      ],
+      "referenceSample": "Referências científicas\n Meule A. The Psychology of Food Cravings: the Role of Food Deprivation. Current Nutrition Reports. 9(3):251–257. 2020. (Revisão narrativa) https://doi.org/10.1007/s13668-020-00326-0 \n Boswell RG, Kober H. Food cue reactivity and craving predict eating and weight gain: a meta-analytic review. Obesity Reviews. 17(2):159–177. 2016. (Meta-análise) https://doi.org/10.1111/obr.12354 \n Al Khatib HK, Harding SV, Darzi J, Pot GK. The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis. European Journal of Clinical Nutrition. 71(5):614–624. 2017. (Revisão sistemática e meta-análise) https://doi.org/10.1038/ejcn.2016.201 \n Reichenberger J, Schnepper R, Arend AK, Blechert J. Emotional eating in healthy individuals and patients with an eating disorder: evidence from psychometric, experimental and naturalistic studies. Proceedings of the Nutrition Society. 79(3):290–299. 2020. (Revisão narrativa) https://doi.org/10.1017/S002966512000",
+      "riskContexts": [
+        " Regra de nunca mais comer doce seguida de culpa Conversar sobre uma estratégia alimentar que respeite saúde, preferências e a relação com a comida. ",
+        " Vontade de doce não é um teste para diabetes: o diagnóstico depende de avaliação e exames, conforme o caso. [6] Evite usar essa sensação isolada para concluir que falta um nutriente ou escolher suplementos e tratamen"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+      "characters": 21443,
+      "intro": "Introdução\n Você sente que passa o dia inteiro “beliscando”? Um pedacinho de pão aqui, um biscoito ali, um café com algo doce no meio da tarde, uma ida à geladeira sem muita fome e, quando percebe, parece que comeu o dia todo, mas sem se sentir realmente satisfeita?\n Antes de qualquer julgamento, quero te lembrar de algo importante: beliscar ao longo do dia não é falta de força de vontade. Muitas vezes, esse comportamento aparece como uma resposta do corpo e da mente a uma rotina corrida, refeições insuficientes, noites mal dormidas, estresse, ansiedade, excesso de restrições alimentares ou até falta de planejamento.\n Por isso, quando falamos sobre como parar de beliscar o dia todo, não estamos falando sobre “fechar a boca”, cortar tudo que você gosta ou viver contando calorias. Estamos falando sobre construir uma relação mais consciente, acolhedora e organizada com a comida, respeitando",
+      "headings": [
+        "Introdução",
+        "Por que beliscamos ao longo do dia?",
+        "Dieta restritiva pode aumentar os beliscos?",
+        "1. Observe seus beliscos sem culpa",
+        "2. Não pule refeições achando que isso compensa",
+        "3. Monte refeições que realmente sustentam",
+        "4. Planeje lanches estratégicos, não beliscos automáticos",
+        "5. Organize o ambiente alimentar",
+        "6. Aprenda a diferenciar fome física de fome emocional",
+        "7. Cuidado com o “só hoje” que acontece todos os dias",
+        "8. Inclua prazer de forma consciente",
+        "9. Coma com mais atenção",
+        "10. Durma melhor sempre que possível",
+        "11. Movimento também ajuda na percepção corporal",
+        "12. Evite soluções milagrosas",
+        "13. Quando procurar ajuda profissional?",
+        "Como parar de beliscar o dia todo na prática: um passo a passo simples",
+        "Conclusão",
+        "Perguntas frequentes",
+        "Referências",
+        "Quer receber mais conteúdos como este?"
+      ],
+      "referenceSample": "Referências\n • Brasil. Ministério da Saúde. Guia Alimentar para a População Brasileira. 2ª edição. Brasília: Ministério da Saúde, 2014.\n• Conselho Federal de Nutricionistas. Resolução CFN nº 599/2018. Código de Ética e de Conduta do Nutricionista.\n• Conselho Federal de Nutricionistas. Orientações sobre publicidade, comunicação profissional e condutas éticas na atuação do nutricionista.\n• Organização Pan-Americana da Saúde e Organização Mundial da Saúde. Materiais educativos sobre alimentação saudável, promoção da saúde e prevenção de doenças crônicas.\n 📖 Leia também\n Continue aprendendo com este conteúdo relacionado:\n 👉 Comer por emoção é normal? \n Quer receber mais conteúdos como este?\n Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.\n Inscreva-se na newsletter \n Sobre a autora\n Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde baseada em evidências.\n Aviso importante: ",
+      "riskContexts": [
+        "• Diferenciar fome física de vontade emocional de comer. • Evitar proibições rígidas que aumentam a compulsão por certos alimentos. • Comer com mais presença e menos culpa. • Buscar orientação profissional individualizada quando necessário.",
+        " Uma refeição muito “seca”, sem sabor ou sem equilíbrio, pode até parecer saudável, mas nem sempre sustenta. Alimentação saudável também precisa ser gostosa e possível.",
+        " Se o alimento está sempre à vista, é mais provável que você coma no automático. Isso não significa esconder comida por medo, mas organizar o ambiente para facilitar escolhas mais consci",
+        " Isso não significa que você nunca comerá por emoção. Significa que você começa a ampliar suas possibilidades de cuidado.",
+        " 10. Durma melhor sempre que possível"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Emagrecer sem passar fome: o que realmente ajuda no processo",
+      "characters": 19996,
+      "intro": "Introdução\n Quando o assunto é emagrecimento, muitas pessoas ainda acreditam que precisam sofrer, cortar tudo o que gostam, viver com fome ou seguir uma dieta extremamente restritiva para alcançar resultados. Mas, na prática clínica e na vida real, esse caminho costuma ser pouco sustentável, cansativo e, muitas vezes, frustrante.\n A verdade é que emagrecer sem passar fome não significa comer sem critério, ignorar escolhas alimentares ou esperar um resultado imediato. Significa aprender a construir uma rotina alimentar mais inteligente, possível e gentil com o corpo, considerando saciedade, qualidade dos alimentos, movimento, sono, emoções e constância.\n Como nutricionista, gosto de reforçar que emagrecimento saudável não deve ser tratado como punição. O corpo não precisa ser colocado em guerra para mudar. Ele precisa ser compreendido, cuidado e conduzido com estratégia.\n Dietas muito ríg",
+      "headings": [
+        "Introdução",
+        "Emagrecer sem passar fome: o que realmente ajuda no processo",
+        "O papel da saciedade no emagrecimento saudável",
+        "Como montar um prato equilibrado para emagrecer com mais saciedade",
+        "Carboidrato não é vilão",
+        "Fome física, vontade de comer e fome emocional",
+        "O impacto do sono e do estresse",
+        "Movimento: emagrecimento também passa pelo corpo em ação",
+        "Dietas restritivas: por que parecem funcionar, mas podem dificultar depois?",
+        "O que realmente ajuda na prática?",
+        "Alimentos que podem ajudar na saciedade",
+        "O que evitar no processo?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Perguntas frequentes sobre emagrecer sem passar fome",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n • Conselho Federal de Nutrição. Código de Ética e de Conduta do Nutricionista.\n• Ministério da Saúde. Guia Alimentar para a População Brasileira.\n• Organização Mundial da Saúde. Recomendações sobre atividade física e comportamento sedentário.\n• Harvard T.H. Chan School of Public Health. The Nutrition Source: Fiber.\n• National Library of Medicine / PubMed. Estudos sobre fibras, saciedade e ingestão alimentar.\n Sobre a autora\n Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde baseada em evidências.\n Aviso importante: Este conteúdo tem caráter educativo e informativo e não substitui uma consulta individualizada com nutricionista. Cada pessoa possui necessidades, objetivos e histórias diferentes.",
+      "riskContexts": [
+        "que está sendo alimentado. Por isso, fazer refeições com mais calma, mastigar melhor e evitar comer sempre no automático pode melhorar a relação com a comida.",
+        "les podem ajudar: organizar horários de refeição, evitar longos períodos sem comer quando isso gera compulsão depois, criar uma rotina noturna mais tranquila, reduzir telas antes de dormir quando possível e incluir pausas no dia.",
+        " Claro que nem sempre a rotina permite tudo isso. Mas pequenas melhorias já contam.",
+        " Evitar não significa proibir para sempre. Significa observar o que dificulta sua constância.",
+        " Pode até gerar perda de peso rápida no início, mas nem sempre é sustentável. Restrições exageradas podem aumentar fome, ansiedade e risco de abandono. O ideal é buscar um processo possível, seguro e individualizado."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Por que dietas muito restritivas costumam falhar?",
+      "characters": 5830,
+      "intro": "A dificuldade pode estar no plano, mas não existe uma causa única\n Uma estratégia que exige comer muito menos, evitar inúmeras situações e seguir regras inflexíveis pode ser difícil de manter. Isso não significa que toda dieta vá fracassar, que toda restrição seja prejudicial ou que a pessoa não consiga mudar hábitos.\n Em vez de perguntar apenas “por que não tive disciplina?”, vale investigar o que o plano exige, o que acontece com a fome e que suporte existe para a continuidade. Emagrecimento inicial e manutenção são problemas relacionados, mas diferentes.\n Nem toda restrição significa a mesma coisa\n Restrição extrema sem avaliação\n Cortes muito grandes ou exclusões amplas feitos por conta própria podem comprometer a adequação da alimentação. A aparência de rigor não garante segurança, qualidade ou continuidade.\n Déficit energético individualizado\n Reduzir a energia em relação ao gasto,",
+      "headings": [
+        "A dificuldade pode estar no plano, mas não existe uma causa única",
+        "Nem toda restrição significa a mesma coisa",
+        "Por que a manutenção pode ficar mais difícil?",
+        "O que comparar dietas nos estudos nos ensina?",
+        "Como reconhecer que o plano precisa de revisão",
+        "O que levar à conversa com o profissional",
+        "Continuar o cuidado não exige começar outra dieta extrema",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Hall KD, Kahan S. Maintenance of lost weight and long-term management of obesity . Medical Clinics of North America, 102(1):183–197. 2018. DOI . Leitura .\n Ge L, Sadeghirad B, Ball GDC, et al.. Comparison of dietary macronutrient patterns of 14 popular named dietary programmes for weight and cardiovascular risk factor reduction in adults: systematic review and network meta-analysis of randomised trials . BMJ, 369:m696. 2020. DOI . Leitura .\n National Institute for Health and Care Excellence. Overweight and obesity management (NG246) — Physical activity and diet . NICE Guideline NG246, seção 1.16 — Dietary approaches. 2025. Leitura .",
+      "riskContexts": [
+        "las feitos por conta própria podem comprometer a adequação da alimentação. A aparência de rigor não garante segurança, qualidade ou continuidade.",
+        "u disponibilidade pode deixar poucas opções. Esses exemplos ilustram problemas de execução; não são diagnóstico de uma causa biológica.",
+        " Uma mudança pontual no planejamento não exige punição. Se há jejum compensatório, vômitos provocados, exercício punitivo ou perda de controle, procure avaliação em vez de apertar o plano. Esses sinais não permitem um diagnósti",
+        "ma intervenção temporária, pergunte sobre transição e manutenção. Se há uma exclusão necessária por diagnóstico, não a retire por conta própria.",
+        " continuidade. Às vezes isso pede ajuste de refeições; em outros casos, uma avaliação mais ampla do tratamento."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+      "characters": 6500,
+      "intro": "Preciso cortar carboidrato do jantar?\n Não por uma regra universal de horário. Comer arroz, pão, batata ou outro carboidrato à noite não causa ganho de peso automaticamente. O total de energia consumida e gasta ao longo do tempo importa, assim como os fatores que influenciam esse balanço e a qualidade da alimentação. [1]\n Isso também não significa que o horário seja irrelevante em qualquer situação. A pergunta é como o jantar se encaixa no conjunto do dia, na hora de dormir, nas necessidades de saúde e na sua rotina.\n Balanço energético importa, mas não é uma medida de força de vontade\n O ganho de gordura corporal envolve armazenamento de energia ao longo do tempo. A regulação desse processo é dinâmica: fome, gasto e adaptações do organismo interagem. Explicar o princípio energético não reduz o cuidado a mandar comer menos ou contar calorias, nem permite prever o peso de alguém por uma r",
+      "headings": [
+        "Preciso cortar carboidrato do jantar?",
+        "Balanço energético importa, mas não é uma medida de força de vontade",
+        "O que a pesquisa sobre comer tarde realmente mostra",
+        "A composição do jantar oferece uma orientação mais útil",
+        "Três situações que mudam a conversa",
+        "Uma decisão prática para o próximo jantar",
+        "Referências científicas"
+      ],
+      "referenceSample": "Referências científicas\n Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR. Energy balance and its components: implications for body weight regulation. The American Journal of Clinical Nutrition. 95(4):989–994. 2012. (Artigo de consenso) https://doi.org/10.3945/ajcn.112.036350 \n World Health Organization. Carbohydrate intake for adults and children: WHO guideline. Geneva: WHO. ISBN 9789240073593. 2023. (Diretriz) https://www.who.int/publications/i/item/9789240073593 \n Vujović N et al.. Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity. Cell Metabolism. 34(10):1486–1498.e7. 2022. (Ensaio randomizado cruzado) https://doi.org/10.1016/j.cmet.2022.09.007 \n Liu HY, Eso AA, Cook N, O'Neill HM, Albarqouni L. Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis. JAMA Network Open. 7(11):e2442163. 2024. (Revisão sistemática e meta-análise) https:",
+      "riskContexts": [
+        " criam um horário universal depois do qual o carboidrato deve ser proibido, nem uma recomendação de jejum para todos."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+      "characters": 20357,
+      "intro": "Introdução\n “Pão engorda?” Essa é uma das perguntas mais comuns quando o assunto é alimentação, emagrecimento e escolhas saudáveis. Muitas pessoas sentem culpa ao comer pão, evitam o alimento durante a semana, cortam carboidratos sem orientação e depois acabam vivendo um ciclo de restrição, desejo intenso e exagero.\n MAS SERÁ QUE O PÃO, SOZINHO, TEM ESSE PODER TODO?\n A resposta precisa ser mais cuidadosa do que um simples “sim” ou “não”. Nenhum alimento isolado define a qualidade de uma alimentação, assim como nenhum alimento, por si só, determina ganho ou perda de peso. O que realmente importa é o contexto: quantidade, frequência, composição da refeição, rotina, preferências, nível de fome, qualidade do sono, atividade física, saúde metabólica e relação emocional com a comida.\n O pão faz parte da rotina alimentar de muitas pessoas. Ele aparece no café da manhã, no lanche da tarde, em re",
+      "headings": [
+        "Introdução",
+        "Pão engorda?",
+        "O problema não é o pão, é o contexto",
+        "Carboidrato não é inimigo",
+        "Pão francês, pão integral, pão de forma ou fermentação natural: qual escolher?",
+        "Como escolher um pão com mais qualidade nutricional",
+        "Como incluir pão sem culpa em uma alimentação equilibrada",
+        "Combinações para lanche da tarde",
+        "Tabela prática: pão sozinho x pão equilibrado",
+        "Comer pão à noite engorda?",
+        "Pão integral emagrece?",
+        "E quem quer emagrecer pode comer pão?",
+        "Como comer pão com mais consciência",
+        "Quando o pão pode merecer mais atenção?",
+        "Mitos comuns sobre pão",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira.\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista.\n Harvard T.H. Chan School of Public Health. The Nutrition Source: Whole Grains.\n Dietary Guidelines for Americans. Orientações sobre grãos integrais e padrões alimentares.\n American Heart Association. Whole Grains, Refined Grains and Dietary Fiber.\n Jones, J. M. et al. Whole and Refined Grains and Health: Evidence Supporting Dietary Recommendations. Advances in Nutrition.\n Perguntas frequentes\n 1. Pão engorda mesmo?\n Pão não engorda sozinho. O ganho de peso envolve o conjunto da alimentação, quantidade consumida, frequência, rotina, sono, movimento, saúde metabólica e comportamento alimentar.\n 2. Posso comer pão todos os dias?\n Muitas pessoas podem comer pão diariamente dentro de uma alimentação equilibrada. O ideal é observar quantidade, qualidade, combinações e necessidades individuais.\n 3. Qual pão é mais saudável?\n Depende",
+      "riskContexts": [
+        "Porém, essa estratégia pode ser difícil de sustentar e, para algumas pessoas, aumentar episódios de compulsão, desejo intenso por doces e sensação de fracasso.",
+        " Mas atenção: nem todo pão com aparência escura é realmente integral. Alguns produtos podem ter corantes naturais, açúcar mascavo, melado ou pequena quantidade de farinha integral. Por isso, olhar a lista de",
+        "s industrializados podem ter açúcar adicionado e teor elevado de sódio. Isso não significa que você nunca possa consumir, mas vale observar a frequência e priorizar opções mais simples no dia a dia.",
+        " Termos como “fit”, “leve”, “multigrãos”, “natural” ou “zero” nem sempre significam melhor qualidade nutricional. O rótulo e a lista de ingredientes dizem mais do que a parte da frente da embalagem.",
+        " você sente culpa intensa sempre que come pão;"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Como montar um prato equilibrado sem complicar a alimentação",
+      "characters": 26187,
+      "intro": "Introdução\n Montar um prato equilibrado parece simples, mas, na prática, muitas pessoas transformam esse momento em uma lista enorme de dúvidas: “Será que posso comer arroz?”, “Preciso cortar carboidrato?”, “O prato ideal tem que ser sempre igual?”, “E se eu não gostar de salada?”, “Preciso pesar tudo?”.\n A verdade é que a alimentação saudável não precisa ser sinônimo de rigidez, culpa ou perfeição. Pelo contrário: quanto mais complicada uma estratégia alimentar se torna, mais difícil tende a ser mantê-la na vida real. E a vida real tem rotina corrida, \n trabalho, família, imprevistos, fome, preferências, orçamento, cultura alimentar e momentos sociais.\n Por isso, aprender como montar um prato equilibrado é uma forma prática de cuidar da alimentação sem transformar cada refeição em uma cobrança. O objetivo não é criar um prato “perfeito”, mas construir combinações que façam sentido para ",
+      "headings": [
+        "Introdução",
+        "O que significa montar um prato equilibrado?",
+        "Por que tanta gente complica a alimentação?",
+        "A base do prato equilibrado: comida de verdade",
+        "Como montar um prato equilibrado na prática",
+        "Modelo prático de prato equilibrado",
+        "Exemplos de pratos equilibrados para a rotina",
+        "Como montar um prato equilibrado sem cair na rigidez",
+        "E quando o prato não for equilibrado?",
+        "Como montar um prato equilibrado em diferentes momentos do dia",
+        "Prato equilibrado e emagrecimento: cuidado com promessas",
+        "Erros comuns ao tentar montar um prato equilibrado",
+        "Estratégias simples para facilitar a semana",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. O guia apresenta recomendações sobre escolha, combinação, preparo e consumo de alimentos, com foco em alimentos in natura ou minimamente processados, cultura alimentar e refeições mais saudáveis.\n Conselho Federal de Nutricionistas. Resolução CFN nº 599/2018 — Código de Ética e de Conduta do Nutricionista. Documento que orienta a atuação ética do nutricionista, incluindo responsabilidade na comunicação profissional.\n Harvard T.H. Chan School of Public Health. Healthy Eating Plate. Modelo educativo de montagem de refeições com vegetais, frutas, grãos integrais, proteínas saudáveis, gorduras de qualidade e água.\n World Health Organization. Healthy diet. A OMS descreve princípios de alimentação saudável baseados em adequação, equilíbrio, moderação e diversidade, com incentivo a frutas, vegetais, leguminosas, cereais integrais, castanhas e sementes.\n Perguntas frequentes\n 1. O que é um prato equilibrado?\n Um prat",
+      "riskContexts": [
+        "e dúvidas: “Será que posso comer arroz?”, “Preciso cortar carboidrato?”, “O prato ideal tem que ser sempre igual?”, “E se eu não gostar de salada?”, “Preciso pesar tudo?”.",
+        "imamente processados, preparações culinárias e o ato de comer com regularidade, atenção e companhia sempre que possível.",
+        " Montar um prato equilibrado não significa comer sempre a mesma coisa, seguir regras rígidas ou excluir grupos alimentares. De forma simples, um prato mais equilibrado pode combinar vegetais, uma fonte de carboidrat",
+        " Isso não significa que a alimentação precise ser perfeita ou que alimentos industrializados nunca possam aparecer. Significa apenas que, quanto mais a rotina alimentar se apoia em alimentos básicos e preparações simples, maior tende a ser a qualidade nutric",
+        " Não é necessário que a proteína venha sempre do mesmo alimento. Variar as fontes ao longo da semana pode tornar a alimentação mais interessante e nutritiva."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Ansiedade e alimentação: como uma coisa influencia a outra",
+      "characters": 19249,
+      "intro": "INTRODUÇÃO\n A relação entre ansiedade e alimentação faz parte da vida de muitas pessoas, mesmo que nem sempre seja percebida com clareza. Em dias mais intensos, corridos ou emocionalmente desafiadores, é comum sentir alteração no apetite, vontade maior de doces, busca por alimentos mais práticos, dificuldade de organizar refeições ou até aquela sensação de “comer sem pensar”.\n Antes de qualquer coisa, é importante dizer: isso não significa falta de força de vontade. O comportamento alimentar é influenciado por muitos fatores, como emoções, rotina, sono, estresse, disponibilidade de alimentos, cultura alimentar, histórico de dietas restritivas e contexto de vida. Por isso, falar sobre ansiedade e alimentação exige cuidado, acolhimento e responsabilidade.\n Este artigo não tem a intenção de diagnosticar ansiedade, tratar transtornos emocionais ou substituir o acompanhamento individualizado ",
+      "headings": [
+        "INTRODUÇÃO",
+        "Ansiedade e alimentação: como uma coisa influencia a outra",
+        "Por que a ansiedade pode mudar a forma como você come?",
+        "Comer por ansiedade é sempre um problema?",
+        "A alimentação pode ajudar no equilíbrio emocional?",
+        "Café, açúcar e ansiedade: precisa cortar tudo?",
+        "Como identificar se estou com fome física ou fome emocional?",
+        "Estratégias práticas para lidar melhor com ansiedade e alimentação",
+        "O papel do sono, do movimento e da rotina",
+        "Quando buscar ajuda profissional?",
+        "Quer receber mais conteúdos como este?",
+        "CONCLUSÃO",
+        "REFERÊNCIAS",
+        "Perguntas frequentes sobre ansiedade e alimentação"
+      ],
+      "referenceSample": "REFERÊNCIAS\n Organização Mundial da Saúde. Orientações sobre alimentação saudável, destacando variedade, frutas, vegetais, leguminosas, cereais integrais e individualização conforme contexto, cultura e estilo de vida.\n Harvard Health Publishing. Conteúdos sobre psiquiatria nutricional e relação entre alimentação, cérebro e humor.\n Aucoin M. et al. Diet and Anxiety: A Scoping Review. Revisão sobre associações entre fatores alimentares, sintomas de ansiedade e lacunas de pesquisa.\n Conselho Federal de Nutricionistas. Sistema de Normativos e Código de Ética e Conduta do Nutricionista.\n Perguntas frequentes sobre ansiedade e alimentação\n 1. Ansiedade pode mudar a fome?\n Sim. Em algumas pessoas, a ansiedade pode reduzir o apetite. Em outras, pode aumentar a vontade de comer, especialmente alimentos associados a conforto emocional. Isso varia de pessoa para pessoa.\n 2. Comer por ansiedade significa falta de controle?\n Não necessariamente. Comer por ansiedade pode ser uma resposta emocional a",
+      "riskContexts": [
+        " A relação entre ansiedade e alimentação faz parte da vida de muitas pessoas, mesmo que nem sempre seja percebida com clareza. Em dias mais intensos, corridos ou emocionalmente desafiadores, é comum sentir alteração no apetite, vontade maior de doces, busca ",
+        " Uma alimentação equilibrada não “cura” ansiedade, mas pode fazer parte de um estilo de vida mais organizado e acolhedor, especialmente quando associada a sono adequado, movimento possível, pausas, ",
+        ", a ciência é cuidadosa: alimentação pode estar associada ao bem-estar emocional, mas não substitui tratamento psicológico ou médico quando ele é necessário. Revisões científicas apontam que há associações entre fatores dietéticos e sintomas de ansiedade, mas também des",
+        " Por exemplo: se você percebe que sempre chega ao fim do dia com muita vontade de doce, talvez a pergunta não seja apenas “como cortar o doce?”, mas sim: eu me alimentei o suficiente ao longo do dia? ",
+        " Comer por ansiedade é sempre um problema?"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "O que comer antes do treino? Guia simples para iniciantes",
+      "characters": 22942,
+      "intro": "Introdução\n Uma das dúvidas mais comuns de quem está começando a se exercitar é: o que comer antes do treino? Essa pergunta parece simples, mas costuma vir acompanhada de muitas inseguranças: “posso treinar em jejum?”, “banana é suficiente?”, “preciso comer proteína?”, “e se eu sentir enjoo?”, “comer antes do treino engorda?”.\n Antes de qualquer coisa, é importante lembrar que alimentação e exercício não precisam caminhar junto com culpa, rigidez ou regras difíceis de seguir. O objetivo de uma alimentação pré-treino não é criar mais uma obrigação na sua rotina, mas ajudar o corpo a se sentir mais preparado para o movimento, respeitando sua individualidade, seus horários, sua fome, sua digestão e o tipo de atividade que você pratica.\n Quando falamos sobre o que comer antes do treino, não existe uma única resposta ideal para todas as pessoas. Uma caminhada leve pela manhã exige uma estraté",
+      "headings": [
+        "Introdução",
+        "O que comer antes do treino? Guia simples para iniciantes",
+        "O que comer antes do treino: entenda o papel dos carboidratos",
+        "Quanto tempo antes do treino devo comer?",
+        "Treino pela manhã: preciso comer antes?",
+        "E se eu treinar no fim da tarde ou à noite?",
+        "Proteína antes do treino: é necessário?",
+        "O que evitar comer antes do treino?",
+        "Hidratação também faz parte do pré-treino",
+        "Exemplos simples de pré-treino para iniciantes",
+        "Como saber se meu pré-treino está funcionando?",
+        "Pré-treino não precisa ser caro, fitness ou complicado",
+        "Quando procurar uma nutricionista?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes sobre o que comer antes do treino"
+      ],
+      "referenceSample": "Referências\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista — Resolução CFN nº 599/2018. Documento que orienta a atuação ética do nutricionista no Brasil, com responsabilidade, compromisso social e respeito à individualidade.\n Brasil. Ministério da Saúde. Guia Alimentar para a População Brasileira. 2ª edição. Brasília: Ministério da Saúde, 2014. Documento de referência nacional sobre alimentação adequada e saudável, valorizando alimentos in natura, cultura alimentar e autonomia.\n Thomas DT, Erdman KA, Burke LM. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. Journal of the Academy of Nutrition and Dietetics, 2016.\n Kerksick CM, Arent S, Schoenfeld BJ, et al. International Society of Sports Nutrition position stand: nutrient timing. Journal of the International Society of Sports Nutrition, 2017.\n Perguntas frequentes sobre o que comer antes do tre",
+      "riskContexts": [
+        "Essa pergunta parece simples, mas costuma vir acompanhada de muitas inseguranças: “posso treinar em jejum?”, “banana é suficiente?”, “preciso comer proteína?”, “e se eu sentir enjoo?”, “comer antes do treino engorda?”.",
+        " Para iniciantes, mais importante do que consumir proteína em um horário exato é garantir uma alimentação equilibrada ao longo do dia. Em algumas situações, incluir uma pequena fonte de proteína no pré-treino pode ajudar na saciedade e na composiç",
+        " Não é necessário começar a treinar já pensando em suplementos. Suplementos podem ter utilidade em alguns contextos, mas não devem substituir a base alimentar nem ser usados como solução universal. A avaliação individual com nutricio",
+        " Isso não significa que esses alimentos nunca possam fazer parte da vida. Significa apenas que, antes do treino, o conforto digestivo também precisa ser considerado. Uma refeição rica em gordura e fibras, ",
+        " Alguns sinais que podem indicar baixa hidratação incluem sede intensa, urina muito escura, boca seca, dor de cabeça e sensação de cansaço. Porém, esses sinais não substituem avaliação profissional quando há sintomas frequentes ou intensos."
+      ]
+    },
+    {
+      "number": 26,
+      "title": "Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+      "characters": 6477,
+      "intro": "Alimentação e movimento precisam caber na mesma rotina\n O horário de se movimentar compete com almoço, trabalho, deslocamento e descanso. Por isso, unir nutrição e movimento começa por uma pergunta prática: como organizar esses cuidados para que um não torne o outro inviável? Reservar tempo para o exercício e esquecer de comer, ou tentar resolver toda a saúde apenas pelo prato, deixa partes importantes de fora.\n A proposta aqui é coordenar cuidados cotidianos. Não é um cardápio esportivo, um programa de treino ou uma estratégia de compensar alimentos com gasto calórico.\n O que cada cuidado oferece\n A alimentação fornece energia e nutrientes. O movimento produz estímulos para os quais o corpo se adapta; a recuperação também precisa de alimento e descanso. No contexto esportivo, energia, carboidratos, proteínas e líquidos são componentes importantes, com necessidades que variam conforme a ",
+      "headings": [
+        "Alimentação e movimento precisam caber na mesma rotina",
+        "O que cada cuidado oferece",
+        "Três situações em que organizar os dois cuidados ajuda",
+        "Água e recuperação entram no planejamento",
+        "Um experimento de organização para a semana",
+        "Constância com espaço para ajustes",
+        "Referências científicas"
+      ],
+      "referenceSample": "Referências científicas\n Brasil. Ministério da Saúde. Guia alimentar para a população brasileira. 2ª edição. Brasília: Ministério da Saúde. 2014. (Guia oficial) https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf \n Brasil. Ministério da Saúde. Guia de atividade física para a população brasileira. Brasília: Ministério da Saúde. 2021. (Guia oficial) https://bvsms.saude.gov.br/bvs/publicacoes/guia_atividade_fisica_populacao_brasileira.pdf \n World Health Organization. WHO guidelines on physical activity and sedentary behaviour. Geneva: WHO. ISBN 9789240015128. 2020. (Diretriz de saúde pública) https://www.who.int/publications/i/item/9789240015128 \n Thomas DT, Erdman KA, Burke LM. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. Journal of the Academy of Nutrition and Dietetics. 116(3):501–528. 2016. (Posicionamento científico) https://doi.org/10.1016/",
+      "riskContexts": [
+        "rgia para as tarefas usuais? Cansaço frequente não deve ser atribuído automaticamente à falta de um suplemento ou de um alimento. Se é persistente, desproporcional ou vem com mal-estar, precisa de avaliação."
+      ]
+    },
+    {
+      "number": 15,
+      "title": "O que comer depois do treino para recuperar melhor?",
+      "characters": 23102,
+      "intro": "Introdução\n Depois do treino, é muito comum surgir a dúvida: afinal, o que comer depois do treino para recuperar melhor, ter mais disposição e cuidar do corpo de forma equilibrada?\n Essa pergunta aparece tanto para quem faz musculação quanto para quem caminha, corre, pedala, dança, pratica pilates, funcional ou qualquer outra atividade física. E a resposta não precisa ser complicada, rígida ou cheia de regras difíceis. A alimentação pós-treino pode ser simples, acessível e adaptada à rotina real.\n O ponto mais importante é entender que o corpo não precisa de “milagres” depois do exercício. Ele precisa de suporte. Durante o treino, usamos energia, movimentamos músculos, perdemos líquidos pelo suor e criamos uma demanda maior por nutrientes. Depois, o organismo inicia um processo natural de recuperação, que pode ser favorecido por uma alimentação adequada, hidratação e descanso.\n A nutriçã",
+      "headings": [
+        "Introdução",
+        "O que comer depois do treino para recuperar melhor?",
+        "Carboidratos depois do treino: por que eles não devem ser vilões?",
+        "Proteínas no pós-treino: reparação, saciedade e manutenção muscular",
+        "Hidratação: o detalhe que muita gente esquece",
+        "Preciso comer imediatamente depois do treino?",
+        "Exemplos práticos do que comer depois do treino",
+        "E se eu não sentir fome depois do treino?",
+        "O que evitar depois do treino?",
+        "Suplemento é necessário no pós-treino?",
+        "O pós-treino muda conforme o tipo de exercício?",
+        "Como montar um prato pós-treino equilibrado?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Perguntas frequentes",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Academy of Nutrition and Dietetics, Dietitians of Canada e American College of Sports Medicine. Position of the Academy of Nutrition and Dietetics, Dietitians of Canada, and the American College of Sports Medicine: Nutrition and Athletic Performance. O documento destaca a importância da alimentação, hidratação e estratégias nutricionais individualizadas para saúde, performance e recuperação no contexto esportivo.\n International Society of Sports Nutrition. Position Stand: Nutrient Timing. A publicação revisa evidências sobre o momento de ingestão de carboidratos e proteínas em relação ao exercício, considerando performance, recuperação e composição corporal.\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista. Documento orienta a atuação profissional responsável, ética e sem promessas indevidas de resultados.\n Conselho Federal de Nutricionistas. Comunicação profissional e condutas éticas na divulgação de resultados. O CFN reforça cuidados rel",
+      "riskContexts": [
+        "atação e distribuição adequada de nutrientes podem contribuir para desempenho, saúde e recuperação, sempre considerando o tipo de exercício, intensidade, duração, objetivos e individualidade de cada pessoa. Diretrizes internacionais de nutrição e performance destaca",
+        "e de uma rotina de cuidado. Comer bem depois do treino não significa seguir uma dieta rígida, tomar suplementos sem necessidade ou comer algo que você não gosta. Significa oferecer ao corpo nutrientes que façam sentido para aquele momento.",
+        "ale fugir dos extremos. Não é necessário transformar toda refeição pós-treino em um ritual cheio de suplementos, nem acreditar que sem whey protein o treino foi “perdido”. Suplementos podem ter utilidade em alguns casos, mas não são obrigatórios para todas as pessoas.",
+        " ou em ambientes muito quentes, pode ser necessário avaliar a reposição de eletrólitos, como sódio, sempre de forma individualizada.",
+        " Sinais como sede intensa, urina muito escura, dor de cabeça, tontura ou fadiga excessiva podem indicar que a hidratação precisa de mais atenção. Ainda assim, é importante lembrar que sintomas persistentes"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Alimentação saudável fora de casa: escolhas possíveis sem culpa",
+      "characters": 18477,
+      "intro": "Introdução\n Comer fora de casa faz parte da vida real. Seja por trabalho, estudos, compromissos familiares, viagens, eventos sociais ou simplesmente por prazer, nem sempre as refeições acontecem dentro de casa, com tempo, planejamento e tudo organizado como gostaríamos.\n E está tudo bem.\n Quando falamos em alimentação saudável fora de casa, muitas pessoas pensam automaticamente em restrição, controle rígido, marmita perfeita ou escolhas “certas” e “erradas”. Mas uma alimentação equilibrada não precisa ser construída pela culpa. Ela pode ser construída com consciência, flexibilidade e escolhas possíveis dentro da rotina.\n O Guia Alimentar para a População Brasileira, do Ministério da Saúde, reforça que alimentação adequada e saudável não se resume à ingestão de nutrientes, mas também envolve cultura, modos de comer, contexto social, escolhas, combinações e relação com a comida. Isso é ess",
+      "headings": [
+        "Introdução",
+        "Alimentação saudável fora de casa não é sobre perfeição",
+        "O que observar ao montar um prato fora de casa",
+        "Como fazer escolhas em restaurante por quilo",
+        "Prato feito, marmitex e comida simples também podem ser equilibrados",
+        "Padaria, café ou lanche: como equilibrar sem culpa",
+        "Comer fora em eventos sociais não precisa virar compensação",
+        "Bebidas: um detalhe que pode fazer diferença",
+        "O papel da fome e da saciedade nas escolhas fora de casa",
+        "Como lidar com a culpa depois de comer fora",
+        "Estratégias práticas para comer melhor fora de casa",
+        "Alimentação saudável fora de casa e comportamento alimentar",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Perguntas frequentes",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial com recomendações sobre alimentação adequada e saudável, valorizando alimentos in natura e minimamente processados, cultura alimentar, modos de comer e contexto social.\n World Health Organization. Healthy diet. A OMS reforça que uma alimentação saudável varia conforme características individuais, contexto cultural, disponibilidade de alimentos e costumes alimentares.\n Harvard T.H. Chan School of Public Health. Healthy Eating Plate. Material educativo sobre composição de refeições com vegetais, frutas, grãos integrais, proteínas e água como bebida principal.\n Conselho Federal de Nutrição. Código de Ética e Conduta e posicionamentos institucionais. O CFN reforça a importância de práticas éticas, comunicação responsável e cuidado com expectativas irreais em conteúdos de nutrição.\n Sobre a autora\n Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde",
+      "riskContexts": [
+        "rabalho, estudos, compromissos familiares, viagens, eventos sociais ou simplesmente por prazer, nem sempre as refeições acontecem dentro de casa, com tempo, planejamento e tudo organizado como gostaríamos.",
+        " Alimentação saudável fora de casa não significa escolher sempre a opção mais “fit” do cardápio. Também não significa levar marmita para todos os lugares ou recusar todos os convites sociais. Significa desenvolver repertório",
+        " Nem sempre será possível montar um prato colorido, mas quando houver oportunidade, incluir verduras, legumes cozidos, saladas ou frutas ajuda a ampliar a variedade de vit",
+        " Nem sempre a refeição fora de casa será almoço ou jantar. Muitas vezes, ela será um café da manhã rápido, um lanche entre compromissos ou uma parada em padaria.",
+        " Isso não significa que você nunca possa consumir outra bebida. Significa apenas que, na rotina, escolher água com mais frequência pode ser uma estratégia simples de cuidado."
+      ]
+    },
+    {
+      "number": 19,
+      "title": "Como comer com mais atenção mesmo na rotina corrida",
+      "characters": 20461,
+      "intro": "Introdução\n Comer com calma parece simples, mas para muitas pessoas virou um desafio real. Entre trabalho, mensagens no celular, compromissos, casa, família, trânsito, estudos e aquela sensação constante de que “não dá tempo”, a alimentação muitas vezes acaba acontecendo no automático. A pessoa senta para comer já pensando na próxima tarefa, responde mensagens entre uma garfada e outra, assiste algo na tela, come em pé, belisca enquanto prepara a refeição ou termina o prato sem perceber direito o sabor da comida.\n Se você se identifica com isso, saiba que não está sozinha. A rotina corrida influencia muito a forma como nos relacionamos com a comida. E quando a alimentação acontece sempre com pressa ou distração, pode ficar mais difícil perceber sinais importantes do corpo, como fome, saciedade, satisfação e até preferências reais.\n A proposta deste artigo não é trazer mais uma regra alim",
+      "headings": [
+        "Introdução",
+        "O que significa comer com mais atenção?",
+        "Por que a rotina corrida atrapalha a atenção na alimentação?",
+        "Como comer com mais atenção mesmo sem ter muito tempo?",
+        "O que fazer quando só tenho poucos minutos para comer?",
+        "Como aplicar no trabalho, na rua ou fora de casa?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Perguntas frequentes",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista e orientações sobre publicidade profissional. O CFN reforça a importância de evitar práticas sensacionalistas, autopromoção e divulgação de resultados como garantia, especialmente em conteúdos envolvendo alimentação e saúde.\n Harvard T.H. Chan School of Public Health. Mindful Eating. The Nutrition Source. Conteúdo sobre princípios da alimentação consciente, práticas sensoriais, fome, saciedade, distração alimentar e limites da abordagem como estratégia isolada.\n Harvard Health Publishing. Slow down — and try mindful eating. Conteúdo educativo sobre comer com atenção, percepção de sabor, textura, fome e saciedade.\n Robinson E, Aveyard P, Daley A, Jolly K, Lewis A, Lycett D, Higgs S. Eating attentively: a systematic review and meta-analysis of the effect of food intake memory and awareness on eating. The American Journal of Clinical Nutrition. 2013;97(4):728–742.\n Fung TT, Long MW, Hung P, Cheu",
+      "riskContexts": [
+        "orrida influencia muito a forma como nos relacionamos com a comida. E quando a alimentação acontece sempre com pressa ou distração, pode ficar mais difícil perceber sinais importantes do corpo, como fome, saciedade, satisfação e até preferências reais.",
+        "o quer dizer analisar cada garfada com cobrança. Também não significa comer devagar o tempo todo ou nunca usar o celular perto da mesa. A vida real é dinâmica. Existem dias em que a refeição será mais tranquila e outros em que ela acontecerá entre compromissos. O p",
+        " Nem sempre a resposta será clara, e tudo bem. A prática é justamente aprender a observar com mais curiosidade e menos julgamento.",
+        ", temperatura, sabor e aparência dos alimentos influenciam a satisfação. Quando a refeição acontece sempre com distração, parte dessa experiência se perde.",
+        " O problema não é ter uma rotina cheia. O problema é quando a alimentação passa a acontecer sempre desconectada do corpo. Comer distraída pode reduzir a percepção do quanto foi consumido, diminuir o prazer da refeição e dificultar o reconhecimento da sacieda"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+      "characters": 21667,
+      "intro": "INTRODUÇÃO\n Você já se pegou pensando: “comi algo ruim”, “hoje eu fui bem”, “estraguei a dieta” ou “agora preciso compensar”? Essas frases parecem comuns, mas revelam algo importante: muitas vezes, a comida deixa de ser apenas comida e passa a carregar julgamento, culpa e medo.\n A ideia de separar os alimentos bons ou ruins é muito presente nas redes sociais, nas conversas sobre dieta e até em conteúdos que prometem ensinar uma alimentação saudável. O problema é que essa classificação pode transformar o ato de comer em uma experiência rígida, ansiosa e cheia de regras. Em vez de ajudar, ela pode dificultar a construção de uma relação mais tranquila, consciente e sustentável com a comida.\n É claro que os alimentos têm composições nutricionais diferentes. Frutas, verduras, legumes, feijões, cereais, ovos, carnes, leite, castanhas e preparações caseiras oferecem nutrientes importantes para ",
+      "headings": [
+        "INTRODUÇÃO",
+        "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+        "Por que chamar alimentos de “ruins” pode aumentar a culpa alimentar?",
+        "Restrição excessiva pode aumentar a vontade de comer",
+        "Qualidade nutricional importa, mas contexto também importa",
+        "Como trocar julgamento por consciência alimentar?",
+        "O papel do prazer na alimentação",
+        "Como falar sobre alimentos de forma mais equilibrada?",
+        "Alimentos ultraprocessados: como olhar sem terrorismo nutricional?",
+        "Relação saudável com a comida não é comer “certo” o tempo todo",
+        "Sinais de que a classificação “bom ou ruim” pode estar atrapalhando",
+        "Como construir uma alimentação mais leve e consciente?",
+        "Uma forma mais equilibrada de pensar nos alimentos",
+        "Quer receber mais conteúdos como este?",
+        "CONCLUSÃO",
+        "Perguntas frequentes",
+        "REFERÊNCIAS"
+      ],
+      "referenceSample": "REFERÊNCIAS\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial com recomendações sobre alimentação adequada e saudável, valorizando alimentos in natura, minimamente processados, preparações culinárias e o contexto social da alimentação.\n NUPENS/USP. Guia Alimentar para a População Brasileira e classificação NOVA. Material de apoio sobre a regra de ouro do Guia Alimentar e a valorização de alimentos in natura e minimamente processados.\n World Health Organization. Healthy diet. Fact sheet sobre alimentação saudável, padrões alimentares, consumo de ultraprocessados, frutas, vegetais, fibras, açúcares livres, gorduras e sódio.\n ScienceDirect / Appetite. Food moralization and intuitive eating. Estudo sobre categorização moral dos alimentos e possíveis impactos na permissão alimentar e na alimentação intuitiva.\n Journal of Nutrition Education and Behavior. Intuitive Eating Intervention and Diet Quality: Systematic Review. Revisão sobre intervenções baseadas e",
+      "riskContexts": [
+        " Quando uma pessoa acredita que não pode comer determinado alimento nunca, é comum que pense mais nele. Isso acontece porque a proibição aumenta o foco mental.",
+        " É diferente pensar: “Eu nunca posso comer isso” e pensar: “Esse alimento pode fazer parte da minha vida em alguns momentos, mas não precisa ser a base da minha rotina”.",
+        " Em vez de pensar “nunca mais vou comer ultraprocessados”, pode ser mais realista pensar: “Como posso aumentar alimentos in natura e minimamente processados na minha semana?”",
+        " Esses sinais não significam diagnóstico. Mas podem indicar que sua alimentação está ficando mais rígida e menos conectada com o cuidado real.",
+        "am a base da rotina e priorizar alimentos in natura, minimamente processados e preparações caseiras sempre que possível."
+      ]
+    },
+    {
+      "number": 18,
+      "title": "Como criar um déficit calórico sem cortar calorias obsessivamente",
+      "characters": 5905,
+      "intro": "Déficit calórico é um conceito, não um cardápio\n Déficit energético acontece quando a energia obtida pela alimentação fica abaixo da energia utilizada pelo organismo ao longo de um período. O corpo então recorre às suas reservas. Esse processo ajuda a explicar mudanças corporais, mas não determina sozinho como uma pessoa deve comer ou se perder peso é uma meta adequada. [1]\n Não existe um número de calorias deste artigo que sirva para todos. O objetivo é entender o mecanismo, reconhecer limites das estimativas e saber o que observar quando mudanças de rotina são discutidas com um profissional.\n Comer melhor não comprova que existe déficit\n Uma alimentação pode ganhar variedade, fibras e qualidade sem que a ingestão de energia diminua. Isso não transforma a melhora em erro. Acrescentar alimentos pode ser exatamente o cuidado necessário quando a alimentação está insuficiente.\n A diretriz N",
+      "headings": [
+        "Déficit calórico é um conceito, não um cardápio",
+        "Comer melhor não comprova que existe déficit",
+        "Por que a conta não é uma previsão exata?",
+        "Um ajuste possível, com uma pergunta de acompanhamento",
+        "O que observar sem viver contando calorias",
+        "Quando a busca por déficit deve dar lugar à avaliação",
+        "O próximo passo não precisa ser um corte maior",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Hall KD, Heymsfield SB, Kemnitz JW, Klein S, Schoeller DA, Speakman JR. Energy balance and its components: implications for body weight regulation . American Journal of Clinical Nutrition, 95(4):989–994. 2012. DOI . Leitura .\n National Institute for Health and Care Excellence. Overweight and obesity management (NG246) — Physical activity and diet . NICE Guideline NG246, seção 1.16 — Dietary approaches. 2025. Leitura .\n National Institute of Diabetes and Digestive and Kidney Diseases. About the Body Weight Planner . NIDDK — informação de saúde; última revisão declarada: maio de 2017. 2017. Leitura .",
+      "riskContexts": [
+        " Por isso, uma meta calculada não garante uma perda fixa por semana. Uma mudança rápida na balança também não mede somente gordura: água e conteúdo intestinal, entre outros fatores, participam da vari"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Exercícios ajudam no emagrecimento? Entenda além da queima calórica",
+      "characters": 20379,
+      "intro": "Introdução\n Quando o assunto é emagrecimento, é muito comum que os exercícios sejam vistos apenas como uma forma de “queimar calorias”. Essa ideia até faz parte da conversa, mas está longe de explicar tudo. O corpo humano não funciona como uma conta simples de entrada e saída. Movimento, alimentação, sono, estresse, comportamento alimentar, rotina, saúde metabólica, massa muscular e vínculo com o próprio corpo também participam desse processo.\n Por isso, a pergunta “exercícios ajudam no emagrecimento?” merece uma resposta mais completa, mais honesta e mais acolhedora: sim, os exercícios podem ajudar, mas não devem ser vistos como punição pelo que se comeu, nem como uma obrigação extrema para compensar excessos. Eles fazem parte de um contexto maior de cuidado.\n A Organização Mundial da Saúde reforça que a atividade física regular está associada a benefícios importantes para a saúde, incl",
+      "headings": [
+        "Introdução",
+        "Exercícios ajudam no emagrecimento? A resposta vai além das calorias",
+        "Por que não devemos enxergar o exercício como compensação?",
+        "O papel da massa muscular no emagrecimento",
+        "Exercício aumenta o gasto calórico, mas isso não é tudo",
+        "O exercício também pode melhorar a relação com o corpo",
+        "Exercícios ajudam no apetite e na rotina alimentar?",
+        "Caminhada emagrece? E musculação? Qual exercício escolher?",
+        "O perigo do “tudo ou nada” no emagrecimento",
+        "Alimentação e exercício precisam caminhar juntos",
+        "O que observar além do peso na balança?",
+        "Como começar a se movimentar sem radicalismo",
+        "Exercício sem prazer também funciona?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Organização Mundial da Saúde. Recomendações sobre atividade física e comportamento sedentário, incluindo benefícios da prática regular para saúde e bem-estar.\n Ministério da Saúde. Guia de Atividade Física para a População Brasileira, com orientações para promoção da saúde e vida ativa.\n Organização Pan-Americana da Saúde. Atividade física, equilíbrio energético, saúde funcional e prevenção de doenças crônicas.\n American College of Sports Medicine. Diretrizes e posicionamentos sobre atividade física, controle de peso e saúde em adultos.\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista e orientações sobre comunicação responsável.\n Perguntas frequentes\n 1. Exercícios ajudam no emagrecimento?\n Sim, exercícios podem ajudar no emagrecimento, mas não atuam sozinhos. Eles contribuem para o gasto energético, preservação de massa muscular, saúde metabólica, disposição e construção de hábitos mais saudáveis. Porém, o processo também depende da alime",
+      "riskContexts": [
+        " Porém, nenhum exercício isolado garante emagrecimento. O resultado depende de vários fatores, como alimentação, sono, nível de estresse, consistência, histórico individual, saúde hormonal, rotina, c",
+        "emana pode ser mais sustentável para algumas pessoas do que um treino muito intenso feito uma vez e nunca mais repetido.",
+        "os de emagrecimento sustentável, porque a motivação não fica presa apenas ao número da balança. Nem sempre o peso muda rapidamente, e isso pode gerar frustração. Mas outros sinais podem aparecer antes: mais energia, melhor sono, menos cansaço nas atividades diárias,",
+        "ratos, gorduras, fibras e recuperação. Mas isso deve ser individualizado. Nem todo mundo precisa de suplemento, estratégia avançada ou plano complexo.",
+        "ou três vezes por semana, fazer uma aula experimental, subir mais escadas, alongar pela manhã ou procurar orientação de um profissional de educação física."
+      ]
+    },
+    {
+      "number": 22,
+      "title": "Comer à noite é falta de controle? Entenda o que pode estar por trás",
+      "characters": 5810,
+      "intro": "Comer à noite não define falta de controle\n Jantar tarde, fazer um lanche antes de dormir ou comer depois de um treino não demonstram, por si só, um problema de comportamento alimentar. A pergunta útil é como esse momento se encaixa no dia e se existe sofrimento ou sensação de não conseguir escolher como agir.\n O horário pode importar para a saúde, mas não funciona como um julgamento da pessoa. Também não basta olhar o relógio para explicar fome, desconforto ou mudanças de peso.\n Três situações que parecem iguais, mas pedem perguntas diferentes\n Cheguei com fome depois de um dia sem pausa\n Imagine alguém que almoçou pouco, não conseguiu fazer outra refeição e só chega em casa tarde. Nesse cenário ilustrativo, comer pode atender a uma necessidade de alimento. Tentar adiar mais a refeição para obedecer a uma regra de horário não resolve a falta de acesso durante o dia.\n Vale observar se ho",
+      "headings": [
+        "Comer à noite não define falta de controle",
+        "Três situações que parecem iguais, mas pedem perguntas diferentes",
+        "O que a ciência sobre comer tarde realmente mostra?",
+        "Como observar sem vigiar cada garfada",
+        "Comer durante a noite não é automaticamente uma síndrome",
+        "Um próximo passo proporcional ao problema",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Vujović N, Piron MJ, Qian J, et al.. Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity . Cell Metabolism. 2022. DOI . Leitura .\n Liu HY, Eso AA, Cook N, et al.. Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis . JAMA Network Open, 7(11):e2442163. 2024. DOI . Leitura .\n Allison KC, Lundgren JD, O’Reardon JP, et al.. Proposed diagnostic criteria for night eating syndrome . International Journal of Eating Disorders, 43(3):241–247. 2010. DOI . Leitura .\n National Institute of Mental Health. Eating Disorders: What You Need to Know . NIH Publication No. 24-MH-4901, revisado em 2024. 2024. Leitura .",
+      "riskContexts": [
+        " de parar, sensação de perda de controle, compensações no dia seguinte ou prejuízo do sono, vale procurar avaliação. Isso pode acontecer com ou sem fome física. Não significa que o horário tenha causado sozinho o problema. [4]",
+        " Portanto, nem “tudo à noite engorda” nem “horário nunca faz diferença” resumem a evidência. Se sua pergunta é especificamente sobre arroz, pão ou outros carboidratos no jantar, veja Carboidrato à noite engorda? .",
+        " e influência emocional podem coexistir; urgência e vontade de um alimento específico não fecham um diagnóstico. O texto Fome Emocional ou Fome Física? aprofunda essa distinção sem transformar pistas em prova.",
+        "ison e colaboradores são uma referência histórica para essa discussão, não um questionário para autodiagnóstico. [3]",
+        " ou quantidade específica lida na internet para pedir ajuda. Perda de controle, vômitos provocados, jejum compensatório e exercício punitivo são sinais para conversar com a equipe de saúde. [4]"
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Como a alimentação influencia a disposição para treinar",
+      "characters": 20398,
+      "intro": "Introdução\n Você já percebeu que em alguns dias o corpo parece responder melhor ao treino, enquanto em outros falta energia até para começar? Essa sensação pode ter várias causas: sono, estresse, rotina, hidratação, intensidade do exercício, saúde geral e também alimentação. Por isso, entender como a alimentação influencia disposição para treinar é um passo importante para construir uma rotina de movimento mais leve, possível e sustentável.\n Quando falamos sobre alimentação e treino, é comum encontrar conteúdos que prometem resultados rápidos, indicam combinações “milagrosas” ou fazem parecer que todo mundo precisa comer exatamente a mesma coisa antes de se exercitar. \n Mas, na prática, o corpo humano é individual. O que funciona bem para uma pessoa pode não ser adequado para outra, especialmente considerando horários, preferências alimentares, nível de atividade física, histórico de saú",
+      "headings": [
+        "Introdução",
+        "Como a alimentação influencia a disposição para treinar?",
+        "Energia para o treino: o papel dos carboidratos",
+        "Proteínas também importam, mas não precisam virar obsessão",
+        "Gorduras boas e fibras: equilíbrio também conta",
+        "Hidratação: um detalhe que muda muito a disposição",
+        "Treinar em jejum é melhor?",
+        "O que comer antes do treino?",
+        "E depois do treino, o que muda?",
+        "Sinais de que sua alimentação pode estar atrapalhando o treino",
+        "Alimentação, sono e rotina: o trio que sustenta a constância",
+        "Movimento possível também é saúde",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista — Resolução CFN nº 599/2018. Documento oficial que orienta a atuação ética do nutricionista, incluindo responsabilidade profissional e compromisso social.\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Publicação oficial com orientações sobre alimentação adequada e saudável, valorizando alimentos in natura, minimamente processados, cultura alimentar e autonomia.\n World Health Organization. Physical Activity Fact Sheet e WHO Guidelines on Physical Activity and Sedentary Behaviour. Recomendações internacionais sobre atividade física, sedentarismo e benefícios do movimento para a saúde.\n Kerksick, C. M. et al. International Society of Sports Nutrition Position Stand: Nutrient Timing. Revisão sobre timing de nutrientes, carboidratos, proteínas, exercício e composição corporal.\n Perguntas frequentes\n 1. A alimentação influencia mesmo a disposição para treinar?\n Sim. A alimentaçã",
+      "riskContexts": [
+        "cuperação e saciedade. Porém, isso não significa que toda refeição precise ser hiperproteica ou que suplementos sejam necessários para todas as pessoas.",
+        " Treinar em jejum é melhor?",
+        "a dúvida muito comum. A resposta mais segura é: depende. Algumas pessoas se sentem bem treinando em jejum, especialmente em atividades leves e de curta duração. Outras sentem fraqueza, tontura, enjoo, irritabilidade ou queda de rendimento.",
+        " Treinar em jejum não é, por si só, garantia de emagrecimento, saúde ou melhor performance. Também não deve ser encarado como obrigação. O que precisa ser observado é o contexto: tipo de treino, duração",
+        " Se a pessoa sente mal-estar ao treinar em jejum, isso não deve ser ignorado. E se houver tontura frequente, desmaios, hipoglicemia, diabetes, gestação, transtornos alimentares, uso de medicamentos ou qualque"
+      ]
+    },
+    {
+      "number": 24,
+      "title": "Lanche da tarde: ideias práticas para manter a saciedade",
+      "characters": 20538,
+      "intro": "Introdução\n O lanche da tarde costuma ser aquele momento do dia em que muita gente sente a energia cair, a fome aparecer com mais intensidade ou a vontade de “beliscar qualquer coisa” surgir quase no automático. E, ao contrário do que muitas pessoas pensam, isso não é falta de força de vontade. Muitas vezes, é apenas o corpo sinalizando que precisa de uma pausa, de energia, de organização alimentar ou de uma combinação melhor de alimentos ao longo do dia.\n Pensar em um lanche da tarde saudável não precisa ser sinônimo de comer pouco, cortar grupos alimentares ou seguir uma regra rígida. Na prática, um lanche equilibrado é aquele que conversa com a sua rotina, respeita sua fome, cabe no seu dia e ajuda você a chegar à próxima refeição com mais saciedade e menos sensação de descontrole.\n Dentro de uma alimentação mais consciente, o lanche da tarde pode ser uma oportunidade de cuidado. Ele ",
+      "headings": [
+        "Introdução",
+        "Por que o lanche da tarde pode fazer diferença na rotina?",
+        "O que faz um lanche dar mais saciedade?",
+        "Como montar um lanche da tarde saudável na prática",
+        "Ideias práticas de lanche da tarde para manter a saciedade",
+        "O erro mais comum: lanchar pouco demais e continuar com fome",
+        "Lanche da tarde e movimento: o que considerar?",
+        "Lanches simples com alimentos brasileiros",
+        "Como organizar o lanche sem virar refém da marmita perfeita",
+        "Sinais de que seu lanche da tarde talvez precise de ajustes",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes sobre lanche da tarde"
+      ],
+      "referenceSample": "Referências\n BRASIL. Ministério da Saúde. Guia Alimentar para a População Brasileira. O documento orienta a priorização de alimentos in natura ou minimamente processados e preparações culinárias como base de uma alimentação adequada e saudável.\n Conselho Federal de Nutrição. Código de Ética e de Conduta do Nutricionista. Documento orientador da atuação ética, crítica e responsável do nutricionista.\n Harvard Health Publishing. Nutritional power couples. O conteúdo aborda como combinações com fibras, proteínas e gorduras podem contribuir para maior satisfação após refeições e lanches.\n Academy of Nutrition and Dietetics. Meals and Snacks. Portal com orientações educativas sobre planejamento de refeições e lanches, produzido por organização profissional de nutrição.\n Perguntas frequentes sobre lanche da tarde\n 1. Preciso fazer lanche da tarde todos os dias?\n Não necessariamente. Algumas pessoas sentem fome à tarde e se beneficiam de um lanche. Outras conseguem manter boa saciedade até o j",
+      "riskContexts": [
+        " Por outro lado, quando o lanche é sempre improvisado no auge da fome, é mais fácil cair em escolhas automáticas. Não porque certos alimentos sejam “proibidos”, mas porque a combinação pode não sustent",
+        "m ponto importante: muitas pessoas tentam fazer um lanche “leve” demais porque acreditam que isso é sempre melhor. Comem apenas uma fruta pequena, tomam café puro ou escolhem algo com pouca consistência. O problema é que, quando a fome é real, esse lanche pode não s",
+        " com mais disposição. Nesse caso, opções com carboidrato e alguma proteína podem ser interessantes, sempre considerando tolerância individual, horário e intensidade.",
+        " O mais importante é sair da ideia de que lanche precisa ser sempre “coisa de pacote” ou “coisa de dieta”. Lanche pode ser comida de verdade, simples e possível.",
+        "mentação dependa da perfeição. Isso é muito importante, porque uma rotina saudável não é aquela que nunca falha. É aquela que tem flexibilidade para continuar."
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Café da manhã saudável: precisa mesmo comer ao acordar?",
+      "characters": 20101,
+      "intro": "Introdução\n Você já ouviu que o café da manhã é “a refeição mais importante do dia”? Ou que todo mundo precisa comer logo ao acordar para ter saúde, emagrecer ou manter energia? Essa é uma daquelas frases que aparecem com frequência em conversas, redes sociais e até em conteúdos de alimentação, mas que precisa ser entendida com mais cuidado.\n A verdade é que um café da manhã saudável pode ser uma ótima oportunidade para começar o dia com mais energia, saciedade e organização alimentar. Mas isso não significa que todas as pessoas precisam comer imediatamente ao abrir os olhos. O corpo humano não funciona igual para todo mundo, e a rotina, o horário de sono, o trabalho, o treino, o apetite e as necessidades individuais fazem muita diferença.\n Na Nutrição, quando falamos sobre alimentação equilibrada, é importante sair da ideia de regra rígida e entrar em uma visão mais realista: o que essa",
+      "headings": [
+        "Introdução",
+        "Café da manhã saudável: precisa mesmo comer ao acordar?",
+        "O que realmente importa no café da manhã?",
+        "E se eu não sinto fome pela manhã?",
+        "Café da manhã e treino: precisa comer antes?",
+        "Pular o café da manhã emagrece?",
+        "Como montar um café da manhã saudável na prática",
+        "O que evitar no café da manhã?",
+        "Sinais de que seu café da manhã talvez precise de ajustes",
+        "Café da manhã saudável e alimentação consciente",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial com recomendações sobre alimentação adequada e saudável, valorizando alimentos in natura ou minimamente processados, cultura alimentar, autonomia e práticas alimentares sustentáveis.\n Conselho Federal de Nutrição. Sistema de Normativos do CFN. Plataforma oficial de consulta às resoluções e normativas do Conselho Federal de Nutrição.\n Harvard Health Publishing. Skipping breakfast may increase risk for metabolic syndrome. Material destaca associação observacional entre pular café da manhã e risco metabólico, sem estabelecer causalidade direta.\n Academy of Nutrition and Dietetics. Breakfast: Key to Growing Healthy. Conteúdo educativo sobre a importância do café da manhã especialmente em crianças e adolescentes, com foco em energia, concentração e qualidade alimentar.\n Journal of the Academy of Nutrition and Dietetics. Meal Skipping and Shorter Meal Intervals Are Associated with Increased Mortal",
+      "riskContexts": [
+        "ediatamente ao acordar”. A primeira frase permite individualidade. A segunda cria uma regra que nem sempre considera a vida real.",
+        " Para uma caminhada leve, algumas pessoas se sentem bem treinando em jejum ou comendo depois. Para treinos mais longos, intensos ou de força, outras pessoas percebem melhor desempenho quando fazem uma refeição ou lanche antes.",
+        " O cuidado aqui é não transformar o jejum em obrigação nem o café da manhã em regra fixa. O corpo dá sinais. Tontura, fraqueza, queda de rendimento, mal-estar, dor de cabeça ou fome intensa podem indic",
+        " Pular o café da manhã, por si só, não garante emagrecimento. Emagrecimento envolve muitos fatores, como balanço energético, qualidade da alimentação, sono, comportamento alimentar, saúde emocional, rotina",
+        "ão anterior também podem compor a primeira refeição. Não existe obrigação de que café da manhã seja sempre doce ou sempre igual."
+      ]
+    },
+    {
+      "number": 28,
+      "title": "Detox funciona? O que seu corpo realmente precisa para se cuidar",
+      "characters": 21880,
+      "intro": "Introdução\n Em algum momento, provavelmente você já ouviu alguém dizer: “preciso fazer um detox”, “exagerei no fim de semana, agora vou limpar o organismo” ou “vou tomar um suco detox para desinchar”. A palavra detox se tornou muito popular nas redes sociais, em blogs de saúde, em produtos alimentares, em chás, sucos, cápsulas e protocolos que prometem uma espécie de “limpeza” rápida do corpo.\n Mas será que detox funciona da forma como costuma ser vendido?\n A resposta precisa ser cuidadosa, porque o tema envolve muita promessa, muito marketing e também muita confusão. O corpo humano já possui sistemas naturais extremamente complexos e eficientes para processar substâncias, eliminar resíduos e manter o equilíbrio interno. Fígado, rins, intestino, pulmões, pele e sistema linfático participam de processos importantes todos os dias, sem precisar de soluções milagrosas ou dietas extremamente ",
+      "headings": [
+        "Introdução",
+        "Detox funciona? Entendendo o que está por trás da promessa",
+        "Por que dietas detox parecem tão atraentes?",
+        "O corpo realmente precisa ser “limpo”?",
+        "O que seu corpo realmente precisa para se cuidar",
+        "Suco detox é proibido?",
+        "O perigo da mentalidade compensatória",
+        "Detox funciona para desinchar?",
+        "Como cuidar do corpo depois de exagerar, sem fazer detox",
+        "O que evitar em promessas detox",
+        "Então, detox funciona?",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes sobre detox"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial com recomendações sobre alimentação adequada e saudável, valorizando alimentos in natura, minimamente processados, cultura alimentar e escolhas sustentáveis.\n Conselho Federal de Nutricionistas. Código de Ética e de Conduta do Nutricionista. Documento que orienta a atuação profissional com responsabilidade, compromisso social, autonomia e senso crítico.\n National Center for Complementary and Integrative Health. Detoxes and Cleanses: What You Need To Know. Material que discute evidências limitadas sobre dietas detox e limpezas corporais.\n Harvard Health Publishing. What’s being cleansed in a detox cleanse? Material que aborda a falta de evidências consistentes e possíveis riscos associados a produtos detox.\n Mayo Clinic Press. Liver health: You don’t need a detox. Conteúdo educativo sobre saúde do fígado e mitos relacionados a detox hepático.\n Johns Hopkins Medicine. Detoxing Your Liver: Fact",
+      "riskContexts": [
+        "quais atitudes podem apoiar sua saúde de maneira mais segura, possível e sustentável. Tudo isso sem diagnóstico, sem prometer cura, sem garantir resultados e respeitando a individualidade de cada pessoa.",
+        "entivam uma relação de medo com a comida. Em alguns casos, isso pode aumentar fome, irritabilidade, compulsão posterior, queda de energia e sensação de fracasso quando a rotina normal retorna.",
+        "de, disposição, humor, escolhas alimentares e energia para se movimentar. Muitas vezes, a pessoa procura um detox quando, na verdade, o corpo está pedindo descanso.",
+        " “não mereço”. Depois de comer algo visto como inadequado, a pessoa sente que precisa compensar com jejum, detox, treino intenso ou restrição.",
+        " resultados garantidos;"
+      ]
+    },
+    {
+      "number": 27,
+      "title": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+      "characters": 20401,
+      "intro": "Introdução\n Quem nunca começou uma mudança de hábitos com muita motivação e, em algum momento, sentiu que “saiu do plano”? Talvez tenha sido um fim de semana comendo diferente, uma semana mais corrida, um período de ansiedade, uma festa, uma viagem, uma fase de cansaço ou simplesmente um dia em que a alimentação não saiu como você imaginava.\n Quando isso acontece, muitas pessoas pensam: “estraguei tudo”, “não tenho disciplina”, “já que saí da dieta, vou desistir”. Mas será que uma recaída realmente significa fracasso?\n A resposta é: não.\n As recaídas no processo de emagrecimento fazem parte da vida real. Elas não anulam todo o caminho percorrido, não apagam os hábitos já construídos e não precisam se transformar em motivo para culpa, punição ou abandono. O que mais importa não é nunca sair da rotina, mas aprender a voltar para ela com mais consciência, gentileza e estratégia\n O emagrecim",
+      "headings": [
+        "Introdução",
+        "O que são recaídas no processo de emagrecimento?",
+        "Por que as recaídas acontecem?",
+        "Recaída não é falta de disciplina: é parte do processo",
+        "",
+        "O que fazer depois de uma recaída?",
+        "Como evitar o ciclo “recaída, culpa e desistência”",
+        "O papel da autocompaixão no emagrecimento",
+        "Movimento corporal também pode sofrer recaídas",
+        "Estratégias práticas para lidar com recaídas no processo de emagrecimento",
+        "O que não fazer depois de uma recaída",
+        "Quando a recaída mostra que a meta precisa ser revista",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial que orienta práticas alimentares adequadas e saudáveis considerando alimentos, cultura, modos de comer e contexto social.\n Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica — ABESO. Diretrizes e posicionamentos sobre manejo do sobrepeso e obesidade, reforçando a importância de estratégias de mudança de estilo de vida e acompanhamento.\n ScienceDirect. Understanding weight regain after a nutritional weight loss intervention. Revisão sobre reganho de peso após intervenções nutricionais e importância de monitoramento e suporte contínuo.\n Conselho Federal de Nutricionistas — CFN. Sistema de Normativos e Código de Ética, com orientações para atuação profissional ética e comunicação responsável.\n Perguntas frequentes\n 1. Ter recaídas no processo de emagrecimento é normal?\n Sim. Recaídas podem acontecer durante mudanças de hábitos, especialmente em uma rotina real, com trabal",
+      "riskContexts": [
+        " Quem nunca começou uma mudança de hábitos com muita motivação e, em algum momento, sentiu que “saiu do plano”? Talvez tenha sido um fim de semana comendo diferente, uma s",
+        "s e não precisam se transformar em motivo para culpa, punição ou abandono. O que mais importa não é nunca sair da rotina, mas aprender a voltar para ela com mais consciência, gentileza e estratégia",
+        "próxima refeição e ajustar a estratégia com mais consciência. Emagrecimento sustentável não é sobre nunca errar, mas sobre aprender a recomeçar sem culpa.",
+        "ergonha e a autocrítica. Esses sentimentos podem aumentar a chance de comportamentos extremos, como jejum punitivo, restrição exagerada, treinos compensatórios ou o famoso “segunda-feira eu começo de novo”.",
+        "manejo do peso reforçam que mudanças de estilo de vida e acompanhamento contínuo são importantes no tratamento e na manutenção, especialmente porque o reganho de peso pode ocorrer ao longo do tempo."
+      ]
+    },
+    {
+      "number": 29,
+      "title": "Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+      "characters": 19669,
+      "intro": "Introdução\n Começar a cuidar do corpo nem sempre precisa envolver grandes mudanças, planos difíceis ou aquela sensação de que será necessário “virar outra pessoa” do dia para a noite. Muitas vezes, o primeiro passo pode ser literalmente um passo: uma caminhada possível, dentro da sua rotina, combinada com escolhas alimentares mais conscientes, gentis e sustentáveis.\n A relação entre caminhada e alimentação costuma ser apresentada de forma muito rígida, como se caminhar fosse apenas uma ferramenta para “queimar calorias” ou como se comer bem significasse seguir regras perfeitas. Mas, na vida real, cuidar do corpo envolve muito mais do que números, metas e restrições. Envolve rotina, sono, hidratação, prazer, organização, emoções, contexto social e, principalmente, constância possível.\n A caminhada é uma das formas mais acessíveis de movimento. Não exige equipamentos caros, pode ser adapta",
+      "headings": [
+        "Introdução",
+        "Caminhada e alimentação: por que essa dupla faz sentido?",
+        "Comece pelo possível, não pelo perfeito",
+        "O que comer antes da caminhada?",
+        "O que comer depois da caminhada?",
+        "Hidratação também faz parte do cuidado",
+        "Caminhar para cuidar, não para compensar",
+        "Como organizar uma rotina leve de caminhada",
+        "Como organizar a alimentação sem dieta restritiva",
+        "Caminhada ajuda no emagrecimento?",
+        "Sinais de que você está indo por um caminho mais leve",
+        "Erros comuns ao começar caminhada e alimentação ao mesmo tempo",
+        "Estratégia prática para começar nesta semana",
+        "Quer receber mais conteúdos como este?",
+        "Conclusão",
+        "Referências",
+        "Perguntas frequentes"
+      ],
+      "referenceSample": "Referências\n Ministério da Saúde. Guia Alimentar para a População Brasileira. Documento oficial com orientações sobre alimentação adequada e saudável, valorizando alimentos in natura e minimamente processados.\n Ministério da Saúde. Guias Alimentares. Publicação com recomendações sobre escolha, combinação, preparo e consumo de alimentos para promoção da saúde.\n Organização das Nações Unidas Brasil / OMS. Diretrizes sobre atividade física e comportamento sedentário. Recomendações de 150 a 300 minutos semanais de atividade física aeróbica para adultos.\n Organização Pan-Americana da Saúde. Atividade física. Conteúdo sobre benefícios da atividade física regular e adequada.\n Conselho Federal de Nutricionistas. Orientações sobre ética, publicidade e divulgação de resultados na Nutrição.\n Perguntas frequentes\n 1. Preciso comer antes de caminhar?\n Depende do horário, da duração da caminhada, da sua última refeição e de como você se sente. Algumas pessoas caminham bem após uma refeição anterior;",
+      "riskContexts": [
+        " Começar a cuidar do corpo nem sempre precisa envolver grandes mudanças, planos difíceis ou aquela sensação de que será necessário “virar outra pessoa” do dia para a noite. Muitas vezes, o primeiro",
+        "m se beneficiar de 150 a 300 minutos semanais de atividade física aeróbica de intensidade moderada, sempre respeitando condições individuais e orientações profissionais quando necessário. O Guia Alimentar para a População Brasileira também reforça a importância de e",
+        "específico. Por outro lado, se a pessoa sente tontura, fraqueza, enjoo ou muita fome ao caminhar em jejum, vale observar melhor essa rotina e buscar orientação individualizada.",
+        " Algumas pessoas tentam caminhar em jejum mesmo se sentindo mal. Isso não é sinal de disciplina. É importante respeitar o corpo.",
+        " 6. Caminhar em jejum é melhor?"
+      ]
+    },
+    {
+      "number": 30,
+      "title": "Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+      "characters": 5791,
+      "intro": "Alimentação e movimento ajudam, mas não explicam tudo\n O Setembro Amarelo convida a falar de prevenção do suicídio e cuidado com a vida. Nesse contexto, alimentação, movimento, sono e apoio social podem fazer parte do cuidado com a saúde mental. Nenhum alimento substitui psicoterapia, avaliação médica ou outros tratamentos indicados. Ter dificuldade de comer ou se movimentar em um período de sofrimento não significa falta de vontade. [1]\n O objetivo deste texto é pensar em apoio possível, inclusive quando falta energia para cozinhar ou sair de casa. Não é propor uma dieta para depressão nem um treino para ansiedade.\n O que as pesquisas permitem afirmar?\n É diferente observar que pessoas com determinado padrão alimentar relatam menos sintomas e demonstrar o efeito de uma intervenção. Nas associações, fatores como renda, sono, saúde e acesso ao cuidado também podem participar.\n Uma meta-an",
+      "headings": [
+        "Alimentação e movimento ajudam, mas não explicam tudo",
+        "O que as pesquisas permitem afirmar?",
+        "Como apoiar a alimentação em um dia difícil",
+        "Movimento sem transformar cuidado em cobrança",
+        "Comer para buscar conforto não resume a saúde mental",
+        "Quando o apoio profissional precisa vir primeiro",
+        "Um cuidado possível, sem promessa de cura",
+        "Referências"
+      ],
+      "referenceSample": "Referências\n Organização Mundial da Saúde. Depressive disorder (depression) . WHO — Fact sheet, atualização de 11/09/2026. 2026. Leitura .\n Firth J, Marx W, Dash S, et al.. The Effects of Dietary Improvement on Symptoms of Depression and Anxiety: A Meta-Analysis of Randomized Controlled Trials . Psychosomatic Medicine, 81(3):265–280. 2019. DOI . Leitura .\n Singh B, Olds T, Curtis R, et al.. Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews . British Journal of Sports Medicine, 57(18):1203–1209. 2023. DOI . Leitura .\n Brasil. Ministério da Saúde. Suicídio (Prevenção) . Saúde de A a Z — Ministério da Saúde. s.d. Leitura .",
+      "riskContexts": [
+        "e do cuidado com a saúde mental. Nenhum alimento substitui psicoterapia, avaliação médica ou outros tratamentos indicados. Ter dificuldade de comer ou se movimentar em um período de sofrimento não significa falta de vontade. [1]",
+        "ão um efeito geral significativo sobre ansiedade. Os estudos variavam e poucos incluíam pessoas com diagnóstico de depressão. Isso não identifica um alimento que cure transtornos nem permite transformar um cardápio em tratamento universal. [2]",
+        "a a toda pessoa. Exercício pode integrar o cuidado profissional; a leitura não autoriza interromper tratamento ou trocar medicação por treino. [3]",
+        " Uma atividade precisa considerar condição física, tratamento, segurança e acesso. Uma caminhada acompanhada pode ser possível para alguém; em outro momento, o apoio necessário é descansar e receber atendimento. As pesqui",
+        "iculdade para cuidar da própria rotina são motivos para buscar avaliação. Essa lista não estabelece diagnóstico e não é preciso esperar piorar para pedir ajuda. UBS e CAPS são portas de cuidado no SUS. [1, 4]"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "capturedAt": "2026-11-08T20:29:52.346Z",
+  "files": [
+    {
+      "file": "docs/editorial/auditoria-artigos/canibalizacao.md",
+      "sha256": "620a3010ce8a9ab94a8e71a9baf075f52532c345652903e342a389c4adfa0887",
+      "bytes": 13578,
+      "headings": [
+        "# Sobreposição e canibalização",
+        "## Guia de emagrecimento e hábitos — CONSOLIDAÇÃO RECOMENDADA",
+        "## Mindful eating e atenção na rotina — SOBREPOSIÇÃO LEVE",
+        "## Normalidade, gatilhos, ansiedade e comparação das fomes — SOBREPOSIÇÃO LEVE",
+        "## Doces, beliscos e lanche — SOBREPOSIÇÃO LEVE",
+        "## Comer carboidrato no jantar versus comer por sofrimento à noite — SEM CANIBALIZAÇÃO",
+        "## Pré, pós-treino e disposição — CANIBALIZAÇÃO PROVÁVEL",
+        "## Nutrição/movimento geral e início com caminhada — CANIBALIZAÇÃO PROVÁVEL",
+        "## Relação saudável versus linguagem de alimentos bons/ruins — SOBREPOSIÇÃO LEVE",
+        "## Saciedade, restrição, déficit e retomada — SOBREPOSIÇÃO LEVE",
+        "## Refeições e aplicação cotidiana — SEM CANIBALIZAÇÃO",
+        "## Temas com objetivo próprio — SEM CANIBALIZAÇÃO",
+        "## Duplicação textual versus estrutura legítima"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/auditoria-artigos/matriz-artigos.md",
+      "sha256": "dbe35f43e925a8fbce6942a6ed7e4a97a103d2245c1d2d47344ab60efe9afd48",
+      "bytes": 267164,
+      "headings": [
+        "# Matriz dos 31 artigos publicados",
+        "## Fichas individuais completas",
+        "### #1 — Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+        "### #2 — Comer por emoção é normal?",
+        "### #3 — Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+        "### #4 — Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+        "### #5 — Por que eu como mesmo sem fome? Entenda os gatilhos alimentares",
+        "### #6 — Vontade de doce todo dia: o que pode estar acontecendo?",
+        "### #7 — Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+        "### #8 — Emagrecer sem passar fome: o que realmente ajuda no processo",
+        "### #9 — Por que dietas muito restritivas costumam falhar?",
+        "### #10 — Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+        "### #11 — Pão engorda? Como incluir sem culpa em uma alimentação equilibrada",
+        "### #12 — Como montar um prato equilibrado sem complicar a alimentação",
+        "### #13 — Ansiedade e alimentação: como uma coisa influencia a outra",
+        "### #14 — O que comer antes do treino? Guia simples para iniciantes",
+        "### #15 — O que comer depois do treino para recuperar melhor?",
+        "### #16 — Alimentação saudável fora de casa: escolhas possíveis sem culpa",
+        "### #17 — Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+        "### #18 — Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "### #19 — Como comer com mais atenção mesmo na rotina corrida",
+        "### #20 — Emagrecimento sustentável: hábitos que importam mais que força de vontade",
+        "### #21 — Exercícios ajudam no emagrecimento? Entenda além da queima calórica",
+        "### #22 — Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "### #23 — Como a alimentação influencia a disposição para treinar",
+        "### #24 — Lanche da tarde: ideias práticas para manter a saciedade",
+        "### #25 — Café da manhã saudável: precisa mesmo comer ao acordar?",
+        "### #26 — Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+        "### #27 — Como lidar com recaídas no processo de emagrecimento sem desistir",
+        "### #28 — Detox funciona? O que seu corpo realmente precisa para se cuidar",
+        "### #29 — Caminhada e alimentação: como começar a cuidar do corpo com mais leveza",
+        "### #30 — Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "### #31 — Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/auditoria-artigos/plano-prioridades.md",
+      "sha256": "f429e5cce9e79af9a2f99a774f9583d3e2b8ddffe1fdfba42adf264aab4e2d70",
+      "bytes": 17607,
+      "headings": [
+        "# Plano de prioridades — recomendações, sem execução",
+        "## Top 10 que mais precisam de intervenção",
+        "### 1. Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença — 58/100; C; P2",
+        "### 2. Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia — 63/100; C; P2",
+        "### 3. Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância — 66/100; C; P2",
+        "### 4. Emagrecimento sustentável: hábitos que importam mais que força de vontade — 69/100; D; P2",
+        "### 5. Vontade de doce todo dia: o que pode estar acontecendo? — 70/100; C; P2",
+        "### 6. Carboidrato à noite engorda? Entenda sem terrorismo nutricional — 70/100; C; P2",
+        "### 7. Comer por emoção é normal? — 71/100; C; P2",
+        "### 8. Por que dietas muito restritivas costumam falhar? — 71/100; C; P2",
+        "### 9. Como criar um déficit calórico sem cortar calorias obsessivamente — 71/100; C; P2",
+        "### 10. Comer à noite é falta de controle? Entenda o que pode estar por trás — 71/100; C; P2",
+        "## Demais P2 que não devem ficar esquecidos",
+        "## Top 5 de referência editorial",
+        "### 1. O que comer antes do treino? Guia simples para iniciantes — 86/100; A",
+        "### 2. Como comer com mais atenção mesmo na rotina corrida — 86/100; A",
+        "### 3. Como montar um prato equilibrado sem complicar a alimentação — 83/100; B",
+        "### 4. O que comer depois do treino para recuperar melhor? — 83/100; B",
+        "### 5. Ansiedade e alimentação: como uma coisa influencia a outra — 82/100; B",
+        "## Ordem de trabalho sugerida para uma fase futura"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/auditoria-artigos/relatorio-geral.md",
+      "sha256": "3b8cf928de408d3295927f58ea06f5c443f40b72c3605db72559c963d0278c85",
+      "bytes": 18396,
+      "headings": [
+        "# Auditoria integral dos artigos — Nutrição & Movimento",
+        "## Resultado principal",
+        "## Método e limites",
+        "## Referências científicas: principal problema",
+        "### Conferências dirigidas, sem substituir referências",
+        "## E-E-A-T estrutural versus evidência de revisão",
+        "## Datas: achado técnico que afeta confiança editorial",
+        "## Links internos e relacionados",
+        "## SEO on-page e apresentação textual",
+        "## Grupos derivados do conteúdo real",
+        "## Diagnóstico geral — respostas diretas",
+        "## Impacto potencial no AdSense",
+        "## Entregas e integridade"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-1/comparativo.md",
+      "sha256": "a4c17f41c8afa25490283497782ad6b2f328aeb3b37fe82b670dedae1f2f70ab",
+      "bytes": 22361,
+      "headings": [
+        "# Lote 1 — comparativo após aplicação",
+        "## Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+        "## Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+        "## Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+        "## Vontade de doce todo dia: o que pode estar acontecendo?",
+        "## Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+        "## Canibalização: reavaliação de intenção"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-1/referencias.md",
+      "sha256": "94b353a31f105fab55c7d1360f2bb51274cbe5b2aae24dd2fbfedc81cd629e34",
+      "bytes": 13261,
+      "headings": [
+        "# Lote 1 — referências efetivamente aplicadas",
+        "## Fome Emocional ou Fome Física? Aprenda a Identificar a Diferença",
+        "## Relação Saudável com a Comida: O Que É e Como Construí-la no Dia a Dia",
+        "## Nutrição e movimento: como cuidar do corpo com equilíbrio, consciência e constância",
+        "## Vontade de doce todo dia: o que pode estar acontecendo?",
+        "## Carboidrato à noite engorda? Entenda sem terrorismo nutricional",
+        "## Conferência dos links"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-1/relatorio.md",
+      "sha256": "4c559227047cf2ea4858565782073be5ae6f1308ef4813c65d6557e56e0a6458",
+      "bytes": 10513,
+      "headings": [
+        "# Lote 1 — aplicação concluída",
+        "## Resultado editorial",
+        "## Histórico preservado",
+        "## Aplicação controlada",
+        "## HTTP, autoria e schema",
+        "## Relacionados e canibalização",
+        "## Testes técnicos",
+        "## Cache público: limitação residual",
+        "## Arquivos e estado final"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/analise.md",
+      "sha256": "d727e38eb5a1f4f53bb26db397f362aca94c29d5b2ec371f44282938f9a1a9fb",
+      "bytes": 23481,
+      "headings": [
+        "# Análise de consolidação — emagrecimento sustentável",
+        "## Identificação e método",
+        "## Intenção de busca e jornada",
+        "## Sobreposição semântica: ALTA",
+        "## Valor único: o que cada um acrescenta",
+        "## Qualidade atual e escolha da URL",
+        "## Verificação pública, indexação e Search Console",
+        "## Quatro cenários revalidados",
+        "## Cluster e riscos",
+        "## Entregas e integridade",
+        "## Versão consolidada preparada para revisão humana",
+        "### Reauditoria estimada da proposta",
+        "### Referências, links e metadata propostos",
+        "### Riscos, validação e estado da entrega"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/comparativo.md",
+      "sha256": "93d12f92a0c2ed9eb8c3a68d2e30b51dd416db05ef9b147ed5c64946d98db1c4",
+      "bytes": 27139,
+      "headings": [
+        "# Comparativo editorial — A e B",
+        "## Qualidade: mesmos oito pesos da auditoria",
+        "## Comparação seção por seção",
+        "## Dados integrais, referências e ligações atuais",
+        "### Artigo A: cadastro atual",
+        "### Artigo B: cadastro atual",
+        "## Mapa de todos os artigos que apontam para A",
+        "### Outras superfícies públicas",
+        "### Quatro ligações contextuais que chegam a B",
+        "## Limites e rastreabilidade"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/mapeamento-consolidacao.md",
+      "sha256": "c502985c2e49c0256bb948a1dae352c9caf0243a7f625879f816aa4871df6ae0",
+      "bytes": 15640,
+      "headings": [
+        "# Mapeamento da proposta consolidada A → B",
+        "## Artigo A: destino de cada conjunto de conteúdo",
+        "## Artigo B: preservação do propósito e enxugamento",
+        "### Material complementar de B: pendência explícita",
+        "## Destino das referências originais",
+        "## Verificação da intenção e de um eventual 301"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/plano-consolidacao.md",
+      "sha256": "3bfd28dba8daa37e59850580f04b3ab3e2fead2d26b3e25f65faa05f47e8e893",
+      "bytes": 14837,
+      "headings": [
+        "# Plano de consolidação A → B — aplicação remota concluída",
+        "## URLs e 301 proposto",
+        "## O que incorporar, reduzir e preservar",
+        "## Estrutura final sugerida para B",
+        "## Referências a preservar e conferir",
+        "## Links internos e CTA",
+        "## Canonical, sitemap, feed, schema e histórico",
+        "## Sequência futura e riscos a validar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/referencias-consolidadas.md",
+      "sha256": "80ed894b822cd05fa55b96ac87c9b845d416f110ee953b9f666088e570c7ee34",
+      "bytes": 11571,
+      "headings": [
+        "# Referências consolidadas — proposta de B para revisão humana",
+        "## 1. Manutenção do peso e cuidado contínuo",
+        "## 2. Alimentação, atividade, metas e apoio",
+        "## 3. Formação de hábitos",
+        "## 4. Alimentação e contexto brasileiro",
+        "## 5. Movimento e saúde",
+        "## 6. Sono: evidência com limite explícito",
+        "## 7. Encaminhamento em sofrimento alimentar",
+        "## Proporção das afirmações e conferência humana"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/relatorio-final.md",
+      "sha256": "dd2ac8e3cddd63e353138456d6375843f23ce2485e009ed34ab6d93644aa79bc",
+      "bytes": 12583,
+      "headings": [
+        "# Consolidação editorial aplicada no banco remoto",
+        "## Identidades e snapshots",
+        "## Guard e aplicação controlada",
+        "## Conteúdo, referências, links e CTA",
+        "## Metadata e JSON-LD realmente publicados",
+        "## Superfícies públicas e cache pendente aceito",
+        "## Reauditoria final do conteúdo publicado",
+        "## Testes, arquivos e estado final"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/consolidacao-emagrecimento/versao-consolidada.md",
+      "sha256": "7b40fe3b3071ed312a761e7f0f3035a542ae99bae5e88514cfa5f1ba5b1e1c77",
+      "bytes": 18054,
+      "headings": [
+        "# Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+        "## O que significa emagrecimento sustentável?",
+        "## Por que força de vontade não é suficiente?",
+        "## Alimentação: construir uma base que possa continuar",
+        "### Saciedade, horários e flexibilidade",
+        "## Movimento como parte da rotina",
+        "## O ambiente pode facilitar ou dificultar suas escolhas",
+        "## Pequenas metas: definir uma ação que você consegue testar",
+        "## Sono, estresse e outros fatores precisam entrar na conversa",
+        "## Como começar e acompanhar o que mudou",
+        "## Quando procurar acompanhamento profissional",
+        "## Um próximo passo possível",
+        "## Referências",
+        "## Notas para revisão — fora do corpo proposto",
+        "### Links internos sugeridos",
+        "### Relacionados sugeridos — somente orientação editorial",
+        "### CTA e material complementar",
+        "### Autoria, datas e adequação semântica"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/01-saude-mental.md",
+      "sha256": "80d9cab8cbdb0f8dccd52e87ec31e44c3f44c0daa4b673c68e3d455f0deef4dd",
+      "bytes": 15738,
+      "headings": [
+        "# Proposta 30 — Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## Alimentação e movimento ajudam, mas não explicam tudo",
+        "## O que as pesquisas permitem afirmar?",
+        "## Como apoiar a alimentação em um dia difícil",
+        "## Movimento sem transformar cuidado em cobrança",
+        "## Comer para buscar conforto não resume a saúde mental",
+        "## Quando o apoio profissional precisa vir primeiro",
+        "## Um cuidado possível, sem promessa de cura",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/02-comer-a-noite.md",
+      "sha256": "bf1122b6aafaa65f9a39464f9db9bfabd67a77fdfc158f43239a7049b0be24fb",
+      "bytes": 15849,
+      "headings": [
+        "# Proposta 22 — Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## Comer à noite não define falta de controle",
+        "## Três situações que parecem iguais, mas pedem perguntas diferentes",
+        "### Cheguei com fome depois de um dia sem pausa",
+        "### Jantei cedo e ainda vou ficar acordada",
+        "### A noite virou um momento de sofrimento",
+        "## O que a ciência sobre comer tarde realmente mostra?",
+        "## Como observar sem vigiar cada garfada",
+        "## Comer durante a noite não é automaticamente uma síndrome",
+        "## Um próximo passo proporcional ao problema",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/03-deficit-calorico.md",
+      "sha256": "013bc8f71cf3e4f0ccb6f19eb3675010e6d3b1d7ec6599bb5489b19117845b9e",
+      "bytes": 15984,
+      "headings": [
+        "# Proposta 18 — Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## Déficit calórico é um conceito, não um cardápio",
+        "## Comer melhor não comprova que existe déficit",
+        "## Por que a conta não é uma previsão exata?",
+        "## Um ajuste possível, com uma pergunta de acompanhamento",
+        "## O que observar sem viver contando calorias",
+        "## Quando a busca por déficit deve dar lugar à avaliação",
+        "## O próximo passo não precisa ser um corte maior",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/04-dietas-restritivas.md",
+      "sha256": "c16d42579c171d15271f31b190cb7086a982cd2c0531f4d8cfbfc935f51f6e23",
+      "bytes": 16017,
+      "headings": [
+        "# Proposta 9 — Por que dietas muito restritivas costumam falhar?",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## A dificuldade pode estar no plano, mas não existe uma causa única",
+        "## Nem toda restrição significa a mesma coisa",
+        "### Restrição extrema sem avaliação",
+        "### Déficit energético individualizado",
+        "### Exclusão por uma necessidade clínica",
+        "### Estratégia temporária supervisionada",
+        "## Por que a manutenção pode ficar mais difícil?",
+        "## O que comparar dietas nos estudos nos ensina?",
+        "## Como reconhecer que o plano precisa de revisão",
+        "## O que levar à conversa com o profissional",
+        "## Continuar o cuidado não exige começar outra dieta extrema",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/05-comer-por-emocao.md",
+      "sha256": "4376b79b2cb00f298fdc18e3f5599ba5d7000461f7effd8f65e13574d7bf5aa9",
+      "bytes": 15430,
+      "headings": [
+        "# Proposta 2 — Comer por emoção é normal?",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## Comer com influência das emoções pode acontecer",
+        "## O que a expressão “comer por emoção” descreve?",
+        "## Frequência sozinha não responde à pergunta",
+        "## Quatro dimensões para conversar sobre o que acontece",
+        "## Comer por emoção e compulsão não são sinônimos",
+        "## O que pode ser um primeiro cuidado",
+        "## Quando buscar ajuda",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/06-alimentacao-consciente.md",
+      "sha256": "d89c59e4e3038a6c5e498d0303f4792995fbc141fd6a3be5082ad8157d53add9",
+      "bytes": 17275,
+      "headings": [
+        "# Proposta 1 — Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+        "## Registro exato e campos preservados",
+        "### Texto e metadata atuais",
+        "## Análise individual antes da proposta",
+        "## Título, excerpt e metadata propostos",
+        "## Proposta completa para revisão",
+        "## O que é alimentação consciente?",
+        "## Não é a mesma coisa que comer devagar ou seguir uma dieta",
+        "## Quais benefícios têm apoio — e com quais limites?",
+        "## Uma experiência simples, sem precisar acertar",
+        "## Atenção também inclui as condições para comer",
+        "## Quando adaptar ou pedir apoio",
+        "## O que vale levar desta prática",
+        "## Referências",
+        "## Links, CTA e relacionados sugeridos",
+        "## Risco de canibalização e limites",
+        "## Pontos para Weverlyn revisar"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/comparativo.md",
+      "sha256": "3cae154a496dae98ef4bc626e1a0d2da3a2c029a0bd15b8f214da0c9b49aa9ea",
+      "bytes": 10020,
+      "headings": [
+        "# Lote 2 — comparativo e reauditoria documental",
+        "## #30 — Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "## #22 — Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "## #18 — Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "## #9 — Por que dietas muito restritivas costumam falhar?",
+        "## #2 — Comer por emoção é normal?",
+        "## #1 — Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+        "## Leitura do resultado"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/README.md",
+      "sha256": "616d1de71abe6685fe6c68cad7acc60eceef3369a8905992dec8df00570a5dcf",
+      "bytes": 9509,
+      "headings": [
+        "# Lote 2 — propostas para Weverlyn Alves",
+        "## Entrega e identificação",
+        "## Método e materiais lidos",
+        "## Intenções e sobreposição",
+        "## Fontes, links e CTAs",
+        "## Títulos, estrutura e campos preservados",
+        "## Roteiro de revisão humana",
+        "## Verificação e escopo",
+        "### Resultado das verificações documentais"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/lote-2/referencias.md",
+      "sha256": "1eb5fbcad20f872dc815de39816b04635eb69de13de9f73a8d18c5374c1170e9",
+      "bytes": 18244,
+      "headings": [
+        "# Lote 2 — fontes e afirmações sustentadas",
+        "## who-depression2026",
+        "## firth2019",
+        "## singh2023",
+        "## ms-suicidio",
+        "## vujovic2022",
+        "## liu2024",
+        "## allison2010",
+        "## nimh2024",
+        "## hall2012",
+        "## nice2025",
+        "## niddk-planner",
+        "## hall-kahan2018",
+        "## ge2020",
+        "## reichenberger2020",
+        "## guia2014",
+        "## warren2017",
+        "## kao2025",
+        "## grider2021",
+        "## nccih2022",
+        "## Canal de apoio verificado separadamente",
+        "## Ajustes em relação às listas antigas"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-2/comparativo.md",
+      "sha256": "0ae81e51d3bd2d65cfaf4cb9a0c96138e4a7407699c9b20e8cc2f4cc755dae47",
+      "bytes": 22051,
+      "headings": [
+        "# Lote 2 — comparativo após aplicação",
+        "## Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "## Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "## Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "## Por que dietas muito restritivas costumam falhar?",
+        "## Comer por emoção é normal?",
+        "## Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-2/referencias.md",
+      "sha256": "eaca6d7d071475afcddbf35758cf90d1ec6b59a819f2dbfd67772599d397734e",
+      "bytes": 8619,
+      "headings": [
+        "# Referências do Lote 2 efetivamente aplicadas",
+        "## Setembro Amarelo: alimentação e exercícios como parte do cuidado com a saúde mental",
+        "## Comer à noite é falta de controle? Entenda o que pode estar por trás",
+        "## Como criar um déficit calórico sem cortar calorias obsessivamente",
+        "## Por que dietas muito restritivas costumam falhar?",
+        "## Comer por emoção é normal?",
+        "## Alimentação Consciente: O Que É, Benefícios e Como Praticar o Mindful Eating",
+        "## Links internos e limites"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/revisao-lote-2/relatorio.md",
+      "sha256": "2f9eb4465af8e4385491333caba9ccab8f880e691a425d2a14fdf82852001a0f",
+      "bytes": 17610,
+      "headings": [
+        "# Lote 2 — relatório final de aplicação controlada",
+        "## Aprovação, baseline e integridade",
+        "## Resultado editorial real",
+        "## Conteúdo público, HTTP, autoria e schema",
+        "## Rotas, sitemap, feed e cache",
+        "## Revisão dos editores: limitação de execução",
+        "## Distribuição do acervo e C restantes",
+        "## Testes técnicos após a aplicação",
+        "## Arquivos e pendências"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/validacao-cms/relatorio.md",
+      "sha256": "c6c00d67a7c3a033469ce68583deda6eaaed0018a120e867c46d8adc269f3acd",
+      "bytes": 18230,
+      "headings": [
+        "# Correção do checklist editorial do CMS",
+        "## Causa e auditoria das regras anteriores",
+        "## Regras novas",
+        "## Auditoria da palavra-chave e decisão",
+        "### Intenções aprovadas e termos naturais",
+        "## Controles preservados e limites encontrados",
+        "## Testes e evidências",
+        "## Impacto sobre as seis propostas do Lote 2",
+        "## Prévias e revisão manual pendente",
+        "## Arquivos e escopo da entrega"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/editorial/validacao-cms/revisao-manual.md",
+      "sha256": "69f884bb54733d2e4032cf524045286205d6f6dad3e3910e0a73522d321e329b",
+      "bytes": 6851,
+      "headings": [
+        "# Revisão humana das duas propostas pendentes",
+        "## Abrir as prévias sem banco",
+        "## Conferir cada artigo em cinco larguras",
+        "## Registro humano pendente",
+        "## Limites da prévia"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/adsense-pre-reenvio/bloqueadores.md",
+      "sha256": "d45e5a5c6a04ccb715539f40cbbd87e4c1e7842ec7599ec2c03c290dfe770545",
+      "bytes": 5792,
+      "headings": [
+        "# Bloqueadores e prioridades — 08/11/2026",
+        "## Bloqueadores absolutos nesta recomendação",
+        "## Bloqueadores recomendados",
+        "## Melhorias futuras"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/adsense-pre-reenvio/checklist.md",
+      "sha256": "5c3efc228b1311b37431f388f752e9a8f75e7c2072c08659244fda0f21ef864f",
+      "bytes": 3833,
+      "headings": [
+        "# Checklist pré-reenvio — estado em 08/11/2026",
+        "## Encerramento desta auditoria"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/adsense-pre-reenvio/relatorio-geral.md",
+      "sha256": "683094d8ce26a8d756d32978f9400d067aa3fe05d07b2dbf7348b54dcdd8635b",
+      "bytes": 35632,
+      "headings": [
+        "# Auditoria de prontidão para reenvio ao AdSense",
+        "## Decisão de hoje",
+        "## Método, evidência e limites",
+        "## 1. AdSense, publisher e ads.txt",
+        "## 2. Consentimento, CMP e políticas",
+        "### O que existe",
+        "### Lacunas verificáveis e pontos sem prova",
+        "### Páginas institucionais",
+        "## 3. Conteúdo atualizado e risco de baixo valor",
+        "### O que ainda pode parecer baixo valor",
+        "### Lote 2 e dez prioridades restantes",
+        "## 4. Autoria, revisão e YMYL",
+        "## 5. Indexabilidade, sitemap, robots e redirects",
+        "## 6. UX, navegação, páginas fracas e experiência sem anúncios",
+        "## 7. Mobile e performance",
+        "## 8. Segurança atual",
+        "## 9. Outras possibilidades de monetização",
+        "## 10. Condições para nova decisão",
+        "## Registro de escopo",
+        "## Inventário publicado conferido"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/adsense-pre-reenvio/scorecard.md",
+      "sha256": "8d0c7454fa46dccb541cbca3f282ae4f8fa9cdc1c0055c17556a68613575cf40",
+      "bytes": 3084,
+      "headings": [
+        "# Scorecard de prontidão — 08/11/2026"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/consentimento-adsense/checklist-google.md",
+      "sha256": "a15c6d0f7250992de0f713afa507a4df62eb8989d4f5605a9bf727abd11f8243",
+      "bytes": 4024,
+      "headings": [
+        "# AÇÃO HUMANA NO ADSENSE"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/consentimento-adsense/relatorio.md",
+      "sha256": "107906c9e8dc791f794fc0b4deee686b1e8c8125a118705f1c903fa0a09b86e1",
+      "bytes": 14854,
+      "headings": [
+        "# Correções de consentimento e preparação AdSense",
+        "## Resultado",
+        "## Auditoria de entrada",
+        "## Publisher, ads.txt e verificação",
+        "## Modelo de consentimento entregue",
+        "### Persistência",
+        "### Consent Mode e scripts",
+        "## Regiões e limite da parte CMP",
+        "## Políticas e footer",
+        "## Login/admin e navegação",
+        "## Validação e segurança do escopo",
+        "## Reavaliação estimada",
+        "## Arquivos e encerramento"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/consentimento-adsense/testes.md",
+      "sha256": "2d6613f23b13245a90609e0f80a95f423470c7b91f4d23dcc179b7f35a3c59f4",
+      "bytes": 6146,
+      "headings": [
+        "# Testes locais — consentimento e AdSense",
+        "## Comandos e resultados",
+        "## Estados, eventos e componentes reais com mocks",
+        "## HTTP do build de produção local",
+        "## Limites"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    },
+    {
+      "file": "docs/monetizacao/pre-deploy-final/relatorio.md",
+      "sha256": "89207932435af2dc367bddb804dc409af3d3197c1a06d9d38abd9e4a553bc052",
+      "bytes": 13289,
+      "headings": [
+        "# Limpeza técnica final antes do deploy do Lote 2",
+        "## Feed: causa, correção e escaping",
+        "## Parser XML real e execução local",
+        "## Sitemap e significado de lastmod",
+        "## Cache e invalidação",
+        "## Listagem, perfil e futuro deploy",
+        "## Campos SEO: situação exata",
+        "## Testes e integridade",
+        "## Arquivos desta etapa"
+      ],
+      "scope": "Historical documentation collected; latest reports and decisions used as baseline, article proposals cross-checked against current public bodies. Historical observations are not presumed current."
+    }
+  ]
+}

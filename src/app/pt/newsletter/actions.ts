@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { rateLimit } from "@/lib/rate-limit";
 import { sendConfirmationEmail } from "@/lib/newsletter/send-confirmation";
+import { NEWSLETTER_AVAILABLE } from "@/config/newsletter";
 
 // Confirmation links are valid for 24 hours.
 const CONFIRMATION_TTL_MS = 24 * 60 * 60 * 1000;
@@ -23,6 +24,8 @@ async function getClientIp(): Promise<string | null> {
 }
 
 export async function subscribeNewsletterAction(formData: FormData) {
+  // Also blocks direct/stale Server Action requests before inspecting personal data.
+  if (!NEWSLETTER_AVAILABLE) redirect("/pt/artigos");
   const email = String(formData.get("email") || "").trim().toLowerCase();
 
   if (!email || !email.includes("@")) {

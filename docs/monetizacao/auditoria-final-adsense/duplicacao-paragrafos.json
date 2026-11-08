@@ -1,0 +1,40 @@
+{
+  "method": "Exact normalized paragraphs >=120 chars; detects boilerplate, not external plagiarism or semantic originality.",
+  "shared": [
+    {
+      "text": "Conteúdo escrito por nutricionista, com foco em educação alimentar, comportamento alimentar e saúde baseada em evidências.",
+      "articles": [
+        "cmqr70qen00003x2rlnm1fkzb",
+        "cmqu16jib00012f2rntmfkgbr",
+        "cmqvdst3u00003u2rwknviypp",
+        "cmr3vox090000ut2rdn0l9354",
+        "cmr3xbkac0000p72rsy43fedu",
+        "cmr5f26x70000ox2rrmpdqpse",
+        "cmr5hikpg0001y32rcecftcrr",
+        "cmrckeis80000cv2riequpo8v",
+        "cmrclr5c500003b2rjfn5pyge",
+        "cmre4ruk20000kf2rxkerug5h",
+        "cmrfhug9s00006a2rz3aqb8mi",
+        "cmrl5s7on0000b92rd68ofia0",
+        "cmro2b4io0000bl2reykctq6k",
+        "cmrpg9oir0000gb2rjy74vu47",
+        "cmrv4eb5w00008l2r1qml5ivj",
+        "cmry28rp30000d92r6qq9xegs",
+        "cms3na6oz0001yx2r1zdazeht",
+        "cmt1xys970000562rp5yrdol9"
+      ]
+    },
+    {
+      "text": "Aviso importante: Este conteúdo tem caráter educativo e informativo e não substitui uma consulta individualizada com nutricionista. Cada pessoa possui necessidades, objetivos e histórias diferentes.",
+      "articles": [
+        "cmqr70qen00003x2rlnm1fkzb",
+        "cmqu16jib00012f2rntmfkgbr",
+        "cmqvdst3u00003u2rwknviypp",
+        "cmr3vox090000ut2rdn0l9354",
+        "cmr3xbkac0000p72rsy43fedu",
+        "cmr5f26x70000ox2rrmpdqpse",
+        "cmr5hikpg0001y32rcecftcrr"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "checkedAt": "2026-11-08T20:55:19.984Z",
+  "environment": "local production build; no JavaScript or form submission",
+  "results": [
+    {
+      "path": "/pt",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/sobre",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/contato",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/politica-de-privacidade",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": true
+    },
+    {
+      "path": "/pt/termos-de-uso",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": true
+    },
+    {
+      "path": "/pt/politica-de-cookies",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": true
+    },
+    {
+      "path": "/pt/politica-editorial",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/disclaimer",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt?newsletter=confirmar",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt?newsletter=confirmado",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt?newsletter=sucesso",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt?newsletter=erro",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt?newsletter=expirado",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/alimentacao-consciente-o-que-e-beneficios-e-como-praticar-o-mindful-eating",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/comer-por-emocao-e-normal",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/vontade-de-doce-todo-dia-o-que-pode-estar-acontecendo",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/carboidrato-a-noite-engorda-entenda-sem-terrorismo-nutricional",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/nutricao-e-movimento-como-cuidar-do-corpo-com-equilibrio-consciencia-e-constancia",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/alimentacao-saudavel-fora-de-casa-escolhas-possiveis-sem-culpa",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/comer-a-noite-e-falta-de-controle-entenda-o-que-pode-estar-por-tras",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-a-alimentacao-influencia-a-disposicao-para-treinar",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "status": 200,
+      "footer": true,
+      "publicOffer": false,
+      "residualNewsletterMention": false
+    },
+    {
+      "path": "/api/newsletter/confirm",
+      "status": 503,
+      "writes": false
+    },
+    {
+      "path": "/api/newsletter/confirm?token=invalid",
+      "status": 503,
+      "writes": false
+    },
+    {
+      "path": "/pt/newsletter",
+      "status": 404
+    },
+    {
+      "path": "/api/newsletter",
+      "status": 404
+    },
+    {
+      "path": "/api/newsletter/subscribe",
+      "status": 404
+    },
+    {
+      "path": "/api/newsletter/unsubscribe",
+      "status": 404
+    },
+    {
+      "path": "/api/newsletter/confirm",
+      "method": "POST",
+      "status": 405
+    }
+  ]
+}

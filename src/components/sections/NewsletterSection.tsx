@@ -1,10 +1,12 @@
 import { subscribeNewsletterAction } from "@/app/pt/newsletter/actions";
+import { NEWSLETTER_AVAILABLE } from "@/config/newsletter";
 
 type NewsletterSectionProps = {
   status?: string;
 };
 
 export function NewsletterSection({ status }: NewsletterSectionProps) {
+  if (!NEWSLETTER_AVAILABLE) return null;
   return (
     <section
       id="newsletter"

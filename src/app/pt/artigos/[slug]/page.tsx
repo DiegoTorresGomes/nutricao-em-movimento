@@ -10,6 +10,7 @@ import { nutritionistConfig } from "@/config/nutritionist";
 import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
 import { siteConfig } from "@/config/site";
 import { articleModifiedAt } from "@/lib/editorial-dates";
+import { withoutInactiveNewsletterPromotions } from "@/lib/newsletter/public-display";
 import { articleBody } from "@/lib/editor/article-body";
 import { consolidationDescription } from "@/lib/editorial-consolidation";
 
@@ -231,7 +232,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               <div className="min-w-0 max-w-3xl">
                 <div
                   className="article-content space-y-6 text-base leading-8 text-neutral-800 sm:text-lg sm:leading-9"
-                  dangerouslySetInnerHTML={{ __html: articleBody(article.content, article.slug) }}
+                  dangerouslySetInnerHTML={{ __html: withoutInactiveNewsletterPromotions(articleBody(article.content, article.slug)) }}
                 />
               </div>
 

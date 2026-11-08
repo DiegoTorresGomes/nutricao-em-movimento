@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
+import { NEWSLETTER_AVAILABLE } from "@/config/newsletter";
 import {
   CONSENT_VERSION,
   COOKIES_POLICY_VERSION,
@@ -16,6 +17,13 @@ import {
 //    update is atomic (guarded by the token), so a replayed or concurrent
 //    request finds nothing to update.
 export async function GET(request: Request) {
+  // Old confirmation links must neither mutate consent nor claim success while paused.
+  if (!NEWSLETTER_AVAILABLE) {
+    return new Response("A newsletter está temporariamente desativada. Nenhuma inscrição foi confirmada.", {
+      status: 503,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" },
+    });
+  }
   const url = new URL(request.url);
   const token = url.searchParams.get("token");
 

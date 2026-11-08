@@ -1,0 +1,94 @@
+{
+  "evaluatedAt": "2026-11-08T20:36:10.391Z",
+  "method": "Four C articles read in full from current production bodies; original eight-dimension scores retained after rereading because substantive content and shortcomings remain unchanged. These are editorial scores, not Google scores or a clinical review.",
+  "articles": [
+    {
+      "number": 17,
+      "title": "Alimentos bons ou ruins: por que essa classificação pode atrapalhar sua relação com a comida",
+      "score": 74,
+      "class": "C",
+      "ownValue": "Exemplos concretos de linguagem moralizante e alternativas; distingue composição nutricional de valor pessoal.",
+      "evidence": "Guia/OMS rastreáveis; referência Food moralization and intuitive eating está parafraseada e sem autores/ano. Trabalho pertinente localizado em Jackson et al., Appetite 2023, DOI 10.1016/j.appet.2023.107071; não comprova causalidade universal entre linguagem e sintomas.",
+      "ymyl": "MÉDIO",
+      "thinContent": "MÉDIO",
+      "overlap": "MÉDIO",
+      "adsense": "MÉDIO",
+      "materialBlocker": false,
+      "issues": [
+        "Explicações causais pouco delimitadas sobre proibição e culpa.",
+        "Categorias base/complemento/eventuais não justificadas como adaptação.",
+        "Repetição de argumentos de relação com a comida."
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/37788734/",
+        "https://www.sciencedirect.com/science/article/pii/S0195666323025333"
+      ]
+    },
+    {
+      "number": 23,
+      "title": "Como a alimentação influencia a disposição para treinar",
+      "score": 73,
+      "class": "C",
+      "ownValue": "Integra energia, hidratação, sono, conforto digestivo e sinais que justificam avaliação; não garante emagrecimento com jejum nem exige suplementos.",
+      "evidence": "Kerksick e o posicionamento ISSN são reais: DOI 10.1186/s12970-017-0189-4. Guia/OMS identificáveis. A referência é pouco completa e o recorte da revisão envolve exercício/indivíduos treinados, não valida toda adaptação recreativa.",
+      "ymyl": "BAIXO",
+      "thinContent": "MÉDIO",
+      "overlap": "ALTO",
+      "adsense": "MÉDIO",
+      "materialBlocker": false,
+      "issues": [
+        "Seções extensas sobre pré/pós-treino repetem funções de #14/#15.",
+        "Pergunta específica sobre falta de disposição poderia receber ferramenta de contexto mais distinta.",
+        "Frase-chave repetida mecanicamente; ressalvas clínicas e encaminhamento estão presentes."
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/28919842/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5596471/"
+      ]
+    },
+    {
+      "number": 27,
+      "title": "Como lidar com recaídas no processo de emagrecimento sem desistir",
+      "score": 74,
+      "class": "C",
+      "ownValue": "Plano de retomada, refeições âncora e metas comportamentais; desestimula compensação e encaminha sofrimento.",
+      "evidence": "A revisão Understanding weight regain after a nutritional weight loss intervention existe: Machado et al., 2022, DOI 10.1016/j.clnesp.2022.03.020. ScienceDirect não é autora. Evidência de reganho corporal não valida automaticamente cada afirmação sobre um lapso de rotina.",
+      "ymyl": "MÉDIO",
+      "thinContent": "MÉDIO",
+      "overlap": "MÉDIO",
+      "adsense": "MÉDIO",
+      "materialBlocker": false,
+      "issues": [
+        "Mistura lapso comportamental com reganho clínico.",
+        "Fracasso seria desistir completamente de cuidar de si contradiz a proposta acolhedora.",
+        "Diretrizes ABESO/CFN genéricas sem versão, data e link suficientes; vigência normativa não certificada nesta auditoria."
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/35623805/"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Como parar de beliscar o dia todo sem entrar em dieta restritiva",
+      "score": 75,
+      "class": "C",
+      "ownValue": "Distingue lanche planejado de belisco automático, propõe observação de contexto e organização de refeições/ambiente.",
+      "evidence": "Guia Alimentar 2014 é identificável. Materiais OPAS/CFN não são fontes específicas suficientes para todas as alegações de saciedade/compulsão; nenhuma DOI é apresentada como se existisse.",
+      "ymyl": "MÉDIO",
+      "thinContent": "BAIXO",
+      "overlap": "MÉDIO",
+      "adsense": "BAIXO",
+      "materialBlocker": false,
+      "issues": [
+        "Duplicação literal de Para reduzir beliscos, tente criar pequenos rituais.",
+        "Subtítulo de gorduras ausente na sequência de nutrientes.",
+        "Uso de compulsão e perguntas de fome requer melhor delimitação; o exercício de registro não é validado.",
+        "FAQ explica que água não deve enganar a fome e há encaminhamento para sofrimento."
+      ],
+      "sources": [
+        "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf"
+      ]
+    }
+  ],
+  "answer": "NÃO, MAS há manutenção recomendada. Nenhum dos quatro foi identificado como bloqueador material isolado diante do acervo atual; a classificação C não é regra Google nem prova de infração. Não criar Lote 3 automaticamente."
+}

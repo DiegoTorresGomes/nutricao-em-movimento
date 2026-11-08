@@ -86,7 +86,7 @@ export default function PoliticaPrivacidadePage() {
                 <strong>Nome</strong> (quando informado voluntariamente em formulários);
               </li>
               <li>
-                <strong>E-mail</strong> (ao assinar a newsletter ou entrar em contato);
+                <strong>E-mail</strong> (ao entrar em contato ou em pedidos anteriores de newsletter);
               </li>
               <li>
                 <strong>Mensagens</strong> enviadas pelos canais indicados na página de contato.
@@ -115,8 +115,8 @@ export default function PoliticaPrivacidadePage() {
             <p>Utilizamos os dados coletados para as seguintes finalidades:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Newsletter:</strong> registrar o pedido voluntário de inscrição; o envio ainda depende
-                de integração (consentimento próprio, separado das escolhas de cookies);
+                <strong>Newsletter:</strong> a captura pública está temporariamente desativada. Cadastros anteriores são tratados
+                conforme as informações de retenção e os direitos descritos nesta Política;
               </li>
               <li>
                 <strong>Contato:</strong> responder dúvidas, solicitações e mensagens (base legal:
@@ -169,7 +169,7 @@ export default function PoliticaPrivacidadePage() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">8. Newsletter</h2>
-            <p>O formulário pode registrar seu e-mail e um pedido pendente de confirmação no banco, com token e prazo de validade. O código prevê confirmação dupla, mas o envio automático do e-mail ainda não está integrado. Portanto, não garantimos confirmação, entrega de materiais ou envios periódicos nesta versão.</p><p>O fluxo de confirmação prevê registro de data, hora, versão e IP quando disponível. Para solicitar informações, correção, retirada do pedido ou exclusão do cadastro, use a <Link href="/pt/contato" className="font-semibold text-[#556B2F] underline">página de Contato</Link>. Não afirmamos existir um link de descadastro em e-mails que ainda não são enviados.</p>
+            <p>A captura pública da newsletter está temporariamente desativada enquanto o envio automático não estiver integrado. Não recebemos novas inscrições nem confirmamos pedidos por esse fluxo e não enviamos materiais ou conteúdos periódicos.</p><p>Os cadastros anteriores foram preservados. Para solicitar informações, correção, retirada do pedido ou exclusão do cadastro, use a <Link href="/pt/contato" className="font-semibold text-[#556B2F] underline">página de Contato</Link>.</p>
           </section>
 
           <section className="space-y-4">

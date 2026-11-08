@@ -1,0 +1,140 @@
+{
+  "documentedBeforeChange": "2026-11-08T20:49:09.871Z",
+  "source": "integridade-antes.json (auditoria anterior)",
+  "decision": "Ocultar somente blocos promocionais dedicados no template p?blico; n?o modificar conte?do salvo, editor, propostas ou feed.",
+  "articles": [
+    {
+      "id": "cmqr70qen00003x2rlnm1fkzb",
+      "slug": "por-que-eu-como-mesmo-sem-fome-entenda-os-gatilhos-alimentares",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmqu16jib00012f2rntmfkgbr",
+      "slug": "como-parar-de-beliscar-o-dia-todo-sem-entrar-em-dieta-restritiva",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmqvdst3u00003u2rwknviypp",
+      "slug": "emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmr3vox090000ut2rdn0l9354",
+      "slug": "pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Inscreva-se na newsletter do Nutrição em Movimento e receba conteúdos baseados em evidências, dicas aplicáveis à rotina e reflexões para melhorar sua relação com a comida.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmr3xbkac0000p72rsy43fedu",
+      "slug": "como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Quer aprender a cuidar da sua alimentação com mais leveza, sem dietas rígidas e sem culpa?\n\nInscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação equilibrada, comportamento alimentar, bem-estar e rotina saudável baseada em evidências.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmr5f26x70000ox2rrmpdqpse",
+      "slug": "ansiedade-e-alimentacao-como-uma-coisa-influencia-a-outra",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Quer construir uma rotina alimentar mais leve, sem culpa e sem extremismos?\n\nInscreva-se na newsletter do Nutrição em Movimento e receba conteúdos educativos sobre alimentação equilibrada, comportamento alimentar, bem-estar e movimento, sempre com uma abordagem acolhedora e baseada em ciência.\n\nBaixe também o material gratuito: “7 passos para uma rotina alimentar mais leve”.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmr5hikpg0001y32rcecftcrr",
+      "slug": "o-que-comer-antes-do-treino-guia-simples-para-iniciantes",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Quer começar a cuidar da sua alimentação com mais leveza, sem culpa e sem extremismos?\n\nInscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação equilibrada, comportamento alimentar, movimento e bem-estar diretamente no seu e-mail.\n\nReceba orientações práticas, baseadas em ciência e pensadas para a vida real.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrckeis80000cv2riequpo8v",
+      "slug": "o-que-comer-depois-do-treino-para-recuperar-melhor",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Inscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação equilibrada, comportamento alimentar, bem-estar e movimento, sempre com uma abordagem humanizada e baseada em evidências.\n\nReceba novos artigos em primeira mão e comece a construir uma rotina alimentar mais leve, possível e sustentável.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrclr5c500003b2rjfn5pyge",
+      "slug": "alimentacao-saudavel-fora-de-casa-escolhas-possiveis-sem-culpa",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Inscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação consciente, comportamento alimentar, rotina saudável e escolhas possíveis para o dia a dia.\n\nReceba orientações práticas e baseadas em evidências para transformar sua relação com a comida, uma escolha de cada vez.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmre4ruk20000kf2rxkerug5h",
+      "slug": "como-comer-com-mais-atencao-mesmo-na-rotina-corrida",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Inscreva-se gratuitamente na newsletter do Nutrição em Movimento e receba conteúdos exclusivos sobre alimentação consciente, comportamento alimentar, organização da rotina e autocuidado baseado em evidências.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrfhug9s00006a2rz3aqb8mi",
+      "slug": "alimentos-bons-ou-ruins-por-que-essa-classificacao-pode-atrapalhar-sua-relacao-com-a-comida",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrl2gz5k00009e2rg5qgjl1h",
+      "slug": "emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">\nInscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação equilibrada, comportamento alimentar, nutrição baseada em evidências e movimento para a vida real.\nReceba orientações práticas para cuidar da sua alimentação com mais consciência, autonomia e acolhimento.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrl5s7on0000b92rd68ofia0",
+      "slug": "exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmro2b4io0000bl2reykctq6k",
+      "slug": "como-a-alimentacao-influencia-a-disposicao-para-treinar",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrpg9oir0000gb2rjy74vu47",
+      "slug": "lanche-da-tarde-ideias-praticas-para-manter-a-saciedade",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmrv4eb5w00008l2r1qml5ivj",
+      "slug": "cafe-da-manha-saudavel-precisa-mesmo-comer-ao-acordar",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmry28rp30000d92r6qq9xegs",
+      "slug": "detox-funciona-o-que-seu-corpo-realmente-precisa-para-se-cuidar",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Quer aprender a cuidar da sua alimentação sem culpa, sem dietas restritivas e com mais equilíbrio na rotina?\n\nInscreva-se na newsletter do Nutrição em Movimento e receba conteúdos gratuitos sobre alimentação consciente, comportamento alimentar, emagrecimento sustentável e nutrição no dia a dia.\n\nA ideia não é transformar sua alimentação em regra rígida, mas ajudar você a construir escolhas mais leves, possíveis e conectadas com a sua realidade.\n</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cms3na6oz0001yx2r1zdazeht",
+      "slug": "como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    },
+    {
+      "id": "cmt1xys970000562rp5yrdol9",
+      "slug": "caminhada-e-alimentacao-como-comecar-a-cuidar-do-corpo-com-mais-leveza",
+      "blocks": [
+        "<div style=\"background:#111111;border-radius:24px;padding:24px;margin:36px 0;color:#FFFFFF;\">\n  <h2 style=\"margin-top:0;color:#FFFFFF;\">Quer receber mais conteúdos como este?</h2>\n  <p style=\"color:#FFFFFF;line-height:1.8;\">Cadastre-se na newsletter para receber orientações educativas sobre alimentação, saúde e comportamento alimentar.</p>\n  <p style=\"margin:22px 0 0;\"><a href=\"/pt#newsletter\" style=\"display:inline-flex;border-radius:999px;background:#E9DCC9;color:#111111;padding:12px 18px;font-weight:700;text-decoration:none;\">Inscreva-se na newsletter</a></p>\n</div>"
+      ]
+    }
+  ]
+}

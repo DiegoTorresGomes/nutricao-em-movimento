@@ -1,3 +1,4 @@
+import { NEWSLETTER_AVAILABLE } from "@/config/newsletter";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
@@ -55,12 +56,12 @@ export function Header() {
             <FaInstagram size={18} />
           </a>
 
-          <a
+          {NEWSLETTER_AVAILABLE && <a
             href="/pt#newsletter"
             className="hidden rounded-full bg-[#111111] px-5 py-2.5 text-sm font-bold !text-white transition hover:bg-[#556B2F] lg:inline-flex"
           >
             Newsletter
-          </a>
+          </a>}
 
           <MobileMenu items={menuItems} />
         </div>

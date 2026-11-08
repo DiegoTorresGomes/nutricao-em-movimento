@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-08T20:37:52.011Z",
+  "method": "GET of an existing UI status query only; no e-mail submitted and no confirmation endpoint called.",
+  "url": "https://www.nutricaoemovimento.com/pt?newsletter=confirmar",
+  "status": 200,
+  "claimsEmailSent": true,
+  "snippet": "class=\"rounded-2xl bg-green-50 p-3 text-sm font-bold text-green-700\">Quase lá! Enviamos um e-mail de confirmação. Clique no link para concluir sua inscrição. Sem spam. Você poderá sair da lista quando quiser. <foote",
+  "publicPrivacyStatesNoMailIntegration": true,
+  "localAdapterIsNoOp": true,
+  "actualProductionMailDeliveryTested": false
+}

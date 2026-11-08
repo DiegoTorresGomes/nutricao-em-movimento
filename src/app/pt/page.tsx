@@ -132,7 +132,14 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         <HomePillars settings={homeSettings} />
         <ArticleOfWeek article={articleOfWeek} />
         <FeaturedArticles articles={latestArticles} />
-        <ArticleCarousel articles={mostViewedPosts} />
+        <ArticleCarousel articles={mostViewedPosts.map((post) => ({
+          slug: post.slug,
+          title: post.title,
+          description: post.description,
+          coverImage: post.coverImage,
+          views: post.views,
+          category: { name: post.category.name },
+        }))} />
         <VisualCategories categories={categories} />
         <NutritionistSection settings={nutritionistSettings} />
         <NewsletterSection status={params?.newsletter} />

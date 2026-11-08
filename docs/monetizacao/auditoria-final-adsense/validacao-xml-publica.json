@@ -1,0 +1,25 @@
+﻿{
+    "feed":  {
+                 "uniqueIdentities":  true,
+                 "archivedAbsent":  true,
+                 "itemIssues":  [
+
+                                ],
+                 "rssVersion":  "2.0",
+                 "validXml":  true,
+                 "title":  "Nutrição \u0026 Movimento",
+                 "items":  30
+             },
+    "checkedAt":  "2026-11-08T20:32:37.7677228Z",
+    "sitemap":  {
+                    "allWwwHttps":  true,
+                    "archivedAbsent":  true,
+                    "uniqueUrls":  true,
+                    "lastmodDifferences":  [
+
+                                           ],
+                    "urls":  40,
+                    "validXml":  true,
+                    "published30Present":  true
+                }
+}

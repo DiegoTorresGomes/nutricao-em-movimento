@@ -156,10 +156,11 @@ export default function TermosPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">9. Newsletter</h2>
             <p>
-              A solicitação de newsletter é voluntária. O fluxo prevê confirmação dupla, mas o envio
-              automático ainda não está integrado; não garantimos confirmação ou entrega de materiais
-              nesta versão. Para retirar seu pedido, use a página de Contato. O tratamento do e-mail
-              segue a nossa Política de Privacidade.
+              A captura pública da newsletter está temporariamente desativada enquanto o envio
+              automático não estiver integrado. Não recebemos novas inscrições nem confirmamos
+              pedidos por esse fluxo e não enviamos materiais ou conteúdos periódicos. Os cadastros
+              anteriores foram preservados; para solicitar sua exclusão, use a página de Contato.
+              O tratamento desses dados segue a nossa Política de Privacidade.
             </p>
           </section>
 
