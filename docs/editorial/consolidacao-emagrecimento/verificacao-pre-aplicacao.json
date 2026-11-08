@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-11-07T21:01:51.837Z",
+  "mode": "Read-only HTTP GET; consolidation not applied",
+  "surfaces": [
+    {
+      "path": "/pt",
+      "status": 200,
+      "mentionsA": false,
+      "mentionsB": true,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": true
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": true
+    },
+    {
+      "path": "/pt/artigos?categoria=emagrecimento-sustentavel",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": true
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": false,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": false
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": false
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": false,
+      "oldBExcerptPresent": true
+    },
+    {
+      "path": "/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": true,
+      "oldBExcerptPresent": true
+    },
+    {
+      "path": "/pt/artigos/emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": true,
+      "relatedIncludesA": true,
+      "oldBExcerptPresent": false
+    },
+    {
+      "path": "/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": false,
+      "relatedIncludesA": true,
+      "oldBExcerptPresent": false
+    },
+    {
+      "path": "/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": false,
+      "relatedIncludesA": true,
+      "oldBExcerptPresent": false
+    },
+    {
+      "path": "/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": 200,
+      "mentionsA": true,
+      "mentionsB": false,
+      "relatedIncludesA": true,
+      "oldBExcerptPresent": false
+    }
+  ]
+}

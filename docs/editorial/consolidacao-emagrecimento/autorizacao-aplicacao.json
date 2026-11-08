@@ -1,0 +1,21 @@
+{
+  "clientDate": "2026-11-08",
+  "approval": "User confirms full review and approval by Weverlyn Alves",
+  "requestFile": "C:/Users/Diego Torres/.codex/attachments/b1fe6c4f-ef67-4488-93e7-a0eb95727b3d/Texto colado.txt",
+  "requestSha256": "b6296aef2f4d2765501a82d8f9e174e5e177d2add417f59b9bef827ee0b7aa5a",
+  "approvedSourceSha256": "7b40fe3b3071ed312a761e7f0f3035a542ae99bae5e88514cfa5f1ba5b1e1c77",
+  "approvedPackageSha256": "0a42ac4067ed570ce849be8007e944299eea128689c6152440374f7391fe39be",
+  "allowedIds": [
+    "cmrl2gz5k00009e2rg5qgjl1h",
+    "cmqppa7du0000ve2rnn31iyzq"
+  ],
+  "configuredTargetSha256": "16b82bda4d4c6d324a537694150e43ee0d0e29fd6e7852560710f2bb5a38fce0",
+  "constraints": [
+    "no commit",
+    "no push",
+    "no deploy",
+    "preserve original publication and views",
+    "stop for indexing/history incompatibilities"
+  ],
+  "remoteState": "REMOTE_NOT_APPLIED_DEPLOY_PROHIBITED"
+}

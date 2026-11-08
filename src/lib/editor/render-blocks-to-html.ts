@@ -10,6 +10,23 @@ function escapeHtml(value: unknown) {
     .replaceAll("'", "&#039;");
 }
 
+// Opt-in for imported editorial paragraphs. Existing plain-text blocks keep
+// their exact behavior. Escape text and accept only same-site absolute paths.
+export function renderInlineEditorialLinks(value: unknown) {
+  const input = String(value ?? "");
+  let result = "";
+  let offset = 0;
+  for (const match of input.matchAll(/\[([^\]\n]+)\]\((\/[^\s)]*)\)/g)) {
+    result += escapeHtml(input.slice(offset, match.index));
+    const href = match[2];
+    result += href.startsWith("//") || href.includes("\\")
+      ? escapeHtml(match[0])
+      : `<a href="${escapeHtml(href)}">${escapeHtml(match[1])}</a>`;
+    offset = match.index! + match[0].length;
+  }
+  return result + escapeHtml(input.slice(offset));
+}
+
 function renderList(items: unknown[], ordered = false) {
   const tag = ordered ? "ol" : "ul";
 
@@ -33,7 +50,7 @@ export function renderBlocksToHtml(blocks: EditorBlock[]) {
         }
 
         case "paragraph":
-          return `<p>${escapeHtml(data.text)}</p>`;
+          return `<p>${data.inlineEditorialLinks === true ? renderInlineEditorialLinks(data.text) : escapeHtml(data.text)}</p>`;
 
         case "unorderedList": {
           const items = Array.isArray(data.items) ? data.items : [];
@@ -242,7 +259,7 @@ ${items
         }
 
         case "references":
-          return renderReferences(Array.isArray(data.items) ? data.items : []);
+          return renderReferences(Array.isArray(data.items) ? data.items : [], typeof data.title === "string" ? data.title : undefined);
 
         case "exercise": {
           const steps = Array.isArray(data.steps) ? data.steps : [];

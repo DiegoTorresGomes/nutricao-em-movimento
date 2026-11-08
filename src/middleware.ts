@@ -1,7 +1,16 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { consolidationSourcePath, consolidationTargetUrl } from "./lib/editorial-consolidation";
 
 export function middleware(request: NextRequest) {
+  // Resolve both host variants directly to the canonical destination, before
+  // the general www redirect. Never query the publication database here.
+  if (request.nextUrl.pathname === consolidationSourcePath) {
+    const destination = new URL(consolidationTargetUrl);
+    destination.search = request.nextUrl.search;
+    return NextResponse.redirect(destination, 301);
+  }
+
   const forwardedHost = request.headers.get("x-forwarded-host");
   const requestHost = (forwardedHost ?? request.headers.get("host"))
     ?.split(",", 1)[0]

@@ -1,0 +1,25 @@
+{
+  "clientDate": "2026-11-08",
+  "prismaValidate": "passed",
+  "prismaGenerate": "7.10.1 passed",
+  "lint": {
+    "errors": 0,
+    "preexistingWarnings": 2
+  },
+  "typecheck": "passed",
+  "offlineTests": {
+    "passed": 11,
+    "failed": 0
+  },
+  "fullBuild": {
+    "command": "npm run build, through isolated local environment wrapper",
+    "pages": 37,
+    "result": "passed",
+    "deployed": false
+  },
+  "productionModeLocalHttp": "passed",
+  "localDatabase": "nutricao_consolidacao_disposable at 127.0.0.1:33317",
+  "remoteWrites": 0,
+  "sourceHashPreserved": true,
+  "docsLinksChecked": true
+}

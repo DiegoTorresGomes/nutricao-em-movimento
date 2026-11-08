@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-07",
+  "method": "web search tool; not Google Search Console or URL inspection",
+  "queries": [
+    "site:nutricaoemovimento.com/pt/artigos/ \"emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade\"",
+    "site:nutricaoemovimento.com/pt/artigos/ \"emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento\""
+  ],
+  "results": [
+    {
+      "title": "Emagrecimento sustentável: hábitos que importam mais que força de vontade",
+      "url": "https://nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade"
+    },
+    {
+      "title": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento"
+    }
+  ],
+  "limitation": "Both returned by search service; not confirmation of current Google coverage, position, impressions, clicks or organic cannibalization."
+}

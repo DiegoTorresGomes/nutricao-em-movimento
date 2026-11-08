@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-11-07T20:54:39.405Z",
+  "scope": "Offline manuscript and public HTTP GET only. No database connection, CMS actions or browser JS.",
+  "sha256": "7b40fe3b3071ed312a761e7f0f3035a542ae99bae5e88514cfa5f1ba5b1e1c77",
+  "bodyWordsExcludingBibliography": 1636,
+  "references": 7,
+  "citationNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "articleLinks": 4,
+  "contactCta": 1,
+  "originalCopiesUnchanged": true,
+  "proposedScore": {
+    "weights": [
+      25,
+      20,
+      15,
+      15,
+      10,
+      5,
+      5,
+      5
+    ],
+    "points": [
+      23,
+      17,
+      10,
+      12,
+      8,
+      5,
+      4,
+      4
+    ],
+    "total": 83,
+    "kind": "Manual estimated editorial quality of unpublished proposal, not live page result"
+  },
+  "http": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 169369
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 90096
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 125122
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 91817
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/contato",
+      "status": 200,
+      "finalUrl": "https://www.nutricaoemovimento.com/pt/contato",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 45929
+    },
+    {
+      "url": "https://doi.org/10.1016/j.mcna.2017.08.012",
+      "status": 302,
+      "finalUrl": "https://doi.org/10.1016/j.mcna.2017.08.012",
+      "location": "https://linkinghub.elsevier.com/retrieve/pii/S0025712517301360",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 209
+    },
+    {
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "status": 200,
+      "finalUrl": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 48244
+    },
+    {
+      "url": "https://doi.org/10.3390/healthcare12232488",
+      "status": 302,
+      "finalUrl": "https://doi.org/10.3390/healthcare12232488",
+      "location": "https://www.mdpi.com/2227-9032/12/23/2488",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 167
+    },
+    {
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "status": 200,
+      "finalUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "location": null,
+      "contentType": "application/pdf",
+      "bytes": 4399651
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "status": 200,
+      "finalUrl": "https://www.who.int/publications/i/item/9789240015128",
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 88285
+    },
+    {
+      "url": "https://doi.org/10.1001/jamainternmed.2021.8098",
+      "status": 302,
+      "finalUrl": "https://doi.org/10.1001/jamainternmed.2021.8098",
+      "location": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2788694",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 231
+    },
+    {
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "location": null,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 66544
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import type { EditorBlock } from "@/lib/editor/blocks";
 import { renderBlocksToHtml } from "@/lib/editor/render-blocks-to-html";
 import { articleBody, withoutBodyH1 } from "@/lib/editor/article-body";
 import { hasEditorialChanges, originalPublishedAt } from "@/lib/editorial-dates";
+import { weightConsolidation, consolidationSourcePath } from "@/lib/editorial-consolidation";
 
 type PostStatus = "DRAFT" | "REVIEW" | "SCHEDULED" | "PUBLISHED" | "ARCHIVED";
 
@@ -115,6 +116,17 @@ export async function updatePostAction(id: string, formData: FormData) {
   revalidatePath("/sitemap.xml");
   revalidatePath("/feed.xml");
   revalidatePath("/administracao/artigos");
+
+  if (updated.id === weightConsolidation.targetId) {
+    revalidatePath(consolidationSourcePath);
+    revalidatePath("/pt/autora/weverlyn-alves");
+    // Automatic cards are cached inside the category's article pages.
+    const siblings = await prisma.post.findMany({
+      where: { categoryId: updated.categoryId, language: "pt", status: "PUBLISHED" },
+      select: { slug: true },
+    });
+    for (const sibling of siblings) revalidatePath(`/pt/artigos/${sibling.slug}`);
+  }
 
   redirect("/administracao/artigos");
 }

@@ -11,6 +11,7 @@ import { getPublishedPostBySlug, getRelatedPosts } from "@/lib/posts";
 import { siteConfig } from "@/config/site";
 import { articleModifiedAt } from "@/lib/editorial-dates";
 import { articleBody } from "@/lib/editor/article-body";
+import { consolidationDescription } from "@/lib/editorial-consolidation";
 
 type ArticlePageProps = {
   params: Promise<{
@@ -30,10 +31,11 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
   const articleUrl = `/pt/artigos/${article.slug}`;
   const imageUrl = article.coverImage || "/images/og/nutricao-em-movimento.jpg";
+  const description = consolidationDescription(article);
 
   return {
     title: article.title,
-    description: article.description,
+    description,
     authors: [{ name: nutritionistConfig.name, url: nutritionistConfig.authorUrl }],
 
     alternates: {
@@ -46,7 +48,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       url: articleUrl,
       siteName: "Nutrição & Movimento",
       title: article.title,
-      description: article.description,
+      description,
       publishedTime: article.publishedAt?.toISOString(),
       modifiedTime: articleModifiedAt(article)?.toISOString(),
       authors: [nutritionistConfig.authorUrl],
@@ -64,7 +66,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     twitter: {
       card: "summary_large_image",
       title: article.title,
-      description: article.description,
+      description,
       images: [imageUrl],
     },
   };

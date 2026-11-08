@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-08T13:29:10.341Z",
+  "mode": "production",
+  "localOnly": true,
+  "connection": "127.0.0.1:33317/nutricao_consolidacao_disposable",
+  "publicChecks": [
+    {
+      "route": "/pt",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos?categoria=emagrecimento-sustentavel",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/feed.xml",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos/emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "sourceAbsent": true
+    },
+    {
+      "route": "/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": 200,
+      "sourceAbsent": true
+    }
+  ],
+  "redirects": [
+    {
+      "host": "nutricaoemovimento.com",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento?utm_source=teste"
+    },
+    {
+      "host": "www.nutricaoemovimento.com",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento?utm_source=teste"
+    }
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "inLanguage": "pt-BR",
+    "headline": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+    "description": "Um guia para organizar alimentação, movimento e rotina, com pequenas metas e espaço para ajustes, sem depender apenas de motivação.",
+    "image": [
+      "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg"
+    ],
+    "datePublished": "2026-06-22T22:17:05.717Z",
+    "dateModified": "2026-11-08T13:23:14.436Z",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+      "name": "Weverlyn da Cruz Alves Torres",
+      "jobTitle": "Nutricionista",
+      "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+      "sameAs": [
+        "https://www.instagram.com/nutri_lyn_weverlynalves"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nutrição & Movimento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento"
+    }
+  },
+  "image": {
+    "status": 200,
+    "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg",
+    "mime": "image/jpeg"
+  },
+  "indexable": true,
+  "admin": 200,
+  "editor": 200,
+  "realEditorNoChangeSave": 303,
+  "originalPublicationPreserved": true,
+  "viewsPreserved": true,
+  "archivedSchedulePreserved": true,
+  "other29Unchanged": true,
+  "sourceArchived": true,
+  "sevenStructuredReferences": true,
+  "editorialRevisionPreservedOnResave": true,
+  "warmedCachesInvalidated": true,
+  "idempotentRerunWrites": 0
+}

@@ -25,7 +25,7 @@ export function referenceUrl(reference: ScientificReference) {
 
 // Existing references blocks use plain strings. Preserve those without
 // guessing authors, years or links; new items have structured source fields.
-export function renderReferences(items: unknown[]) {
+export function renderReferences(items: unknown[], title = "Referências científicas") {
   const rows = items.flatMap(item => {
     if (typeof item === "string") return item.trim() ? [`<li>${escape(item)}</li>`] : [];
     if (!item || typeof item !== "object") return [];
@@ -36,5 +36,5 @@ export function renderReferences(items: unknown[]) {
     return [`<li style="margin-bottom:16px;overflow-wrap:anywhere;">${citation}.${ref.sourceType ? ` <span>(${escape(ref.sourceType)})</span>` : ""}${url ? ` <a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(url)}</a>` : ""}</li>`];
   });
   if (!rows.length) return "";
-  return `<section aria-label="Referências científicas"><h2>Referências científicas</h2><ol style="padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;">${rows.join("\n")}</ol></section>`;
+  return `<section aria-label="Referências científicas"><h2>${escape(title)}</h2><ol style="padding-left:24px;list-style-type:decimal;line-height:1.8;overflow-wrap:anywhere;">${rows.join("\n")}</ol></section>`;
 }
