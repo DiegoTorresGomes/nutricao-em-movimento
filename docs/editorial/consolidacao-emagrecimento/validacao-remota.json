@@ -1,0 +1,242 @@
+{
+  "checkedAt": "2026-11-08T13:46:47.666Z",
+  "criticalChecks": {
+    "status200": true,
+    "approvedBodyExact": true,
+    "metaDescription": true,
+    "excerpt": true,
+    "singleH1": true,
+    "canonical": true,
+    "author": true,
+    "datePublished": true,
+    "dateModified": true,
+    "mainEntityOfPage": true,
+    "headline": true
+  },
+  "criticalAllPassed": true,
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "inLanguage": "pt-BR",
+    "headline": "Emagrecimento sustentável: como cuidar do corpo com equilíbrio, nutrição e movimento",
+    "description": "Um guia para organizar alimentação, movimento e rotina, com pequenas metas e espaço para ajustes, sem depender apenas de motivação.",
+    "image": [
+      "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg"
+    ],
+    "datePublished": "2026-06-22T22:17:05.717Z",
+    "dateModified": "2026-11-08T13:45:29.480Z",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves#person",
+      "name": "Weverlyn da Cruz Alves Torres",
+      "jobTitle": "Nutricionista",
+      "url": "https://www.nutricaoemovimento.com/pt/autora/weverlyn-alves",
+      "image": "https://www.nutricaoemovimento.com/images/nutritionist/weverlyn.jpg",
+      "sameAs": [
+        "https://www.instagram.com/nutri_lyn_weverlynalves"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nutrição & Movimento",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.nutricaoemovimento.com/images/og/nutricao-em-movimento.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento"
+    }
+  },
+  "actualMetaDescription": "Entenda o emagrecimento sustentável e como começar com alimentação, movimento, pequenas metas e uma rotina possível, sem promessas de resultado.",
+  "surfaces": [
+    {
+      "path": "/pt",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": true,
+      "newExcerpt": true,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "sourceAbsent": false,
+      "targetPresent": true,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos?categoria=emagrecimento-sustentavel",
+      "status": 200,
+      "sourceAbsent": false,
+      "targetPresent": true,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "sourceAbsent": false,
+      "targetPresent": false,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "sourceAbsent": false,
+      "targetPresent": true,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": true,
+      "newExcerpt": true,
+      "cache": {
+        "age": null,
+        "cacheControl": null,
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": true,
+      "newExcerpt": true,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos/emagrecer-sem-passar-fome-o-que-realmente-ajuda-no-processo",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": true,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos/por-que-dietas-muito-restritivas-costumam-falhar",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": false,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos/como-criar-um-deficit-calorico-sem-cortar-calorias-obsessivamente",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": false,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    },
+    {
+      "path": "/pt/artigos/como-lidar-com-recaidas-no-processo-de-emagrecimento-sem-desistir",
+      "status": 200,
+      "sourceAbsent": true,
+      "targetPresent": false,
+      "newExcerpt": false,
+      "cache": {
+        "age": null,
+        "cacheControl": "public, s-maxage=300, stale-while-revalidate=86400",
+        "vercel": null
+      }
+    }
+  ],
+  "redirects": [
+    {
+      "query": "",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "noArticleSchema": true
+    },
+    {
+      "query": "?utm_source=test",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento?utm_source=test",
+      "noArticleSchema": true
+    }
+  ],
+  "links": [
+    {
+      "path": "/pt/artigos/como-montar-um-prato-equilibrado-sem-complicar-a-alimentacao",
+      "status": 200
+    },
+    {
+      "path": "/pt/artigos/fome-emocional-ou-fome-fisica-aprenda-a-identificar-a-diferenca",
+      "status": 200
+    },
+    {
+      "path": "/pt/artigos/exercicios-ajudam-no-emagrecimento-entenda-alem-da-queima-calorica",
+      "status": 200
+    },
+    {
+      "path": "/pt/artigos/relacao-saudavel-com-a-comida-o-que-e-e-como-construi-la-no-dia-a-dia",
+      "status": 200
+    },
+    {
+      "path": "/pt/contato",
+      "status": 200
+    }
+  ],
+  "image": {
+    "url": "https://res.cloudinary.com/drwzwr7ul/image/upload/v1782158024/nutricao-em-movimento/articles/lhaxjd0ri79czrlzxeqr.jpg",
+    "status": 200,
+    "mime": "image/jpeg"
+  },
+  "outsidePairUnchanged": true,
+  "finalizedAt": "2026-11-08T13:53:50.829Z",
+  "cacheDecision": {
+    "userChoice": "Registrar cache como pendente",
+    "accepted": true,
+    "pendingPaths": [
+      "/pt/artigos",
+      "/pt/artigos?categoria=emagrecimento-sustentavel",
+      "/pt/autora/weverlyn-alves",
+      "/sitemap.xml"
+    ],
+    "uiInputActions": 0,
+    "uiStoppedReason": "Computer Use could not determine current browser URL confidently; no further app input"
+  }
+}

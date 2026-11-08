@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-11-08T13:45:28.447Z",
+  "requestFile": "C:/Users/Diego Torres/.codex/attachments/c3fd1e10-34b6-472f-bd59-07657a36066c/Texto colado.txt",
+  "requestSha256": "b8856d626c43449757f7aa8e78e5b4b1e09f404aa1f8d622d5011d917615328b",
+  "authorization": "Explicit authorization to conclude on configured remote database after live 301/200 verification",
+  "targetSha256": "16b82bda4d4c6d324a537694150e43ee0d0e29fd6e7852560710f2bb5a38fce0",
+  "approvedSourceSha256": "7b40fe3b3071ed312a761e7f0f3035a542ae99bae5e88514cfa5f1ba5b1e1c77",
+  "allowedIds": [
+    "cmrl2gz5k00009e2rg5qgjl1h",
+    "cmqppa7du0000ve2rnn31iyzq"
+  ],
+  "noCommit": true,
+  "noPush": true,
+  "noNewDeploy": true
+}

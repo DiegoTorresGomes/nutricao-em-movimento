@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-11-08T13:51:28.244Z",
+  "approvedCount": 7,
+  "newSourcesAdded": 0,
+  "references": [
+    {
+      "number": 1,
+      "author": "Hall KD, Kahan S",
+      "title": "Maintenance of Lost Weight and Long-Term Management of Obesity",
+      "publication": "Medical Clinics of North America. 102(1):183–197",
+      "year": "2018",
+      "doi": "10.1016/j.mcna.2017.08.012",
+      "checkedUrl": "https://doi.org/10.1016/j.mcna.2017.08.012",
+      "status": 302,
+      "location": "https://linkinghub.elsevier.com/retrieve/pii/S0025712517301360",
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 2,
+      "author": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+      "title": "Eating & Physical Activity to Lose or Maintain Weight",
+      "publication": "NIH/NIDDK. Revisado em maio",
+      "year": "2023",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "checkedUrl": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/eating-physical-activity",
+      "status": 200,
+      "location": null,
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 3,
+      "author": "Singh B, Murphy A, Maher C, Smith AE",
+      "title": "Time to Form a Habit: A Systematic Review and Meta-Analysis of Health Behaviour Habit Formation and Its Determinants",
+      "publication": "Healthcare (Basel). 12(23):2488",
+      "year": "2024",
+      "doi": "10.3390/healthcare12232488",
+      "checkedUrl": "https://doi.org/10.3390/healthcare12232488",
+      "status": 302,
+      "location": "https://www.mdpi.com/2227-9032/12/23/2488",
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 4,
+      "author": "Brasil. Ministério da Saúde",
+      "title": "Guia alimentar para a população brasileira",
+      "publication": "2ª edição, 1ª reimpressão. Brasília: Ministério da Saúde",
+      "year": "2014",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "checkedUrl": "https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf",
+      "status": 200,
+      "location": null,
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 5,
+      "author": "World Health Organization",
+      "title": "WHO guidelines on physical activity and sedentary behaviour",
+      "publication": "Geneva: WHO. ISBN 9789240015128",
+      "year": "2020",
+      "url": "https://www.who.int/publications/i/item/9789240015128",
+      "checkedUrl": "https://www.who.int/publications/i/item/9789240015128",
+      "status": 200,
+      "location": null,
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 6,
+      "author": "Tasali E, Wroblewski K, Kahn E, Kilkus J, Schoeller DA",
+      "title": "Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings: A Randomized Clinical Trial",
+      "publication": "JAMA Internal Medicine. 182(4):365–374",
+      "year": "2022",
+      "doi": "10.1001/jamainternmed.2021.8098",
+      "checkedUrl": "https://doi.org/10.1001/jamainternmed.2021.8098",
+      "status": 302,
+      "location": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2788694",
+      "attempt": 1,
+      "validLink": true
+    },
+    {
+      "number": 7,
+      "author": "National Institute of Mental Health (NIMH)",
+      "title": "Eating Disorders: What You Need to Know",
+      "publication": "NIH Publication No. 24-MH-4901. Revisado em",
+      "year": "2024",
+      "url": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "checkedUrl": "https://www.nimh.nih.gov/health/publications/eating-disorders",
+      "status": 200,
+      "location": null,
+      "attempt": 1,
+      "validLink": true
+    }
+  ]
+}

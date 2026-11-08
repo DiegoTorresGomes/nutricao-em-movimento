@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-08",
+  "status": "Actually published approved consolidated B",
+  "previousProposal": 83,
+  "score": 83,
+  "classification": "B",
+  "weights": [
+    25,
+    20,
+    15,
+    15,
+    10,
+    5,
+    5,
+    5
+  ],
+  "points": [
+    23,
+    17,
+    10,
+    12,
+    8,
+    5,
+    4,
+    4
+  ],
+  "rationale": [
+    "Main guide and useful motivation/environment intent integrated",
+    "Approved text rendered exactly with traceable sources and practical decisions",
+    "Professional authorship and human approval reported by user; no invented clinical experience",
+    "No original empirical research; general guidance and selected references have limits",
+    "Canonical, dates, metadata, links and structured references verified on public page",
+    "Static discovery cache pending by explicit user choice"
+  ],
+  "searchConsoleAccess": false,
+  "rankingImprovementClaimed": false,
+  "cachePendingAccepted": true
+}

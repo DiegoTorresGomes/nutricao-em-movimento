@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-08T13:44:21.375Z",
+  "gatePassed": true,
+  "bareAndWww301": true,
+  "rows": [
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-habitos-que-importam-mais-que-forca-de-vontade?utm_source=test",
+      "status": 301,
+      "location": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento?utm_source=test"
+    },
+    {
+      "url": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento",
+      "status": 200,
+      "location": null,
+      "canonical": "https://www.nutricaoemovimento.com/pt/artigos/emagrecimento-sustentavel-como-cuidar-do-corpo-com-equilibrio-nutricao-e-movimento"
+    }
+  ]
+}

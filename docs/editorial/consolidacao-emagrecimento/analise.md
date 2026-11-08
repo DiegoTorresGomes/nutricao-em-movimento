@@ -1,6 +1,6 @@
 # Análise de consolidação — emagrecimento sustentável
 
-**Atualização de 08/11/2026:** a aprovação de Weverlyn foi recebida. Código e consolidação em banco descartável foram validados, incluindo build completo e 301. **A aplicação no banco remoto está pendente:** A ainda responde 200 no site hospedado, e deploy permanece proibido. O estado atual, snapshots, testes e impedimento estão em [relatorio-final.md](relatorio-final.md). As seções de proposta/análise abaixo registram as etapas anteriores; não significam publicação concluída.
+**Atualização de 08/11/2026:** após o usuário confirmar a ativação do redirect e autorizar a escrita remota, B foi consolidado e A arquivado em transação. **301 e B/200 confirmados em produção; nota final 83/100, classe B.** Publicação original e views foram preservadas. Cache de sitemap/listagem/perfil permanece pendente por escolha explícita do usuário. Snapshots e resultados estão em [relatorio-final.md](relatorio-final.md). As seções de proposta/análise abaixo são histórico das etapas anteriores, inclusive referências à aprovação então pendente.
 
 **RECOMENDAÇÃO: consolidar A em B, em uma fase futura autorizada.**
 

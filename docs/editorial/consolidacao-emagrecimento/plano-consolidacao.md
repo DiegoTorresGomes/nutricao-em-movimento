@@ -1,6 +1,6 @@
-# Plano de consolidação A → B — NÃO EXECUTADO
+# Plano de consolidação A → B — aplicação remota concluída
 
-**Estado em 08/11/2026:** plano implementado e validado somente no ambiente descartável local; 301 explícito, B consolidado e A arquivado na cópia. **Não executado no banco/site remoto.** O redirect público continua ausente e não houve deploy. Ver [relatorio-final.md](relatorio-final.md) para resultados e ordem de ativação. O texto deste plano abaixo permanece como histórico da proposta; os detalhes efetivos do CTA/estrutura são os da versão aprovada.
+**Estado em 08/11/2026:** após a ativação do redirect pelo usuário, a aplicação remota autorizada foi concluída: B recebeu o texto aprovado, A foi arquivado e o 301 permanece ativo. Datas históricas e views preservadas; nota final de B 83/100, classe B. **Cache estático de sitemap/listagem/perfil pendente, aceito pelo usuário.** Ver [relatorio-final.md](relatorio-final.md). As instruções futuras abaixo são o registro histórico do planejamento, não indicam que os dados ainda aguardam aplicação. Nenhum novo deploy nesta execução.
 
 Recomendação editorial, confiança média. Nenhuma etapa abaixo autoriza implementação nesta fase. Nova fase deverá validar a proposta com Weverlyn, conferir dados disponíveis de busca/links e receber autorização de execução.
 
