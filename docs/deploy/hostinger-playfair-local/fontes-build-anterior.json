@@ -1,0 +1,58 @@
+[
+  {
+    "file": "28a2004cf8372660-s.woff2",
+    "family": "Playfair Display",
+    "axes": {
+      "wght": {
+        "name": "Weight",
+        "min": 400,
+        "default": 400,
+        "max": 900
+      }
+    },
+    "bytes": 20980,
+    "sha256": "5628567856d60d714e7a35bcac9e3de08b336d63b12138f61b970990a1ee9547"
+  },
+  {
+    "file": "47f136985ef5b5cb-s.woff2",
+    "family": "Playfair Display",
+    "axes": {
+      "wght": {
+        "name": "Weight",
+        "min": 400,
+        "default": 400,
+        "max": 900
+      }
+    },
+    "bytes": 21144,
+    "sha256": "d7f9db9b1034978ebebdf7312aa4aee55dff3ef6039e7ff71413780bd4a05558"
+  },
+  {
+    "file": "4ead58c4dcc3f285-s.woff2",
+    "family": "Playfair Display",
+    "axes": {
+      "wght": {
+        "name": "Weight",
+        "min": 400,
+        "default": 400,
+        "max": 900
+      }
+    },
+    "bytes": 9056,
+    "sha256": "8fa67d5f0ab2a1d0b924729a0411a069b384d7a236edd96a6767ef342a6d048f"
+  },
+  {
+    "file": "eaead17c7dbfcd5d-s.p.woff2",
+    "family": "Playfair Display",
+    "axes": {
+      "wght": {
+        "name": "Weight",
+        "min": 400,
+        "default": 400,
+        "max": 900
+      }
+    },
+    "bytes": 38460,
+    "sha256": "5d91eb5d522a03081946c44c8ca17c902230dfed5f0f9b5014262135d47b15b2"
+  }
+]

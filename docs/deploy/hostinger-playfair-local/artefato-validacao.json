@@ -1,0 +1,12 @@
+{
+  "emitted": [
+    "e399f3e068a97f0c-s.p.woff2"
+  ],
+  "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+  "bytes": 38404,
+  "fontFace": "@font-face{font-family:playfair;src:url(/_next/static/media/e399f3e068a97f0c-s.p.woff2) format(\"woff2\");font-display:swap;font-weight:500 700;font-style:normal}",
+  "cssVariablePreserved": true,
+  "latoDeclarationIdentical": true,
+  "playfairGoogleImportRemoved": true,
+  "externalPlayfairCss": false
+}

@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "path": "/pt",
+      "status": 200,
+      "stylesheetReferencesLocalFont": true
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "stylesheetReferencesLocalFont": true
+    },
+    {
+      "path": "/pt/artigos/pao-engorda-como-incluir-sem-culpa-em-uma-alimentacao-equilibrada",
+      "status": 200,
+      "stylesheetReferencesLocalFont": true
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "stylesheetReferencesLocalFont": true
+    }
+  ],
+  "fontAsset": {
+    "status": 200,
+    "bytes": 38404,
+    "identicalToSource": true
+  },
+  "method": "HTTP GET only, no article JavaScript or visual rendering"
+}

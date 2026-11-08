@@ -1,5 +1,6 @@
 ﻿import type { Metadata, Viewport } from "next";
-import { Lato, Playfair_Display } from "next/font/google";
+import { Lato } from "next/font/google";
+import localFont from "next/font/local";
 import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
 import { ConsentNavigationGuard } from "@/components/analytics/ConsentNavigationGuard";
 import { ADSENSE_CLIENT } from "@/config/monetization";
@@ -7,10 +8,13 @@ import { siteConfig } from "@/config/site";
 import { nutritionistConfig } from "@/config/nutritionist";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const playfair = localFont({
+  src: "./fonts/PlayfairDisplay-Variable.woff2",
   variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: "500 700",
+  style: "normal",
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
 const lato = Lato({

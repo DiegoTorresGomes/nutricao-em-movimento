@@ -1,0 +1,223 @@
+{
+  "source": "https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2",
+  "family": "Playfair Display",
+  "subfamily": "Regular",
+  "axes": {
+    "wght": {
+      "name": "Weight",
+      "min": 400,
+      "default": 400,
+      "max": 900
+    }
+  },
+  "bytes": 38404,
+  "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+  "testedText": "áéíóúãõçÁÉÍÓÚÃÕÇâêôàüÂÊÔÀÜNutrição Alimentação Saúde Emagrecimento Weverlyn da Cruz Alves Torres",
+  "missingGlyphs": [],
+  "glyphs": [
+    {
+      "character": "á",
+      "id": 64
+    },
+    {
+      "character": "é",
+      "id": 77
+    },
+    {
+      "character": "í",
+      "id": 86
+    },
+    {
+      "character": "ó",
+      "id": 101
+    },
+    {
+      "character": "ú",
+      "id": 116
+    },
+    {
+      "character": "ã",
+      "id": 69
+    },
+    {
+      "character": "õ",
+      "id": 106
+    },
+    {
+      "character": "ç",
+      "id": 73
+    },
+    {
+      "character": "Á",
+      "id": 2
+    },
+    {
+      "character": "É",
+      "id": 16
+    },
+    {
+      "character": "Í",
+      "id": 25
+    },
+    {
+      "character": "Ó",
+      "id": 37
+    },
+    {
+      "character": "Ú",
+      "id": 51
+    },
+    {
+      "character": "Ã",
+      "id": 8
+    },
+    {
+      "character": "Õ",
+      "id": 42
+    },
+    {
+      "character": "Ç",
+      "id": 12
+    },
+    {
+      "character": "â",
+      "id": 65
+    },
+    {
+      "character": "ê",
+      "id": 78
+    },
+    {
+      "character": "ô",
+      "id": 102
+    },
+    {
+      "character": "à",
+      "id": 67
+    },
+    {
+      "character": "ü",
+      "id": 118
+    },
+    {
+      "character": "Â",
+      "id": 4
+    },
+    {
+      "character": "Ê",
+      "id": 17
+    },
+    {
+      "character": "Ô",
+      "id": 38
+    },
+    {
+      "character": "À",
+      "id": 6
+    },
+    {
+      "character": "Ü",
+      "id": 53
+    },
+    {
+      "character": "N",
+      "id": 34
+    },
+    {
+      "character": "u",
+      "id": 115
+    },
+    {
+      "character": "t",
+      "id": 114
+    },
+    {
+      "character": "r",
+      "id": 111
+    },
+    {
+      "character": "i",
+      "id": 84
+    },
+    {
+      "character": "o",
+      "id": 100
+    },
+    {
+      "character": " ",
+      "id": 238
+    },
+    {
+      "character": "A",
+      "id": 1
+    },
+    {
+      "character": "l",
+      "id": 95
+    },
+    {
+      "character": "m",
+      "id": 97
+    },
+    {
+      "character": "e",
+      "id": 76
+    },
+    {
+      "character": "n",
+      "id": 98
+    },
+    {
+      "character": "a",
+      "id": 63
+    },
+    {
+      "character": "S",
+      "id": 48
+    },
+    {
+      "character": "d",
+      "id": 74
+    },
+    {
+      "character": "E",
+      "id": 15
+    },
+    {
+      "character": "g",
+      "id": 82
+    },
+    {
+      "character": "c",
+      "id": 72
+    },
+    {
+      "character": "W",
+      "id": 56
+    },
+    {
+      "character": "v",
+      "id": 120
+    },
+    {
+      "character": "y",
+      "id": 123
+    },
+    {
+      "character": "C",
+      "id": 11
+    },
+    {
+      "character": "z",
+      "id": 126
+    },
+    {
+      "character": "s",
+      "id": 112
+    },
+    {
+      "character": "T",
+      "id": 49
+    }
+  ]
+}
