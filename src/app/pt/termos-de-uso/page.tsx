@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdate = "18 de julho de 2026";
+const lastUpdate = "8 de novembro de 2026";
 
 export default function TermosPage() {
   return (
@@ -156,9 +156,10 @@ export default function TermosPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">9. Newsletter</h2>
             <p>
-              A assinatura da newsletter é voluntária e utiliza confirmação dupla (double opt-in). Você
-              pode cancelar a qualquer momento pelo link de descadastro presente nos e-mails. O
-              tratamento do seu e-mail segue a nossa Política de Privacidade.
+              A solicitação de newsletter é voluntária. O fluxo prevê confirmação dupla, mas o envio
+              automático ainda não está integrado; não garantimos confirmação ou entrega de materiais
+              nesta versão. Para retirar seu pedido, use a página de Contato. O tratamento do e-mail
+              segue a nossa Política de Privacidade.
             </p>
           </section>
 

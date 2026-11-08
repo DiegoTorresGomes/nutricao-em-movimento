@@ -6,14 +6,14 @@ import { LegalPageSchema } from "@/components/seo/LegalPageSchema";
 export const metadata: Metadata = {
   title: "Política de Privacidade",
   description:
-    "Saiba como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, em conformidade com a LGPD, incluindo cookies, newsletter e analytics.",
+    "Saiba como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, com informações sobre a LGPD, incluindo cookies, newsletter e analytics.",
   alternates: {
     canonical: "/pt/politica-de-privacidade",
   },
   openGraph: {
     title: "Política de Privacidade | Nutrição & Movimento",
     description:
-      "Como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, em conformidade com a LGPD.",
+      "Como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, com informações sobre a LGPD.",
     url: "/pt/politica-de-privacidade",
     type: "website",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdate = "18 de julho de 2026";
+const lastUpdate = "8 de novembro de 2026";
 
 export default function PoliticaPrivacidadePage() {
   return (
@@ -43,7 +43,7 @@ export default function PoliticaPrivacidadePage() {
         <LegalPageSchema
           title="Política de Privacidade"
           path="/pt/politica-de-privacidade"
-          description="Como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, em conformidade com a LGPD."
+          description="Como o Nutrição & Movimento coleta, usa e protege seus dados pessoais, com informações sobre a LGPD."
         />
 
         <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#D67A5A]">
@@ -64,19 +64,19 @@ export default function PoliticaPrivacidadePage() {
               &ldquo;site&rdquo;) é um portal de conteúdo educativo sobre nutrição, comportamento
               alimentar, emagrecimento sustentável e Bem-Estar Nutricional. Levamos a sua privacidade a
               sério e esta Política descreve, de forma transparente, como coletamos, utilizamos,
-              armazenamos e protegemos os seus dados pessoais, em conformidade com a{" "}
+              armazenamos e protegemos os seus dados pessoais, considerando a{" "}
               <strong>Lei nº 13.709/2018 (Lei Geral de Proteção de Dados — LGPD)</strong> e com as
-              boas práticas exigidas pelo Google (AdSense e Search).
+              orientações de privacidade aplicáveis aos serviços utilizados.
             </p>
             <p>
-              Ao utilizar o site, você declara estar ciente e de acordo com as práticas descritas
-              nesta Política de Privacidade.
+              Esta política informa nossas práticas. A navegação não equivale a consentimento para
+              estatísticas ou publicidade; as escolhas opcionais são feitas no painel de cookies.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">2. Dados que coletamos</h2>
-            <p>Podemos coletar duas categorias de dados:</p>
+            <p>Os dados variam conforme os recursos utilizados e suas escolhas:</p>
 
             <h3 className="text-lg font-semibold text-[#111111]">
               2.1. Dados fornecidos por você
@@ -89,13 +89,14 @@ export default function PoliticaPrivacidadePage() {
                 <strong>E-mail</strong> (ao assinar a newsletter ou entrar em contato);
               </li>
               <li>
-                <strong>Mensagens</strong> enviadas através do formulário de contato.
+                <strong>Mensagens</strong> enviadas pelos canais indicados na página de contato.
               </li>
             </ul>
 
             <h3 className="text-lg font-semibold text-[#111111]">
               2.2. Dados coletados automaticamente
             </h3>
+            <p>Hospedagem e entrega de recursos podem receber dados técnicos necessários. Com Estatísticas aceitas, o Analytics configurado também pode tratar dados de navegação. Nem todos os itens abaixo são coletados em todas as visitas:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>Endereço de IP;</li>
               <li>Tipo e versão do navegador;</li>
@@ -114,8 +115,8 @@ export default function PoliticaPrivacidadePage() {
             <p>Utilizamos os dados coletados para as seguintes finalidades:</p>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                <strong>Newsletter:</strong> enviar conteúdos e novidades a quem manifestou interesse
-                (base legal: consentimento);
+                <strong>Newsletter:</strong> registrar o pedido voluntário de inscrição; o envio ainda depende
+                de integração (consentimento próprio, separado das escolhas de cookies);
               </li>
               <li>
                 <strong>Contato:</strong> responder dúvidas, solicitações e mensagens (base legal:
@@ -130,87 +131,29 @@ export default function PoliticaPrivacidadePage() {
                 legítimo interesse);
               </li>
               <li>
-                <strong>Estatísticas:</strong> medir audiência de forma agregada e anônima (base
-                legal: legítimo interesse / consentimento quando aplicável);
+                <strong>Estatísticas:</strong> medir audiência com Google Analytics quando configurado e somente após
+                aceitar Estatísticas (base legal adotada para essa opção: consentimento);
               </li>
               <li>
-                <strong>Publicidade:</strong> exibir anúncios e, mediante consentimento, personalizá-los
-                (base legal: consentimento).
+                <strong>Publicidade:</strong> recurso pausado nesta versão; qualquer ativação futura exige
+                revisão dos controles e informações aplicáveis.
               </li>
             </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">4. Cookies</h2>
-            <p>
-              Utilizamos cookies próprios e de terceiros para o funcionamento do site, análise de
-              audiência e publicidade. O detalhamento completo das categorias, finalidades e formas de
-              gerenciamento está descrito na nossa{" "}
-              <Link href="/pt/politica-de-cookies" className="font-semibold text-[#556B2F] underline">
-                Política de Cookies
-              </Link>
-              . Você pode gerenciar suas preferências a qualquer momento pelo banner de consentimento
-              ou pelas configurações do seu navegador.
-            </p>
+            <p>Usamos armazenamento necessário para lembrar escolhas e manter funções essenciais. O painel próprio permite aceitar ou recusar estatísticas opcionais; publicidade está pausada. Use “Preferências de cookies” no rodapé para alterar ou retirar a decisão a qualquer momento. A escolha, com versão e data, fica em localStorage e cookie próprio por até 180 dias. Se o armazenamento for bloqueado, ela pode não persistir.</p><p>Detalhes na <Link href="/pt/politica-de-cookies" className="font-semibold text-[#556B2F] underline">Política de Cookies</Link>. O painel não é uma CMP certificada pelo Google e não comprova integração TCF.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">5. Google AdSense</h2>
-            <p>
-              Este site poderá exibir anúncios por meio do <strong>Google AdSense</strong>. Para isso,
-              o Google e seus parceiros utilizam cookies para veicular anúncios com base em visitas
-              anteriores a este e a outros sites.
-            </p>
-            <ul className="list-disc space-y-2 pl-6">
-              <li>
-                Fornecedores terceiros, incluindo o Google, usam cookies (como o cookie{" "}
-                <strong>DoubleClick / DART</strong>) para exibir anúncios;
-              </li>
-              <li>
-                A personalização de anúncios depende do seu consentimento e pode ser desativada;
-              </li>
-              <li>
-                Você pode gerenciar as preferências em{" "}
-                <a
-                  href="https://adssettings.google.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  Configurações de anúncios do Google
-                </a>{" "}
-                e obter mais informações na{" "}
-                <a
-                  href="https://policies.google.com/technologies/ads?hl=pt-BR"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  política de publicidade do Google
-                </a>
-                .
-              </li>
-            </ul>
+            <p>A publicidade está pausada nesta versão. O identificador público da conta e o ads.txt permitem preparar a verificação do site, mas a aplicação não carrega o script de anúncios.</p><p>Uma ativação futura poderá envolver cookies do Google e parceiros, inclusive para anúncios com base em visitas a este e a outros sites. Depende de configuração própria de consentimento e requisitos regionais; não afirmamos existir CMP certificada ativa. Informações em <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">publicidade do Google</a> e controles em <a href="https://adssettings.google.com/" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">Configurações de anúncios do Google</a>.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">6. Google Analytics</h2>
-            <p>
-              Poderemos utilizar o <strong>Google Analytics</strong>, serviço de análise de tráfego do
-              Google, para coletar estatísticas de uso de forma agregada e anônima (páginas mais
-              visitadas, tempo de permanência, origem do tráfego). Esse serviço só será ativado
-              mediante o seu consentimento e não é utilizado para identificá-lo pessoalmente. Você pode
-              impedir a coleta instalando o{" "}
-              <a
-                href="https://tools.google.com/dlpage/gaoptout"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold text-[#556B2F] underline"
-              >
-                complemento de exclusão do Google Analytics
-              </a>
-              .
-            </p>
+            <p>Quando configurado, o Google Analytics é utilizado para medir o uso das páginas públicas após aceitar Estatísticas. Sem decisão ou com recusa, a aplicação não carrega esse script. O serviço pode tratar identificadores, cookies, informações de dispositivo, origem e eventos de navegação; relatórios agregados não tornam todos os dados anônimos.</p><p>Você pode retirar a escolha pelo rodapé. Se o serviço já tiver sido carregado, a página será recarregada para encerrar sua execução; a retirada não desfaz dados já enviados. Há também um <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">complemento de exclusão do Google Analytics</a>.</p>
           </section>
 
           <section className="space-y-4">
@@ -226,39 +169,17 @@ export default function PoliticaPrivacidadePage() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">8. Newsletter</h2>
-            <p>
-              Ao assinar a nossa newsletter, o seu e-mail é armazenado de forma segura em nossa base de
-              dados. Adotamos o modelo de <strong>confirmação dupla (double opt-in)</strong>: após o
-              cadastro, você recebe um e-mail solicitando a confirmação da assinatura e só passa a
-              integrar a lista após clicar no link de confirmação.
-            </p>
-            <p>
-              Registramos a data, a hora e o endereço de IP do consentimento, exclusivamente para fins
-              de comprovação legal (LGPD). Você pode <strong>cancelar a assinatura a qualquer
-              momento</strong> por meio do link de descadastro presente em todos os e-mails que
-              enviamos, sem qualquer custo.
-            </p>
+            <p>O formulário pode registrar seu e-mail e um pedido pendente de confirmação no banco, com token e prazo de validade. O código prevê confirmação dupla, mas o envio automático do e-mail ainda não está integrado. Portanto, não garantimos confirmação, entrega de materiais ou envios periódicos nesta versão.</p><p>O fluxo de confirmação prevê registro de data, hora, versão e IP quando disponível. Para solicitar informações, correção, retirada do pedido ou exclusão do cadastro, use a <Link href="/pt/contato" className="font-semibold text-[#556B2F] underline">página de Contato</Link>. Não afirmamos existir um link de descadastro em e-mails que ainda não são enviados.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">9. Microsoft Clarity</h2>
-            <p>
-              Poderemos utilizar o <strong>Microsoft Clarity</strong> para entender como os visitantes
-              interagem com o site por meio de métricas comportamentais, mapas de calor e reprodução de
-              sessões, com o objetivo de melhorar a experiência de navegação. Quando ativo, esse serviço
-              opera mediante consentimento e captura informações de uso e interação de forma agregada.
-              Mais informações estão disponíveis na declaração de privacidade da Microsoft.
-            </p>
+            <p>Microsoft Clarity não é carregado nesta versão. Sua ativação futura depende de integração de consentimento, avaliação do tratamento e atualização desta política.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">10. Google Tag Manager</h2>
-            <p>
-              Poderemos utilizar o <strong>Google Tag Manager</strong> para gerenciar, de forma
-              centralizada, as tags de medição e marketing do site. O Tag Manager, por si só, não coleta
-              dados pessoais — ele apenas orquestra a execução de outras ferramentas (como Analytics e
-              Clarity), sempre respeitando as suas escolhas de consentimento.
-            </p>
+            <p>Google Tag Manager não é carregado nesta versão. O gerenciamento remoto de tags requer auditoria própria antes de ativação para evitar scripts sem consentimento ou duplicados; preencher uma variável de ambiente não o ativa nesta implementação.</p>
           </section>
 
           <section className="space-y-4">
@@ -304,6 +225,7 @@ export default function PoliticaPrivacidadePage() {
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">12. Segurança dos dados</h2>
+            <p>Na área administrativa, dados de conta, autenticação, sessões e registros de segurança são usados para controle de acesso e prevenção de abuso. Essa área não carrega Analytics nem publicidade.</p>
             <p>
               Adotamos medidas técnicas e organizacionais para proteger os seus dados contra acessos
               não autorizados, perda, alteração ou divulgação indevida, incluindo conexão criptografada
@@ -329,9 +251,9 @@ export default function PoliticaPrivacidadePage() {
             <h2 className="text-2xl font-semibold text-[#111111]">14. Retenção dos dados</h2>
             <p>
               Mantemos os dados pessoais apenas pelo tempo necessário para cumprir as finalidades
-              descritas nesta Política ou para atender a obrigações legais. Dados de newsletter são
-              mantidos enquanto durar a assinatura; após o cancelamento, são eliminados ou anonimizados,
-              ressalvados os registros de consentimento exigidos por lei.
+              descritas nesta Política ou para atender a obrigações legais. Pedidos pendentes de newsletter podem permanecer no banco até revisão ou solicitação de exclusão;
+              a expiração do token não apaga automaticamente o cadastro. A rotina automática de retenção
+              e eliminação desses pedidos ainda precisa ser formalizada.
             </p>
           </section>
 

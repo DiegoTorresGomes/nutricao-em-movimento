@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdate = "18 de julho de 2026";
+const lastUpdate = "8 de novembro de 2026";
 
 export default function PoliticaCookiesPage() {
   return (
@@ -62,186 +62,13 @@ export default function PoliticaCookiesPage() {
         </p>
 
         <div className="mt-10 space-y-10 text-base leading-8 text-neutral-700">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">1. O que são cookies</h2>
-            <p>
-              Cookies são pequenos arquivos de texto armazenados no seu dispositivo (computador,
-              tablet ou celular) quando você visita um site. Eles permitem que o site lembre suas
-              ações e preferências por um período, tornando a navegação mais eficiente e
-              personalizada. Também podem ser usadas tecnologias semelhantes, como{" "}
-              <em>local storage</em>, <em>session storage</em> e <em>web beacons</em>.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">2. Como utilizamos cookies</h2>
-            <p>
-              O <strong>Nutrição & Movimento</strong> utiliza cookies para garantir o
-              funcionamento correto do site, entender como os conteúdos são utilizados e, no
-              futuro, exibir anúncios relevantes que ajudam a manter o projeto gratuito. Dividimos
-              os cookies nas categorias abaixo.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">3. Cookies próprios</h2>
-            <p>
-              São definidos pelo próprio domínio do site e usados para funções essenciais, como
-              manter a sessão da área administrativa, lembrar preferências de navegação e
-              armazenar, de forma temporária, o registro de que um artigo já foi contabilizado como
-              visualizado na sua sessão. Esses cookies não identificam você para fins publicitários.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">4. Cookies de terceiros</h2>
-            <p>
-              Alguns serviços externos podem definir cookies quando você navega pelo site. Os
-              principais estão descritos a seguir.
-            </p>
-
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-[#111111]">Google AdSense</h3>
-              <p>
-                Utilizamos (ou pretendemos utilizar) o Google AdSense para exibir anúncios. O
-                Google e seus parceiros usam cookies para veicular anúncios com base em visitas
-                anteriores a este e a outros sites. O cookie de publicidade do Google
-                (<em>cookie DoubleClick / __gads / __gpi</em>) permite exibir anúncios mais
-                relevantes e limitar o número de vezes que um mesmo anúncio é mostrado. Você pode
-                saber mais e ajustar suas preferências nas{" "}
-                <a
-                  href="https://policies.google.com/technologies/ads?hl=pt-BR"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  configurações de anúncios do Google
-                </a>
-                .
-              </p>
-
-              <h3 className="text-lg font-semibold text-[#111111]">
-                Google Analytics (uso futuro)
-              </h3>
-              <p>
-                Poderemos utilizar o Google Analytics para entender, de forma agregada e anônima,
-                como os visitantes usam o site (páginas mais lidas, tempo de permanência, origem do
-                tráfego). Esses cookies (<em>_ga</em>, <em>_ga_*</em>) coletam informações
-                estatísticas e não são usados para identificar você pessoalmente.
-              </p>
-            </div>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">
-              5. Personalização de anúncios
-            </h2>
-            <p>
-              Anúncios podem ser personalizados com base no seu comportamento de navegação. Você
-              tem total controle sobre isso: é possível desativar a personalização de anúncios do
-              Google diretamente na página{" "}
-              <a
-                href="https://adssettings.google.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold text-[#556B2F] underline"
-              >
-                Configurações de anúncios
-              </a>{" "}
-              ou optar por não participar do uso de cookies de terceiros por meio do{" "}
-              <a
-                href="https://www.aboutads.info/choices/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold text-[#556B2F] underline"
-              >
-                aboutads.info
-              </a>
-              . Mesmo sem personalização, você continuará vendo anúncios, porém menos relevantes.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">6. Consentimento</h2>
-            <p>
-              Ao continuar navegando no site, você concorda com o uso de cookies conforme descrito
-              nesta política. Para visitantes localizados em regiões que exigem consentimento
-              prévio (como o Espaço Econômico Europeu), o Google exibe mecanismos de consentimento
-              compatíveis antes da veiculação de anúncios personalizados.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">
-              7. Como desabilitar os cookies
-            </h2>
-            <p>
-              Você pode bloquear ou apagar cookies a qualquer momento nas configurações do seu
-              navegador. Veja as instruções oficiais:
-            </p>
-            <ul className="list-disc space-y-2 pl-6">
-              <li>
-                <a
-                  href="https://support.google.com/chrome/answer/95647"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  Google Chrome
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://support.mozilla.org/pt-BR/kb/gerencie-configuracoes-de-cookies-e-dados-de-sites"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  Mozilla Firefox
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  Safari
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#556B2F] underline"
-                >
-                  Microsoft Edge
-                </a>
-              </li>
-            </ul>
-            <p>
-              Lembre-se de que desativar cookies pode afetar o funcionamento de algumas partes do
-              site.
-            </p>
-          </section>
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-[#111111]">8. Alterações nesta política</h2>
-            <p>
-              Esta Política de Cookies pode ser atualizada periodicamente para refletir mudanças na
-              legislação ou nos serviços que utilizamos. Recomendamos revisitá-la de tempos em
-              tempos. Para saber mais sobre o tratamento dos seus dados, consulte também a nossa{" "}
-              <Link
-                href="/pt/politica-de-privacidade"
-                className="font-semibold text-[#556B2F] underline"
-              >
-                Política de Privacidade
-              </Link>
-              .
-            </p>
-          </section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">1. Cookies e armazenamento</h2><p>Cookies são pequenos registros no navegador. Também usamos localStorage para lembrar escolhas e sessionStorage para evitar contar repetidamente a visualização de um artigo na mesma sessão. Esses recursos têm finalidades diferentes.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">2. Recursos necessários</h2><p>A escolha de cookies é guardada em localStorage (nem-consent-v2) e no cookie próprio nem-consent por até 180 dias. O registro contém versão, categorias e data da decisão. Ele lembra inclusive a recusa e não é usado para publicidade. A área administrativa usa cookies de autenticação e segurança. A navegação pública não depende de aceitar estatísticas.</p><p>Se o navegador bloquear esse armazenamento, a decisão pode valer apenas durante a página aberta e o aviso pode reaparecer depois. Uma nova versão das preferências pode pedir outra decisão.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">3. Estatísticas opcionais</h2><p>Quando configurado, o Google Analytics é carregado somente após aceitar a categoria Estatísticas. Pode tratar dados de navegação, páginas, eventos, dispositivo e identificadores como cookies _ga e _ga_*. Relatórios agregados não significam que todos os dados de origem sejam anônimos. Sem decisão ou com recusa, o loader de Analytics não é carregado pela aplicação.</p><p>Google Tag Manager e Microsoft Clarity não são carregados nesta versão. Sua inclusão futura exige revisão desta política e do controle de consentimento.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">4. Publicidade</h2><p>A publicidade está pausada nesta versão: a aplicação não carrega o script do Google AdSense e a categoria Publicidade não pode ser ativada no painel. O identificador público da conta e o arquivo ads.txt apenas preparam a verificação do site; não ativam anúncios.</p><p>Se a publicidade for habilitada futuramente, o Google e seus parceiros poderão usar cookies e identificadores para selecionar anúncios, inclusive com base em visitas a este e a outros sites. Essa ativação depende de configuração e revisão próprias. Informações e controles externos estão na <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">política de publicidade do Google</a> e em <a href="https://adssettings.google.com/" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">Configurações de anúncios do Google</a>.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">5. Sua decisão</h2><p>O banner permite aceitar opcionais, recusar opcionais ou abrir Preferências. Os necessários permanecem ativos; estatísticas começam desativadas. Continuar navegando não é aceitação. O banner próprio registra escolhas e envia sinais ao Google Consent Mode; ele não é uma CMP certificada pelo Google nem comprova integração com o TCF.</p><p>A aplicação apresenta essas mesmas opções no Brasil e nas demais regiões, sem geolocalização. Publicidade personalizada no EEE, Reino Unido e Suíça depende de requisitos específicos, incluindo CMP certificada/TCF. Não declaramos que essa integração já esteja ativa.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">6. Alterar ou retirar consentimento</h2><p>Use “Preferências de cookies” no rodapé das páginas públicas para rever a escolha, salvar categorias ou recusar os opcionais. A nova decisão substitui a anterior. Ao retirar estatísticas depois de seu carregamento, a página é recarregada para encerrar o código já executado e impedir novo carregamento.</p><p>A aplicação tenta remover cookies opcionais conhecidos acessíveis no próprio domínio. Isso não apaga dados já enviados nem cookies de outros domínios. Para excluir outros registros, use as configurações do navegador; o <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">complemento de exclusão do Analytics</a> também é uma opção. A retirada de cookies não cancela uma inscrição de newsletter.</p></section>
+          <section className="space-y-4"><h2 className="text-2xl font-semibold text-[#111111]">7. Mais informações</h2><p>Outros recursos necessários, como hospedagem e entrega de imagens, podem receber dados técnicos para atender às requisições. Recusar estatísticas não bloqueia a infraestrutura necessária. Consulte a <Link href="/pt/politica-de-privacidade" className="font-semibold text-[#556B2F] underline">Política de Privacidade</Link> e entre em contato pela <Link href="/pt/contato" className="font-semibold text-[#556B2F] underline">página de Contato</Link>. Esta política pode ser atualizada quando os serviços mudarem.</p></section>
         </div>
       </main>
     </PublicLayout>

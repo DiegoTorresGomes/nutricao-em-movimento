@@ -1,0 +1,118 @@
+{
+  "capturedAt": "2026-11-08T14:55:18.706Z",
+  "base": "http://127.0.0.1:3107",
+  "mode": "GET only, no JavaScript execution or form submission",
+  "results": [
+    {
+      "path": "/ads.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": false,
+      "consentDefaults": false,
+      "cookiePreferencesButton": false,
+      "body": "google.com, pub-3638053236344020, DIRECT, f08c47fec0942fa0\n"
+    },
+    {
+      "path": "/pt/politica-de-privacidade",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/pt/politica-de-cookies",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/pt/termos-de-uso",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/pt/disclaimer",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/pt/politica-editorial",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/pt/contato",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": false
+    },
+    {
+      "path": "/login/2fa",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": false
+    },
+    {
+      "path": "/administracao",
+      "status": 307,
+      "contentType": "text/html; charset=utf-8",
+      "location": "/login",
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": false
+    },
+    {
+      "path": "/not-a-real-page-consent-audit",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "location": null,
+      "optionalRemoteScripts": [],
+      "adsenseMetadata": true,
+      "consentDefaults": true,
+      "cookiePreferencesButton": true
+    }
+  ]
+}

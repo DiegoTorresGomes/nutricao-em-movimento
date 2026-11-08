@@ -1,57 +1,39 @@
-# Analytics, Consent Mode & Cookie Banner
+# Analytics e preferências de cookies
 
-This project ships **privacy-first**: with no environment variables set, **zero
-third-party scripts load** and **no analytics/ads cookies are created**. Only a
-first-party consent preference is stored in `localStorage` (functional, not
-tracking). Everything below is prepared and gated — activate only when ready.
+Atualizado em 08/11/2026. Esta documentação descreve o código local; não houve deploy.
 
-## Architecture
+## Modelo atual
 
-| Piece | File | Behavior |
-|-------|------|----------|
-| Consent state + Consent Mode bridge | `src/lib/consent.ts` | Reads/writes the user's choice; `syncGoogleConsentMode()` calls `gtag('consent','update',…)` **only if** a Google tag is loaded. |
-| Cookie banner (Aceitar / Personalizar / Política) | `src/components/consent/CookieConsent.tsx` | Rendered in `PublicLayout`. Persists the choice; never reappears after a decision (until policy `CONSENT_VERSION` bumps). Fixed-position → no CLS. |
-| Consent Mode v2 defaults | `src/components/analytics/ConsentModeInit.tsx` | Sets all non-essential storage to `denied` **before** any tag. Renders only if an analytics env var exists. |
-| Google Tag Manager | `src/components/analytics/GoogleTagManager.tsx` | Loads only if `NEXT_PUBLIC_GTM_ID` is set. |
-| Microsoft Clarity | `src/components/analytics/MicrosoftClarity.tsx` | Loads only if `NEXT_PUBLIC_CLARITY_ID` is set. |
-| Google Analytics (legacy direct) | `src/app/layout.tsx` | Loads only if `NEXT_PUBLIC_GA_ID` is set. Prefer loading GA4 **through GTM**. |
-| Google AdSense | `src/app/layout.tsx` | Native `<script>` in `<head>`, hardcoded `client=ca-pub-3638053236344020`, matching the official AdSense snippet byte-for-byte (no `next/script`, no `afterInteractive`) so it ships in the initial SSR HTML for Google verification/crawling. |
+- Banner próprio de consentimento, **sem certificação Google/IAB/TCF**.
+- Mesma experiência no Brasil, EEE, Reino Unido, Suíça e demais regiões; não há geolocalização.
+- Necessários sempre ativos. Estatísticas desativadas inicialmente. Aceitar opcionais autoriza apenas estatísticas; publicidade está pausada e seu controle é desabilitado.
+- Google Analytics direto, quando NEXT_PUBLIC_GA_ID está configurado, só é solicitado após consentimento positivo. O servidor não inclui loader remoto no HTML inicial. Isso bloqueia também os pings do GA antes da escolha; o script local de defaults não faz requisições.
+- Consent Mode sempre inicializado no head: analytics_storage, ad_storage, ad_user_data e ad_personalization começam denied. Após escolha, somente analytics_storage pode mudar para granted. Os três sinais publicitários permanecem denied.
+- O footer abre Preferências de cookies; é possível revisar, recusar, salvar ou fechar sem alterar uma decisão existente. A recusa tem o mesmo acesso e estilo que aceitar na primeira camada.
+- Ao retirar estatísticas já carregadas, a aplicação envia denied, marca ga-disable, tenta remover cookies opcionais próprios conhecidos e recarrega a página. Remover um elemento script não encerra código já executado; por isso há recarga. Dados já enviados e cookies de domínios externos não são apagados por esse mecanismo.
+- A decisão v2 fica em localStorage nem-consent-v2 e cookie nem-consent, até 180 dias, com data e categorias. O cookie permite fallback quando localStorage está bloqueado; ambos podem ser impedidos pelo navegador. Sem persistência a escolha vale em memória e pode ser pedida novamente depois. Não há registro centralizado de consentimento nem prova jurídica automática.
+- V1, estados malformados e escolhas vencidas não são reutilizados. Eventos na página e alterações de armazenamento entre abas atualizam o estado.
 
-## Consent flow (Consent Mode v2)
+## Publicidade e verificação
 
-1. `ConsentModeInit` sets defaults: `ad_storage`, `ad_user_data`,
-   `ad_personalization`, `analytics_storage` = **denied** (with `wait_for_update`).
-2. The banner captures the choice and `saveConsent()` calls
-   `gtag('consent','update', …)` granting only the accepted categories.
-3. Tags loaded via GTM read these signals and behave accordingly.
+O publisher público confirmado é ca-pub-3638053236344020, centralizado em src/config/monetization.ts. public/ads.txt contém a linha DIRECT correspondente; teste automatizado verifica igualdade. A metadata google-adsense-account permite preparar a verificação sem carregar anúncios.
 
-## How to activate (when ready)
+**O loader AdSense foi retirado. Não há botão ou variável que ative publicidade nesta entrega.** Não foram adicionadas unidades ou formatos. A confirmação de CMP/região depende da conta Google; uma integração futura deve ser revisada antes de reintroduzir o loader. O banner próprio e Consent Mode não substituem essa integração. Consulte [checklist Google](monetizacao/consentimento-adsense/checklist-google.md).
 
-Add the relevant variables to `.env` (and the Hostinger environment), then redeploy:
+## Scripts preparados que não são montados
 
-```dotenv
-# Recommended: load GA4 + AdSense + Clarity through GTM
-NEXT_PUBLIC_GTM_ID="GTM-XXXXXXX"
+GTM e Clarity não são carregados. Os componentes legados permanecem no repositório, mas não são montados pelo layout. NEXT_PUBLIC_GTM_ID e NEXT_PUBLIC_CLARITY_ID sozinhas não os ativam. Auditar tags remotas, finalidades e categorias antes de qualquer integração futura; não duplicar GA/AdSense pelo GTM.
 
-# Or GA4 directly (without GTM)
-NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
+## Páginas operacionais
 
-# Google AdSense: no env var — the official snippet is hardcoded in
-# src/app/layout.tsx (client=ca-pub-3638053236344020). Change it there.
+Analytics é montado somente no PublicLayout. Login/admin/API/erro não recebem loader publicitário ou GA em documento novo. Navegação client-side para fora de /pt faz documento novo quando GA já executou, evitando que o código público sobreviva ao acesso ao login/admin. O guard no layout global não carrega recursos externos. O banner não é montado na área privada.
 
-# Microsoft Clarity
-NEXT_PUBLIC_CLARITY_ID="xxxxxxxxxx"
-```
+## Newsletter
 
-Recommended production setup: configure **GTM** and add GA4, AdSense and Clarity
-as tags **inside GTM**, each triggered by the matching Consent Mode signal
-(`analytics_storage` for GA4/Clarity, `ad_storage`/`ad_personalization` for
-AdSense). This keeps a single consent source of truth.
+O formulário e fluxo de confirmação estão preparados, mas src/lib/newsletter/send-confirmation.ts não envia e-mail. Não foram implementados provedor, descadastro ou rotina automática de retenção nesta etapa. Políticas foram ajustadas para informar essa limitação; outros CTAs da newsletter ainda precisam de revisão própria. Não testar envio/submissão em produção para validar cookies.
 
-## Newsletter e-mail (Double Opt-in)
+## Verificações
 
-The confirmation e-mail is sent through `src/lib/newsletter/send-confirmation.ts`.
-Until an e-mail provider is configured it **does not send** — it logs the
-confirmation URL server-side (dev) and returns. To activate, set the provider
-env vars and implement the send inside that file (integration point is marked
-with a `TODO`). See that file's comments for the expected variables.
+Execute node --import tsx --test scripts/consent.test.ts, npm run lint, npx tsc --noEmit e npm run build. Testes de estado usam mocks e o componente real; não provam layout mobile, cookies reais do Google ou anúncios efetivamente servidos.
+
+Fontes: [Consent Mode](https://developers.google.com/tag-platform/security/guides/consent), [conexão AdSense por metadata/ads.txt](https://support.google.com/adsense/answer/7584263?hl=en), [CMP regional](https://support.google.com/adsense/answer/13554116?hl=en).

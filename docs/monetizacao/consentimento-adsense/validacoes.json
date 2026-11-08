@@ -1,0 +1,43 @@
+{
+  "node": "v24.14.1",
+  "results": [
+    {
+      "name": "estados",
+      "command": "node --import tsx --test scripts/consent.test.ts",
+      "startedAt": "2026-11-08T14:53:06.710Z",
+      "exitCode": 0
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "startedAt": "2026-11-08T14:53:07.651Z",
+      "exitCode": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npx --no-install tsc --noEmit",
+      "startedAt": "2026-11-08T14:53:11.595Z",
+      "exitCode": 0
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "startedAt": "2026-11-08T14:53:14.091Z",
+      "exitCode": 1
+    },
+    {
+      "name": "build-reconstrucao",
+      "command": "npm run build",
+      "exitCode": 0,
+      "observedCompletedAt": "2026-11-08T14:55:15.134Z",
+      "note": "Cache .next preserved under ignored node_modules/.cache/consent-next-20261108-115418 after OneDrive EINVAL readlink. Rebuilt successfully: 37 pages; types/lint passed with two existing warnings.",
+      "firstLoadJs": {
+        "shared": "103 kB",
+        "home": "113 kB",
+        "articles": "121 kB",
+        "article": "111 kB"
+      },
+      "metricsScope": "Local production build bundle estimates, not Core Web Vitals."
+    }
+  ]
+}

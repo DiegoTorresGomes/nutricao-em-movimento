@@ -1,3 +1,4 @@
+import { ConsentedAnalytics } from "@/components/analytics/ConsentedAnalytics";
 ﻿import { CookieConsent } from "@/components/consent/CookieConsent";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -13,6 +14,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
       {children}
       <Footer />
       <CookieConsent />
+      <ConsentedAnalytics />
     </div>
   );
 }

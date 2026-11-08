@@ -1,0 +1,29 @@
+
+> nutricao-em-movimento@0.1.0 build
+> prisma generate && next build
+
+
+✔ Generated Prisma Client (v7.10.1) to .\node_modules\@prisma\client in 80ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+
+   ▲ Next.js 15.5.29
+   - Environments: .env
+
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+
+> Build error occurred
+[Error: EINVAL: invalid argument, readlink 'C:\Users\Diego Torres\OneDrive\PESSOAL\PROJETOS\BlogNutricao\nutricao-em-movimento\.next\diagnostics\framework.json'] {
+  errno: -4071,
+  code: 'EINVAL',
+  syscall: 'readlink',
+  path: 'C:\\Users\\Diego Torres\\OneDrive\\PESSOAL\\PROJETOS\\BlogNutricao\\nutricao-em-movimento\\.next\\diagnostics\\framework.json'
+}
+npm notice
+npm notice New minor version of npm available! 11.11.0 -> 11.21.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.21.2
+npm notice To update run: npm install -g npm@11.21.2
+npm notice

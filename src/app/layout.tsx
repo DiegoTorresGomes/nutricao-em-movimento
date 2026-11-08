@@ -1,9 +1,8 @@
 ﻿import type { Metadata, Viewport } from "next";
 import { Lato, Playfair_Display } from "next/font/google";
-import Script from "next/script";
 import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
-import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
-import { MicrosoftClarity } from "@/components/analytics/MicrosoftClarity";
+import { ConsentNavigationGuard } from "@/components/analytics/ConsentNavigationGuard";
+import { ADSENSE_CLIENT } from "@/config/monetization";
 import { siteConfig } from "@/config/site";
 import { nutritionistConfig } from "@/config/nutritionist";
 import "./globals.css";
@@ -32,6 +31,7 @@ export const metadata: Metadata = {
     "Conteúdos sobre comportamento alimentar, emagrecimento sustentável e Bem-Estar Nutricional para quem busca saúde, constância e equilíbrio sem radicalismos.",
 
   applicationName: "Nutrição & Movimento",
+  other: { "google-adsense-account": ADSENSE_CLIENT },
 
   authors: [
     {
@@ -99,43 +99,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Consent Mode v2 defaults must run before any tag (see docs). */}
         <ConsentModeInit />
-
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-          `}
-            </Script>
-          </>
-        )}
-
-        {/*
-          Google AdSense: carregado exatamente como o snippet oficial do Google,
-          via <script> nativo diretamente no <head> — sem next/script e sem
-          strategy="afterInteractive" — para que o HTML entregue ao navegador
-          seja idêntico ao fornecido pelo AdSense (necessário para verificação
-          e crawling do site pelos robôs do Google).
-        */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
-          crossOrigin="anonymous"
-        ></script>
       </head>
 
       <body className={`${playfair.variable} ${lato.variable}`}>
-        {/* Prepared, inactive until their env vars are set (see docs). */}
-        <GoogleTagManager />
-        <MicrosoftClarity />
+        <ConsentNavigationGuard />
         {children}
       </body>
     </html>

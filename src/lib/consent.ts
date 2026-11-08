@@ -1,102 +1,84 @@
-/**
- * First-party cookie/consent state model (LGPD + Google Consent Mode v2).
- *
- * The user's choice is stored in localStorage as a functional/necessary
- * preference — it is NOT a tracking cookie and is set regardless of consent so
- * we can remember not to show the banner again. No analytics/ads cookies are
- * ever set until the corresponding category is granted here.
- */
-
-export const CONSENT_STORAGE_KEY = "nem-consent-v1";
-/** First-party cookie mirror so the SERVER can read the choice (future SSR gating). */
+/** First-party preferences, not a certified CMP or legal proof of consent. */
+export const CONSENT_STORAGE_KEY = "nem-consent-v2";
 export const CONSENT_COOKIE_NAME = "nem-consent";
-export const CONSENT_VERSION = 1;
-/** 6 months, in seconds. */
-const CONSENT_COOKIE_MAX_AGE = 60 * 60 * 24 * 180;
-
+export const CONSENT_VERSION = 2;
+export const CONSENT_MAX_AGE = 60 * 60 * 24 * 180;
+export const CONSENT_CHANGED = "nem:consent-changed";
+export const OPEN_CONSENT = "nem:open-consent";
 export type ConsentState = {
-  /** Strictly necessary — always true, cannot be disabled. */
   necessary: true;
-  /** Analytics (Google Analytics, Microsoft Clarity). */
   analytics: boolean;
-  /** Advertising (Google AdSense personalization). */
   ads: boolean;
-  /** ISO timestamp of the decision (LGPD proof of consent). */
   updatedAt: string;
   version: number;
 };
-
-/** Default state before any decision: only necessary is on. */
-export function getDefaultConsent(): ConsentState {
-  return {
-    necessary: true,
-    analytics: false,
-    ads: false,
-    updatedAt: new Date().toISOString(),
-    version: CONSENT_VERSION,
-  };
+let inMemory: ConsentState | null = null;
+export function buildConsent(analytics: boolean): ConsentState {
+  return { necessary: true, analytics, ads: false, updatedAt: new Date().toISOString(), version: CONSENT_VERSION };
 }
-
-export function readConsent(): ConsentState | null {
-  if (typeof window === "undefined") return null;
-
+export function getDefaultConsent(): ConsentState { return buildConsent(false); }
+function parseConsent(raw: string | null): ConsentState | null {
+  if (!raw) return null;
   try {
-    const raw = window.localStorage.getItem(CONSENT_STORAGE_KEY);
-    if (!raw) return null;
-
-    const parsed = JSON.parse(raw) as ConsentState;
-    // Invalidate stored consent if the policy version changed.
-    if (parsed.version !== CONSENT_VERSION) return null;
-
-    return parsed;
-  } catch {
-    return null;
-  }
+    const value = JSON.parse(raw) as Partial<ConsentState>;
+    const age = Date.now() - Date.parse(value.updatedAt ?? "");
+    if (value.version !== CONSENT_VERSION || value.necessary !== true ||
+      typeof value.analytics !== "boolean" || typeof value.ads !== "boolean" ||
+      !Number.isFinite(age) || age < 0 || age >= CONSENT_MAX_AGE * 1000) return null;
+    return { ...value, ads: false } as ConsentState;
+  } catch { return null; }
 }
-
+/** fresh=true re-reads storage after a cross-tab change, including deletion. */
+export function readConsent(fresh = false): ConsentState | null {
+  if (typeof window === "undefined") return null;
+  if (fresh) inMemory = null;
+  const memory = parseConsent(JSON.stringify(inMemory));
+  if (memory) return memory;
+  try {
+    const stored = parseConsent(window.localStorage.getItem(CONSENT_STORAGE_KEY));
+    if (stored) return stored;
+  } catch { /* Cookie fallback supports blocked localStorage. */ }
+  try {
+    const cookie = document.cookie.split("; ").find((part) => part.startsWith(CONSENT_COOKIE_NAME + "="));
+    return parseConsent(cookie ? decodeURIComponent(cookie.slice(CONSENT_COOKIE_NAME.length + 1)) : null);
+  } catch { return null; }
+}
 export function saveConsent(consent: ConsentState): void {
   if (typeof window === "undefined") return;
-
+  const next = parseConsent(JSON.stringify(consent));
+  if (!next) return;
+  inMemory = next;
   try {
-    window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consent));
-  } catch {
-    // Storage may be unavailable (private mode); the banner will reappear.
-  }
-
-  writeConsentCookie(consent);
-  syncGoogleConsentMode(consent);
+    window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(next));
+    window.localStorage.removeItem("nem-consent-v1");
+  } catch { /* Choice still applies in this document if persistence is blocked. */ }
+  try {
+    const secure = window.location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = CONSENT_COOKIE_NAME + "=" + encodeURIComponent(JSON.stringify(next)) + "; Max-Age=" + CONSENT_MAX_AGE + "; Path=/; SameSite=Lax" + secure;
+  } catch { /* Browser settings can prevent persistence. */ }
+  syncGoogleConsentMode(next);
+  window.dispatchEvent(new CustomEvent(CONSENT_CHANGED, { detail: next }));
 }
-
-/**
- * Mirrors the choice into a first-party, non-HttpOnly cookie so a future
- * Server Component / middleware can read consent at render time (e.g. decide
- * server-side whether to inject a tag) without changing today's client flow.
- * Compact value keeps request headers small (CWV-friendly): "v1:a1:ads0".
- */
-function writeConsentCookie(consent: ConsentState): void {
-  if (typeof document === "undefined") return;
-
-  const value = `v${consent.version}:a${consent.analytics ? 1 : 0}:ads${consent.ads ? 1 : 0}`;
-  const secure = window.location.protocol === "https:" ? "; Secure" : "";
-
-  document.cookie = `${CONSENT_COOKIE_NAME}=${value}; Max-Age=${CONSENT_COOKIE_MAX_AGE}; Path=/; SameSite=Lax${secure}`;
-}
-
-/**
- * Google Consent Mode v2 bridge. If (and only if) a Google tag has been loaded
- * (window.gtag defined — see the gated analytics components), this propagates
- * the user's choice. With no Google tag active it is a safe no-op.
- */
+export function openConsentPreferences(): void { window.dispatchEvent(new Event(OPEN_CONSENT)); }
 export function syncGoogleConsentMode(consent: ConsentState): void {
   if (typeof window === "undefined") return;
-
   const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
   if (typeof gtag !== "function") return;
-
   gtag("consent", "update", {
     analytics_storage: consent.analytics ? "granted" : "denied",
-    ad_storage: consent.ads ? "granted" : "denied",
-    ad_user_data: consent.ads ? "granted" : "denied",
-    ad_personalization: consent.ads ? "granted" : "denied",
+    ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
   });
+}
+/** Known optional first-party cookies only; external cookies need browser controls. */
+export function clearOptionalCookies(): void {
+  const names = document.cookie.split(";").map((entry) => entry.trim().split("=")[0]);
+  const parts = window.location.hostname.split(".");
+  const domains = ["", ...parts.slice(0, -1).map((_, i) => "; Domain=." + parts.slice(i).join("."))];
+  const paths = new Set(["/", ...window.location.pathname.split("/").slice(1).map((_, i, values) => "/" + values.slice(0, i + 1).join("/"))]);
+  for (const name of names) {
+    if (!/^(_ga($|_)|_gid$|_gat($|_)|__gads$|__gpi$|__eoi$)/.test(name)) continue;
+    for (const domain of domains) for (const path of paths) {
+      document.cookie = name + "=; Max-Age=0; Path=" + path + domain;
+    }
+  }
 }

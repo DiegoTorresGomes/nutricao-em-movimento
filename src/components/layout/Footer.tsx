@@ -1,3 +1,4 @@
+import { CookiePreferencesButton } from "@/components/consent/CookiePreferencesButton";
 ﻿import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
@@ -68,6 +69,7 @@ export function Footer() {
             <Link href="/pt/disclaimer" className="transition hover:text-[#E9DCC9]">
               Disclaimer Nutricional
             </Link>
+            <CookiePreferencesButton />
 
             <a
               href={siteConfig.instagramUrl}

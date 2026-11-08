@@ -1,0 +1,24 @@
+✔ defaults deny four signals without fetching any resource (3.0775ms)
+✔ new visitor: no optional script; no decision is persisted automatically (1.9883ms)
+✔ accept: persists statistics, keeps advertising denied, loads GA once after update (0.7513ms)
+✔ reject: persisted denial survives a fresh storage read, no GA or AdSense (0.4619ms)
+✔ change accept to reject: replaces record, denies, cleans optional cookies and reloads (0.5088ms)
+✔ reload after acceptance restores decision before configuring GA (0.4812ms)
+✔ old, malformed, expired and forged consent cannot activate services (1.0546ms)
+✔ blocked localStorage falls back to the consent cookie (0.369ms)
+✔ storage deletion invalidates the in-memory decision (0.2791ms)
+✔ reopen signal and change event are observable without granting consent (0.5527ms)
+✔ public/private boundary: no loaded service means no reload; leaving with GA requires fresh document (0.4128ms)
+✔ no GA identifier: acceptance creates no third-party request; ads always denied (0.2581ms)
+✔ panel first layer gives equal access to accept, reject and preferences; buttons call their actual handlers (10.6474ms)
+✔ preferences show current statistics and disabled advertising; saving uses the selected value (1.4411ms)
+✔ static ads.txt and verification metadata use the confirmed publisher (0.298ms)
+✔ controller: new user, rejection, reopen, category change, accept and reload (78.677ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 851.2123
