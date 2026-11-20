@@ -1,12 +1,10 @@
 "use client";
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 import { CONSENT_CHANGED, CONSENT_STORAGE_KEY, readConsent } from "@/lib/consent";
 import { applyConsentServices } from "@/lib/consent-services";
 import { CMP_CHANGED, startGoogleCmp } from "@/lib/google-cmp";
-/** Mounted only by PublicLayout. One direct GA loader, gated by consent. */
+/** Mounted only by PublicLayout. One direct GA loader, gated by consent; no manual page_view. */
 export function ConsentedAnalytics() {
-  const pathname = usePathname();
   useEffect(() => {
     const update = () => applyConsentServices(readConsent(), process.env.NEXT_PUBLIC_GA_ID);
     const storage = (event: StorageEvent) => {
@@ -26,6 +24,6 @@ export function ConsentedAnalytics() {
       window.removeEventListener("storage", storage);
       window.removeEventListener("focus", update);
     };
-  }, [pathname]);
+  }, []);
   return null;
 }

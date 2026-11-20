@@ -1,9 +1,7 @@
-import { clearOptionalCookies, getDefaultConsent, syncGoogleConsentMode, type ConsentState } from "./consent";
-import { getCmpState } from "./google-cmp";
+import { analyticsDecision, clearOptionalCookies, syncGoogleConsentMode, type ConsentState } from "./consent";
 type AnalyticsWindow = Window & {
   gtag?: (...args: unknown[]) => void;
   __nemAnalyticsLoaded?: boolean;
-  __nemAnalyticsPage?: string;
 };
 export function isPublicPath(pathname: string): boolean {
   return pathname === "/pt" || pathname.startsWith("/pt/");
@@ -12,23 +10,28 @@ export function hasLoadedAnalytics(): boolean {
   return Boolean((window as AnalyticsWindow).__nemAnalyticsLoaded || document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'));
 }
 export function applyConsentServices(consent: ConsentState | null, gaId: string | undefined): void {
-  const current = consent ?? getDefaultConsent();
-  const cmp = getCmpState();
-  const analyticsAllowed = cmp.source === "google" ? cmp.analytics : cmp.source === "local" && current.analytics;
+  const { allowed, explicitDenial } = analyticsDecision(consent);
   const browser = window as AnalyticsWindow;
   const identifier = gaId && /^G-[A-Z0-9]+$/.test(gaId) ? gaId : null;
-  syncGoogleConsentMode(current);
-  if (identifier) Reflect.set(window, "ga-disable-" + identifier, !analyticsAllowed);
-  if (!analyticsAllowed) {
-    clearOptionalCookies();
-    // Removing a script node cannot undo executed code. A fresh document ends it.
-    if (browser.__nemAnalyticsLoaded) window.location.reload();
+  syncGoogleConsentMode(consent);
+  // Documented GA opt-out flag: stops hits immediately, also while a decision is only suspended.
+  if (identifier) Reflect.set(window, "ga-disable-" + identifier, !allowed);
+  if (!allowed) {
+    // F2: only an explicit "no" removes _ga cookies. No decision, a suspended decision, navigation,
+    // focus, reload or a CMP still loading never delete the visitor identifier.
+    if (explicitDenial) {
+      clearOptionalCookies();
+      // Removing a script node cannot undo executed code. A fresh document ends it.
+      if (browser.__nemAnalyticsLoaded) window.location.reload();
+    }
     return;
   }
   if (!identifier) return;
   if (!document.getElementById("nem-google-analytics")) {
     browser.gtag?.("js", new Date());
-    browser.gtag?.("config", identifier, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false });
+    // Single page_view source: config sends the landing page; client-side navigations are sent
+    // by GA4 enhanced measurement ("page changes based on browser history events").
+    browser.gtag?.("config", identifier, { allow_google_signals: false, allow_ad_personalization_signals: false });
     const script = document.createElement("script");
     script.id = "nem-google-analytics";
     script.async = true;
@@ -36,13 +39,9 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string 
     browser.__nemAnalyticsLoaded = true;
     document.head.appendChild(script);
   }
-  if (browser.__nemAnalyticsPage !== window.location.href) {
-    browser.__nemAnalyticsPage = window.location.href;
-    browser.gtag?.("event", "page_view", { page_location: window.location.href });
-  }
 }
 export function leavePublicPage(): void {
   if (!hasLoadedAnalytics()) return;
-  syncGoogleConsentMode(getDefaultConsent());
+  syncGoogleConsentMode(null);
   window.location.reload();
 }

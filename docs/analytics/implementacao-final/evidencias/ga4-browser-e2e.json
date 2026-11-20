@@ -1,0 +1,854 @@
+{
+  "base": "http://127.0.0.1:3107",
+  "ranAt": "2026-11-20T21:34:20.659Z",
+  "hypotheses": {
+    "H1": "Google CMP calls gtag consent update itself after a choice",
+    "H2": "with the analytics purpose ON that update includes analytics_storage"
+  },
+  "results": [
+    {
+      "id": "1/22",
+      "title": "Brasileiro novo em janela limpa",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "banner": true,
+        "ga": 0,
+        "_ga": false,
+        "page_views": 0,
+        "adsense": 1
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": true,
+        "footer": "Preferências de cookies",
+        "stored": null,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 0
+      }
+    },
+    {
+      "id": "2",
+      "title": "Brasileiro aceita estatísticas (sem CMP europeia)",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "page_views": 1,
+        "first": "_fv=1 _ss=1 gcs=G101"
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies",
+        "stored": true,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": true,
+        "page_views": 1,
+        "first": {
+          "en": "page_view",
+          "dl": "/pt",
+          "cid": "2012365338.1795210033",
+          "sid": "1795210032",
+          "fv": true,
+          "ss": true,
+          "gcs": "G101",
+          "tid": "G-HDJ55H8QR6",
+          "et": 0,
+          "seg": "0"
+        }
+      }
+    },
+    {
+      "id": "17",
+      "title": "Cinco navegações internas",
+      "expected": {
+        "added": 5,
+        "sameCid": true,
+        "singleSession": true
+      },
+      "ok": true,
+      "notes": [
+        "/pt/artigos → /pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental → /pt/sobre → /pt/contato → /pt",
+        "engajamento por página (_et ms): 10648, 1678, 1532, 1534, 1785; seg: 1,1,1,1,1; eventos user_engagement: 0; foco=true"
+      ],
+      "observed": {
+        "added": 5,
+        "engagementMs": [
+          10648,
+          1678,
+          1532,
+          1534,
+          1785
+        ],
+        "engagementEvents": 0,
+        "focused": true
+      }
+    },
+    {
+      "id": "18",
+      "title": "Navegação com query string (e só hash)",
+      "expected": {
+        "query": 1,
+        "focus": 0,
+        "hashOnly": 0
+      },
+      "ok": true,
+      "notes": [
+        "query: [\"/pt/artigos?q=sono\"]; hash: 0"
+      ],
+      "observed": {
+        "query": 1,
+        "hashOnly": 0
+      }
+    },
+    {
+      "id": "5/23",
+      "title": "Brasileiro retorna: recarga, nova aba e nova sessão",
+      "expected": {
+        "sameCid": true,
+        "newSession": "_ss=1 _fv=0"
+      },
+      "ok": true,
+      "notes": [
+        "[[\"/pt\",true,false,true]]"
+      ],
+      "observed": {
+        "reloadAndTab": 3,
+        "newSession": {
+          "en": "page_view",
+          "dl": "/pt",
+          "cid": "2012365338.1795210033",
+          "sid": "1795210108",
+          "fv": false,
+          "ss": true,
+          "gcs": "G101",
+          "tid": "G-HDJ55H8QR6",
+          "et": 0,
+          "seg": "0"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "title": "Sem scripts duplicados",
+      "expected": {
+        "ga": 1,
+        "adsense": 1,
+        "nscript": 0
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "ga": 1,
+        "adsense": 1,
+        "gtagRequestsThisDocument": 6
+      }
+    },
+    {
+      "id": "19",
+      "title": "Layouts raiz /pt → /login → /pt",
+      "expected": {
+        "login": {
+          "ga": 0,
+          "adsense": 0
+        },
+        "back": 1
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "login": {
+          "ga": 0,
+          "adsense": 0,
+          "css": 1
+        },
+        "back": 1
+      }
+    },
+    {
+      "id": "21a",
+      "title": "React #418 (mismatch sintético no conteúdo): recuperação sem perda",
+      "expected": {
+        "page_views": 1,
+        "css": ">0"
+      },
+      "ok": true,
+      "notes": [
+        "erros: [\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the \"]"
+      ],
+      "observed": {
+        "page_views": 1,
+        "css": 1
+      }
+    },
+    {
+      "id": "4/15",
+      "title": "Brasileiro altera a decisão: revoga e volta a aceitar pelo rodapé",
+      "expected": {
+        "revoke": {
+          "_ga": false,
+          "hits": 0
+        },
+        "reaccept": {
+          "page_views": 1
+        }
+      },
+      "ok": true,
+      "notes": [
+        "reaceite: [[\"/pt/artigos\",true]]"
+      ],
+      "observed": {
+        "revoked": {
+          "consent": {
+            "ad_storage": "denied",
+            "analytics_storage": "denied",
+            "ad_user_data": "denied",
+            "ad_personalization": "denied"
+          },
+          "_ga": false
+        },
+        "reaccepted": {
+          "consent": {
+            "ad_storage": "denied",
+            "analytics_storage": "granted",
+            "ad_user_data": "denied",
+            "ad_personalization": "denied"
+          },
+          "page_views": 1
+        }
+      }
+    },
+    {
+      "id": "3",
+      "title": "Brasileiro recusa estatísticas",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "hits": 0,
+        "stored": false
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies",
+        "stored": false,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 0
+      }
+    },
+    {
+      "id": "6-ON",
+      "title": "Europeu com CMP ativa (análise no painel ON)",
+      "expected": {
+        "whileGoogleOpen": {
+          "banner": false,
+          "consent": {
+            "ad_storage": "denied",
+            "analytics_storage": "denied",
+            "ad_user_data": "denied",
+            "ad_personalization": "denied"
+          }
+        },
+        "afterGoogleYes": {
+          "analytics": "denied",
+          "banner": true
+        }
+      },
+      "ok": true,
+      "notes": [
+        "após Google sim/sim: {\"ad_storage\":\"granted\",\"analytics_storage\":\"denied\",\"ad_user_data\":\"granted\",\"ad_personalization\":\"granted\"}"
+      ],
+      "observed": {
+        "open": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "after": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        }
+      }
+    },
+    {
+      "id": "6-OFF",
+      "title": "Europeu com CMP ativa (análise no painel OFF)",
+      "expected": {
+        "whileGoogleOpen": {
+          "banner": false,
+          "consent": {
+            "ad_storage": "denied",
+            "analytics_storage": "denied",
+            "ad_user_data": "denied",
+            "ad_personalization": "denied"
+          }
+        },
+        "afterGoogleYes": {
+          "analytics": "denied",
+          "banner": true
+        }
+      },
+      "ok": true,
+      "notes": [
+        "após Google sim/sim: {\"ad_storage\":\"granted\",\"analytics_storage\":\"denied\",\"ad_user_data\":\"granted\",\"ad_personalization\":\"granted\"}"
+      ],
+      "observed": {
+        "open": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "after": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "title": "Europeu aceita publicidade e recusa estatísticas",
+      "expected": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "ga": 0
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": false,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 0
+      }
+    },
+    {
+      "id": "8",
+      "title": "Europeu recusa publicidade e aceita estatísticas",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "page_views": 1,
+        "gcs": "G101"
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": true,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": true,
+        "page_views": 1
+      }
+    },
+    {
+      "id": "9",
+      "title": "Europeu recusa ambas",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "hits": 0
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": false,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 0
+      }
+    },
+    {
+      "id": "12",
+      "title": "Google ainda controla análise (ON): recusa Google prevalece; concessão Google não basta",
+      "expected": {
+        "contradictory": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "coherent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        }
+      },
+      "ok": true,
+      "notes": [
+        "contraditório: site 'sim' + Google 'não' → bloqueado; coerente: GA só após o 'sim' do site"
+      ],
+      "observed": {
+        "contradictory": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "googleGrantBeforeSite": "denied",
+        "coherent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "title": "Google deixa de controlar análise (OFF): somente o site decide, sem comandos concorrentes",
+      "expected": {
+        "googleWritesAnalytics": false,
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        }
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "analyticsUpdates": [
+          "analytics_storage"
+        ]
+      }
+    },
+    {
+      "id": "11-ON",
+      "title": "CMP tardia (ON) após aceite local: suspende sem recarga, retoma após decisão Google",
+      "expected": {
+        "suspendedHits": 0,
+        "reloads": 0,
+        "resumed": true
+      },
+      "ok": true,
+      "notes": [
+        "suspenso: analytics_storage=denied, hits durante=0, _ga=true"
+      ],
+      "observed": {
+        "early": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "suspended": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "hitsWhileSuspended": 0,
+        "final": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "reloads": 0
+      }
+    },
+    {
+      "id": "11-OFF",
+      "title": "CMP tardia (OFF) após aceite local: estatísticas mantidas",
+      "expected": {
+        "reloads": 0,
+        "analytics": "granted"
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "cmpShown": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "final": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "reloads": 0
+      }
+    },
+    {
+      "id": "10",
+      "title": "CMP indisponível",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "banner": true
+      },
+      "ok": true,
+      "notes": [
+        "igual ao visitante brasileiro: o site pede estatísticas sem precisar distinguir os casos"
+      ],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "denied",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": true,
+        "footer": "Preferências de cookies",
+        "stored": null,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 0
+      }
+    },
+    {
+      "id": "14",
+      "title": "Preferências persistidas (Europa)",
+      "expected": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "banner": false,
+        "page_views": 2
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "granted",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "ga": 1,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": true,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": true,
+        "page_views": 2
+      }
+    },
+    {
+      "id": "16",
+      "title": "Revogação de publicidade (rodapé Google) não altera estatísticas",
+      "expected": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "_ga": true
+      },
+      "ok": true,
+      "notes": [
+        "mensagem reaberta: 1; banner do site: false"
+      ],
+      "observed": {
+        "consent": {
+          "ad_storage": "denied",
+          "analytics_storage": "granted",
+          "ad_user_data": "denied",
+          "ad_personalization": "denied"
+        },
+        "ga": 1,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": true,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": true,
+        "page_views": 2
+      }
+    },
+    {
+      "id": "15-ads",
+      "title": "Revogação de estatísticas não altera publicidade concedida",
+      "expected": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        }
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "consent": {
+          "ad_storage": "granted",
+          "analytics_storage": "denied",
+          "ad_user_data": "granted",
+          "ad_personalization": "granted"
+        },
+        "ga": 0,
+        "adsense": 1,
+        "adsenseNscript": 0,
+        "banner": false,
+        "footer": "Preferências de cookies | Privacidade e publicidade (Google)",
+        "stored": false,
+        "css": 1,
+        "header": "sticky",
+        "consentBeforeAds": true,
+        "_ga": false,
+        "page_views": 1
+      }
+    },
+    {
+      "id": "20",
+      "title": "Login, 2FA e administração",
+      "expected": {
+        "ga": 0,
+        "adsense": 0,
+        "hits": 0
+      },
+      "ok": true,
+      "notes": [],
+      "observed": [
+        {
+          "p": "/login",
+          "at": "/login",
+          "ga": 0,
+          "adsense": 0,
+          "css": 1,
+          "banner": false
+        },
+        {
+          "p": "/login/2fa",
+          "at": "/login/2fa",
+          "ga": 0,
+          "adsense": 0,
+          "css": 1,
+          "banner": false
+        },
+        {
+          "p": "/administracao",
+          "at": "/login",
+          "ga": 0,
+          "adsense": 0,
+          "css": 1,
+          "banner": false
+        }
+      ]
+    },
+    {
+      "id": "21b",
+      "title": "React #418 causado pelo AdSense real (hidratação atrasada): eliminado (F4)",
+      "expected": {
+        "#418": 0,
+        "css": 1,
+        "adsense": 1
+      },
+      "ok": true,
+      "notes": [
+        "[{\"path\":\"/pt/sobre\",\"errors\":[],\"implInserted\":true,\"css\":1,\"header\":\"sticky\",\"adsense\":1},{\"path\":\"/pt\",\"errors\":[],\"implInserted\":true,\"css\":1,\"header\":\"sticky\",\"adsense\":1},{\"path\":\"/pt/artigos\",\"errors\":[],\"implInserted\":true,\"css\":1,\"header\":\"sticky\",\"adsense\":1}]"
+      ],
+      "observed": [
+        {
+          "path": "/pt/sobre",
+          "errors": [],
+          "implInserted": true,
+          "css": 1,
+          "header": "sticky",
+          "adsense": 1
+        },
+        {
+          "path": "/pt",
+          "errors": [],
+          "implInserted": true,
+          "css": 1,
+          "header": "sticky",
+          "adsense": 1
+        },
+        {
+          "path": "/pt/artigos",
+          "errors": [],
+          "implInserted": true,
+          "css": 1,
+          "header": "sticky",
+          "adsense": 1
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Bloqueadores: AdSense bloqueado; AdSense + GA bloqueados",
+      "expected": {
+        "adBlocker": {
+          "banner": true,
+          "page_views": 1
+        },
+        "fullBlocker": {
+          "banner": true,
+          "errors": 0
+        }
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "adBlocker": {
+          "banner": true,
+          "page_views": 1
+        },
+        "fullBlocker": {
+          "banner": true,
+          "stored": true,
+          "errors": 0
+        }
+      }
+    },
+    {
+      "id": "—",
+      "title": "Nenhum hit GA saiu sem interceptação",
+      "expected": {
+        "unaccounted": 0
+      },
+      "ok": true,
+      "notes": [],
+      "observed": {
+        "emitted": 27,
+        "intercepted": 27,
+        "cancelledBeforeNetwork": [],
+        "unaccounted": [],
+        "at": 1795210460508
+      }
+    }
+  ]
+}

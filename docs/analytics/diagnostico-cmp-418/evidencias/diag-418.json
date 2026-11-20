@@ -1,0 +1,4468 @@
+[
+  {
+    "name": "A-adsense-on-normal",
+    "blockAdsense": false,
+    "delayChunksMs": 0,
+    "ssrStylesheetLinks": 1,
+    "d": {
+      "inserts": [
+        {
+          "t": 394,
+          "parent": "html",
+          "node": "head",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 394,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 395,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 395,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 395,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 395,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 395,
+          "parent": "head",
+          "node": "script persky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 457,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/6078-7fcd1948ecac78f2.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/9193-0839d4c05e8786ec.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script om/_next/static/chunks/app/pt/sobre/page-173b817e4958c2d7.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "script to.com/_next/static/chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "head",
+          "node": "script imento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "html",
+          "node": "body.__variable_4d7901",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script#_R_ ovimento.com/_next/static/chunks/webpack-1abc95bec6ab3c96.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 461,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 462,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 573,
+          "parent": "body",
+          "node": "next-route-announcer",
+          "beforeHydration": false
+        },
+        {
+          "t": 635,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/contato/page-5295b7214e1e5f14.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 637,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/artigos/page-d463df061ee93a12.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 664,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 675,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "head",
+          "node": "script com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 733,
+          "parent": "body",
+          "node": "ins.adsbygoogle",
+          "beforeHydration": false
+        },
+        {
+          "t": 851,
+          "parent": "html",
+          "node": "iframe#google_esf bleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+          "beforeHydration": false
+        },
+        {
+          "t": 1174,
+          "parent": "body",
+          "node": "script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 1344,
+          "parent": "body",
+          "node": "iframe s://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+          "beforeHydration": false
+        },
+        {
+          "t": 1344,
+          "parent": "body",
+          "node": "iframe https://www.google.com/recaptcha/api2/aframe",
+          "beforeHydration": false
+        },
+        {
+          "t": 1344,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 2210,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "iframe",
+          "beforeHydration": false
+        }
+      ],
+      "commits": [
+        569,
+        573,
+        576,
+        577
+      ],
+      "errors": []
+    },
+    "sheets": 1,
+    "styleLinks": 1,
+    "bodyFont": "Lato, \"Lato Fallback\", Arial, sans-serif",
+    "headerPos": "sticky/block",
+    "bodyChildren": [
+      "div",
+      "div.min-h-screen",
+      "script#_R_",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "next-route-announcer",
+      "ins.adsbygoogle",
+      "iframe"
+    ],
+    "headChildren": [
+      "meta",
+      "meta",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[stylesheet]",
+      "link[preload]",
+      "script s/adsense/m202611110101/show_ads_impl.js",
+      "script atic/chunks/4bd1b696-f785427dddbba9fb.js",
+      "script t/static/chunks/1255-b84741b894bb9354.js",
+      "script atic/chunks/main-app-623728ffc6f09009.js",
+      "script t/static/chunks/2619-3c9e02e22d10480a.js",
+      "script t/static/chunks/6078-7fcd1948ecac78f2.js",
+      "script t/static/chunks/9193-0839d4c05e8786ec.js",
+      "script ks/app/pt/sobre/page-173b817e4958c2d7.js",
+      "script chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+      "meta",
+      "meta",
+      "title",
+      "meta",
+      "meta",
+      "link[author]",
+      "meta",
+      "link[manifest]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "link[canonical]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta"
+    ],
+    "consoleErr": []
+  },
+  {
+    "name": "B-adsense-on-delayedHydration",
+    "blockAdsense": false,
+    "delayChunksMs": 2500,
+    "ssrStylesheetLinks": 1,
+    "d": {
+      "inserts": [
+        {
+          "t": 206,
+          "parent": "html",
+          "node": "head",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 207,
+          "parent": "head",
+          "node": "script persky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/6078-7fcd1948ecac78f2.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/9193-0839d4c05e8786ec.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script om/_next/static/chunks/app/pt/sobre/page-173b817e4958c2d7.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script to.com/_next/static/chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 266,
+          "parent": "head",
+          "node": "script imento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 267,
+          "parent": "html",
+          "node": "body.__variable_4d7901",
+          "beforeHydration": true
+        },
+        {
+          "t": 267,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": true
+        },
+        {
+          "t": 267,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": true
+        },
+        {
+          "t": 268,
+          "parent": "body",
+          "node": "script#_R_ ovimento.com/_next/static/chunks/webpack-1abc95bec6ab3c96.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 268,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 268,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 268,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 269,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 270,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 270,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "head",
+          "node": "script com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 521,
+          "parent": "body",
+          "node": "ins.adsbygoogle",
+          "beforeHydration": true
+        },
+        {
+          "t": 638,
+          "parent": "html",
+          "node": "iframe#google_esf bleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+          "beforeHydration": true
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "ins.adsbygoogle",
+          "beforeHydration": false
+        },
+        {
+          "t": 2883,
+          "REMOVED": true,
+          "parent": "html",
+          "node": "iframe#google_esf",
+          "beforeHydration": false
+        },
+        {
+          "t": 2893,
+          "parent": "body",
+          "node": "next-route-announcer",
+          "beforeHydration": false
+        },
+        {
+          "t": 2947,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/contato/page-5295b7214e1e5f14.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 2949,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/artigos/page-d463df061ee93a12.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 3060,
+          "parent": "body",
+          "node": "script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 3223,
+          "parent": "body",
+          "node": "iframe s://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+          "beforeHydration": false
+        },
+        {
+          "t": 3223,
+          "parent": "body",
+          "node": "iframe https://www.google.com/recaptcha/api2/aframe",
+          "beforeHydration": false
+        },
+        {
+          "t": 3223,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 4017,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "iframe",
+          "beforeHydration": false
+        },
+        {
+          "t": 5475,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 5488,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        }
+      ],
+      "commits": [
+        2882,
+        2893,
+        2897
+      ],
+      "errors": [
+        {
+          "t": 2882,
+          "msg": "Uncaught Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ]
+    },
+    "sheets": 1,
+    "styleLinks": 1,
+    "bodyFont": "Lato, \"Lato Fallback\", Arial, sans-serif",
+    "headerPos": "sticky/block",
+    "bodyChildren": [
+      "script#_R_",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "div",
+      "div.min-h-screen",
+      "next-route-announcer",
+      "iframe"
+    ],
+    "headChildren": [
+      "link[stylesheet]",
+      "script s/adsense/m202611110101/show_ads_impl.js",
+      "script atic/chunks/4bd1b696-f785427dddbba9fb.js",
+      "script t/static/chunks/1255-b84741b894bb9354.js",
+      "script atic/chunks/main-app-623728ffc6f09009.js",
+      "script t/static/chunks/2619-3c9e02e22d10480a.js",
+      "script t/static/chunks/6078-7fcd1948ecac78f2.js",
+      "script t/static/chunks/9193-0839d4c05e8786ec.js",
+      "script ks/app/pt/sobre/page-173b817e4958c2d7.js",
+      "script chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+      "script",
+      "script syndication.com/pagead/js/adsbygoogle.js",
+      "script tic/chunks/polyfills-42372ed130431b0a.js",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "title",
+      "meta",
+      "meta",
+      "link[author]",
+      "meta",
+      "link[manifest]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "link[canonical]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta"
+    ],
+    "consoleErr": [
+      "PAGEERROR Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ]
+  },
+  {
+    "name": "C-adsense-blocked-delayedHydration",
+    "blockAdsense": true,
+    "delayChunksMs": 2500,
+    "ssrStylesheetLinks": 1,
+    "d": {
+      "inserts": [
+        {
+          "t": 412,
+          "parent": "html",
+          "node": "head",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 412,
+          "parent": "head",
+          "node": "script persky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 455,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 455,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 455,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 455,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/6078-7fcd1948ecac78f2.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/9193-0839d4c05e8786ec.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script om/_next/static/chunks/app/pt/sobre/page-173b817e4958c2d7.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script to.com/_next/static/chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 456,
+          "parent": "head",
+          "node": "script imento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 457,
+          "parent": "html",
+          "node": "body.__variable_4d7901",
+          "beforeHydration": true
+        },
+        {
+          "t": 457,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": true
+        },
+        {
+          "t": 457,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script#_R_ ovimento.com/_next/static/chunks/webpack-1abc95bec6ab3c96.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 458,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 459,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 460,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 460,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 460,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 3071,
+          "parent": "body",
+          "node": "next-route-announcer",
+          "beforeHydration": false
+        },
+        {
+          "t": 3098,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/artigos/page-d463df061ee93a12.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 3099,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/contato/page-5295b7214e1e5f14.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 5634,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 5635,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        }
+      ],
+      "commits": [
+        3066,
+        3071,
+        3074,
+        3076
+      ],
+      "errors": []
+    },
+    "sheets": 1,
+    "styleLinks": 1,
+    "bodyFont": "Lato, \"Lato Fallback\", Arial, sans-serif",
+    "headerPos": "sticky/block",
+    "bodyChildren": [
+      "div",
+      "div.min-h-screen",
+      "script#_R_",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "next-route-announcer"
+    ],
+    "headChildren": [
+      "meta",
+      "meta",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[stylesheet]",
+      "link[preload]",
+      "script atic/chunks/4bd1b696-f785427dddbba9fb.js",
+      "script t/static/chunks/1255-b84741b894bb9354.js",
+      "script atic/chunks/main-app-623728ffc6f09009.js",
+      "script t/static/chunks/2619-3c9e02e22d10480a.js",
+      "script t/static/chunks/6078-7fcd1948ecac78f2.js",
+      "script t/static/chunks/9193-0839d4c05e8786ec.js",
+      "script ks/app/pt/sobre/page-173b817e4958c2d7.js",
+      "script chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+      "meta",
+      "meta",
+      "title",
+      "meta",
+      "meta",
+      "link[author]",
+      "meta",
+      "link[manifest]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "link[canonical]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta"
+    ],
+    "consoleErr": [
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "name": "D-adsense-on-delayedHydration-repeat",
+    "blockAdsense": false,
+    "delayChunksMs": 2500,
+    "ssrStylesheetLinks": 1,
+    "d": {
+      "inserts": [
+        {
+          "t": 286,
+          "parent": "html",
+          "node": "head",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 286,
+          "parent": "head",
+          "node": "script persky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 326,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/6078-7fcd1948ecac78f2.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/9193-0839d4c05e8786ec.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script om/_next/static/chunks/app/pt/sobre/page-173b817e4958c2d7.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script to.com/_next/static/chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 327,
+          "parent": "head",
+          "node": "script imento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 328,
+          "parent": "html",
+          "node": "body.__variable_4d7901",
+          "beforeHydration": true
+        },
+        {
+          "t": 328,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": true
+        },
+        {
+          "t": 328,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script#_R_ ovimento.com/_next/static/chunks/webpack-1abc95bec6ab3c96.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 329,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 330,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "head",
+          "node": "script com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 570,
+          "parent": "body",
+          "node": "ins.adsbygoogle",
+          "beforeHydration": true
+        },
+        {
+          "t": 675,
+          "parent": "html",
+          "node": "iframe#google_esf bleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+          "beforeHydration": true
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2922,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "ins.adsbygoogle",
+          "beforeHydration": false
+        },
+        {
+          "t": 2923,
+          "REMOVED": true,
+          "parent": "html",
+          "node": "iframe#google_esf",
+          "beforeHydration": false
+        },
+        {
+          "t": 2930,
+          "parent": "body",
+          "node": "next-route-announcer",
+          "beforeHydration": false
+        },
+        {
+          "t": 2957,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/artigos/page-d463df061ee93a12.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 2959,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/contato/page-5295b7214e1e5f14.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 3087,
+          "parent": "body",
+          "node": "script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 3246,
+          "parent": "body",
+          "node": "iframe s://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+          "beforeHydration": false
+        },
+        {
+          "t": 3246,
+          "parent": "body",
+          "node": "iframe https://www.google.com/recaptcha/api2/aframe",
+          "beforeHydration": false
+        },
+        {
+          "t": 3246,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 4117,
+          "REMOVED": true,
+          "parent": "body",
+          "node": "iframe",
+          "beforeHydration": false
+        },
+        {
+          "t": 5490,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 5490,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        }
+      ],
+      "commits": [
+        2922,
+        2930,
+        2934
+      ],
+      "errors": [
+        {
+          "t": 2922,
+          "msg": "Uncaught Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+        }
+      ]
+    },
+    "sheets": 1,
+    "styleLinks": 1,
+    "bodyFont": "Lato, \"Lato Fallback\", Arial, sans-serif",
+    "headerPos": "sticky/block",
+    "bodyChildren": [
+      "script#_R_",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "div",
+      "div.min-h-screen",
+      "next-route-announcer",
+      "iframe"
+    ],
+    "headChildren": [
+      "link[stylesheet]",
+      "script s/adsense/m202611110101/show_ads_impl.js",
+      "script atic/chunks/4bd1b696-f785427dddbba9fb.js",
+      "script t/static/chunks/1255-b84741b894bb9354.js",
+      "script atic/chunks/main-app-623728ffc6f09009.js",
+      "script t/static/chunks/2619-3c9e02e22d10480a.js",
+      "script t/static/chunks/6078-7fcd1948ecac78f2.js",
+      "script t/static/chunks/9193-0839d4c05e8786ec.js",
+      "script ks/app/pt/sobre/page-173b817e4958c2d7.js",
+      "script chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+      "script",
+      "script syndication.com/pagead/js/adsbygoogle.js",
+      "script tic/chunks/polyfills-42372ed130431b0a.js",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "title",
+      "meta",
+      "meta",
+      "link[author]",
+      "meta",
+      "link[manifest]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "link[canonical]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta"
+    ],
+    "consoleErr": [
+      "PAGEERROR Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ]
+  },
+  {
+    "name": "E-adsense-blocked-normal",
+    "blockAdsense": true,
+    "delayChunksMs": 0,
+    "ssrStylesheetLinks": 1,
+    "d": {
+      "inserts": [
+        {
+          "t": 166,
+          "parent": "html",
+          "node": "head",
+          "beforeHydration": true
+        },
+        {
+          "t": 166,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 166,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 166,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 166,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 166,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 167,
+          "parent": "head",
+          "node": "script persky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 208,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/4bd1b696-f785427dddbba9fb.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/1255-b84741b894bb9354.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script vimento.com/_next/static/chunks/main-app-623728ffc6f09009.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/2619-3c9e02e22d10480a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/6078-7fcd1948ecac78f2.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script oemovimento.com/_next/static/chunks/9193-0839d4c05e8786ec.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script om/_next/static/chunks/app/pt/sobre/page-173b817e4958c2d7.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script to.com/_next/static/chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "title",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "meta",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "link",
+          "beforeHydration": true
+        },
+        {
+          "t": 209,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 210,
+          "parent": "head",
+          "node": "script tps://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 210,
+          "parent": "head",
+          "node": "script imento.com/_next/static/chunks/polyfills-42372ed130431b0a.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 211,
+          "parent": "html",
+          "node": "body.__variable_4d7901",
+          "beforeHydration": true
+        },
+        {
+          "t": 211,
+          "parent": "body",
+          "node": "div",
+          "beforeHydration": true
+        },
+        {
+          "t": 211,
+          "parent": "body",
+          "node": "div.min-h-screen",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script#_R_ ovimento.com/_next/static/chunks/webpack-1abc95bec6ab3c96.js",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 212,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 213,
+          "parent": "body",
+          "node": "script",
+          "beforeHydration": true
+        },
+        {
+          "t": 310,
+          "parent": "body",
+          "node": "next-route-announcer",
+          "beforeHydration": false
+        },
+        {
+          "t": 356,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/contato/page-5295b7214e1e5f14.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 362,
+          "parent": "head",
+          "node": "script /_next/static/chunks/app/pt/artigos/page-d463df061ee93a12.js",
+          "beforeHydration": false
+        },
+        {
+          "t": 373,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        },
+        {
+          "t": 388,
+          "REMOVED": true,
+          "parent": "head",
+          "node": "script",
+          "beforeHydration": false
+        }
+      ],
+      "commits": [
+        306,
+        310,
+        313,
+        315
+      ],
+      "errors": []
+    },
+    "sheets": 1,
+    "styleLinks": 1,
+    "bodyFont": "Lato, \"Lato Fallback\", Arial, sans-serif",
+    "headerPos": "sticky/block",
+    "bodyChildren": [
+      "div",
+      "div.min-h-screen",
+      "script#_R_",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "script",
+      "next-route-announcer"
+    ],
+    "headChildren": [
+      "meta",
+      "meta",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[preload]",
+      "link[stylesheet]",
+      "link[preload]",
+      "script atic/chunks/4bd1b696-f785427dddbba9fb.js",
+      "script t/static/chunks/1255-b84741b894bb9354.js",
+      "script atic/chunks/main-app-623728ffc6f09009.js",
+      "script t/static/chunks/2619-3c9e02e22d10480a.js",
+      "script t/static/chunks/6078-7fcd1948ecac78f2.js",
+      "script t/static/chunks/9193-0839d4c05e8786ec.js",
+      "script ks/app/pt/sobre/page-173b817e4958c2d7.js",
+      "script chunks/app/pt/layout-7cce14ee1c9e78ac.js",
+      "meta",
+      "meta",
+      "title",
+      "meta",
+      "meta",
+      "link[author]",
+      "meta",
+      "link[manifest]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "link[canonical]",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta",
+      "meta"
+    ],
+    "consoleErr": [
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  }
+]

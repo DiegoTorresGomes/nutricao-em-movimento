@@ -1,0 +1,69 @@
+﻿PASS 1/22 Brasileiro novo em janela limpa
+     {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":true,"footer":"Preferências de cookies","stored":null,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":0}
+PASS 2 Brasileiro aceita estatísticas (sem CMP europeia)
+     {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies","stored":true,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":true,"page_views":1,"first":{"en":"page_view","dl":"/pt","cid":"2012365338.1795210033","sid":"1795210032","fv":true,"ss":true,"gcs":"G101","tid":"G-HDJ55H8QR6","et":0,"seg":"0"}}
+PASS 17 Cinco navegações internas
+     {"added":5,"engagementMs":[10648,1678,1532,1534,1785],"engagementEvents":0,"focused":true}
+     · /pt/artigos → /pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental → /pt/sobre → /pt/contato → /pt
+     · engajamento por página (_et ms): 10648, 1678, 1532, 1534, 1785; seg: 1,1,1,1,1; eventos user_engagement: 0; foco=true
+PASS 18 Navegação com query string (e só hash)
+     {"query":1,"hashOnly":0}
+     · query: ["/pt/artigos?q=sono"]; hash: 0
+PASS 5/23 Brasileiro retorna: recarga, nova aba e nova sessão
+     {"reloadAndTab":3,"newSession":{"en":"page_view","dl":"/pt","cid":"2012365338.1795210033","sid":"1795210108","fv":false,"ss":true,"gcs":"G101","tid":"G-HDJ55H8QR6","et":0,"seg":"0"}}
+     · [["/pt",true,false,true]]
+PASS 25 Sem scripts duplicados
+     {"ga":1,"adsense":1,"gtagRequestsThisDocument":6}
+PASS 19 Layouts raiz /pt → /login → /pt
+     {"login":{"ga":0,"adsense":0,"css":1},"back":1}
+PASS 21a React #418 (mismatch sintético no conteúdo): recuperação sem perda
+     {"page_views":1,"css":1}
+     · erros: ["Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the "]
+PASS 4/15 Brasileiro altera a decisão: revoga e volta a aceitar pelo rodapé
+     {"revoked":{"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"_ga":false},"reaccepted":{"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"page_views":1}}
+     · reaceite: [["/pt/artigos",true]]
+PASS 3 Brasileiro recusa estatísticas
+     {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies","stored":false,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":0}
+PASS 6-ON Europeu com CMP ativa (análise no painel ON)
+     {"open":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"after":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"}}
+     · após Google sim/sim: {"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"}
+PASS 6-OFF Europeu com CMP ativa (análise no painel OFF)
+     {"open":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"after":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"}}
+     · após Google sim/sim: {"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"}
+PASS 7 Europeu aceita publicidade e recusa estatísticas
+     {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":0}
+PASS 8 Europeu recusa publicidade e aceita estatísticas
+     {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":true,"page_views":1}
+PASS 9 Europeu recusa ambas
+     {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":0}
+PASS 12 Google ainda controla análise (ON): recusa Google prevalece; concessão Google não basta
+     {"contradictory":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"googleGrantBeforeSite":"denied","coherent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"}}
+     · contraditório: site 'sim' + Google 'não' → bloqueado; coerente: GA só após o 'sim' do site
+PASS 13 Google deixa de controlar análise (OFF): somente o site decide, sem comandos concorrentes
+     {"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"analyticsUpdates":["analytics_storage"]}
+PASS 11-ON CMP tardia (ON) após aceite local: suspende sem recarga, retoma após decisão Google
+     {"early":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"suspended":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"hitsWhileSuspended":0,"final":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"reloads":0}
+     · suspenso: analytics_storage=denied, hits durante=0, _ga=true
+PASS 11-OFF CMP tardia (OFF) após aceite local: estatísticas mantidas
+     {"cmpShown":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"final":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"reloads":0}
+PASS 10 CMP indisponível
+     {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":true,"footer":"Preferências de cookies","stored":null,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":0}
+     · igual ao visitante brasileiro: o site pede estatísticas sem precisar distinguir os casos
+PASS 14 Preferências persistidas (Europa)
+     {"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"ga":1,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":true,"page_views":2}
+PASS 16 Revogação de publicidade (rodapé Google) não altera estatísticas
+     {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":true,"page_views":2}
+     · mensagem reaberta: 1; banner do site: false
+PASS 15-ads Revogação de estatísticas não altera publicidade concedida
+     {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"ga":0,"adsense":1,"adsenseNscript":0,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"header":"sticky","consentBeforeAds":true,"_ga":false,"page_views":1}
+PASS 20 Login, 2FA e administração
+     [{"p":"/login","at":"/login","ga":0,"adsense":0,"css":1,"banner":false},{"p":"/login/2fa","at":"/login/2fa","ga":0,"adsense":0,"css":1,"banner":false},{"p":"/administracao","at":"/login","ga":0,"adsense":0,"css":1,"banner":false}]
+PASS 21b React #418 causado pelo AdSense real (hidratação atrasada): eliminado (F4)
+     [{"path":"/pt/sobre","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1},{"path":"/pt","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1},{"path":"/pt/artigos","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1}]
+     · [{"path":"/pt/sobre","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1},{"path":"/pt","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1},{"path":"/pt/artigos","errors":[],"implInserted":true,"css":1,"header":"sticky","adsense":1}]
+PASS 24 Bloqueadores: AdSense bloqueado; AdSense + GA bloqueados
+     {"adBlocker":{"banner":true,"page_views":1},"fullBlocker":{"banner":true,"stored":true,"errors":0}}
+PASS — Nenhum hit GA saiu sem interceptação
+     {"emitted":27,"intercepted":27,"cancelledBeforeNetwork":[],"unaccounted":[],"at":1795210460508}
+
+27/27 cenários PASS → docs\analytics\implementacao-final\evidencias\ga4-browser-e2e.json

@@ -109,6 +109,14 @@ export default function DocumentLayout({
     <html lang="pt-BR">
       {/* Never set innerHTML on <head>: a client re-render would wipe React-managed stylesheets. */}
       <head>
+        {/*
+          Hydration anchor (React #418 fix). adsbygoogle.js inserts show_ads_impl.js, without an
+          async attribute, before the document's first <script> (Next's chunk scripts, which precede
+          these children). While hydrating <head>, React 19 skips foreign nodes of a different tag
+          but would claim that foreign <script> as the consent script below. A first hydratable
+          element of another tag makes React skip past it. Inert: renders nothing, loads nothing.
+        */}
+        <noscript data-nem-hydration-anchor="" />
         <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
         {adsense && <AdSenseHeadScript />}
       </head>

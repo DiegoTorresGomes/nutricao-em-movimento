@@ -1,0 +1,196 @@
+// GA4 + CMP correction (docs/analytics/correcao-ga4): CMP state machine, _ga preservation and a
+// single page_view source. No network: gtag calls and script insertions are recorded in memory.
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import React from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { CMP_TIMEOUT_MS, getCmpState, startGoogleCmp } from "../src/lib/google-cmp";
+import { buildConsent, readConsent, saveConsent, CONSENT_STORAGE_KEY } from "../src/lib/consent";
+import { applyConsentServices } from "../src/lib/consent-services";
+import { CmpUnavailableNotice } from "../src/components/consent/CookieConsent";
+
+const GA = "G-HDJ55H8QR6";
+type Tcf = (data: { eventStatus?: string; gdprApplies?: boolean }, success: boolean) => void;
+
+/** Fresh document: empty CMP state, optional Google CMP stub, persisted storage/cookies carried over. */
+function documentWith(carry?: { storage: Map<string, string>; cookies: Map<string, string> }) {
+  const storage = carry?.storage ?? new Map<string, string>();
+  const cookies = carry?.cookies ?? new Map<string, string>();
+  const scripts: { id: string; src: string }[] = [];
+  const calls: unknown[][] = [];
+  let reloads = 0;
+  const win = Object.assign(new EventTarget(), {
+    localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v), removeItem: (k: string) => storage.delete(k) },
+    location: { protocol: "https:", hostname: "www.nutricaoemovimento.com", pathname: "/pt", href: "https://www.nutricaoemovimento.com/pt", reload: () => { reloads++; } },
+    gtag: (...args: unknown[]) => calls.push(args),
+  });
+  const doc = {
+    get cookie() { return [...cookies].map(([k, v]) => k + "=" + v).join("; "); },
+    set cookie(value: string) { const pair = value.split(";")[0]; const i = pair.indexOf("="); const key = pair.slice(0, i); if (value.includes("Max-Age=0")) cookies.delete(key); else cookies.set(key, pair.slice(i + 1)); },
+    head: { appendChild: (s: { id: string; src: string }) => scripts.push(s) },
+    createElement: () => ({ id: "", src: "", async: false }),
+    querySelector: () => null,
+    getElementById: (id: string) => scripts.find((s) => s.id === id) ?? null,
+  };
+  Object.defineProperty(globalThis, "window", { value: win, configurable: true });
+  Object.defineProperty(globalThis, "document", { value: doc, configurable: true });
+  readConsent(true);
+  const queue: Record<string, () => void>[] = [];
+  let status: number | undefined;
+  let tcfListener: Tcf | undefined;
+  return {
+    storage, cookies, scripts, calls, win,
+    get reloads() { return reloads; },
+    /** Install a Funding Choices stub that answers with the given analytics status. */
+    googleCmp(initial: number, withTcf = false) {
+      status = initial;
+      Object.assign(win, {
+        googlefc: { callbackQueue: queue, getGoogleConsentModeValues: () => ({ analyticsStoragePurposeConsentStatus: status }) },
+        ...(withTcf ? { __tcfapi: (_c: string, _v: number, cb: Tcf) => { tcfListener = cb; } } : {}),
+      });
+    },
+    setStatus(value: number) { status = value; },
+    /** Funding Choices processes the queue (it was loaded). */
+    cmpReady() { for (const entry of [...queue]) { entry.CONSENT_API_READY?.(); entry.CONSENT_MODE_DATA_READY?.(); } },
+    tcf(data: { eventStatus?: string; gdprApplies?: boolean }) { tcfListener!(data, true); },
+    pageViews: () => calls.filter((c) => c[0] === "event" && c[1] === "page_view").length,
+    configs: () => calls.filter((c) => c[0] === "config"),
+  };
+}
+const mount = () => { startGoogleCmp(); applyConsentServices(readConsent(), GA); };
+
+test("A. CMP pending: no GA, no consent signal, _ga cookies untouched", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.cookies.set("_ga", "GA1.1.111.222"); d.googleCmp(0);
+  mount(); applyConsentServices(readConsent(), GA); // focus / navigation re-evaluation
+  assert.deepEqual(getCmpState(), { source: "pending", analytics: false });
+  assert.equal(d.scripts.length, 0); assert.equal(d.calls.length, 0);
+  assert.equal(d.cookies.get("_ga"), "GA1.1.111.222");
+  assert.equal(Reflect.get(d.win, "ga-disable-" + GA), true);
+});
+
+test("B. NOT_APPLICABLE: local panel manages statistics; nothing granted until the visitor accepts", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.googleCmp(3); mount(); d.cmpReady();
+  assert.deepEqual(getCmpState(), { source: "local", analytics: false });
+  applyConsentServices(readConsent(), GA);
+  assert.equal(d.scripts.length, 0);
+});
+
+test("C. Google CMP active: Google decision owns analytics and a later grant loads GA once", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); saveConsent(buildConsent(true)); // stale local approval must not count
+  d.googleCmp(2, true); mount(); d.cmpReady();
+  applyConsentServices(readConsent(), GA);
+  assert.deepEqual(getCmpState(), { source: "google", analytics: false }); assert.equal(d.scripts.length, 0);
+  d.setStatus(1); d.tcf({ eventStatus: "useractioncomplete", gdprApplies: true }); t.mock.timers.tick(1); d.cmpReady();
+  assert.deepEqual(getCmpState(), { source: "google", analytics: true });
+  applyConsentServices(readConsent(), GA); applyConsentServices(readConsent(), GA);
+  assert.equal(d.scripts.length, 1); assert.equal(d.configs().length, 1);
+  assert.equal(d.calls.some((c) => c[0] === "consent"), false, "site never writes consent while Google is the authority");
+});
+
+test("NOT_CONFIGURED follows TCF gdprApplies: false -> local, true -> unavailable", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  for (const [gdprApplies, source] of [[false, "local"], [true, "unavailable"]] as const) {
+    const d = documentWith(); d.googleCmp(4, true); mount(); d.cmpReady();
+    assert.equal(getCmpState().source, "pending");
+    d.tcf({ eventStatus: "tcloaded", gdprApplies }); t.mock.timers.tick(1); d.cmpReady();
+    assert.equal(getCmpState().source, source);
+  }
+});
+
+test("D. CMP unavailable: timeout reports unavailable, grants nothing, keeps _ga and stored choice", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); saveConsent(buildConsent(true)); d.cookies.set("_ga", "GA1.1.111.222");
+  const saved = d.storage.get(CONSENT_STORAGE_KEY);
+  mount(); // no Funding Choices on the page
+  t.mock.timers.tick(CMP_TIMEOUT_MS - 1); assert.equal(getCmpState().source, "pending");
+  t.mock.timers.tick(1); assert.deepEqual(getCmpState(), { source: "unavailable", analytics: false });
+  applyConsentServices(readConsent(), GA);
+  assert.equal(d.scripts.length, 0); assert.equal(d.cookies.get("_ga"), "GA1.1.111.222");
+  assert.equal(d.storage.get(CONSENT_STORAGE_KEY), saved);
+});
+
+test("E. Late CMP: unavailable -> local is allowed; authority is then locked for the document", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); saveConsent(buildConsent(true)); d.cookies.set("_ga", "GA1.1.111.222");
+  d.googleCmp(3); mount(); t.mock.timers.tick(CMP_TIMEOUT_MS);
+  assert.equal(getCmpState().source, "unavailable");
+  d.cmpReady(); // arrives late
+  assert.deepEqual(getCmpState(), { source: "local", analytics: false });
+  applyConsentServices(readConsent(), GA);
+  assert.equal(d.scripts.length, 1); assert.equal(d.cookies.get("_ga"), "GA1.1.111.222");
+  d.setStatus(2); d.cmpReady(); // a second authority cannot take over mid-document
+  assert.equal(getCmpState().source, "local"); assert.equal(readConsent()?.analytics, true);
+});
+
+test("Google authority cannot fall back to local, pending or unavailable", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.googleCmp(1); mount(); d.cmpReady();
+  for (const value of [3, 0, 4, 99]) { d.setStatus(value); d.cmpReady(); t.mock.timers.tick(CMP_TIMEOUT_MS); }
+  assert.deepEqual(getCmpState(), { source: "google", analytics: true });
+});
+
+test("F. New visitor (local): no decision persisted, no GA, no cookie deletion", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.cookies.set("other", "keep"); d.googleCmp(3); mount(); d.cmpReady();
+  applyConsentServices(readConsent(), GA);
+  assert.equal(readConsent(), null); assert.equal(d.storage.size, 0); assert.equal(d.scripts.length, 0);
+  assert.equal(d.cookies.get("other"), "keep");
+});
+
+test("G. Accept: GA loads once; config sends the landing page_view; no manual page_view", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.googleCmp(3); mount(); d.cmpReady();
+  saveConsent(buildConsent(true)); applyConsentServices(readConsent(), GA);
+  for (const href of ["/pt/artigos", "/pt/sobre", "/pt/sobre?x=1"]) { d.win.location.href = "https://www.nutricaoemovimento.com" + href; applyConsentServices(readConsent(), GA); }
+  assert.equal(d.scripts.length, 1); assert.match(d.scripts[0].src, /gtag\/js\?id=G-HDJ55H8QR6$/);
+  const configs = d.configs(); assert.equal(configs.length, 1);
+  assert.equal((configs[0][2] as Record<string, unknown>).send_page_view, undefined, "landing page_view comes from config");
+  assert.equal(d.pageViews(), 0, "SPA page_views come only from enhanced measurement");
+  const update = d.calls.findIndex((c) => c[0] === "consent" && c[1] === "update");
+  assert.ok(update >= 0 && update < d.calls.findIndex((c) => c[0] === "config"));
+});
+
+test("H. Refuse: explicit denial clears only GA cookies and loads nothing", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.cookies.set("_ga", "old"); d.cookies.set("__gads", "keep");
+  d.googleCmp(3); mount(); d.cmpReady();
+  saveConsent(buildConsent(false)); applyConsentServices(readConsent(), GA);
+  assert.equal(d.cookies.has("_ga"), false); assert.equal(d.cookies.get("__gads"), "keep");
+  assert.equal(d.scripts.length, 0); assert.equal(d.reloads, 0);
+});
+
+test("I. Revoke after GA ran: reload once, GA cookies removed, GA disabled", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const d = documentWith(); d.googleCmp(3); mount(); d.cmpReady();
+  saveConsent(buildConsent(true)); applyConsentServices(readConsent(), GA); d.cookies.set("_ga", "GA1.1.111.222");
+  saveConsent(buildConsent(false)); applyConsentServices(readConsent(), GA);
+  assert.equal(d.reloads, 1); assert.equal(d.cookies.has("_ga"), false); assert.equal(Reflect.get(d.win, "ga-disable-" + GA), true);
+});
+
+test("J. Reload with persisted consent: _ga survives the pending phase and GA reuses it", (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const first = documentWith(); first.googleCmp(3); mount(); first.cmpReady();
+  saveConsent(buildConsent(true)); applyConsentServices(readConsent(), GA); first.cookies.set("_ga", "GA1.1.111.222");
+  for (let reload = 0; reload < 3; reload++) {
+    const next = documentWith({ storage: first.storage, cookies: first.cookies }); next.googleCmp(3);
+    mount(); // pending at mount: must not touch cookies
+    assert.equal(next.cookies.get("_ga"), "GA1.1.111.222");
+    next.cmpReady(); applyConsentServices(readConsent(), GA);
+    assert.equal(next.scripts.length, 1); assert.equal(next.cookies.get("_ga"), "GA1.1.111.222");
+  }
+});
+
+test("unavailable notice informs without consent controls and its buttons call their handlers", () => {
+  let retried = 0, closed = 0;
+  const tree = CmpUnavailableNotice({ onRetry: () => retried++, onClose: () => closed++ });
+  const html = renderToStaticMarkup(tree);
+  assert.match(html, /role="dialog"/); assert.match(html, /aria-labelledby="cookie-consent-title"/);
+  assert.match(html, /estatísticas opcionais continuam desativadas/); assert.doesNotMatch(html, /Aceitar/);
+  const buttons: React.ReactElement<{ onClick: () => void }>[] = [];
+  const walk = (node: React.ReactNode): void => { if (!React.isValidElement<{ children?: React.ReactNode }>(node)) return; if (node.type === "button") buttons.push(node as (typeof buttons)[number]); React.Children.forEach(node.props.children, walk); };
+  walk(tree); buttons.forEach((b) => b.props.onClick());
+  assert.equal(retried, 1); assert.equal(closed, 1);
+});

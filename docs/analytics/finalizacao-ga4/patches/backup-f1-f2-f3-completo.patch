@@ -1,0 +1,298 @@
+diff --git a/scripts/consent.test.ts b/scripts/consent.test.ts
+index a18bdf7..b357909 100644
+--- a/scripts/consent.test.ts
++++ b/scripts/consent.test.ts
+@@ -121,12 +121,14 @@ test("controller: new user, rejection, reopen, category change, accept and reloa
+  b.win.__nemCmp.analytics=false; applyConsentServices(buildConsent(true),"G-TEST123");
+  assert.equal(b.reloads,1); assert.equal(b.calls.some(c=>c[0]==="consent"),false);
+  });
+- test("Google callback queue uses official enum values, including unavailable configuration", () => {
+- const b=browser(); let status=0; const queue:Record<string,()=>void>[]=[];
+- Object.assign(b.win,{googlefc:{callbackQueue:queue,getGoogleConsentModeValues:()=>({analyticsStoragePurposeConsentStatus:status})}});
+- cmpModule.startGoogleCmp(); cmpModule.startGoogleCmp(); assert.equal(queue.length,2);
++ test("Google callback queue uses official enum values, including unavailable configuration", (t) => {
++ t.mock.timers.enable({ apis: ["setTimeout"] });
++ // NOT_CONFIGURED without a TCF gdprApplies answer keeps waiting (pending), never local.
+  for(const [value,source,analytics] of [[0,"pending",false],[1,"google",true],[2,"google",false],[3,"local",false],[4,"pending",false]] as const){
+- status=value;queue[0].CONSENT_MODE_DATA_READY(); assert.deepEqual(cmpModule.getCmpState(),{source,analytics});
++ const b=browser(); Reflect.deleteProperty(b.win,"__nemCmp"); const queue:Record<string,()=>void>[]=[];
++ Object.assign(b.win,{googlefc:{callbackQueue:queue,getGoogleConsentModeValues:()=>({analyticsStoragePurposeConsentStatus:value})}});
++ cmpModule.startGoogleCmp(); cmpModule.startGoogleCmp(); assert.equal(queue.length,2);
++ queue[0].CONSENT_MODE_DATA_READY(); assert.deepEqual(cmpModule.getCmpState(),{source,analytics});
+  }
+  });
+  test("withdrawing local analytics never deletes AdSense cookies",()=>{
+@@ -141,8 +143,10 @@ test("public boundary reloads for AdSense even when analytics never loaded", ()
+   assert.equal(b.reloads, 1);
+ });
+ 
+-test("TCF changes refresh official Google values and reopening uses the supported queue", async () => {
++test("TCF changes refresh official Google values and reopening uses the supported queue", async (t) => {
++  t.mock.timers.enable({ apis: ["setTimeout"] });
+   const b = browser();
++  Reflect.deleteProperty(b.win, "__nemCmp"); // a fresh document has no CMP state yet
+   let status = 1, reopened = 0;
+   let listener: ((data: { eventStatus: string }, success: boolean) => void) | undefined;
+   const queue: Record<string, () => void>[] = [];
+@@ -155,7 +159,7 @@ test("TCF changes refresh official Google values and reopening uses the supporte
+   queue[1].CONSENT_API_READY();
+   status = 2;
+   listener!({ eventStatus: "useractioncomplete" }, true);
+-  await new Promise(resolve => setTimeout(resolve, 5));
++  t.mock.timers.tick(1);
+   queue[2].CONSENT_MODE_DATA_READY();
+   assert.deepEqual(cmpModule.getCmpState(), { source: "google", analytics: false });
+   cmpModule.reopenGoogleCmp();
+diff --git a/src/components/analytics/ConsentedAnalytics.tsx b/src/components/analytics/ConsentedAnalytics.tsx
+index 0860d67..cd0bec0 100644
+--- a/src/components/analytics/ConsentedAnalytics.tsx
++++ b/src/components/analytics/ConsentedAnalytics.tsx
+@@ -1,12 +1,10 @@
+ "use client";
+ import { useEffect } from "react";
+-import { usePathname } from "next/navigation";
+ import { CONSENT_CHANGED, CONSENT_STORAGE_KEY, readConsent } from "@/lib/consent";
+ import { applyConsentServices } from "@/lib/consent-services";
+ import { CMP_CHANGED, startGoogleCmp } from "@/lib/google-cmp";
+-/** Mounted only by PublicLayout. One direct GA loader, gated by consent. */
++/** Mounted only by PublicLayout. One direct GA loader, gated by consent; no manual page_view. */
+ export function ConsentedAnalytics() {
+-  const pathname = usePathname();
+   useEffect(() => {
+     const update = () => applyConsentServices(readConsent(), process.env.NEXT_PUBLIC_GA_ID);
+     const storage = (event: StorageEvent) => {
+@@ -26,6 +24,6 @@ export function ConsentedAnalytics() {
+       window.removeEventListener("storage", storage);
+       window.removeEventListener("focus", update);
+     };
+-  }, [pathname]);
++  }, []);
+   return null;
+ }
+diff --git a/src/components/consent/CookieConsent.tsx b/src/components/consent/CookieConsent.tsx
+index 0eceb19..f849374 100644
+--- a/src/components/consent/CookieConsent.tsx
++++ b/src/components/consent/CookieConsent.tsx
+@@ -36,8 +36,23 @@ export function CookieConsentPanel({ preferences, analytics, onAnalytics, onPref
+   </div>;
+ }
+ 
++/** Shown from the footer when Google gave no reliable answer: informs, grants nothing. */
++export function CmpUnavailableNotice({ onRetry, onClose }: { onRetry: () => void; onClose: () => void }) {
++  return <div role="dialog" aria-modal="false" aria-labelledby="cookie-consent-title" className="fixed inset-x-0 bottom-0 z-[60] max-h-[90dvh] overflow-y-auto px-3 pb-3 sm:px-4 sm:pb-4">
++    <div className="mx-auto max-w-3xl rounded-3xl border border-black/10 bg-white p-5 shadow-xl sm:p-6">
++      <h2 id="cookie-consent-title" tabIndex={-1} className="text-sm font-bold uppercase tracking-[0.22em] text-[#556B2F]">Controles de privacidade indisponíveis</h2>
++      <p className="mt-2 text-sm leading-6 text-neutral-700">Não foi possível confirmar com o Google qual controle de consentimento se aplica a você. Por isso, as estatísticas opcionais continuam desativadas e nenhuma escolha foi registrada. Bloqueadores de conteúdo podem causar isso. Você pode tentar novamente. <Link href="/pt/politica-de-cookies" className="font-semibold text-[#556B2F] underline">Política de Cookies</Link>.</p>
++      <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-end">
++        <button type="button" className={buttonStyle} onClick={onRetry}>Tentar novamente</button>
++        <button type="button" className={buttonStyle} onClick={onClose}>Fechar</button>
++      </div>
++    </div>
++  </div>;
++}
++
+ export function CookieConsent() {
+   const [visible, setVisible] = useState(false);
++  const [notice, setNotice] = useState(false);
+   const [preferences, setPreferences] = useState(false);
+   const [analytics, setAnalytics] = useState(false);
+   const [canClose, setCanClose] = useState(false);
+@@ -48,6 +63,11 @@ export function CookieConsent() {
+     setAnalytics(decision?.analytics ?? false);
+     const reopen = () => {
+       if (getCmpState().source === "google") { reopenGoogleCmp(); return; }
++      if (getCmpState().source === "unavailable") {
++        opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
++        setNotice(true);
++        return;
++      }
+       if (getCmpState().source !== "local") return;
+       const current = readConsent();
+       opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+@@ -63,7 +83,10 @@ export function CookieConsent() {
+       setAnalytics(current?.analytics ?? false);
+       setVisible(getCmpState().source === "local" && !current);
+     };
+-    const cmpChanged = () => setVisible(getCmpState().source === "local" && !readConsent());
++    const cmpChanged = () => {
++      if (getCmpState().source !== "unavailable") setNotice(false);
++      setVisible(getCmpState().source === "local" && !readConsent());
++    };
+     window.addEventListener(CMP_CHANGED, cmpChanged);
+     window.addEventListener(OPEN_CONSENT, reopen);
+     window.addEventListener(CONSENT_CHANGED, changed);
+@@ -76,8 +99,9 @@ export function CookieConsent() {
+     };
+   }, []);
+   useEffect(() => {
+-    if (visible && preferences) document.getElementById("cookie-consent-title")?.focus();
+-  }, [visible, preferences]);
++    if ((visible && preferences) || notice) document.getElementById("cookie-consent-title")?.focus();
++  }, [visible, preferences, notice]);
++  if (notice && !visible) return <CmpUnavailableNotice onRetry={() => window.location.reload()} onClose={() => { setNotice(false); opener.current?.focus(); }} />;
+   if (!visible) return null;
+   const close = () => { setVisible(false); opener.current?.focus(); };
+   return <CookieConsentPanel preferences={preferences} analytics={analytics} onAnalytics={setAnalytics} onPreferences={() => setPreferences(true)} onSave={(value) => { saveConsent(buildConsent(value)); close(); }} onClose={canClose ? close : undefined} />;
+diff --git a/src/components/consent/CookiePreferencesButton.tsx b/src/components/consent/CookiePreferencesButton.tsx
+index 0a5935d..cff97a6 100644
+--- a/src/components/consent/CookiePreferencesButton.tsx
++++ b/src/components/consent/CookiePreferencesButton.tsx
+@@ -1,17 +1,19 @@
+ "use client";
+ import { useEffect, useState } from "react";
+ import { openConsentPreferences } from "@/lib/consent";
+-import { CMP_CHANGED, getCmpState } from "@/lib/google-cmp";
++import { CMP_CHANGED, getCmpState, type CmpSource } from "@/lib/google-cmp";
+ export function CookiePreferencesButton() {
+-  const [source, setSource] = useState("pending");
++  const [source, setSource] = useState<CmpSource>("pending");
+   useEffect(() => {
+     const update = () => setSource(getCmpState().source);
+     update();
+     window.addEventListener(CMP_CHANGED, update);
+     return () => window.removeEventListener(CMP_CHANGED, update);
+   }, []);
++  const hint = source === "pending" ? "Aguardando controles Google. Se indisponíveis, verifique bloqueios do navegador e recarregue."
++    : source === "unavailable" ? "Controles Google indisponíveis. Estatísticas permanecem desativadas." : null;
+   return <div>
+-    <button type="button" disabled={source === "pending"} onClick={openConsentPreferences} className="text-left transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">{source === "google" ? "Preferências de privacidade Google" : "Preferências de cookies"}</button>
+-    {source === "pending" && <p className="mt-1 text-xs">Aguardando controles Google. Se indisponíveis, verifique bloqueios do navegador e recarregue.</p>}
++    <button type="button" disabled={source === "pending"} aria-describedby={hint ? "cookie-preferences-hint" : undefined} onClick={openConsentPreferences} className="text-left transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">{source === "google" ? "Preferências de privacidade Google" : "Preferências de cookies"}</button>
++    {hint && <p id="cookie-preferences-hint" className="mt-1 text-xs">{hint}</p>}
+   </div>;
+ }
+diff --git a/src/lib/consent-services.ts b/src/lib/consent-services.ts
+index 6ba03b3..09c8a83 100644
+--- a/src/lib/consent-services.ts
++++ b/src/lib/consent-services.ts
+@@ -3,7 +3,6 @@ import { getCmpState } from "./google-cmp";
+ type AnalyticsWindow = Window & {
+   gtag?: (...args: unknown[]) => void;
+   __nemAnalyticsLoaded?: boolean;
+-  __nemAnalyticsPage?: string;
+ };
+ export function isPublicPath(pathname: string): boolean {
+   return pathname === "/pt" || pathname.startsWith("/pt/");
+@@ -15,12 +14,15 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string
+   const current = consent ?? getDefaultConsent();
+   const cmp = getCmpState();
+   const analyticsAllowed = cmp.source === "google" ? cmp.analytics : cmp.source === "local" && current.analytics;
++  // Only an explicit "no" from the authority in charge withdraws statistics. A pending or
++  // unavailable CMP, a missing decision, navigation, focus or reload never deletes _ga cookies.
++  const explicitDenial = cmp.source === "google" ? !cmp.analytics : cmp.source === "local" && consent?.analytics === false;
+   const browser = window as AnalyticsWindow;
+   const identifier = gaId && /^G-[A-Z0-9]+$/.test(gaId) ? gaId : null;
+   syncGoogleConsentMode(current);
+   if (identifier) Reflect.set(window, "ga-disable-" + identifier, !analyticsAllowed);
+   if (!analyticsAllowed) {
+-    clearOptionalCookies();
++    if (explicitDenial) clearOptionalCookies();
+     // Removing a script node cannot undo executed code. A fresh document ends it.
+     if (browser.__nemAnalyticsLoaded) window.location.reload();
+     return;
+@@ -28,7 +30,9 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string
+   if (!identifier) return;
+   if (!document.getElementById("nem-google-analytics")) {
+     browser.gtag?.("js", new Date());
+-    browser.gtag?.("config", identifier, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false });
++    // Single page_view source: config sends the landing page; client-side navigations are sent
++    // by GA4 enhanced measurement ("page changes based on browser history events").
++    browser.gtag?.("config", identifier, { allow_google_signals: false, allow_ad_personalization_signals: false });
+     const script = document.createElement("script");
+     script.id = "nem-google-analytics";
+     script.async = true;
+@@ -36,10 +40,6 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string
+     browser.__nemAnalyticsLoaded = true;
+     document.head.appendChild(script);
+   }
+-  if (browser.__nemAnalyticsPage !== window.location.href) {
+-    browser.__nemAnalyticsPage = window.location.href;
+-    browser.gtag?.("event", "page_view", { page_location: window.location.href });
+-  }
+ }
+ export function leavePublicPage(): void {
+   if (!hasLoadedAnalytics()) return;
+diff --git a/src/lib/google-cmp.ts b/src/lib/google-cmp.ts
+index c0620d0..c93e880 100644
+--- a/src/lib/google-cmp.ts
++++ b/src/lib/google-cmp.ts
+@@ -1,6 +1,17 @@
+ /** Privacy & Messaging API; no inferred geography or TCF-purpose mapping. */
+ export const CMP_CHANGED = "nem:cmp-changed";
+-export type CmpState = { source: "pending" | "google" | "local"; analytics: boolean };
++/** After this, a silent CMP is reported as unavailable. Never grants anything. */
++export const CMP_TIMEOUT_MS = 10_000;
++/**
++ * pending: waiting for Google. google: Google CMP owns analytics. local: Google confirmed that
++ * its consent does not apply, so the site panel manages statistics. unavailable: no reliable
++ * answer (CMP not loaded, error, or analytics not configured where GDPR applies).
++ */
++export type CmpSource = "pending" | "google" | "local" | "unavailable";
++export type CmpState = { source: CmpSource; analytics: boolean };
++// Official googlefc.ConsentModePurposeStatusEnum values.
++const UNKNOWN = 0, GRANTED = 1, DENIED = 2, NOT_APPLICABLE = 3, NOT_CONFIGURED = 4;
++type TcfData = { eventStatus?: string; gdprApplies?: boolean };
+ type GoogleFc = {
+   callbackQueue: { push: (entry: Record<string, () => void>) => unknown };
+   getGoogleConsentModeValues?: () => { analyticsStoragePurposeConsentStatus: number };
+@@ -10,11 +21,22 @@ type CmpWindow = Window & {
+   googlefc?: GoogleFc;
+   __nemCmp?: CmpState;
+   __nemCmpStarted?: boolean;
+-  __tcfapi?: (command: string, version: number, callback: (data: { eventStatus?: string }, success: boolean) => void) => void;
++  __nemGdprApplies?: boolean;
++  __tcfapi?: (command: string, version: number, callback: (data: TcfData, success: boolean) => void) => void;
+ };
+ export function getCmpState(): CmpState {
+   return (window as CmpWindow).__nemCmp ?? { source: "pending", analytics: false };
+ }
++function setCmpState(next: CmpState): void {
++  const browser = window as CmpWindow;
++  const current = getCmpState();
++  // One authority per document: once Google or the local panel is confirmed, later callbacks may
++  // update Google's own value but never switch authority or fall back to pending/unavailable.
++  if ((current.source === "google" || current.source === "local") && next.source !== current.source) return;
++  if (current.source === next.source && current.analytics === next.analytics) return;
++  browser.__nemCmp = next;
++  window.dispatchEvent(new Event(CMP_CHANGED));
++}
+ export function startGoogleCmp(): void {
+   const browser = window as CmpWindow;
+   if (browser.__nemCmpStarted) return;
+@@ -24,20 +46,31 @@ export function startGoogleCmp(): void {
+   fc.callbackQueue = fc.callbackQueue || new Array<Record<string, () => void>>();
+   const refresh = () => {
+     const value = fc.getGoogleConsentModeValues?.().analyticsStoragePurposeConsentStatus;
+-    // Official enum: UNKNOWN=0, GRANTED=1, DENIED=2, NOT_APPLICABLE=3,
+-    // NOT_CONFIGURED=4. Missing configuration is never treated as permission.
+-    browser.__nemCmp = { source: value === 3 ? "local" : value === 1 || value === 2 ? "google" : "pending", analytics: value === 1 };
+-    window.dispatchEvent(new Event(CMP_CHANGED));
++    if (value === GRANTED || value === DENIED) setCmpState({ source: "google", analytics: value === GRANTED });
++    else if (value === NOT_APPLICABLE) setCmpState({ source: "local", analytics: false });
++    else if (value === NOT_CONFIGURED) {
++      // Google's message does not cover analytics. Only TCF gdprApplies=false (reported by the
++      // Google CMP) hands statistics to the local panel; otherwise nothing can be collected.
++      if (browser.__nemGdprApplies === false) setCmpState({ source: "local", analytics: false });
++      else if (browser.__nemGdprApplies === true) setCmpState({ source: "unavailable", analytics: false });
++    }
++    // UNKNOWN (error or not ready yet) or no value: keep waiting; the timeout reports unavailable.
++    else if (value !== UNKNOWN && value !== undefined) setCmpState({ source: "unavailable", analytics: false });
+   };
+   fc.callbackQueue.push({ CONSENT_MODE_DATA_READY: refresh });
+   fc.callbackQueue.push({ CONSENT_API_READY: () => {
+     browser.__tcfapi?.("addEventListener", 0, (data, success) => {
+-      if (success && (data.eventStatus === "useractioncomplete" || data.eventStatus === "tcloaded")) {
++      if (!success || !data) return;
++      if (typeof data.gdprApplies === "boolean") browser.__nemGdprApplies = data.gdprApplies;
++      if (data.eventStatus === "useractioncomplete" || data.eventStatus === "tcloaded" || typeof data.gdprApplies === "boolean") {
+         // Read via the supported queue after the CMP has processed the TCF event.
+         setTimeout(() => fc.callbackQueue.push({ CONSENT_MODE_DATA_READY: refresh }), 0);
+       }
+     });
+   } });
++  setTimeout(() => {
++    if (getCmpState().source === "pending") setCmpState({ source: "unavailable", analytics: false });
++  }, CMP_TIMEOUT_MS);
+ }
+ export function reopenGoogleCmp(): void {
+   const fc = (window as CmpWindow).googlefc;

@@ -1,0 +1,89 @@
+✔ all 31 bodies retain their text except the three targeted corrections in #3 (7.3406ms)
+✔ only official anchor hosts are normalized; external assets, suffix hosts and fragments survive (0.4387ms)
+✔ technical changes never supply a date; original publication survives archiving and republication (0.3247ms)
+✔ saving the 31 existing bodies unchanged does not manufacture an editorial change (15.0683ms)
+✔ references preserve legacy text, escape content, resolve DOI and reject unsafe links (2.6112ms)
+✔ view endpoint issues a parameterized counter-only update (mock DB, no connection) (597.2819ms)
+✔ actual article page metadata and BlogPosting use editorial dates and canonical authorship (31 mocked records) (719.2732ms)
+✔ sitemap and feed serialize publication/review dates, including absent dates (mock DB) (21.7779ms)
+✔ defaults deny four signals without fetching any resource (2.6372ms)
+✔ new visitor: no optional script; no decision is persisted automatically (1.022ms)
+✔ accept: persists statistics, updates only analytics, loads GA once after update (2.6843ms)
+✔ reject: persisted denial survives a fresh storage read, no GA or AdSense (1.8045ms)
+✔ change accept to reject: replaces record, denies, cleans optional cookies and reloads (0.5624ms)
+✔ reload after acceptance restores decision before configuring GA (0.4583ms)
+✔ old, malformed, expired and forged consent cannot activate services (1.3707ms)
+✔ blocked localStorage falls back to the consent cookie (0.6346ms)
+✔ storage deletion invalidates the in-memory decision (0.5176ms)
+✔ reopen signal and change event are observable without granting consent (0.9738ms)
+✔ public/private boundary: no loaded service means no reload; leaving with GA requires fresh document (0.4737ms)
+✔ no GA identifier: acceptance creates no request and never writes ad signals (0.229ms)
+✔ panel first layer gives equal access to accept, reject and preferences; buttons call their actual handlers (10.8225ms)
+✔ preferences show statistics and explain separate advertising controls (1.3724ms)
+✔ static ads.txt and verification metadata use the confirmed publisher (0.2891ms)
+✔ controller: new user, rejection, reopen, category change, accept and reload (107.4957ms)
+✔ F1: without any Google CMP, an explicit local yes loads GA (no wait, no inference) (0.2981ms)
+✔ applicable Google CMP still deciding suspends a local yes without reload or cookie deletion (0.2968ms)
+✔ Google DENIED (analytics purpose still enabled) wins over a local yes: reload and GA cookies cleared (0.3403ms)
+✔ Google GRANTED alone never authorizes statistics (0.2851ms)
+✔ NOT_CONFIGURED / NOT_APPLICABLE leave the site banner as the only statistics authority (0.3428ms)
+✔ analytics_storage updates are deduplicated and re-asserted after another writer; ad signals never written (0.4306ms)
+✔ legacy v2 records are ignored and removed on the next decision (0.2988ms)
+✔ Google callback queue reads official enum values and TCF events (0.6203ms)
+✔ withdrawing local analytics never deletes AdSense cookies (0.2648ms)
+✔ public boundary reloads for AdSense even when analytics never loaded (0.2405ms)
+✔ TCF choice refreshes Google values through the queue; reopening uses the supported queue (1.1246ms)
+✔ A redirects directly with 301 on both hosts, preserving query without open redirect (7.3994ms)
+✔ inline links escape HTML and cannot introduce an external host or script (1.0606ms)
+✔ conversion retains approved prose and metadata scope excludes other posts (4.4573ms)
+✔ only monotonic views are dynamic; every other field and decreases abort (13.4109ms)
+✔ scheduledAt corruption rolls back the transaction; no protected field is supplied to update (181.1876ms)
+✔ technical adaptation preserves bold, safe links, ordered and unordered lists (2.2065ms)
+✔ references separated by blank lines retain a single numbered list (0.3102ms)
+✔ unapproved structures and unsafe links stop preparation (6.1015ms)
+✔ approved package matches every Markdown body and reference registry (30.9878ms)
+✔ interruption refuses application before any database access (1.8289ms)
+✔ static previews retain the approved rendered bodies and do not record approval (18.4717ms)
+✖ preview server serves fixtures and CSS, refuses writes and private project files (413.6062ms)
+✔ A: canonical template author satisfies authorship without a body biography (7.8076ms)
+✔ body words cannot replace an identified canonical author (0.8528ms)
+✔ B: absent commercial CTA and related links are recommendations, not blockers (0.3139ms)
+✔ C: editorial links and valid CTA blocks are recognized without inserting content (1.628ms)
+✔ D: visual review and preview timestamps remain real, unmodified inputs (1.09ms)
+✔ E: missing real content, author, category and metadata still block (0.9608ms)
+✔ focus keyword is optional internal guidance and never rewrites title, slug or body (0.7381ms)
+✔ six approved Lote 2 proposals: four pass, two keep only visual blockers; no mutation (49.7156ms)
+✔ direct subscription action redirects before reading form, IP, database or adapter (110.23ms)
+✔ old, missing and forged tokens cannot read or update subscriber records (26.4957ms)
+✔ all status parameters render no section, form, success message or empty wrapper (16.5709ms)
+✔ only inventoried dedicated promo blocks disappear; every other byte remains (16.5708ms)
+✔ RSS round-trips raw special characters once across channel, items and URLs (702.2924ms)
+✔ RSS and sitemap dates retain editorial meaning and original publication (416.7809ms)
+ℹ tests 61
+ℹ suites 0
+ℹ pass 60
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2402.8392
+
+✖ failing tests:
+
+test at scripts\editorial-preview.test.ts:2:2647
+✖ preview server serves fixtures and CSS, refuses writes and private project files (413.6062ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  404 !== 200
+  
+      at TestContext.<anonymous> (C:\Users\Diego Torres\OneDrive\PESSOAL\PROJETOS\BlogNutricao\nutricao-em-movimento\scripts\editorial-preview.test.ts:45:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1125:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 404,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

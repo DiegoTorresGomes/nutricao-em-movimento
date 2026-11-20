@@ -19,7 +19,7 @@ function browser() {
   const storage = new Map<string, string>(); const cookies = new Map<string, string>();
   const scripts: FakeScript[] = []; const events = new EventTarget(); const calls: unknown[][] = [];
   let reloads = 0;
-  const win = Object.assign(events, { __nemCmp: { source: "local", analytics: false }, localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v), removeItem: (k: string) => storage.delete(k) }, location: { protocol: "https:", hostname: "www.example.com", pathname: "/pt", href: "https://www.example.com/pt", reload: () => { reloads++; } }, gtag: (...args: unknown[]) => calls.push(args) });
+  const win = Object.assign(events, { __nemCmp: { api: false, uiShown: false } as Record<string, unknown>, localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v), removeItem: (k: string) => storage.delete(k) }, location: { protocol: "https:", hostname: "www.example.com", pathname: "/pt", href: "https://www.example.com/pt", reload: () => { reloads++; } }, gtag: (...args: unknown[]) => calls.push(args) });
   const doc = { get cookie() { return [...cookies].map(([k,v]) => k + "=" + v).join("; "); }, set cookie(value: string) { const pair = value.split(";")[0]; const index = pair.indexOf("="); const key = pair.slice(0,index); if(value.includes("Max-Age=0")) cookies.delete(key); else cookies.set(key, pair.slice(index+1)); }, head: { appendChild: (s: FakeScript) => scripts.push(s) }, createElement: () => ({ id: "", src: "", async: false }), querySelector: () => null, getElementById: (id: string) => scripts.find(s=>s.id===id) ?? null };
   Object.defineProperty(globalThis, "window", { value: win, configurable: true }); Object.defineProperty(globalThis, "document", { value: doc, configurable: true });
   readConsent(true);
@@ -75,7 +75,7 @@ test("no GA identifier: acceptance creates no request and never writes ad signal
 test("panel first layer gives equal access to accept, reject and preferences; buttons call their actual handlers", () => {
   const choices:boolean[]=[];let preferences=0;
   const tree=CookieConsentPanel({preferences:false,analytics:false,onAnalytics:()=>{},onPreferences:()=>preferences++,onSave:v=>choices.push(v)});
-  const html=renderToStaticMarkup(tree); assert.match(html,/Recusar opcionais/); assert.match(html,/Aceitar opcionais/); assert.match(html,/>Preferências</); assert.match(html,/role="dialog"/);
+  const html=renderToStaticMarkup(tree); assert.match(html,/Recusar estatísticas/); assert.match(html,/Aceitar estatísticas/); assert.match(html,/>Gerenciar preferências</); assert.match(html,/não autoriza publicidade/); assert.match(html,/role="dialog"/);
   const buttons:React.ReactElement<{onClick:()=>void;children:React.ReactNode}>[]=[];
   function walk(node:React.ReactNode):void { if(!React.isValidElement<{children?:React.ReactNode}>(node)) return; if(node.type==="button") buttons.push(node as typeof buttons[number]); React.Children.forEach(node.props.children,walk); }
   walk(tree); buttons.forEach(button=>button.props.onClick()); assert.deepEqual(choices,[false,true]); assert.equal(preferences,1);
@@ -109,26 +109,55 @@ test("controller: new user, rejection, reopen, category change, accept and reloa
   cleanups.forEach(cleanup=>cleanup?.());
 });
 
- test("CMP pending or misconfigured never uses stored local approval", () => {
- const b=browser(); b.win.__nemCmp={source:"pending",analytics:false};
- saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123");
- assert.equal(b.scripts.length,0); assert.equal(b.calls.length,0);
- });
- test("CMP grant and withdrawal own analytics; local actions never overwrite Google signals", () => {
- const b=browser(); b.win.__nemCmp={source:"google",analytics:true};
- saveConsent(buildConsent(false)); applyConsentServices(readConsent(),"G-TEST123");
- assert.equal(b.scripts.length,1); assert.equal(b.calls.some(c=>c[0]==="consent"),false);
- b.win.__nemCmp.analytics=false; applyConsentServices(buildConsent(true),"G-TEST123");
- assert.equal(b.reloads,1); assert.equal(b.calls.some(c=>c[0]==="consent"),false);
- });
- test("Google callback queue uses official enum values, including unavailable configuration", () => {
- const b=browser(); let status=0; const queue:Record<string,()=>void>[]=[];
- Object.assign(b.win,{googlefc:{callbackQueue:queue,getGoogleConsentModeValues:()=>({analyticsStoragePurposeConsentStatus:status})}});
- cmpModule.startGoogleCmp(); cmpModule.startGoogleCmp(); assert.equal(queue.length,2);
- for(const [value,source,analytics] of [[0,"pending",false],[1,"google",true],[2,"google",false],[3,"local",false],[4,"pending",false]] as const){
- status=value;queue[0].CONSENT_MODE_DATA_READY(); assert.deepEqual(cmpModule.getCmpState(),{source,analytics});
- }
- });
+test("F1: without any Google CMP, an explicit local yes loads GA (no wait, no inference)", () => {
+  const b=browser(); saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123");
+  assert.equal(b.scripts.length,1); assert.equal(Reflect.get(b.win,"ga-disable-G-TEST123"),false);
+});
+test("applicable Google CMP still deciding suspends a local yes without reload or cookie deletion", () => {
+  const b=browser(); b.cookies.set("_ga","keep"); saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123");
+  b.win.__nemCmp={api:true,gdprApplies:true,uiShown:true}; applyConsentServices(readConsent(),"G-TEST123");
+  assert.equal(Reflect.get(b.win,"ga-disable-G-TEST123"),true); assert.equal(b.reloads,0); assert.equal(b.cookies.get("_ga"),"keep");
+  b.win.__nemCmp={api:true,gdprApplies:true,uiShown:false,analytics:1}; applyConsentServices(readConsent(),"G-TEST123");
+  assert.equal(Reflect.get(b.win,"ga-disable-G-TEST123"),false); assert.equal(b.scripts.length,1);
+});
+test("Google DENIED (analytics purpose still enabled) wins over a local yes: reload and GA cookies cleared", () => {
+  const b=browser(); b.cookies.set("_ga","old"); b.cookies.set("__gads","keep"); saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123");
+  b.win.__nemCmp={api:true,gdprApplies:true,uiShown:false,analytics:2}; applyConsentServices(readConsent(),"G-TEST123");
+  assert.equal(b.reloads,1); assert.equal(b.cookies.has("_ga"),false); assert.equal(b.cookies.get("__gads"),"keep");
+  assert.deepEqual(b.calls.filter(c=>c[0]==="consent").at(-1)?.[2],{analytics_storage:"denied"});
+});
+test("Google GRANTED alone never authorizes statistics", () => {
+  const b=browser(); b.win.__nemCmp={api:true,gdprApplies:true,uiShown:false,analytics:1};
+  applyConsentServices(null,"G-TEST123"); saveConsent(buildConsent(false)); applyConsentServices(readConsent(),"G-TEST123");
+  assert.equal(b.scripts.length,0); assert.equal(b.calls.some(c=>c[0]==="consent"&&(c[2] as Record<string,string>).analytics_storage==="granted"),false);
+});
+test("NOT_CONFIGURED / NOT_APPLICABLE leave the site banner as the only statistics authority", () => {
+  for (const analytics of [3,4]) { const b=browser(); b.win.__nemCmp={api:true,gdprApplies:true,uiShown:false,analytics}; saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123"); assert.equal(b.scripts.length,1); }
+});
+test("analytics_storage updates are deduplicated and re-asserted after another writer; ad signals never written", () => {
+  const b=browser(); const dataLayer:unknown[][]=[["consent","default",{ad_storage:"denied",analytics_storage:"denied"}]];
+  Object.assign(b.win,{dataLayer,gtag:(...args:unknown[])=>{b.calls.push(args);dataLayer.push(args);}});
+  syncGoogleConsentMode(null); assert.equal(b.calls.length,0, "default already denied: no redundant update");
+  saveConsent(buildConsent(false)); assert.equal(b.calls.length,0);
+  dataLayer.push(["consent","update",{analytics_storage:"granted",ad_storage:"granted"}]); // another writer
+  syncGoogleConsentMode(readConsent()); assert.deepEqual(b.calls.at(-1),["consent","update",{analytics_storage:"denied"}]);
+  saveConsent(buildConsent(true)); assert.deepEqual(b.calls.at(-1),["consent","update",{analytics_storage:"granted"}]);
+  assert.ok(b.calls.every(c=>Object.keys(c[2] as object).every(k=>k==="analytics_storage")));
+});
+test("legacy v2 records are ignored and removed on the next decision", () => {
+  const b=browser(); b.storage.set("nem-consent-v2",JSON.stringify({...buildConsent(true),version:2})); assert.equal(readConsent(true),null);
+  applyConsentServices(readConsent(),"G-TEST123"); assert.equal(b.scripts.length,0); saveConsent(buildConsent(false)); assert.equal(b.storage.has("nem-consent-v2"),false);
+});
+test("Google callback queue reads official enum values and TCF events", () => {
+  const b=browser(); let status=0; const queue:Record<string,()=>void>[]=[]; let listener:((d:{eventStatus?:string;gdprApplies?:boolean},ok:boolean)=>void)|undefined;
+  Object.assign(b.win,{googlefc:{callbackQueue:queue,getGoogleConsentModeValues:()=>({analyticsStoragePurposeConsentStatus:status})},__tcfapi:(_c:string,_v:number,cb:typeof listener)=>{listener=cb;}});
+  Reflect.deleteProperty(b.win, "__nemCmp"); cmpModule.startGoogleCmp(); cmpModule.startGoogleCmp(); assert.equal(queue.length,2);
+  assert.deepEqual(cmpModule.getCmpState(),{api:false,uiShown:false});
+  queue[1].CONSENT_API_READY(); listener!({eventStatus:"cmpuishown",gdprApplies:true},true);
+  assert.deepEqual(cmpModule.getCmpState(),{api:true,gdprApplies:true,uiShown:true});
+  for (const value of [0,1,2,3,4]) { status=value; queue[0].CONSENT_MODE_DATA_READY(); assert.equal(cmpModule.getCmpState().analytics,value); }
+  listener!({eventStatus:"useractioncomplete",gdprApplies:true},true); assert.equal(cmpModule.getCmpState().uiShown,false);
+});
  test("withdrawing local analytics never deletes AdSense cookies",()=>{
  const b=browser(); b.cookies.set("__gads","keep"); b.cookies.set("__gpi","keep");
  applyConsentServices(buildConsent(false),"G-TEST123"); assert.equal(b.cookies.get("__gads"),"keep");assert.equal(b.cookies.get("__gpi"),"keep");
@@ -141,23 +170,23 @@ test("public boundary reloads for AdSense even when analytics never loaded", () 
   assert.equal(b.reloads, 1);
 });
 
-test("TCF changes refresh official Google values and reopening uses the supported queue", async () => {
-  const b = browser();
-  let status = 1, reopened = 0;
-  let listener: ((data: { eventStatus: string }, success: boolean) => void) | undefined;
+test("TCF choice refreshes Google values through the queue; reopening uses the supported queue", async (t) => {
+  t.mock.timers.enable({ apis: ["setTimeout"] });
+  const b = browser(); Reflect.deleteProperty(b.win, "__nemCmp");
+  let status = 0, reopened = 0;
+  let listener: ((data: { eventStatus: string; gdprApplies?: boolean }, success: boolean) => void) | undefined;
   const queue: Record<string, () => void>[] = [];
   Object.assign(b.win, {
     googlefc: { callbackQueue: queue, getGoogleConsentModeValues: () => ({ analyticsStoragePurposeConsentStatus: status }), showRevocationMessage: () => { reopened++; } },
     __tcfapi: (_command: string, _version: number, callback: typeof listener) => { listener = callback; },
   });
   cmpModule.startGoogleCmp();
-  queue[0].CONSENT_MODE_DATA_READY();
   queue[1].CONSENT_API_READY();
   status = 2;
-  listener!({ eventStatus: "useractioncomplete" }, true);
-  await new Promise(resolve => setTimeout(resolve, 5));
+  listener!({ eventStatus: "useractioncomplete", gdprApplies: true }, true);
+  t.mock.timers.tick(1);
   queue[2].CONSENT_MODE_DATA_READY();
-  assert.deepEqual(cmpModule.getCmpState(), { source: "google", analytics: false });
+  assert.equal(cmpModule.getCmpState().analytics, 2);
   cmpModule.reopenGoogleCmp();
   assert.equal(reopened, 0);
   queue[3].CONSENT_API_READY();

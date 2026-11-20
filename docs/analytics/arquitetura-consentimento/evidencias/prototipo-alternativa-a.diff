@@ -1,0 +1,286 @@
+diff --git a/src/components/analytics/ConsentedAnalytics.tsx b/src/components/analytics/ConsentedAnalytics.tsx
+index 0860d67..cd0bec0 100644
+--- a/src/components/analytics/ConsentedAnalytics.tsx
++++ b/src/components/analytics/ConsentedAnalytics.tsx
+@@ -1,12 +1,10 @@
+ "use client";
+ import { useEffect } from "react";
+-import { usePathname } from "next/navigation";
+ import { CONSENT_CHANGED, CONSENT_STORAGE_KEY, readConsent } from "@/lib/consent";
+ import { applyConsentServices } from "@/lib/consent-services";
+ import { CMP_CHANGED, startGoogleCmp } from "@/lib/google-cmp";
+-/** Mounted only by PublicLayout. One direct GA loader, gated by consent. */
++/** Mounted only by PublicLayout. One direct GA loader, gated by consent; no manual page_view. */
+ export function ConsentedAnalytics() {
+-  const pathname = usePathname();
+   useEffect(() => {
+     const update = () => applyConsentServices(readConsent(), process.env.NEXT_PUBLIC_GA_ID);
+     const storage = (event: StorageEvent) => {
+@@ -26,6 +24,6 @@ export function ConsentedAnalytics() {
+       window.removeEventListener("storage", storage);
+       window.removeEventListener("focus", update);
+     };
+-  }, [pathname]);
++  }, []);
+   return null;
+ }
+diff --git a/src/components/consent/CookieConsent.tsx b/src/components/consent/CookieConsent.tsx
+index 0eceb19..42c809b 100644
+--- a/src/components/consent/CookieConsent.tsx
++++ b/src/components/consent/CookieConsent.tsx
+@@ -3,7 +3,7 @@ import Link from "next/link";
+ import React, { useEffect, useRef, useState } from "react";
+ import { buildConsent, CONSENT_CHANGED, CONSENT_STORAGE_KEY, OPEN_CONSENT, readConsent, saveConsent } from "@/lib/consent";
+ 
+-import { CMP_CHANGED, getCmpState, reopenGoogleCmp } from "@/lib/google-cmp";
++import { CMP_CHANGED, getCmpState } from "@/lib/google-cmp";
+ 
+ type PanelProps = {
+   preferences: boolean;
+@@ -44,11 +44,10 @@ export function CookieConsent() {
+   const opener = useRef<HTMLElement | null>(null);
+   useEffect(() => {
+     const decision = readConsent();
+-    setVisible(getCmpState().source === "local" && !decision);
++    // PROTOTYPE A: shown to every visitor without a decision; yields while the Google message is on screen.
++    setVisible(!decision && !getCmpState().uiShown);
+     setAnalytics(decision?.analytics ?? false);
+     const reopen = () => {
+-      if (getCmpState().source === "google") { reopenGoogleCmp(); return; }
+-      if (getCmpState().source !== "local") return;
+       const current = readConsent();
+       opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+       setAnalytics(current?.analytics ?? false);
+@@ -61,9 +60,9 @@ export function CookieConsent() {
+       if (event.key !== null && event.key !== CONSENT_STORAGE_KEY) return;
+       const current = readConsent(true);
+       setAnalytics(current?.analytics ?? false);
+-      setVisible(getCmpState().source === "local" && !current);
++      setVisible(!current && !getCmpState().uiShown);
+     };
+-    const cmpChanged = () => setVisible(getCmpState().source === "local" && !readConsent());
++    const cmpChanged = () => { if (getCmpState().uiShown) setVisible(false); else if (!readConsent()) setVisible(true); };
+     window.addEventListener(CMP_CHANGED, cmpChanged);
+     window.addEventListener(OPEN_CONSENT, reopen);
+     window.addEventListener(CONSENT_CHANGED, changed);
+diff --git a/src/components/consent/CookiePreferencesButton.tsx b/src/components/consent/CookiePreferencesButton.tsx
+index 0a5935d..d53cd52 100644
+--- a/src/components/consent/CookiePreferencesButton.tsx
++++ b/src/components/consent/CookiePreferencesButton.tsx
+@@ -1,17 +1,19 @@
+ "use client";
+ import { useEffect, useState } from "react";
+ import { openConsentPreferences } from "@/lib/consent";
+-import { CMP_CHANGED, getCmpState } from "@/lib/google-cmp";
++import { CMP_CHANGED, getCmpState, reopenGoogleCmp } from "@/lib/google-cmp";
++/** PROTOTYPE A: statistics (site) always available; Google privacy (ads) only when the Google CMP is present. */
+ export function CookiePreferencesButton() {
+-  const [source, setSource] = useState("pending");
++  const [googleApi, setGoogleApi] = useState(false);
+   useEffect(() => {
+-    const update = () => setSource(getCmpState().source);
++    const update = () => setGoogleApi(getCmpState().api);
+     update();
+     window.addEventListener(CMP_CHANGED, update);
+     return () => window.removeEventListener(CMP_CHANGED, update);
+   }, []);
++  const style = "block text-left transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]";
+   return <div>
+-    <button type="button" disabled={source === "pending"} onClick={openConsentPreferences} className="text-left transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9DCC9]">{source === "google" ? "Preferências de privacidade Google" : "Preferências de cookies"}</button>
+-    {source === "pending" && <p className="mt-1 text-xs">Aguardando controles Google. Se indisponíveis, verifique bloqueios do navegador e recarregue.</p>}
++    <button type="button" onClick={openConsentPreferences} className={style}>Preferências de cookies</button>
++    {googleApi && <button type="button" onClick={reopenGoogleCmp} className={style + " mt-1"}>Privacidade e publicidade (Google)</button>}
+   </div>;
+ }
+diff --git a/src/lib/consent-services.ts b/src/lib/consent-services.ts
+index 6ba03b3..850e704 100644
+--- a/src/lib/consent-services.ts
++++ b/src/lib/consent-services.ts
+@@ -1,9 +1,7 @@
+-import { clearOptionalCookies, getDefaultConsent, syncGoogleConsentMode, type ConsentState } from "./consent";
+-import { getCmpState } from "./google-cmp";
++import { analyticsDecision, clearOptionalCookies, syncGoogleConsentMode, type ConsentState } from "./consent";
+ type AnalyticsWindow = Window & {
+   gtag?: (...args: unknown[]) => void;
+   __nemAnalyticsLoaded?: boolean;
+-  __nemAnalyticsPage?: string;
+ };
+ export function isPublicPath(pathname: string): boolean {
+   return pathname === "/pt" || pathname.startsWith("/pt/");
+@@ -12,15 +10,14 @@ export function hasLoadedAnalytics(): boolean {
+   return Boolean((window as AnalyticsWindow).__nemAnalyticsLoaded || document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'));
+ }
+ export function applyConsentServices(consent: ConsentState | null, gaId: string | undefined): void {
+-  const current = consent ?? getDefaultConsent();
+-  const cmp = getCmpState();
+-  const analyticsAllowed = cmp.source === "google" ? cmp.analytics : cmp.source === "local" && current.analytics;
++  // Only an explicit "no" withdraws statistics (F2): no decision, navigation, focus or reload never delete _ga.
++  const { allowed: analyticsAllowed, explicitDenial } = analyticsDecision(consent);
+   const browser = window as AnalyticsWindow;
+   const identifier = gaId && /^G-[A-Z0-9]+$/.test(gaId) ? gaId : null;
+-  syncGoogleConsentMode(current);
++  syncGoogleConsentMode(consent);
+   if (identifier) Reflect.set(window, "ga-disable-" + identifier, !analyticsAllowed);
+   if (!analyticsAllowed) {
+-    clearOptionalCookies();
++    if (explicitDenial) clearOptionalCookies();
+     // Removing a script node cannot undo executed code. A fresh document ends it.
+     if (browser.__nemAnalyticsLoaded) window.location.reload();
+     return;
+@@ -28,7 +25,9 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string
+   if (!identifier) return;
+   if (!document.getElementById("nem-google-analytics")) {
+     browser.gtag?.("js", new Date());
+-    browser.gtag?.("config", identifier, { send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false });
++    // Single page_view source: config sends the landing page; client-side navigations are sent
++    // by GA4 enhanced measurement ("page changes based on browser history events").
++    browser.gtag?.("config", identifier, { allow_google_signals: false, allow_ad_personalization_signals: false });
+     const script = document.createElement("script");
+     script.id = "nem-google-analytics";
+     script.async = true;
+@@ -36,13 +35,9 @@ export function applyConsentServices(consent: ConsentState | null, gaId: string
+     browser.__nemAnalyticsLoaded = true;
+     document.head.appendChild(script);
+   }
+-  if (browser.__nemAnalyticsPage !== window.location.href) {
+-    browser.__nemAnalyticsPage = window.location.href;
+-    browser.gtag?.("event", "page_view", { page_location: window.location.href });
+-  }
+ }
+ export function leavePublicPage(): void {
+   if (!hasLoadedAnalytics()) return;
+-  syncGoogleConsentMode(getDefaultConsent());
++  syncGoogleConsentMode(null);
+   window.location.reload();
+ }
+diff --git a/src/lib/consent.ts b/src/lib/consent.ts
+index e9bd6a1..86345ff 100644
+--- a/src/lib/consent.ts
++++ b/src/lib/consent.ts
+@@ -1,8 +1,8 @@
+ import { getCmpState } from "./google-cmp";
+ /** First-party analytics preferences, not a certified CMP or legal proof of consent. */
+-export const CONSENT_STORAGE_KEY = "nem-consent-v2";
++export const CONSENT_STORAGE_KEY = "nem-consent-v3";
+ export const CONSENT_COOKIE_NAME = "nem-consent";
+-export const CONSENT_VERSION = 2;
++export const CONSENT_VERSION = 3;
+ export const CONSENT_MAX_AGE = 60 * 60 * 24 * 180;
+ export const CONSENT_CHANGED = "nem:consent-changed";
+ export const OPEN_CONSENT = "nem:open-consent";
+@@ -52,6 +52,7 @@ export function saveConsent(consent: ConsentState): void {
+   try {
+     window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(next));
+     window.localStorage.removeItem("nem-consent-v1");
++    window.localStorage.removeItem("nem-consent-v2");
+   } catch { /* Choice still applies in this document if persistence is blocked. */ }
+   try {
+     const secure = window.location.protocol === "https:" ? "; Secure" : "";
+@@ -61,14 +62,26 @@ export function saveConsent(consent: ConsentState): void {
+   window.dispatchEvent(new CustomEvent(CONSENT_CHANGED, { detail: next }));
+ }
+ export function openConsentPreferences(): void { window.dispatchEvent(new Event(OPEN_CONSENT)); }
+-export function syncGoogleConsentMode(consent: ConsentState): void {
++/**
++ * PROTOTYPE (Alternative A). The site banner is the statistics authority for every visitor.
++ * While the Google message still collects the analytics purpose (panel setting), Google can only
++ * restrict: only an explicit Google DENIED wins over a local yes.
++ * Nothing is granted without an explicit local "yes".
++ */
++export function analyticsDecision(consent: ConsentState | null): { allowed: boolean; explicitDenial: boolean } {
++  const cmp = getCmpState();
++  const googleDenied = cmp.analytics === 2;
++  return {
++    allowed: consent?.analytics === true && !googleDenied,
++    explicitDenial: consent?.analytics === false || googleDenied,
++  };
++}
++/** Updates analytics_storage only; ad_* signals stay with the Google CMP. Re-asserted after CMP changes. */
++export function syncGoogleConsentMode(consent: ConsentState | null): void {
+   if (typeof window === "undefined") return;
+-  if (getCmpState().source !== "local") return;
+   const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+   if (typeof gtag !== "function") return;
+-  gtag("consent", "update", {
+-    analytics_storage: consent.analytics ? "granted" : "denied",
+-  });
++  gtag("consent", "update", { analytics_storage: analyticsDecision(consent).allowed ? "granted" : "denied" });
+ }
+ /** Known optional first-party cookies only; external cookies need browser controls. */
+ export function clearOptionalCookies(): void {
+diff --git a/src/lib/google-cmp.ts b/src/lib/google-cmp.ts
+index c0620d0..204e183 100644
+--- a/src/lib/google-cmp.ts
++++ b/src/lib/google-cmp.ts
+@@ -1,19 +1,38 @@
+-/** Privacy & Messaging API; no inferred geography or TCF-purpose mapping. */
++/**
++ * PROTOTYPE (Alternative A, purpose separation) — scratch worktree only.
++ * Google CMP: advertising (and analytics only while the panel's analytics purpose is enabled).
++ * Reads only the documented Privacy & Messaging API and the IAB TCF __tcfapi events.
++ */
+ export const CMP_CHANGED = "nem:cmp-changed";
+-export type CmpState = { source: "pending" | "google" | "local"; analytics: boolean };
++export type CmpState = {
++  /** CONSENT_API_READY fired: the Google CMP script is present on this page. */
++  api: boolean;
++  /** IAB TCF gdprApplies as reported by the CMP (undefined until known). */
++  gdprApplies?: boolean;
++  /** analyticsStoragePurposeConsentStatus: 0 UNKNOWN, 1 GRANTED, 2 DENIED, 3 NOT_APPLICABLE, 4 NOT_CONFIGURED. */
++  analytics?: number;
++  /** TCF eventStatus "cmpuishown" until "useractioncomplete": the Google message is on screen. */
++  uiShown: boolean;
++};
+ type GoogleFc = {
+   callbackQueue: { push: (entry: Record<string, () => void>) => unknown };
+   getGoogleConsentModeValues?: () => { analyticsStoragePurposeConsentStatus: number };
+   showRevocationMessage?: () => void;
+ };
++type TcfData = { eventStatus?: string; gdprApplies?: boolean };
+ type CmpWindow = Window & {
+   googlefc?: GoogleFc;
+   __nemCmp?: CmpState;
+   __nemCmpStarted?: boolean;
+-  __tcfapi?: (command: string, version: number, callback: (data: { eventStatus?: string }, success: boolean) => void) => void;
++  __tcfapi?: (command: string, version: number, callback: (data: TcfData, success: boolean) => void) => void;
+ };
+ export function getCmpState(): CmpState {
+-  return (window as CmpWindow).__nemCmp ?? { source: "pending", analytics: false };
++  return (window as CmpWindow).__nemCmp ?? { api: false, uiShown: false };
++}
++function setCmpState(patch: Partial<CmpState>): void {
++  const browser = window as CmpWindow;
++  browser.__nemCmp = { ...getCmpState(), ...patch };
++  window.dispatchEvent(new Event(CMP_CHANGED));
+ }
+ export function startGoogleCmp(): void {
+   const browser = window as CmpWindow;
+@@ -22,18 +41,18 @@ export function startGoogleCmp(): void {
+   const fc: GoogleFc = browser.googlefc || { callbackQueue: new Array<Record<string, () => void>>() };
+   browser.googlefc = fc;
+   fc.callbackQueue = fc.callbackQueue || new Array<Record<string, () => void>>();
+-  const refresh = () => {
+-    const value = fc.getGoogleConsentModeValues?.().analyticsStoragePurposeConsentStatus;
+-    // Official enum: UNKNOWN=0, GRANTED=1, DENIED=2, NOT_APPLICABLE=3,
+-    // NOT_CONFIGURED=4. Missing configuration is never treated as permission.
+-    browser.__nemCmp = { source: value === 3 ? "local" : value === 1 || value === 2 ? "google" : "pending", analytics: value === 1 };
+-    window.dispatchEvent(new Event(CMP_CHANGED));
+-  };
++  const refresh = () => setCmpState({ analytics: fc.getGoogleConsentModeValues?.().analyticsStoragePurposeConsentStatus });
+   fc.callbackQueue.push({ CONSENT_MODE_DATA_READY: refresh });
+   fc.callbackQueue.push({ CONSENT_API_READY: () => {
+-    browser.__tcfapi?.("addEventListener", 0, (data, success) => {
+-      if (success && (data.eventStatus === "useractioncomplete" || data.eventStatus === "tcloaded")) {
+-        // Read via the supported queue after the CMP has processed the TCF event.
++    setCmpState({ api: true });
++    browser.__tcfapi?.("addEventListener", 2, (data, success) => {
++      if (!success) return;
++      const patch: Partial<CmpState> = {};
++      if (typeof data.gdprApplies === "boolean") patch.gdprApplies = data.gdprApplies;
++      if (data.eventStatus === "cmpuishown") patch.uiShown = true;
++      if (data.eventStatus === "useractioncomplete" || data.eventStatus === "tcloaded") patch.uiShown = false;
++      setCmpState(patch);
++      if (data.eventStatus === "useractioncomplete" || data.eventStatus === "tcloaded") {
+         setTimeout(() => fc.callbackQueue.push({ CONSENT_MODE_DATA_READY: refresh }), 0);
+       }
+     });

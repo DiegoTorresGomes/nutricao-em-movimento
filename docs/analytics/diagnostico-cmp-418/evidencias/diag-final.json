@@ -1,0 +1,771 @@
+[
+  {
+    "name": "P1-prod-alwaysshow",
+    "path": "/pt?fc=alwaysshow&fctype=gdpr",
+    "blockAdsense": false,
+    "synthetic": null,
+    "status": 200,
+    "csp": "upgrade-insecure-requests",
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": "hcdn",
+    "adsTagInHtml": "<script async=\"\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 3652,
+    "consentIndex": -1,
+    "headStart": "<head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/3afdd7e0cbf86ed6.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-1abc95bec6ab3c96.js\"/><script type=\"text/javascript\" src=\"https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7TtVd26gsSsNmpuvMOf-_30I3OelBvkfmpljNMxpR74kXpHnvATbMudAEwuL7-B9OPlZC1AC_ZpBeKlyljC8cOm0tjIvGJdgjkSgkjECwLxxM_OGPeEkZqWb_p_Mr1Ji\" charset=\"UTF-8\"></script><script src=\"/_next/static/chunks/4bd1b696-f785427dddbba9fb.js\" async=\"\"></script><script src=\"/_next/static/chunks/1255-b84741b894bb9354.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-623728ffc6f09009.js\" async=\"\"></script><script src=\"/_next/static/chunks/2619-3c9e02e22d10480a.js\" async=\"\"></scrip",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/pt?fc=alwaysshow&fctype=gdpr",
+      "googlefcKeys": [
+        "callbackQueue"
+      ],
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": true,
+      "adsbygoogleType": "object",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 1,
+      "bodyBg": "rgb(255, 255, 255)",
+      "diag": {
+        "inserts": [
+          {
+            "t": 654,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 654,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 654,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 655,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 655,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 657,
+            "parent": "head",
+            "node": "script src=https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_imp",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:90:698",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 659,
+            "parent": "body",
+            "node": "ins.adsbygoogle adsbygoogle-noablate",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:307:310",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 893,
+            "parent": "html",
+            "node": "iframe#google_esf[name=google_esf] src=https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:648:2644",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1206,
+            "parent": "body",
+            "node": "script src=https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:156:625",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1387,
+            "parent": "body",
+            "node": "iframe src=https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1388,
+            "parent": "body",
+            "node": "iframe src=https://www.google.com/recaptcha/api2/aframe",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": false
+          }
+        ],
+        "commits": [
+          613,
+          617,
+          618,
+          621
+        ],
+        "t0": 298.39999997615814
+      }
+    },
+    "consoleMsgs": [],
+    "pageErrors": [],
+    "fails": [
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=17952011 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "793ms 200 script https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020",
+      "1038ms 200 script https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+      "1068ms BLOCKED-AD https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1795201146&plat=3%3A16%2C4%3",
+      "1121ms 204 image https://pagead2.googlesyndication.com/pagead/gen_204?id=adsense_fc_has_namespace_but_no_iframes&publisherId=ca-pub-3638053236344020&eid=95404664%2C95409874%2C95",
+      "1144ms 200 document https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+      "1366ms 200 xhr https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261118&st=env&sjk=864531672362015",
+      "1543ms 200 script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "1655ms 200 document https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+      "1685ms 200 script https://pagead2.googlesyndication.com/bg/Z4x1aK_9z8avgBkDMULgyabWdPVsrxsMGL2jqwC3Qu0.js",
+      "1733ms 200 document https://www.google.com/recaptcha/api2/aframe",
+      "1766ms 204 image https://ep2.adtrafficquality.google/generate_204?37TkgQ",
+      "1822ms 204 image https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261118&jk=864531672362015&rc=",
+      "2425ms 204 image https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261118&jk=864531672362015&bg=!ubqlutjNAAbNhJMf7YQ7AEcBdsCQk9TNb_5KNoaDly7rwATL4Gr"
+    ]
+  },
+  {
+    "name": "P2-prod-adsense-blocked",
+    "path": "/pt?fc=alwaysshow&fctype=gdpr",
+    "blockAdsense": true,
+    "synthetic": null,
+    "status": 200,
+    "csp": "upgrade-insecure-requests",
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": "hcdn",
+    "adsTagInHtml": "<script async=\"\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 3652,
+    "consentIndex": -1,
+    "headStart": "<head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/3afdd7e0cbf86ed6.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-1abc95bec6ab3c96.js\"/><script type=\"text/javascript\" src=\"https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=75CUUi0W5MgnnWrSCA5MFSNgWAaHerJv0kEHnwrmyF1posEUFjIBCv_RThczQ9aYl8vRQDb1p9j_4A4Dbh2aPAQ9XxJGN0yaXWrwOqdFZBpXC4rFtwrcSFxg_cRu8E_L\" charset=\"UTF-8\"></script><script src=\"/_next/static/chunks/4bd1b696-f785427dddbba9fb.js\" async=\"\"></script><script src=\"/_next/static/chunks/1255-b84741b894bb9354.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-623728ffc6f09009.js\" async=\"\"></script><script src=\"/_next/static/chunks/2619-3c9e02e22d10480a.js\" async=\"\"></scrip",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/pt?fc=alwaysshow&fctype=gdpr",
+      "googlefcKeys": [
+        "callbackQueue"
+      ],
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": null,
+      "adsbygoogleType": "undefined",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 1,
+      "bodyBg": "rgb(255, 255, 255)",
+      "diag": {
+        "inserts": [],
+        "commits": [
+          566,
+          570,
+          574,
+          575
+        ],
+        "t0": 433
+      }
+    },
+    "consoleMsgs": [
+      "error: Failed to load resource: net::ERR_FAILED"
+    ],
+    "pageErrors": [],
+    "fails": [
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "595ms BLOCKED-ADSENSE https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+    ]
+  },
+  {
+    "name": "P3-prod-sobre",
+    "path": "/pt/sobre?fc=alwaysshow&fctype=gdpr",
+    "blockAdsense": false,
+    "synthetic": null,
+    "status": 200,
+    "csp": "upgrade-insecure-requests",
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": "hcdn",
+    "adsTagInHtml": "<script async=\"\" src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 5230,
+    "consentIndex": -1,
+    "headStart": "<head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" href=\"/_next/static/media/155cae559bbd1a77-s.p.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/_next/static/media/4de1fea1a954a5b6-s.p.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/_next/static/media/6d664cce900333ee-s.p.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/_next/static/media/7ff6869a1704182a-s.p.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" href=\"/_next/static/media/e399f3e068a97f0c-s.p.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"/><link rel=\"preload\" as=\"image\" imageSrcSet=\"/_next/image?url=%2Fimages%2Fnutritionist%2Fweverlyn.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fnutritionist%2Fweverlyn.jpg&amp;w=750&amp;q=75 750w, /_ne",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/pt/sobre?fc=alwaysshow&fctype=gdpr",
+      "googlefcKeys": [
+        "callbackQueue"
+      ],
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": true,
+      "adsbygoogleType": "object",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 1,
+      "bodyBg": "rgb(255, 255, 255)",
+      "diag": {
+        "inserts": [
+          {
+            "t": 643,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 643,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 643,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 643,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 643,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 645,
+            "parent": "head",
+            "node": "script src=https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_imp",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:90:698",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 646,
+            "parent": "body",
+            "node": "ins.adsbygoogle adsbygoogle-noablate",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:307:310",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 770,
+            "parent": "html",
+            "node": "iframe#google_esf[name=google_esf] src=https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:648:2644",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1074,
+            "parent": "body",
+            "node": "script src=https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:156:625",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1301,
+            "parent": "body",
+            "node": "iframe src=https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": false
+          },
+          {
+            "t": 1302,
+            "parent": "body",
+            "node": "iframe src=https://www.google.com/recaptcha/api2/aframe",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": false
+          }
+        ],
+        "commits": [
+          505,
+          511,
+          515,
+          517
+        ],
+        "t0": 349.89999997615814
+      }
+    },
+    "consoleMsgs": [],
+    "pageErrors": [],
+    "fails": [
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=17952011 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "752ms 200 script https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020",
+      "880ms 200 script https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+      "906ms BLOCKED-AD https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1795201178&plat=3%3A16%2C4%3",
+      "959ms 204 image https://pagead2.googlesyndication.com/pagead/gen_204?id=adsense_fc_has_namespace_but_no_iframes&publisherId=ca-pub-3638053236344020&eid=95404664%2C95408434%2C42",
+      "986ms 200 document https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+      "1196ms 200 xhr https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261118&st=env&sjk=8650728168409431",
+      "1420ms 200 script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "1524ms 200 document https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+      "1597ms 200 document https://www.google.com/recaptcha/api2/aframe",
+      "1635ms 200 script https://pagead2.googlesyndication.com/bg/Z4x1aK_9z8avgBkDMULgyabWdPVsrxsMGL2jqwC3Qu0.js",
+      "1693ms 204 image https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261118&jk=8650728168409431&rc=",
+      "1733ms 204 image https://ep2.adtrafficquality.google/generate_204?jT4fPg",
+      "2398ms 204 image https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261118&jk=8650728168409431&bg=!jI-lj-3NAAbNhJMf7YQ7AEcBdsCQk3PcputK_KFpfnqOsIOEZe"
+    ]
+  },
+  {
+    "name": "P4-synthetic-tag-only",
+    "path": "/__nem_probe?fc=alwaysshow&fctype=gdpr",
+    "blockAdsense": false,
+    "synthetic": "plain",
+    "status": 200,
+    "csp": null,
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": null,
+    "adsTagInHtml": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 374,
+    "consentIndex": 176,
+    "headStart": "<head><meta charset=\"utf-8\"><title>probe</title>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});</script>\n\n<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\"></script>\n</head><body><p>probe</p></body></html>",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/__nem_probe?fc=alwaysshow&fctype=gdpr",
+      "googlefcKeys": null,
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": true,
+      "adsbygoogleType": "object",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 0,
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "diag": {
+        "inserts": [
+          {
+            "t": 269,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 269,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 269,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 269,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 270,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 272,
+            "parent": "head",
+            "node": "script src=https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_imp",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:90:698",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 273,
+            "parent": "body",
+            "node": "ins.adsbygoogle adsbygoogle-noablate",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:307:310",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 393,
+            "parent": "html",
+            "node": "iframe#google_esf[name=google_esf] src=https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:648:2644",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 711,
+            "parent": "body",
+            "node": "script src=https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:156:625",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 886,
+            "parent": "body",
+            "node": "iframe src=https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 888,
+            "parent": "body",
+            "node": "iframe src=https://www.google.com/recaptcha/api2/aframe",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          }
+        ],
+        "commits": [],
+        "t0": 14.399999976158142
+      }
+    },
+    "consoleMsgs": [
+      "error: Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "pageErrors": [],
+    "fails": [
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=17952011 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "386ms 200 script https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020",
+      "514ms 200 script https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+      "544ms BLOCKED-AD https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1795201193&plat=3%3A16%2C4%3",
+      "637ms 200 document https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+      "849ms 200 xhr https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261118&st=env&sjk=5811928492363154",
+      "1020ms 200 script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "1121ms 200 document https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+      "1196ms 200 document https://www.google.com/recaptcha/api2/aframe",
+      "1249ms 200 script https://pagead2.googlesyndication.com/bg/Z4x1aK_9z8avgBkDMULgyabWdPVsrxsMGL2jqwC3Qu0.js",
+      "1302ms 204 image https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261118&jk=5811928492363154&rc=",
+      "1321ms 204 image https://ep2.adtrafficquality.google/generate_204?RfNytA",
+      "1990ms 204 image https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261118&jk=5811928492363154&bg=!VlWlVTfNAAbNhJMf7YQ7AEcBdsCQky5Vn56XBOQ62HJPZCUSXI"
+    ]
+  },
+  {
+    "name": "P5-synthetic-tag+googlefc-stub",
+    "path": "/__nem_probe?fc=alwaysshow&fctype=gdpr",
+    "blockAdsense": false,
+    "synthetic": "predef",
+    "status": 200,
+    "csp": null,
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": null,
+    "adsTagInHtml": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 491,
+    "consentIndex": 176,
+    "headStart": "<head><meta charset=\"utf-8\"><title>probe</title>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});</script>\n<script>window.googlefc=window.googlefc||{};window.googlefc.callbackQueue=window.googlefc.callbackQueue||[];</script>\n<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\"></script>\n</head><body><p>probe</p></body></html>",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/__nem_probe?fc=alwaysshow&fctype=gdpr",
+      "googlefcKeys": [
+        "callbackQueue"
+      ],
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": true,
+      "adsbygoogleType": "object",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 0,
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "diag": {
+        "inserts": [
+          {
+            "t": 273,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 273,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 273,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 273,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 274,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 276,
+            "parent": "head",
+            "node": "script src=https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_imp",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:90:698",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 278,
+            "parent": "body",
+            "node": "ins.adsbygoogle adsbygoogle-noablate",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:307:310",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 390,
+            "parent": "html",
+            "node": "iframe#google_esf[name=google_esf] src=https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:648:2644",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 699,
+            "parent": "body",
+            "node": "script src=https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:156:625",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 923,
+            "parent": "body",
+            "node": "iframe src=https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 924,
+            "parent": "body",
+            "node": "iframe src=https://www.google.com/recaptcha/api2/aframe",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          }
+        ],
+        "commits": [],
+        "t0": 11.300000011920929
+      }
+    },
+    "consoleMsgs": [],
+    "pageErrors": [],
+    "fails": [
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=17952012 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "370ms 200 script https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020",
+      "488ms 200 script https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+      "516ms BLOCKED-AD https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1795201209&plat=3%3A16%2C4%3",
+      "578ms 204 image https://pagead2.googlesyndication.com/pagead/gen_204?id=adsense_fc_has_namespace_but_no_iframes&publisherId=ca-pub-3638053236344020&eid=95404669%2C95408436%2C12",
+      "607ms 200 document https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+      "812ms 200 xhr https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261118&st=env&sjk=1103744989960762",
+      "1033ms 200 script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "1205ms 200 document https://www.google.com/recaptcha/api2/aframe",
+      "1362ms 204 image https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261118&jk=1103744989960762&rc=",
+      "1642ms 200 document https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+      "1670ms 200 script https://pagead2.googlesyndication.com/bg/Z4x1aK_9z8avgBkDMULgyabWdPVsrxsMGL2jqwC3Qu0.js",
+      "1704ms 204 image https://pagead2.googlesyndication.com/pagead/gen_204?id=ama_stats&wpc=ca-pub-3638053236344020&su=www.nutricaoemovimento.com&eid=95404669%2C95408436%2C122882243%",
+      "1749ms 204 image https://ep2.adtrafficquality.google/generate_204?7rxLzw",
+      "2424ms 204 image https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261118&jk=1103744989960762&bg=!LC-lL03NAAbNhJMf7YQ7AEcBdsCQk-Hzx_ehdeYPwEmMV9TZv4"
+    ]
+  },
+  {
+    "name": "P6-synthetic-tag-only-no-fcparam",
+    "path": "/__nem_probe",
+    "blockAdsense": false,
+    "synthetic": "plain",
+    "status": 200,
+    "csp": null,
+    "cspRO": null,
+    "xfo": null,
+    "permissionsPolicy": null,
+    "server": null,
+    "adsTagInHtml": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\">",
+    "adsTagIndexInHead": 374,
+    "consentIndex": 176,
+    "headStart": "<head><meta charset=\"utf-8\"><title>probe</title>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});</script>\n\n<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020\" crossorigin=\"anonymous\"></script>\n</head><body><p>probe</p></body></html>",
+    "state": {
+      "href": "https://www.nutricaoemovimento.com/__nem_probe",
+      "googlefcKeys": null,
+      "getGCMV": "undefined",
+      "tcfapi": "undefined",
+      "gpp": "undefined",
+      "tcfLocator": false,
+      "fcPresentIframe": false,
+      "fcScripts": [],
+      "adsbygoogleLoaded": true,
+      "adsbygoogleType": "object",
+      "googleAdsenseScripts": [
+        "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020"
+      ],
+      "nemCmp": null,
+      "banner": false,
+      "stylesheets": 0,
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "diag": {
+        "inserts": [
+          {
+            "t": 266,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 267,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 267,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 267,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 267,
+            "parent": "head",
+            "node": "meta",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:91:400",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 270,
+            "parent": "head",
+            "node": "script src=https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_imp",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:90:698",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 272,
+            "parent": "body",
+            "node": "ins.adsbygoogle adsbygoogle-noablate",
+            "by": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020:307:310",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 781,
+            "parent": "html",
+            "node": "iframe#google_esf[name=google_esf] src=https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:648:2644",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 1093,
+            "parent": "body",
+            "node": "script src=https://ep2.adtrafficquality.google/sodar/sodar2.js",
+            "by": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js:156:625",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 1293,
+            "parent": "body",
+            "node": "iframe src=https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          },
+          {
+            "t": 1295,
+            "parent": "body",
+            "node": "iframe src=https://www.google.com/recaptcha/api2/aframe",
+            "by": "https://ep2.adtrafficquality.google/sodar/sodar2.js:31:246",
+            "beforeFirstCommit": true
+          }
+        ],
+        "commits": [],
+        "t0": 10
+      }
+    },
+    "consoleMsgs": [],
+    "pageErrors": [],
+    "fails": [
+      "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=17952012 :: net::ERR_FAILED"
+    ],
+    "reqs": [
+      "368ms 200 script https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3638053236344020",
+      "889ms 200 script https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202611110101/show_ads_impl.js",
+      "914ms BLOCKED-AD https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-3638053236344020&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1795201225&plat=3%3A16%2C4%3",
+      "999ms 200 document https://googleads.g.doubleclick.net/pagead/html/r20261118/r20190131/zrt_lookup.html",
+      "1215ms 200 xhr https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261118&st=env&sjk=8431234922122744",
+      "1412ms 200 script https://ep2.adtrafficquality.google/sodar/sodar2.js",
+      "1509ms 200 document https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+      "1596ms 200 document https://www.google.com/recaptcha/api2/aframe",
+      "1607ms 200 script https://pagead2.googlesyndication.com/bg/Z4x1aK_9z8avgBkDMULgyabWdPVsrxsMGL2jqwC3Qu0.js",
+      "1681ms 204 image https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261118&jk=8431234922122744&rc=",
+      "1685ms 204 image https://ep2.adtrafficquality.google/generate_204?mJ1ULQ",
+      "2352ms 204 image https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261118&jk=8431234922122744&bg=!zs2lza_NAAbNhJMf7YQ7AEcBdsCQk7UJPYGn3n3bUglz8t2KQO"
+    ]
+  }
+]

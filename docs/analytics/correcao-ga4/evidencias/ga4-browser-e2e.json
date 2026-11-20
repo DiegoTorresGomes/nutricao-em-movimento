@@ -1,0 +1,144 @@
+{
+  "base": "http://127.0.0.1:3107",
+  "ranAt": "2026-11-20T16:58:22.601Z",
+  "collect": {
+    "emitted": 14,
+    "intercepted": 14
+  },
+  "results": [
+    {
+      "id": "A",
+      "title": "CMP ainda pendente",
+      "ok": true,
+      "notes": [
+        "{\"cmp\":null,\"gaScripts\":0,\"adsenseScripts\":1,\"banner\":null,\"footer\":\"Preferências de cookies [disabled]\",\"hint\":\"Aguardando controles Google. Se indisponíveis, verifique bloqueios do navegador e recarregue.\",\"css\":1}"
+      ]
+    },
+    {
+      "id": "B/F",
+      "title": "NOT_APPLICABLE + novo visitante sem consentimento",
+      "ok": true,
+      "notes": [
+        "{\"cmp\":{\"source\":\"local\",\"analytics\":false},\"gaScripts\":0,\"adsenseScripts\":1,\"banner\":\"Sua privacidade\",\"footer\":\"Preferências de cookies\",\"hint\":null,\"css\":1}"
+      ]
+    },
+    {
+      "id": "C",
+      "title": "CMP Google ativa (aplicável)",
+      "ok": true,
+      "notes": [
+        "antes: {\"cmp\":{\"source\":\"google\",\"analytics\":false},\"gaScripts\":0,\"adsenseScripts\":1,\"banner\":null,\"footer\":\"Preferências de privacidade Google\",\"hint\":null,\"css\":1}",
+        "após concessão Google: {\"cmp\":{\"source\":\"google\",\"analytics\":true},\"gaScripts\":1,\"adsenseScripts\":1,\"banner\":null,\"footer\":\"Preferências de privacidade Google\",\"hint\":null,\"css\":1} page_views=[{\"en\":\"page_view\",\"dl\":\"/pt\",\"cid\":\"696893650.1795193692\",\"sid\":\"1795193692\",\"fv\":true,\"ss\":true,\"gcs\":\"G100\"}]"
+      ]
+    },
+    {
+      "id": "D",
+      "title": "CMP indisponível",
+      "ok": true,
+      "notes": [
+        "{\"cmp\":{\"source\":\"unavailable\",\"analytics\":false},\"gaScripts\":0,\"adsenseScripts\":1,\"banner\":null,\"footer\":\"Preferências de cookies\",\"hint\":\"Controles Google indisponíveis. Estatísticas permanecem desativadas.\",\"css\":1}"
+      ]
+    },
+    {
+      "id": "E",
+      "title": "CMP responde tardiamente",
+      "ok": true,
+      "notes": [
+        "após timeout: {\"source\":\"unavailable\",\"analytics\":false}",
+        "após resposta tardia: {\"source\":\"local\",\"analytics\":false} banner=Sua privacidade"
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Aceitação de estatísticas",
+      "ok": true,
+      "notes": [
+        "[{\"en\":\"page_view\",\"dl\":\"/pt\",\"cid\":\"1570427553.1795193739\",\"sid\":\"1795193739\",\"fv\":true,\"ss\":true,\"gcs\":\"G101\"}]"
+      ]
+    },
+    {
+      "id": "K",
+      "title": "Cinco páginas públicas (navegação client-side)",
+      "ok": true,
+      "notes": [
+        "/pt/artigos → /pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental → /pt/sobre → /pt/contato → /pt"
+      ]
+    },
+    {
+      "id": "L",
+      "title": "Mudança somente na query string (e somente no hash)",
+      "ok": true,
+      "notes": [
+        "router.push=true; query: [\"/pt/artigos?q=sono\"]; hash: []",
+        "hash-only change → 0 page_view (comportamento do GA4, registrado)"
+      ]
+    },
+    {
+      "id": "J",
+      "title": "Recarga e nova aba com consentimento persistido",
+      "ok": true,
+      "notes": [
+        "_ga durante CMP pendente: GA1.1.1570427553.1795193739; [[\"/pt/sobre\",\"1570427553.1795193739\",false,false],[\"/pt/sobre\",\"1570427553.1795193739\",false,false],[\"/pt/contato\",\"1570427553.1795193739\",false,false]]"
+      ]
+    },
+    {
+      "id": "J2",
+      "title": "Nova sessão com consentimento persistido",
+      "ok": true,
+      "notes": [
+        "cookie GS2.1.s1795193739$o1$g1$t1795193822$j37$l0$h0 → GS2.1.s1795193739$o1$g1$t1795191962$j37$l0$h0; [{\"en\":\"page_view\",\"dl\":\"/pt\",\"cid\":\"1570427553.1795193739\",\"sid\":\"1795193823\",\"fv\":false,\"ss\":true,\"gcs\":\"G101\"}]"
+      ]
+    },
+    {
+      "id": "M",
+      "title": "Navegação entre layouts raiz (/pt → /login → /pt)",
+      "ok": true,
+      "notes": [
+        "login: {\"ga\":0,\"ads\":0,\"css\":1}",
+        "volta: [[\"/pt\",\"1570427553.1795193739\"]]"
+      ]
+    },
+    {
+      "id": "N",
+      "title": "Erro de hidratação React #418",
+      "ok": true,
+      "notes": [
+        "erros: [\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]\"]; page_views: 1; css=1"
+      ]
+    },
+    {
+      "id": "I",
+      "title": "Revogação de consentimento",
+      "ok": true,
+      "notes": [
+        "{\"hitsAfter\":0,\"ga\":null,\"gaScripts\":0}"
+      ]
+    },
+    {
+      "id": "H",
+      "title": "Recusa de estatísticas",
+      "ok": true,
+      "notes": [
+        "{\"hits\":0,\"gaScripts\":0,\"banner\":null}"
+      ]
+    },
+    {
+      "id": "O",
+      "title": "Login e administração sem GA e sem anúncios",
+      "ok": true,
+      "notes": [
+        "/login → /login ga=0 ads=0 css=1",
+        "/login/2fa → /login/2fa ga=0 ads=0 css=1",
+        "/administracao → /login ga=0 ads=0 css=1"
+      ]
+    },
+    {
+      "id": "—",
+      "title": "Nenhum hit GA saiu sem interceptação",
+      "ok": true,
+      "notes": [
+        "emitidos=14 interceptados=14"
+      ]
+    }
+  ]
+}

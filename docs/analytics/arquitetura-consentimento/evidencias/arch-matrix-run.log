@@ -1,0 +1,59 @@
+PASS A Brasileiro novo (CMP Google não carrega)
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":true,"footer":"Preferências de cookies","stored":null,"css":1,"_ga":false,"page_views":0}
+PASS B Brasileiro aceita estatísticas
+   {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"banner":false,"footer":"Preferências de cookies","stored":true,"css":1,"_ga":true,"page_views":1}
+PASS C Brasileiro recusa estatísticas
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies","stored":false,"css":1,"_ga":false,"page_views":0}
+PASS D-OFF Europeu com CMP ativa (propósito análise OFF): mensagem Google na tela
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":null,"css":1,"_ga":false,"page_views":0}
+   · após decisão Google (ads+analytics sim): {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"banner":true,"ga":0}
+PASS D-ON Europeu com CMP ativa (propósito análise ON): mensagem Google na tela
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":null,"css":1,"_ga":false,"page_views":0}
+   · após decisão Google (ads+analytics sim): {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"banner":true,"ga":0}
+PASS E Europeu aceita publicidade e recusa estatísticas (OFF)
+   {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"_ga":false,"page_views":0}
+PASS F-OFF Europeu recusa publicidade e aceita estatísticas (OFF)
+   {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"_ga":true,"page_views":1}
+PASS F-ON-contraditório Europeu: Google recusa análise, site aceita (ON) → vence a recusa
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"_ga":false,"page_views":0}
+   · o banner local registra 'aceito', mas a recusa Google prevalece: duas respostas para a mesma finalidade
+PASS F-ON-coerente Europeu: Google aceita análise e site aceita (ON)
+   {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"_ga":true,"page_views":1}
+   · após Google conceder análise, antes do site: analytics_storage=denied ga=0
+PASS G CMP Google indisponível
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":true,"footer":"Preferências de cookies","stored":null,"css":1,"_ga":false,"page_views":0}
+   · indistinguível do cenário A: o site não precisa distinguir para pedir estatísticas
+PASS H-OFF CMP Google tardia (9 s), site já aceito (OFF)
+   {"early":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"cmpShown":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"final":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"reloads":0,"page_views":1}
+   · antes da CMP: {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1}
+   · CMP apareceu: {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"banner":false,"recargas":0}
+   · após decisão Google: {"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"ga":1,"recargas":0,"page_views":1}
+PASS H-ON CMP Google tardia (9 s), site já aceito (ON)
+   {"early":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"cmpShown":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"final":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"reloads":0,"page_views":1}
+   · antes da CMP: {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1}
+   · CMP apareceu: {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"banner":false,"recargas":0}
+   · após decisão Google: {"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"ga":1,"recargas":0,"page_views":1}
+PASS I Consentimento persistido (recarga e nova aba)
+   {"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"},"ga":1,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"_ga":true,"page_views":3,"cid":"1419423606.1795206278"}
+PASS L Cinco navegações SPA
+   {"page_views_added":5}
+   · /pt/artigos → /pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental → /pt/sobre → /pt/contato → /pt
+PASS M Layouts raiz /pt → /login → /pt
+   {"login":{"ga":0,"adsense":0,"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"}},"back_page_views":1}
+PASS O Erro React #418
+   {"page_views":1,"css":1,"consent":{"ad_storage":"granted","analytics_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"}}
+   · erros: ["Minified React error #418; visit https://react.dev/errors/418?args[]=H"]
+PASS K Revogação de publicidade (rodapé Google)
+   {"consent":{"ad_storage":"denied","analytics_storage":"granted","ad_user_data":"denied","ad_personalization":"denied"},"ga":1,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":true,"css":1,"_ga":true,"page_views":11}
+   · mensagem Google reaberta: revogações=1 banner local=false
+PASS J Revogação de estatísticas (rodapé do site)
+   {"consent":{"ad_storage":"denied","analytics_storage":"denied","ad_user_data":"denied","ad_personalization":"denied"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"_ga":false,"page_views":11,"hits_after":0}
+PASS J-ads Revogar estatísticas não altera publicidade concedida
+   {"consent":{"ad_storage":"granted","analytics_storage":"denied","ad_user_data":"granted","ad_personalization":"granted"},"ga":0,"adsense":1,"banner":false,"footer":"Preferências de cookies | Privacidade e publicidade (Google)","stored":false,"css":1,"_ga":false,"page_views":1}
+PASS N Login e administração
+   [{"p":"/login","at":"/login","ga":0,"adsense":0,"css":1},{"p":"/login/2fa","at":"/login/2fa","ga":0,"adsense":0,"css":1},{"p":"/administracao","at":"/login","ga":0,"adsense":0,"css":1}]
+FINAL {"intercepted":21,"cancelledBeforeNetwork":[],"other":0}
+PASS — Nenhum hit GA saiu sem interceptação
+   {"emitted":21,"intercepted":23,"failedBeforeNetwork":0,"reachedNetwork":0,"unaccounted":[],"final":{"intercepted":21,"cancelledBeforeNetwork":[],"other":0}}
+
+21/21 PASS → arch-matrix.json

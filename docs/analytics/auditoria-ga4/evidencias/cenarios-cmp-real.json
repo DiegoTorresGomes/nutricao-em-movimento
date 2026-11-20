@@ -1,0 +1,264 @@
+{
+  "base": "https://www.nutricaoemovimento.com",
+  "startedAt": "2026-11-20T15:51:55.143Z",
+  "scenarios": [
+    {
+      "name": "A - novo visitante sem decisão",
+      "hits": [],
+      "loaders": [
+        {
+          "t": 914,
+          "adsense": true
+        }
+      ],
+      "steps": [
+        {
+          "label": "após 8s sem interação",
+          "t": 9385,
+          "url": "/pt",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        }
+      ],
+      "adBlocked": 3,
+      "cmpRequests": 0,
+      "errors": []
+    },
+    {
+      "name": "B - aceitar estatísticas",
+      "hits": [],
+      "loaders": [],
+      "steps": [],
+      "adBlocked": 0,
+      "cmpRequests": 0,
+      "errors": [
+        "Error: banner local não disponível (CMP não resolveu como 'local')"
+      ]
+    },
+    {
+      "name": "C - navegação SPA após consentimento (5 páginas)",
+      "hits": [],
+      "loaders": [],
+      "steps": [
+        {
+          "label": "1 artigos",
+          "t": 11972,
+          "url": "/pt/artigos",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "2 artigo",
+          "t": 14632,
+          "url": "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "3 sobre",
+          "t": 17212,
+          "url": "/pt/sobre",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "4 contato",
+          "t": 19757,
+          "url": "/pt/contato",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "5 home",
+          "t": 22400,
+          "url": "/pt",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "6 pushState só query (mesmo pathname)",
+          "t": 24907,
+          "url": "/pt?teste=querystring",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "7 evento focus",
+          "t": 27412,
+          "url": "/pt?teste=querystring",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        }
+      ],
+      "adBlocked": 0,
+      "cmpRequests": 0,
+      "errors": []
+    },
+    {
+      "name": "F - novo documento com consentimento persistido",
+      "hits": [],
+      "loaders": [
+        {
+          "t": 27684,
+          "adsense": true
+        },
+        {
+          "t": 34253,
+          "adsense": true
+        }
+      ],
+      "steps": [
+        {
+          "label": "antes (cookies do perfil)",
+          "t": 27506,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "documento novo /pt/sobre",
+          "t": 34093,
+          "url": "/pt/sobre",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        },
+        {
+          "label": "reload /pt/sobre",
+          "t": 40544,
+          "url": "/pt/sobre",
+          "cmp": null,
+          "gaLoaded": false,
+          "gaScripts": 0,
+          "gaDisable": true,
+          "banner": false,
+          "prefButton": "Preferências de cookies (disabled)",
+          "consentCmds": [
+            "default:{\"ad_storage\":\"denied\",\"ad_user_data\":\"denied\",\"ad_personalization\":\"denied\",\"analytics_storage\":\"denied\"}"
+          ],
+          "storage": null,
+          "cookies": [],
+          "hitsSoFar": 0
+        }
+      ],
+      "adBlocked": 6,
+      "cmpRequests": 0,
+      "errors": []
+    },
+    {
+      "name": "E - revogar estatísticas pelo rodapé",
+      "hits": [],
+      "loaders": [],
+      "steps": [],
+      "adBlocked": 0,
+      "cmpRequests": 0,
+      "errors": [
+        "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Preferências de cookies' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled type=\"button\" class=\"text-left transition hover:text-[#E9DCC9] focus-visible:outline focus-visible:outline"
+      ]
+    },
+    {
+      "name": "D - recusar estatísticas (perfil novo)",
+      "hits": [],
+      "loaders": [
+        {
+          "t": 71183,
+          "adsense": true
+        }
+      ],
+      "steps": [],
+      "adBlocked": 3,
+      "cmpRequests": 0,
+      "errors": [
+        "Error: banner local não disponível"
+      ]
+    }
+  ]
+}
