@@ -1,15 +1,15 @@
 ﻿import type { Metadata, Viewport } from "next";
 import { Lato } from "next/font/google";
 import localFont from "next/font/local";
-import { ConsentModeInit } from "@/components/analytics/ConsentModeInit";
+import { CONSENT_DEFAULT_SCRIPT } from "@/components/analytics/ConsentModeInit";
 import { ConsentNavigationGuard } from "@/components/analytics/ConsentNavigationGuard";
 import { ADSENSE_CLIENT } from "@/config/monetization";
 import { siteConfig } from "@/config/site";
 import { nutritionistConfig } from "@/config/nutritionist";
-import "./globals.css";
+import "../globals.css";
 
 const playfair = localFont({
-  src: "./fonts/PlayfairDisplay-Variable.woff2",
+  src: "../fonts/PlayfairDisplay-Variable.woff2",
   variable: "--font-playfair",
   weight: "500 700",
   style: "normal",
@@ -97,13 +97,21 @@ export const viewport: Viewport = {
   themeColor: "#556B2F",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const consentHead = `<script>${CONSENT_DEFAULT_SCRIPT}</script>`;
+const adsenseHead = `${consentHead}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`;
+
+export default function DocumentLayout({
+  children,
+  adsense = false,
+}: {
+  children: React.ReactNode;
+  adsense?: boolean;
+}) {
   return (
     <html lang="pt-BR">
-      <head>
-        {/* Consent Mode v2 defaults must run before any tag (see docs). */}
-        <ConsentModeInit />
-      </head>
+      {/* Render trusted constants together so React cannot hoist AdSense ahead of the defaults. */}
+      <head dangerouslySetInnerHTML={{ __html: adsense ? adsenseHead : consentHead }} />
 
       <body className={`${playfair.variable} ${lato.variable}`}>
         <ConsentNavigationGuard />

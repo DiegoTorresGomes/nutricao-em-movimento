@@ -1,4 +1,4 @@
-import { logoutAction } from "@/app/administracao/logout/actions";
+import { logoutAction } from "@/app/(sem-adsense)/administracao/logout/actions";
 
 export function LogoutButton() {
   return (

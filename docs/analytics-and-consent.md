@@ -2,7 +2,7 @@
 
 Atualizado em 20/11/2026. Implementação local, sem deploy.
 
-O AdSense usa um único next/script afterInteractive no layout /pt, publisher ca-pub-3638053236344020. Os quatro defaults denied executam antes, no head global. Metadata e ads.txt preservados. Auto Ads e mensagens são geridos no painel Google; nenhum slot manual.
+A correção local coloca uma única tag assíncrona nativa do AdSense no HTML inicial do head de /pt e das páginas públicas desse layout, com o publisher ca-pub-3638053236344020. Os quatro defaults denied são executados pelo script inline imediatamente anterior. Auto Ads e mensagens são geridos no painel Google.
 
 A Google CMP controla publicidade/TCF e estatísticas no seu escopo europeu. O bridge usa callbackQueue e getGoogleConsentModeValues: GRANTED/DENIED seguem Google, NOT_APPLICABLE habilita preferências locais e UNKNOWN/NOT_CONFIGURED mantêm GA bloqueado. O painel próprio permanece oculto no escopo Google e enquanto a aplicabilidade estiver pendente, inclusive sob bloqueadores. Não há fallback por tempo.
 
@@ -12,7 +12,7 @@ GA é direto e único, condicionado a estatísticas concedidas, com NEXT_PUBLIC_
 
 Retirar estatísticas desativa GA, tenta limpar somente cookies GA acessíveis e recarrega se GA já executou. Isso não apaga cookies publicitários, dados já enviados ou cookies externos. O footer reabre preferências locais ou a mensagem Google via showRevocationMessage, conforme a autoridade. Enquanto a CMP estiver indisponível, informa espera e mantém o botão desabilitado.
 
-Login/admin/API não montam o layout publicitário. O guard existente reconhece AdSense além de GA e força documento novo ao sair do público. Navegação programática depende do efeito desse guard e precisa de validação no navegador de destino.
+Login e administração usam um layout raiz que inclui os defaults. A transição entre o layout público e o operacional abre um documento novo. O guard existente também reconhece a tag nativa do AdSense e o GA. APIs e XML são servidos fora dos layouts de página.
 
 Newsletter permanece sem provedor integrado. Não houve mudança de banco, sitemap, feed ou conteúdo editorial.
 

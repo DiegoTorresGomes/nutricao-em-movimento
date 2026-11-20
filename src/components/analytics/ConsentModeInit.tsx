@@ -6,6 +6,3 @@ window.gtag('consent', 'default', {
   ad_storage: 'denied', ad_user_data: 'denied',
   ad_personalization: 'denied', analytics_storage: 'denied'
 });`;
-export function ConsentModeInit() {
-  return <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />;
-}
