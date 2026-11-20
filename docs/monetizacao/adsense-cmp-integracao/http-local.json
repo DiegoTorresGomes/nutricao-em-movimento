@@ -1,0 +1,199 @@
+{
+  "base": "http://127.0.0.1:3107",
+  "node": "v24.14.1",
+  "mode": "GET HTML only; no JavaScript or Google network validation",
+  "results": [
+    {
+      "path": "/",
+      "status": 307,
+      "location": "/pt",
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/artigos",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/artigos/setembro-amarelo-alimentacao-e-exercicios-como-parte-do-cuidado-com-a-saude-mental",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/autora/weverlyn-alves",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/sobre",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/contato",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/politica-de-cookies",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/politica-de-privacidade",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/termos-de-uso",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/politica-editorial",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/pt/disclaimer",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": true,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/login/2fa",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/administracao",
+      "status": 307,
+      "location": "/login",
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/administracao/artigos",
+      "status": 307,
+      "location": "/login",
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/administracao/seguranca",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/api/adsense-audit-not-found",
+      "status": 404,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/ads.txt",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    },
+    {
+      "path": "/images/og/nutricao-em-movimento.jpg",
+      "status": 200,
+      "location": null,
+      "adsenseDescriptor": false,
+      "parserExecutedAdsenseScripts": 0,
+      "csp": null
+    }
+  ]
+}

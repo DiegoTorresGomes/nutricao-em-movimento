@@ -1,4 +1,5 @@
-/** First-party preferences, not a certified CMP or legal proof of consent. */
+import { getCmpState } from "./google-cmp";
+/** First-party analytics preferences, not a certified CMP or legal proof of consent. */
 export const CONSENT_STORAGE_KEY = "nem-consent-v2";
 export const CONSENT_COOKIE_NAME = "nem-consent";
 export const CONSENT_VERSION = 2;
@@ -62,11 +63,11 @@ export function saveConsent(consent: ConsentState): void {
 export function openConsentPreferences(): void { window.dispatchEvent(new Event(OPEN_CONSENT)); }
 export function syncGoogleConsentMode(consent: ConsentState): void {
   if (typeof window === "undefined") return;
+  if (getCmpState().source !== "local") return;
   const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
   if (typeof gtag !== "function") return;
   gtag("consent", "update", {
     analytics_storage: consent.analytics ? "granted" : "denied",
-    ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
   });
 }
 /** Known optional first-party cookies only; external cookies need browser controls. */
@@ -76,7 +77,7 @@ export function clearOptionalCookies(): void {
   const domains = ["", ...parts.slice(0, -1).map((_, i) => "; Domain=." + parts.slice(i).join("."))];
   const paths = new Set(["/", ...window.location.pathname.split("/").slice(1).map((_, i, values) => "/" + values.slice(0, i + 1).join("/"))]);
   for (const name of names) {
-    if (!/^(_ga($|_)|_gid$|_gat($|_)|__gads$|__gpi$|__eoi$)/.test(name)) continue;
+    if (!/^(_ga($|_)|_gid$|_gat($|_))/.test(name)) continue;
     for (const domain of domains) for (const path of paths) {
       document.cookie = name + "=; Max-Age=0; Path=" + path + domain;
     }

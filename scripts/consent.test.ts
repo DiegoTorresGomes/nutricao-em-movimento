@@ -4,6 +4,7 @@ import vm from "node:vm";
 import fs from "node:fs";
 import React from "react";
 import ts from "typescript";
+import * as cmpModule from "../src/lib/google-cmp";
 import * as consentModule from "../src/lib/consent";
 import * as jsxRuntime from "react/jsx-runtime";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -18,8 +19,8 @@ function browser() {
   const storage = new Map<string, string>(); const cookies = new Map<string, string>();
   const scripts: FakeScript[] = []; const events = new EventTarget(); const calls: unknown[][] = [];
   let reloads = 0;
-  const win = Object.assign(events, { localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v), removeItem: (k: string) => storage.delete(k) }, location: { protocol: "https:", hostname: "www.example.com", pathname: "/pt", href: "https://www.example.com/pt", reload: () => { reloads++; } }, gtag: (...args: unknown[]) => calls.push(args) });
-  const doc = { get cookie() { return [...cookies].map(([k,v]) => k + "=" + v).join("; "); }, set cookie(value: string) { const pair = value.split(";")[0]; const index = pair.indexOf("="); const key = pair.slice(0,index); if(value.includes("Max-Age=0")) cookies.delete(key); else cookies.set(key, pair.slice(index+1)); }, head: { appendChild: (s: FakeScript) => scripts.push(s) }, createElement: () => ({ id: "", src: "", async: false }), getElementById: (id: string) => scripts.find(s=>s.id===id) ?? null };
+  const win = Object.assign(events, { __nemCmp: { source: "local", analytics: false }, localStorage: { getItem: (k: string) => storage.get(k) ?? null, setItem: (k: string, v: string) => storage.set(k, v), removeItem: (k: string) => storage.delete(k) }, location: { protocol: "https:", hostname: "www.example.com", pathname: "/pt", href: "https://www.example.com/pt", reload: () => { reloads++; } }, gtag: (...args: unknown[]) => calls.push(args) });
+  const doc = { get cookie() { return [...cookies].map(([k,v]) => k + "=" + v).join("; "); }, set cookie(value: string) { const pair = value.split(";")[0]; const index = pair.indexOf("="); const key = pair.slice(0,index); if(value.includes("Max-Age=0")) cookies.delete(key); else cookies.set(key, pair.slice(index+1)); }, head: { appendChild: (s: FakeScript) => scripts.push(s) }, createElement: () => ({ id: "", src: "", async: false }), querySelector: () => null, getElementById: (id: string) => scripts.find(s=>s.id===id) ?? null };
   Object.defineProperty(globalThis, "window", { value: win, configurable: true }); Object.defineProperty(globalThis, "document", { value: doc, configurable: true });
   readConsent(true);
   return { storage, cookies, scripts, calls, win, get reloads() { return reloads; } };
@@ -34,11 +35,11 @@ test("defaults deny four signals without fetching any resource", () => {
 test("new visitor: no optional script; no decision is persisted automatically", () => {
   const b=browser(); assert.equal(readConsent(), null); applyConsentServices(null, "G-TEST123"); assert.equal(b.scripts.length,0); assert.equal(b.storage.size,0);
 });
-test("accept: persists statistics, keeps advertising denied, loads GA once after update", () => {
+test("accept: persists statistics, updates only analytics, loads GA once after update", () => {
   const b=browser(); saveConsent(buildConsent(true)); applyConsentServices(readConsent(), "G-TEST123"); applyConsentServices(readConsent(), "G-TEST123");
   assert.equal(readConsent()?.analytics,true); assert.equal(readConsent()?.ads,false); assert.equal(b.scripts.length,1); assert.equal(b.scripts[0].async,true); assert.match(b.scripts[0].src,/gtag/);
   const update=b.calls.findIndex(c=>c[0]==="consent"&&c[1]==="update"); const config=b.calls.findIndex(c=>c[0]==="config"); assert.ok(update>=0&&update<config);
-  assert.equal((b.calls[update][2] as { ad_storage:string }).ad_storage,"denied");
+  assert.deepEqual(b.calls[update][2], { analytics_storage: "granted" });
 });
 test("reject: persisted denial survives a fresh storage read, no GA or AdSense", () => {
   const b=browser(); saveConsent(buildConsent(false)); assert.equal(readConsent(true)?.analytics,false); applyConsentServices(readConsent(), "G-TEST123"); assert.equal(b.scripts.length,0); assert.equal(b.reloads,0);
@@ -68,8 +69,8 @@ test("reopen signal and change event are observable without granting consent", (
 test("public/private boundary: no loaded service means no reload; leaving with GA requires fresh document", () => {
   browser(); leavePublicPage(); const b=browser(); saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123"); leavePublicPage(); assert.equal(b.reloads,1); assert.equal(isPublicPath("/login"),false); assert.equal(isPublicPath("/administracao/artigos"),false); assert.equal(isPublicPath("/pt/artigos"),true);
 });
-test("no GA identifier: acceptance creates no third-party request; ads always denied", () => {
-  const b=browser(); syncGoogleConsentMode({...buildConsent(true),ads:true}); applyConsentServices(buildConsent(true),undefined); assert.equal(b.scripts.length,0); assert.equal((b.calls[0][2] as {ad_personalization:string}).ad_personalization,"denied");
+test("no GA identifier: acceptance creates no request and never writes ad signals", () => {
+  const b=browser(); syncGoogleConsentMode({...buildConsent(true),ads:true}); applyConsentServices(buildConsent(true),undefined); assert.equal(b.scripts.length,0); assert.deepEqual(b.calls[0][2], { analytics_storage: "granted" });
 });
 test("panel first layer gives equal access to accept, reject and preferences; buttons call their actual handlers", () => {
   const choices:boolean[]=[];let preferences=0;
@@ -79,8 +80,8 @@ test("panel first layer gives equal access to accept, reject and preferences; bu
   function walk(node:React.ReactNode):void { if(!React.isValidElement<{children?:React.ReactNode}>(node)) return; if(node.type==="button") buttons.push(node as typeof buttons[number]); React.Children.forEach(node.props.children,walk); }
   walk(tree); buttons.forEach(button=>button.props.onClick()); assert.deepEqual(choices,[false,true]); assert.equal(preferences,1);
 });
-test("preferences show current statistics and disabled advertising; saving uses the selected value", () => {
-  let saved:boolean|undefined; const tree=CookieConsentPanel({preferences:true,analytics:true,onAnalytics:()=>{},onPreferences:()=>{},onSave:v=>{saved=v;}}); const html=renderToStaticMarkup(tree); assert.match(html,/Salvar preferências/); assert.match(html,/Publicidade — pausada/); assert.equal((html.match(/disabled=""/g)||[]).length,2);
+test("preferences show statistics and explain separate advertising controls", () => {
+  let saved:boolean|undefined; const tree=CookieConsentPanel({preferences:true,analytics:true,onAnalytics:()=>{},onPreferences:()=>{},onSave:v=>{saved=v;}}); const html=renderToStaticMarkup(tree); assert.match(html,/Salvar preferências/); assert.match(html,/Este painel altera apenas Estatísticas/); assert.equal((html.match(/disabled=""/g)||[]).length,1);
   function walk(node:React.ReactNode):void { if(!React.isValidElement<{children?:React.ReactNode;onClick?:()=>void}>(node))return; if(node.type==="button"&&node.props.children==="Salvar preferências")node.props.onClick?.(); React.Children.forEach(node.props.children,walk); } walk(tree); assert.equal(saved,true);
 });
 test("static ads.txt and verification metadata use the confirmed publisher", () => {
@@ -95,7 +96,7 @@ test("controller: new user, rejection, reopen, category change, accept and reloa
   const ReactHooks={...React,useState:(initial:unknown)=>{const i=index++; if(!(i in values))values[i]=initial;return [values[i],(value:unknown)=>{values[i]=value;dirty=true;}];},useRef:(initial:unknown)=>{const i=index++;if(!(i in values))values[i]={current:initial};return values[i];},useEffect:(effect:()=>void|(()=>void),deps:unknown[])=>{const i=index++;if(!dependencies[i]||deps.some((v,n)=>!Object.is(v,dependencies[i]![n]))) {dependencies[i]=deps;pending.push(()=>{cleanups[i]?.();cleanups[i]=effect();});}}};
   const testModule={exports:{} as {CookieConsent:()=>React.ReactElement<React.ComponentProps<typeof CookieConsentPanel>>|null}};
   const HTMLElementMock=class {};
-  const context={module:testModule,exports:testModule.exports,require:(id:string)=>id==="react"?ReactHooks:id==="react/jsx-runtime"?jsxRuntime:id==="next/link"?{default:"a",__esModule:true}:id==="@/lib/consent"?consentModule:(()=>{throw Error(id);})(),window,document,HTMLElement:HTMLElementMock};
+  const context={module:testModule,exports:testModule.exports,require:(id:string)=>id==="react"?ReactHooks:id==="react/jsx-runtime"?jsxRuntime:id==="next/link"?{default:"a",__esModule:true}:id==="@/lib/google-cmp"?cmpModule:id==="@/lib/consent"?consentModule:(()=>{throw Error(id);})(),window,document,HTMLElement:HTMLElementMock};
   const output=ts.transpileModule(fs.readFileSync("src/components/consent/CookieConsent.tsx","utf8"),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,esModuleInterop:true}}).outputText;
   vm.runInNewContext(output,context);
   let tree:ReturnType<typeof testModule.exports.CookieConsent>=null;
@@ -106,4 +107,59 @@ test("controller: new user, rejection, reopen, category change, accept and reloa
   tree!.props.onAnalytics(true);flush();tree!.props.onSave(tree!.props.analytics);assert.equal(flush(),null);assert.equal(readConsent()?.analytics,true);
   openConsentPreferences();flush();assert.equal(tree!.props.analytics,true);assert.ok(tree!.props.onClose);tree!.props.onClose!();assert.equal(flush(),null);assert.equal(readConsent()?.analytics,true);
   cleanups.forEach(cleanup=>cleanup?.());
+});
+
+ test("CMP pending or misconfigured never uses stored local approval", () => {
+ const b=browser(); b.win.__nemCmp={source:"pending",analytics:false};
+ saveConsent(buildConsent(true)); applyConsentServices(readConsent(),"G-TEST123");
+ assert.equal(b.scripts.length,0); assert.equal(b.calls.length,0);
+ });
+ test("CMP grant and withdrawal own analytics; local actions never overwrite Google signals", () => {
+ const b=browser(); b.win.__nemCmp={source:"google",analytics:true};
+ saveConsent(buildConsent(false)); applyConsentServices(readConsent(),"G-TEST123");
+ assert.equal(b.scripts.length,1); assert.equal(b.calls.some(c=>c[0]==="consent"),false);
+ b.win.__nemCmp.analytics=false; applyConsentServices(buildConsent(true),"G-TEST123");
+ assert.equal(b.reloads,1); assert.equal(b.calls.some(c=>c[0]==="consent"),false);
+ });
+ test("Google callback queue uses official enum values, including unavailable configuration", () => {
+ const b=browser(); let status=0; const queue:Record<string,()=>void>[]=[];
+ Object.assign(b.win,{googlefc:{callbackQueue:queue,getGoogleConsentModeValues:()=>({analyticsStoragePurposeConsentStatus:status})}});
+ cmpModule.startGoogleCmp(); cmpModule.startGoogleCmp(); assert.equal(queue.length,2);
+ for(const [value,source,analytics] of [[0,"pending",false],[1,"google",true],[2,"google",false],[3,"local",false],[4,"pending",false]] as const){
+ status=value;queue[0].CONSENT_MODE_DATA_READY(); assert.deepEqual(cmpModule.getCmpState(),{source,analytics});
+ }
+ });
+ test("withdrawing local analytics never deletes AdSense cookies",()=>{
+ const b=browser(); b.cookies.set("__gads","keep"); b.cookies.set("__gpi","keep");
+ applyConsentServices(buildConsent(false),"G-TEST123"); assert.equal(b.cookies.get("__gads"),"keep");assert.equal(b.cookies.get("__gpi"),"keep");
+ });
+
+test("public boundary reloads for AdSense even when analytics never loaded", () => {
+  const b = browser();
+  Object.assign(document, { querySelector: () => ({ id: "nem-adsense" }) });
+  leavePublicPage();
+  assert.equal(b.reloads, 1);
+});
+
+test("TCF changes refresh official Google values and reopening uses the supported queue", async () => {
+  const b = browser();
+  let status = 1, reopened = 0;
+  let listener: ((data: { eventStatus: string }, success: boolean) => void) | undefined;
+  const queue: Record<string, () => void>[] = [];
+  Object.assign(b.win, {
+    googlefc: { callbackQueue: queue, getGoogleConsentModeValues: () => ({ analyticsStoragePurposeConsentStatus: status }), showRevocationMessage: () => { reopened++; } },
+    __tcfapi: (_command: string, _version: number, callback: typeof listener) => { listener = callback; },
+  });
+  cmpModule.startGoogleCmp();
+  queue[0].CONSENT_MODE_DATA_READY();
+  queue[1].CONSENT_API_READY();
+  status = 2;
+  listener!({ eventStatus: "useractioncomplete" }, true);
+  await new Promise(resolve => setTimeout(resolve, 5));
+  queue[2].CONSENT_MODE_DATA_READY();
+  assert.deepEqual(cmpModule.getCmpState(), { source: "google", analytics: false });
+  cmpModule.reopenGoogleCmp();
+  assert.equal(reopened, 0);
+  queue[3].CONSENT_API_READY();
+  assert.equal(reopened, 1);
 });

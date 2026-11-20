@@ -1,4 +1,5 @@
 import { clearOptionalCookies, getDefaultConsent, syncGoogleConsentMode, type ConsentState } from "./consent";
+import { getCmpState } from "./google-cmp";
 type AnalyticsWindow = Window & {
   gtag?: (...args: unknown[]) => void;
   __nemAnalyticsLoaded?: boolean;
@@ -8,15 +9,17 @@ export function isPublicPath(pathname: string): boolean {
   return pathname === "/pt" || pathname.startsWith("/pt/");
 }
 export function hasLoadedAnalytics(): boolean {
-  return Boolean((window as AnalyticsWindow).__nemAnalyticsLoaded);
+  return Boolean((window as AnalyticsWindow).__nemAnalyticsLoaded || document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'));
 }
 export function applyConsentServices(consent: ConsentState | null, gaId: string | undefined): void {
   const current = consent ?? getDefaultConsent();
+  const cmp = getCmpState();
+  const analyticsAllowed = cmp.source === "google" ? cmp.analytics : cmp.source === "local" && current.analytics;
   const browser = window as AnalyticsWindow;
   const identifier = gaId && /^G-[A-Z0-9]+$/.test(gaId) ? gaId : null;
   syncGoogleConsentMode(current);
-  if (identifier) Reflect.set(window, "ga-disable-" + identifier, !current.analytics);
-  if (!current.analytics) {
+  if (identifier) Reflect.set(window, "ga-disable-" + identifier, !analyticsAllowed);
+  if (!analyticsAllowed) {
     clearOptionalCookies();
     // Removing a script node cannot undo executed code. A fresh document ends it.
     if (browser.__nemAnalyticsLoaded) window.location.reload();

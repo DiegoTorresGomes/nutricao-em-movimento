@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { CONSENT_CHANGED, CONSENT_STORAGE_KEY, readConsent } from "@/lib/consent";
 import { applyConsentServices } from "@/lib/consent-services";
-/** Mounted only by PublicLayout. No GTM, Clarity or advertising loader. */
+import { CMP_CHANGED, startGoogleCmp } from "@/lib/google-cmp";
+/** Mounted only by PublicLayout. One direct GA loader, gated by consent. */
 export function ConsentedAnalytics() {
   const pathname = usePathname();
   useEffect(() => {
@@ -13,11 +14,14 @@ export function ConsentedAnalytics() {
       readConsent(true);
       update();
     };
+    window.addEventListener(CMP_CHANGED, update);
+    startGoogleCmp();
     update();
     window.addEventListener(CONSENT_CHANGED, update);
     window.addEventListener("storage", storage);
     window.addEventListener("focus", update);
     return () => {
+      window.removeEventListener(CMP_CHANGED, update);
       window.removeEventListener(CONSENT_CHANGED, update);
       window.removeEventListener("storage", storage);
       window.removeEventListener("focus", update);

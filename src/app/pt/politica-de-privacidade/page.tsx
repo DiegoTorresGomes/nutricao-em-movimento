@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-const lastUpdate = "8 de novembro de 2026";
+const lastUpdate = "20 de novembro de 2026";
 
 export default function PoliticaPrivacidadePage() {
   return (
@@ -135,25 +135,24 @@ export default function PoliticaPrivacidadePage() {
                 aceitar Estatísticas (base legal adotada para essa opção: consentimento);
               </li>
               <li>
-                <strong>Publicidade:</strong> recurso pausado nesta versão; qualquer ativação futura exige
-                revisão dos controles e informações aplicáveis.
+                <strong>Publicidade:</strong> Google AdSense nas páginas públicas, sujeito às escolhas e requisitos regionais aplicáveis.
               </li>
             </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">4. Cookies</h2>
-            <p>Usamos armazenamento necessário para lembrar escolhas e manter funções essenciais. O painel próprio permite aceitar ou recusar estatísticas opcionais; publicidade está pausada. Use “Preferências de cookies” no rodapé para alterar ou retirar a decisão a qualquer momento. A escolha, com versão e data, fica em localStorage e cookie próprio por até 180 dias. Se o armazenamento for bloqueado, ela pode não persistir.</p><p>Detalhes na <Link href="/pt/politica-de-cookies" className="font-semibold text-[#556B2F] underline">Política de Cookies</Link>. O painel não é uma CMP certificada pelo Google e não comprova integração TCF.</p>
+            <p>Usamos armazenamento necessário para lembrar escolhas e manter funções essenciais. O painel próprio permite aceitar ou recusar estatísticas opcionais; as escolhas europeias de publicidade e estatísticas são geridas pela CMP Google. Use “Preferências de cookies” no rodapé para alterar ou retirar a decisão a qualquer momento. A escolha, com versão e data, fica em localStorage e cookie próprio por até 180 dias. Se o armazenamento for bloqueado, ela pode não persistir.</p><p>Detalhes na <Link href="/pt/politica-de-cookies" className="font-semibold text-[#556B2F] underline">Política de Cookies</Link>. O painel não é uma CMP certificada pelo Google e não comprova integração TCF.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">5. Google AdSense</h2>
-            <p>A publicidade está pausada nesta versão. O identificador público da conta e o ads.txt permitem preparar a verificação do site, mas a aplicação não carrega o script de anúncios.</p><p>Uma ativação futura poderá envolver cookies do Google e parceiros, inclusive para anúncios com base em visitas a este e a outros sites. Depende de configuração própria de consentimento e requisitos regionais; não afirmamos existir CMP certificada ativa. Informações em <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">publicidade do Google</a> e controles em <a href="https://adssettings.google.com/" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">Configurações de anúncios do Google</a>.</p>
+            <p>As páginas públicas incluem o script Google AdSense para anúncios automáticos e para a mensagem Google de consentimento. Login, administração e APIs não incluem esse loader. Exibir anúncios depende da aprovação e das configurações Google.</p><p>O Google e seus parceiros podem usar cookies e identificadores para publicidade conforme as escolhas e regras aplicáveis. No EEE, Reino Unido e Suíça, a CMP Google gerencia publicidade/TCF e estatísticas; o painel próprio não altera consentimento publicitário. Informações em <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">publicidade do Google</a> e controles em <a href="https://adssettings.google.com/" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">Configurações de anúncios do Google</a>.</p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-[#111111]">6. Google Analytics</h2>
-            <p>Quando configurado, o Google Analytics é utilizado para medir o uso das páginas públicas após aceitar Estatísticas. Sem decisão ou com recusa, a aplicação não carrega esse script. O serviço pode tratar identificadores, cookies, informações de dispositivo, origem e eventos de navegação; relatórios agregados não tornam todos os dados anônimos.</p><p>Você pode retirar a escolha pelo rodapé. Se o serviço já tiver sido carregado, a página será recarregada para encerrar sua execução; a retirada não desfaz dados já enviados. Há também um <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">complemento de exclusão do Google Analytics</a>.</p>
+            <p>Quando configurado, o Google Analytics é utilizado para medir o uso das páginas públicas após consentimento positivo para estatísticas na CMP Google, quando aplicável, ou no painel próprio fora desse escopo. Sem decisão ou com recusa, a aplicação não carrega esse script. O serviço pode tratar identificadores, cookies, informações de dispositivo, origem e eventos de navegação; relatórios agregados não tornam todos os dados anônimos.</p><p>Você pode retirar a escolha pelo rodapé: “Preferências de privacidade Google” reabre a CMP, quando aplicável; “Preferências de cookies” controla estatísticas no painel próprio. Se o serviço já tiver sido carregado, a página será recarregada para encerrar sua execução; a retirada não desfaz dados já enviados. Há também um <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noreferrer" className="font-semibold text-[#556B2F] underline">complemento de exclusão do Google Analytics</a>.</p>
           </section>
 
           <section className="space-y-4">
