@@ -2,6 +2,7 @@
 import { Lato } from "next/font/google";
 import localFont from "next/font/local";
 import { CONSENT_DEFAULT_SCRIPT } from "@/components/analytics/ConsentModeInit";
+import { AdSenseHeadScript } from "@/components/analytics/AdSenseHeadScript";
 import { ConsentNavigationGuard } from "@/components/analytics/ConsentNavigationGuard";
 import { ADSENSE_CLIENT } from "@/config/monetization";
 import { siteConfig } from "@/config/site";
@@ -97,10 +98,6 @@ export const viewport: Viewport = {
   themeColor: "#556B2F",
 };
 
-const consentHead = `<script>${CONSENT_DEFAULT_SCRIPT}</script>`;
-const adsenseHead = `${consentHead}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`;
-
 export default function DocumentLayout({
   children,
   adsense = false,
@@ -110,8 +107,11 @@ export default function DocumentLayout({
 }) {
   return (
     <html lang="pt-BR">
-      {/* Render trusted constants together so React cannot hoist AdSense ahead of the defaults. */}
-      <head dangerouslySetInnerHTML={{ __html: adsense ? adsenseHead : consentHead }} />
+      {/* Never set innerHTML on <head>: a client re-render would wipe React-managed stylesheets. */}
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
+        {adsense && <AdSenseHeadScript />}
+      </head>
 
       <body className={`${playfair.variable} ${lato.variable}`}>
         <ConsentNavigationGuard />
